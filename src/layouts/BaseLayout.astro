@@ -1,8 +1,21 @@
 ---
+interface Props {
+  title?: string;
+  description?: string;
+  canonicalURL?: string;
+  pubDate?: string;
+  isArticle?: boolean;
+}
 const {
   title = 'AI Tools Pro',
-  description = 'Practical comparisons, workflows, and buying guides for AI tools used by marketers, creators, and automation teams.'
+  description = 'Practical comparisons, workflows, and buying guides for AI tools used by marketers, creators, and automation teams.',
+  canonicalURL = Astro.url.href,
+  pubDate,
+  isArticle = false,
 } = Astro.props;
+const siteName = 'AI Tools Pro';
+const siteURL = 'https://ai-tools-pro.pages.dev';
+const ogImage = `${siteURL}/og-default.jpg`;
 ---
 <!doctype html>
 <html lang="en">
@@ -11,13 +24,50 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <title>{title}</title>
+
+    <!-- Canonical -->
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Sitemap -->
+    <link rel="sitemap" href="/sitemap.xml" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content={isArticle ? 'article' : 'website'} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content={siteName} />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <!-- Schema.org -->
+    {isArticle && (
+      <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": title,
+        "description": description,
+        "datePublished": pubDate,
+        "publisher": {
+          "@type": "Organization",
+          "name": siteName,
+          "url": siteURL
+        }
+      })} />
+    )}
+
     <link rel="stylesheet" href="/styles/global.css" />
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="/">AI Tools Pro</a>
       <nav>
-        <a href="/posts/">Guides</a>
+        <a href="/posts/">Reviews</a>
         <a href="/about/">About</a>
       </nav>
     </header>
@@ -25,7 +75,7 @@ const {
       <slot />
     </main>
     <footer class="site-footer">
-      <p>Independent AI tool comparisons, automation tutorials, and practical workflow guides.</p>
+      <p>Independent AI tool reviews and comparisons for professionals.</p>
     </footer>
   </body>
 </html>
