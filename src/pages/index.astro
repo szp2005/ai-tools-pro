@@ -3,40 +3,54 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 const modules = import.meta.glob('../../content/posts/*.md', { eager: true });
 const posts = Object.entries(modules)
-  .map(([path, mod]) => {
-    const frontmatter = (mod as any).frontmatter ?? {};
+  .map(([path, mod]: [string, any]) => {
+    const fm = mod.frontmatter ?? {};
     return {
-      title: frontmatter.title ?? frontmatter.slug ?? path,
-      description: frontmatter.description ?? '',
-      date: frontmatter.date ?? frontmatter.pubDate ?? '',
-      slug: frontmatter.slug ?? path.split('/').pop()?.replace(/\.md$/, '')
+      slug: fm.slug ?? path.split('/').pop()?.replace(/\.md$/, ''),
+      title: fm.title ?? 'Untitled',
+      description: fm.description ?? '',
+      date: fm.date ? String(fm.date) : '',
     };
   })
-  .sort((a, b) => String(b.date).localeCompare(String(a.date)));
+  .sort((a, b) => (b.date > a.date ? 1 : -1));
 ---
-<BaseLayout>
-  <section class="hero">
-    <p class="eyebrow">AI tools, tested for real workflows</p>
-    <h1>Choose better AI tools for content, SEO, and automation.</h1>
-    <p>
-      Clear comparisons and implementation guides for creators, marketers, and
-      operators building AI-assisted workflows.
-    </p>
-  </section>
-
-  <section class="post-list" aria-label="Latest guides">
-    <div class="section-heading">
-      <h2>Latest guides</h2>
-      <a href="/posts/">View all</a>
-    </div>
-    <div class="grid">
-      {posts.slice(0, 6).map((post) => (
-        <article class="post-card">
-          <p class="date">{post.date}</p>
-          <h3><a href={`/posts/${post.slug}/`}>{post.title}</a></h3>
-          <p>{post.description}</p>
-        </article>
-      ))}
-    </div>
-  </section>
+<BaseLayout
+  title="AI Tools Pro"
+  description="Practical comparisons, workflows, and buying guides for AI tools."
+  canonicalURL="https://ai-tools-pro.pages.dev/"
+>
+  <div class="home">
+    <section class="hero">
+      <h1>AI Tools Pro</h1>
+      <p>Practical comparisons, workflows, and buying guides for AI tools.</p>
+    </section>
+    <section class="posts">
+      <h2>Reviews</h2>
+      <ul class="post-list">
+        {posts.map(post => (
+          <li class="post-item">
+            <a href={`/posts/${post.slug}/`}>
+              <h3>{post.title}</h3>
+              {post.description && <p>{post.description}</p>}
+              {post.date && <time>{post.date}</time>}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  </div>
 </BaseLayout>
+
+<style>
+.home { max-width: 860px; margin: 0 auto; padding: 2rem 1rem; }
+.hero { text-align: center; padding: 3rem 0 2rem; border-bottom: 1px solid #e5e7eb; margin-bottom: 2rem; }
+.hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; }
+.hero p { color: #4b5563; font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
+.posts h2 { font-size: 1.5rem; font-weight: 600; margin-bottom: 1.5rem; }
+.post-list { list-style: none; padding: 0; display: grid; gap: 1.5rem; }
+.post-item a { display: block; padding: 1.5rem; border: 1px solid #e5e7eb; border-radius: 8px; text-decoration: none; color: inherit; transition: box-shadow 0.2s; }
+.post-item a:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-color: #d1d5db; }
+.post-item h3 { font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; color: #111827; }
+.post-item p { color: #6b7280; font-size: 0.95rem; margin: 0 0 0.75rem; }
+.post-item time { color: #9ca3af; font-size: 0.85rem; }
+</style>
