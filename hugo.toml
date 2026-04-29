@@ -1,0 +1,26 @@
+baseURL = "https://ai-tools-pro.pages.dev/"
+languageCode = "en-us"
+title = "AI Tools Pro"
+theme = "PaperMod"
+
+[params]
+  description = "Expert reviews and guides for the best AI writing and productivity tools in 2026."
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  defaultTheme = "auto"
+
+  [params.homeInfoParams]
+    Title = "AI Tools Pro"
+    Content = "In-depth reviews of the best AI tools for writers and solopreneurs."
+
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
