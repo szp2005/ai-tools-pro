@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const modules = import.meta.glob('../../../content/posts/*.md', { eager: true });
+  return Object.entries(modules).map(([path, mod]) => {
+    const frontmatter = (mod as any).frontmatter ?? {};
+    const slug = frontmatter.slug ?? path.split('/').pop()?.replace(/\.md$/, '');
+    return {
+      params: { slug },
+      props: { post: mod, frontmatter }
+    };
+  });
+}
+
+const { post, frontmatter } = Astro.props;
+const { Content } = (post as any);
+const date = frontmatter.date ?? frontmatter.pubDate ?? '';
+---
+<BaseLayout title={`${frontmatter.title} | AI Tools Pro`} description={frontmatter.description}>
+  <article class="article">
+    <header>
+      <p class="date">{date}</p>
+      <h1>{frontmatter.title}</h1>
+      {frontmatter.description && <p class="dek">{frontmatter.description}</p>}
+    </header>
+    <Content />
+  </article>
+</BaseLayout>

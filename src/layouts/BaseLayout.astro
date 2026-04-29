@@ -1,0 +1,31 @@
+---
+const {
+  title = 'AI Tools Pro',
+  description = 'Practical comparisons, workflows, and buying guides for AI tools used by marketers, creators, and automation teams.'
+} = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="stylesheet" href="/styles/global.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">AI Tools Pro</a>
+      <nav>
+        <a href="/posts/">Guides</a>
+        <a href="/about/">About</a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <p>Independent AI tool comparisons, automation tutorials, and practical workflow guides.</p>
+    </footer>
+  </body>
+</html>

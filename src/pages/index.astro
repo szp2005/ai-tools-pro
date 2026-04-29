@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const modules = import.meta.glob('../../content/posts/*.md', { eager: true });
+const posts = Object.entries(modules)
+  .map(([path, mod]) => {
+    const frontmatter = (mod as any).frontmatter ?? {};
+    return {
+      title: frontmatter.title ?? frontmatter.slug ?? path,
+      description: frontmatter.description ?? '',
+      date: frontmatter.date ?? frontmatter.pubDate ?? '',
+      slug: frontmatter.slug ?? path.split('/').pop()?.replace(/\.md$/, '')
+    };
+  })
+  .sort((a, b) => String(b.date).localeCompare(String(a.date)));
+---
+<BaseLayout>
+  <section class="hero">
+    <p class="eyebrow">AI tools, tested for real workflows</p>
+    <h1>Choose better AI tools for content, SEO, and automation.</h1>
+    <p>
+      Clear comparisons and implementation guides for creators, marketers, and
+      operators building AI-assisted workflows.
+    </p>
+  </section>
+
+  <section class="post-list" aria-label="Latest guides">
+    <div class="section-heading">
+      <h2>Latest guides</h2>
+      <a href="/posts/">View all</a>
+    </div>
+    <div class="grid">
+      {posts.slice(0, 6).map((post) => (
+        <article class="post-card">
+          <p class="date">{post.date}</p>
+          <h3><a href={`/posts/${post.slug}/`}>{post.title}</a></h3>
+          <p>{post.description}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
