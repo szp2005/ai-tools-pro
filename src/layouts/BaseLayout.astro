@@ -6,6 +6,9 @@ interface Props {
   pubDate?: string;
   isArticle?: boolean;
   noindex?: boolean;
+  dateModified?: string;
+  author?: string;
+  articleImage?: string;
 }
 const {
   title = 'AI Tools Pro',
@@ -14,6 +17,9 @@ const {
   pubDate,
   isArticle = false,
   noindex = false,
+  dateModified,
+  author,
+  articleImage,
 } = Astro.props;
 const siteName = 'AI Tools Pro';
 const siteURL = 'https://ai.toolrouteai.com';
@@ -60,10 +66,26 @@ const ogImage = `${siteURL}/og-default.png`;
         "headline": title,
         "description": description,
         "datePublished": pubDate,
+        "dateModified": dateModified ?? pubDate,
+        "image": articleImage ?? ogImage,
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": canonicalURL
+        },
+        "author": {
+          "@type": "Person",
+          "name": author ?? "Editorial Team",
+          "url": `${siteURL}/about/`
+        },
         "publisher": {
           "@type": "Organization",
           "name": siteName,
-          "url": siteURL
+          "url": siteURL,
+          "logo": {
+            "@type": "ImageObject",
+            "url": ogImage
+          }
         }
       })} />
     )}
