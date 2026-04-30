@@ -1,0 +1,3 @@
+# Cloudflare Pages: enforce 404 status for unmatched paths
+# Existing files are served as-is; only truly missing paths fall through here
+/*    /404.html    404
