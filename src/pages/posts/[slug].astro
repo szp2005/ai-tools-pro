@@ -25,7 +25,7 @@ const canonicalURL = new URL(`/posts/${frontmatter.slug ?? Astro.params.slug}/`,
   pubDate={frontmatter.date ? String(frontmatter.date) : undefined}
   isArticle={true}
 >
-  <article class="article">
+  <article class="article" data-pagefind-body>
     <header>
       <p class="date">{frontmatter.date}</p>
       <h1>{frontmatter.title}</h1>
