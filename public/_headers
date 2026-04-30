@@ -1,0 +1,44 @@
+# CF Pages cache strategy
+# Long-cache static assets (immutable by hash where possible)
+/og-default.png
+  Cache-Control: public, max-age=31536000, immutable
+
+/styles/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/pagefind/*
+  Cache-Control: public, max-age=3600
+
+# Sitemaps: shorter cache for fresh updates
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+  X-Robots-Tag: noindex
+
+/rss.xml
+  Cache-Control: public, max-age=1800
+
+# robots.txt
+/robots.txt
+  Cache-Control: public, max-age=86400
+
+# IndexNow key file
+/*.txt
+  Cache-Control: public, max-age=86400
+
+# HTML pages: short cache for dynamic content
+/*.html
+  Cache-Control: public, max-age=300, must-revalidate
+
+# Search page should not be cached aggressively (Pagefind UI loads dynamically)
+/search/*
+  Cache-Control: public, max-age=60, must-revalidate
+
+# Security headers globally
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
