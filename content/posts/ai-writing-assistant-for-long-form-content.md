@@ -138,5 +138,5 @@ The tools are ready. The mastery lies in the orchestration.
 
 - [How to Use Gemini for Content Writing: An Expert Guide](/posts/how-to-use-gemini-for-content-writing/)
 - [The Ultimate Guide to AI Tools for SEO Writing: Elevate Your Content Strategy](/posts/ai-tools-for-seo-writing/)
-- [Why Automate Content with n8n and Claude?](/posts/2026-04-29-how-to-automate-content-with-n8n-and-claude/)
+- [Why Automate Content with n8n and Claude?](/posts/how-to-automate-content-with-n8n-and-claude/)
 - [The Ultimate Guide: Best AI Tools for Content Creation in 2026](/posts/best-ai-tools-for-content-creation/)
