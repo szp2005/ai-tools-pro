@@ -83,14 +83,29 @@ function extractProducts(rawMd: string): ProductItem[] {
 export async function getStaticPaths() {
   const modules = import.meta.glob('../../../content/posts/*.md', { eager: true });
   const rawModules = import.meta.glob('../../../content/posts/*.md', { eager: true, query: '?raw', import: 'default' }) as Record<string, string>;
+  const readFaq = (rawMd: string): FaqItem[] => {
+    const m = rawMd.match(/##\s+Frequently Asked Questions\s*([\s\S]*?)(?=\n##\s|\n---\s|$)/i);
+    if (!m) return [];
+    const block = m[1];
+    const items: FaqItem[] = [];
+    const qRegex = /###\s+(.+?)\n([\s\S]*?)(?=\n###\s|$)/g;
+    let match;
+    while ((match = qRegex.exec(block)) !== null) {
+      const q = match[1].trim();
+      const a = match[2].trim().split(/\n\s*\n/)[0].trim();
+      if (q && a) items.push({ q, a });
+    }
+    return items;
+  };
+  const readProducts = (rawMd: string): ProductItem[] => extractProducts(rawMd);
   return Object.entries(modules).map(([path, mod]) => {
     const frontmatter = (mod as any).frontmatter ?? {};
     const slug = frontmatter.slug ?? path.split('/').pop()?.replace(/\.md$/, '');
     const rawMd = rawModules[path] ?? '';
-    const faq = extractFaq(rawMd);
+    const faq = readFaq(rawMd);
     // Product extraction only for review/comparison/roundup types
     const isReview = ['review', 'comparison', 'roundup', 'best-of'].includes(String(frontmatter.type ?? '').toLowerCase());
-    const products = isReview ? extractProducts(rawMd) : [];
+    const products = isReview ? readProducts(rawMd) : [];
     return {
       params: { slug },
       props: { post: mod, frontmatter, faq, products }
