@@ -1,20 +1,40 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
+interface FaqItem { q: string; a: string; }
+
+function extractFaq(rawMd: string): FaqItem[] {
+  const m = rawMd.match(/##\s+Frequently Asked Questions\s*([\s\S]*?)(?=\n##\s|\n---\s|$)/i);
+  if (!m) return [];
+  const block = m[1];
+  const items: FaqItem[] = [];
+  const qRegex = /###\s+(.+?)\n([\s\S]*?)(?=\n###\s|$)/g;
+  let match;
+  while ((match = qRegex.exec(block)) !== null) {
+    const q = match[1].trim();
+    const a = match[2].trim().split(/\n\s*\n/)[0].trim();
+    if (q && a) items.push({ q, a });
+  }
+  return items;
+}
+
 export async function getStaticPaths() {
   const modules = import.meta.glob('../../../content/posts/*.md', { eager: true });
+  const rawModules = import.meta.glob('../../../content/posts/*.md', { eager: true, query: '?raw', import: 'default' }) as Record<string, string>;
   return Object.entries(modules).map(([path, mod]) => {
     const frontmatter = (mod as any).frontmatter ?? {};
     const slug = frontmatter.slug ?? path.split('/').pop()?.replace(/\.md$/, '');
+    const rawMd = rawModules[path] ?? '';
+    const faq = extractFaq(rawMd);
     return {
       params: { slug },
-      props: { post: mod, frontmatter }
+      props: { post: mod, frontmatter, faq }
     };
   });
 }
 
-const { post, frontmatter } = Astro.props;
-const { Content } = (post as any);
+const { post, frontmatter, faq } = Astro.props as { post: any; frontmatter: any; faq: FaqItem[] };
+const { Content } = post;
 const siteURL = Astro.site ?? new URL(Astro.url.origin);
 const canonicalURL = new URL(`/posts/${frontmatter.slug ?? Astro.params.slug}/`, siteURL).href;
 ---
@@ -37,6 +57,17 @@ const canonicalURL = new URL(`/posts/${frontmatter.slug ?? Astro.params.slug}/`,
     <div class="content">
       <Content />
     </div>
+    {faq.length > 0 && (
+      <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faq.map((f: FaqItem) => ({
+          "@type": "Question",
+          "name": f.q,
+          "acceptedAnswer": { "@type": "Answer", "text": f.a }
+        }))
+      })} />
+    )}
   </article>
 </BaseLayout>
 
