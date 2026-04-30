@@ -162,5 +162,5 @@ Learning how to use Gemini for content writing requires shifting your mindset fr
 
 - [The Definitive Guide to AI Writing Assistants for Long-Form Content](/posts/ai-writing-assistant-for-long-form-content/)
 - [The Ultimate Guide to AI Tools for SEO Writing: Elevate Your Content Strategy](/posts/ai-tools-for-seo-writing/)
-- [Why Automate Content with n8n and Claude?](/posts/2026-04-29-how-to-automate-content-with-n8n-and-claude/)
+- [Why Automate Content with n8n and Claude?](/posts/how-to-automate-content-with-n8n-and-claude/)
 - [The Best AI Grammar Checker Tools in 2026: An Expert Guide](/posts/best-ai-grammar-checker-tools/)
