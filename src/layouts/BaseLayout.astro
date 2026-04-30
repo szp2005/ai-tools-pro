@@ -24,6 +24,7 @@ const {
 const siteName = 'AI Tools Pro';
 const siteURL = 'https://ai.toolrouteai.com';
 const ogImage = `${siteURL}/og-default.png`;
+const cloudflareWebAnalyticsToken = import.meta.env.PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN;
 ---
 <!doctype html>
 <html lang="en">
@@ -122,6 +123,14 @@ const ogImage = `${siteURL}/og-default.png`;
     )}
 
     <link rel="stylesheet" href="/styles/global.css" />
+    {cloudflareWebAnalyticsToken && (
+      <script
+        is:inline
+        defer
+        src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon={JSON.stringify({ token: cloudflareWebAnalyticsToken })}
+      ></script>
+    )}
   </head>
   <body>
     <header class="site-header">
