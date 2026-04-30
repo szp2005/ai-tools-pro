@@ -133,6 +133,6 @@ Writesonic is not a replacement for human creativity; it is a force multiplier f
 ## Related Reading
 
 - [Synthesia AI Video Generator Review: Is It Worth the Hype in 2026?](/posts/synthesia-ai-video-review/)
-- [The AI Writing Landscape in 2026: Beyond Text Generation](/posts/2026-04-28-best-ai-writing-tools-2026/)
-- [Why Automate Content with n8n and Claude?](/posts/2026-04-29-how-to-automate-content-with-n8n-and-claude/)
+- [The AI Writing Landscape in 2026: Beyond Text Generation](/posts/best-ai-writing-tools-2026/)
+- [Why Automate Content with n8n and Claude?](/posts/how-to-automate-content-with-n8n-and-claude/)
 - [The Ultimate Guide to AI Tools for Email Writing: Enhancing Productivity and Tone](/posts/ai-tools-for-email-writing/)
