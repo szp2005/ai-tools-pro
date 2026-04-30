@@ -1,12 +1,36 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
-<BaseLayout title="About AI Tools Pro">
-  <section class="page-heading">
-    <h1>About</h1>
-    <p>
-      AI Tools Pro publishes practical, plain-English guides for choosing and
-      implementing AI tools in content, marketing, and automation workflows.
-    </p>
-  </section>
+<BaseLayout title="About AI Tools Pro" description="How AI Tools Pro researches AI software for marketers, creators, and automation teams — independent comparisons and workflow guides.">
+  <article class="about">
+    <h1>About AI Tools Pro</h1>
+    <p class="lead">AI Tools Pro is an independent publication focused on AI software comparisons, workflow guides, and integration tutorials.</p>
+
+    <h2>What we cover</h2>
+    <p>AI writing assistants, image generators, meeting and notetaking tools, content automation pipelines, SEO and marketing AI, no-code AI workflows (n8n, Zapier, Make), and how to combine these tools without paying for what you do not need.</p>
+
+    <h2>Our editorial approach</h2>
+    <ul>
+      <li><strong>Independent &amp; reader-first.</strong> We don't accept payment for product placements. Recommendations are based on research, hands-on testing where possible, and analysis of established expert sources.</li>
+      <li><strong>Research-driven.</strong> Every guide draws from product specs, manufacturer documentation, established review benchmarks, and user feedback patterns across multiple communities.</li>
+      <li><strong>Updated when it matters.</strong> When products are updated or our recommendations change, articles are revised — not silently overwritten. Major changes are dated.</li>
+      <li><strong>Honest trade-offs.</strong> Every recommendation comes with explicit caveats. There is no perfect product; we name where each option falls short.</li>
+    </ul>
+
+    <h2>How to use this site</h2>
+    <p>Browse by topic on the <a href="/tags/">Tags</a> page, jump straight to the <a href="/posts/">post archive</a>, or use <a href="/search/">site search</a> to find a specific keyword.</p>
+
+    <h2>Disclosure</h2>
+    <p>Some links may be affiliate links. We earn a small commission if you buy through them, at no additional cost to you. This never influences which products we recommend or how we rank them.</p>
+  </article>
 </BaseLayout>
+
+<style>
+  .about { max-width: 760px; margin: 0 auto; padding: 2.5rem 1.25rem; line-height: 1.7; }
+  .about h1 { font-size: 2.1rem; margin-bottom: .5rem; }
+  .about .lead { color: #4b5563; font-size: 1.1rem; margin-bottom: 2rem; }
+  .about h2 { font-size: 1.3rem; margin: 2rem 0 .75rem; }
+  .about ul { padding-left: 1.25rem; }
+  .about li { margin-bottom: .65rem; }
+  .about a { color: #2563eb; text-decoration: underline; }
+</style>
