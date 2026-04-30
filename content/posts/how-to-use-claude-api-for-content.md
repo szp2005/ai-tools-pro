@@ -231,7 +231,7 @@ The key to success is iteration. Don't expect the perfect article on your first 
 
 ## Related Reading
 
-- [Why Automate Content with n8n and Claude?](/posts/2026-04-29-how-to-automate-content-with-n8n-and-claude/)
+- [Why Automate Content with n8n and Claude?](/posts/how-to-automate-content-with-n8n-and-claude/)
 - [The Best AI Image Generation Tools in 2026: A Comprehensive Guide](/posts/best-ai-image-generation-tools-2026/)
 - [The Ultimate Guide: Best AI Tools for Content Creation in 2026](/posts/best-ai-tools-for-content-creation/)
 - [How to Use AI for SEO Content Planning: A 2026 Blueprint](/posts/how-to-use-ai-for-seo-content-planning/)
