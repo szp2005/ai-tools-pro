@@ -78,6 +78,25 @@ const ogImage = `${siteURL}/og-default.png`;
         ]
       })} />
     )}
+    
+    {!isArticle && Astro.url.pathname === '/' && (
+      <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": siteName,
+        "url": siteURL,
+        "description": description,
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": `${siteURL}/search/?q={search_term_string}`
+          },
+          "query-input": "required name=search_term_string"
+        }
+      })} />
+    )}
+
     <link rel="stylesheet" href="/styles/global.css" />
   </head>
   <body>
