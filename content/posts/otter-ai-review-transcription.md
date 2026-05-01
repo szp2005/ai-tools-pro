@@ -4,6 +4,7 @@ description: "A comprehensive review of Otter AI for transcription. Discover its
 pubDate: "2026-04-30"
 author: "Productivity Expert"
 tags: ["Otter AI", "Transcription", "Productivity", "AI Tools", "Review"]
+type: "review"
 ---
 
 # Otter AI Review: Is It the Best Transcription Tool for Your Workflow?
