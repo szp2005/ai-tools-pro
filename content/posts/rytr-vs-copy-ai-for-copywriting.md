@@ -4,6 +4,7 @@ description: "A comprehensive, expert comparison between Rytr and Copy AI for co
 pubDate: "2026-04-30"
 author: "AI Marketing Expert"
 tags: ["AI Tools", "Copywriting", "Rytr", "Copy AI", "Marketing Strategy"]
+type: "review"
 ---
 
 # Rytr vs Copy AI: Which AI Copywriting Tool is Best for Your Business in 2026?
