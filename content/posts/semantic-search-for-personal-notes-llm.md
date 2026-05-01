@@ -2,7 +2,7 @@
 title: "Semantic Search for Personal Notes LLM: Complete Setup Guide"
 description: "Learn how to build a semantic search for personal notes LLM system to instantly retrieve exact ideas, quotes, and context without exact keyword matching."
 pubDate: "2026-05-01"
-author: "AI Tools Editor"
+author: "Alex Chen"
 tags: ["semantic search", "LLM", "personal knowledge management", "productivity"]
 slug: "semantic-search-for-personal-notes-llm"
 type: "informational"

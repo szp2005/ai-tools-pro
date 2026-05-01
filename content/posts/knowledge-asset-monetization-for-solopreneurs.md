@@ -2,7 +2,7 @@
 title: "Knowledge Asset Monetization for Solopreneurs: Complete Guide"
 description: "Learn effective strategies for knowledge asset monetization for solopreneurs. Turn your expertise into digital products, courses, and scalable income streams."
 pubDate: "2026-05-01"
-author: "AI Tools Editor"
+author: "Alex Chen"
 tags: ["knowledge monetization", "solopreneurship", "digital products", "creator economy"]
 slug: "knowledge-asset-monetization-for-solopreneurs"
 type: "informational"

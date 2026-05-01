@@ -2,7 +2,7 @@
 title: "n8n Workflow Automation for Content Creators: Complete 2026 Guide"
 description: "Discover how n8n workflow automation for content creators saves hours weekly. Learn to build custom pipelines connecting your favorite apps and AI tools."
 pubDate: "2026-05-01"
-author: "AI Tools Editor"
+author: "Alex Chen"
 tags: ["automation", "content creation", "n8n", "productivity"]
 slug: "n8n-workflow-automation-for-content-creators"
 type: "informational"

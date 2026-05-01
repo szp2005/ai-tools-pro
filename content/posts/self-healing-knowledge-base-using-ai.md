@@ -2,7 +2,7 @@
 title: "Self-Healing Knowledge Base Using AI: Complete Guide to Automated Accuracy"
 description: "Learn how to build a self-healing knowledge base using AI. Discover the core mechanics, data architecture, and practical steps to automate documentation accuracy."
 pubDate: "2026-05-01"
-author: "AI Tools Editor"
+author: "Alex Chen"
 tags: ["ai tools", "knowledge management", "automation", "documentation"]
 slug: "self-healing-knowledge-base-using-ai"
 type: "informational"
