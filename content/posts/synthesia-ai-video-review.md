@@ -4,6 +4,7 @@ description: "A comprehensive, hands-on review of Synthesia AI. We explore its a
 pubDate: "2026-04-30"
 author: "AI Marketing Analyst"
 tags: ["AI Video", "Synthesia", "Video Marketing", "AI Tools Review"]
+type: "review"
 ---
 
 > **Quick Answer:** Synthesia AI Video Generator Review matters because it gives marketers, founders, and solo operators a practical way to solve the problem behind the search. A comprehensive, hands-on review of Synthesia AI. We explore its avatar realism, voice synthesis quality, features, pricing, and whether it's the right tool for your video marketing strategy.
