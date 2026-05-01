@@ -4,6 +4,7 @@ description: "Discover the most powerful AI tools for video editing 2026 has to 
 pubDate: "2026-04-30"
 author: "AI Post-Production Expert"
 tags: ["AI", "Video Editing", "Post-Production", "Tech Trends 2026", "Content Creation"]
+type: "informational"
 ---
 
 # The Ultimate Guide to AI Tools for Video Editing in 2026
