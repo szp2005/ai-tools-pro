@@ -5,6 +5,7 @@ description: "Master AI-driven SEO content planning. Learn how to leverage LLMs 
 categories: ["AI Tools", "SEO Strategy"]
 tags: ["Content Planning", "SEO Automation", "Claude", "Gemini"]
 slug: "how-to-use-ai-for-seo-content-planning"
+type: "informational"
 ---
 
 # How to Use AI for SEO Content Planning: A 2026 Blueprint
