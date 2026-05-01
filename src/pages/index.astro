@@ -9,7 +9,7 @@ const posts = Object.entries(modules)
       slug: fm.slug ?? path.split('/').pop()?.replace(/\.md$/, ''),
       title: fm.title ?? 'Untitled',
       description: fm.description ?? '',
-      date: fm.date ? String(fm.date) : '',
+      date: fm.pubDate ? String(fm.pubDate) : (fm.date ? String(fm.date) : ''),
     };
   })
   .sort((a, b) => (b.date > a.date ? 1 : -1));

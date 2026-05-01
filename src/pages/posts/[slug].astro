@@ -193,7 +193,7 @@ const itemListSchema = products.length >= 2 ? {
   title={`${frontmatter.title} | AI Tools Pro`}
   description={frontmatter.description ?? ''}
   canonicalURL={canonicalURL}
-  pubDate={frontmatter.date ? String(frontmatter.date) : undefined}
+  pubDate={frontmatter.pubDate ?? frontmatter.date ? String(frontmatter.pubDate ?? frontmatter.date) : undefined}
   isArticle={true}
   dateModified={frontmatter.dateModified ?? frontmatter.pubDate ?? frontmatter.date}
   author={frontmatter.author}
@@ -201,7 +201,7 @@ const itemListSchema = products.length >= 2 ? {
 >
   <article class="article" data-pagefind-body>
     <header>
-      <p class="date">{frontmatter.date}</p>
+      <p class="date">{frontmatter.pubDate ?? frontmatter.date}</p>
       <h1>{frontmatter.title}</h1>
       {frontmatter.description && <p class="excerpt">{frontmatter.description}</p>}
     </header>
