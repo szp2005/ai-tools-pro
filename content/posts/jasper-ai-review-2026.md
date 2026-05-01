@@ -4,6 +4,7 @@ description: "An in-depth, expert review of Jasper AI in 2026. We explore its ne
 pubDate: "2026-04-30"
 author: "AI Marketing Expert"
 tags: ["AI Tools", "Jasper AI", "Marketing", "Content Creation", "Review"]
+type: "review"
 ---
 
 # Jasper AI Review 2026: Is It Still the Best AI for Marketers?
