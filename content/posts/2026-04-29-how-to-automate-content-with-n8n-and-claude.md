@@ -1,5 +1,6 @@
 ---
 title: "Why Automate Content with n8n and Claude?"
+author: "Alex Chen"
 date: 2026-04-29
 slug: how-to-automate-content-with-n8n-and-claude
 description: "Provide a downloadable JSON file of the complete n8n workflow so users can import it directly and start immediately."
@@ -208,25 +209,6 @@ For content marketers who need volume and care about data handling, n8n + Claude
 
 ---
 
-## FAQ {#faq}
-
-**Q1: Do I need coding experience to build this workflow?**
-No. Every step in this guide uses n8n's visual interface and native nodes. The one Code node in Step 3 is copy-paste — you do not need to understand JavaScript to use it.
-
-**Q2: What does this workflow actually cost per month?**
-If you run 50 blog briefs per week using Claude 3.5 Sonnet, expect roughly $8–$12/month in API costs plus your n8n plan. Self-hosting n8n on a Hetzner CX11 server runs about $4/month.
-
-**Q3: Can I use a different Claude model, like Haiku, to save money?**
-Yes. Claude 3 Haiku is significantly cheaper and fast. For shorter outputs like social posts or meta descriptions, it performs well. For 1,500-word drafts, Sonnet produces noticeably more coherent structure.
-
-**Q4: How do I prevent the same Google Sheet row from triggering twice?**
-The workflow includes a step that writes `Done` to the Status column after each successful run. The trigger node filters for rows where Status is empty. Rows already marked Done are ignored.
-
-**Q5: Where do I get the downloadable workflow JSON mentioned in the article?**
-[Download the complete n8n workflow JSON here](URL_PLACEHOLDER_9). Import it in n8n via **Settings → Import from File**. You will still need to connect your own credentials (Google, Anthropic, WordPress), but the node structure, expressions, and prompt templates are pre-built.
-
----
-
 ## Conclusion {#conclusion}
 
 The pipeline described here — Google Sheet trigger, Claude content generation, WordPress draft publishing — is not a prototype. It is a production workflow that runs unsupervised and produces usable first drafts consistently. The investment is roughly two hours to set up, after which each piece of content costs you about 90 seconds of clock time and $0.02 in API fees.
@@ -243,20 +225,41 @@ Start with the brief generation workflow, run it for two weeks, then extend it. 
 
 ## Frequently Asked Questions
 
+### Do I need coding experience to build this workflow?
+
+No. Every step in this guide uses n8n's visual interface and native nodes. The one Code node in Step 3 is copy-paste — you do not need to understand JavaScript to use it.
+
+### What does this workflow actually cost per month?
+
+If you run 50 blog briefs per week using Claude 3.5 Sonnet, expect roughly $8–$12/month in API costs plus your n8n plan. Self-hosting n8n on a Hetzner CX11 server runs about $4/month.
+
+### Can I use a different Claude model, like Haiku, to save money?
+
+Yes. Claude 3 Haiku is significantly cheaper and fast. For shorter outputs like social posts or meta descriptions, it performs well. For 1,500-word drafts, Sonnet produces noticeably more coherent structure.
+
+### How do I prevent the same Google Sheet row from triggering twice?
+
+The workflow includes a step that writes `Done` to the Status column after each successful run. The trigger node filters for rows where Status is empty. Rows already marked Done are ignored.
+
+### Where do I get the downloadable workflow JSON mentioned in the article?
+
+[Download the complete n8n workflow JSON here](URL_PLACEHOLDER_9). Import it in n8n via **Settings → Import from File**. You will still need to connect your own credentials (Google, Anthropic, WordPress), but the node structure, expressions, and prompt templates are pre-built.
+
 ### What are the main benefits of using n8n and Claude for content automation?
+
 Combining n8n and Claude allows you to create highly customized, multi-step workflows that can generate, edit, and publish content automatically. This integration saves significant time while maintaining high-quality output thanks to Claude's advanced natural language capabilities and n8n's flexible node-based routing.
 
 ### How does Claude compare to ChatGPT when used in n8n automation workflows?
+
 Claude often provides more nuanced, human-like writing and handles long-context instructions better than many ChatGPT models. When integrated into n8n, this results in content that requires less manual editing and follows specific brand voice guidelines more consistently.
 
 ### Is coding experience required to set up an n8n and Claude content pipeline?
+
 While n8n offers a visual drag-and-drop interface that makes it accessible to non-developers, a basic understanding of APIs and JSON is highly beneficial. However, many pre-built templates exist that allow beginners to start automating content with Claude without writing any code.
 
 ### Can this automation setup handle SEO research and publishing as well?
+
 Yes, n8n can connect to SEO tools to fetch keyword data, feed that information into Claude to generate optimized content, and then automatically publish the result to platforms like WordPress. This creates a seamless, end-to-end SEO content pipeline that operates with minimal human intervention.
-
-
----
 
 ## Related Reading
 
