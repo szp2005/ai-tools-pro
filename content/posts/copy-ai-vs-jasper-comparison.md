@@ -4,6 +4,7 @@ description: "An in-depth, expert comparison of Copy AI vs Jasper. Discover the 
 pubDate: "2026-04-30"
 author: "AI Expert"
 tags: ["ai writing tools", "copy ai", "jasper ai", "content marketing", "seo"]
+type: "review"
 ---
 
 # Copy AI vs Jasper Comparison: Which AI Writing Tool Wins in 2026?
