@@ -97,7 +97,39 @@ export async function getStaticPaths() {
     }
     return items;
   };
-  const readProducts = (rawMd: string): ProductItem[] => extractProducts(rawMd);
+  const readProducts = (rawMd: string): ProductItem[] => {
+    const items: ProductItem[] = [];
+    const headingRe = /^###\s+(?:\d+\.\s+|(?:Best|Top|Editor['']s|Premium|Budget)[^:]{0,30}:\s+)(.+?)$/gm;
+    const hMatches: Array<{ name: string; start: number; end: number }> = [];
+    let hm;
+    while ((hm = headingRe.exec(rawMd)) !== null) {
+      hMatches.push({ name: hm[1].trim(), start: hm.index, end: hm.index + hm[0].length });
+    }
+    for (let i = 0; i < hMatches.length; i++) {
+      const cur = hMatches[i];
+      const next = hMatches[i + 1];
+      const sectionStart = cur.end;
+      const sectionEnd = next ? next.start : Math.min(sectionStart + 4000, rawMd.length);
+      const section = rawMd.slice(sectionStart, sectionEnd);
+      if (/^\s*\?$/.test(cur.name) || /^(Why|How|What|When|Where|Step\s)/i.test(cur.name)) continue;
+      const paras = section.split(/\n\s*\n/).map((p: string) => p.trim()).filter(Boolean);
+      const description = paras.find((p: string) => !p.startsWith('-') && !p.startsWith('*') && !p.startsWith('**Pros') && !p.startsWith('**Cons')) ?? '';
+      const rm = section.match(/(?:rating[:\s]+)?(\d(?:\.\d)?)\s*(?:\/|out of)\s*5/i);
+      const rating = rm ? parseFloat(rm[1]) : undefined;
+      const prosM = section.match(/\*\*Pros[:\s]*\*\*\s*\n([\s\S]*?)(?=\n\*\*|\n##|\n###|$)/i);
+      const consM = section.match(/\*\*Cons[:\s]*\*\*\s*\n([\s\S]*?)(?=\n\*\*|\n##|\n###|$)/i);
+      const parseBullets = (blk: string) =>
+        blk.split('\n').map((l: string) => l.replace(/^[-*]\s+/, '').trim()).filter((l: string) => l && !l.startsWith('**'));
+      const pros = prosM ? parseBullets(prosM[1]) : undefined;
+      const cons = consM ? parseBullets(consM[1]) : undefined;
+      const pm = section.match(/\$(\d+(?:[,.]\d+)?)\s*(?:[-–to]+\s*\$(\d+(?:[,.]\d+)?))?/);
+      const priceRange = pm ? (pm[2] ? `$${pm[1]}-$${pm[2]}` : `$${pm[1]}+`) : undefined;
+      if (cur.name && description && description.length > 30) {
+        items.push({ name: cur.name.replace(/\*\*/g, '').trim(), description: description.slice(0, 250), rating, pros, cons, priceRange });
+      }
+    }
+    return items;
+  };
   return Object.entries(modules).map(([path, mod]) => {
     const frontmatter = (mod as any).frontmatter ?? {};
     const slug = frontmatter.slug ?? path.split('/').pop()?.replace(/\.md$/, '');
