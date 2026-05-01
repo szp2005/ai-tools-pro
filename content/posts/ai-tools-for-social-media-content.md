@@ -4,6 +4,7 @@ description: "Discover the best AI tools for social media content creation, cura
 pubDate: "2026-04-30"
 author: "AI Marketing Specialist"
 tags: ["AI", "Social Media", "Content Creation", "Marketing", "Productivity"]
+type: "informational"
 ---
 
 # The Ultimate Guide to AI Tools for Social Media Content in 2026
