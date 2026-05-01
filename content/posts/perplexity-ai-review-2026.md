@@ -5,6 +5,7 @@ pubDate: 2026-04-30
 author: "Expert Reviewer"
 tags: ["AI", "Search Engine", "Productivity", "Perplexity", "Review"]
 category: "AI Tools"
+type: "review"
 ---
 
 > **Quick Answer:** Perplexity AI Review 2026 matters because it gives marketers, founders, and solo operators a practical way to solve the problem behind the search. An in-depth Perplexity AI review for 2026. We explore its features, pricing, deep research capabilities, and how it compares to ChatGPT and Gemini.
