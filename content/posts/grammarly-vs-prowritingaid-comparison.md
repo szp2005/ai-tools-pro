@@ -4,6 +4,7 @@ description: "An in-depth, expert comparison of Grammarly and ProWritingAid. Dis
 pubDate: "2026-04-30"
 author: "Expert Editorial Team"
 tags: ["Writing Tools", "SEO", "Productivity", "Grammarly", "ProWritingAid"]
+type: "review"
 ---
 
 # Grammarly vs ProWritingAid: The Ultimate Comparison for Writers
