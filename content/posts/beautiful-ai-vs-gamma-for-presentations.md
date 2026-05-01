@@ -4,6 +4,7 @@ description: "An in-depth, expert analysis of Beautiful.ai and Gamma App. Discov
 pubDate: 2026-04-30
 author: "Presentation Strategy Team"
 tags: ["ai presentations", "beautiful ai", "gamma", "presentation software", "productivity tools"]
+type: "review"
 ---
 
 # Beautiful.ai vs Gamma for Presentations: The Ultimate Expert Comparison
