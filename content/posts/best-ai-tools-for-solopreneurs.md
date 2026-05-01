@@ -4,6 +4,7 @@ description: "Discover the ultimate stack of AI tools for solopreneurs. Learn ho
 pubDate: "2026-04-30"
 author: "AI Business Expert"
 tags: ["AI Tools", "Solopreneur", "Productivity", "Automation", "Business Growth"]
+type: "review"
 ---
 
 # The Best AI Tools for Solopreneurs in 2026: Scale Your One-Person Business
