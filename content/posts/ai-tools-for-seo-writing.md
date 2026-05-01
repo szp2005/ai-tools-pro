@@ -4,6 +4,7 @@ description: "Discover how AI tools for SEO writing can transform your content c
 pubDate: 2026-05-01
 author: "Content Strategy Team"
 tags: ["SEO", "AI Writing", "Content Marketing", "Artificial Intelligence"]
+type: "informational"
 ---
 
 > **Quick Answer:** The Ultimate Guide to AI Tools for SEO Writing matters because it gives marketers, founders, and solo operators a practical way to solve the problem behind the search. Discover how AI tools for SEO writing can transform your content creation process. Learn about the best platforms, strategies for integration, and how to maintain a human touch while scaling your organic growth.
