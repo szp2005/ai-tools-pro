@@ -4,6 +4,7 @@ description: "A comprehensive, expert review of the Gamma App AI presentation ge
 pubDate: "2026-04-30"
 author: "Productivity & AI Systems Expert"
 tags: ["AI Tools", "Presentations", "Gamma App", "Productivity", "Software Review"]
+type: "review"
 ---
 
 # Gamma App AI Presentation Review: Is It The Future of Slides?
