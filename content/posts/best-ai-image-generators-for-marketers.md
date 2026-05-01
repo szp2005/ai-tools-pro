@@ -5,6 +5,7 @@ description: "Discover the top AI image generators for professional marketing te
 categories: ["AI Tools", "Visual Marketing"]
 tags: ["AI Art", "Marketing Strategy", "Midjourney", "Flux"]
 slug: "best-ai-image-generators-for-marketers"
+type: "review"
 ---
 
 # The 7 Best AI Image Generators for Marketers in 2026
