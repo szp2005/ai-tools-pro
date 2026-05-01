@@ -28,10 +28,10 @@ export async function getStaticPaths() {
       slug,
       date: typeof date === 'string' ? date : String(date),
     };
-    const tags = fm.tags ?? [];
+    const tags = [...(fm.tags ?? []), ...(fm.keywords ?? [])];
     for (const raw of tags) {
-      const tag = String(raw).toLowerCase().trim().replace(/\s+/g, '-');
-      if (!tag) continue;
+      const tag = String(raw).toLowerCase().trim().replace(/\s+/g, '-').replace(/\//g, '-').replace(/[^a-z0-9\-]/g, '').replace(/-+/g, '-').replace(/^-|-$/g, '');
+      if (!tag || tag.length < 2) continue;
       if (!byTag.has(tag)) byTag.set(tag, []);
       byTag.get(tag)!.push(post);
     }
