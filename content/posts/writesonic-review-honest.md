@@ -4,6 +4,7 @@ description: "An in-depth, brutally honest review of Writesonic. We dive deep in
 pubDate: 2026-04-30
 author: "AI Content Expert"
 tags: ["AI Writing", "Writesonic", "Content Marketing", "SEO", "Reviews"]
+type: "review"
 ---
 
 # Writesonic Review Honest: Is This AI Writer Actually Worth Your Money?
