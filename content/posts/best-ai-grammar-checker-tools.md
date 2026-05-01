@@ -6,6 +6,7 @@ author: "Writing Insights Team"
 tags: ["AI tools", "grammar checker", "writing productivity", "SEO"]
 category: "Writing Tools"
 slug: "best-ai-grammar-checker-tools"
+type: "review"
 ---
 
 # The Best AI Grammar Checker Tools in 2026: Elevate Your Writing
