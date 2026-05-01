@@ -4,6 +4,7 @@ description: "Discover how AI tools for email writing can transform your communi
 pubDate: "2026-04-30"
 author: "Communication Systems Architect"
 tags: ["AI", "Productivity", "Email Writing", "Business Communication", "Automation"]
+type: "informational"
 ---
 
 # The Ultimate Guide to AI Tools for Email Writing
