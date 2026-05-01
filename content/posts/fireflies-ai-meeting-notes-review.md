@@ -4,6 +4,7 @@ description: "An in-depth, expert review of Fireflies.ai. Discover how its autom
 pubDate: "2026-04-30"
 author: "Productivity Expert"
 tags: ["AI Tools", "Productivity", "Software Review", "Remote Work"]
+type: "review"
 ---
 
 # Fireflies AI Meeting Notes Review: Is It the Best AI Notetaker in 2026?
