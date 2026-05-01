@@ -4,6 +4,7 @@ description: "Discover advanced strategies and prompt engineering techniques on 
 pubDate: "2026-04-30"
 author: "Content Strategy Team"
 tags: ["AI Content", "Gemini", "Content Writing", "SEO", "Prompt Engineering", "Digital Marketing"]
+type: "informational"
 ---
 
 # How to Use Gemini for Content Writing: An Expert Guide to Scaling Quality Content
