@@ -4,6 +4,7 @@ description: "Discover which AI image generator is right for you in this compreh
 pubDate: 2026-04-30
 author: "AI Insights Team"
 tags: ["AI Art", "Stable Diffusion", "Midjourney", "Beginner's Guide", "Generative AI"]
+type: "review"
 ---
 
 # Stable Diffusion vs Midjourney for Beginners: The Ultimate Guide to Choosing Your First AI Image Generator
