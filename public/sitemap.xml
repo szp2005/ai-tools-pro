@@ -37,6 +37,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/posts/adobe-firefly-vs-canva-magic-studio-for-graphics/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/posts/ai-agent-for-customer-support-automation/</loc>
     <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -44,6 +50,12 @@
   </url>
   <url>
     <loc>https://ai.toolrouteai.com/posts/ai-agents-for-automated-linkedin-engagement-2026/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ai.toolrouteai.com/posts/ai-driven-marketing-calendar-for-small-agencies/</loc>
     <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -109,6 +121,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/posts/ai-tools-for-automated-b2b-lead-generation/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/posts/ai-tools-for-email-writing/</loc>
     <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -157,7 +175,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/posts/automate-customer-sentiment-analysis-with-openai-api/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/posts/automated-video-editing-tools-for-youtube-2026/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ai.toolrouteai.com/posts/automated-video-translation-for-global-content-creators/</loc>
     <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -170,6 +200,12 @@
   </url>
   <url>
     <loc>https://ai.toolrouteai.com/posts/best-ai-agent-for-personal-productivity-2026/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ai.toolrouteai.com/posts/best-ai-coding-assistants-for-indie-web-developers/</loc>
     <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -211,6 +247,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/posts/best-ai-tools-for-architectural-data-visualization/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/posts/best-ai-tools-for-content-creation/</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -229,6 +271,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/posts/best-ai-tools-for-interactive-fiction-writers/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/posts/best-ai-tools-for-solopreneurs-on-a-budget/</loc>
     <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -241,7 +289,31 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/posts/best-ai-tools-for-youtube-script-writing/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ai.toolrouteai.com/posts/best-ai-video-generators-for-short-form-content/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/posts/best-llm-tool-for-research-synthesis/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ai.toolrouteai.com/posts/build-a-custom-vector-database-with-pinecone/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ai.toolrouteai.com/posts/building-a-local-knowledge-base-with-llama-3/</loc>
     <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -266,6 +338,12 @@
   </url>
   <url>
     <loc>https://ai.toolrouteai.com/posts/custom-gpt-vs-claude-projects-for-personal-pkm/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ai.toolrouteai.com/posts/elevenlabs-vs-play-ht-for-professional-audiobook-narration/</loc>
     <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -302,6 +380,12 @@
   </url>
   <url>
     <loc>https://ai.toolrouteai.com/posts/grammarly-vs-prowritingaid-comparison/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ai.toolrouteai.com/posts/how-to-automate-cold-email-outreach-with-ai/</loc>
     <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -469,6 +553,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/posts/using-claude-sonnet-for-technical-software-documentation/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/posts/writesonic-review-honest/</loc>
     <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -493,6 +583,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/tags/customer-support/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/tags/ai-agents/</loc>
     <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -506,6 +602,12 @@
   </url>
   <url>
     <loc>https://ai.toolrouteai.com/tags/ai-tools/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ai.toolrouteai.com/tags/content-planning/</loc>
     <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -571,6 +673,24 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/tags/tts/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ai.toolrouteai.com/tags/lead-generation/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ai.toolrouteai.com/tags/sales-automation/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/tags/ai/</loc>
     <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -596,6 +716,12 @@
   </url>
   <url>
     <loc>https://ai.toolrouteai.com/tags/artificial-intelligence/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ai.toolrouteai.com/tags/social-media/</loc>
     <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -667,13 +793,43 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/tags/game-development/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/tags/solopreneur/</loc>
     <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/tags/video-marketing/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/tags/llm/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ai.toolrouteai.com/tags/machine-learning/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ai.toolrouteai.com/tags/local-ai/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ai.toolrouteai.com/tags/data-privacy/</loc>
     <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -734,12 +890,6 @@
   </url>
   <url>
     <loc>https://ai.toolrouteai.com/tags/perplexity-ai/</loc>
-    <lastmod>2026-05-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ai.toolrouteai.com/tags/local-ai/</loc>
     <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
