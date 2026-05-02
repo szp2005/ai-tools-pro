@@ -1,5 +1,5 @@
 ---
-image: "/og/using-ai-for-automated-software-bug-triaging.png"
+image: "/og/using-ai-for-automated-software-bug-triaging.webp"
 title: "Using AI for Automated Software Bug Triaging: Complete Guide"
 description: "Learn how using AI for automated software bug triaging can reduce resolution times, improve developer productivity, and streamline your entire QA workflow."
 pubDate: "2026-05-02"

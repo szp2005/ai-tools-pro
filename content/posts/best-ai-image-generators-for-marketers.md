@@ -1,5 +1,5 @@
 ---
-image: "/og/best-ai-image-generators-for-marketers.png"
+image: "/og/best-ai-image-generators-for-marketers.webp"
 title: "The 7 Best AI Image Generators for Marketers in 2026: From Concept to Campaign"
 author: "Alex Chen"
 date: 2026-04-29T13:30:00Z

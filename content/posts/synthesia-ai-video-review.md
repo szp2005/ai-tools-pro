@@ -1,5 +1,5 @@
 ---
-image: "/og/synthesia-ai-video-review.png"
+image: "/og/synthesia-ai-video-review.webp"
 title: "Synthesia AI Video Generator Review: Is It Worth the Hype in 2026?"
 description: "A comprehensive, hands-on review of Synthesia AI. We explore its avatar realism, voice synthesis quality, features, pricing, and whether it's the right."
 pubDate: "2026-04-30"

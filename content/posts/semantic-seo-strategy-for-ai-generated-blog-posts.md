@@ -1,5 +1,5 @@
 ---
-image: "/og/semantic-seo-strategy-for-ai-generated-blog-posts.png"
+image: "/og/semantic-seo-strategy-for-ai-generated-blog-posts.webp"
 title: "Semantic SEO Strategy for AI Generated Blog Posts: 7-Step Guide"
 description: "Learn the proven semantic SEO strategy for AI generated blog posts to build topical authority, bypass spam filters, and dominate search rankings in 2026."
 pubDate: "2026-05-02"

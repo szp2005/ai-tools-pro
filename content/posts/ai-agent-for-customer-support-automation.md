@@ -1,5 +1,5 @@
 ---
-image: "/og/ai-agent-for-customer-support-automation.png"
+image: "/og/ai-agent-for-customer-support-automation.webp"
 title: "Best AI Agent for Customer Support Automation in 2026"
 description: "Compare the top AI agents for customer support automation. Find the right AI tool to reduce resolution times and scale your support operations efficiently."
 pubDate: "2026-05-01"

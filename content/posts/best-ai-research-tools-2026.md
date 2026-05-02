@@ -1,5 +1,5 @@
 ---
-image: "/og/best-ai-research-tools-2026.png"
+image: "/og/best-ai-research-tools-2026.webp"
 title: "The Best AI Research Tools in 2026: A Comprehensive Guide"
 description: "Discover the top AI research tools of 2026 that are transforming academic research, literature reviews, data analysis, and scientific writing."
 author: "Alex Chen"

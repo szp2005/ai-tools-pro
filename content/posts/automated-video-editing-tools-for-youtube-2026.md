@@ -1,5 +1,5 @@
 ---
-image: "/og/automated-video-editing-tools-for-youtube-2026.png"
+image: "/og/automated-video-editing-tools-for-youtube-2026.webp"
 title: "Best Automated Video Editing Tools for YouTube in 2026"
 description: "Compare the top automated video editing tools for YouTube in 2026. Discover which AI-powered software will streamline your workflow and scale your channel."
 pubDate: "2026-05-01"

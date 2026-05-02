@@ -1,5 +1,5 @@
 ---
-image: "/og/best-ai-agent-for-personal-productivity-2026.png"
+image: "/og/best-ai-agent-for-personal-productivity-2026.webp"
 title: "7 Best AI Agents for Personal Productivity in 2026"
 description: "Discover the best AI agents for personal productivity in 2026. Compare top autonomous assistants for scheduling, task management, and deep work."
 pubDate: "2026-05-01"

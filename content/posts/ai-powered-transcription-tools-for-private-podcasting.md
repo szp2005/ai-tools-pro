@@ -1,5 +1,5 @@
 ---
-image: "/og/ai-powered-transcription-tools-for-private-podcasting.png"
+image: "/og/ai-powered-transcription-tools-for-private-podcasting.webp"
 title: "Best AI Powered Transcription Tools for Private Podcasting in 2026"
 description: "Discover the top AI powered transcription tools for private podcasting to secure sensitive audio, streamline workflows, and boost internal communication."
 pubDate: "2026-05-02"

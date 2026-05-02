@@ -1,5 +1,5 @@
 ---
-image: "/og/ai-image-upscaler-for-large-format-printing.png"
+image: "/og/ai-image-upscaler-for-large-format-printing.webp"
 title: "Best AI Image Upscaler for Large Format Printing in 2026"
 description: "Discover the top AI image upscaler for large format printing. Compare tools, workflows, and resolution requirements to get crisp banners and posters."
 pubDate: "2026-05-02"

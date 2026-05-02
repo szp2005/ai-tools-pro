@@ -1,5 +1,5 @@
 ---
-image: "/og/claude-api-for-custom-workflow-automation.png"
+image: "/og/claude-api-for-custom-workflow-automation.webp"
 title: "Claude API for Custom Workflow Automation: Complete Guide"
 description: "Master the Claude API for custom workflow automation. This technical guide covers setup, prompts, and practical use cases to streamline your daily operations."
 pubDate: "2026-05-01"

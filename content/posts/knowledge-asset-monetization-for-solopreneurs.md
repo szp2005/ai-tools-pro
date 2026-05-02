@@ -1,5 +1,5 @@
 ---
-image: "/og/knowledge-asset-monetization-for-solopreneurs.png"
+image: "/og/knowledge-asset-monetization-for-solopreneurs.webp"
 title: "Knowledge Asset Monetization for Solopreneurs: Complete Guide"
 description: "Learn effective strategies for knowledge asset monetization for solopreneurs. Turn your expertise into digital products, courses, and scalable income streams."
 pubDate: "2026-05-01"

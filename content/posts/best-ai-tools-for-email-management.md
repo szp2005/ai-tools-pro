@@ -1,5 +1,5 @@
 ---
-image: "/og/best-ai-tools-for-email-management.png"
+image: "/og/best-ai-tools-for-email-management.webp"
 title: "Best AI Tools for Email Management in 2026: Time-Saving Apps Reviewed"
 description: "Discover the best AI tools for email management. Compare features, pricing, and capabilities to automate your inbox, draft responses, and reclaim your time."
 pubDate: "2026-05-01"

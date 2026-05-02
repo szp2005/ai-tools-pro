@@ -1,5 +1,5 @@
 ---
-image: "/og/ai-agents-for-automated-linkedin-engagement-2026.png"
+image: "/og/ai-agents-for-automated-linkedin-engagement-2026.webp"
 title: "7 Best AI Agents for Automated LinkedIn Engagement in 2026"
 description: "Discover the top AI agents for automated LinkedIn engagement in 2026. Compare features, pricing, and safety for scaling your B2B outreach and network growth."
 pubDate: "2026-05-02"

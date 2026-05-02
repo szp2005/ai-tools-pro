@@ -1,5 +1,5 @@
 ---
-image: "/og/n8n-workflow-automation-for-content-creators.png"
+image: "/og/n8n-workflow-automation-for-content-creators.webp"
 title: "n8n Workflow Automation for Content Creators: Complete 2026 Guide"
 description: "Discover how n8n workflow automation for content creators saves hours weekly. Learn to build custom pipelines connecting your favorite apps and AI tools."
 pubDate: "2026-05-01"

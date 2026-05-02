@@ -1,5 +1,5 @@
 ---
-image: "/og/how-to-use-gemini-for-content-writing.png"
+image: "/og/how-to-use-gemini-for-content-writing.webp"
 title: "How to Use Gemini for Content Writing: An Expert Guide"
 description: "Discover advanced strategies and prompt engineering techniques on how to use Google Gemini for content writing to scale your SEO and editorial output."
 pubDate: "2026-04-30"

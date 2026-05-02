@@ -1,5 +1,5 @@
 ---
-image: "/og/how-to-fine-tune-flux-models-locally.png"
+image: "/og/how-to-fine-tune-flux-models-locally.webp"
 title: "How to Fine Tune Flux Models Locally: A Complete 2026 Guide"
 description: "Learn how to fine tune Flux models locally with our step-by-step guide. Master dataset preparation, VRAM optimization, and custom image generation."
 pubDate: "2026-05-02"

@@ -1,5 +1,5 @@
 ---
-image: "/og/using-claude-sonnet-for-technical-software-documentation.png"
+image: "/og/using-claude-sonnet-for-technical-software-documentation.webp"
 title: "How to Use Claude Sonnet for Technical Software Documentation"
 description: "Learn how using Claude Sonnet for technical software documentation accelerates API spec generation, code explanations, and architecture drafting with high accuracy."
 pubDate: "2026-05-02"

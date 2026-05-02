@@ -1,5 +1,5 @@
 ---
-image: "/og/adobe-firefly-vs-canva-magic-studio-for-graphics.png"
+image: "/og/adobe-firefly-vs-canva-magic-studio-for-graphics.webp"
 title: "Adobe Firefly vs Canva Magic Studio for Graphics: Which Is Better?"
 description: "Compare Adobe Firefly vs Canva Magic Studio for graphics in 2026. Discover which AI design tool offers better features, pricing, and workflow for your needs."
 pubDate: "2026-05-02"

@@ -1,5 +1,5 @@
 ---
-image: "/og/gamma-app-ai-presentation-review.png"
+image: "/og/gamma-app-ai-presentation-review.webp"
 title: "Gamma App AI Presentation Review: Is It The Future of Slides?"
 description: "A comprehensive, expert review of the Gamma App AI presentation generator. We explore its core features, pros and cons, pricing, and whether it can."
 pubDate: "2026-04-30"

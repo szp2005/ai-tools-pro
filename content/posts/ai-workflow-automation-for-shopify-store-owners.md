@@ -1,5 +1,5 @@
 ---
-image: "/og/ai-workflow-automation-for-shopify-store-owners.png"
+image: "/og/ai-workflow-automation-for-shopify-store-owners.webp"
 title: "Best AI Workflow Automation for Shopify Store Owners in 2026"
 description: "Discover how AI workflow automation for Shopify store owners can save hours every week, boost conversions, and scale your ecommerce business systematically."
 pubDate: "2026-05-02"

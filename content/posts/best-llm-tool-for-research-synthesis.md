@@ -1,5 +1,5 @@
 ---
-image: "/og/best-llm-tool-for-research-synthesis.png"
+image: "/og/best-llm-tool-for-research-synthesis.webp"
 title: "Best LLM Tool for Research Synthesis in 2026 (Compared)"
 description: "Looking for the best LLM tool for research synthesis? Compare the top AI assistants to accelerate literature reviews, data analysis, and academic writing."
 pubDate: "2026-05-01"

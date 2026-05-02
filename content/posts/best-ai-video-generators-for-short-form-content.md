@@ -1,5 +1,5 @@
 ---
-image: "/og/best-ai-video-generators-for-short-form-content.png"
+image: "/og/best-ai-video-generators-for-short-form-content.webp"
 title: "Best AI Video Generators for Short Form Content in 2026"
 description: "Discover the best AI video generators for short form content. Compare pricing, features, and top tools to create viral TikToks, Reels, and YouTube Shorts."
 pubDate: "2026-05-02"

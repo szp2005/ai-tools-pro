@@ -1,5 +1,5 @@
 ---
-image: "/og/how-to-use-leonardo-ai-for-game-textures.png"
+image: "/og/how-to-use-leonardo-ai-for-game-textures.webp"
 title: "How to Use Leonardo AI for Game Textures: 7-Step Guide"
 description: "Learn how to use Leonardo AI for game textures with this complete guide. Generate seamless materials, normal maps, and PBR textures for Unity or Unreal Engine."
 pubDate: "2026-05-02"

@@ -1,5 +1,5 @@
 ---
-image: "/og/best-ai-research-tools-for-medical-literature-review.png"
+image: "/og/best-ai-research-tools-for-medical-literature-review.webp"
 title: "7 Best AI Research Tools for Medical Literature Review in 2026"
 description: "Discover the best AI research tools for medical literature review. We compare top software to help researchers summarize papers and synthesize clinical data."
 pubDate: "2026-05-02"

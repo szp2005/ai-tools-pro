@@ -1,5 +1,5 @@
 ---
-image: "/og/ai-tools-for-automated-b2b-lead-generation.png"
+image: "/og/ai-tools-for-automated-b2b-lead-generation.webp"
 title: "Best AI Tools for Automated B2B Lead Generation in 2026"
 description: "Discover the top AI tools for automated B2B lead generation to scale your outreach, improve targeting accuracy, and close more enterprise deals faster."
 pubDate: "2026-05-02"

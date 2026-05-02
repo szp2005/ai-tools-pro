@@ -1,5 +1,5 @@
 ---
-image: "/og/ai-powered-contract-review-for-freelance-developers.png"
+image: "/og/ai-powered-contract-review-for-freelance-developers.webp"
 title: "Best AI Powered Contract Review for Freelance Developers in 2026"
 description: "Compare the top AI powered contract review tools for freelance developers. Protect your IP, ensure fair terms, and speed up client onboarding safely."
 pubDate: "2026-05-02"

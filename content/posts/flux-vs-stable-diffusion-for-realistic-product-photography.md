@@ -1,5 +1,5 @@
 ---
-image: "/og/flux-vs-stable-diffusion-for-realistic-product-photography.png"
+image: "/og/flux-vs-stable-diffusion-for-realistic-product-photography.webp"
 title: "Flux vs Stable Diffusion for Realistic Product Photography (2026)"
 description: "Compare Flux vs Stable Diffusion for realistic product photography. Discover which AI image generator offers the best detail, prompt adherence, and workflow."
 pubDate: "2026-05-02"

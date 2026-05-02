@@ -1,5 +1,5 @@
 ---
-image: "/og/ai-tool-for-meeting-notes-and-action-items.png"
+image: "/og/ai-tool-for-meeting-notes-and-action-items.webp"
 title: "Best AI Tool for Meeting Notes and Action Items in 2026"
 description: "Discover the best AI tool for meeting notes and action items. Compare top AI meeting assistants to automate summaries, extract tasks, and boost team productivity."
 pubDate: "2026-05-01"

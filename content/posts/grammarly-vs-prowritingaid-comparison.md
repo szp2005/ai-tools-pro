@@ -1,5 +1,5 @@
 ---
-image: "/og/grammarly-vs-prowritingaid-comparison.png"
+image: "/og/grammarly-vs-prowritingaid-comparison.webp"
 title: "Grammarly vs ProWritingAid: The Ultimate Comparison for Writers in 2026"
 description: "An in-depth, expert comparison of Grammarly and ProWritingAid. Discover which AI writing assistant offers the best features, integrations, and value for."
 pubDate: "2026-04-30"

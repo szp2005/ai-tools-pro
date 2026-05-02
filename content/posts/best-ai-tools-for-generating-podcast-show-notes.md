@@ -1,5 +1,5 @@
 ---
-image: "/og/best-ai-tools-for-generating-podcast-show-notes.png"
+image: "/og/best-ai-tools-for-generating-podcast-show-notes.webp"
 title: "Best AI Tools for Generating Podcast Show Notes in 2026"
 description: "Discover the best AI tools for generating podcast show notes. Compare top platforms to automate summaries, timestamps, and SEO transcripts for your episodes."
 pubDate: "2026-05-02"

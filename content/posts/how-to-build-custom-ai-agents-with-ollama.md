@@ -1,5 +1,5 @@
 ---
-image: "/og/how-to-build-custom-ai-agents-with-ollama.png"
+image: "/og/how-to-build-custom-ai-agents-with-ollama.webp"
 title: "How to Build Custom AI Agents with Ollama: 5-Step Guide"
 description: "Learn how to build custom AI agents with Ollama locally. This complete guide covers setup, tool integration, and frameworks for secure autonomous workflows."
 pubDate: "2026-05-02"

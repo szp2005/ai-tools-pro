@@ -1,5 +1,5 @@
 ---
-image: "/og/stable-diffusion-vs-midjourney-for-beginners.png"
+image: "/og/stable-diffusion-vs-midjourney-for-beginners.webp"
 title: "Stable Diffusion vs Midjourney for Beginners: The Ultimate Guide to Choosing Your First AI Image Generator"
 description: "Discover which AI image generator is right for you in this comprehensive comparison of Stable Diffusion and Midjourney, tailored specifically for."
 pubDate: 2026-04-30

@@ -1,5 +1,5 @@
 ---
-image: "/og/ai-powered-research-tools-for-data-analysis.png"
+image: "/og/ai-powered-research-tools-for-data-analysis.webp"
 title: "Best AI-Powered Research Tools for Data Analysis in 2026"
 description: "Discover the best AI-powered research tools for data analysis in 2026. Compare top software for researchers, analysts, and teams to speed up insights."
 pubDate: "2026-05-01"

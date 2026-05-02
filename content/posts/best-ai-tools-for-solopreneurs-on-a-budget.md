@@ -1,5 +1,5 @@
 ---
-image: "/og/best-ai-tools-for-solopreneurs-on-a-budget.png"
+image: "/og/best-ai-tools-for-solopreneurs-on-a-budget.webp"
 title: "Best AI Tools for Solopreneurs on a Budget in 2026"
 description: "Discover the most cost-effective AI software for solo founders. Save time and money with these top-rated, budget-friendly AI tools for marketing."
 pubDate: "2026-05-02"

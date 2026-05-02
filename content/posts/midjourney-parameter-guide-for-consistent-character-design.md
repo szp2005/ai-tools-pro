@@ -1,5 +1,5 @@
 ---
-image: "/og/midjourney-parameter-guide-for-consistent-character-design.png"
+image: "/og/midjourney-parameter-guide-for-consistent-character-design.webp"
 title: "Midjourney Parameter Guide for Consistent Character Design: Complete Workflow"
 description: "Master character consistency in Midjourney with our complete parameter guide. Learn the exact seeds, weights, and prompts to keep faces and outfits identical."
 pubDate: "2026-05-02"

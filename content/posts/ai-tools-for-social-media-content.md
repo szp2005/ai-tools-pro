@@ -1,5 +1,5 @@
 ---
-image: "/og/ai-tools-for-social-media-content.png"
+image: "/og/ai-tools-for-social-media-content.webp"
 title: "The Ultimate Guide to AI Tools for Social Media Content in 2026"
 description: "Discover the best AI tools for social media content creation, curation, and management. Learn how to scale your strategy with expert, practical advice."
 pubDate: "2026-04-30"

@@ -1,5 +1,5 @@
 ---
-image: "/og/generative-ai-for-slide-deck-presentations.png"
+image: "/og/generative-ai-for-slide-deck-presentations.webp"
 title: "Best Generative AI for Slide Deck Presentations in 2026"
 description: "Discover the best generative AI for slide deck presentations. We review top AI presentation makers to help you create stunning, professional slides in minutes."
 pubDate: "2026-05-01"

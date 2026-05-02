@@ -1,5 +1,5 @@
 ---
-image: "/og/how-to-use-ai-for-seo-content-planning.png"
+image: "/og/how-to-use-ai-for-seo-content-planning.webp"
 title: "How to Use AI for SEO Content Planning: A 2026 Blueprint"
 author: "Alex Chen"
 date: 2026-04-29T13:40:00Z

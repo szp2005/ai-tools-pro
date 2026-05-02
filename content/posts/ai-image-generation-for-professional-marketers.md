@@ -1,5 +1,5 @@
 ---
-image: "/og/ai-image-generation-for-professional-marketers.png"
+image: "/og/ai-image-generation-for-professional-marketers.webp"
 title: "Best AI Image Generation for Professional Marketers in 2026"
 description: "Compare the top tools for AI image generation for professional marketers. Discover the best platforms for brand consistency, commercial safety, and ROI."
 pubDate: "2026-05-01"

@@ -1,5 +1,5 @@
 ---
-image: "/og/copy-ai-vs-jasper-comparison.png"
+image: "/og/copy-ai-vs-jasper-comparison.webp"
 title: "Copy AI vs Jasper Comparison: Which AI Writing Tool Wins in 2026?"
 description: "An in-depth, expert comparison of Copy AI vs Jasper. Discover the strengths, weaknesses, pricing, and practical use cases for these two AI writing giants."
 pubDate: "2026-04-30"

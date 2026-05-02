@@ -1,5 +1,5 @@
 ---
-image: "/og/best-ai-tools-for-youtube-script-writing.png"
+image: "/og/best-ai-tools-for-youtube-script-writing.webp"
 title: "Best AI Tools for YouTube Script Writing in 2026: Top 7 Ranked"
 description: "Discover the best AI tools for YouTube script writing. Compare features, pricing, and pros/cons to find the perfect AI script generator for your channel."
 pubDate: "2026-05-02"

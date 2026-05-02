@@ -1,5 +1,5 @@
 ---
-image: "/og/best-ai-tools-for-content-creation.png"
+image: "/og/best-ai-tools-for-content-creation.webp"
 title: "The Ultimate Guide: Best AI Tools for Content Creation in 2026"
 description: "Discover the best AI tools for content creation. From text and images to video and SEO, learn how to streamline your workflow and boost productivity."
 pubDate: "2026-04-30"
