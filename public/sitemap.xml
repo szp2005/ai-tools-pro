@@ -115,6 +115,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/posts/ai-workflow-automation-for-shopify-store-owners/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/posts/ai-writing-assistant-for-long-form-content/</loc>
     <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -259,6 +265,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/posts/how-to-build-custom-ai-agents-with-ollama/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ai.toolrouteai.com/posts/how-to-fine-tune-flux-models-locally/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/posts/how-to-use-ai-for-seo-content-planning/</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -277,6 +295,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/posts/how-to-use-leonardo-ai-for-game-textures/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/posts/jasper-ai-review-2026/</loc>
     <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -290,6 +314,12 @@
   </url>
   <url>
     <loc>https://ai.toolrouteai.com/posts/local-first-ai-tools-vs-cloud-structured-2026/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ai.toolrouteai.com/posts/midjourney-parameter-guide-for-consistent-character-design/</loc>
     <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -619,7 +649,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/tags/local-ai/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/tags/ai-content/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ai.toolrouteai.com/tags/prompt-engineering/</loc>
     <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
