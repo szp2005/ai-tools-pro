@@ -13,7 +13,7 @@ interface Props {
 const {
   title = 'AI Tools Pro',
   description = 'Practical comparisons, workflows, and buying guides for AI tools used by marketers, creators, and automation teams.',
-  canonicalURL = Astro.url.href,
+  canonicalURL: canonicalURLProp,
   pubDate,
   isArticle = false,
   noindex = false,
@@ -23,6 +23,10 @@ const {
 } = Astro.props;
 const siteName = 'AI Tools Pro';
 const siteURL = 'https://ai.toolrouteai.com';
+// Force canonical to siteURL host regardless of which domain served the page.
+// This avoids duplicate-content penalty when both toolrouteai.com (root, AdSense)
+// and ai.toolrouteai.com (canonical) serve identical content.
+const canonicalURL = canonicalURLProp ?? `${siteURL}${Astro.url.pathname}${Astro.url.search}`;
 const ogImage = `${siteURL}/og-default.png`;
 const cloudflareWebAnalyticsToken = import.meta.env.PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN;
 const adsensePublisherId = import.meta.env.PUBLIC_ADSENSE_PUBLISHER_ID;
