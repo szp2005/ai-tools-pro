@@ -125,3 +125,13 @@ If your server crashes, active workflows will fail and incoming webhooks will be
 
 ### Can self-hosted n8n connect to local applications on my network?
 Yes. Because the self-hosted instance resides on your infrastructure, it can communicate natively with any local database, ERP, or API located within the same local area network or VPC, completely bypassing the public internet.
+
+---
+
+## Related Reading
+
+- [n8n Workflow Automation for Content Creators: Complete 2026 Guide](/posts/n8n-workflow-automation-for-content-creators/)
+
+- [How to Automate Niche Market Research with Perplexity in 2026](/posts/how-to-automate-niche-market-research-with-perplexity/)
+
+- [Best AI Image Upscaler for Large Format Printing in 2026](/posts/ai-image-upscaler-for-large-format-printing/)

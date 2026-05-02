@@ -148,6 +148,8 @@ Avoid copying a complex system before you understand the problem you are solving
 
 ## Related Reading
 
+- [Gamma App AI Presentation Review: Is It The Future of Slides?](/posts/gamma-app-ai-presentation-review/)
+
 - [Notion AI vs ChatGPT for Notes: Which Tool Wins for Knowledge Management?](/posts/notion-ai-vs-chatgpt-for-notes/)
 - [The AI Writing Landscape in 2026: Beyond Text Generation](/posts/best-ai-writing-tools-2026/)
 - [Why Automate Content with n8n and Claude?](/posts/how-to-automate-content-with-n8n-and-claude/)

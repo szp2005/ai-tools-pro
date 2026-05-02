@@ -120,3 +120,11 @@ While building a custom architecture using LangGraph offers the most control, ma
 
 ### How do I handle prospects who reply asking to be removed?
 Your intent classification agent should route all negative replies or unsubscribe requests to an automated script that immediately adds the prospect's domain and email address to a master suppression list, ensuring compliance with CAN-SPAM and GDPR regulations.
+
+---
+
+## Related Reading
+
+- [How to Use Leonardo AI for Game Textures: 7-Step Guide](/posts/how-to-use-leonardo-ai-for-game-textures/)
+
+- [Flux vs Stable Diffusion for Realistic Product Photography (2026)](/posts/flux-vs-stable-diffusion-for-realistic-product-photography/)

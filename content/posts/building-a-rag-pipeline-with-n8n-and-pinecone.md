@@ -122,3 +122,13 @@ Hallucinations in RAG usually occur for two reasons: the retrieved chunks from P
 
 ### How do I handle document updates in Pinecone?
 When a document is updated in your source system, you cannot simply update the text in Pinecone. You must utilize n8n to delete the existing vectors associated with that specific document ID, re-chunk the newly updated text, generate fresh embeddings, and upsert the new vectors back into the index.
+
+---
+
+## Related Reading
+
+- [How to Connect OpenAI with Airtable Using n8n: 5-Step Guide](/posts/using-n8n-to-connect-openai-with-airtable/)
+
+- [Semantic SEO Strategy for AI Generated Blog Posts: 7-Step Guide](/posts/semantic-seo-strategy-for-ai-generated-blog-posts/)
+
+- [Building AI Agents for Cold Email Outreach: Complete Guide to Automation](/posts/building-ai-agents-for-cold-email-outreach/)

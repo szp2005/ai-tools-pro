@@ -207,6 +207,8 @@ Avoid copying a complex system before you understand the problem you are solving
 
 ## Related Reading
 
+- [Stable Diffusion for Local Image Generation: Complete Setup Guide](/posts/stable-diffusion-for-local-image-generation/)
+
 - [Midjourney vs DALL-E 3: The Ultimate AI Image Generation Comparison](/posts/midjourney-vs-dalle-3-comparison/)
 - [The Ultimate Guide to AI Tools for Video Editing in 2026](/posts/ai-tools-for-video-editing-2026/)
 - [The Best AI Image Generation Tools in 2026: A Comprehensive Guide](/posts/best-ai-image-generation-tools-2026/)

@@ -202,5 +202,7 @@ No, the primary advantage of these platforms is their intuitive natural language
 
 ## Related Reading
 
+- [How to Use Claude Sonnet for Technical Software Documentation](/posts/using-claude-sonnet-for-technical-software-documentation/)
+
 - [7 Best AI Social Media Content Generator Reviews for 2026](/posts/ai-social-media-content-generator-reviews/)
 - [The Best AI Research Tools in 2026: A Comprehensive Guide](/posts/best-ai-research-tools-2026/)

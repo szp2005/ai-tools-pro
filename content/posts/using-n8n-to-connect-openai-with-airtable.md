@@ -117,3 +117,11 @@ You prevent infinite loops by changing a status field in Airtable at the end of 
 
 ### Which OpenAI model should I use for basic text categorization in n8n?
 For basic categorization, tagging, and short summarization, `gpt-4o-mini` is highly recommended. It processes requests significantly faster and costs a fraction of the price of the larger `gpt-4o` model, while maintaining excellent accuracy for structured tasks.
+
+---
+
+## Related Reading
+
+- [Using AI for Automated Software Bug Triaging: Complete Guide](/posts/using-ai-for-automated-software-bug-triaging/)
+
+- [Building a RAG Pipeline with n8n and Pinecone: Complete Guide](/posts/building-a-rag-pipeline-with-n8n-and-pinecone/)

@@ -146,5 +146,7 @@ Tools like Superhuman analyze your "sent" folder to learn your vocabulary, sente
 
 ## Related Reading
 
+- [Custom GPT vs Claude Projects for Personal PKM in 2026](/posts/custom-gpt-vs-claude-projects-for-personal-pkm/)
+
 - [Best No-Code AI Platform for Small Business in 2026](/posts/no-code-ai-platform-for-small-business/)
 - [Best AI-Powered Project Management Tools for Teams in 2026](/posts/ai-powered-project-management-tools-2026/)

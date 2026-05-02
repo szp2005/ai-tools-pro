@@ -187,5 +187,7 @@ Local AI generally has lower initial latency (time to first token) because there
 
 ## Related Reading
 
+- [Using Local LLMs for Private Data Analysis: Complete 2026 Guide](/posts/using-local-llms-for-private-data-analysis/)
+
 - [Best AI Image Generation for Professional Marketers in 2026](/posts/ai-image-generation-for-professional-marketers/)
 - [Best AI-Powered Project Management Tools for Teams in 2026](/posts/ai-powered-project-management-tools-2026/)
