@@ -3,15 +3,21 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 export async function getStaticPaths() {
   const modules = import.meta.glob('../../../content/posts/*.md', { eager: true });
-  const posts = Object.entries(modules).map(([path, mod]) => ({
-    frontmatter: (mod as any).frontmatter ?? {},
-    slug: (mod as any).frontmatter?.slug ?? path.split('/').pop()?.replace(/\.md$/, ''),
-  }));
+  const posts = Object.entries(modules).map(([path, mod]) => {
+    const fm = (mod as any).frontmatter ?? {};
+    return {
+      frontmatter: fm,
+      slug: fm.slug ?? path.split('/').pop()?.replace(/\.md$/, ''),
+      sortKey: String(fm.pubDate ?? fm.date ?? ''),
+    };
+  });
 
   const authors = [...new Set(posts.map(p => p.frontmatter.author).filter(Boolean))] as string[];
 
   return authors.map(author => {
-    const authorPosts = posts.filter(p => p.frontmatter.author === author);
+    const authorPosts = posts
+      .filter(p => p.frontmatter.author === author)
+      .sort((a, b) => (b.sortKey > a.sortKey ? 1 : -1));
     return {
       params: { name: String(author).toLowerCase().replace(/\s+/g, '-') },
       props: { author, posts: authorPosts }
@@ -43,13 +49,29 @@ const canonicalURL = `${siteURL}/author/${String(author).toLowerCase().replace(/
         <p class="bio">{bio}</p>
       </div>
     </header>
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": author,
+      "description": bio,
+      "url": canonicalURL,
+      "knowsAbout": posts.slice(0, 10).map(p => p.frontmatter.title).filter(Boolean),
+      "worksFor": {
+        "@type": "Organization",
+        "name": siteName,
+        "url": siteURL
+      }
+    })} />
     <section class="author-posts">
       <h2>Published Articles ({posts.length})</h2>
-      <ul class="post-list">
+            <ul class="post-list">
         {posts.map(post => (
           <li>
             <a href={`/posts/${post.slug}/`}>{post.frontmatter.title}</a>
-            {post.frontmatter.date && <span class="date">{post.frontmatter.date}</span>}
+            {post.frontmatter.description && <p class="excerpt">{post.frontmatter.description}</p>}
+            {(post.frontmatter.pubDate ?? post.frontmatter.date) && (
+              <span class="date">{String(post.frontmatter.pubDate ?? post.frontmatter.date)}</span>
+            )}
           </li>
         ))}
       </ul>
@@ -67,5 +89,6 @@ const canonicalURL = `${siteURL}/author/${String(author).toLowerCase().replace(/
 .post-list li { margin-bottom: 1.25rem; display: flex; flex-direction: column; gap: 0.25rem; }
 .post-list a { font-size: 1.1rem; font-weight: 600; color: #246bfe; text-decoration: none; }
 .post-list a:hover { text-decoration: underline; }
+.post-list .excerpt { font-size: 0.95rem; color: #4b5563; margin: 0.25rem 0 0.35rem; line-height: 1.5; }
 .date { font-size: 0.9rem; color: #6b7280; }
 </style>
