@@ -1,6 +1,6 @@
 ---
 title: "How to Use the Claude API for Content Generation: A Developer's Guide"
-description: "Master the Claude API for automated content creation. Learn expert techniques for system prompts, API integration, context management, and scaling SEO-driven content."
+description: "Master the Claude API for automated content creation. Learn expert techniques for system prompts, API integration, context management, and scaling."
 pubDate: "2026-04-30"
 author: "Alex Chen"
 tags: ["Claude API", "AI Content", "SEO", "Developer Guide", "LLMs"]

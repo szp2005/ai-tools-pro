@@ -1,6 +1,6 @@
 ---
 title: "Writesonic Review Honest: Is This AI Writer Actually Worth Your Money?"
-description: "An in-depth, brutally honest review of Writesonic. We dive deep into its content quality, pricing, Chatsonic features, and whether it can truly replace human writers for SEO."
+description: "An in-depth, brutally honest review of Writesonic. We dive deep into its content quality, pricing, Chatsonic features, and whether it can truly replace."
 pubDate: 2026-04-30
 author: "Alex Chen"
 tags: ["AI Writing", "Writesonic", "Content Marketing", "SEO", "Reviews"]

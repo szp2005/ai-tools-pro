@@ -1,6 +1,6 @@
 ---
 title: "Notion AI vs ChatGPT for Notes: Which Tool Wins for Knowledge Management?"
-description: "A deep dive into Notion AI and ChatGPT for note-taking. Discover the strengths, weaknesses, and practical workflows for integrating AI into your personal knowledge management (PKM) system."
+description: "A deep dive into Notion AI and ChatGPT for note-taking. Discover the strengths, weaknesses, and practical workflows for integrating AI into your personal."
 pubDate: "2026-04-30"
 author: "Alex Chen"
 tags: ["Notion AI", "ChatGPT", "Note-Taking", "PKM", "Productivity"]

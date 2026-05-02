@@ -1,6 +1,6 @@
 ---
 title: "Stable Diffusion vs Midjourney for Beginners: The Ultimate Guide to Choosing Your First AI Image Generator"
-description: "Discover which AI image generator is right for you in this comprehensive comparison of Stable Diffusion and Midjourney, tailored specifically for beginners looking for expert, practical advice."
+description: "Discover which AI image generator is right for you in this comprehensive comparison of Stable Diffusion and Midjourney, tailored specifically for."
 pubDate: 2026-04-30
 author: "Alex Chen"
 tags: ["AI Art", "Stable Diffusion", "Midjourney", "Beginner's Guide", "Generative AI"]

@@ -112,3 +112,10 @@ While both excel at language tasks, the Claude API is widely preferred by develo
 
 ### How do I handle PII data with the Anthropic API?
 Anthropic's commercial API terms state that they do not train their base models on your customer data submitted through the API. However, for strict compliance (like HIPAA or GDPR), you should implement a data masking step in your workflow that redacts Personal Identifiable Information (PII) before the payload reaches the Anthropic servers.
+
+---
+
+## Related Reading
+
+- [How to Use the Claude API for Content Generation: A Developer's Guide](/posts/how-to-use-claude-api-for-content/)
+- [Local-First AI Tools vs Cloud Structured 2026: Which Is Best?](/posts/local-first-ai-tools-vs-cloud-structured-2026/)

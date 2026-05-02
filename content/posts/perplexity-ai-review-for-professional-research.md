@@ -123,3 +123,10 @@ Yes, significantly less. Because Perplexity is built natively as a Retrieval-Aug
 
 ### What file types can I upload to Perplexity for analysis?
 Perplexity Pro supports a variety of text-based and data files, including PDFs, plain text files (.txt), Markdown (.md), and CSV files. This allows researchers to cross-reference their own spreadsheets or internal company reports with real-time data scraped from the broader internet.
+
+---
+
+## Related Reading
+
+- [Best AI Tool for Meeting Notes and Action Items in 2026](/posts/ai-tool-for-meeting-notes-and-action-items/)
+- [Beautiful.ai vs Gamma for Presentations: The Ultimate Expert Comparison](/posts/beautiful-ai-vs-gamma-for-presentations/)

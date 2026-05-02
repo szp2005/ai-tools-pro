@@ -1,6 +1,6 @@
 ---
 title: "The Definitive Guide to AI Writing Assistants for Long-Form Content"
-description: "Discover how to leverage AI writing assistants for long-form content. Explore expert strategies, top tools, and practical workflows for crafting comprehensive articles, reports, and books."
+description: "Discover how to leverage AI writing assistants for long-form content. Explore expert strategies, top tools, and practical workflows for crafting."
 pubDate: 2026-04-30
 author: "Alex Chen"
 tags: ["AI Tools", "Content Creation", "Productivity", "Writing"]

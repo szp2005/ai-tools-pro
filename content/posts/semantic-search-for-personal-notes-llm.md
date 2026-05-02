@@ -123,3 +123,10 @@ Embedding costs have plummeted. Using an API like OpenAI's `text-embedding-3-sma
 
 ### What is the ideal chunk size for embedding personal notes?
 For personal knowledge bases, smaller chunk sizes of 300 to 500 tokens (roughly 250 to 400 words) with a 50-token overlap generally yield the most precise retrieval results, as it prevents multiple distinct concepts from being blended into a single vector.
+
+---
+
+## Related Reading
+
+- [Best AI-Powered Project Management Tools for Teams in 2026](/posts/ai-powered-project-management-tools-2026/)
+- [Best AI Tool for Transcription and Translation 2026](/posts/ai-tool-for-transcription-and-translation-2026/)

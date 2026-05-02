@@ -1,6 +1,6 @@
 ---
 title: "The Best AI Research Tools in 2026: A Comprehensive Guide"
-description: "Discover the top AI research tools of 2026 that are transforming academic research, literature reviews, data analysis, and scientific writing. An expert guide to maximizing your research efficiency."
+description: "Discover the top AI research tools of 2026 that are transforming academic research, literature reviews, data analysis, and scientific writing."
 author: "Alex Chen"
 date: "2026-04-30"
 category: "Technology & Tools"

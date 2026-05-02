@@ -7,6 +7,7 @@ description: "Provide a downloadable JSON file of the complete n8n workflow so u
 keywords: ["n8n workflow automation", "Claude API integration", "AI content generation", "automated blog writing", "n8n tutorial for beginners", "Anthropic Claude node n8n", "content creation pipeline", "no-code AI automation"]
 draft: false
 type: "informational"
+tags: ["automate", "content", "n8n", "claude"]
 ---
 
 # How to Automate Content with n8n and Claude (Step-by-Step for Non-Developers)

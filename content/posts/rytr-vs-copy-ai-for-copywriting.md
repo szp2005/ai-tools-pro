@@ -1,6 +1,6 @@
 ---
 title: "Rytr vs Copy AI: Which AI Copywriting Tool is Best for Your Business in 2026?"
-description: "A comprehensive, expert comparison between Rytr and Copy AI for copywriting. Discover which AI writing assistant offers the best features, pricing, and output quality for your specific needs."
+description: "A comprehensive, expert comparison between Rytr and Copy AI for copywriting. Discover which AI writing assistant offers the best features, pricing, and."
 pubDate: "2026-04-30"
 author: "Alex Chen"
 tags: ["AI Tools", "Copywriting", "Rytr", "Copy AI", "Marketing Strategy"]

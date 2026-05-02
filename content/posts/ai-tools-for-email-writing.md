@@ -1,6 +1,6 @@
 ---
 title: "The Ultimate Guide to AI Tools for Email Writing: Enhancing Productivity and Tone"
-description: "Discover how AI tools for email writing can transform your communication strategy. We review the top platforms, explore key benefits, and share expert practices for 2026 and beyond."
+description: "Discover how AI tools for email writing can transform your communication strategy. We review the top platforms, explore key benefits, and share expert."
 pubDate: "2026-04-30"
 author: "Alex Chen"
 tags: ["AI", "Productivity", "Email Writing", "Business Communication", "Automation"]
