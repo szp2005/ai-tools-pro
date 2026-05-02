@@ -25,6 +25,8 @@ const siteName = 'AI Tools Pro';
 const siteURL = 'https://ai.toolrouteai.com';
 const ogImage = `${siteURL}/og-default.png`;
 const cloudflareWebAnalyticsToken = import.meta.env.PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN;
+const adsensePublisherId = import.meta.env.PUBLIC_ADSENSE_PUBLISHER_ID;
+const ga4MeasurementId = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID;
 ---
 <!doctype html>
 <html lang="en">
@@ -130,6 +132,23 @@ const cloudflareWebAnalyticsToken = import.meta.env.PUBLIC_CLOUDFLARE_WEB_ANALYT
         src="https://static.cloudflareinsights.com/beacon.min.js"
         data-cf-beacon={JSON.stringify({ token: cloudflareWebAnalyticsToken })}
       ></script>
+    )}
+    {adsensePublisherId && (
+      <script
+        is:inline
+        async
+        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsensePublisherId}`}
+        crossorigin="anonymous"
+      ></script>
+    )}
+    {adsensePublisherId && (
+      <meta name="google-adsense-account" content={adsensePublisherId} />
+    )}
+    {ga4MeasurementId && (
+      <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${ga4MeasurementId}`}></script>
+    )}
+    {ga4MeasurementId && (
+      <script is:inline set:html={`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '${ga4MeasurementId}', { anonymize_ip: true });`} />
     )}
   </head>
   <body>
