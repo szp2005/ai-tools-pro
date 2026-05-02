@@ -1,4 +1,5 @@
 ---
+image: "/og/otter-ai-review-transcription.png"
 title: "Otter AI Review: Is It the Best Transcription Tool for Your Workflow?"
 description: "A comprehensive review of Otter AI for transcription. Discover its accuracy, features, pricing, and practical advice to optimize your note-taking workflow."
 pubDate: "2026-04-30"

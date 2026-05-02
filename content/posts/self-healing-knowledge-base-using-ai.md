@@ -1,4 +1,5 @@
 ---
+image: "/og/self-healing-knowledge-base-using-ai.png"
 title: "Self-Healing Knowledge Base Using AI: Complete Guide to Automated Accuracy"
 description: "Learn how to build a self-healing knowledge base using AI. Discover the core mechanics, data architecture, and practical steps to automate documentation accuracy."
 pubDate: "2026-05-01"

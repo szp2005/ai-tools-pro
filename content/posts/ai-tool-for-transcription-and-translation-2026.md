@@ -1,4 +1,5 @@
 ---
+image: "/og/ai-tool-for-transcription-and-translation-2026.png"
 title: "Best AI Tool for Transcription and Translation 2026"
 description: "Compare the best AI tool for transcription and translation in 2026. Evaluate top software for accurate multilingual audio processing, diarization, and."
 pubDate: "2026-05-01"

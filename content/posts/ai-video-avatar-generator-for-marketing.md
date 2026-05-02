@@ -1,4 +1,5 @@
 ---
+image: "/og/ai-video-avatar-generator-for-marketing.png"
 title: "7 Best AI Video Avatar Generators for Marketing in 2026"
 description: "Discover the top AI video avatar generators for marketing. Compare features, pricing, and realism to create high-converting promotional videos at scale."
 pubDate: "2026-05-02"

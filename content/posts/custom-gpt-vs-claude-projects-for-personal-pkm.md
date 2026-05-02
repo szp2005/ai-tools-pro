@@ -1,4 +1,5 @@
 ---
+image: "/og/custom-gpt-vs-claude-projects-for-personal-pkm.png"
 title: "Custom GPT vs Claude Projects for Personal PKM in 2026"
 description: "Comparing Custom GPT vs Claude Projects for personal knowledge management. Discover which AI workspace offers better context handling, synthesis, and recall."
 pubDate: "2026-05-02"

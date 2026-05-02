@@ -206,3 +206,10 @@ Pinecone offers a Starter tier which provides a free serverless index, perfect f
 
 ### Do I need to store the original text in Pinecone?
 It is highly recommended to store the original text chunks in the Pinecone `metadata` payload. This allows Pinecone to return the actual text alongside the similarity score in a single query, preventing you from having to take the returned vector IDs and perform a secondary lookup in a PostgreSQL database to fetch the human-readable content.
+
+---
+
+## Related Reading
+
+- [How to Fine Tune Flux Models Locally: A Complete 2026 Guide](/posts/how-to-fine-tune-flux-models-locally/)
+- [Best AI Agent for Customer Support Automation in 2026](/posts/ai-agent-for-customer-support-automation/)

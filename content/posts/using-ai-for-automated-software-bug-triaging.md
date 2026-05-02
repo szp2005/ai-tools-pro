@@ -1,4 +1,5 @@
 ---
+image: "/og/using-ai-for-automated-software-bug-triaging.png"
 title: "Using AI for Automated Software Bug Triaging: Complete Guide"
 description: "Learn how using AI for automated software bug triaging can reduce resolution times, improve developer productivity, and streamline your entire QA workflow."
 pubDate: "2026-05-02"
@@ -130,3 +131,10 @@ Not necessarily. While building a custom pipeline from scratch requires speciali
 
 ### How secure is it to send bug reports to an AI model?
 Security depends on deployment architecture. If using external APIs, you must ensure data processing agreements are in place and personally identifiable information (PII) is redacted before transmission. For high-security environments, deploying local, open-source models within your own infrastructure is the standard approach.
+
+---
+
+## Related Reading
+
+- [Automate Content with n8n and Claude: Complete Guide](/posts/how-to-automate-content-with-n8n-and-claude/)
+- [How to Build a Local Knowledge Base with Llama 3: Complete Setup Guide](/posts/building-a-local-knowledge-base-with-llama-3/)

@@ -1,4 +1,5 @@
 ---
+image: "/og/jasper-ai-review-2026.png"
 title: "Jasper AI Review 2026: Is It Still the Best AI for Marketers?"
 description: "An in-depth, expert review of Jasper AI in 2026. We explore its newest features like the Knowledge Graph, Brand Voice, pricing, and how it compares to the."
 pubDate: "2026-04-30"

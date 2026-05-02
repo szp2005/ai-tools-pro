@@ -1,4 +1,5 @@
 ---
+image: "/og/ai-social-media-content-generator-reviews.png"
 title: "7 Best AI Social Media Content Generator Reviews for 2026"
 description: "Looking for an AI social media content generator? Read our in-depth reviews of the top 7 tools for marketers, agencies, and small businesses in 2026."
 pubDate: "2026-05-01"

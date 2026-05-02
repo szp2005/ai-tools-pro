@@ -1,4 +1,5 @@
 ---
+image: "/og/perplexity-ai-review-for-professional-research.png"
 title: "Perplexity AI Review for Professional Research (2026)"
 description: "Read our comprehensive Perplexity AI review for professional research to see how this AI search engine transforms deep-dive analysis, citations, and workflows."
 pubDate: "2026-05-01"

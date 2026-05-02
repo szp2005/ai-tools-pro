@@ -1,4 +1,5 @@
 ---
+image: "/og/best-ai-image-generation-tools-2026.png"
 title: "The Best AI Image Generation Tools in 2026: A Comprehensive Guide"
 description: "Discover the top AI image generators of 2026. We comprehensively compare the latest versions of Midjourney, Stable Diffusion, DALL-E, Adobe Firefly, and."
 pubDate: "2026-04-30"

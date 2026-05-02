@@ -1,4 +1,5 @@
 ---
+image: "/og/using-claude-sonnet-for-technical-software-documentation.png"
 title: "How to Use Claude Sonnet for Technical Software Documentation"
 description: "Learn how using Claude Sonnet for technical software documentation accelerates API spec generation, code explanations, and architecture drafting with high accuracy."
 pubDate: "2026-05-02"
@@ -150,3 +151,10 @@ Yes. Sonnet can reliably output structured Markdown, MDX, reStructuredText, or O
 
 ### How do I stop the AI from sounding like a marketer?
 Use strict system prompts that constrain the tone. Explicitly forbid words like "robust," "seamless," "dive into," and "cutting-edge." Instruct the model to write in a dry, objective, and purely informational tone, heavily utilizing bullet points and code blocks.
+
+---
+
+## Related Reading
+
+- [Best AI Driven Marketing Calendar for Small Agencies in 2026](/posts/ai-driven-marketing-calendar-for-small-agencies/)
+- [Best AI Powered Contract Review for Freelance Developers in 2026](/posts/ai-powered-contract-review-for-freelance-developers/)

@@ -1,4 +1,5 @@
 ---
+image: "/og/best-ai-grammar-checker-for-academic-writing.png"
 title: "Best AI Grammar Checker for Academic Writing in 2026"
 description: "Discover the best AI grammar checker for academic writing in 2026. Compare top tools for researchers and students to ensure flawless, academic papers."
 pubDate: "2026-05-01"

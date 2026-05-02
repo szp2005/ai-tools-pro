@@ -113,3 +113,10 @@ Vector databases support dynamic updates. You do not need to rebuild the entire 
 
 ### Is Llama 3 8B smart enough to handle complex technical documents?
 Yes, the 8B parameter model punches significantly above its weight class, particularly when provided with high-quality context via RAG. While it may struggle with highly abstract reasoning tasks compared to a 70B model or GPT-4, it is exceptionally capable at extraction, summarization, and synthesizing answers directly from the technical text provided in its context window.
+
+---
+
+## Related Reading
+
+- [Best AI Coding Assistants for Indie Web Developers in 2026](/posts/best-ai-coding-assistants-for-indie-web-developers/)
+- [Best AI-Powered Research Tools for Data Analysis in 2026](/posts/ai-powered-research-tools-for-data-analysis/)

@@ -1,4 +1,5 @@
 ---
+image: "/og/midjourney-vs-dall-e-3-for-brand-assets.png"
 title: "Midjourney vs DALL-E 3 for Brand Assets: Which Is Better?"
 description: "Compare Midjourney vs DALL-E 3 for brand assets. Discover which AI image generator offers the best consistency, typography, and style for your business."
 pubDate: "2026-05-01"

@@ -1,4 +1,5 @@
 ---
+image: "/og/midjourney-parameter-guide-for-consistent-character-design.png"
 title: "Midjourney Parameter Guide for Consistent Character Design: Complete Workflow"
 description: "Master character consistency in Midjourney with our complete parameter guide. Learn the exact seeds, weights, and prompts to keep faces and outfits identical."
 pubDate: "2026-05-02"
@@ -135,3 +136,10 @@ At `--cw 100`, Midjourney attempts to replicate the clothing, but it is not a co
 
 ### Do I always need to use the --seed parameter?
 No, the `--seed` parameter is not strictly mandatory if you are using a strong `--cref` image. However, using the original seed acts as a safety net, reducing unwanted minor variations in lighting, background texture, and slight facial drift during long generation sessions.
+
+---
+
+## Related Reading
+
+- [How to Build a Local Knowledge Base with Llama 3: Complete Setup Guide](/posts/building-a-local-knowledge-base-with-llama-3/)
+- [Best AI Powered Contract Review for Freelance Developers in 2026](/posts/ai-powered-contract-review-for-freelance-developers/)

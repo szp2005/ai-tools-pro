@@ -1,4 +1,5 @@
 ---
+image: "/og/how-to-build-custom-ai-agents-with-ollama.png"
 title: "How to Build Custom AI Agents with Ollama: 5-Step Guide"
 description: "Learn how to build custom AI agents with Ollama locally. This complete guide covers setup, tool integration, and frameworks for secure autonomous workflows."
 pubDate: "2026-05-02"
@@ -186,3 +187,10 @@ For a standard 7B to 8B parameter model, 8GB of unified memory or VRAM is the ab
 
 ### Why does my agent get stuck in an infinite loop?
 Infinite loops typically occur when the local LLM fails to format its tool request correctly (a parsing error), and the framework repeatedly asks it to correct the formatting. To fix this, switch to a more capable model, lower the temperature setting to 0, or simplify the arguments required by your custom tools.
+
+---
+
+## Related Reading
+
+- [Best AI Agent for Customer Support Automation in 2026](/posts/ai-agent-for-customer-support-automation/)
+- [7 Best AI Agents for Automated LinkedIn Engagement in 2026](/posts/ai-agents-for-automated-linkedin-engagement-2026/)

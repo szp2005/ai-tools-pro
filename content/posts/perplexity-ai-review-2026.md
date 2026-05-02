@@ -1,4 +1,5 @@
 ---
+image: "/og/perplexity-ai-review-2026.png"
 title: "Perplexity AI Review 2026: Is It Still the Best AI Search Engine?"
 description: "An in-depth Perplexity AI review for 2026. We explore its features, pricing, deep research capabilities, and how it compares to ChatGPT and Gemini."
 pubDate: 2026-04-30

@@ -155,3 +155,10 @@ Yes. The leading platforms are built specifically to integrate with standard Arc
 
 ### What kind of computer hardware is required for AI architectural visualization?
 It depends entirely on the specific tool. Cloud-based analytical platforms like Autodesk Forma require minimal local processing power, relying on a stable internet connection instead. However, local real-time visualizers like D5 Render require a dedicated desktop GPU with at least 8GB of VRAM to function efficiently.
+
+---
+
+## Related Reading
+
+- [Midjourney Parameter Guide for Consistent Character Design: Complete Workflow](/posts/midjourney-parameter-guide-for-consistent-character-design/)
+- [Best AI Video Generators for Short Form Content in 2026](/posts/best-ai-video-generators-for-short-form-content/)

@@ -1,4 +1,5 @@
 ---
+image: "/og/ai-writing-assistant-for-seo-with-semantic-layers.png"
 title: "Best AI Writing Assistant for SEO with Semantic Layers (2026)"
 description: "Discover the top AI writing assistant for SEO with semantic layers to build topical authority, optimize entity salience, and outrank competitors in 2026."
 pubDate: "2026-05-01"

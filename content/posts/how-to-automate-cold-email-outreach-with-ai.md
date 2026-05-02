@@ -128,3 +128,10 @@ A robust setup typically costs between $200 and $500 per month. This includes a 
 
 ### Should I disclose that an AI wrote the email?
 No. The goal of AI in cold outreach is to perform the background research an SDR would normally do. Because the insight and the relevance are genuine—even if synthesized by an LLM—the email functions exactly as a well-researched human email would. Disclosing AI usage distracts from the value proposition you are offering the prospect.
+
+---
+
+## Related Reading
+
+- [Best AI Tools for Automated B2B Lead Generation in 2026](/posts/ai-tools-for-automated-b2b-lead-generation/)
+- [Best Chrome Extension AI for Email Automation in 2026](/posts/chrome-extension-ai-email-automation/)

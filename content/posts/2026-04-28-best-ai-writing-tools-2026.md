@@ -1,4 +1,5 @@
 ---
+image: "/og/best-ai-writing-tools-2026.png"
 title: "The AI Writing Landscape in 2026: Beyond Text Generation"
 author: "Alex Chen"
 date: 2026-04-28

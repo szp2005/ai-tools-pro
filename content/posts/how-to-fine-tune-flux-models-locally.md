@@ -1,4 +1,5 @@
 ---
+image: "/og/how-to-fine-tune-flux-models-locally.png"
 title: "How to Fine Tune Flux Models Locally: A Complete 2026 Guide"
 description: "Learn how to fine tune Flux models locally with our step-by-step guide. Master dataset preparation, VRAM optimization, and custom image generation."
 pubDate: "2026-05-02"
@@ -125,3 +126,10 @@ Flux uses a much larger internal architecture than previous models. Even at a lo
 
 ### Do I need regularization images for Flux?
 Generally, no. Because Flux's base comprehension is so vast, and because you are training via LoRA rather than full Dreambooth, regularization images (images of the general class, like "a man" or "a woman") are rarely needed to prevent concept bleeding, provided your captions are highly detailed.
+
+---
+
+## Related Reading
+
+- [How to Build a Custom Vector Database with Pinecone: 5-Step Guide](/posts/build-a-custom-vector-database-with-pinecone/)
+- [How to Build Custom AI Agents with Ollama: 5-Step Guide](/posts/how-to-build-custom-ai-agents-with-ollama/)

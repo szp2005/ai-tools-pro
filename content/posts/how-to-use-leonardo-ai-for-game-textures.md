@@ -1,4 +1,5 @@
 ---
+image: "/og/how-to-use-leonardo-ai-for-game-textures.png"
 title: "How to Use Leonardo AI for Game Textures: 7-Step Guide"
 description: "Learn how to use Leonardo AI for game textures with this complete guide. Generate seamless materials, normal maps, and PBR textures for Unity or Unreal Engine."
 pubDate: "2026-05-02"
@@ -153,3 +154,10 @@ In the Leonardo AI generation dashboard, locate the left-hand settings menu. Scr
 
 ### What is the best AI model for realistic game textures?
 For realistic textures in Leonardo AI, "Leonardo Vision XL" and "AlbedoBase XL" yield excellent results due to their high fidelity and ability to understand complex micro-details like rust, porous concrete, and intricate wood grains. Avoid using photography-centric models, as they tend to bake unwanted shadows and depth-of-field blur into the flat texture.
+
+---
+
+## Related Reading
+
+- [The Best AI Image Generation Tools in 2026: A Comprehensive Guide](/posts/best-ai-image-generation-tools-2026/)
+- [Local-First AI Tools vs Cloud Structured 2026: Which Is Best?](/posts/local-first-ai-tools-vs-cloud-structured-2026/)

@@ -197,3 +197,10 @@ For Twine users, ChatGPT Plus is generally the most useful tool. Because Twine r
 
 ### Are there copyright issues with using AI for game dialogue?
 The legal landscape regarding AI-generated content is rapidly evolving. Currently, purely AI-generated text cannot be copyrighted in many jurisdictions, including the US. However, an interactive fiction game as a whole—including its structure, logic, custom code, and human-edited text—is generally protectable. Always review the terms of service of the specific AI platform to ensure you retain commercial rights to the outputs.
+
+---
+
+## Related Reading
+
+- [Gemini for Content Writing vs GPT-4o: Which AI Is Better in 2026?](/posts/gemini-for-content-writing-vs-gpt-4o/)
+- [Claude API for Custom Workflow Automation: Complete Guide](/posts/claude-api-for-custom-workflow-automation/)

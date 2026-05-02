@@ -1,4 +1,5 @@
 ---
+image: "/og/no-code-ai-platform-for-small-business.png"
 title: "Best No-Code AI Platform for Small Business in 2026"
 description: "Looking for the best no-code AI platform for small business? Compare top tools that automate tasks, analyze data, and drive growth without coding skills."
 pubDate: "2026-05-01"

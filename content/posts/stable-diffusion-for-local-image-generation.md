@@ -1,4 +1,5 @@
 ---
+image: "/og/stable-diffusion-for-local-image-generation.png"
 title: "Stable Diffusion for Local Image Generation: Complete Setup Guide"
 description: "Master Stable Diffusion for local image generation on your own hardware. Learn hardware requirements, UI choices, and advanced workflows for complete privacy."
 pubDate: "2026-05-01"

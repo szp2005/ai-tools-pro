@@ -1,4 +1,5 @@
 ---
+image: "/og/ai-tools-for-email-writing.png"
 title: "The Ultimate Guide to AI Tools for Email Writing: Enhancing Productivity and Tone"
 description: "Discover how AI tools for email writing can transform your communication strategy. We review the top platforms, explore key benefits, and share expert."
 pubDate: "2026-04-30"

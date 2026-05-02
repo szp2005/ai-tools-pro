@@ -1,4 +1,5 @@
 ---
+image: "/og/ai-powered-project-management-tools-2026.png"
 title: "Best AI-Powered Project Management Tools for Teams in 2026"
 description: "Discover the top AI-powered project management tools in 2026. Compare pricing, features, and ratings to automate workflows and boost team productivity."
 pubDate: "2026-05-02"

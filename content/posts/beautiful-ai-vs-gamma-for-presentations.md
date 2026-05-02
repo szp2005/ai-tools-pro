@@ -1,4 +1,5 @@
 ---
+image: "/og/beautiful-ai-vs-gamma-for-presentations.png"
 title: "Beautiful.ai vs Gamma for Presentations: The Ultimate Expert Comparison"
 description: "An in-depth, expert analysis of Beautiful.ai and Gamma App. Discover which AI-powered presentation tool is the best fit for your workflow, design needs, and budget."
 pubDate: 2026-04-30

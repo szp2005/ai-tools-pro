@@ -1,4 +1,5 @@
 ---
+image: "/og/ai-tools-for-video-editing-2026.png"
 title: "The Ultimate Guide to AI Tools for Video Editing in 2026"
 description: "Discover the most powerful AI tools for video editing 2026 has to offer. A deep dive into software, workflows, and practical advice for modern creators."
 pubDate: "2026-04-30"

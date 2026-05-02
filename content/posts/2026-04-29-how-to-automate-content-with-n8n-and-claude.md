@@ -1,9 +1,10 @@
 ---
+image: "/og/how-to-automate-content-with-n8n-and-claude.png"
 title: "Automate Content with n8n and Claude: Complete Guide"
 author: "Alex Chen"
 date: 2026-04-29
 slug: how-to-automate-content-with-n8n-and-claude
-description: "Provide a downloadable JSON file of the complete n8n workflow so users can import it directly and start immediately."
+description: "Master how to automate content with n8n and Claude in this complete guide. Download our JSON workflow to import and start generating AI-powered articles."
 keywords: ["n8n workflow automation", "Claude API integration", "AI content generation", "automated blog writing", "n8n tutorial for beginners", "Anthropic Claude node n8n", "content creation pipeline", "no-code AI automation"]
 draft: false
 type: "informational"

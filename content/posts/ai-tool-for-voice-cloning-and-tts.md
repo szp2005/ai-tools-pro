@@ -1,4 +1,5 @@
 ---
+image: "/og/ai-tool-for-voice-cloning-and-tts.png"
 title: "Best AI Tool for Voice Cloning and TTS in 2026"
 description: "Discover the best AI tool for voice cloning and TTS in 2026. Compare top platforms for natural, emotion-rich audio generation for video, podcasts, and games."
 pubDate: "2026-05-02"

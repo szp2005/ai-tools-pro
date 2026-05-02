@@ -1,4 +1,5 @@
 ---
+image: "/og/gemini-for-content-writing-vs-gpt-4o.png"
 title: "Gemini for Content Writing vs GPT-4o: Which AI Is Better in 2026?"
 description: "A detailed comparison of Gemini for content writing vs GPT-4o. Discover which AI model excels in speed, creativity, formatting, and SEO optimization."
 pubDate: "2026-05-01"

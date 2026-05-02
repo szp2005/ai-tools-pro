@@ -1,4 +1,5 @@
 ---
+image: "/og/chrome-extension-ai-email-automation.png"
 title: "Best Chrome Extension AI for Email Automation in 2026"
 description: "Discover the best Chrome extension AI for email automation to save hours every week. Compare top tools for Gmail, Outlook, and sales outreach."
 pubDate: "2026-05-01"
