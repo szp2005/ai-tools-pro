@@ -1,5 +1,5 @@
 ---
-title: "Why Automate Content with n8n and Claude?"
+title: "Automate Content with n8n and Claude: Complete Guide"
 author: "Alex Chen"
 date: 2026-04-29
 slug: how-to-automate-content-with-n8n-and-claude
