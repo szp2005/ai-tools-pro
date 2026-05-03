@@ -27,7 +27,7 @@ Software engineering contracts contain specific nuances that differ drastically 
 
 ### Intellectual Property and "Work Made for Hire"
 
-The default assumption in many corporate MSAs is that the developer surrenders all rights to the code they write, including pre-existing background technology or open-source boilerplates they bring to the project. If you routinely use a personal library of utility functions across multiple clients, signing a broad "work made for hire" agreement without explicit carve-outs for background IP can technically result in copyright infringement when you use your own code on the next project. AI tools excel at identifying overly broad IP assignments and suggesting standard carve-out language.
+The default assumption in many corporate MSAs is that the developer surrenders all rights to the code they write, including pre-existing background technology or open-source boilerplates they bring to the project. If you routinely use a personal library of utility functions across multiple clients, signing a broad "work made for hire" agreement without explicit carve-outs for background IP can technically result in copyright infringement when you use your own code on the next project. [AI tools](/posts/rytr-vs-copy-ai-for-copywriting/) excel at identifying overly broad IP assignments and suggesting standard carve-out language.
 
 ### Indemnification and Liability Caps
 
@@ -103,7 +103,7 @@ LegalOn is a robust, feature-rich platform that leans closer to enterprise softw
 **Pros:**
 - Backed by extensive, constantly updated human legal expertise
 - Provides multiple fallback positions for difficult negotiations
-- Excellent for multi-state or international contract reviews
+- Excellent for multi-state or international contract [reviews](/posts/writesonic-review-honest/)
 
 **Cons:**
 - Expensive and often requires an annual commitment
@@ -153,7 +153,7 @@ Implementing an AI powered contract review for freelance developers is no longer
 AI cannot fully replace a human lawyer, especially for highly complex, high-value, or specialized regulatory contracts. However, for the standard 80% of routine Master Services Agreements and NDAs, AI tools provide sufficient baseline protection, issue-spotting, and redlining to allow experienced freelancers to negotiate safely without incurring hourly legal fees.
 
 ### Does AI contract review keep my data private?
-It depends on the tool. Professional legal AI tools (like Spellbook and Robin AI) have strict data privacy policies, zero-retention agreements with LLM providers, and do not use your confidential client contracts to train their public models. Never upload sensitive client contracts to public, consumer-grade models like the standard web interface of ChatGPT.
+It depends on the tool. Professional legal AI tools (like Spellbook and Robin AI) have strict data privacy policies, zero-retention agreements with LLM providers, and do not use your confidential client contracts to train their public models. Never upload sensitive client contracts to public, consumer-grade models like the standard web interface of [ChatGPT](/posts/notion-ai-vs-chatgpt-for-notes/).
 
 ### How much should a freelancer spend on contract review tools?
 For an independent software developer, expect to spend between $30 and $100 per month. If you sign fewer than three contracts a year, look for tools with robust free tiers or pay-per-document pricing. If you run a small agency signing multiple SOWs per month, a $150/month subscription easily pays for itself by saving just one hour of an attorney's billable time.

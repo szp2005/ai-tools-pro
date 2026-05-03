@@ -13,7 +13,7 @@ type: "informational"
 
 > **Quick Answer:** To build custom AI agents with Ollama, install the Ollama runtime and download a tool-capable local model (like Llama 3 8B or Hermes). Connect this local instance to an orchestration framework like LangChain or CrewAI by pointing the LLM wrapper to `http://localhost:11434`. Finally, define custom Python functions as tools and assign them to your agent, allowing the local LLM to execute actions and solve multi-step problems autonomously.
 
-The shift toward local language models has transformed how developers approach autonomous systems. Relying strictly on cloud APIs for agentic workflows often introduces high latency, unpredictable costs, and significant data privacy risks. By moving the reasoning engine locally, developers can experiment with multi-agent orchestration and complex tool usage without sending sensitive data over the network or monitoring an API dashboard.
+The shift toward local language models has transformed how developers approach autonomous systems. Relying strictly on cloud APIs for agentic workflows often introduces high latency, unpredictable costs, and significant [data privacy](/posts/building-a-local-knowledge-base-with-llama-3/) risks. By moving the reasoning engine locally, developers can experiment with multi-agent orchestration and complex tool usage without sending sensitive data over the network or monitoring an API dashboard.
 
 Ollama serves as the runtime foundation for this local approach. It packages model weights, configuration, and data into a single runnable container and exposes a standard REST API. This makes it a drop-in replacement for cloud providers within modern AI frameworks. Building an agent on top of Ollama requires understanding how to format prompts for local models, how to manage context windows, and how to reliably extract structured tool calls from models that have significantly fewer parameters than their cloud counterparts.
 
@@ -74,7 +74,7 @@ CrewAI operates at a higher level of abstraction, focusing on multi-agent orches
 
 ### AutoGen
 
-Microsoft's AutoGen is another multi-agent framework that heavily relies on conversational patterns between agents to solve tasks. While powerful, it often requires more prompt engineering to work reliably with smaller local models compared to CrewAI's task-driven approach.
+Microsoft's AutoGen is another multi-agent framework that heavily relies on conversational patterns between agents to solve tasks. While powerful, it often requires more [prompt engineering](/posts/midjourney-parameter-guide-for-consistent-character-design/) to work reliably with smaller local models compared to CrewAI's task-driven approach.
 
 ## Step 1: Connecting Your Framework to Ollama
 
@@ -100,7 +100,7 @@ This `llm` object will now act as the reasoning engine. When the framework invok
 
 An agent without tools is just a standard chatbot. Tools are the interface between the LLM's text generation and your local system or external APIs.
 
-When building tools for local models, documentation is critical. Cloud models like GPT-4 can often infer what a tool does from its name alone. Local models require explicit, verbose descriptions of the tool's purpose and the exact data types expected for its arguments. The framework injects these descriptions into the system prompt.
+When building tools for local models, [documentation](/posts/self-healing-knowledge-base-using-ai/) is critical. Cloud models like GPT-4 can often infer what a tool does from its name alone. Local models require explicit, verbose descriptions of the tool's purpose and the exact data types expected for its arguments. The framework injects these descriptions into the system prompt.
 
 ### Defining Custom Tools
 

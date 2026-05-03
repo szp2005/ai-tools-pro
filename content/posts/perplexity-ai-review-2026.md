@@ -35,7 +35,7 @@ For instance, if you ask, "What are the macroeconomic impacts of the new Europea
 
 ### 2. [Multi-Model Selection](https://www.amazon.com/s?k=Multi-Model%20Selection&tag=toolrouteai-20)
 
-Unlike some AI tools that lock you into a single proprietary model, Perplexity embraces an open ecosystem approach. Users can switch between the latest models from OpenAI (GPT-4o or its successors), Anthropic (Claude 3.5 Opus/Sonnet), and Meta (Llama 3 or 4). This flexibility is invaluable. If you need creative writing, you might switch to Claude. If you need hard logic and coding assistance alongside your web search, you might switch to the latest GPT model. This model-agnostic approach ensures that Perplexity users always have access to the state-of-the-art without needing multiple subscriptions.
+Unlike some [AI tools](/posts/rytr-vs-copy-ai-for-copywriting/) that lock you into a single proprietary model, Perplexity embraces an open ecosystem approach. Users can switch between the latest models from OpenAI (GPT-4o or its successors), Anthropic (Claude 3.5 Opus/Sonnet), and Meta (Llama 3 or 4). This flexibility is invaluable. If you need creative writing, you might switch to Claude. If you need hard logic and coding assistance alongside your web search, you might switch to the latest GPT model. This model-agnostic approach ensures that Perplexity users always have access to the state-of-the-art without needing multiple subscriptions.
 
 ### 3. [File Analysis and Multimodal Inputs](https://www.amazon.com/s?k=File%20Analysis%20and%20Multimodal%20Inputs&tag=toolrouteai-20)
 
@@ -83,7 +83,7 @@ Google has heavily integrated Gemini into its core search experience (AI Overvie
 
 To truly leverage Perplexity in 2026, you need to shift your mindset from "keyword searching" to "conversational delegation." Here are practical tips for power users:
 
-1. **Be Hyper-Specific:** Don't type "best CRM software." Instead, ask, "I run a B2B SaaS startup with 10 employees. We need a CRM that integrates smoothly with Slack and Hubspot, costs under $50/user/month, and has strong email automation features. Provide a comparison table of the top 3 options based on recent reviews." The more constraints you provide, the better Perplexity performs.
+1. **Be Hyper-Specific:** Don't type "best CRM software." Instead, ask, "I run a B2B SaaS startup with 10 employees. We need a CRM that integrates smoothly with Slack and Hubspot, costs under $50/user/month, and has strong email [automation](/posts/self-healing-knowledge-base-using-ai/) features. Provide a comparison table of the top 3 options based on recent reviews." The more constraints you provide, the better Perplexity performs.
 2. **Use Follow-Up Prompts:** Perplexity maintains the context of your thread. If the initial answer is good but misses a detail, don't start over. Simply reply, "Now expand on point 2," or "Can you rewrite this summary but focus strictly on the financial implications?"
 3. **Leverage 'Focus' Modes:** Before hitting search, use the "Focus" dropdown. You can restrict Perplexity to only search academic papers (Wolfram/Semantic Scholar), YouTube video transcripts, or specific domains like Reddit. This is incredibly powerful for filtering out generic SEO spam and finding high-signal information.
 4. **Build Custom Profiles:** Fill out your AI profile in the settings. Tell Perplexity who you are, what you do, and how you prefer to receive information (e.g., "I am a software engineer. Always default to providing code snippets in Python unless specified otherwise. Keep explanations brief and technical."). This saves you from repeating instructions in every prompt.
@@ -133,4 +133,4 @@ Avoid copying a complex system before you understand the problem you are solving
 - [Jasper AI Review 2026: Is It Still the Best AI for Marketers?](/posts/jasper-ai-review-2026/)
 - [The AI Writing Landscape in 2026: Beyond Text Generation](/posts/best-ai-writing-tools-2026/)
 - [Why Automate Content with n8n and Claude?](/posts/how-to-automate-content-with-n8n-and-claude/)
-- [The Ultimate Guide to AI Tools for Email Writing: Enhancing Productivity and Tone](/posts/ai-tools-for-email-writing/)
+- [The Ultimate Guide to AI Tools for Email Writing: Enhancing [Productivity](/posts/automating-google-sheets-with-chrome-extension-ai/) and Tone](/posts/ai-tools-for-email-writing/)

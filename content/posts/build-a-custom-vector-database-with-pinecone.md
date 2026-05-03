@@ -11,7 +11,7 @@ type: "informational"
 
 # How to Build a Custom Vector Database with Pinecone: 5-Step Guide
 
-> **Quick Answer:** To build a custom vector database with Pinecone, you first generate embeddings for your data using a model like OpenAI's `text-embedding-3-small`. Next, create a Pinecone index with dimensions matching your model, then upsert your vector data alongside metadata. Finally, you can perform nearest-neighbor searches to retrieve contextually relevant information for search engines or Retrieval-Augmented Generation (RAG) applications.
+> **Quick Answer:** To build a custom vector database with Pinecone, you first generate embeddings for your data using a model like [OpenAI](/posts/automate-customer-sentiment-analysis-with-openai-api/)'s `text-embedding-3-small`. Next, create a Pinecone index with dimensions matching your model, then upsert your vector data alongside metadata. Finally, you can perform nearest-neighbor searches to retrieve contextually relevant information for search engines or Retrieval-Augmented Generation (RAG) applications.
 
 Modern applications require more than just exact keyword matching. Whether you are building an intelligent semantic search engine, a recommendation system, or providing long-term memory for Large Language Models (LLMs) via Retrieval-Augmented Generation (RAG), you need the ability to search by meaning rather than syntax. 
 
@@ -21,7 +21,7 @@ Pinecone has emerged as a leading fully managed, cloud-native vector database. I
 
 ## Understanding Vector Databases and Pinecone
 
-Before writing code, it is important to understand the mechanics of what you are building. When you feed text into an embedding model, it outputs an array of floating-point numbers. For example, OpenAI's latest models output arrays of 1536 or 3072 dimensions. 
+Before [writing](/posts/ai-writing-assistant-for-long-form-content/) code, it is important to understand the mechanics of what you are building. When you feed text into an embedding model, it outputs an array of floating-point numbers. For example, OpenAI's latest models output arrays of 1536 or 3072 dimensions. 
 
 These dimensions represent semantic concepts. Words or sentences with similar meanings will be located near each other in this multi-dimensional vector space.
 
@@ -170,7 +170,7 @@ results = index.query(
 
 Building a custom vector database is rarely the end goal; it is usually the foundational layer for Retrieval-Augmented Generation (RAG). 
 
-LLMs hallucinate when asked about proprietary data, recent events, or internal documentation they were not trained on. By querying Pinecone first, you can inject factual, specific context directly into the LLM's prompt.
+LLMs hallucinate when asked about proprietary data, recent events, or internal [documentation](/posts/self-healing-knowledge-base-using-ai/) they were not trained on. By querying Pinecone first, you can inject factual, specific context directly into the LLM's prompt.
 
 1. User asks: "How do I build a fast website?"
 2. You embed the query and search Pinecone.

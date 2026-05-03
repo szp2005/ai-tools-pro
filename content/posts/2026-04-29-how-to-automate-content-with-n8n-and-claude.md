@@ -41,7 +41,7 @@ tags: ["automate", "content", "n8n", "claude"]
 
 If you are managing content for five clients or trying to publish three blog posts a week on your own site, the bottleneck is always the same: time spent on repetitive tasks that follow a predictable pattern. Research a keyword, write a brief, draft the post, format it, publish it. Every single time.
 
-[n8n](URL_PLACEHOLDER_1) is an open-source workflow automation platform — think Zapier, but without the per-task pricing wall and with far more flexibility over what nodes do and how data flows between them. You can run it in the cloud or self-host it on a $6/month VPS. The node library covers 400+ services out of the box, and anything else hits a generic HTTP Request node.
+[n8n](URL_PLACEHOLDER_1) is an open-source workflow [automation](/posts/ai-tools-for-email-writing/) platform — think Zapier, but without the per-task pricing wall and with far more flexibility over what nodes do and how data flows between them. You can run it in the cloud or self-host it on a $6/month VPS. The node library covers 400+ services out of the box, and anything else hits a generic HTTP Request node.
 
 [Claude](URL_PLACEHOLDER_2) is Anthropic's large language model family. Claude 3.5 Sonnet specifically punches above its weight for long-form structured writing. It follows detailed system instructions reliably, handles markdown formatting without hallucinating extra code blocks, and stays on topic through a 200,000-token context window — which matters when you are chaining content generation steps.
 
@@ -77,7 +77,7 @@ You need the URL of your WordPress site and credentials for an Application Passw
 
 Open n8n. Click **New Workflow**.
 
-**Trigger Node — Google Sheets**
+**Trigger Node — [Google Sheets](/posts/automating-google-sheets-with-chrome-extension-ai/)**
 Add a **Google Sheets** node. Set the operation to **Get Many Rows**. Connect your Google account via OAuth. Select your spreadsheet and the sheet tab. Under Filters, add a filter: `Status` is empty. This ensures only unprocessed rows trigger the workflow. Set the schedule trigger (an additional **Schedule** node) to run every morning at 6 AM — or manually trigger it during testing.
 
 **Anthropic Claude Node**
@@ -119,7 +119,7 @@ Brief requirements:
 - 2 suggested external authority sources to cite
 ```
 
-That `{{ $json.Keyword }}` pulls the exact value from the Google Sheet row currently being processed. If your sheet has a row with `content marketing automation`, that string lands in the prompt. Every row gets a custom brief with zero extra work.
+That `{{ $json.Keyword }}` pulls the exact value from the Google Sheet row currently being processed. If your sheet has a row with `[content marketing](/posts/ai-tools-for-seo-writing/) automation`, that string lands in the prompt. Every row gets a custom brief with zero extra work.
 
 **System Message (paste this verbatim)**
 

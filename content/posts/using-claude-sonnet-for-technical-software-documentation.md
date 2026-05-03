@@ -11,7 +11,7 @@ type: "informational"
 
 # How to Use Claude Sonnet for Technical Software Documentation
 
-> **Quick Answer:** Using Claude Sonnet for technical software documentation dramatically reduces the time engineers spend writing API references, architecture overviews, and code comments. Its large context window and advanced reasoning capabilities allow it to ingest entire codebases and output precise, structured markdown or docstrings that require minimal human editing, making it the ideal middle-ground model for daily engineering tasks.
+> **Quick Answer:** Using Claude Sonnet for technical software documentation dramatically reduces the time engineers spend [writing](/posts/ai-writing-assistant-for-long-form-content/) API references, architecture overviews, and code comments. Its large context window and advanced reasoning capabilities allow it to ingest entire codebases and output precise, structured markdown or docstrings that require minimal human editing, making it the ideal middle-ground model for daily engineering tasks.
 
 Writing technical documentation is the chronic pain point of software engineering. Developers excel at building complex systems but often lack the time, bandwidth, or inclination to maintain extensive documentation. When system architecture evolves rapidly, documentation inevitably drifts from reality, leading to onboarding bottlenecks, integration errors, and operational friction. Traditional automated documentation generators extract code structures but fail to capture the underlying context, design decisions, and business logic.
 
@@ -27,13 +27,13 @@ Anthropic offers multiple models, but Sonnet hits the specific sweet spot requir
 
 Technical documentation rarely exists in a vacuum. To write an accurate API reference, a model needs to understand the route handlers, the underlying data models, the authentication middleware, and the error-handling utilities. 
 
-Sonnet's expansive context window allows engineers to pass entire repository structures, multiple interlinked files, or massive JSON schemas into a single prompt. Instead of asking the model to guess how a function behaves based on its signature, you can provide the function, its unit tests, and the database schema it interacts with. This comprehensive context ingestion is what separates generic, surface-level AI writing from deep, accurate technical documentation.
+Sonnet's expansive context window allows engineers to pass entire repository structures, multiple interlinked files, or massive JSON schemas into a single prompt. Instead of asking the model to guess how a function behaves based on its signature, you can provide the function, its unit tests, and the database schema it interacts with. This comprehensive context ingestion is what separates generic, surface-level [AI writing](/posts/ai-tools-for-seo-writing/) from deep, accurate technical documentation.
 
 ### Precision and Formatting Consistency
 
 Software documentation relies heavily on strict formatting. Markdown, OpenAPI specifications, Mermaid.js diagrams, and reStructuredText all require exact syntax. A single misplaced indentation in YAML or a broken table in Markdown renders the documentation useless or breaks automated static site generators.
 
-Sonnet demonstrates exceptional instruction-following capabilities regarding syntax. When instructed to output strictly valid JSON, adhere to Google's Developer Documentation Style Guide, or format tables with specific column alignments, it maintains that discipline throughout long outputs. This reduces the time engineers spend fixing formatting errors during the review phase.
+Sonnet demonstrates exceptional instruction-following capabilities regarding syntax. When instructed to output strictly valid JSON, adhere to Google's Developer Documentation Style Guide, or format tables with specific column alignments, it maintains that discipline throughout long outputs. This reduces the time engineers spend fixing formatting errors during the [review](/posts/otter-ai-review-transcription/) phase.
 
 ### Cost vs. Performance Ratio for Bulk Operations
 

@@ -11,7 +11,7 @@ type: "informational"
 
 # How to Build a Local Knowledge Base with Llama 3: Complete Setup Guide
 
-> **Quick Answer:** Building a local knowledge base with Llama 3 requires setting up a Retrieval-Augmented Generation (RAG) pipeline entirely on your own hardware. You achieve this by running Llama 3 locally via inference engines like Ollama, converting your personal documents into mathematical vectors using an embedding model, storing them in a local vector database like ChromaDB, and connecting these components with an orchestration framework like LangChain.
+> **Quick Answer:** Building a local knowledge base with Llama 3 requires setting up a Retrieval-Augmented Generation (RAG) pipeline entirely on your own hardware. You achieve this by running Llama 3 locally via inference engines like Ollama, converting your personal documents into mathematical vectors using an embedding model, storing them in a local [vector database](/posts/build-a-custom-vector-database-with-pinecone/) like ChromaDB, and connecting these components with an orchestration framework like LangChain.
 
 Relying on cloud-based AI models for querying personal or corporate documents introduces significant privacy risks. When you send sensitive financial records, proprietary source code, or confidential client communications to external APIs, you lose control over where that data is stored and how it might be used for future model training. This tension between the utility of large language models (LLMs) and the necessity of data sovereignty has driven the rapid adoption of local AI deployments.
 
@@ -47,7 +47,7 @@ If you attempt to run the 70B model, even with aggressive 4-bit quantization, yo
 
 The foundational layer of your system is the inference engine—the software responsible for loading the Llama 3 weights into memory and executing the mathematical operations required to generate text. While you could write custom PyTorch scripts, modern inference servers handle memory management and API routing far more efficiently.
 
-Ollama has become the standard for local LLM deployment. It abstracts away the complexities of CUDA drivers, weight formats, and model execution, providing a clean command-line interface and a robust local API that mimics the OpenAI standard.
+Ollama has become the standard for local LLM deployment. It abstracts away the complexities of CUDA drivers, weight formats, and model execution, providing a clean command-line interface and a robust local API that mimics the [OpenAI](/posts/automate-customer-sentiment-analysis-with-openai-api/) standard.
 
 After installing Ollama for your operating system, pulling the Llama 3 model requires a single command in your terminal: `ollama run llama3`. This command downloads the 8B model natively optimized for your hardware. Ollama automatically applies the correct quantization format (GGUF) and manages the GPU offloading.
 
@@ -57,7 +57,7 @@ Once the model is downloaded, Ollama runs in the background as a local service, 
 
 Before Llama 3 can read your documents, you must process them into a format the vector database can understand. This phase is critical; poor document preparation will ruin the retrieval accuracy, leading to useless AI responses regardless of how capable Llama 3 is.
 
-You need an embedding model to convert text into vectors. While you could use cloud-based embeddings, doing so violates the strict privacy mandate of a local setup. Instead, you should run a local embedding model. The `nomic-embed-text` or `bge-large-en` models are highly regarded open-source options that perform exceptionally well and run quickly on standard CPUs or GPUs. You can pull the Nomic model directly through Ollama using `ollama pull nomic-embed-text`.
+You need an embedding model to convert text into vectors. While you could use cloud-based embeddings, doing so violates the strict privacy mandate of a [local setup](/posts/stable-diffusion-for-local-image-generation/). Instead, you should run a local embedding model. The `nomic-embed-text` or `bge-large-en` models are highly regarded open-source options that perform exceptionally well and run quickly on standard CPUs or GPUs. You can pull the Nomic model directly through Ollama using `ollama pull nomic-embed-text`.
 
 Document processing involves two distinct tasks: parsing and chunking. Parsing requires extracting raw text from various file formats (PDFs, Word documents, Markdown). Chunking involves splitting that raw text into smaller, semantically coherent segments—typically between 500 and 1000 characters each. 
 

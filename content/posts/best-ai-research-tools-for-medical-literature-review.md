@@ -19,7 +19,7 @@ The volume of medical literature published annually makes traditional literature
 
 Artificial intelligence has fundamentally shifted this workflow. Large language models (LLMs) and specialized machine learning algorithms are now capable of parsing complex biomedical jargon, summarizing methodologies, and extracting key clinical outcomes with high accuracy. 
 
-However, medical research requires a level of precision and verifiability that general-purpose chatbots cannot provide. Relying on generic AI tools can lead to hallucinations—a critical failure when synthesizing evidence for clinical guidelines or peer-reviewed publications. The tools highlighted below are specifically designed or highly adapted for academic and medical workflows, offering verifiable citations, data privacy, and specialized data extraction features.
+However, medical research requires a level of precision and verifiability that general-purpose chatbots cannot provide. Relying on generic [AI tools](/posts/rytr-vs-copy-ai-for-copywriting/) can lead to hallucinations—a critical failure when synthesizing evidence for clinical guidelines or peer-reviewed publications. The tools highlighted below are specifically designed or highly adapted for academic and medical workflows, offering verifiable citations, data privacy, and specialized data extraction features.
 
 ## Top AI Tools for Medical Literature Review
 
@@ -86,7 +86,7 @@ Furthermore, SciSpace allows you to chat with a specific paper or a collection o
 **Price:** Free to $4.50/month
 **Rating:** 4.7/5
 
-While not a generative AI tool like the others on this list, Rayyan employs machine learning specifically for the screening phase of systematic reviews. Once you import your search results from PubMed, Embase, or Cochrane, Rayyan helps deduplicate the entries and provides a platform for blind, collaborative screening. 
+While not a [generative AI](/posts/stable-diffusion-vs-midjourney-for-beginners/) tool like the others on this list, Rayyan employs machine learning specifically for the screening phase of systematic reviews. Once you import your search results from PubMed, Embase, or Cochrane, Rayyan helps deduplicate the entries and provides a platform for blind, collaborative screening. 
 
 As you and your team include or exclude papers based on title and abstract, Rayyan's AI learns your inclusion criteria. It then generates a 5-star rating system for the remaining unscreened articles, pushing the most likely relevant papers to the top of the queue. This predictive sorting can save teams weeks of manual screening during large-scale medical literature reviews.
 
@@ -191,7 +191,7 @@ The landscape of medical literature review is evolving rapidly, moving away from
 ## Frequently Asked Questions
 
 ### Are AI tools safe to use for systematic reviews?
-Yes, but they must be used for assistance rather than complete automation. Tools like Rayyan are standard for screening, and extraction tools like Elicit can speed up data gathering, but human reviewers must verify all final inclusions and extracted data points to meet rigorous systematic review standards.
+Yes, but they must be used for assistance rather than complete [automation](/posts/ai-tools-for-email-writing/). Tools like Rayyan are standard for screening, and extraction tools like Elicit can speed up data gathering, but human reviewers must verify all final inclusions and extracted data points to meet rigorous systematic review standards.
 
 ### Can general AI chatbots write a medical literature review?
 No. General-purpose LLMs are prone to hallucinating citations and misinterpreting complex clinical data. You should use specialized tools designed for research that ground their output in verified academic databases and provide direct links to source texts.

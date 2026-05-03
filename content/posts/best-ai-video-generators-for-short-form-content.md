@@ -124,7 +124,7 @@ The video editor inside Synthesia is robust, functioning much like a slide-deck 
 **Price:** $15-$95/month
 **Rating:** 4.6/5
 
-Runway is fundamentally different from the template-driven tools above. It is a suite of generative AI models designed for serious filmmakers and highly creative short-form producers. Using Gen-2 and the newer Gen-3 Alpha, creators can generate high-fidelity, customized video clips directly from text prompts or reference images. 
+Runway is fundamentally different from the template-driven tools above. It is a suite of [generative AI](/posts/stable-diffusion-vs-midjourney-for-beginners/) models designed for serious filmmakers and highly creative short-form producers. Using Gen-2 and the newer Gen-3 Alpha, creators can generate high-fidelity, customized video clips directly from text prompts or reference images. 
 
 If your short-form content relies on highly specific, stylized, or abstract visuals that cannot be found in stock libraries, Runway is the tool to use. Creators frequently use Runway to generate 3-5 second visual hooks for the beginning of their TikToks or Reels. It requires a traditional video editing software (like Premiere Pro or CapCut) to stitch the generated clips together, add music, and place captions, but the visual fidelity of the raw outputs is unmatched.
 
@@ -139,13 +139,13 @@ If your short-form content relies on highly specific, stylized, or abstract visu
 
 ### 7. [Veed.io](https://www.amazon.com/s?k=Veed.io&tag=toolrouteai-20)
 
-**Best for:** All-in-one manual editing with integrated AI tools
+**Best for:** All-in-one manual editing with integrated [AI tools](/posts/rytr-vs-copy-ai-for-copywriting/)
 **Price:** $18-$70/month
 **Rating:** 4.5/5
 
 Veed.io started as a browser-based video editor but has rapidly evolved into a comprehensive AI suite. It is the best choice for creators who still want timeline control but want to inject AI into the tedious parts of the process. Veed features an excellent AI auto-subtitle generator, eye-contact correction, background noise removal, and an AI avatar feature.
 
-For short-form content, Veed shines with its templated approach. You can build a specific visual layout for your Reels, drop in your footage, use the AI to instantly remove silences and dead air, apply an automatic dynamic caption style, and export. It is the perfect middle ground between total AI automation and traditional manual timeline editing.
+For short-form content, Veed shines with its templated approach. You can build a specific visual layout for your Reels, drop in your footage, use the AI to instantly remove silences and dead air, apply an automatic dynamic caption style, and export. It is the perfect middle ground between total [AI automation](/posts/automating-google-sheets-with-chrome-extension-ai/) and traditional manual timeline editing.
 
 **Pros:**
 - Highly intuitive browser-based timeline editor

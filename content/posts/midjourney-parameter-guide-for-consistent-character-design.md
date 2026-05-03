@@ -9,11 +9,11 @@ slug: "midjourney-parameter-guide-for-consistent-character-design"
 type: "informational"
 ---
 
-# Midjourney Parameter Guide for Consistent Character Design: Complete Workflow
+# Midjourney Parameter Guide for Consistent Character Design: Complete [Workflow](/posts/how-to-automate-slack-notifications-with-n8n/)
 
 > **Quick Answer:** Achieving consistent character design in Midjourney requires combining the `--cref` (Character Reference) parameter with a source image URL, adjusting the `--cw` (Character Weight) from 0 to 100, and utilizing a static `--seed` value. For maximum reliability, combine these parameters with identical, highly specific text descriptions of the subject's physical traits in every generation.
 
-The most persistent hurdle in generative AI art has always been narrative continuity. Generating a stunning character concept is easy; placing that exact same character into different environments, outfits, and emotional states without them morphing into a completely different person is notoriously difficult. Midjourney’s architecture inherently favors variety over precision, recalculating the noise pattern with every prompt. 
+The most persistent hurdle in [generative AI](/posts/stable-diffusion-vs-midjourney-for-beginners/) art has always been narrative continuity. Generating a stunning character concept is easy; placing that exact same character into different environments, outfits, and emotional states without them morphing into a completely different person is notoriously difficult. Midjourney’s [architecture](/posts/best-ai-tools-for-architectural-data-visualization/) inherently favors variety over precision, recalculating the noise pattern with every prompt. 
 
 However, recent updates have introduced dedicated parameters designed explicitly to lock down character traits. By moving away from purely descriptive prompting and utilizing technical parameters, you can force the model to adhere to a specific visual baseline. 
 

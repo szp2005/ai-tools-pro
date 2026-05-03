@@ -11,11 +11,11 @@ type: "informational"
 
 # How to Automate Cold Email Outreach with AI: 5-Step Guide
 
-> **Quick Answer:** To automate cold email outreach with AI, combine a dynamic data provider to build targeted lead lists, a generative AI pipeline (like Claude 3.5 Sonnet or GPT-4o) to analyze prospect data and write highly personalized first lines, and an automated sequencing platform to schedule sending. The key to success is using AI for deep research and account-level personalization rather than just generic copywriting, ensuring every automated email feels manually written.
+> **Quick Answer:** To automate cold email outreach with AI, combine a dynamic data provider to build targeted lead lists, a [generative AI](/posts/stable-diffusion-vs-midjourney-for-beginners/) pipeline (like Claude 3.5 Sonnet or GPT-4o) to analyze prospect data and write highly personalized first lines, and an automated sequencing platform to schedule sending. The key to success is using AI for deep research and account-level personalization rather than just generic [copywriting](/posts/rytr-vs-copy-ai-for-copywriting/), ensuring every automated email feels manually written.
 
 Scaling outbound sales has traditionally required a stark compromise: volume or personalization. You could either send thousands of generic templates that yield abysmal reply rates and damage your domain reputation, or you could hire an army of sales development representatives to manually research and write bespoke emails for a few dozen prospects a day. 
 
-Artificial intelligence has dismantled this tradeoff. Modern language models and specialized workflow tools now allow revenue teams to execute deep research, synthesize complex prospect data, and write hyper-personalized copy for thousands of leads simultaneously. 
+[Artificial intelligence](/posts/ai-tools-for-seo-writing/) has dismantled this tradeoff. Modern language models and specialized workflow tools now allow revenue teams to execute deep research, synthesize complex prospect data, and write hyper-personalized copy for thousands of leads simultaneously. 
 
 However, bolting ChatGPT onto a legacy mail-merge tool will not generate pipeline. Effective AI outreach requires a systematic approach to data enrichment, strict prompt engineering, and rigorous deliverability protocols. This guide breaks down the exact infrastructure and workflow required to build a scalable, AI-driven cold email engine.
 

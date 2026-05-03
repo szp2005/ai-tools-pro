@@ -13,7 +13,7 @@ type: "informational"
 
 > **Quick Answer:** To automate customer sentiment analysis with the OpenAI API, you must route your customer feedback data (via webhooks or batch exports) into a script that queries a model like `gpt-4o-mini` using a structured prompt. By requesting JSON output, the API can categorize the text into distinct sentiments (positive, negative, neutral) and extract specific pain points, which can then be stored in a database and visualized on a dashboard for real-time customer insights.
 
-Modern customer support teams process thousands of interactions daily across email, live chat, social media, and product reviews. Reading and categorizing every piece of feedback manually is impossible at scale. Traditional sentiment analysis tools have existed for years, but they often struggle with nuance, sarcasm, and the complex context typical of human communication. They might flag a review stating, "This software is terrifyingly good," as negative simply because of the word "terrifyingly."
+Modern customer support teams process thousands of interactions daily across email, live chat, social media, and product [reviews](/posts/writesonic-review-honest/). Reading and categorizing every piece of feedback manually is impossible at scale. Traditional sentiment analysis tools have existed for years, but they often struggle with nuance, sarcasm, and the complex context typical of human communication. They might flag a review stating, "This software is terrifyingly good," as negative simply because of the word "terrifyingly."
 
 The advent of highly capable large language models has fundamentally changed how businesses process textual data. When you automate customer sentiment analysis with the OpenAI API, you replace rigid keyword-matching algorithms with advanced semantic understanding. These models comprehend the underlying intent of a customer's message, allowing you to extract not just a basic positive or negative score, but detailed root causes, product feature mentions, and even the user's emotional state.
 
@@ -25,13 +25,13 @@ Before diving into code and architecture, it is crucial to understand why API-dr
 
 ### The Shift from Traditional NLP to Generative AI
 
-For the past decade, sentiment analysis relied heavily on dictionary-based approaches or early machine learning models like Support Vector Machines (SVM) or Naive Bayes classifiers. These legacy systems required massive, manually labeled datasets to train. If your business pivoted and introduced a new product line, your old model would likely fail to understand the new domain-specific terminology.
+For the past decade, sentiment analysis relied heavily on dictionary-based approaches or early [machine learning](/posts/build-a-custom-vector-database-with-pinecone/) models like Support Vector Machines (SVM) or Naive Bayes classifiers. These legacy systems required massive, manually labeled datasets to train. If your business pivoted and introduced a new product line, your old model would likely fail to understand the new domain-specific terminology.
 
 Generative AI models, such as those accessible via the OpenAI API, are pre-trained on vast swaths of human knowledge. They perform "zero-shot" classification with remarkable accuracy. This means you do not need to train the model on thousands of your specific support tickets. Instead, you instruct the model via a natural language prompt on how you want the data evaluated. If your criteria change—for example, if you suddenly need to track mentions of a newly launched "Dark Mode" feature—you simply update the prompt rather than retraining an entire algorithm.
 
 ### Why Choose the OpenAI API?
 
-While there are many models available, the OpenAI ecosystem offers several distinct advantages for production-grade automation:
+While there are many models available, the OpenAI ecosystem offers several distinct advantages for production-grade [automation](/posts/ai-tools-for-email-writing/):
 
 1. **Structured Outputs:** The API supports forced JSON outputs, ensuring that the response matches a strict schema. This is essential when parsing results directly into a database without human intervention.
 2. **Context Windows:** Modern OpenAI models boast massive context windows (up to 128k tokens), allowing you to analyze lengthy email threads or entire chat transcripts in a single API call to preserve the full conversational context.

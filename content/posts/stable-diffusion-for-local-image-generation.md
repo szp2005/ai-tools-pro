@@ -13,7 +13,7 @@ type: "informational"
 
 > **Quick Answer:** Running Stable Diffusion for local image generation requires a dedicated GPU (ideally an NVIDIA card with at least 8GB VRAM), enough system RAM (16GB+), and a user interface like Automatic1111 or ComfyUI. Local generation offers absolute privacy, zero recurring subscription costs, and complete control over advanced tools like ControlNet and custom LoRAs without content restrictions.
 
-Running AI image generation models locally has shifted from a complex developer experiment into a mainstream creative workflow. While cloud-based services offer convenience, they come with monthly subscription fees, strict content filters, and potential privacy concerns regarding the images you generate or use as source material. 
+Running AI image generation models locally has shifted from a complex developer experiment into a mainstream creative [workflow](/posts/how-to-automate-slack-notifications-with-n8n/). While cloud-based services offer convenience, they come with monthly subscription fees, strict content filters, and potential privacy concerns regarding the images you generate or use as source material. 
 
 Stable Diffusion fundamentally changes this dynamic. By downloading the model weights directly to your own hardware, you transform your personal computer into a completely private, uncensored, and highly customizable creative studio. The initial setup requires navigating a specific set of hardware requirements and software installations, but the payoff is absolute ownership of your generation pipeline.
 
@@ -44,7 +44,7 @@ Stable Diffusion is a raw model. To interact with it, you need a web user interf
 
 ### Automatic1111 (A1111)
 The industry standard. Automatic1111 presents a traditional, dense dashboard with sliders, checkboxes, and dropdown menus. 
-- **Pros:** Massive ecosystem of extensions, familiar interface, extensive documentation, and immediate support for almost every new technique discovered by the community.
+- **Pros:** Massive ecosystem of extensions, familiar interface, extensive [documentation](/posts/self-healing-knowledge-base-using-ai/), and immediate support for almost every new technique discovered by the community.
 - **Cons:** The interface can feel overwhelming for beginners, and code updates occasionally break existing extensions.
 
 ### ComfyUI
@@ -53,7 +53,7 @@ A node-based interface designed for ultimate flexibility and workflow optimizati
 - **Cons:** Steep learning curve. You must understand the underlying mechanics of how Stable Diffusion routes data from the model to the sampler to the VAE.
 
 ### Fooocus
-Designed to mimic the simple prompt-and-generate experience of Midjourney while running locally. It strips away the complex sliders and uses intelligent defaults.
+Designed to mimic the simple prompt-and-generate experience of [Midjourney](/posts/midjourney-parameter-guide-for-consistent-character-design/) while running locally. It strips away the complex sliders and uses intelligent defaults.
 - **Pros:** Zero configuration required, excellent default outputs, specifically optimized for SDXL models.
 - **Cons:** Less granular control over the generation pipeline compared to A1111 or ComfyUI.
 

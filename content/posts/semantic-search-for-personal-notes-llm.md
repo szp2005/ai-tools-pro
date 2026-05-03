@@ -11,7 +11,7 @@ type: "informational"
 
 # Semantic Search for Personal Notes LLM: Complete Setup Guide
 
-> **Quick Answer:** A semantic search for personal notes LLM system converts your text into vector embeddings, allowing you to search by meaning rather than exact keywords. By combining an embedding model (like OpenAI's text-embedding-3-small or local BGE models) with a vector database (like Chroma or Qdrant) and an LLM, you can instantly retrieve and synthesize ideas from thousands of scattered notes.
+> **Quick Answer:** A semantic search for personal notes LLM system converts your text into vector embeddings, allowing you to search by meaning rather than exact keywords. By combining an embedding model (like OpenAI's text-embedding-3-small or local BGE models) with a [vector database](/posts/build-a-custom-vector-database-with-pinecone/) (like Chroma or Qdrant) and an LLM, you can instantly retrieve and synthesize ideas from thousands of scattered notes.
 
 Anyone who maintains a digital garden, a Zettelkasten, or simply a massive folder of markdown files eventually hits a wall. Traditional search mechanics rely on exact keyword matching. If you wrote a note about "cognitive friction in UI design" two years ago, but today you search for "user interface mental effort," traditional search engines will return zero results. The knowledge is there, but the bridge to access it is broken by the limitations of vocabulary.
 
@@ -37,7 +37,7 @@ Storing thousands of high-dimensional vectors requires specialized infrastructur
 
 ### The Synthesis Layer: The LLM
 
-Once the vector database identifies the top five or ten notes most relevant to your query, it passes those raw text chunks to a Large Language Model. The LLM acts as a synthesizer. You provide the LLM with a prompt: "Based on the following excerpts from my personal notes, answer my question." The LLM reads the retrieved context, extracts the exact insights, and generates a coherent, conversational response, effectively acting as an expert whose only knowledge source is your own writing.
+Once the vector database identifies the top five or ten notes most relevant to your query, it passes those raw text chunks to a Large Language Model. The LLM acts as a synthesizer. You provide the LLM with a prompt: "Based on the following excerpts from my personal notes, answer my question." The LLM reads the retrieved context, extracts the exact insights, and generates a coherent, conversational response, effectively acting as an expert whose only knowledge source is your own [writing](/posts/ai-writing-assistant-for-long-form-content/).
 
 ## Cloud vs. Local Implementations
 
@@ -55,7 +55,7 @@ The advantage is ease of setup and access to highly capable models. The disadvan
 
 For complete privacy, you can run the entire pipeline offline on your own hardware. 
 
-Using tools like Ollama or LM Studio, you can host both the embedding model and the LLM locally. An open-source model like `nomic-embed-text` or `bge-m3` generates the embeddings. The vectors are stored in a local ChromaDB instance. For synthesis, you run a quantized local LLM, such as Llama 3 8B or Mistral 7B. 
+Using tools like Ollama or LM Studio, you can host both the embedding model and the LLM locally. An open-source model like `nomic-embed-text` or `bge-m3` generates the embeddings. The vectors are stored in a local ChromaDB instance. For synthesis, you run a quantized local LLM, such as [Llama 3](/posts/building-a-local-knowledge-base-with-llama-3/) 8B or Mistral 7B. 
 
 This guarantees zero data leakage. It requires a machine with decent RAM (typically 16GB minimum) and ideally an Apple Silicon Mac or an Nvidia GPU, but the latency is low and there are no recurring subscription fees.
 

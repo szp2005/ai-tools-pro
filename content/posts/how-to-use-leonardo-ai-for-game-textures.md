@@ -15,7 +15,7 @@ type: "informational"
 
 Indie developers and 3D environment artists constantly balance visual quality against strict production timelines. High-quality textures are essential for building immersive worlds, but manually sculpting, baking, and painting materials for every single surface consumes hundreds of hours. Traditional procedural material generation tools are powerful but come with a steep technical learning curve that can slow down rapid prototyping.
 
-This is where AI image generation, specifically tuned for game development workflows, steps in. Learning how to use Leonardo AI for game textures shifts the workflow from tedious manual authoring to curation and rapid iteration. Because Leonardo AI offers built-in tools for tiling and utilizes specific base models trained on high-quality digital art and game assets, it produces highly usable base maps for physically based rendering (PBR) workflows. 
+This is where AI [image generation](/posts/ai-image-generation-for-professional-marketers/), specifically tuned for game development workflows, steps in. Learning how to use Leonardo AI for game textures shifts the workflow from tedious manual authoring to curation and rapid iteration. Because Leonardo AI offers built-in tools for tiling and utilizes specific base models trained on high-quality digital art and game assets, it produces highly usable base maps for physically based rendering (PBR) workflows. 
 
 Whether you are building a stylized low-poly indie title in Godot or aiming for photorealistic environments in Unreal Engine 5, integrating AI into your texture pipeline reduces iteration time from days to minutes. This guide walks through the exact workflow to generate, refine, extract PBR maps, and implement production-ready game textures using Leonardo AI.
 
@@ -84,7 +84,7 @@ Materialize is a free software specifically built for creating PBR materials fro
 If you have an Adobe Substance license, Sampler is the industry standard for this workflow.
 1. Drag and drop your AI-generated image into the Substance Sampler viewport.
 2. Select the "Image to Material (AI Powered)" prompt.
-3. Sampler's own machine learning algorithms will automatically estimate depth, roughness, and surface normals with incredible accuracy.
+3. Sampler's own [machine learning](/posts/build-a-custom-vector-database-with-pinecone/) algorithms will automatically estimate depth, roughness, and surface normals with incredible accuracy.
 4. Tweak the micro-details, add procedural dirt or water layers if desired, and export your maps at 2048x2048.
 
 ## Step 5: Implementing Textures in Your Game Engine
@@ -136,7 +136,7 @@ This creates a single RGB image (often called an ARM or ORM map). Inside Unreal 
 
 ## Conclusion
 
-Integrating Leonardo AI into your texture creation pipeline dramatically reduces the time spent on initial material authoring. By combining Leonardo's tileable base color generation with standard PBR map conversion tools like Materialize or Substance 3D Sampler, developers can populate their virtual worlds rapidly. The key to achieving professional-grade game art lies not just in writing a good AI prompt, but in the subsequent upscaling, physical map extraction, and highly optimized engine implementation.
+Integrating Leonardo AI into your texture creation pipeline dramatically reduces the time spent on initial material authoring. By combining Leonardo's tileable base color generation with standard PBR map conversion tools like Materialize or Substance 3D Sampler, developers can populate their virtual worlds rapidly. The key to achieving professional-grade game art lies not just in [writing](/posts/ai-writing-assistant-for-long-form-content/) a good AI prompt, but in the subsequent upscaling, physical map extraction, and highly optimized engine implementation.
 
 ## Frequently Asked Questions
 

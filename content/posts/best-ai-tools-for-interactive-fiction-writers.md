@@ -17,7 +17,7 @@ _As an Amazon Associate we earn from qualifying purchases. This post may contain
 
 Interactive fiction presents a unique challenge that linear storytelling completely bypasses: exponential expansion. Every choice you offer a player creates a new branch, and every branch requires distinct dialogue, descriptions, and logical continuity. For decades, interactive fiction writers have battled the "combinatorial explosion"—the sheer volume of writing required to make a truly responsive world.
 
-Artificial intelligence has fundamentally altered this landscape. The best AI tools for interactive fiction writers do not replace the author's vision; rather, they act as sophisticated co-authors that handle the heavy lifting of narrative variation. Whether you need to generate five different ways an NPC might react to an insult, organize a massive lore bible, or build dynamic dialogue trees that adapt to player stats, modern AI software provides the necessary infrastructure.
+[Artificial intelligence](/posts/ai-tools-for-seo-writing/) has fundamentally altered this landscape. The best AI tools for interactive fiction writers do not replace the author's vision; rather, they act as sophisticated co-authors that handle the heavy lifting of narrative variation. Whether you need to generate five different ways an NPC might react to an insult, organize a massive lore bible, or build dynamic dialogue trees that adapt to player stats, modern AI software provides the necessary infrastructure.
 
 Choosing the right tool depends entirely on your workflow. Some writers need prose generation to flesh out text-based adventures, while others require intelligent character engines that integrate directly into platforms like Unity or Unreal Engine. This guide examines the top platforms available to interactive fiction creators, evaluating them on integration, logic handling, and prose quality.
 
@@ -109,7 +109,7 @@ You can write a script where a character asks the player a question. Instead of 
 
 **Cons:**
 - Pricing scales with player usage, which can be unpredictable for indie devs
-- Requires careful prompt engineering to prevent characters from going off-script
+- Requires careful [prompt engineering](/posts/midjourney-parameter-guide-for-consistent-character-design/) to prevent characters from going off-script
 
 ### 5. [NovelAI](https://www.amazon.com/s?k=NovelAI&tag=toolrouteai-20)
 
@@ -155,7 +155,7 @@ ChatGPT excels at the structural and logical elements of interactive fiction. Yo
 **Price:** Platform dependent (currently in beta/creator access)
 **Rating:** 4.3/5
 
-Hidden Door takes a vastly different approach. It is a generative AI platform designed specifically to turn existing works of fiction into playable, social roleplaying games. Writers and creators can input their worlds, rulesets, and characters, and Hidden Door creates an interactive, visually represented environment where players can explore.
+Hidden Door takes a vastly different approach. It is a [generative AI](/posts/stable-diffusion-vs-midjourney-for-beginners/) platform designed specifically to turn existing works of fiction into playable, social roleplaying games. Writers and creators can input their worlds, rulesets, and characters, and Hidden Door creates an interactive, visually represented environment where players can explore.
 
 The AI acts as a digital Dungeon Master, strictly adhering to the "vibes" and rules of the author's world. If a player attempts an action that violates the lore, the AI organically redirects the narrative. It is an excellent tool for authors looking to monetize their existing linear fiction by transforming it into an interactive format without having to code an entire game from scratch.
 

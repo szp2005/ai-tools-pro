@@ -124,7 +124,7 @@ When evaluating an LLM tool for financial data extraction, standard software met
 Financial data lives in tables, and tables are the Achilles' heel of many LLMs. A standard LLM often reads left-to-right, losing the column structure of a balance sheet entirely. The tool you choose must have specialized vision-language capabilities that understand spatial relationships, nested headers, and merged cells. Test the tool extensively on documents where tables break across two separate pages.
 
 ### Hallucination Controls
-In creative writing, an LLM hallucination is a quirky feature. In financial data extraction, a hallucinated decimal point or a fabricated revenue number is a catastrophic failure. Look for tools that utilize retrieval-augmented generation (RAG) specific to the document, enforce strict grounding, and provide confidence scores for every extracted data point. The system must know when to flag a human for review rather than guessing a number.
+In creative writing, an LLM hallucination is a quirky feature. In financial data extraction, a hallucinated decimal point or a fabricated revenue number is a catastrophic failure. Look for tools that utilize retrieval-augmented generation (RAG) specific to the document, enforce strict grounding, and provide confidence scores for every extracted data point. The system must know when to flag a human for [review](/posts/otter-ai-review-transcription/) rather than guessing a number.
 
 ### Output Formatting
 Extraction is only the first step; the data must be usable. The LLM must be capable of consistently outputting data in strict, predictable formats like JSON, XML, or direct API payloads. If an LLM occasionally adds conversational text (e.g., "Here is the JSON you requested:") to the output, it will break your automated data pipelines.
@@ -136,11 +136,11 @@ Financial documents contain highly sensitive material, including PII, confidenti
 
 Deploying an LLM for financial data extraction is rarely a plug-and-play operation. To ensure high accuracy and low risk, follow a phased implementation strategy.
 
-Start by running the LLM in parallel with your existing extraction process. If you currently use manual data entry or traditional OCR, do not turn those systems off. Pipe the same documents through the LLM and measure the delta in accuracy, speed, and cost over a 30-day period.
+Start by running the LLM in parallel with your existing extraction process. If you currently use manual [data entry](/posts/n8n-integration-for-automated-crm-data-entry/) or traditional OCR, do not turn those systems off. Pipe the same documents through the LLM and measure the delta in accuracy, speed, and cost over a 30-day period.
 
 Enforce a strict "human-in-the-loop" protocol for the first three months. Set confidence thresholds within your application. For example, if the LLM's internal confidence score for an extracted invoice total drops below 95%, automatically route that document to a human analyst for verification. Modern platforms like Rossum excel at this workflow.
 
-When using foundational models via API (like Claude or GPT-4o), invest heavily in prompt engineering. Use "few-shot prompting" by providing the LLM with three to five examples of the raw text and the exact JSON output you expect. Instruct the model explicitly to return "null" if it cannot find a value, rather than attempting to extrapolate or guess based on surrounding context.
+When using foundational models via API (like Claude or GPT-4o), invest heavily in [prompt engineering](/posts/midjourney-parameter-guide-for-consistent-character-design/). Use "few-shot prompting" by providing the LLM with three to five examples of the raw text and the exact JSON output you expect. Instruct the model explicitly to return "null" if it cannot find a value, rather than attempting to extrapolate or guess based on surrounding context.
 
 Finally, optimize your input before it reaches the LLM. If you are processing massive 200-page reports to find three pages of financial tables, use a cheaper, faster classification model to identify the relevant pages first. Sending only the necessary pages to the heavy-duty LLM will drastically reduce your API costs and lower the risk of the model getting confused by irrelevant narrative text.
 

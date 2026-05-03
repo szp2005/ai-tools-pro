@@ -25,7 +25,7 @@ A traditional knowledge base functions as a passive database. A self-healing sys
 
 ### Anomaly Detection and Drift Monitoring
 
-The first step in autonomous repair is recognizing when information is no longer accurate. AI agents achieve this by continuously comparing the knowledge base against primary data sources. If an engineering team pushes a commit modifying an API endpoint from `/v1/users` to `/v2/users`, the AI cross-references this change against all existing documentation.
+The first step in autonomous repair is recognizing when information is no longer accurate. [AI agents](/posts/building-ai-agents-for-cold-email-outreach/) achieve this by continuously comparing the knowledge base against primary data sources. If an engineering team pushes a commit modifying an API endpoint from `/v1/users` to `/v2/users`, the AI cross-references this change against all existing documentation.
 
 Using vector embeddings, the system identifies semantically related articles. It does not just look for exact text matches; it understands context. When a discrepancy between the codebase (the ground truth) and the documentation (the knowledge base) exceeds a defined confidence threshold, the system flags the article for remediation.
 
@@ -62,7 +62,7 @@ When new information enters the system, a semantic router compares the incoming 
 
 ### The Evaluation LLM
 
-You need a reasoning engine to determine how to apply the fix. This is typically a high-tier model like GPT-4, Claude 3.5 Sonnet, or a fine-tuned open-source model like Llama 3. The evaluation LLM reviews the conflict, determines the scope of the necessary edit, and ensures that changing one paragraph does not inadvertently contradict a different section of the same article.
+You need a reasoning engine to determine how to apply the fix. This is typically a high-tier model like GPT-4, Claude 3.5 Sonnet, or a fine-tuned open-source model like [Llama 3](/posts/building-a-local-knowledge-base-with-llama-3/). The evaluation LLM [reviews](/posts/writesonic-review-honest/) the conflict, determines the scope of the necessary edit, and ensures that changing one paragraph does not inadvertently contradict a different section of the same article.
 
 ## Practical Steps to Implement Automated Accuracy
 

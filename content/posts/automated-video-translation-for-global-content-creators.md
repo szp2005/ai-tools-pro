@@ -83,13 +83,13 @@ However, the ROI calculation hinges on the low cost of automated translation. If
 
 ## Practical Advice: Designing a Localization Workflow
 
-Do not simply drop an MP4 into an AI tool and upload the direct output. The most successful global creators utilize a hybrid workflow that leverages automation while maintaining strict quality control. 
+Do not simply drop an MP4 into an AI tool and upload the direct output. The most successful global creators utilize a hybrid workflow that leverages [automation](/posts/ai-tools-for-email-writing/) while maintaining strict quality control. 
 
 ### Step 1: Clean Audio Extraction and Stemming
 Translation AI struggles with heavily mixed audio. If your voice is competing with loud background music or explosive sound effects, the AI will either fail to transcribe the words or accidentally clone the music alongside your voice, creating audio artifacting. Before translating, run your video through an audio separation tool (like Ultimate Vocal Remover or native editing software stem tools) to isolate your raw vocal track. Feed *only* the vocal track into the translation software.
 
 ### Step 2: Transcript Verification and Cultural Tuning
-Never blindly trust the initial translation layer. Export the generated English transcript and the localized text. Run the text through an LLM like Claude or ChatGPT with a prompt such as: "Review this Spanish translation of a YouTube script. Ensure the tone is casual and conversational. Replace any overly formal or literal translations with natural Latin American Spanish slang where appropriate." Once verified, feed the corrected transcript back into the dubbing engine for final audio synthesis.
+Never blindly trust the initial translation layer. Export the generated English transcript and the localized text. Run the text through an LLM like Claude or [ChatGPT](/posts/notion-ai-vs-chatgpt-for-notes/) with a prompt such as: "[Review](/posts/otter-ai-review-transcription/) this Spanish translation of a YouTube script. Ensure the tone is casual and conversational. Replace any overly formal or literal translations with natural Latin American Spanish slang where appropriate." Once verified, feed the corrected transcript back into the dubbing engine for final audio synthesis.
 
 ### Step 3: Audio Re-Mixing
 Take the newly generated foreign language vocal track and drop it back into your video editor. Re-apply your background music and sound effects (SFX) stems beneath the new voice. This ensures the localized video retains the exact production value and punchiness of the original upload.

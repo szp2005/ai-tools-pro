@@ -17,7 +17,7 @@ Standard API integrations excel at moving structured data from one database to a
 
 Implementing the Anthropic Claude API serves precisely this function. Rather than relying on rigid regex rules or fragile screen scrapers, engineers can deploy large language models to ingest chaotic inputs, apply nuanced business logic, and output strictly formatted data ready for the next step in a pipeline.
 
-This guide details how to architect, build, and optimize custom workflow automations using the Claude API, focusing on practical implementation standards, model selection, and deterministic prompt engineering.
+This guide details how to architect, build, and optimize custom workflow automations using the Claude API, focusing on practical implementation standards, model selection, and deterministic [prompt engineering](/posts/midjourney-parameter-guide-for-consistent-character-design/).
 
 ## Understanding Claude Models for Automation Tasks
 
@@ -30,7 +30,7 @@ Haiku is optimized for latency and throughput. In a workflow context, you should
 Sonnet is the optimal balance of intelligence and speed, making it the default choice for 90% of workflow automations. It excels at adhering to strict formatting instructions (like returning pure JSON without conversational wrapper text) and managing tool use. If your automation requires analyzing a complex document, executing multiple function calls to verify data against a CRM, and drafting a tailored response, Sonnet provides the necessary reasoning capabilities without the latency penalties of heavier models.
 
 ### Claude 3.5 Opus: The Edge-Case Resolver
-Opus is reserved for highly complex, multi-step reasoning tasks where accuracy is paramount and latency is secondary. In automated pipelines, Opus is rarely the first step. Instead, it serves as an escalation endpoint. For instance, if Sonnet detects an anomaly in a legal contract extraction that it cannot confidently resolve, the workflow can route the payload to Opus for deeper analysis before raising a flag for human review.
+Opus is reserved for highly complex, multi-step reasoning tasks where accuracy is paramount and latency is secondary. In automated pipelines, Opus is rarely the first step. Instead, it serves as an escalation endpoint. For instance, if Sonnet detects an anomaly in a legal contract extraction that it cannot confidently resolve, the workflow can route the payload to Opus for deeper analysis before raising a flag for human [review](/posts/otter-ai-review-transcription/).
 
 ## Core Use Cases for Workflow Automation
 
@@ -40,7 +40,7 @@ Integrating the Claude API transforms rigid point-to-point connections into adap
 Traditional OCR and data scraping fail when a vendor changes their invoice layout. An automation powered by Claude can process documents (using vision capabilities or parsed text) and extract required fields regardless of structural changes. You can feed the API a 50-page PDF and a JSON schema, instructing Claude to populate the schema with specific data points like invoice numbers, line items, and tax totals. The workflow then injects this standardized JSON directly into your accounting software.
 
 ### Dynamic Ticket Routing and Triage
-Support teams frequently lose hours manually reading and assigning tickets based on priority and department. A Claude-driven workflow can intercept incoming tickets via webhooks. The API evaluates the user's sentiment, identifies the core product issue, references historical resolution documentation to propose a preliminary solution, and assigns a precise priority score. The workflow then routes the ticket to the correct Slack channel or Jira board, complete with an AI-generated summary for the responding agent.
+Support teams frequently lose hours manually reading and assigning tickets based on priority and department. A Claude-driven workflow can intercept incoming tickets via webhooks. The API evaluates the user's sentiment, identifies the core product issue, references historical resolution [documentation](/posts/self-healing-knowledge-base-using-ai/) to propose a preliminary solution, and assigns a precise priority score. The workflow then routes the ticket to the correct Slack channel or Jira board, complete with an AI-generated summary for the responding agent.
 
 ### Content Processing and Pipeline Generation
 For marketing and editorial teams, the Claude API can automate the transformation of raw inputs into ready-to-publish formats. A workflow can trigger when a new raw audio transcript is uploaded to a cloud drive. The API reads the transcript, cleans up the verbal filler, formats it into a structured blog post based on your editorial guidelines, generates localized social media copy for different platforms, and pushes the final assets into a CMS as drafts.

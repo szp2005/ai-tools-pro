@@ -29,7 +29,7 @@ By structuring your queries into a systematic pipeline, you can turn Perplexity 
 
 ## Step 1: Automated Niche Discovery Workflows
 
-The first phase of automation is broad discovery. Instead of brainstorming manually, use structured prompts to force Perplexity to identify intersectional niches—areas where two distinct markets overlap. 
+The first phase of [automation](/posts/ai-tools-for-email-writing/) is broad discovery. Instead of brainstorming manually, use structured prompts to force Perplexity to identify intersectional niches—areas where two distinct markets overlap. 
 
 ### The Intersectional Prompt Strategy
 
@@ -90,11 +90,11 @@ While Perplexity is not a dedicated SEO tool, it can aggregate data from various
 You need to know where your target audience hangs out. You can automate this discovery by asking Perplexity to reverse-engineer competitor traffic.
 
 **Use this prompt structure:**
-*“Analyze the online presence of [Competitor A] and [Competitor B]. Based on recent marketing reports, SEO data, and social media presence, what are their primary customer acquisition channels? Are they relying heavily on organic search, paid social, YouTube, or direct B2B outreach? Provide actionable insights on which channels are currently underutilized in this niche.”*
+*“Analyze the online presence of [Competitor A] and [Competitor B]. Based on recent marketing reports, SEO data, and social media presence, what are their primary customer acquisition channels? Are they relying heavily on organic search, paid social, YouTube, or direct [B2B outreach](/posts/building-ai-agents-for-cold-email-outreach/)? Provide actionable insights on which channels are currently underutilized in this niche.”*
 
 ### Keyword Clustering for Content Strategy
 
-To ensure the niche has enough depth to support a content marketing strategy, use Perplexity to generate automated topical maps. 
+To ensure the niche has enough depth to support a content [marketing strategy](/posts/best-ai-image-generators-for-marketers/), use Perplexity to generate automated topical maps. 
 
 **Use this prompt structure:**
 *“Generate a topical map for a new blog entering the [Specific Niche] space. Group the topics into 5 core pillars. Under each pillar, list 4 long-tail keyword phrases that a beginner in this space would search for. Focus on informational queries with high intent.”*
