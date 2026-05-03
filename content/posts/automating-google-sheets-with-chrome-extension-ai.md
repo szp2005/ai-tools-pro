@@ -1,4 +1,5 @@
 ---
+image: "/og/automating-google-sheets-with-chrome-extension-ai.webp"
 title: "Automating Google Sheets with Chrome Extension AI: Complete Guide to Streamlining Data"
 description: "Discover how automating Google Sheets with Chrome extension AI can eliminate manual data entry, write complex formulas, and analyze datasets in minutes."
 pubDate: "2026-05-03"

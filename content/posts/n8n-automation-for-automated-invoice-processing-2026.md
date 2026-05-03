@@ -1,4 +1,5 @@
 ---
+image: "/og/n8n-automation-for-automated-invoice-processing-2026.webp"
 title: "n8n Automation for Automated Invoice Processing 2026: Setup Guide"
 description: "Master n8n automation for automated invoice processing in 2026. Learn how to extract data, route approvals, and sync with accounting software efficiently."
 pubDate: "2026-05-03"

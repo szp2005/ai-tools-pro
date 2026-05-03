@@ -1,4 +1,5 @@
 ---
+image: "/og/using-n8n-to-connect-openai-with-airtable.webp"
 title: "How to Connect OpenAI with Airtable Using n8n: 5-Step Guide"
 description: "Learn how to automate data processing by connecting OpenAI with Airtable using n8n. Follow our 5-step guide to build powerful AI workflows without coding."
 pubDate: "2026-05-02"

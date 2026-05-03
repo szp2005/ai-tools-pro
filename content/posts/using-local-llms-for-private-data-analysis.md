@@ -1,4 +1,5 @@
 ---
+image: "/og/using-local-llms-for-private-data-analysis.webp"
 title: "Using Local LLMs for Private Data Analysis: Complete 2026 Guide"
 description: "Learn how to use local LLMs for private data analysis. Discover the best models, hardware requirements, and setup steps to keep sensitive information secure."
 pubDate: "2026-05-02"

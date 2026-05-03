@@ -1,4 +1,5 @@
 ---
+image: "/og/using-ai-agents-for-automated-competitor-research.webp"
 title: "How to Use AI Agents for Automated Competitor Research: 5-Step Guide"
 description: "Learn how using AI agents for automated competitor research can save hundreds of hours while tracking pricing changes, feature updates, and marketing strategies."
 pubDate: "2026-05-03"

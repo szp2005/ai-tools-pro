@@ -1,4 +1,5 @@
 ---
+image: "/og/top-ai-agents-for-ecommerce-inventory-management.webp"
 title: "Top AI Agents for Ecommerce Inventory Management in 2026"
 description: "Discover the top AI agents for ecommerce inventory management. Compare features, pricing, and integrations to prevent stockouts and boost your profit margins."
 pubDate: "2026-05-03"

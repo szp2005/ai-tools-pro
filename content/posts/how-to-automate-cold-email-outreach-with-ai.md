@@ -1,4 +1,5 @@
 ---
+image: "/og/how-to-automate-cold-email-outreach-with-ai.webp"
 title: "How to Automate Cold Email Outreach with AI: 5-Step Guide"
 description: "Learn how to automate cold email outreach with AI to scale your campaigns, personalize at volume, and increase reply rates without sacrificing deliverability."
 pubDate: "2026-05-02"

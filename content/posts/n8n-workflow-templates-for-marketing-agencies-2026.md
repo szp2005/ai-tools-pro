@@ -1,4 +1,5 @@
 ---
+image: "/og/n8n-workflow-templates-for-marketing-agencies-2026.webp"
 title: "15 Best n8n Workflow Templates for Marketing Agencies 2026"
 description: "Discover top n8n workflow templates for marketing agencies in 2026. Automate lead generation, reporting, and client onboarding to scale your agency fast."
 pubDate: "2026-05-03"

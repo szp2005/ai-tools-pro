@@ -1,4 +1,5 @@
 ---
+image: "/og/llm-tool-for-automated-technical-support-tickets.webp"
 title: "Best LLM Tool for Automated Technical Support Tickets (2026)"
 description: "Find the best LLM tool for automated technical support tickets. Reduce resolution times, deflect repetitive queries, and scale your IT helpdesk efficiently."
 pubDate: "2026-05-03"

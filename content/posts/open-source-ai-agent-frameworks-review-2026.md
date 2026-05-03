@@ -1,4 +1,5 @@
 ---
+image: "/og/open-source-ai-agent-frameworks-review-2026.webp"
 title: "Best Open Source AI Agent Frameworks Review 2026: Top Picks"
 description: "Our comprehensive 2026 review of the best open source AI agent frameworks. Compare LangGraph, AutoGen, CrewAI, and more to build autonomous AI systems."
 pubDate: "2026-05-03"

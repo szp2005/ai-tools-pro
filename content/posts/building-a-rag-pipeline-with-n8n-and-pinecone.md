@@ -1,4 +1,5 @@
 ---
+image: "/og/building-a-rag-pipeline-with-n8n-and-pinecone.webp"
 title: "Building a RAG Pipeline with n8n and Pinecone: Complete Guide"
 description: "Learn how to build a powerful RAG pipeline using n8n and Pinecone. Step-by-step guide to integrating vector databases, embeddings, and automated workflows."
 pubDate: "2026-05-02"

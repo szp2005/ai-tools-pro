@@ -1,4 +1,5 @@
 ---
+image: "/og/crewai-vs-autogen-for-building-autonomous-agents.webp"
 title: "CrewAI vs AutoGen: Which Is Better for Building Autonomous Agents?"
 description: "Compare CrewAI and AutoGen for building autonomous AI agents. Discover which multi-agent framework is best for your development workflows and specific use cases."
 pubDate: "2026-05-03"

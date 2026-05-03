@@ -1,4 +1,5 @@
 ---
+image: "/og/ai-driven-marketing-calendar-for-small-agencies.webp"
 title: "Best AI Driven Marketing Calendar for Small Agencies in 2026"
 description: "Discover the top AI driven marketing calendar for small agencies to automate scheduling, streamline client approvals, and scale campaigns effortlessly."
 pubDate: "2026-05-02"

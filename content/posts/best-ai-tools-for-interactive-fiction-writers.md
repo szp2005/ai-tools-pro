@@ -1,4 +1,5 @@
 ---
+image: "/og/best-ai-tools-for-interactive-fiction-writers.webp"
 title: "7 Best AI Tools for Interactive Fiction Writers in 2026"
 description: "Discover the best AI tools for interactive fiction writers. Compare top platforms for branching narratives, world-building, and dynamic character dialogue."
 pubDate: "2026-05-02"

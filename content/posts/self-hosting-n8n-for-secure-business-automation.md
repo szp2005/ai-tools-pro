@@ -1,4 +1,5 @@
 ---
+image: "/og/self-hosting-n8n-for-secure-business-automation.webp"
 title: "Self Hosting n8n for Secure Business Automation: 2026 Guide"
 description: "Learn how self hosting n8n for secure business automation gives you total data control, reduces costs, and scales workflows without vendor lock-in."
 pubDate: "2026-05-02"

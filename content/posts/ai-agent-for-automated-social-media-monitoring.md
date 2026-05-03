@@ -1,4 +1,5 @@
 ---
+image: "/og/ai-agent-for-automated-social-media-monitoring.webp"
 title: "Best AI Agent for Automated Social Media Monitoring in 2026"
 description: "Compare the top AI agents for automated social media monitoring to track brand sentiment, manage crises, and engage customers with zero manual effort."
 pubDate: "2026-05-03"

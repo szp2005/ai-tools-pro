@@ -1,4 +1,5 @@
 ---
+image: "/og/multi-agent-systems-for-complex-business-tasks.webp"
 title: "Multi Agent Systems for Complex Business Tasks: Complete Guide"
 description: "Learn how multi agent systems for complex business tasks orchestrate specialized AI to automate workflows, reduce bottlenecks, and scale enterprise operations."
 pubDate: "2026-05-03"

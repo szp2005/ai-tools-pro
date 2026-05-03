@@ -1,4 +1,5 @@
 ---
+image: "/og/chrome-extension-ai-for-automated-linkedin-prospecting.webp"
 title: "Best Chrome Extension AI for Automated LinkedIn Prospecting in 2026"
 description: "Discover the top Chrome extension AI for automated LinkedIn prospecting. Compare tools to scale outreach, boost reply rates, and bypass manual limits safely."
 pubDate: "2026-05-03"

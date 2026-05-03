@@ -1,4 +1,5 @@
 ---
+image: "/og/best-chrome-extension-ai-for-data-scraping-2026.webp"
 title: "Best Chrome Extension AI for Data Scraping 2026"
 description: "Discover the best Chrome extension AI for data scraping in 2026. We review the top tools for automated data extraction, pricing, and ease of use."
 pubDate: "2026-05-03"

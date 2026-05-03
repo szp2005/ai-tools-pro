@@ -1,4 +1,5 @@
 ---
+image: "/og/automate-customer-sentiment-analysis-with-openai-api.webp"
 title: "Automate Customer Sentiment Analysis with OpenAI API: Complete Guide"
 description: "Learn how to automate customer sentiment analysis with OpenAI API. Discover prompt engineering, API integration, and scaling strategies to extract deep insights."
 pubDate: "2026-05-02"

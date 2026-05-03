@@ -1,4 +1,5 @@
 ---
+image: "/og/automated-video-translation-for-global-content-creators.webp"
 title: "Best Automated Video Translation for Global Content Creators in 2026"
 description: "Discover the best automated video translation for global content creators. Reach international audiences faster and scale your channel with top AI dubbing tools."
 pubDate: "2026-05-02"

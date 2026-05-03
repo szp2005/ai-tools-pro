@@ -1,4 +1,5 @@
 ---
+image: "/og/best-ai-coding-assistants-for-indie-web-developers.webp"
 title: "Best AI Coding Assistants for Indie Web Developers in 2026"
 description: "Discover the best AI coding assistants for indie web developers to accelerate full-stack development, ship faster, and write cleaner code without a team."
 pubDate: "2026-05-02"

@@ -1,4 +1,5 @@
 ---
+image: "/og/best-ai-sidebar-extensions-for-chrome-productivity.webp"
 title: "Best AI Sidebar Extensions for Chrome Productivity in 2026"
 description: "Discover the best AI sidebar extensions for Chrome productivity. Compare top tools for reading, writing, and researching directly in your browser."
 pubDate: "2026-05-03"

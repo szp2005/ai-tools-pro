@@ -1,4 +1,5 @@
 ---
+image: "/og/how-to-automate-slack-notifications-with-n8n.webp"
 title: "How to Automate Slack Notifications with n8n: 5-Step Guide"
 description: "Learn how to automate Slack notifications with n8n. This step-by-step guide covers webhook triggers, conditional routing, and Block Kit formatting."
 pubDate: "2026-05-03"

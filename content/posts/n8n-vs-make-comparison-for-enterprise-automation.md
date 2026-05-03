@@ -1,4 +1,5 @@
 ---
+image: "/og/n8n-vs-make-comparison-for-enterprise-automation.webp"
 title: "n8n vs Make Comparison for Enterprise Automation (2026)"
 description: "Compare n8n vs Make for enterprise automation in 2026. Discover which workflow platform offers the best security, scalability, and pricing for your team."
 pubDate: "2026-05-03"

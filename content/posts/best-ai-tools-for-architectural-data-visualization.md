@@ -1,4 +1,5 @@
 ---
+image: "/og/best-ai-tools-for-architectural-data-visualization.webp"
 title: "Best AI Tools for Architectural Data Visualization in 2026"
 description: "Find the best AI tools for architectural data visualization to turn complex building data into clear, actionable insights. Compare pricing and features for 2026."
 pubDate: "2026-05-02"

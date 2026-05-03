@@ -1,4 +1,5 @@
 ---
+image: "/og/n8n-integration-for-automated-crm-data-entry.webp"
 title: "How to Build an n8n Integration for Automated CRM Data Entry: 5-Step Guide"
 description: "Eliminate manual data entry errors by connecting your lead sources to Salesforce, HubSpot, or Pipedrive using an n8n integration for automated CRM data entry."
 pubDate: "2026-05-03"

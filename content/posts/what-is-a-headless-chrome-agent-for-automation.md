@@ -1,4 +1,5 @@
 ---
+image: "/og/what-is-a-headless-chrome-agent-for-automation.webp"
 title: "What Is a Headless Chrome Agent for Automation? Complete Guide"
 description: "Learn what is a headless chrome agent for automation. Discover the underlying protocols, AI-driven navigation, and practical steps to scale web extraction."
 pubDate: "2026-05-03"

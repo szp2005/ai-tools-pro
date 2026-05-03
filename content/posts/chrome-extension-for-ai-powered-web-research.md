@@ -1,4 +1,5 @@
 ---
+image: "/og/chrome-extension-for-ai-powered-web-research.webp"
 title: "Best Chrome Extension for AI Powered Web Research (2026)"
 description: "Find the best Chrome extension for AI powered web research. Compare top tools to summarize articles, extract data, and accelerate your workflows in 2026."
 pubDate: "2026-05-03"

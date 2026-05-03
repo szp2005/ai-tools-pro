@@ -1,4 +1,5 @@
 ---
+image: "/og/best-llm-tools-for-financial-data-extraction.webp"
 title: "Best LLM Tools for Financial Data Extraction in 2026"
 description: "Compare the best LLM tools for financial data extraction. Discover top AI solutions for automating invoice parsing, unstructured reporting, and receipt scanning."
 pubDate: "2026-05-03"

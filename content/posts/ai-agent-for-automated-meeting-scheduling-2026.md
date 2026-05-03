@@ -1,4 +1,5 @@
 ---
+image: "/og/ai-agent-for-automated-meeting-scheduling-2026.webp"
 title: "Best AI Agent for Automated Meeting Scheduling in 2026"
 description: "Stop playing email ping-pong. Discover the top AI agent for automated meeting scheduling in 2026 to reclaim hours of deep work and close deals faster."
 pubDate: "2026-05-03"

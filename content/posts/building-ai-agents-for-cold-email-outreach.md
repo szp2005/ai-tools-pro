@@ -1,4 +1,5 @@
 ---
+image: "/og/building-ai-agents-for-cold-email-outreach.webp"
 title: "Building AI Agents for Cold Email Outreach: Complete Guide to Automation"
 description: "Learn how building AI agents for cold email outreach can automate personalization, handle responses, and scale your B2B sales pipeline without sacrificing quality."
 pubDate: "2026-05-02"

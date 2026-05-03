@@ -1,4 +1,5 @@
 ---
+image: "/og/creating-a-custom-gpt-for-employee-onboarding.webp"
 title: "Creating a Custom GPT for Employee Onboarding: 5-Step Guide"
 description: "Learn how creating a custom GPT for employee onboarding reduces ramp-up time and answers new hire questions instantly."
 pubDate: "2026-05-03"

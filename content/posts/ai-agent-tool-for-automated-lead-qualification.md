@@ -1,4 +1,5 @@
 ---
+image: "/og/ai-agent-tool-for-automated-lead-qualification.webp"
 title: "Best AI Agent Tool for Automated Lead Qualification in 2026"
 description: "Discover the best AI agent tool for automated lead qualification. Compare top platforms to increase conversion rates and eliminate manual pipeline management."
 pubDate: "2026-05-03"

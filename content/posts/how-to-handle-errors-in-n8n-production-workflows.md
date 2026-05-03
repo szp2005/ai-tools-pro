@@ -1,4 +1,5 @@
 ---
+image: "/og/how-to-handle-errors-in-n8n-production-workflows.webp"
 title: "How to Handle Errors in n8n Production Workflows: Complete Guide"
 description: "Learn how to handle errors in n8n production workflows with robust strategies, including error trigger nodes, conditional routing, and automated retry logic."
 pubDate: "2026-05-03"
