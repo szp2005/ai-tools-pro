@@ -21,19 +21,28 @@ const {
   author,
   articleImage,
 } = Astro.props;
+
 const siteName = 'AI Tools Pro';
 const siteURL = 'https://ai.toolrouteai.com';
+
+// i18n logic
+const { pathname } = Astro.url;
+const lang = pathname.startsWith('/zh-cn') ? 'zh-cn' : 'en';
+
 // Force canonical to siteURL host regardless of which domain served the page.
-// This avoids duplicate-content penalty when both toolrouteai.com (root, AdSense)
-// and ai.toolrouteai.com (canonical) serve identical content.
-const canonicalURL = canonicalURLProp ?? `${siteURL}${Astro.url.pathname}${Astro.url.search}`;
+const canonicalURL = canonicalURLProp ?? `${siteURL}${pathname}${Astro.url.search}`;
+
+// Alternate links for SEO
+const alternateEn = `${siteURL}${pathname.replace('/zh-cn', '')}`;
+const alternateZh = pathname.startsWith('/zh-cn') ? `${siteURL}${pathname}` : `${siteURL}/zh-cn${pathname}`;
+
 const ogImage = articleImage ? (articleImage.startsWith('http') ? articleImage : `${siteURL}${articleImage}`) : `${siteURL}/og-default.png`;
 const cloudflareWebAnalyticsToken = import.meta.env.PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN;
 const adsensePublisherId = import.meta.env.PUBLIC_ADSENSE_PUBLISHER_ID;
 const ga4MeasurementId = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID;
 ---
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -43,6 +52,11 @@ const ga4MeasurementId = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID;
     <meta name="description" content={description} />
     <title>{title}</title>
     {noindex && (<meta name="robots" content="noindex,follow" />)}
+
+    <!-- i18n -->
+    <link rel="alternate" hreflang="en" href={alternateEn} />
+    <link rel="alternate" hreflang="zh-cn" href={alternateZh} />
+    <link rel="alternate" hreflang="x-default" href={alternateEn} />
 
     <!-- Canonical -->
     <link rel="canonical" href={canonicalURL} />
@@ -75,7 +89,7 @@ const ga4MeasurementId = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID;
         "datePublished": pubDate,
         "dateModified": dateModified ?? pubDate,
         "image": articleImage ?? ogImage,
-        "inLanguage": "en",
+        "inLanguage": lang,
         "mainEntityOfPage": {
           "@type": "WebPage",
           "@id": canonicalURL
