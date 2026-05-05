@@ -1,0 +1,64 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const modules = import.meta.glob('../../../content/posts/zh-cn/*.md', { eager: true });
+const posts = Object.entries(modules)
+  .map(([path, mod]: [string, any]) => {
+    const fm = mod.frontmatter ?? {};
+    return {
+      slug: fm.slug ?? path.split('/').pop()?.replace(/\.md$/, ''),
+      title: fm.title ?? '无标题',
+      description: fm.description ?? '',
+      date: fm.pubDate ? String(fm.pubDate) : (fm.date ? String(fm.date) : ''),
+    };
+  })
+  .sort((a, b) => (b.date > a.date ? 1 : -1))
+  .slice(0, 12);
+---
+<BaseLayout
+  title="AI Tools Pro 中文"
+  description="AI 工具实用对比、工作流和采购指南"
+  canonicalURL="https://ai.toolrouteai.com/zh-cn/"
+>
+  <div class="home">
+    <section class="hero">
+      <h1>AI Tools Pro 中文</h1>
+      <p>AI 工具实用对比、工作流和采购指南</p>
+      <p class="lang-switch"><a href="/">English version →</a></p>
+    </section>
+    <section class="recent">
+      <h2>最新文章</h2>
+      <ul class="post-list">
+        {posts.map((post) => (
+          <li>
+            <a href={`/zh-cn/posts/${post.slug}/`}>
+              <h3>{post.title}</h3>
+              {post.description && <p>{post.description}</p>}
+              {post.date && <time>{post.date}</time>}
+            </a>
+          </li>
+        ))}
+      </ul>
+      <p class="see-all"><a href="/zh-cn/posts/">查看全部 →</a></p>
+    </section>
+  </div>
+</BaseLayout>
+<style>
+  .home { max-width: 860px; margin: 0 auto; padding: 2rem 1rem; }
+  .hero h1 { font-size: 2.4rem; margin-bottom: .5rem; }
+  .hero p { color: #4b5563; font-size: 1.1rem; }
+  .lang-switch { font-size: .9rem; margin-top: .5rem; }
+  .lang-switch a { color: #2563eb; text-decoration: none; }
+  .recent h2 { font-size: 1.5rem; margin: 2.5rem 0 1rem; }
+  .post-list { list-style: none; padding: 0; display: grid; gap: 1rem; }
+  .post-list li a {
+    display: block; padding: 1rem; border: 1px solid #e5e7eb; border-radius: 8px;
+    text-decoration: none; color: inherit; transition: box-shadow 0.2s;
+  }
+  .post-list li a:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+  .post-list h3 { margin: 0 0 .35rem; color: #111827; font-size: 1.1rem; }
+  .post-list p { color: #6b7280; font-size: .95rem; margin: 0 0 .35rem; }
+  .post-list time { color: #9ca3af; font-size: .85rem; }
+  .see-all { margin-top: 1.5rem; }
+  .see-all a { color: #2563eb; text-decoration: none; font-weight: 500; }
+</style>

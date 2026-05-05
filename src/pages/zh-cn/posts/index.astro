@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const modules = import.meta.glob('../../../../content/posts/zh-cn/*.md', { eager: true });
+const posts = Object.entries(modules)
+  .map(([path, mod]) => {
+    const frontmatter = (mod as any).frontmatter ?? {};
+    return {
+      title: frontmatter.title ?? frontmatter.slug ?? path,
+      description: frontmatter.description ?? '',
+      date: frontmatter.date ?? frontmatter.pubDate ?? '',
+      slug: frontmatter.slug ?? path.split('/').pop()?.replace(/\.md$/, '')
+    };
+  })
+  .sort((a, b) => String(b.date).localeCompare(String(a.date)));
+---
+<BaseLayout title="AI Tools Pro Guides">
+  <section class="page-heading">
+    <h1>Guides</h1>
+    <p>AI software comparisons, automation tutorials, and implementation playbooks.</p>
+  </section>
+  <div class="post-list compact">
+    {posts.map((post) => (
+      <article class="post-row">
+        <div>
+          <p class="date">{post.date}</p>
+          <h2><a href={`/zh-cn/posts/${post.slug}/`}>{post.title}</a></h2>
+          <p>{post.description}</p>
+        </div>
+      </article>
+    ))}
+  </div>
+</BaseLayout>

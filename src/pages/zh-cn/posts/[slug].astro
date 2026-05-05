@@ -1,0 +1,270 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+interface FaqItem { q: string; a: string; }
+interface ProductItem {
+  name: string;
+  description: string;
+  rating?: number;
+  pros?: string[];
+  cons?: string[];
+  priceRange?: string;
+}
+
+function extractFaq(rawMd: string): FaqItem[] {
+  const m = rawMd.match(/##\s+Frequently Asked Questions\s*([\s\S]*?)(?=\n##\s|\n---\s|$)/i);
+  if (!m) return [];
+  const block = m[1];
+  const items: FaqItem[] = [];
+  const qRegex = /###\s+(.+?)\n([\s\S]*?)(?=\n###\s|$)/g;
+  let match;
+  while ((match = qRegex.exec(block)) !== null) {
+    const q = match[1].trim();
+    const a = match[2].trim().split(/\n\s*\n/)[0].trim();
+    if (q && a) items.push({ q, a });
+  }
+  return items;
+}
+
+function extractProducts(rawMd: string): ProductItem[] {
+  // Only attempt extraction; caller decides whether to use based on frontmatter `type`
+  const items: ProductItem[] = [];
+  // Match H3 patterns: "### 1. Name", "### Best X: Name", "### Top Pick: Name"
+  const headingRe = /^###\s+(?:\d+\.\s+|(?:Best|Top|Editor['']s|Premium|Budget)[^:]{0,30}:\s+)(.+?)$/gm;
+  const matches: Array<{ name: string; start: number; end: number }> = [];
+  let m;
+  while ((m = headingRe.exec(rawMd)) !== null) {
+    matches.push({ name: m[1].trim(), start: m.index, end: m.index + m[0].length });
+  }
+  for (let i = 0; i < matches.length; i++) {
+    const cur = matches[i];
+    const next = matches[i + 1];
+    const sectionStart = cur.end;
+    const sectionEnd = next ? next.start : Math.min(sectionStart + 4000, rawMd.length);
+    const section = rawMd.slice(sectionStart, sectionEnd);
+
+    // Skip if this looks like a non-product H3 (has FAQ marker, instructions starting with verbs)
+    if (/^\s*\?$/.test(cur.name) || /^(Why|How|What|When|Where|Step\s)/i.test(cur.name)) continue;
+
+    // Description: first non-empty paragraph
+    const paras = section.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
+    const description = paras.find(p => !p.startsWith('-') && !p.startsWith('*') && !p.startsWith('**Pros') && !p.startsWith('**Cons')) ?? '';
+
+    // Rating: look for "Rating: X/5" or "X/5" pattern
+    const rm = section.match(/(?:rating[:\s]+)?(\d(?:\.\d)?)\s*(?:\/|out of)\s*5/i);
+    const rating = rm ? parseFloat(rm[1]) : undefined;
+
+    // Pros/Cons: look for **Pros:** and **Cons:** blocks with bullet lists
+    const prosM = section.match(/\*\*Pros[:\s]*\*\*\s*\n([\s\S]*?)(?=\n\*\*|\n##|\n###|$)/i);
+    const consM = section.match(/\*\*Cons[:\s]*\*\*\s*\n([\s\S]*?)(?=\n\*\*|\n##|\n###|$)/i);
+    const parseBullets = (block: string) =>
+      block.split('\n').map(l => l.replace(/^[-*]\s+/, '').trim()).filter(l => l && !l.startsWith('**'));
+    const pros = prosM ? parseBullets(prosM[1]) : undefined;
+    const cons = consM ? parseBullets(consM[1]) : undefined;
+
+    // Price range: $XXX or $XXX-$YYY
+    const pm = section.match(/\$(\d+(?:[,.]\d+)?)\s*(?:[-–to]+\s*\$(\d+(?:[,.]\d+)?))?/);
+    const priceRange = pm ? (pm[2] ? `$${pm[1]}-$${pm[2]}` : `$${pm[1]}+`) : undefined;
+
+    if (cur.name && description && description.length > 30) {
+      items.push({
+        name: cur.name.replace(/\*\*/g, '').trim(),
+        description: description.slice(0, 250),
+        rating,
+        pros,
+        cons,
+        priceRange,
+      });
+    }
+  }
+  return items;
+}
+
+export async function getStaticPaths() {
+  const modules = import.meta.glob('../../../../content/posts/zh-cn/*.md', { eager: true });
+  const rawModules = import.meta.glob('../../../../content/posts/zh-cn/*.md', { eager: true, query: '?raw', import: 'default' }) as Record<string, string>;
+  const readFaq = (rawMd: string): FaqItem[] => {
+    const m = rawMd.match(/##\s+Frequently Asked Questions\s*([\s\S]*?)(?=\n##\s|\n---\s|$)/i);
+    if (!m) return [];
+    const block = m[1];
+    const items: FaqItem[] = [];
+    const qRegex = /###\s+(.+?)\n([\s\S]*?)(?=\n###\s|$)/g;
+    let match;
+    while ((match = qRegex.exec(block)) !== null) {
+      const q = match[1].trim();
+      const a = match[2].trim().split(/\n\s*\n/)[0].trim();
+      if (q && a) items.push({ q, a });
+    }
+    return items;
+  };
+  const readProducts = (rawMd: string): ProductItem[] => {
+    const items: ProductItem[] = [];
+    const headingRe = /^###\s+(?:\d+\.\s+|(?:Best|Top|Editor['']s|Premium|Budget)[^:]{0,30}:\s+)(.+?)$/gm;
+    const hMatches: Array<{ name: string; start: number; end: number }> = [];
+    let hm;
+    while ((hm = headingRe.exec(rawMd)) !== null) {
+      hMatches.push({ name: hm[1].trim(), start: hm.index, end: hm.index + hm[0].length });
+    }
+    for (let i = 0; i < hMatches.length; i++) {
+      const cur = hMatches[i];
+      const next = hMatches[i + 1];
+      const sectionStart = cur.end;
+      const sectionEnd = next ? next.start : Math.min(sectionStart + 4000, rawMd.length);
+      const section = rawMd.slice(sectionStart, sectionEnd);
+      if (/^\s*\?$/.test(cur.name) || /^(Why|How|What|When|Where|Step\s)/i.test(cur.name)) continue;
+      const paras = section.split(/\n\s*\n/).map((p: string) => p.trim()).filter(Boolean);
+      const description = paras.find((p: string) => !p.startsWith('-') && !p.startsWith('*') && !p.startsWith('**Pros') && !p.startsWith('**Cons')) ?? '';
+      const rm = section.match(/(?:rating[:\s]+)?(\d(?:\.\d)?)\s*(?:\/|out of)\s*5/i);
+      const rating = rm ? parseFloat(rm[1]) : undefined;
+      const prosM = section.match(/\*\*Pros[:\s]*\*\*\s*\n([\s\S]*?)(?=\n\*\*|\n##|\n###|$)/i);
+      const consM = section.match(/\*\*Cons[:\s]*\*\*\s*\n([\s\S]*?)(?=\n\*\*|\n##|\n###|$)/i);
+      const parseBullets = (blk: string) =>
+        blk.split('\n').map((l: string) => l.replace(/^[-*]\s+/, '').trim()).filter((l: string) => l && !l.startsWith('**'));
+      const pros = prosM ? parseBullets(prosM[1]) : undefined;
+      const cons = consM ? parseBullets(consM[1]) : undefined;
+      const pm = section.match(/\$(\d+(?:[,.]\d+)?)\s*(?:[-–to]+\s*\$(\d+(?:[,.]\d+)?))?/);
+      const priceRange = pm ? (pm[2] ? `$${pm[1]}-$${pm[2]}` : `$${pm[1]}+`) : undefined;
+      if (cur.name && description && description.length > 30) {
+        items.push({ name: cur.name.replace(/\*\*/g, '').trim(), description: description.slice(0, 250), rating, pros, cons, priceRange });
+      }
+    }
+    return items;
+  };
+  return Object.entries(modules).map(([path, mod]) => {
+    const frontmatter = (mod as any).frontmatter ?? {};
+    const slug = frontmatter.slug ?? path.split('/').pop()?.replace(/\.md$/, '');
+    const rawMd = rawModules[path] ?? '';
+    const faq = readFaq(rawMd);
+    // Product extraction only for review/comparison/roundup types
+    const isReview = ['review', 'comparison', 'roundup', 'best-of'].includes(String(frontmatter.type ?? '').toLowerCase());
+    const products = isReview ? readProducts(rawMd) : [];
+    return {
+      params: { slug },
+      props: { post: mod, frontmatter, faq, products }
+    };
+  });
+}
+
+const { post, frontmatter, faq, products } = Astro.props as { post: any; frontmatter: any; faq: FaqItem[]; products: ProductItem[] };
+const { Content } = post;
+const siteURL = Astro.site ?? new URL(Astro.url.origin);
+const canonicalURL = new URL(`/zh-cn/posts/${frontmatter.slug ?? Astro.params.slug}/`, siteURL).href;
+
+// Build ItemList Schema only when ≥2 products extracted
+// Fix: lowPrice/highPrice must be numbers, not strings; add reviewBody; use Person author
+const itemListSchema = products.length >= 2 ? {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": frontmatter.title,
+  "itemListElement": products.map((p, idx) => {
+    const priceNums = p.priceRange
+      ? p.priceRange.replace(/[^0-9.\-]/g, '').split('-').map(Number).filter((n: number) => !isNaN(n) && n > 0)
+      : [];
+    return {
+      "@type": "ListItem",
+      "position": idx + 1,
+      "item": {
+        "@type": "Product",
+        "name": p.name,
+        "description": p.description,
+        ...(priceNums.length > 0 ? {
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "USD",
+            "lowPrice": priceNums[0],
+            ...(priceNums[1] ? { "highPrice": priceNums[1] } : {})
+          }
+        } : {}),
+        ...(p.rating ? {
+          "review": {
+            "@type": "Review",
+            "reviewBody": p.description,
+            "reviewRating": { "@type": "Rating", "ratingValue": p.rating, "bestRating": 5 },
+            "author": { "@type": "Person", "name": frontmatter.author ?? "Editorial Team" }
+          }
+        } : {})
+      }
+    };
+  })
+} : null;
+const adsensePublisherId = import.meta.env.PUBLIC_ADSENSE_PUBLISHER_ID;
+---
+---
+<BaseLayout
+  title={`${frontmatter.title} | AI Tools Pro`}
+  description={frontmatter.description ?? ''}
+  canonicalURL={canonicalURL}
+  pubDate={frontmatter.pubDate ?? frontmatter.date ? String(frontmatter.pubDate ?? frontmatter.date) : undefined}
+  isArticle={true}
+  dateModified={frontmatter.dateModified ?? frontmatter.pubDate ?? frontmatter.date}
+  author={frontmatter.author}
+  articleImage={frontmatter.image}
+>
+  <article class="article" data-pagefind-body>
+    <header>
+      <p class="date">{frontmatter.pubDate ?? frontmatter.date}</p>
+      <h1>{frontmatter.title}</h1>
+      {frontmatter.description && <p class="excerpt">{frontmatter.description}</p>}
+    </header>
+    {adsensePublisherId && (
+      <ins class="adsbygoogle ad-slot ad-slot-top"
+           style="display:block; text-align:center;"
+           data-ad-client={adsensePublisherId}
+           data-ad-slot="auto"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+    )}
+    <div class="content">
+      <Content />
+    </div>
+    {adsensePublisherId && (
+      <ins class="adsbygoogle ad-slot ad-slot-bottom"
+           style="display:block; text-align:center;"
+           data-ad-client={adsensePublisherId}
+           data-ad-slot="auto"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+    )}
+    {adsensePublisherId && (
+      <script is:inline set:html={`(adsbygoogle = window.adsbygoogle || []).push({}); (adsbygoogle = window.adsbygoogle || []).push({});`} />
+    )}
+    {faq.length > 0 && (
+      <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faq.map((f: FaqItem) => ({
+          "@type": "Question",
+          "name": f.q,
+          "acceptedAnswer": { "@type": "Answer", "text": f.a }
+        }))
+      })} />
+    )}
+    {itemListSchema && (
+      <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+    )}
+  </article>
+</BaseLayout>
+
+<style>
+.ad-slot { margin: 1.5rem 0; min-height: 100px; }
+.ad-slot-top { margin-top: 0; margin-bottom: 2rem; }
+.ad-slot-bottom { margin-top: 2rem; margin-bottom: 0; }
+
+.article { max-width: 820px; margin: 0 auto; padding: 2rem 1rem; }
+.article header { margin-bottom: 2rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 1rem; }
+.date { color: #6b7280; font-size: 0.9rem; margin-bottom: 0.5rem; }
+h1 { font-size: 2rem; font-weight: 700; line-height: 1.3; margin: 0.5rem 0; }
+.excerpt { color: #4b5563; font-size: 1.1rem; margin-top: 0.5rem; }
+.content { line-height: 1.8; }
+.content h2 { font-size: 1.5rem; font-weight: 600; margin: 2rem 0 1rem; }
+.content h3 { font-size: 1.2rem; font-weight: 600; margin: 1.5rem 0 0.75rem; }
+.content p { margin-bottom: 1rem; }
+.content ul, .content ol { margin: 1rem 0 1rem 1.5rem; }
+.content li { margin-bottom: 0.5rem; }
+.content strong { font-weight: 600; }
+.content a { color: #2563eb; text-decoration: underline; }
+.content blockquote { border-left: 4px solid #e5e7eb; padding-left: 1rem; color: #6b7280; margin: 1.5rem 0; }
+.content code { background: #f3f4f6; padding: 0.2rem 0.4rem; border-radius: 3px; font-size: 0.9em; }
+.content pre { background: #1f2937; color: #f9fafb; padding: 1rem; border-radius: 6px; overflow-x: auto; margin: 1rem 0; }
+.content pre code { background: none; padding: 0; }
+</style>
