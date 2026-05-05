@@ -25,18 +25,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ai.toolrouteai.com/posts/2026-04-28-best-ai-writing-tools-2026/</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ai.toolrouteai.com/posts/2026-04-29-how-to-automate-content-with-n8n-and-claude/</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://ai.toolrouteai.com/posts/adobe-firefly-vs-canva-magic-studio-for-graphics/</loc>
     <lastmod>2026-05-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -331,6 +319,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/posts/best-ai-writing-tools-2026/</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/posts/best-chrome-extension-ai-for-data-scraping-2026/</loc>
     <lastmod>2026-05-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -470,6 +464,12 @@
   </url>
   <url>
     <loc>https://ai.toolrouteai.com/posts/how-to-automate-cold-email-outreach-with-ai/</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ai.toolrouteai.com/posts/how-to-automate-content-with-n8n-and-claude/</loc>
     <lastmod>2026-05-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
