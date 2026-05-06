@@ -583,6 +583,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/posts/claude-3-5-sonnet-api-for-secure-internal-tools/</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/posts/claude-3-5-sonnet-vs-gpt-4o-for-complex-reasoning/</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -620,6 +626,12 @@
   </url>
   <url>
     <loc>https://ai.toolrouteai.com/posts/creating-a-custom-gpt-for-employee-onboarding/</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ai.toolrouteai.com/posts/crewai-agents-for-automated-competitive-intelligence-gathering/</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -895,6 +907,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ai.toolrouteai.com/posts/local-first-ai-tools-vs-cloud-structured-2026/"/>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/posts/local-llm-deployment-for-offline-document-analysis/</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/posts/midjourney-parameter-guide-for-consistent-character-design/</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -920,6 +938,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://ai.toolrouteai.com/posts/midjourney-vs-dalle-3-comparison/"/>
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://ai.toolrouteai.com/zh-cn/posts/midjourney-vs-dalle-3-comparison/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ai.toolrouteai.com/posts/midjourney-vs-dalle-3-comparison/"/>
+  </url>
+  <url>
+    <loc>https://ai.toolrouteai.com/posts/mistral-local-rag-setup-for-private-document-search/</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ai.toolrouteai.com/posts/multi-agent-systems-for-complex-business-tasks/</loc>
@@ -985,6 +1009,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ai.toolrouteai.com/posts/n8n-workflow-automation-for-content-creators/"/>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/posts/n8n-workflow-for-automated-invoice-data-extraction/</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/posts/n8n-workflow-templates-for-marketing-agencies-2026/</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -1007,6 +1037,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://ai.toolrouteai.com/posts/notion-ai-vs-chatgpt-for-notes/"/>
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://ai.toolrouteai.com/zh-cn/posts/notion-ai-vs-chatgpt-for-notes/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ai.toolrouteai.com/posts/notion-ai-vs-chatgpt-for-notes/"/>
+  </url>
+  <url>
+    <loc>https://ai.toolrouteai.com/posts/ollama-installation-guide-for-privacy-conscious-professionals/</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ai.toolrouteai.com/posts/ollama-vs-lm-studio-for-local-model-management/</loc>
