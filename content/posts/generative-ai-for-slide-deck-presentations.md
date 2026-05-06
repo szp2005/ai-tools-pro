@@ -25,7 +25,7 @@ In this [review](/posts/otter-ai-review-transcription/), we evaluate the top gen
 
 ## Top AI Tools for Slide Deck Presentations
 
-### 1. [Gamma](https://www.amazon.com/s?k=Gamma&tag=toolrouteai-20)
+### 1. Gamma
 
 **Best for:** Founders, marketers, and rapid prototyping
 **Price:** $0-$20/month
@@ -44,7 +44,7 @@ Its strongest advantage is the frictionless editing experience. If a slide feels
 - Exporting to traditional PowerPoint formats can sometimes disrupt advanced web layouts
 - Less granular control over exact pixel placement compared to legacy tools
 
-### 2. [Beautiful.ai](https://www.amazon.com/s?k=Beautiful.ai&tag=toolrouteai-20)
+### 2. Beautiful.ai
 
 **Best for:** Corporate teams and brand compliance
 **Price:** $12-$40/month
@@ -63,7 +63,7 @@ When you use the generative AI features in Beautiful.ai, the system creates slid
 - The rigid design rules can be frustrating if you want to intentionally break the grid
 - Higher learning curve for users accustomed to unstructured PowerPoint canvases
 
-### 3. [Microsoft Copilot for PowerPoint](https://www.amazon.com/s?k=Microsoft%20Copilot%20for%20PowerPoint&tag=toolrouteai-20)
+### 3. Microsoft Copilot for PowerPoint
 
 **Best for:** Enterprise users and heavy Office 365 adopters
 **Price:** $30/month
@@ -82,7 +82,7 @@ While its visual generation capabilities are currently less flashy than tools li
 - Visual layouts can be somewhat traditional and conservative
 - Requires an expensive, overarching Copilot enterprise license
 
-### 4. [Tome](https://www.amazon.com/s?k=Tome&tag=toolrouteai-20)
+### 4. Tome
 
 **Best for:** Storytellers and creative agencies
 **Price:** $0-$16/month
@@ -101,7 +101,7 @@ The platform is highly fluid, allowing for interactive elements like live Figma 
 - Can feel overly stylized for traditional corporate reporting
 - Limited data visualization and charting capabilities compared to Beautiful.ai
 
-### 5. [Canva Magic Design](https://www.amazon.com/s?k=Canva%20Magic%20Design&tag=toolrouteai-20)
+### 5. Canva Magic Design
 
 **Best for:** Small businesses, educators, and social media managers
 **Price:** $0-$14.99/month

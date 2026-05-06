@@ -33,7 +33,7 @@ Second-generation systems are driven by Large Language Models (LLMs) tuned speci
 
 The market has segmented based on specific user needs—from solo consultants to enterprise sales floors. Here are the most capable platforms currently dominating the space.
 
-### 1. [Clara 2.0: Best for Executive Support and VIP Client Handling](https://www.amazon.com/s?k=Clara%202.0%3A%20Best%20for%20Executive%20Support%20and%20VIP%20Client%20Handling&tag=toolrouteai-20)
+### 1. Clara 2.0: Best for Executive Support and VIP Client Handling
 
 Clara pioneered the conversational scheduling space and its 2026 iteration remains the gold standard for natural language processing. Clara operates entirely via email. You CC your designated alias (e.g., `clara@yourdomain.com`) and say, "Clara, please find 45 minutes for David and me to [review](/posts/otter-ai-review-transcription/) the Q3 roadmap next week."
 
@@ -42,7 +42,7 @@ Clara then sends a highly personalized, human-sounding email to David, offering 
 * **Limitations:** Higher latency than link-based tools (takes 2-3 minutes to process and reply to emails); premium pricing.
 * **Ideal user:** C-suite executives, boutique agency founders, and enterprise account executives who require a white-glove touch.
 
-### 2. [Motion's Cognitive Scheduler: Best for Deep Work Protection](https://www.amazon.com/s?k=Motion%27s%20Cognitive%20Scheduler%3A%20Best%20for%20Deep%20Work%20Protection&tag=toolrouteai-20)
+### 2. Motion's Cognitive Scheduler: Best for Deep Work Protection
 
 Motion approaches scheduling from a fundamentally different angle: project management and deep work preservation. Rather than just finding empty space, Motion treats your calendar as a fluid puzzle. Its AI agent actively defends your focus blocks.
 
@@ -51,7 +51,7 @@ If an external meeting request comes in, Motion will evaluate your upcoming proj
 * **Limitations:** Requires absolute trust in the algorithm to rearrange your day; can feel overly rigid for users who prefer manual control.
 * **Ideal user:** Software engineers, product managers, and creative professionals who balance heavy maker-schedules with necessary syncs.
 
-### 3. [Clockwise Prism: Best for Enterprise Team Alignment](https://www.amazon.com/s?k=Clockwise%20Prism%3A%20Best%20for%20Enterprise%20Team%20Alignment&tag=toolrouteai-20)
+### 3. Clockwise Prism: Best for Enterprise Team Alignment
 
 Clockwise Prism is designed for org-wide deployment. Its scheduling agent excels at "calendar tetris" across hundreds of employees. When you ask the Clockwise agent to schedule a project kickoff with six internal stakeholders and two external vendors, it calculates the lowest-impact time for the internal team.
 
@@ -60,7 +60,7 @@ It achieves this by automatically shifting flexible internal meetings (like week
 * **Limitations:** Maximum value is only unlocked when the entire company adopts it; less focused on external client etiquette compared to Clara.
 * **Ideal user:** Mid-market and enterprise organizations suffering from meeting bloat and internal alignment friction.
 
-### 4. [Reclaim AI Enterprise: Best for High-Volume Sales Routing](https://www.amazon.com/s?k=Reclaim%20AI%20Enterprise%3A%20Best%20for%20High-Volume%20Sales%20Routing&tag=toolrouteai-20)
+### 4. Reclaim AI Enterprise: Best for High-Volume Sales Routing
 
 Reclaim AI has evolved its agent to serve revenue teams specifically. It bridges the gap between traditional inbound routing and conversational AI. The Reclaim agent integrates tightly with Salesforce and HubSpot. 
 

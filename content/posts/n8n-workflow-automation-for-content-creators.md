@@ -39,19 +39,19 @@ More importantly, n8n supports advanced logic operations natively. You can use b
 
 Implementing n8n workflow automation for content creators is most effective when applied to high-friction, repetitive processes. Here are the foundational pipelines you should consider building first.
 
-### 1. [Automated Idea Capture to Outline](https://www.amazon.com/s?k=Automated%20Idea%20Capture%20to%20Outline&tag=toolrouteai-20)
+### 1. Automated Idea Capture to Outline
 
 The creative process often stalls between ideation and drafting. You can build an n8n workflow that watches a specific Notion database or a Slack channel for new "ideas." 
 
 When you log an idea, the workflow triggers an API call to an AI model (like Anthropic's Claude or OpenAI's GPT-4). The model is prompted to expand the seed idea into a structured, five-point outline, complete with suggested SEO keywords and a working title. Finally, n8n routes this generated outline back into your Notion database, ready for you to flesh out during your dedicated writing time. This turns a blank page into a structured starting point instantly.
 
-### 2. [Cross-Platform Content Repurposing](https://www.amazon.com/s?k=Cross-Platform%20Content%20Repurposing&tag=toolrouteai-20)
+### 2. Cross-Platform Content Repurposing
 
 Creating a long-form YouTube video or a comprehensive blog post requires significant effort. Repurposing that cornerstone content is essential for growth, but manually formatting it for different platforms is tedious.
 
 An n8n pipeline can automate this. When a new WordPress post is published (the trigger), the workflow can pass the article text to an AI node instructed to extract three key quotes and format them as Twitter threads. Another branch of the workflow can generate a summarized LinkedIn post. n8n then passes these formatted assets to your scheduling tool, such as Buffer or directly to the platform APIs, placing them in a queue for review.
 
-### 3. [SEO Optimization and Publishing Pipeline](https://www.amazon.com/s?k=SEO%20Optimization%20and%20Publishing%20Pipeline&tag=toolrouteai-20)
+### 3. SEO Optimization and Publishing Pipeline
 
 Managing technical SEO often falls by the wayside when rushing to publish. n8n can act as a mandatory quality control check. Before a draft goes live, an automation can pull the content, check for keyword density, generate appropriate meta descriptions and title tags based on the final text, and ensure images have alt text. 
 

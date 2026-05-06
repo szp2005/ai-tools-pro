@@ -1,4 +1,5 @@
 ---
+image: "/og/setup-local-first-ai-research-assistant-with-mistral.webp"
 title: "Setup Local First AI Research Assistant with Mistral: Full Guide"
 description: "Learn how to setup a local first AI research assistant with Mistral to ensure complete data privacy, offline capability, and zero subscription fees."
 pubDate: "2026-05-05"
@@ -141,3 +142,7 @@ No coding is required. The software stack uses pre-compiled installers and deskt
 
 ### Is my data sent back to Mistral or Ollama when using this setup?
 No. Once the inference engine and model weights are downloaded to your machine, the entire system operates completely offline. You can disconnect your computer from the internet and the application will continue to process your documents securely.
+
+## Related Reading
+
+- [Running Llama 3 Locally for Privacy-Conscious Lawyers](/posts/running-llama-3-locally-for-privacy-conscious-lawyers/)

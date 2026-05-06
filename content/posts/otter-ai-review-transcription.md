@@ -90,25 +90,25 @@ Designed for teams, the Business plan offers 6,000 monthly transcription minutes
 
 To get the best return on investment from Otter AI, you need to use it strategically. Here is some expert advice on integrating it into your daily routines.
 
-### 1. [Optimize Your Audio Input](https://www.amazon.com/s?k=Optimize%20Your%20Audio%20Input&tag=toolrouteai-20)
+### 1. Optimize Your Audio Input
 
 Garbage in, garbage out. The single biggest factor in transcription accuracy is audio quality. 
 *   **Invest in a good microphone:** Do not rely on your laptop's built-in microphone for important meetings. Even a basic USB headset or an entry-level dynamic microphone will drastically improve the audio clarity.
 *   **Manage your environment:** Minimize background noise. Turn off fans, close windows, and if you must be in a noisy environment, use a headset with a boom mic positioned close to your mouth.
 
-### 2. [Leverage Custom Vocabulary Extensively](https://www.amazon.com/s?k=Leverage%20Custom%20Vocabulary%20Extensively&tag=toolrouteai-20)
+### 2. Leverage Custom Vocabulary Extensively
 
 Don't wait for Otter to make a mistake before adding a word to your custom vocabulary. Proactively add client names, project codenames, industry acronyms, and specialized terminology before your meetings. This small upfront investment will save you countless hours of editing later.
 
-### 3. [Treat Otter as a Searchable Database](https://www.amazon.com/s?k=Treat%20Otter%20as%20a%20Searchable%20Database&tag=toolrouteai-20)
+### 3. Treat Otter as a Searchable Database
 
 Over time, you will accumulate hundreds of transcripts. Treat Otter as your personal, searchable knowledge base. Use its advanced search functionalities to find specific quotes, decisions, or references across all your past meetings. This is invaluable when writing reports, preparing for follow-up meetings, or resolving disputes about what was previously agreed upon.
 
-### 4. [Integrate with Your Tech Stack](https://www.amazon.com/s?k=Integrate%20with%20Your%20Tech%20Stack&tag=toolrouteai-20)
+### 4. Integrate with Your Tech Stack
 
 Otter integrates with several other tools. Connect it to your calendar for automatic recording. If you use Slack, set up integrations so meeting summaries are automatically posted to the relevant channels. The more you automate the flow of information out of Otter and into your actual workspace, the more valuable the tool becomes.
 
-### 5. [Review and Edit Promptly](https://www.amazon.com/s?k=Review%20and%20Edit%20Promptly&tag=toolrouteai-20)
+### 5. Review and Edit Promptly
 
 Do not let transcripts pile up unedited. Take 5-10 minutes immediately after a meeting to quickly skim the transcript, correct obvious errors (especially names and numbers), and refine the action items. It is much easier to correct a transcript while the conversation is still fresh in your memory than trying to decipher it weeks later.
 

@@ -143,3 +143,13 @@ AutoGen 提供了一个广阔、灵活且极其强大的对话画布。它是研
 ## 相关阅读
 
 - [2026 年用于电子商务库存管理的顶级 AI 代理](/zh-cn/posts/top-ai-agents-for-ecommerce-inventory-management/)
+
+---
+
+## Related Reading
+
+- [How to Build Custom AI Agents with Ollama: 5-Step Guide](/posts/how-to-build-custom-ai-agents-with-ollama/)
+
+- [How to Build Custom AI Agents with Ollama: 5-Step Guide](/posts/how-to-build-custom-ai-agents-with-ollama/)
+
+- [How to Build Custom AI Agents with Ollama: 5-Step Guide](/posts/how-to-build-custom-ai-agents-with-ollama/)

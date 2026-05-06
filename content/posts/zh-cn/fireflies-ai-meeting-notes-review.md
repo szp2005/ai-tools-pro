@@ -156,3 +156,19 @@ Fireflies AI 会议笔记评测最适合想要实用 [AI 工具](/zh-cn/posts/ry
 - [2026 年 AI 写作领域全景：超越文本生成](/zh-cn/posts/best-ai-writing-tools-2026/)
 - [为什么要使用 n8n 和 Claude 自动化内容创作？](/zh-cn/posts/how-to-automate-content-with-n8n-and-claude/)
 - [AI 电子邮件写作工具终极指南：提升生产力与改善语气](/zh-cn/posts/ai-tools-for-email-writing/)
+
+---
+
+## Related Reading
+
+- [Gamma App AI Presentation Review: Is It The Future of Slides?](/posts/gamma-app-ai-presentation-review/)
+
+- [Best LLM Tool for Research Synthesis in 2026 (Compared)](/posts/best-llm-tool-for-research-synthesis/)
+
+- [Gamma App AI Presentation Review: Is It The Future of Slides?](/posts/gamma-app-ai-presentation-review/)
+
+- [The Definitive Guide to AI Writing Assistants for Long-Form Content](/posts/ai-writing-assistant-for-long-form-content/)
+
+- [Gamma App AI Presentation Review: Is It The Future of Slides?](/posts/gamma-app-ai-presentation-review/)
+
+- [Gamma App AI Presentation Review: Is It The Future of Slides?](/posts/gamma-app-ai-presentation-review/)

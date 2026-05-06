@@ -162,3 +162,15 @@ GPT-4o和Claude 3.5 Sonnet是当前智能体工作流的标准。像GPT-3.5或Ll
 ## 相关阅读
 
 - [多智能体系统比较：AutoGen与CrewAI 2026年评测](/zh-cn/posts/comparing-autogen-vs-crewai-for-multi-agent-systems/)
+
+---
+
+## Related Reading
+
+- [多智能体系统比较：AutoGen与CrewAI 2026年深度评测](/posts/comparing-autogen-vs-crewai-for-multi-agent-systems/)
+
+- [What is Agentic RAG for Small Business Automation? Complete Guide](/posts/what-is-agentic-rag-for-small-business-automation/)
+
+- [How to Automate Niche Market Research with Perplexity in 2026](/posts/how-to-automate-niche-market-research-with-perplexity/)
+
+- [Best AI Agent for Automated Social Media Monitoring in 2026](/posts/ai-agent-for-automated-social-media-monitoring/)

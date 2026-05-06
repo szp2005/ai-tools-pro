@@ -1,4 +1,5 @@
 ---
+image: "/og/running-llama-3-locally-for-privacy-conscious-lawyers.webp"
 title: "Running Llama 3 Locally for Privacy Conscious Lawyers: Complete Guide"
 description: "Learn how running Llama 3 locally for privacy conscious lawyers ensures client confidentiality while automating document review and legal research workflows."
 pubDate: "2026-05-05"
@@ -125,3 +126,15 @@ It is possible, but not practical for professional use. Without unified memory o
 
 ### Does running an AI locally protect me from malpractice liability?
 No. Local deployment only solves the data privacy and confidentiality concerns related to third-party cloud hosting. The attorney remains strictly liable for the accuracy, competence, and legal validity of any document produced using AI assistance, regardless of where the model is hosted.
+
+---
+
+## Related Reading
+
+- [How to Build a Local Knowledge Base with Llama 3: Complete Setup Guide](/posts/building-a-local-knowledge-base-with-llama-3/)
+
+- [How to Build a Local Knowledge Base with Llama 3: Complete Setup Guide](/posts/building-a-local-knowledge-base-with-llama-3/)
+
+- [How to Build a Local Knowledge Base with Llama 3: Complete Setup Guide](/posts/building-a-local-knowledge-base-with-llama-3/)
+
+- [How to Build a Local Knowledge Base with Llama 3: Complete Setup Guide](/posts/building-a-local-knowledge-base-with-llama-3/)

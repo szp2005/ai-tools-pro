@@ -149,3 +149,17 @@ n8n 工作流的速度将完全受限于您的 Ollama 推理[速度。
 ## 相关阅读
 
 - [使用 n8n 和 Claude 自动化内容：完整指南](/zh-cn/posts/how-to-automate-content-with-n8n-and-claude/)
+
+---
+
+## Related Reading
+
+- [How to Build an n8n Integration for Automated CRM Data Entry: 5-Step Guide](/posts/n8n-integration-for-automated-crm-data-entry/)
+
+- [n8n Automation for Automated Invoice Processing 2026: Setup Guide](/posts/n8n-automation-for-automated-invoice-processing-2026/)
+
+- [2026 年 n8n 自动化发票处理：设置指南](/posts/n8n-automation-for-automated-invoice-processing-2026/)
+
+- [Multi Agent Systems for Complex Business Tasks: Complete Guide](/posts/multi-agent-systems-for-complex-business-tasks/)
+
+- [Automate Content with n8n and Claude: Complete Guide](/posts/how-to-automate-content-with-n8n-and-claude/)

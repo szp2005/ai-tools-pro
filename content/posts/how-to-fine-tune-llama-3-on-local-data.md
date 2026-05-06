@@ -1,4 +1,5 @@
 ---
+image: "/og/how-to-fine-tune-llama-3-on-local-data.webp"
 title: "How to Fine Tune Llama 3 on Local Data: Step-by-Step Guide"
 description: "Learn how to fine tune Llama 3 on local data securely using Unsloth, LoRA, and Hugging Face. Master custom AI model training on consumer hardware today."
 pubDate: "2026-05-05"
@@ -247,3 +248,17 @@ Gibberish output usually results from incorrect chat template formatting during 
 
 ### How long does local fine-tuning take?
 Training time depends heavily on dataset size and GPU hardware. Fine-tuning Llama 3 8B on 1,000 examples with an RTX 4090 using Unsloth typically takes less than 20 minutes. Older GPUs like the RTX 3060 may take 1 to 2 hours for the same task.
+
+---
+
+## Related Reading
+
+- [How to Build a Custom Vector Database with Pinecone: 5-Step Guide](/posts/build-a-custom-vector-database-with-pinecone/)
+
+- [Best Local LLM Tools for Developers in 2026: Top 7 Ranked](/posts/best-local-llm-tools-for-developers-2026/)
+
+- [Best Local LLM Tools for Developers in 2026: Top 7 Ranked](/posts/best-local-llm-tools-for-developers-2026/)
+
+- [How to Build a Custom Vector Database with Pinecone: 5-Step Guide](/posts/build-a-custom-vector-database-with-pinecone/)
+
+- [Best Local LLM Tools for Developers in 2026: Top 7 Ranked](/posts/best-local-llm-tools-for-developers-2026/)

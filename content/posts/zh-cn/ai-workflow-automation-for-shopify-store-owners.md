@@ -127,3 +127,9 @@ Make（原名Integromat）被广泛认为是处理复杂电子商务工作流的
 
 - [2026年最佳AI语音克隆和TTS工具](/zh-cn/posts/ai-tool-for-voice-cloning-and-tts/)
 - [Synthesia AI视频生成器评测：2026年它名副其实吗？](/zh-cn/posts/synthesia-ai-video-review/)
+
+---
+
+## Related Reading
+
+- [Adobe Firefly vs Canva Magic Studio for Graphics: Which Is Better?](/posts/adobe-firefly-vs-canva-magic-studio-for-graphics/)

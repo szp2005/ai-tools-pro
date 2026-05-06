@@ -269,3 +269,9 @@ n8n 处于沙盒环境的 Code 节点内置了 `marked` 库。它可以自动将
 - [终极指南：2026 年最佳 AI 内容创作工具](/zh-cn/posts/best-ai-tools-for-content-creation/)
 - [如何利用 AI 进行 SEO 内容规划：2026 年蓝图](/zh-cn/posts/how-to-use-ai-for-seo-content-planning/)
 - [如何使用 Gemini 进行内容写作：专家指南](/zh-cn/posts/how-to-use-gemini-for-content-writing/)
+
+---
+
+## Related Reading
+
+- [Best AI Workflow Automation for Shopify Store Owners in 2026](/posts/ai-workflow-automation-for-shopify-store-owners/)

@@ -30,7 +30,7 @@ The core value proposition of Gamma App is speed coupled with design autonomy. Y
 
 To understand whether Gamma App is worth integrating into your tech stack, we need to look under the hood at the features that define the user experience.
 
-### 1. [AI-Powered Generation Engine](https://www.amazon.com/s?k=AI-Powered%20Generation%20Engine&tag=toolrouteai-20)
+### 1. AI-Powered Generation Engine
 
 The centerpiece of Gamma App is its AI generation capability. When you initiate a new project, you are presented with three primary paths: generate from a prompt, generate by importing a document, or start manually from a blank canvas. 
 
@@ -38,25 +38,25 @@ The **"Generate from Prompt"** feature is where the platform's magic is most app
 
 **Expert Insight:** The underlying AI is surprisingly adept at structuring logical arguments. It doesn't just spew random blocks of text; it understands the natural flow of a persuasive presentation (e.g., Introduction, Problem Statement, Proposed Solution, Implementation Timeline, ROI Analysis). However, the generated text must always be treated as a first draft. It inherently lacks the nuanced context and proprietary data unique to your specific business.
 
-### 2. [The Card-Based UI Paradigm](https://www.amazon.com/s?k=The%20Card-Based%20UI%20Paradigm&tag=toolrouteai-20)
+### 2. The Card-Based UI Paradigm
 
 If you are heavily accustomed to the rigid 16:9 boundaries of a standard PowerPoint slide, Gamma's card system requires a brief mental recalibration. Cards in Gamma are flexible blocks of content. They can be short and snappy, mimicking a traditional slide, or they can expand vertically to accommodate deeper explanations, acting more like a scrollable document or an infographic.
 
 This is a massive structural advantage when presenting complex information. Instead of arbitrarily splitting a single cohesive thought across three slides because you ran out of physical space, a Gamma card simply expands to fit the content. During presentation mode, you scroll smoothly through the content, which feels much more modern, fluid, and native to digital consumption than abrupt slide transitions.
 
-### 3. [One-Click Theming and Design Consistency](https://www.amazon.com/s?k=One-Click%20Theming%20and%20Design%20Consistency&tag=toolrouteai-20)
+### 3. One-Click Theming and Design Consistency
 
 One of the most frustrating and time-consuming aspects of traditional slide design is maintaining visual consistency. If you decide to change the primary accent color or font family halfway through building a 40-slide deck, it often requires manual updates across multiple slides and master templates. 
 
 Gamma completely eliminates this friction with global, one-click themes. The platform offers dozens of highly polished, modern themes. Clicking a new theme instantly updates the typography, color palette, background styling, and even the treatment of imagery across the entire presentation. Because the design layer is intrinsically separated from the content layer, you cannot accidentally break the layout. It ensures a professional aesthetic regardless of your design pedigree.
 
-### 4. [Interactive and Dynamic Embeds](https://www.amazon.com/s?k=Interactive%20and%20Dynamic%20Embeds&tag=toolrouteai-20)
+### 4. Interactive and Dynamic Embeds
 
 Modern presentations are rarely just static text and clip art. Gamma excels at incorporating dynamic, interactive media. You can natively embed YouTube or Vimeo videos, Spotify playlists, interactive Figma prototypes, Airtable bases, Typeform surveys, and live websites directly into your cards. 
 
 Because Gamma is inherently a web-native application, these embeds are fully interactive during the presentation itself. You no longer have to awkwardly Alt-Tab out of your slide deck to show a live software demo in your browser; you can interact with the embedded application right on the Gamma card, keeping your audience focused and your presentation seamless.
 
-### 5. [Collaboration and Team Features](https://www.amazon.com/s?k=Collaboration%20and%20Team%20Features&tag=toolrouteai-20)
+### 5. Collaboration and Team Features
 
 In today's asynchronous and remote-first work environment, robust multiplayer functionality is non-negotiable. Gamma fully supports real-time collaboration, allowing multiple team members to edit a deck simultaneously. You can leave threaded comments on specific blocks of text, assign tasks to colleagues, and track the version history of the document.
 

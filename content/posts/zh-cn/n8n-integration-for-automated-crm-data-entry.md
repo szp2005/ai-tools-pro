@@ -137,3 +137,15 @@ CRM 对 API 调用强制执行严格的速率限制。如果您要导入一批 1
 ## 相关阅读
 
 - [如何将 n8n 连接到本地 Ollama 实例：完整设置指南](/zh-cn/posts/how-to-connect-n8n-to-local-ollama-instance/)
+
+---
+
+## Related Reading
+
+- [2026 年 n8n 自动化发票处理：设置指南](/posts/n8n-automation-for-automated-invoice-processing-2026/)
+
+- [n8n 与本地 Ollama 实例集成：完整设置指南](/posts/how-to-connect-n8n-to-local-ollama-instance/)
+
+- [n8n Automation for Automated Invoice Processing 2026: Setup Guide](/posts/n8n-automation-for-automated-invoice-processing-2026/)
+
+- [Best AI Workflow Automation for Shopify Store Owners in 2026](/posts/ai-workflow-automation-for-shopify-store-owners/)

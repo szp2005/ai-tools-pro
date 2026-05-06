@@ -1,4 +1,5 @@
 ---
+image: "/og/how-to-connect-n8n-to-local-ollama-instance.webp"
 title: "How to Connect n8n to Local Ollama Instance: Complete Setup Guide"
 description: "Learn how to connect n8n to a local Ollama instance with this step-by-step guide. Automate AI workflows securely and privately without cloud API costs."
 pubDate: "2026-05-05"
@@ -142,3 +143,15 @@ Local models typically have context limits of 4k to 8k tokens. In n8n, you shoul
 
 ### Does n8n need to be on the same machine as Ollama?
 No, they can be on separate machines. As long as both devices are on the same local network (or connected via a secure VPN/Tailscale) and the machine running Ollama allows incoming connections on port 11434, n8n can communicate with it using the host machine's local IP address.
+
+---
+
+## Related Reading
+
+- [n8n vs Zapier for Advanced Workflow Automation: Which Is Better in 2026?](/posts/n8n-vs-zapier-for-advanced-workflow-automation/)
+
+- [n8n vs Zapier for Advanced Workflow Automation: Which Is Better in 2026?](/posts/n8n-vs-zapier-for-advanced-workflow-automation/)
+
+- [n8n Automation for Automated Invoice Processing 2026: Setup Guide](/posts/n8n-automation-for-automated-invoice-processing-2026/)
+
+- [How to Build an n8n Integration for Automated CRM Data Entry: 5-Step Guide](/posts/n8n-integration-for-automated-crm-data-entry/)

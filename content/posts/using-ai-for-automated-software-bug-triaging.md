@@ -76,21 +76,21 @@ A stagnant backlog creates technical debt. AI systems continuously analyze the e
 
 Deploying AI for software bug triaging requires careful planning and structural alignment. Simply plugging an API into Jira or Linear without proper configuration will lead to miscategorizations and eroded trust from the engineering team.
 
-### 1. [Assessing Your Current Data Quality](https://www.amazon.com/s?k=Assessing%20Your%20Current%20Data%20Quality&tag=toolrouteai-20)
+### 1. Assessing Your Current Data Quality
 
 AI models are highly dependent on the quality of their training data. Before implementing an automated system, evaluate your existing repository of closed tickets. Do your past tickets have clear resolutions? Are the labels and components accurately assigned? If your historical data is chaotic, the AI will learn and replicate that chaos. Spend time normalizing at least the previous six months of issue data to establish a clean baseline for the model.
 
-### 2. [Selecting the Right AI Triage Tool](https://www.amazon.com/s?k=Selecting%20the%20Right%20AI%20Triage%20Tool&tag=toolrouteai-20)
+### 2. Selecting the Right AI Triage Tool
 
 The market offers various approaches, ranging from built-in AI features within platforms like GitHub Copilot Workspace and Jira Service Management to dedicated, standalone AI triage platforms like Kensho or specialized custom pipelines built on top of [OpenAI](/posts/automate-customer-sentiment-analysis-with-openai-api/) or Anthropic APIs. 
 
 If your organization has strict data compliance requirements (such as HIPAA or SOC2), you may need to utilize open-source models like Llama 3 deployed on internal infrastructure to ensure proprietary code and user data never leave your secure environment.
 
-### 3. [Integrating with Existing Issue Trackers](https://www.amazon.com/s?k=Integrating%20with%20Existing%20Issue%20Trackers&tag=toolrouteai-20)
+### 3. Integrating with Existing Issue Trackers
 
 The AI system must integrate seamlessly into your current workflow. It should operate as a background service hooked directly into your issue tracker's webhook system. When a ticket is created, the webhook triggers the AI analysis, which then interacts with the ticket via API—updating fields, adding labels, and leaving an internal comment explaining its reasoning and confidence score. This transparency allows the team to understand why a specific decision was made.
 
-### 4. [Training and Tuning the Model](https://www.amazon.com/s?k=Training%20and%20Tuning%20the%20Model&tag=toolrouteai-20)
+### 4. Training and Tuning the Model
 
 Initial deployment should always be executed in a "shadow mode." Allow the AI to triage tickets in parallel with your human team without actually modifying the live tickets or triggering alerts. Compare the AI's decisions against the human team's decisions. 
 

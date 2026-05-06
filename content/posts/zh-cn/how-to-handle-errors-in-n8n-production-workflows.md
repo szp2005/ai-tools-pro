@@ -136,3 +136,17 @@ n8n将其执行日志存储在 其 数据库中。如果您有每天执行数千
 ## 相关阅读
 
 - [2026年用于自动安排会议的最佳AI Agent](/zh-cn/posts/ai-agent-for-automated-meeting-scheduling-2026/)
+
+---
+
+## Related Reading
+
+- [n8n vs Make Comparison for Enterprise Automation (2026)](/posts/n8n-vs-make-comparison-for-enterprise-automation/)
+
+- [n8n vs Make 企业自动化对比 (2026)](/posts/n8n-vs-make-comparison-for-enterprise-automation/)
+
+- [n8n Workflow Automation for Content Creators: Complete 2026 Guide](/posts/n8n-workflow-automation-for-content-creators/)
+
+- [n8n vs Make Comparison for Enterprise Automation (2026)](/posts/n8n-vs-make-comparison-for-enterprise-automation/)
+
+- [How to Automate Slack Notifications with n8n: 5-Step Guide](/posts/how-to-automate-slack-notifications-with-n8n/)

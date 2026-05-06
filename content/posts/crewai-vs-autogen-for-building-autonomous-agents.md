@@ -25,7 +25,7 @@ Understanding whether to adopt CrewAI's structured predictability or AutoGen's c
 
 Before diving into a feature-by-feature comparison, it is essential to understand the core mechanics and primary objectives of each framework. Both are open-source Python libraries, but they approach the problem of multi-agent orchestration from opposite ends of the spectrum.
 
-### 1. [CrewAI](https://www.amazon.com/s?k=CrewAI&tag=toolrouteai-20)
+### 1. CrewAI
 
 **Best for:** Developers building structured, role-based production workflows
 **Price:** Free (Open Source)
@@ -42,7 +42,7 @@ CrewAI is built with a focus on simplicity, predictability, and role-playing. It
 - Less flexible for dynamic, unscripted conversational patterns
 - Structural rigidity can be restrictive for highly experimental architectures
 
-### 2. [Microsoft AutoGen](https://www.amazon.com/s?k=Microsoft%20AutoGen&tag=toolrouteai-20)
+### 2. Microsoft AutoGen
 
 **Best for:** Researchers and developers building complex, dynamic conversational topologies
 **Price:** Free (Open Source)

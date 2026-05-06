@@ -145,3 +145,9 @@ Midjourney 中一致的角色生成不再是一个 单纯的 碰 运气问题；
 
 - [如何使用 Llama 3 构建本地知识库：完整设置指南](/zh-cn/posts/building-a-local-knowledge-base-with-llama-3/)
 - [2026 年适合自由开发者的最佳 AI 驱动合同审查工具](/zh-cn/posts/ai-powered-contract-review-for-freelance-developers/)
+
+---
+
+## Related Reading
+
+- [Best AI Workflow Automation for Shopify Store Owners in 2026](/posts/ai-workflow-automation-for-shopify-store-owners/)

@@ -123,3 +123,15 @@ Agent将处理敏感的公司数据和个人身份信息（PII）。确保平台
 
 ### 我如何防止AI Agent提供折扣？
 在设置阶段，您需要提供严格的[提示工程](/zh-cn/posts/midjourney-parameter-guide-for-consistent-character-design/)和系统指令。通过在Agent的指令集中明确定义边界——例如“绝不提供价格折扣或自定义报价”——Agent将严格遵守您的定价策略。
+
+---
+
+## Related Reading
+
+- [How to Automate Cold Email Outreach with AI: 5-Step Guide](/posts/how-to-automate-cold-email-outreach-with-ai/)
+
+- [Best Chrome Extension AI for Email Automation in 2026](/posts/chrome-extension-ai-email-automation/)
+
+- [Best AI Tools for Automated B2B Lead Generation in 2026](/posts/ai-tools-for-automated-b2b-lead-generation/)
+
+- [Best AI Agent for Automated Social Media Monitoring in 2026](/posts/ai-agent-for-automated-social-media-monitoring/)

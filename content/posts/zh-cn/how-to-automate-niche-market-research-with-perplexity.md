@@ -143,3 +143,13 @@ Perplexity 通过作为一个基于实时互联网搜索的答案引擎解决了
 
 - [2026年最佳客户支持自动化 AI 代理](/zh-cn/posts/ai-agent-for-customer-support-automation/)
 - [使用 OpenAI API 自动化客户情绪分析：完整指南](/zh-cn/posts/automate-customer-sentiment-analysis-with-openai-api/)
+
+---
+
+## Related Reading
+
+- [Perplexity AI Review for Professional Research (2026)](/posts/perplexity-ai-review-for-professional-research/)
+
+- [Perplexity AI Review for Professional Research (2026)](/posts/perplexity-ai-review-for-professional-research/)
+
+- [How to Build CrewAI Agents for Market Research: 5-Step Guide](/posts/how-to-build-crewai-agents-for-market-research/)

@@ -62,7 +62,7 @@ With the client initialized, you're ready to start structuring your content gene
 
 Generating a 1500+ word article via an API cannot be done reliably with a single, simple prompt. The key to high-quality output is utilizing the **System Prompt** for overarching rules and the **User Message** for the specific task instructions. 
 
-### 1. [Mastering the System Prompt](https://www.amazon.com/s?k=Mastering%20the%20System%20Prompt&tag=toolrouteai-20)
+### 1. Mastering the System Prompt
 
 The system prompt is where you define the persona, strict formatting rules, and negative constraints (what *not* to do). Think of this as the "brainwashing" phase. 
 
@@ -79,7 +79,7 @@ CRITICAL RULES:
 """
 ```
 
-### 2. [The Multi-Shot SEO Brief (User Message)](https://www.amazon.com/s?k=The%20Multi-Shot%20SEO%20Brief%20%28User%20Message%29&tag=toolrouteai-20)
+### 2. The Multi-Shot SEO Brief (User Message)
 
 Instead of just asking for an article, pass a structured SEO brief into the user message. This brief should include the primary keyword, secondary keywords, search intent, and a mandatory outline.
 
@@ -115,7 +115,7 @@ def generate_article(keyword, outline, target_audience):
 
 While the setup above will generate a decent article, professional programmatic SEO requires advanced workflows to ensure quality, depth, and correct formatting.
 
-### 1. [Generating Frontmatter and Markdown Together](https://www.amazon.com/s?k=Generating%20Frontmatter%20and%20Markdown%20Together&tag=toolrouteai-20)
+### 1. Generating Frontmatter and Markdown Together
 
 If you are publishing to a static site generator like Astro, Hugo, or Next.js, you need Markdown files equipped with YAML frontmatter. You can instruct Claude to generate this structured data natively.
 
@@ -142,7 +142,7 @@ Content starts here...
 
 By enforcing this structure in the system prompt, you can directly write the API response to an `.md` or `.mdx` file without intermediate parsing.
 
-### 2. [The "Chunking" Strategy for Ultra-Long Content](https://www.amazon.com/s?k=The%20%22Chunking%22%20Strategy%20for%20Ultra-Long%20Content&tag=toolrouteai-20)
+### 2. The "Chunking" Strategy for Ultra-Long Content
 
 Current LLMs, including Claude, tend to lose steam or become repetitive if asked to generate 3,000+ words in a single go. Even with a large context window, the `max_tokens` output limit (typically 4096 or 8192 tokens) forces a ceiling on single-generation length.
 
@@ -182,7 +182,7 @@ for section in outline:
 
 This method uses Claude's massive context window to maintain narrative consistency while completely bypassing output length limits, resulting in massive, authoritative pillar pages.
 
-### 3. [Injecting Ground Truth via RAG (Retrieval-Augmented Generation)](https://www.amazon.com/s?k=Injecting%20Ground%20Truth%20via%20RAG%20%28Retrieval-Augmented%20Generation%29&tag=toolrouteai-20)
+### 3. Injecting Ground Truth via RAG (Retrieval-Augmented Generation)
 
 Search engines penalize generic, inaccurate content. To make your automated content rank, it must contain unique facts, data points, or company-specific knowledge. 
 

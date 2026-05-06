@@ -254,3 +254,13 @@ model.save_pretrained_gguf("llama3-local-gguf", tokenizer, quantization_method =
 ## 相关阅读
 
 - [在本地硬件上运行 LLM 的隐私益处：2026 年指南](/zh-cn/posts/privacy-benefits-running-llms-local-hardware/)
+
+---
+
+## Related Reading
+
+- [2026年面向开发者的最佳本地LLM工具：排名前7位](/posts/best-local-llm-tools-for-developers-2026/)
+
+- [Privacy Benefits of Running LLMs on Local Hardware: 2026 Guide](/posts/privacy-benefits-running-llms-local-hardware/)
+
+- [How to Build a Custom Vector Database with Pinecone: 5-Step Guide](/posts/build-a-custom-vector-database-with-pinecone/)

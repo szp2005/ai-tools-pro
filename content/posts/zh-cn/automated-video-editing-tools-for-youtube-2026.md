@@ -176,3 +176,9 @@ YouTube 不会因为频道使用自动化剪辑软件来剪切素材、清理音
 
 - [2026年适合营销的7个最佳AI数字人视频生成器](/zh-cn/posts/ai-video-avatar-generator-for-marketing/)
 - [独立创业者知识资产变现：完整指南](/zh-cn/posts/knowledge-asset-monetization-for-solopreneurs/)
+
+---
+
+## Related Reading
+
+- [Midjourney Parameter Guide for Consistent Character Design: Complete Workflow](/posts/midjourney-parameter-guide-for-consistent-character-design/)

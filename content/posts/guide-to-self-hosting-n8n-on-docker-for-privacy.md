@@ -1,4 +1,5 @@
 ---
+image: "/og/guide-to-self-hosting-n8n-on-docker-for-privacy.webp"
 title: "Self Hosting n8n on Docker for Privacy: Complete Setup Guide"
 description: "Follow this comprehensive guide to self hosting n8n on docker for privacy. Learn to build secure workflows while maintaining absolute control over your data."
 pubDate: "2026-05-05"
@@ -110,3 +111,13 @@ Absolutely. If you do not require webhooks from external services, you can confi
 
 ### Does n8n send my data back to its creators?
 By default, n8n collects anonymous telemetry data for diagnostic purposes. However, when self-hosting, you have the ability to completely disable all outbound telemetry by setting the `N8N_DIAGNOSTICS_ENABLED` environment variable to `false`.
+
+---
+
+## Related Reading
+
+- [Automate Content with n8n and Claude: Complete Guide](/posts/how-to-automate-content-with-n8n-and-claude/)
+
+- [Setup Local First AI Research Assistant with Mistral: Full Guide](/posts/setup-local-first-ai-research-assistant-with-mistral/)
+
+- [15 Best n8n Workflow Templates for Marketing Agencies 2026](/posts/n8n-workflow-templates-for-marketing-agencies-2026/)

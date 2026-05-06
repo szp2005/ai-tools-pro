@@ -31,7 +31,7 @@ An academic grammar checker must recognize complex, multi-clause sentences commo
 
 Below is our detailed comparison of the leading AI grammar checkers optimized for the rigors of academic publishing.
 
-### 1. [Paperpal](https://www.amazon.com/s?k=Paperpal&tag=toolrouteai-20)
+### 1. Paperpal
 
 **Best for:** STEM researchers and journal authors
 **Price:** $0-$12/month
@@ -48,7 +48,7 @@ Paperpal is built from the ground up specifically for researchers and academic p
 - Less versatile for non-academic writing tasks
 - Premium tier is required for extensive manuscript checks
 
-### 2. [ProWritingAid](https://www.amazon.com/s?k=ProWritingAid&tag=toolrouteai-20)
+### 2. ProWritingAid
 
 **Best for:** Thesis writers requiring deep stylistic analysis
 **Price:** $0-$10/month (Annual billing)
@@ -65,7 +65,7 @@ ProWritingAid offers the most comprehensive stylistic analysis of any tool on th
 - Interface can be overwhelming for quick, simple edits
 - Default settings must be adjusted to suit formal academic tone
 
-### 3. [Trinka AI](https://www.amazon.com/s?k=Trinka%20AI&tag=toolrouteai-20)
+### 3. Trinka AI
 
 **Best for:** Technical fields requiring strict discipline-specific vocabulary
 **Price:** $0-$6.67/month
@@ -82,7 +82,7 @@ Trinka AI is explicitly designed for academic and technical writing, with a stro
 - User interface is less polished than major competitors
 - Plagiarism checker costs extra credits
 
-### 4. [Grammarly Premium](https://www.amazon.com/s?k=Grammarly%20Premium&tag=toolrouteai-20)
+### 4. Grammarly Premium
 
 **Best for:** Undergraduate students and general academic assignments
 **Price:** $12/month (Annual billing)
@@ -99,7 +99,7 @@ Grammarly remains the most ubiquitous grammar checker, and its Premium version i
 - Still occasionally suggests over-simplification for dense academic text
 - Cannot natively parse or check LaTeX code accurately
 
-### 5. [QuillBot Premium](https://www.amazon.com/s?k=QuillBot%20Premium&tag=toolrouteai-20)
+### 5. QuillBot Premium
 
 **Best for:** Literature reviews and paraphrasing complex sources
 **Price:** $4.17/month (Annual billing)

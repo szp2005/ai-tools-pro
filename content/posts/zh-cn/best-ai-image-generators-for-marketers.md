@@ -71,3 +71,9 @@ AI图像生成器极大地减少了与传统摄影和寻找库存图像相关的
 - [2026年最佳AI图像生成工具：全面指南](/zh-cn/posts/best-ai-image-generation-tools-2026/)
 - [Midjourney对比DALL-E 3：终极AI图像生成器比较](/zh-cn/posts/midjourney-vs-dalle-3-comparison/)
 - [面向初学者的Stable Diffusion对比Midjourney：选择第一款AI图像生成器的终极指南](/zh-cn/posts/stable-diffusion-vs-midjourney-for-beginners/)
+
+---
+
+## Related Reading
+
+- [Best AI Image Upscaler for Large Format Printing in 2026](/posts/ai-image-upscaler-for-large-format-printing/)

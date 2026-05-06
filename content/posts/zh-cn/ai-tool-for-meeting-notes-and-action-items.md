@@ -166,4 +166,6 @@ Read AI 超越了简单的转录和任务提取，充当了自动化会议教练
 
 ## Related Reading
 
+- [Perplexity AI Review for Professional Research (2026)](/posts/perplexity-ai-review-for-professional-research/)
+
 - [Best AI Image Upscaler for Large Format Printing in 2026](/posts/ai-image-upscaler-for-large-format-printing/)

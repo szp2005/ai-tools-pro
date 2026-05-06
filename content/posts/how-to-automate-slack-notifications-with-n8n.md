@@ -123,3 +123,9 @@ Use the Split In Batches node combined with a Wait node. Process a small number 
 
 ### Do I need a paid n8n plan to integrate with Slack?
 No. The Slack node and the necessary trigger nodes are available in the free, self-hosted community edition of n8n. Paid cloud plans offer managed hosting and support, but the core integration capabilities are identical.
+
+---
+
+## Related Reading
+
+- [How to Handle Errors in n8n Production Workflows: Complete Guide](/posts/how-to-handle-errors-in-n8n-production-workflows/)

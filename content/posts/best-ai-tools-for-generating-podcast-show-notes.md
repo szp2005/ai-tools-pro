@@ -35,7 +35,7 @@ Before committing to a platform, evaluate its core capabilities against your pro
 
 ## Top AI Tools for Podcast Show Notes
 
-### 1. [Castmagic](https://www.amazon.com/s?k=Castmagic&tag=toolrouteai-20)
+### 1. Castmagic
 
 **Best for:** Comprehensive content repurposing
 **Price:** $39-$299/month
@@ -54,7 +54,7 @@ Its standout feature is the "Magic Chat" interface, which allows you to interact
 - Pricing tiers scale aggressively with audio volume
 - Interface can feel overwhelming for users who only want simple notes
 
-### 2. [Swell AI](https://www.amazon.com/s?k=Swell%20AI&tag=toolrouteai-20)
+### 2. Swell AI
 
 **Best for:** Agencies and high-volume networks
 **Price:** $29-$249/month
@@ -73,7 +73,7 @@ The platform excels at maintaining distinct brand voices across different podcas
 - Setup process requires more configuration than competitors
 - Starter tier has strict limits on upload hours
 
-### 3. [Podcastle](https://www.amazon.com/s?k=Podcastle&tag=toolrouteai-20)
+### 3. Podcastle
 
 **Best for:** All-in-one recording and processing
 **Price:** $0-$29.99/month
@@ -92,7 +92,7 @@ The AI generated notes include episode summaries, topic breakdowns with timestam
 - Less control over the exact format of the output
 - Transcription struggles slightly with heavy background noise
 
-### 4. [Descript](https://www.amazon.com/s?k=Descript&tag=toolrouteai-20)
+### 4. Descript
 
 **Best for:** Video-first podcasters
 **Price:** $15-$30/month
@@ -111,7 +111,7 @@ Because Descript is aware of your final, edited composition, the generated show 
 - Software is resource-intensive and can lag on older hardware
 - Learning curve for the editing interface is steep
 
-### 5. [Fathom](https://www.amazon.com/s?k=Fathom&tag=toolrouteai-20)
+### 5. Fathom
 
 **Best for:** B2B podcasts and interview analysis
 **Price:** Free - $19/month

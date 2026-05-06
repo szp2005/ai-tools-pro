@@ -23,7 +23,7 @@ However, medical research requires a level of precision and verifiability that g
 
 ## Top AI Tools for Medical Literature Review
 
-### 1. [Elicit](https://www.amazon.com/s?k=Elicit&tag=toolrouteai-20)
+### 1. Elicit
 
 **Best for:** Data extraction and synthesis from clinical trials
 **Price:** Free to $12/month
@@ -42,7 +42,7 @@ This makes Elicit exceptionally valuable when you need to compare methodologies 
 - Occasionally struggles with parsing highly non-standard tables
 - Requires careful query formulation to get the most accurate extractions
 
-### 2. [Consensus](https://www.amazon.com/s?k=Consensus&tag=toolrouteai-20)
+### 2. Consensus
 
 **Best for:** Answering specific clinical questions rapidly
 **Price:** Free to $8.99/month
@@ -61,7 +61,7 @@ For medical professionals conducting scoping reviews or needing quick evidence-b
 - Not designed for managing full systematic review workflows
 - Synthesis can sometimes oversimplify nuanced clinical outcomes
 
-### 3. [SciSpace](https://www.amazon.com/s?k=SciSpace&tag=toolrouteai-20)
+### 3. SciSpace
 
 **Best for:** Deep reading and comprehending complex medical papers
 **Price:** Free to $12/month
@@ -80,7 +80,7 @@ Furthermore, SciSpace allows you to chat with a specific paper or a collection o
 - The interface can feel cluttered when managing large libraries
 - AI explanations sometimes lack the depth required for highly specialized queries
 
-### 4. [Rayyan](https://www.amazon.com/s?k=Rayyan&tag=toolrouteai-20)
+### 4. Rayyan
 
 **Best for:** Collaborative abstract screening for systematic reviews
 **Price:** Free to $4.50/month
@@ -99,7 +99,7 @@ As you and your team include or exclude papers based on title and abstract, Rayy
 - User interface feels somewhat dated compared to newer AI platforms
 - The AI feature is limited strictly to the screening phase
 
-### 5. [Scite.ai](https://www.amazon.com/s?k=Scite.ai&tag=toolrouteai-20)
+### 5. Scite.ai
 
 **Best for:** Evaluating citation context and study reliability
 **Price:** $20/month
@@ -118,7 +118,7 @@ For a medical literature review, this tool is indispensable for evaluating the s
 - One of the more expensive tools on the market
 - Coverage is vast but can occasionally miss newer or niche journals
 
-### 6. [Scholarcy](https://www.amazon.com/s?k=Scholarcy&tag=toolrouteai-20)
+### 6. Scholarcy
 
 **Best for:** Creating automated flashcards and summary briefs
 **Price:** Free to $9.99/month
@@ -137,7 +137,7 @@ This tool is particularly useful during the initial reading and annotation phase
 - Flashcard format may not appeal to all researchers
 - Summaries can occasionally miss subtle nuances in the discussion section
 
-### 7. [ResearchRabbit](https://www.amazon.com/s?k=ResearchRabbit&tag=toolrouteai-20)
+### 7. ResearchRabbit
 
 **Best for:** Visualizing citation networks and discovering new literature
 **Price:** Free

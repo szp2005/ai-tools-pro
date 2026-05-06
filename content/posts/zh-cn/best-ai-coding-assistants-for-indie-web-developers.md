@@ -166,3 +166,13 @@ AI模型总是充满自信，即便是在它们犯错的时候。当要求助手
 
 - [2026年适合团队的最佳AI驱动项目管理工具](/zh-cn/posts/ai-powered-project-management-tools-2026/)
 - [2026年最佳AI转录和翻译工具](/zh-cn/posts/ai-tool-for-transcription-and-translation-2026/)
+
+---
+
+## Related Reading
+
+- [Custom GPT vs Claude Projects for Personal PKM in 2026](/posts/custom-gpt-vs-claude-projects-for-personal-pkm/)
+
+- [Custom GPT vs Claude Projects for Personal PKM in 2026](/posts/custom-gpt-vs-claude-projects-for-personal-pkm/)
+
+- [Custom GPT vs Claude Projects for Personal PKM in 2026](/posts/custom-gpt-vs-claude-projects-for-personal-pkm/)

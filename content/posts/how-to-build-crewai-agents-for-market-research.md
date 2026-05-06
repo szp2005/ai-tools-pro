@@ -1,4 +1,5 @@
 ---
+image: "/og/how-to-build-crewai-agents-for-market-research.webp"
 title: "How to Build CrewAI Agents for Market Research: 5-Step Guide"
 description: "Learn how to build CrewAI agents for market research. Automate competitor analysis and trend tracking with our comprehensive step-by-step Python guide."
 pubDate: "2026-05-05"
@@ -155,3 +156,19 @@ Cost depends entirely on the underlying LLM API pricing and the depth of the res
 
 ### Should I use sequential or hierarchical processing?
 Use sequential processing for standard, linear reports (e.g., Search -> Analyze -> Format). Use hierarchical processing when the scope is broad and an autonomous "Manager" agent is needed to dynamically delegate sub-topics to multiple researchers in parallel.
+
+---
+
+## Related Reading
+
+- [Comparing AutoGen vs CrewAI for Multi Agent Systems: 2026 Review](/posts/comparing-autogen-vs-crewai-for-multi-agent-systems/)
+
+- [How to Automate Niche Market Research with Perplexity in 2026](/posts/how-to-automate-niche-market-research-with-perplexity/)
+
+- [Comparing AutoGen vs CrewAI for Multi Agent Systems: 2026 Review](/posts/comparing-autogen-vs-crewai-for-multi-agent-systems/)
+
+- [多智能体系统比较：AutoGen与CrewAI 2026年深度评测](/posts/comparing-autogen-vs-crewai-for-multi-agent-systems/)
+
+- [Comparing AutoGen vs CrewAI for Multi Agent Systems: 2026 Review](/posts/comparing-autogen-vs-crewai-for-multi-agent-systems/)
+
+- [Comparing AutoGen vs CrewAI for Multi Agent Systems: 2026 Review](/posts/comparing-autogen-vs-crewai-for-multi-agent-systems/)

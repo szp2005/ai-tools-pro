@@ -212,3 +212,11 @@ Ollama 被普遍认为是适用于 macOS 的最佳工具。它针对 Apple 的 M
 
 ### 运行 70B 参数的模型需要多少 RAM？
 要运行量化为 4 位 (Q4_K_M) 的 70B 参数模型，大约需要 40GB 到 48GB 的内存。在 PC 上，这需要双 24GB GPU。在 Mac 上，配备 64GB 或 128GB 统一内存的 M 系列芯片将能够流畅处理。
+
+---
+
+## Related Reading
+
+- [How to Build a Custom Vector Database with Pinecone: 5-Step Guide](/posts/build-a-custom-vector-database-with-pinecone/)
+
+- [Adobe Firefly vs Canva Magic Studio for Graphics: Which Is Better?](/posts/adobe-firefly-vs-canva-magic-studio-for-graphics/)
