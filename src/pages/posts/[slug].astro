@@ -188,7 +188,12 @@ const itemListSchema = products.length >= 2 ? {
   })
 } : null;
 const adsensePublisherId = import.meta.env.PUBLIC_ADSENSE_PUBLISHER_ID;
----
+const adsenseTopSlot = import.meta.env.PUBLIC_ADSENSE_TOP_SLOT;
+const adsenseBottomSlot = import.meta.env.PUBLIC_ADSENSE_BOTTOM_SLOT;
+const manualAdSlotPushes = [adsenseTopSlot, adsenseBottomSlot]
+  .filter(Boolean)
+  .map(() => "(adsbygoogle = window.adsbygoogle || []).push({});")
+  .join(" ");
 ---
 <BaseLayout
   title={`${frontmatter.title} | AI Tools Pro`}
@@ -206,27 +211,27 @@ const adsensePublisherId = import.meta.env.PUBLIC_ADSENSE_PUBLISHER_ID;
       <h1>{frontmatter.title}</h1>
       {frontmatter.description && <p class="excerpt">{frontmatter.description}</p>}
     </header>
-    {adsensePublisherId && (
+    {adsensePublisherId && adsenseTopSlot && (
       <ins class="adsbygoogle ad-slot ad-slot-top"
            style="display:block; text-align:center;"
            data-ad-client={adsensePublisherId}
-           data-ad-slot="auto"
+           data-ad-slot={adsenseTopSlot}
            data-ad-format="auto"
            data-full-width-responsive="true"></ins>
     )}
     <div class="content">
       <Content />
     </div>
-    {adsensePublisherId && (
+    {adsensePublisherId && adsenseBottomSlot && (
       <ins class="adsbygoogle ad-slot ad-slot-bottom"
            style="display:block; text-align:center;"
            data-ad-client={adsensePublisherId}
-           data-ad-slot="auto"
+           data-ad-slot={adsenseBottomSlot}
            data-ad-format="auto"
            data-full-width-responsive="true"></ins>
     )}
-    {adsensePublisherId && (
-      <script is:inline set:html={`(adsbygoogle = window.adsbygoogle || []).push({}); (adsbygoogle = window.adsbygoogle || []).push({});`} />
+    {adsensePublisherId && manualAdSlotPushes && (
+      <script is:inline set:html={manualAdSlotPushes} />
     )}
     {faq.length > 0 && (
       <script type="application/ld+json" set:html={JSON.stringify({
