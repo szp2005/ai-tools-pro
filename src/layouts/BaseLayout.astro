@@ -42,6 +42,9 @@ const alternateZh = pathname.startsWith('/zh-cn') ? `${siteURL}${pathname}` : `$
 
 const ogImage = articleImage ? (articleImage.startsWith('http') ? articleImage : `${siteURL}${articleImage}`) : `${siteURL}/og-default.png`;
 const cloudflareWebAnalyticsToken = import.meta.env.PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN;
+const hasCloudflareWebAnalyticsToken =
+  typeof cloudflareWebAnalyticsToken === 'string' &&
+  /^[0-9a-f]{32}$/i.test(cloudflareWebAnalyticsToken);
 const adsensePublisherId = import.meta.env.PUBLIC_ADSENSE_PUBLISHER_ID;
 const ga4MeasurementId = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID;
 ---
@@ -147,7 +150,7 @@ const ga4MeasurementId = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID;
     )}
 
     <link rel="stylesheet" href="/styles/global.css" />
-    {cloudflareWebAnalyticsToken && (
+    {hasCloudflareWebAnalyticsToken && (
       <script
         is:inline
         defer
