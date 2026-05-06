@@ -520,6 +520,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ai.toolrouteai.com/posts/best-local-llm-tools-for-developers-2026/"/>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/posts/best-n8n-nodes-for-small-business-crm-automation/</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/posts/build-a-custom-vector-database-with-pinecone/</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -571,6 +577,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/posts/claude-3-5-sonnet-vs-gpt-4o-for-complex-reasoning/</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/posts/claude-api-for-custom-workflow-automation/</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -584,6 +596,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://ai.toolrouteai.com/posts/comparing-autogen-vs-crewai-for-multi-agent-systems/"/>
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://ai.toolrouteai.com/zh-cn/posts/comparing-autogen-vs-crewai-for-multi-agent-systems/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ai.toolrouteai.com/posts/comparing-autogen-vs-crewai-for-multi-agent-systems/"/>
+  </url>
+  <url>
+    <loc>https://ai.toolrouteai.com/posts/comparing-local-rag-solutions-for-private-knowledge-bases/</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ai.toolrouteai.com/posts/copy-ai-vs-jasper-comparison/</loc>
@@ -961,6 +979,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ai.toolrouteai.com/posts/notion-ai-vs-chatgpt-for-notes/"/>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/posts/ollama-vs-lm-studio-for-local-model-management/</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/posts/open-source-ai-agent-frameworks-review-2026/</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -1067,6 +1091,12 @@
   </url>
   <url>
     <loc>https://ai.toolrouteai.com/posts/top-ai-agents-for-ecommerce-inventory-management/</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ai.toolrouteai.com/posts/top-privacy-first-ai-tools-for-financial-professionals/</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
