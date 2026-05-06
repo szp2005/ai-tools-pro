@@ -1,6 +1,6 @@
 ---
 image: "/og/how-to-fine-tune-llama-3-on-local-data.webp"
-title: "How to Fine Tune Llama 3 on Local Data: Step-by-Step Guide"
+title: "Llama 3 Fine-Tuning: Local Data Step-by-Step Guide"
 description: "Learn how to fine tune Llama 3 on local data securely using Unsloth, LoRA, and Hugging Face. Master custom AI model training on consumer hardware today."
 pubDate: "2026-05-05"
 author: "Alex Chen"
@@ -11,7 +11,7 @@ type: "informational"
 
 _As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
 
-# How to Fine Tune Llama 3 on Local Data: Step-by-Step Guide
+# Fine Tune Llama 3 on Local Data: Step-by-Step Guide
 
 > **Quick Answer:** To fine-tune Llama 3 on local data, you need to format your custom dataset into JSONL using the ChatML or Alpaca format, set up a Python environment with PyTorch and Unsloth (or PEFT), load the quantized Llama 3 8B model, apply Low-Rank Adaptation (LoRA) to freeze core weights while training new adapters, and execute the training loop using Hugging Face's SFTTrainer. This process allows you to securely teach the model specific domain knowledge without uploading sensitive data to third-party servers.
 
@@ -252,6 +252,8 @@ Training time depends heavily on dataset size and GPU hardware. Fine-tuning Llam
 ---
 
 ## Related Reading
+
+- [Best Local LLM Tools for Developers in 2026: Top 7 Ranked](/posts/best-local-llm-tools-for-developers-2026/)
 
 - [How to Build a Custom Vector Database with Pinecone: 5-Step Guide](/posts/build-a-custom-vector-database-with-pinecone/)
 

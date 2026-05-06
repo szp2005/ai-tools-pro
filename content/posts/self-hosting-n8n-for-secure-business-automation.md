@@ -139,6 +139,8 @@ Yes. Because the self-hosted instance resides on your infrastructure, it can com
 
 - [Self Hosting n8n on Docker for Privacy: Complete Setup Guide](/posts/guide-to-self-hosting-n8n-on-docker-for-privacy/)
 
+- [Self Hosting n8n on Docker for Privacy: Complete Setup Guide](/posts/guide-to-self-hosting-n8n-on-docker-for-privacy/)
+
 - [为了隐私使用 Docker 自托管 n8n：完整设置指南](/posts/guide-to-self-hosting-n8n-on-docker-for-privacy/)
 
 - [为了隐私使用 Docker 自托管 n8n：完整设置指南](/posts/guide-to-self-hosting-n8n-on-docker-for-privacy/)

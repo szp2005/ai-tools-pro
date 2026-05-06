@@ -211,6 +211,8 @@ def calculate_system_metrics(metric_type: str) -> str:
 
 - [CrewAI vs AutoGen: Which Is Better for Building Autonomous Agents?](/posts/crewai-vs-autogen-for-building-autonomous-agents/)
 
+- [CrewAI vs AutoGen: Which Is Better for Building Autonomous Agents?](/posts/crewai-vs-autogen-for-building-autonomous-agents/)
+
 - [CrewAI 与 AutoGen：哪个更适合构建自主代理？](/posts/crewai-vs-autogen-for-building-autonomous-agents/)
 
 - [CrewAI 与 AutoGen：哪个更适合构建自主代理？](/posts/crewai-vs-autogen-for-building-autonomous-agents/)

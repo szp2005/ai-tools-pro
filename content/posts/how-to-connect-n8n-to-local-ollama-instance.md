@@ -1,6 +1,6 @@
 ---
 image: "/og/how-to-connect-n8n-to-local-ollama-instance.webp"
-title: "How to Connect n8n to Local Ollama Instance: Complete Setup Guide"
+title: "n8n Ollama Local Integration: Complete Setup Guide"
 description: "Learn how to connect n8n to a local Ollama instance with this step-by-step guide. Automate AI workflows securely and privately without cloud API costs."
 pubDate: "2026-05-05"
 author: "Alex Chen"

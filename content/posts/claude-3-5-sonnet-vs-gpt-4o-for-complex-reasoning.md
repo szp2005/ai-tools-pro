@@ -1,4 +1,5 @@
 ---
+image: "/og/claude-3-5-sonnet-vs-gpt-4o-for-complex-reasoning.webp"
 title: "Claude 3.5 Sonnet vs GPT-4o: Which Excels for Complex Reasoning?"
 description: "Practical guide to Claude 3.5 Sonnet vs GPT-4o for complex reasoning: setup steps, tool choices, risks, and checks for building reliable workflows without."
 pubDate: "2026-05-06"

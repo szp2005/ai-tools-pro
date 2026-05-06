@@ -1,6 +1,6 @@
 ---
 image: "/og/using-claude-sonnet-for-technical-software-documentation.webp"
-title: "How to Use Claude Sonnet for Technical Software Documentation"
+title: "Claude Sonnet for Technical Software Documentation"
 description: "Learn how using Claude Sonnet for technical software documentation accelerates API spec generation, code explanations, and architecture drafting with high accuracy."
 pubDate: "2026-05-02"
 author: "Alex Chen"
@@ -9,7 +9,7 @@ slug: "using-claude-sonnet-for-technical-software-documentation"
 type: "informational"
 ---
 
-# How to Use Claude Sonnet for Technical Software Documentation
+# Claude Sonnet for Technical Software Documentation: Complete Guide
 
 > **Quick Answer:** Using Claude Sonnet for technical software documentation dramatically reduces the time engineers spend [writing](/posts/ai-writing-assistant-for-long-form-content/) API references, architecture overviews, and code comments. Its large context window and advanced reasoning capabilities allow it to ingest entire codebases and output precise, structured markdown or docstrings that require minimal human editing, making it the ideal middle-ground model for daily engineering tasks.
 

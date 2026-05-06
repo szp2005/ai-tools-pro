@@ -1,6 +1,6 @@
 ---
 image: "/og/how-to-use-leonardo-ai-for-game-textures.webp"
-title: "How to Use Leonardo AI for Game Textures: 7-Step Guide"
+title: "Leonardo AI Game Textures: 7-Step Asset Creation Guide"
 description: "Learn how to use Leonardo AI for game textures with this complete guide. Generate seamless materials, normal maps, and PBR textures for Unity or Unreal Engine."
 pubDate: "2026-05-02"
 author: "Alex Chen"
@@ -9,7 +9,7 @@ slug: "how-to-use-leonardo-ai-for-game-textures"
 type: "informational"
 ---
 
-# How to Use Leonardo AI for Game Textures: 7-Step Guide
+# Leonardo AI for Game Textures: 7-Step Guide
 
 > **Quick Answer:** To use Leonardo AI for game textures, select a high-fidelity generation model, enable the "Tiling" toggle to ensure seamless edges, and use orthographic prompts (e.g., "flat top-down PBR cobblestone"). Export the resulting base color image to a tool like Materialize or Substance 3D Sampler to generate the necessary normal, roughness, and metallic maps required for modern game engines.
 

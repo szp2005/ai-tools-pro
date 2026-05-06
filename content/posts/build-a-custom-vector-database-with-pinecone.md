@@ -1,6 +1,6 @@
 ---
 image: "/og/build-a-custom-vector-database-with-pinecone.webp"
-title: "How to Build a Custom Vector Database with Pinecone: 5-Step Guide"
+title: "Pinecone Vector Database: 5-Step Custom Build Guide"
 description: "Learn how to build a custom vector database with Pinecone. This practical guide covers embedding generation, indexing, similarity search, and RAG integration."
 pubDate: "2026-05-02"
 author: "Alex Chen"

@@ -1,4 +1,5 @@
 ---
+image: "/og/claude-3-5-sonnet-api-for-secure-internal-tools.webp"
 title: "Claude 3.5 Sonnet API for Secure Internal Tools: A Complete Guide"
 description: "Leverage the Claude 3.5 Sonnet API for secure internal tools, enhancing data privacy and operational efficiency. Discover best practices for integration."
 pubDate: "2026-05-06"
@@ -196,5 +197,7 @@ Anthropic offers customization options for their models, which can include fine-
 ---
 
 ## Related Reading
+
+- [Best AI Image Upscaler for Large Format Printing in 2026](/posts/ai-image-upscaler-for-large-format-printing/)
 
 - [Claude 3.5 Sonnet vs GPT-4o: Which Excels for Complex Reasoning?](/posts/claude-3-5-sonnet-vs-gpt-4o-for-complex-reasoning/)

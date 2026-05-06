@@ -41,9 +41,9 @@ tags: ["automate", "content", "n8n", "claude"]
 
 If you are managing content for five clients or trying to publish three blog posts a week on your own site, the bottleneck is always the same: time spent on repetitive tasks that follow a predictable pattern. Research a keyword, write a brief, draft the post, format it, publish it. Every single time.
 
-[n8n](URL_PLACEHOLDER_1) is an open-source workflow [automation](/posts/ai-tools-for-email-writing/) platform — think Zapier, but without the per-task pricing wall and with far more flexibility over what nodes do and how data flows between them. You can run it in the cloud or self-host it on a $6/month VPS. The node library covers 400+ services out of the box, and anything else hits a generic HTTP Request node.
+n8n is an open-source workflow [automation](/posts/ai-tools-for-email-writing/) platform — think Zapier, but without the per-task pricing wall and with far more flexibility over what nodes do and how data flows between them. You can run it in the cloud or self-host it on a $6/month VPS. The node library covers 400+ services out of the box, and anything else hits a generic HTTP Request node.
 
-[Claude](URL_PLACEHOLDER_2) is Anthropic's large language model family. Claude 3.5 Sonnet specifically punches above its weight for long-form structured writing. It follows detailed system instructions reliably, handles markdown formatting without hallucinating extra code blocks, and stays on topic through a 200,000-token context window — which matters when you are chaining content generation steps.
+Claude is Anthropic's large language model family. Claude 3.5 Sonnet specifically punches above its weight for long-form structured writing. It follows detailed system instructions reliably, handles markdown formatting without hallucinating extra code blocks, and stays on topic through a 200,000-token context window — which matters when you are chaining content generation steps.
 
 Put them together and the practical payoff is concrete:
 
@@ -60,13 +60,13 @@ This guide focuses on one specific, high-value use case: **automating SEO-optimi
 Before touching n8n, collect everything in one place.
 
 **n8n Instance**
-The fastest path is [n8n Cloud](URL_PLACEHOLDER_3), which gives you a managed instance with no server setup. The Starter plan is free for low volume. If you prefer self-hosting for cost or data-privacy reasons, spin up a droplet on [DigitalOcean](URL_PLACEHOLDER_4) or a server on [Hetzner](URL_PLACEHOLDER_5) — both have one-click n8n installs via Docker Compose. Self-hosting is cheaper at scale but adds ten minutes of setup time upfront.
+The fastest path is n8n Cloud, which gives you a managed instance with no server setup. The Starter plan is free for low volume. If you prefer self-hosting for cost or data-privacy reasons, spin up a droplet on DigitalOcean or a server on Hetzner — both have one-click n8n installs via Docker Compose. Self-hosting is cheaper at scale but adds ten minutes of setup time upfront.
 
 **Anthropic Claude API Key**
-Go to [console.anthropic.com](URL_PLACEHOLDER_6), create an account, and generate an API key under Settings → API Keys. Fund your account with at least $5. A full 1,500-word blog post using Claude 3.5 Sonnet costs roughly $0.015–$0.03 depending on input token length.
+Go to console.anthropic.com, create an account, and generate an API key under Settings → API Keys. Fund your account with at least $5. A full 1,500-word blog post using Claude 3.5 Sonnet costs roughly $0.015–$0.03 depending on input token length.
 
 **Data Source: Google Sheet**
-Create a sheet with at minimum three columns: `Keyword`, `Target URL`, `Status`. The Status column will be updated by the workflow after processing so the same row does not trigger twice. If you prefer a more structured database, [Airtable](URL_PLACEHOLDER_7) or [Google Workspace](URL_PLACEHOLDER_8) Sheets both work and have dedicated n8n nodes.
+Create a sheet with at minimum three columns: `Keyword`, `Target URL`, `Status`. The Status column will be updated by the workflow after processing so the same row does not trigger twice. If you prefer a more structured database, Airtable or Google Workspace Sheets both work and have dedicated n8n nodes.
 
 **Destination: WordPress**
 You need the URL of your WordPress site and credentials for an Application Password (Settings → Users → Profile → Application Passwords in WordPress admin). Write these down; you will paste them into n8n.
@@ -124,9 +124,9 @@ That `{{ $json.Keyword }}` pulls the exact value from the Google Sheet row curre
 **System Message (paste this verbatim)**
 
 ```
-You are an expert SEO content strategist with 10 years of experience writing 
-for SaaS and digital marketing brands. Your briefs are concise, actionable, 
-and follow on-page SEO best practices. Always respond in clean Markdown. 
+You are an expert SEO content strategist with 10 years of experience writing
+for SaaS and digital marketing brands. Your briefs are concise, actionable,
+and follow on-page SEO best practices. Always respond in clean Markdown.
 Never add preamble like "Sure!" or "Great question!". Start directly with the H1 title.
 ```
 
@@ -144,9 +144,9 @@ For a brief, one Claude node is enough. For a full ~1,500-word blog post, use tw
 In Node B, the Human message references Node A's output:
 
 ```
-Using the following outline, write a complete blog post. 
-Each H2 section should be 200–250 words. Use short paragraphs (3 sentences max). 
-Include the primary keyword "{{ $('Google Sheets').item.json.Keyword }}" 
+Using the following outline, write a complete blog post.
+Each H2 section should be 200–250 words. Use short paragraphs (3 sentences max).
+Include the primary keyword "{{ $('Google Sheets').item.json.Keyword }}"
 naturally in the first 100 words and in at least two H2 headings.
 
 Outline:
@@ -219,11 +219,11 @@ The key decisions that actually move the needle: pick Claude over generic GPT wr
 
 Start with the brief generation workflow, run it for two weeks, then extend it. The structure scales to any content type once the foundation is solid.
 
-**Ready to build it?** [Start your n8n Cloud account here](URL_PLACEHOLDER_10) and [get your Claude API key from Anthropic's console](URL_PLACEHOLDER_11). If you want to self-host, [DigitalOcean's n8n Droplet](URL_PLACEHOLDER_12) is the fastest path from zero to a running instance.
+**Ready to build it?** Start your n8n Cloud account here and get your Claude API key from Anthropic's console. If you want to self-host, DigitalOcean's n8n Droplet is the fastest path from zero to a running instance.
 
 ---
 
-*Prices and model names current as of June 2025. Claude model versions update regularly — check the [Anthropic model documentation](URL_PLACEHOLDER_13) for the latest release before building.*
+*Prices and model names current as of June 2025. Claude model versions update regularly — check the Anthropic model documentation for the latest release before building.*
 
 ## Frequently Asked Questions
 
@@ -245,7 +245,7 @@ The workflow includes a step that writes `Done` to the Status column after each 
 
 ### Where do I get the downloadable workflow JSON mentioned in the article?
 
-[Download the complete n8n workflow JSON here](URL_PLACEHOLDER_9). Import it in n8n via **Settings → Import from File**. You will still need to connect your own credentials (Google, Anthropic, WordPress), but the node structure, expressions, and prompt templates are pre-built.
+Download the complete n8n workflow JSON here. Import it in n8n via **Settings → Import from File**. You will still need to connect your own credentials (Google, Anthropic, WordPress), but the node structure, expressions, and prompt templates are pre-built.
 
 ### What are the main benefits of using n8n and Claude for content automation?
 

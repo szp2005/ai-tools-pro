@@ -1,4 +1,5 @@
 ---
+image: "/og/best-hardware-for-running-llama-3-70b-locally.webp"
 title: "Best Hardware for Running Llama 3 70B Locally in 2026"
 description: "Discover the best hardware for running Llama 3 70B locally, focusing on GPUs, VRAM, and supporting components to achieve optimal performance and efficiency."
 pubDate: "2026-05-06"

@@ -41,9 +41,9 @@ tags: ["automate", "content", "n8n", "claude"]
 
 如果你正在为五位客户管理内容，或者试图在自己的网站上每周发布三篇博客文章，你会发现瓶颈总是一样的：把时间耗费在遵循可预测模式的重复性任务上。研究关键词、编写大纲、起草文章、调整格式、发布。每一次都是如此。
 
-[n8n](URL_PLACEHOLDER_1) 是一个开源的工作流[自动化](/zh-cn/posts/ai-tools-for-email-writing/)平台——可以把它想象成 Zapier，但没有按任务计费的门槛，并且在节点功能和数据流转方面具有极高的灵活性。你可以在云端运行它，也可以在每月 6 美元的 VPS 上自行托管。其节点库开箱即用，支持 400 多种服务，而任何其他不支持的服务都可以通过通用的 HTTP Request 节点来处理。
+n8n 是一个开源的工作流[自动化](/zh-cn/posts/ai-tools-for-email-writing/)平台——可以把它想象成 Zapier，但没有按任务计费的门槛，并且在节点功能和数据流转方面具有极高的灵活性。你可以在云端运行它，也可以在每月 6 美元的 VPS 上自行托管。其节点库开箱即用，支持 400 多种服务，而任何其他不支持的服务都可以通过通用的 HTTP Request 节点来处理。
 
-[Claude](URL_PLACEHOLDER_2) 是 Anthropic 的大型语言模型系列。Claude 3.5 Sonnet 在生成长篇结构化文本方面尤其表现出色。它能够可靠地遵循详细的系统指令，在处理 Markdown 格式时不会产生多余的幻觉代码块，并能在 200,000 token 的上下文窗口中始终紧扣主题——当你在串联多步内容生成流程时，这一点至关重要。
+Claude 是 Anthropic 的大型语言模型系列。Claude 3.5 Sonnet 在生成长篇结构化文本方面尤其表现出色。它能够可靠地遵循详细的系统指令，在处理 Markdown 格式时不会产生多余的幻觉代码块，并能在 200,000 token 的上下文窗口中始终紧扣主题——当你在串联多步内容生成流程时，这一点至关重要。
 
 将它们结合起来，你能获得切实的回报：
 
@@ -60,13 +60,13 @@ tags: ["automate", "content", "n8n", "claude"]
 在开始配置 n8n 之前，请将所有必要的信息准备好。
 
 **n8n 实例**
-最快的途径是使用 [n8n Cloud](URL_PLACEHOLDER_3)，它提供托管实例，无需服务器设置。Starter 计划对于低频使用是免费的。如果出于成本或数据隐私的原因你更倾向于自行托管，可以在 [DigitalOcean](URL_PLACEHOLDER_4) 上启动一个 Droplet，或在 [Hetzner](URL_PLACEHOLDER_5) 上租用一台服务器——两者都支持通过 Docker Compose 一键安装 n8n。规模化使用时自行托管成本更低，但前期需要花十分钟进行配置。
+最快的途径是使用 n8n Cloud，它提供托管实例，无需服务器设置。Starter 计划对于低频使用是免费的。如果出于成本或数据隐私的原因你更倾向于自行托管，可以在 DigitalOcean 上启动一个 Droplet，或在 Hetzner 上租用一台服务器——两者都支持通过 Docker Compose 一键安装 n8n。规模化使用时自行托管成本更低，但前期需要花十分钟进行配置。
 
 **Anthropic Claude API 密钥**
-前往 [console.anthropic.com](URL_PLACEHOLDER_6)，创建一个账户，并在 Settings → API Keys 下生成一个 API 密钥。为你的账户充值至少 5 美元。使用 Claude 3.5 Sonnet 生成一篇 1,500 字的完整博客文章，大约需要花费 0.015 到 0.03 美元，具体取决于输入 token 的长度。
+前往 console.anthropic.com，创建一个账户，并在 Settings → API Keys 下生成一个 API 密钥。为你的账户充值至少 5 美元。使用 Claude 3.5 Sonnet 生成一篇 1,500 字的完整博客文章，大约需要花费 0.015 到 0.03 美元，具体取决于输入 token 的长度。
 
 **数据源：Google Sheet**
-创建一个表格，至少包含三列：`Keyword`、`Target URL` 和 `Status`。工作流处理完成后会更新 Status 列，以确保同一行不会被触发两次。如果你更喜欢结构化的数据库，[Airtable](URL_PLACEHOLDER_7) 或 [Google Workspace](URL_PLACEHOLDER_8) Sheets 都可以，并且 n8n 中都有专门的节点支持。
+创建一个表格，至少包含三列：`Keyword`、`Target URL` 和 `Status`。工作流处理完成后会更新 Status 列，以确保同一行不会被触发两次。如果你更喜欢结构化的数据库，Airtable 或 Google Workspace Sheets 都可以，并且 n8n 中都有专门的节点支持。
 
 **目标端：WordPress**
 你需要你的 WordPress 网站 URL 以及应用程序密码（Application Password）的凭据（在 WordPress 后台的 Settings → Users → Profile → Application Passwords 中获取）。请将它们记录下来；稍后需要粘贴到 n8n 中。
@@ -124,9 +124,9 @@ Brief requirements:
 **系统消息 (System Message，请原样粘贴)**
 
 ```
-You are an expert SEO content strategist with 10 years of experience writing 
-for SaaS and digital marketing brands. Your briefs are concise, actionable, 
-and follow on-page SEO best practices. Always respond in clean Markdown. 
+You are an expert SEO content strategist with 10 years of experience writing
+for SaaS and digital marketing brands. Your briefs are concise, actionable,
+and follow on-page SEO best practices. Always respond in clean Markdown.
 Never add preamble like "Sure!" or "Great question!". Start directly with the H1 title.
 ```
 
@@ -144,9 +144,9 @@ Never add preamble like "Sure!" or "Great question!". Start directly with the H1
 在节点 B 中，Human message 将引用节点 A 的输出：
 
 ```
-Using the following outline, write a complete blog post. 
-Each H2 section should be 200–250 words. Use short paragraphs (3 sentences max). 
-Include the primary keyword "{{ $('Google Sheets').item.json.Keyword }}" 
+Using the following outline, write a complete blog post.
+Each H2 section should be 200–250 words. Use short paragraphs (3 sentences max).
+Include the primary keyword "{{ $('Google Sheets').item.json.Keyword }}"
 naturally in the first 100 words and in at least two H2 headings.
 
 Outline:
@@ -219,11 +219,11 @@ n8n 处于沙盒环境的 Code 节点内置了 `marked` 库。它可以自动将
 
 你可以先从大纲生成工作流开始，运行两周，然后进一步扩展。一旦打好基础，这套结构可以扩展至任何内容类型。
 
-**准备好动手构建了吗？** [在此开启你的 n8n Cloud 账户](URL_PLACEHOLDER_10) 并 [从 Anthropic 控制台获取你的 Claude API 密钥](URL_PLACEHOLDER_11)。如果你想自行托管，[DigitalOcean 的 n8n Droplet](URL_PLACEHOLDER_12) 是从零搭建到实例运行的最快途径。
+**准备好动手构建了吗？** 在此开启你的 n8n Cloud 账户 并 从 Anthropic 控制台获取你的 Claude API 密钥。如果你想自行托管，DigitalOcean 的 n8n Droplet 是从零搭建到实例运行的最快途径。
 
 ---
 
-*价格和模型名称截至 2025 年 6 月。Claude 模型版本更新频繁——构建前请查阅 [Anthropic 模型文档](URL_PLACEHOLDER_13) 了解最新版本。*
+*价格和模型名称截至 2025 年 6 月。Claude 模型版本更新频繁——构建前请查阅 Anthropic 模型文档 了解最新版本。*
 
 ## 常见问题 (FAQ)
 
@@ -245,7 +245,7 @@ n8n 处于沙盒环境的 Code 节点内置了 `marked` 库。它可以自动将
 
 ### 从哪里可以获取文章中提到的可下载的工作流 JSON？
 
-[点此下载完整的 n8n 工作流 JSON](URL_PLACEHOLDER_9)。通过 n8n 中的 **Settings → Import from File** 导入它。你仍然需要连接自己的凭据（Google、Anthropic、WordPress），但节点结构、表达式和提示词模板都是预先构建好的。
+点此下载完整的 n8n 工作流 JSON。通过 n8n 中的 **Settings → Import from File** 导入它。你仍然需要连接自己的凭据（Google、Anthropic、WordPress），但节点结构、表达式和提示词模板都是预先构建好的。
 
 ### 使用 n8n 和 Claude 进行内容自动化的主要好处是什么？
 

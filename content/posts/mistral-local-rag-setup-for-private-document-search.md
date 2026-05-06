@@ -1,4 +1,5 @@
 ---
+image: "/og/mistral-local-rag-setup-for-private-document-search.webp"
 title: "Mistral Local RAG Setup: Private Document Search Guide"
 description: "Master the Mistral local RAG setup for private document search. Securely query your sensitive data offline with this comprehensive guide, ensuring privacy."
 pubDate: "2026-05-06"

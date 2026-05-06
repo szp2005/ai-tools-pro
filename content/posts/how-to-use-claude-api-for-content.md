@@ -1,6 +1,6 @@
 ---
 image: "/og/how-to-use-claude-api-for-content.webp"
-title: "How to Use the Claude API for Content Generation: A Developer's Guide"
+title: "Claude API Content Generation: Developer Guide"
 description: "Master the Claude API for automated content creation. Learn expert techniques for system prompts, API integration, context management, and scaling."
 pubDate: "2026-04-30"
 author: "Alex Chen"

@@ -1,6 +1,6 @@
 ---
 image: "/og/how-to-automate-niche-market-research-with-perplexity.webp"
-title: "How to Automate Niche Market Research with Perplexity in 2026"
+title: "Niche Market Research Automation: Perplexity AI 2026 Guide"
 description: "Learn how to automate niche market research with Perplexity AI. Discover workflows, prompts, and strategies to find profitable niches faster and save hours."
 pubDate: "2026-05-02"
 author: "Alex Chen"

@@ -1,4 +1,5 @@
 ---
+image: "/og/n8n-automation-templates-for-small-legal-practices.webp"
 title: "n8n Automation Templates for Small Legal Practices: Boost Efficiency"
 description: "Practical guide to n8n automation templates for small legal practices: setup steps, tool choices, risks, and checks for building reliable workflows."
 pubDate: "2026-05-06"
@@ -184,6 +185,8 @@ n8n templates are pre-designed workflows that provide a ready-to-use starting po
 ---
 
 ## Related Reading
+
+- [Best AI Powered Contract Review for Freelance Developers in 2026](/posts/ai-powered-contract-review-for-freelance-developers/)
 
 - [How to Automate Client Onboarding with n8n Workflow: A Complete Guide](/posts/how-to-automate-client-onboarding-with-n8n-workflow/)
 

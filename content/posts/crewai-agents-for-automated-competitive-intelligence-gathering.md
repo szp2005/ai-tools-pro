@@ -1,4 +1,5 @@
 ---
+image: "/og/crewai-agents-automated-competitive-intelligence-gathering.webp"
 title: "CrewAI Agents for Automated Competitive Intelligence: A Complete Guide"
 description: "Practical guide to CrewAI agents for automated competitive intelligence gathering: setup steps, tool choices, risks, and checks for building reliable."
 pubDate: "2026-05-06"
@@ -317,6 +318,10 @@ The costs primarily stem from API usage for Large Language Models (LLMs) like Op
 ---
 
 ## Related Reading
+
+- [Best Open Source AI Agent Frameworks Review 2026: Top Picks](/posts/open-source-ai-agent-frameworks-review-2026/)
+
+- [CrewAI Agents for Market Research: 5-Step Build Guide](/posts/how-to-build-crewai-agents-for-market-research/)
 
 - [CrewAI vs AutoGen: Which is Better for Automated Software Development Tasks?](/posts/crewai-vs-autogen-automated-software-development-tasks/)
 

@@ -1,4 +1,5 @@
 ---
+image: "/og/crewai-multi-agent-system-legal-research-automation.webp"
 title: "CrewAI Multi-Agent Systems for Legal Research Automation: A Complete Guide"
 description: "Practical guide to CrewAI multi agent system for legal research automation: setup steps, tool choices, risks, and checks for building reliable workflows."
 pubDate: "2026-05-06"

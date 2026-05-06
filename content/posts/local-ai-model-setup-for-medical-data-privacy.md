@@ -1,5 +1,6 @@
 ---
-title: "How to Set Up Local AI for Medical Data Privacy: A Guide"
+image: "/og/local-ai-model-setup-for-medical-data-privacy.webp"
+title: "Local AI Model Setup for Medical Data Privacy"
 description: "Learn how to implement a local AI model setup for medical data privacy, ensuring HIPAA and GDPR compliance while leveraging advanced analytics securely."
 pubDate: "2026-05-06"
 author: "Alex Chen"
@@ -10,7 +11,7 @@ type: "informational"
 
 _As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
 
-# How to Set Up Local AI for Medical Data Privacy: A Guide
+# Set Up Local AI for Medical Data Privacy: A Guide
 
 > **Quick Answer:** Setting up a local AI model for medical data privacy involves deploying AI algorithms and processing capabilities directly within an organization's secure infrastructure, preventing sensitive patient information from leaving controlled environments. This approach significantly enhances compliance with regulations like HIPAA and GDPR by minimizing data exposure and maintaining full control over data lifecycle and access.
 

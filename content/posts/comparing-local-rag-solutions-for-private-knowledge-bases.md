@@ -1,4 +1,5 @@
 ---
+image: "/og/comparing-local-rag-solutions-for-private-knowledge-bases.webp"
 title: "Comparing Local RAG Solutions for Private Knowledge Bases: Top Picks 2026"
 description: "Explore the best local RAG solutions for private knowledge bases in 2026. Compare features, security, and performance to secure your sensitive data."
 pubDate: "2026-05-06"

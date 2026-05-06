@@ -66,4 +66,6 @@ AI 是一个效能倍增器，对于 SEO 规划而言。通过使用它来映射
 
 ## Related Reading
 
+- [Best AI Tools for Architectural Data Visualization in 2026](/posts/best-ai-tools-for-architectural-data-visualization/)
+
 - [Adobe Firefly vs Canva Magic Studio for Graphics: Which Is Better?](/posts/adobe-firefly-vs-canva-magic-studio-for-graphics/)

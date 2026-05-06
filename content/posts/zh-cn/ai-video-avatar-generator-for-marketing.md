@@ -220,6 +220,8 @@ YouTube 目前的政策要求创作者披露看起来逼真的人工生成内容
 
 - [Best AI Video Generators for Short Form Content in 2026](/posts/best-ai-video-generators-for-short-form-content/)
 
+- [Best AI Video Generators for Short Form Content in 2026](/posts/best-ai-video-generators-for-short-form-content/)
+
 - [Best AI Image Generation for Professional Marketers in 2026](/posts/ai-image-generation-for-professional-marketers/)
 
 - [Best AI Video Generators for Short Form Content in 2026](/posts/best-ai-video-generators-for-short-form-content/)

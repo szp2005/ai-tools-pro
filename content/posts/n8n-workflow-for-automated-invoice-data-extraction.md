@@ -1,5 +1,6 @@
 ---
-title: "How to Build an n8n Workflow for Automated Invoice Data Extraction"
+image: "/og/n8n-workflow-for-automated-invoice-data-extraction.webp"
+title: "n8n Automated Invoice Data Extraction Workflow Guide"
 description: "Learn to create an n8n workflow for automated invoice data extraction, streamlining your financial processes and reducing manual errors efficiently."
 pubDate: "2026-05-06"
 author: "Alex Chen"
@@ -10,7 +11,7 @@ type: "informational"
 
 _As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
 
-# How to Build an n8n Workflow for Automated Invoice Data Extraction
+# n8n Workflow for Automated Invoice Data Extraction Setup: Complete Guide
 
 > **Quick Answer:** An n8n workflow for automated invoice data extraction involves configuring a trigger (e.g., new file upload), integrating an Optical Character Recognition (OCR) service to convert invoice images or PDFs into text, parsing the text to extract specific data fields like invoice number and total, and then sending this structured data to a destination system such as an accounting platform or database. This process significantly reduces manual data entry, improves accuracy, and accelerates financial operations.
 
@@ -256,6 +257,8 @@ When using n8n for financial data, security is paramount. n8n allows for secure 
 ---
 
 ## Related Reading
+
+- [How to Build an n8n Integration for Automated CRM Data Entry: 5-Step Guide](/posts/n8n-integration-for-automated-crm-data-entry/)
 
 - [n8n vs Zapier for Advanced Workflow Automation: Which Is Better in 2026?](/posts/n8n-vs-zapier-for-advanced-workflow-automation/)
 

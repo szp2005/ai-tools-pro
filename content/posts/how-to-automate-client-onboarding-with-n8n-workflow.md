@@ -1,5 +1,6 @@
 ---
-title: "How to Automate Client Onboarding with n8n Workflow: A Complete Guide"
+image: "/og/how-to-automate-client-onboarding-with-n8n-workflow.webp"
+title: "n8n Client Onboarding Automation: Complete Workflow Guide"
 description: "Learn how to automate client onboarding with n8n workflow, streamlining your processes and enhancing client experience from initial contact to project kickoff."
 pubDate: "2026-05-06"
 author: "Alex Chen"

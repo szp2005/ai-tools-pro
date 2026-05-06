@@ -1,4 +1,5 @@
 ---
+image: "/og/ollama-installation-guide-privacy-conscious-professionals.webp"
 title: "Ollama Installation Guide for Privacy-Conscious Professionals: Secure Local AI"
 description: "Master the Ollama installation for privacy-conscious professionals with this comprehensive guide, ensuring secure, local AI model deployment on your own hardware."
 pubDate: "2026-05-06"

@@ -1,4 +1,5 @@
 ---
+image: "/og/best-n8n-nodes-small-business-crm-automation.webp"
 title: "Best n8n Nodes for Small Business CRM Automation in 2026"
 description: "Discover the best n8n nodes for small business CRM automation to streamline workflows, improve customer relations, and boost efficiency. Our top picks for 2026."
 pubDate: "2026-05-06"
@@ -203,6 +204,8 @@ For lead management, the most important n8n nodes include Form & Lead Capture no
 ---
 
 ## Related Reading
+
+- [n8n Automation for Automated Invoice Processing 2026: Setup Guide](/posts/n8n-automation-for-automated-invoice-processing-2026/)
 
 - [How to Build an n8n Integration for Automated CRM Data Entry: 5-Step Guide](/posts/n8n-integration-for-automated-crm-data-entry/)
 

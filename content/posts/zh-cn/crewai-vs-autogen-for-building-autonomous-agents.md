@@ -148,6 +148,8 @@ AutoGen 提供了一个广阔、灵活且极其强大的对话画布。它是研
 
 ## Related Reading
 
+- [Custom AI Agents with Ollama: 5-Step Build Guide](/posts/how-to-build-custom-ai-agents-with-ollama/)
+
 - [How to Build Custom AI Agents with Ollama: 5-Step Guide](/posts/how-to-build-custom-ai-agents-with-ollama/)
 
 - [How to Build Custom AI Agents with Ollama: 5-Step Guide](/posts/how-to-build-custom-ai-agents-with-ollama/)

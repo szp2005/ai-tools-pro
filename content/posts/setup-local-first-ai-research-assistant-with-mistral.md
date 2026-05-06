@@ -145,4 +145,6 @@ No. Once the inference engine and model weights are downloaded to your machine, 
 
 ## Related Reading
 
+- [Adobe Firefly vs Canva Magic Studio for Graphics: Which Is Better?](/posts/adobe-firefly-vs-canva-magic-studio-for-graphics/)
+
 - [Running Llama 3 Locally for Privacy-Conscious Lawyers](/posts/running-llama-3-locally-for-privacy-conscious-lawyers/)

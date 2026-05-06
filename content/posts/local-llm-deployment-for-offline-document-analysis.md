@@ -1,4 +1,5 @@
 ---
+image: "/og/local-llm-deployment-offline-document-analysis.webp"
 title: "Local LLM Deployment for Offline Document Analysis: A Complete Guide"
 description: "Master local LLM deployment for offline document analysis to ensure data privacy, enhance security, and gain rapid insights without internet dependency."
 pubDate: "2026-05-06"

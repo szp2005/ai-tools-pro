@@ -1,6 +1,6 @@
 ---
 image: "/og/how-to-fine-tune-flux-models-locally.webp"
-title: "How to Fine Tune Flux Models Locally: A Complete 2026 Guide"
+title: "Flux Model Local Fine-Tuning: 2026 Complete Guide"
 description: "Learn how to fine tune Flux models locally with our step-by-step guide. Master dataset preparation, VRAM optimization, and custom image generation."
 pubDate: "2026-05-02"
 author: "Alex Chen"
@@ -9,7 +9,7 @@ slug: "how-to-fine-tune-flux-models-locally"
 type: "informational"
 ---
 
-# How to Fine Tune Flux Models Locally: A Complete 2026 Guide
+# Fine Tune Flux Models Locally: A Complete 2026 Guide
 
 > **Quick Answer:** To fine tune Flux models locally, you need an NVIDIA GPU with at least 16GB of VRAM (24GB recommended) and a training UI like Kohya_ss or OneTrainer. The process involves preparing 15-50 high-quality captioned images, selecting the Flux.1 [dev] base model, setting your batch size to 1, and using Low-Rank Adaptation (LoRA) to train specific weights without rewriting the entire 12-billion parameter architecture.
 
@@ -130,6 +130,8 @@ Generally, no. Because Flux's base comprehension is so vast, and because you are
 ---
 
 ## Related Reading
+
+- [Fine Tune Llama 3 on Local Data: Step-by-Step Guide](/posts/how-to-fine-tune-llama-3-on-local-data/)
 
 - [How to Fine Tune Llama 3 on Local Data: Step-by-Step Guide](/posts/how-to-fine-tune-llama-3-on-local-data/)
 

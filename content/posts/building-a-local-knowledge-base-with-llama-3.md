@@ -1,6 +1,6 @@
 ---
 image: "/og/building-a-local-knowledge-base-with-llama-3.webp"
-title: "How to Build a Local Knowledge Base with Llama 3: Complete Setup Guide"
+title: "Llama 3 Local Knowledge Base: Complete Setup Guide"
 description: "Learn how building a local knowledge base with Llama 3 keeps your proprietary data private. Follow our complete guide to configure RAG on your own hardware."
 pubDate: "2026-05-02"
 author: "Alex Chen"

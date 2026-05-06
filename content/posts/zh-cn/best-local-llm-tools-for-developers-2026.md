@@ -217,6 +217,8 @@ Ollama 被普遍认为是适用于 macOS 的最佳工具。它针对 Apple 的 M
 
 ## Related Reading
 
+- [Pinecone Vector Database: 5-Step Custom Build Guide](/posts/build-a-custom-vector-database-with-pinecone/)
+
 - [How to Build a Custom Vector Database with Pinecone: 5-Step Guide](/posts/build-a-custom-vector-database-with-pinecone/)
 
 - [Adobe Firefly vs Canva Magic Studio for Graphics: Which Is Better?](/posts/adobe-firefly-vs-canva-magic-studio-for-graphics/)

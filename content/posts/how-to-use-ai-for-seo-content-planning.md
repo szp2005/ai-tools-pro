@@ -1,6 +1,6 @@
 ---
 image: "/og/how-to-use-ai-for-seo-content-planning.webp"
-title: "How to Use AI for SEO Content Planning: A 2026 Blueprint"
+title: "AI SEO Content Planning: 2026 Strategy Blueprint"
 author: "Alex Chen"
 date: 2026-04-29T13:40:00Z
 description: "Master AI-driven SEO content planning. Learn how to leverage LLMs for keyword clustering, intent mapping, and content calendars."
@@ -10,7 +10,7 @@ slug: "how-to-use-ai-for-seo-content-planning"
 type: "informational"
 ---
 
-# How to Use AI for SEO Content Planning: A 2026 Blueprint
+# AI for SEO Content Planning: A 2026 Blueprint
 
 > **Quick Answer:** Use AI for SEO Content Planning matters because it gives marketers, founders, and solo operators a practical way to solve the problem behind the search. Master AI-driven SEO content planning. Learn how to leverage LLMs for keyword clustering, intent mapping, and content calendars.
 

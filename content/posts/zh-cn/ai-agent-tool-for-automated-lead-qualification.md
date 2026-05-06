@@ -130,6 +130,8 @@ Agent将处理敏感的公司数据和个人身份信息（PII）。确保平台
 
 - [Best AI Tools for Automated B2B Lead Generation in 2026](/posts/ai-tools-for-automated-b2b-lead-generation/)
 
+- [Best AI Tools for Automated B2B Lead Generation in 2026](/posts/ai-tools-for-automated-b2b-lead-generation/)
+
 - [How to Automate Cold Email Outreach with AI: 5-Step Guide](/posts/how-to-automate-cold-email-outreach-with-ai/)
 
 - [Best Chrome Extension AI for Email Automation in 2026](/posts/chrome-extension-ai-email-automation/)

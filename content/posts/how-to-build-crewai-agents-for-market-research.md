@@ -1,6 +1,6 @@
 ---
 image: "/og/how-to-build-crewai-agents-for-market-research.webp"
-title: "How to Build CrewAI Agents for Market Research: 5-Step Guide"
+title: "CrewAI Agents for Market Research: 5-Step Build Guide"
 description: "Learn how to build CrewAI agents for market research. Automate competitor analysis and trend tracking with our comprehensive step-by-step Python guide."
 pubDate: "2026-05-05"
 author: "Alex Chen"

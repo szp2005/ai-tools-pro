@@ -1,4 +1,5 @@
 ---
+image: "/og/running-mistral-7b-on-consumer-hardware-for-privacy.webp"
 title: "Running Mistral 7B on Consumer Hardware for Privacy: A Comprehensive Guide"
 description: "Discover how to run Mistral 7B on your consumer hardware, ensuring robust privacy for your AI interactions and data. Learn the setup and benefits."
 pubDate: "2026-05-06"
@@ -186,5 +187,7 @@ Yes, running Mistral 7B locally on your own hardware ensures that your prompts a
 ---
 
 ## Related Reading
+
+- [The AI Writing Landscape in 2026: Beyond Text Generation](/posts/best-ai-writing-tools-2026/)
 
 - [Mistral Local RAG Setup: Private Document Search Guide](/posts/mistral-local-rag-setup-for-private-document-search/)
