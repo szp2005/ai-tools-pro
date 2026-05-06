@@ -601,6 +601,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/posts/crewai-vs-autogen-for-automated-software-development-tasks/</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/posts/crewai-vs-autogen-for-building-autonomous-agents/</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -995,6 +1001,12 @@
   </url>
   <url>
     <loc>https://ai.toolrouteai.com/posts/running-llama-3-locally-for-privacy-conscious-lawyers/</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ai.toolrouteai.com/posts/running-mistral-7b-on-consumer-hardware-for-privacy/</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
