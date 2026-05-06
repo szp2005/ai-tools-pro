@@ -119,4 +119,6 @@ Assuming standard API response times and no human intervention required, a compl
 
 ## Related Reading
 
+- [How to Connect n8n to Local Ollama Instance: Complete Setup Guide](/posts/how-to-connect-n8n-to-local-ollama-instance/)
+
 - [n8n vs Zapier for Advanced Workflow Automation: Which Is Better in 2026?](/posts/n8n-vs-zapier-for-advanced-workflow-automation/)

@@ -134,6 +134,10 @@ Webhook 节点是一个触发器，它监听来自外部系统的传入 HTTP 请
 
 ## Related Reading
 
+- [n8n Workflow Automation for Content Creators: Complete 2026 Guide](/posts/n8n-workflow-automation-for-content-creators/)
+
+- [How to Handle Errors in n8n Production Workflows: Complete Guide](/posts/how-to-handle-errors-in-n8n-production-workflows/)
+
 - [2026年最佳自动化会议调度AI智能体](/posts/ai-agent-for-automated-meeting-scheduling-2026/)
 
 - [How to Handle Errors in n8n Production Workflows: Complete Guide](/posts/how-to-handle-errors-in-n8n-production-workflows/)

@@ -154,6 +154,8 @@ In CrewAI, loops are naturally restricted by the task execution limits. In AutoG
 
 - [How to Build CrewAI Agents for Market Research: 5-Step Guide](/posts/how-to-build-crewai-agents-for-market-research/)
 
+- [How to Build CrewAI Agents for Market Research: 5-Step Guide](/posts/how-to-build-crewai-agents-for-market-research/)
+
 - [CrewAI市场调研智能体：完整5步指南](/posts/how-to-build-crewai-agents-for-market-research/)
 
 - [Best AI Image Upscaler for Large Format Printing in 2026](/posts/ai-image-upscaler-for-large-format-printing/)

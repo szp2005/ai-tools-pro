@@ -61,3 +61,9 @@ AI 是一个效能倍增器，对于 SEO 规划而言。通过使用它来映射
 - [为什么使用 n8n 和 Claude 自动化内容？](/zh-cn/posts/how-to-automate-content-with-n8n-and-claude/)
 - [终极指南：2026 年最佳内容创作 AI 工具](/zh-cn/posts/best-ai-tools-for-content-creation/)
 - [如何使用 Gemini 进行内容写作：专家指南](/zh-cn/posts/how-to-use-gemini-for-content-writing/)
+
+---
+
+## Related Reading
+
+- [Adobe Firefly vs Canva Magic Studio for Graphics: Which Is Better?](/posts/adobe-firefly-vs-canva-magic-studio-for-graphics/)

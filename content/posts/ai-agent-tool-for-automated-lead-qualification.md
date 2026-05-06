@@ -129,3 +129,5 @@ You provide strict [prompt engineering](/posts/midjourney-parameter-guide-for-co
 ## Related Reading
 
 - [Best AI Tools for Automated B2B Lead Generation in 2026](/posts/ai-tools-for-automated-b2b-lead-generation/)
+
+- [Best AI Tools for Automated B2B Lead Generation in 2026](/posts/ai-tools-for-automated-b2b-lead-generation/)

@@ -148,6 +148,8 @@ Perplexity 通过作为一个基于实时互联网搜索的答案引擎解决了
 
 ## Related Reading
 
+- [Best AI Agent for Automated Meeting Scheduling in 2026](/posts/ai-agent-for-automated-meeting-scheduling-2026/)
+
 - [Perplexity AI Review for Professional Research (2026)](/posts/perplexity-ai-review-for-professional-research/)
 
 - [Perplexity AI Review for Professional Research (2026)](/posts/perplexity-ai-review-for-professional-research/)

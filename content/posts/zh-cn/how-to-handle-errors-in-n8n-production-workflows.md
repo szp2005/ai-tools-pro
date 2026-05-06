@@ -143,6 +143,8 @@ n8n将其执行日志存储在 其 数据库中。如果您有每天执行数千
 
 - [n8n vs Make Comparison for Enterprise Automation (2026)](/posts/n8n-vs-make-comparison-for-enterprise-automation/)
 
+- [n8n vs Make Comparison for Enterprise Automation (2026)](/posts/n8n-vs-make-comparison-for-enterprise-automation/)
+
 - [n8n vs Make 企业自动化对比 (2026)](/posts/n8n-vs-make-comparison-for-enterprise-automation/)
 
 - [n8n Workflow Automation for Content Creators: Complete 2026 Guide](/posts/n8n-workflow-automation-for-content-creators/)
