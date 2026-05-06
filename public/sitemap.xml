@@ -490,6 +490,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ai.toolrouteai.com/posts/best-chrome-extension-ai-for-data-scraping-2026/"/>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/posts/best-hardware-for-running-llama-3-70b-locally/</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/posts/best-llm-tool-for-research-synthesis/</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -614,6 +620,12 @@
   </url>
   <url>
     <loc>https://ai.toolrouteai.com/posts/creating-a-custom-gpt-for-employee-onboarding/</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ai.toolrouteai.com/posts/crewai-multi-agent-system-for-legal-research-automation/</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -868,6 +880,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/posts/local-ai-model-setup-for-medical-data-privacy/</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/posts/local-first-ai-tools-vs-cloud-structured-2026/</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -919,6 +937,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ai.toolrouteai.com/posts/n8n-automation-for-automated-invoice-processing-2026/"/>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/posts/n8n-automation-templates-for-small-legal-practices/</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/posts/n8n-integration-for-automated-crm-data-entry/</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -944,6 +968,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://ai.toolrouteai.com/posts/n8n-vs-zapier-for-advanced-workflow-automation/"/>
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://ai.toolrouteai.com/zh-cn/posts/n8n-vs-zapier-for-advanced-workflow-automation/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ai.toolrouteai.com/posts/n8n-vs-zapier-for-advanced-workflow-automation/"/>
+  </url>
+  <url>
+    <loc>https://ai.toolrouteai.com/posts/n8n-vs-zapier-for-high-volume-lead-processing/</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ai.toolrouteai.com/posts/n8n-workflow-automation-for-content-creators/</loc>
