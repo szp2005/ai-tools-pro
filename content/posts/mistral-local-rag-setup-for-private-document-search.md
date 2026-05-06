@@ -34,3 +34,11 @@ Keep approvals on sensitive steps, log every run, and test with a small sample b
 ### How do you measure whether Mistral local RAG setup for private document search is working?
 
 Track cycle time, skipped manual steps, error rate, and user follow-up questions. If the workflow saves time but creates confusion, simplify the handoff before adding more automation.
+
+---
+
+## Related Reading
+
+- [Running Mistral 7B on Consumer Hardware for Privacy: A Comprehensive Guide](/posts/running-mistral-7b-on-consumer-hardware-for-privacy/)
+
+- [Best AI Tools for Architectural Data Visualization in 2026](/posts/best-ai-tools-for-architectural-data-visualization/)

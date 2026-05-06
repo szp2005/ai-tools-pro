@@ -192,3 +192,9 @@ The costs for Claude 3.5 Sonnet are typically based on token usage (input and ou
 
 ### Is it possible to fine-tune Claude 3.5 Sonnet for specific internal datasets?
 Anthropic offers customization options for their models, which can include fine-tuning for specific use cases. While the exact capabilities and availability for Claude 3.5 Sonnet may evolve, enterprises interested in tailoring the model to their unique internal datasets or domain-specific language should consult Anthropic's documentation or sales team for the most current information on fine-tuning and custom model development.
+
+---
+
+## Related Reading
+
+- [Claude 3.5 Sonnet vs GPT-4o: Which Excels for Complex Reasoning?](/posts/claude-3-5-sonnet-vs-gpt-4o-for-complex-reasoning/)

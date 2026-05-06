@@ -137,6 +137,8 @@ Generally, no. Because Flux's base comprehension is so vast, and because you are
 
 - [How to Fine Tune Llama 3 on Local Data: Step-by-Step Guide](/posts/how-to-fine-tune-llama-3-on-local-data/)
 
+- [How to Fine Tune Llama 3 on Local Data: Step-by-Step Guide](/posts/how-to-fine-tune-llama-3-on-local-data/)
+
 - [Llama 3 微调：本地数据循序渐进指南](/posts/how-to-fine-tune-llama-3-on-local-data/)
 
 - [Llama 3 微调：本地数据循序渐进指南](/posts/how-to-fine-tune-llama-3-on-local-data/)

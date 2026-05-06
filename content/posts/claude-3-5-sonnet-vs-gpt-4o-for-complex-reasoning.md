@@ -166,3 +166,9 @@ Claude 3.5 Sonnet's primary limitation is its lack of native multimodal capabili
 
 ### Which model has a larger context window?
 Both Claude 3.5 Sonnet and GPT-4o offer large context windows, capable of processing extensive amounts of text. Claude 3.5 Sonnet is particularly known for its robust handling of very long contexts, maintaining coherence and accuracy over thousands of tokens, making it excellent for deep document analysis.
+
+---
+
+## Related Reading
+
+- [Claude 3.5 Sonnet API for Secure Internal Tools: A Complete Guide](/posts/claude-3-5-sonnet-api-for-secure-internal-tools/)

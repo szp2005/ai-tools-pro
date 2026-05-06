@@ -331,3 +331,9 @@ To update the Ollama application, re-run the installation script for Linux (`cur
 ### Can I use Ollama for commercial projects?
 
 Yes, Ollama itself is open-source and can be used for commercial projects. However, the commercial viability of using specific models downloaded via Ollama depends on the individual model's license. Always check the license of the particular large language model (e.g., Llama 2, Mistral, Gemma) you intend to use for commercial purposes to ensure compliance.
+
+---
+
+## Related Reading
+
+- [Midjourney Parameter Guide for Consistent Character Design: Complete Workflow](/posts/midjourney-parameter-guide-for-consistent-character-design/)

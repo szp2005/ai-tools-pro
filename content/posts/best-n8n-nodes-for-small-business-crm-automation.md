@@ -199,3 +199,13 @@ n8n is open-source and can be self-hosted for free, requiring only the cost of y
 
 ### ### What are the most important n8n nodes for lead management?
 For lead management, the most important n8n nodes include Form & Lead Capture nodes (like Typeform, Google Forms, or Webhook) to collect data, Data Manipulation nodes (like Set, Merge, Code) to clean and enrich lead information, and dedicated CRM Integration nodes to push qualified leads into your CRM system.
+
+---
+
+## Related Reading
+
+- [How to Build an n8n Integration for Automated CRM Data Entry: 5-Step Guide](/posts/n8n-integration-for-automated-crm-data-entry/)
+
+- [How to Connect n8n to Local Ollama Instance: Complete Setup Guide](/posts/how-to-connect-n8n-to-local-ollama-instance/)
+
+- [Automate Content with n8n and Claude: Complete Guide](/posts/how-to-automate-content-with-n8n-and-claude/)

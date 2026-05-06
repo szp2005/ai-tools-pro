@@ -189,6 +189,8 @@ Midjourney 对比 DALL-E 3 最适合那些想要实用 [AI 工具](/zh-cn/posts/
 
 - [Midjourney vs DALL-E 3 for Brand Assets: Which Is Better?](/posts/midjourney-vs-dall-e-3-for-brand-assets/)
 
+- [Midjourney vs DALL-E 3 for Brand Assets: Which Is Better?](/posts/midjourney-vs-dall-e-3-for-brand-assets/)
+
 - [The AI Writing Landscape in 2026: Beyond Text Generation](/posts/best-ai-writing-tools-2026/)
 
 - [Midjourney vs DALL-E 3 for Brand Assets: Which Is Better?](/posts/midjourney-vs-dall-e-3-for-brand-assets/)

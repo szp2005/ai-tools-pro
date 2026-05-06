@@ -133,6 +133,8 @@ No. Local deployment only solves the data privacy and confidentiality concerns r
 
 - [How to Build a Local Knowledge Base with Llama 3: Complete Setup Guide](/posts/building-a-local-knowledge-base-with-llama-3/)
 
+- [How to Build a Local Knowledge Base with Llama 3: Complete Setup Guide](/posts/building-a-local-knowledge-base-with-llama-3/)
+
 - [Best AI Tools for Architectural Data Visualization in 2026](/posts/best-ai-tools-for-architectural-data-visualization/)
 
 - [How to Build a Local Knowledge Base with Llama 3: Complete Setup Guide](/posts/building-a-local-knowledge-base-with-llama-3/)

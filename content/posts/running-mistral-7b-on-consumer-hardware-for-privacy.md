@@ -182,3 +182,9 @@ Yes, running Mistral 7B locally on your own hardware ensures that your prompts a
 ### What's the difference between `llama.cpp` and Ollama?
 
 `llama.cpp` is a foundational C++ library that provides highly optimized inference for LLMs on various hardware, primarily through command-line tools. Ollama is a user-friendly application that builds upon `llama.cpp`, simplifying the process of downloading, running, and managing local LLMs with an easy-to-use command-line interface and API, abstracting away much of the underlying complexity.
+
+---
+
+## Related Reading
+
+- [Mistral Local RAG Setup: Private Document Search Guide](/posts/mistral-local-rag-setup-for-private-document-search/)

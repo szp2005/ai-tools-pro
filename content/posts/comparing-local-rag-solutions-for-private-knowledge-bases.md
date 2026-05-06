@@ -226,3 +226,11 @@ Local RAG solutions are inherently more secure in terms of data residency and co
 
 ### Can I integrate a local RAG solution with my existing enterprise databases and document management systems?
 Yes, most local RAG solutions are designed with integration in mind. They typically offer APIs, SDKs, or connectors to ingest data from various sources, including SQL/NoSQL databases, file systems, SharePoint, Confluence, and other document management systems. The ease and depth of integration can vary between commercial products and open-source frameworks.
+
+---
+
+## Related Reading
+
+- [Local LLM Deployment for Offline Document Analysis: A Complete Guide](/posts/local-llm-deployment-offline-document-analysis/)
+
+- [How to Set Up Local AI for Medical Data Privacy: A Guide](/posts/local-ai-model-setup-for-medical-data-privacy/)

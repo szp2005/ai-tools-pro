@@ -148,6 +148,8 @@ No, they can be on separate machines. As long as both devices are on the same lo
 
 ## Related Reading
 
+- [How to Build an n8n Workflow for Automated Invoice Data Extraction](/posts/n8n-workflow-for-automated-invoice-data-extraction/)
+
 - [n8n vs Zapier for Advanced Workflow Automation: Which Is Better in 2026?](/posts/n8n-vs-zapier-for-advanced-workflow-automation/)
 
 - [How to Build an n8n Integration for Automated CRM Data Entry: 5-Step Guide](/posts/n8n-integration-for-automated-crm-data-entry/)

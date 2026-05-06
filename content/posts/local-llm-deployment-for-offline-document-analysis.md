@@ -299,3 +299,9 @@ Keep approvals on sensitive steps, log every run, and test with a small sample b
 ### How do you measure whether local LLM deployment for offline document analysis is working?
 
 Track cycle time, skipped manual steps, error rate, and user follow-up questions. If the workflow saves time but creates confusion, simplify the handoff before adding more automation.
+
+---
+
+## Related Reading
+
+- [Comparing Local RAG Solutions for Private Knowledge Bases: Top Picks 2026](/posts/comparing-local-rag-solutions-for-private-knowledge-bases/)

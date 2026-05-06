@@ -165,6 +165,8 @@ Fireflies AI 会议笔记评测最适合想要实用 [AI 工具](/zh-cn/posts/ry
 
 - [Gamma App AI Presentation Review: Is It The Future of Slides?](/posts/gamma-app-ai-presentation-review/)
 
+- [Gamma App AI Presentation Review: Is It The Future of Slides?](/posts/gamma-app-ai-presentation-review/)
+
 - [Best LLM Tool for Research Synthesis in 2026 (Compared)](/posts/best-llm-tool-for-research-synthesis/)
 
 - [Gamma App AI Presentation Review: Is It The Future of Slides?](/posts/gamma-app-ai-presentation-review/)
