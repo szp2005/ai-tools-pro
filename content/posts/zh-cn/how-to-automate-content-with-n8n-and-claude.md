@@ -274,4 +274,8 @@ n8n 处于沙盒环境的 Code 节点内置了 `marked` 库。它可以自动将
 
 ## Related Reading
 
+- [Self Hosting n8n on Docker for Privacy: Complete Setup Guide](/posts/guide-to-self-hosting-n8n-on-docker-for-privacy/)
+
+- [Best AI Workflow Automation for Shopify Store Owners in 2026](/posts/ai-workflow-automation-for-shopify-store-owners/)
+
 - [Best AI Workflow Automation for Shopify Store Owners in 2026](/posts/ai-workflow-automation-for-shopify-store-owners/)

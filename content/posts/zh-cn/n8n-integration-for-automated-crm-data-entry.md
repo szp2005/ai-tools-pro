@@ -142,6 +142,8 @@ CRM 对 API 调用强制执行严格的速率限制。如果您要导入一批 1
 
 ## Related Reading
 
+- [n8n Automation for Automated Invoice Processing 2026: Setup Guide](/posts/n8n-automation-for-automated-invoice-processing-2026/)
+
 - [Automate Content with n8n and Claude: Complete Guide](/posts/how-to-automate-content-with-n8n-and-claude/)
 
 - [2026 年 n8n 自动化发票处理：设置指南](/posts/n8n-automation-for-automated-invoice-processing-2026/)

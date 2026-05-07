@@ -147,3 +147,11 @@ This is typically a retrieval failure, not a model failure. If the embedding pro
 
 ### How do I update the local models when new versions are released?
 If using Ollama, you simply run `ollama pull [model-name]` in your terminal to overwrite the old weights with the updated version. If using a GUI like LM Studio, you search for the new GGUF file, download it, and select it from your local dropdown menu in the server settings.
+
+---
+
+## Related Reading
+
+- [Custom GPT vs Claude Projects for Personal PKM in 2026](/posts/custom-gpt-vs-claude-projects-for-personal-pkm/)
+
+- [Best AI Coding Assistants for Indie Web Developers in 2026](/posts/best-ai-coding-assistants-for-indie-web-developers/)

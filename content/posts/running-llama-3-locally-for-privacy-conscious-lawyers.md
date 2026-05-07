@@ -135,6 +135,8 @@ No. Local deployment only solves the data privacy and confidentiality concerns r
 
 - [Llama 3 Local Knowledge Base: Complete Setup Guide](/posts/building-a-local-knowledge-base-with-llama-3/)
 
+- [Llama 3 Local Knowledge Base: Complete Setup Guide](/posts/building-a-local-knowledge-base-with-llama-3/)
+
 - [How to Build a Local Knowledge Base with Llama 3: Complete Setup Guide](/posts/building-a-local-knowledge-base-with-llama-3/)
 
 - [How to Build a Local Knowledge Base with Llama 3: Complete Setup Guide](/posts/building-a-local-knowledge-base-with-llama-3/)

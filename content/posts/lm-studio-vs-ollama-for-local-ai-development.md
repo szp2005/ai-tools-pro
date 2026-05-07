@@ -142,3 +142,11 @@ While Ollama is CLI-only by default, the ecosystem has built numerous graphical 
 
 ### Does Ollama support vision models?
 Yes. Ollama supports multimodal models like LLaVA. You can pass base64 encoded images to the Ollama API alongside your text prompts, and the daemon will automatically process the image and return the vision-based inference, exactly as it handles standard text generation.
+
+---
+
+## Related Reading
+
+- [Local AI on Personal Documents: 5-Step Training Guide](/posts/how-to-train-local-ai-on-personal-documents/)
+
+- [Custom AI Agents with Ollama: 5-Step Build Guide](/posts/how-to-build-custom-ai-agents-with-ollama/)
