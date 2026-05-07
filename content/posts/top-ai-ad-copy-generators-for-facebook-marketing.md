@@ -1,4 +1,5 @@
 ---
+image: "/og/top-ai-ad-copy-generators-facebook-marketing.webp"
 title: "7 Top AI Ad Copy Generators for Facebook Marketing in 2026"
 description: "Discover the top AI ad copy generators for Facebook marketing. Compare pricing, features, and predictive scoring to scale your paid social campaigns."
 pubDate: "2026-05-07"

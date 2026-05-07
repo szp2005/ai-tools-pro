@@ -1,4 +1,5 @@
 ---
+image: "/og/best-open-source-llms-for-local-text-generation.webp"
 title: "7 Best Open Source LLMs for Local Text Generation in 2026"
 description: "Discover the best open source LLMs for local text generation. Compare top self-hosted models for privacy, performance, coding, and creative writing in 2026."
 pubDate: "2026-05-07"
