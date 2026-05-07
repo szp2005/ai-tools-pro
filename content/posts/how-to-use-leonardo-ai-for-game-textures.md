@@ -15,7 +15,7 @@ type: "informational"
 
 Indie developers and 3D environment artists constantly balance visual quality against strict production timelines. High-quality textures are essential for building immersive worlds, but manually sculpting, baking, and painting materials for every single surface consumes hundreds of hours. Traditional procedural material generation tools are powerful but come with a steep technical learning curve that can slow down rapid prototyping.
 
-This is where AI [image generation](/posts/ai-image-generation-for-professional-marketers/), specifically tuned for game development workflows, steps in. Learning how to use Leonardo AI for game textures shifts the [workflow](/posts/best-ai-sidebar-extensions-for-chrome-productivity/) from tedious manual authoring to curation and rapid iteration. Because Leonardo AI offers built-in tools for tiling and utilizes specific base models trained on high-quality digital art and game assets, it produces highly usable base maps for physically based rendering (PBR) workflows. 
+This is where AI [image generation](/posts/ai-image-generation-for-professional-marketers/), specifically tuned for [game development](/posts/best-ai-tools-for-interactive-fiction-writers/) workflows, steps in. Learning how to use Leonardo AI for game textures shifts the [workflow](/posts/best-ai-sidebar-extensions-for-chrome-productivity/) from tedious manual authoring to curation and rapid iteration. Because Leonardo AI offers built-in tools for tiling and utilizes specific base models trained on high-quality digital art and game assets, it produces highly usable base maps for physically based rendering (PBR) workflows. 
 
 Whether you are building a stylized low-poly indie title in Godot or aiming for photorealistic environments in Unreal Engine 5, integrating AI into your texture pipeline reduces iteration time from days to minutes. This guide walks through the exact workflow to generate, refine, extract PBR maps, and implement production-ready game textures using Leonardo AI.
 
@@ -92,7 +92,7 @@ If you have an Adobe Substance license, Sampler is the industry standard for thi
 With your PBR texture maps generated and saved locally, it is time to import them into your game engine and build the shader material.
 
 ### Unreal Engine 5 Setup
-1. Drag and drop all your texture maps (Base Color, Normal, Roughness, AO) into your Unreal Engine Content Browser.
+1. Drag and drop all your texture maps (Base Color, Normal, Roughness, AO) into your Unreal Engine [Content](/posts/how-to-automate-content-with-n8n-and-claude/) Browser.
 2. Double-click the Normal map. In the texture settings window, ensure the "Texture Group" is set to "WorldNormalMap" and the compression settings are set to "Normalmap".
 3. Double-click the Roughness and AO maps. Uncheck the "sRGB" box. This is a critical step: Roughness and AO are linear data maps, not color maps. Leaving sRGB checked will result in overly shiny or washed-out materials.
 4. Right-click in the Content Browser and create a new "Material". Open the Material Editor.
@@ -132,7 +132,7 @@ Because grayscale images only require one color channel, you can pack:
 *   **G (Green Channel):** Roughness
 *   **B (Blue Channel):** Metallic
 
-This creates a single RGB image (often called an ARM or ORM map). Inside Unreal or Unity, you simply drag off the Red, Green, and Blue output pins of this single texture node and plug them into their respective material slots. This reduces three texture draw calls into one, significantly optimizing your material rendering budget.
+This creates a single RGB image (often called an ARM or ORM map). Inside Unreal or Unity, you simply drag off the Red, Green, and Blue output pins of this single texture node and plug them into their respective material slots. This reduces three texture draw calls into one, significantly optimizing your material rendering [budget](/posts/best-ai-tools-for-solopreneurs-on-a-budget/).
 
 ## Conclusion
 

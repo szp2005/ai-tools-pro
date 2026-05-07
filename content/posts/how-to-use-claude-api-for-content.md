@@ -10,7 +10,7 @@ type: "informational"
 
 _As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
 
-In the rapidly evolving landscape of [artificial intelligence](/posts/ai-tools-for-seo-writing/), Anthropic's Claude 3 family—specifically Claude 3.5 Sonnet and Claude 3 Opus—has emerged as a powerhouse for content generation. Unparalleled in its ability to adhere strictly to tone guidelines, process massive context windows (up to 200,000 tokens), and avoid the repetitive "AI-speak" that plagues other models, Claude is the ideal engine for programmatic SEO and at-scale content workflows. 
+In the rapidly evolving landscape of [artificial intelligence](/posts/ai-tools-for-seo-writing/), Anthropic's Claude 3 family—specifically [Claude 3.5 Sonnet](/posts/claude-3-5-sonnet-api-for-secure-internal-tools/) and Claude 3 Opus—has emerged as a powerhouse for content generation. Unparalleled in its ability to adhere strictly to tone guidelines, process massive context windows (up to 200,000 tokens), and avoid the repetitive "AI-speak" that plagues other models, Claude is the ideal engine for programmatic SEO and at-scale content workflows. 
 
 However, effectively leveraging the Claude API requires more than simply passing a topic into a basic prompt. To generate high-quality, long-form content that genuinely ranks in search engines and engages human readers, you need a structured engineering approach.
 
@@ -201,7 +201,7 @@ Using the data in the <background_research> tags above, write a section about...
 
 ## Optimizing for SEO and Readability
 
-Great API usage is only half the battle; the content itself must be formatted for humans and search engine crawlers. When building your content automation scripts, bake these SEO requirements into your prompts:
+Great API usage is only half the battle; the content itself must be formatted for humans and [search engine](/posts/perplexity-ai-review-2026/) crawlers. When building your content automation scripts, bake these SEO requirements into your prompts:
 
 *   **Internal Linking Guidelines:** If you pass a JSON dictionary of your site's existing URLs to Claude, you can prompt it to insert natural internal links: `Use these URLs to insert relevant markdown links in the text: {"/blog/api-limits": "API limits guide", "/pricing": "pricing page"}`.
 *   **Keyword Density Constraints:** Prompt Claude to use the primary keyword naturally in the first 100 words, at least one H2, and the conclusion, without "keyword stuffing."
@@ -211,7 +211,7 @@ Great API usage is only half the battle; the content itself must be formatted fo
 
 Scaling content generation with Claude requires managing infrastructure constraints.
 
-1.  **Model Selection:** Use **Claude 3.5 Sonnet** for 95% of content tasks. It is faster, cheaper, and often writes better structured content than Opus. Reserve **Claude 3 Opus** for deep strategic outlining, complex data analysis, or generating initial system prompts.
+1.  **Model Selection:** Use **Claude 3.5 Sonnet** for 95% of content tasks. It is faster, cheaper, and often writes better structured content than Opus. Reserve **Claude 3 Opus** for deep strategic outlining, complex [data analysis](/posts/using-local-llms-for-private-data-analysis/), or generating initial system prompts.
 2.  **Rate Limiting:** Implement exponential backoff in your code. Anthropic enforces rate limits based on your tier. Use Python's `tenacity` library to automatically retry failed requests due to `429 Too Many Requests` errors.
 3.  **Prompt Caching:** Anthropic supports prompt caching. If you are generating 100 articles using the identical 10,000-token brand guideline document in the system prompt, enable prompt caching to reduce your input token costs by up to 90%.
 

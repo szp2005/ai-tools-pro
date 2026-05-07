@@ -195,7 +195,7 @@ ChatGPT 依赖于其内部训练数据，这可能导致幻觉和捏造的引注
 ## 相关阅读
 
 - [长篇内容 AI 写作助手终极指南](/zh-cn/posts/ai-writing-assistant-for-long-form-content/)
-- [2026年适合个体创业者的最佳[AI工具](/zh-cn/posts/rytr-vs-copy-ai-for-copywriting/)：扩展您的单人业务](/zh-cn/posts/best-ai-tools-for-solopreneurs/)
+- [2026年适合个体创业者的最佳AI工具：扩展您的单人业务](/zh-cn/posts/best-ai-tools-for-solopreneurs/)
 
 ---
 

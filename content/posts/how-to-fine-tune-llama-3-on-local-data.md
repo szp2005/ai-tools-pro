@@ -13,11 +13,11 @@ _As an Amazon Associate we earn from qualifying purchases. This post may contain
 
 # Fine Tune Llama 3 on Local Data: Step-by-Step Guide
 
-> **Quick Answer:** To fine-tune Llama 3 on local data, you need to format your custom dataset into JSONL using the ChatML or Alpaca format, set up a Python environment with PyTorch and Unsloth (or PEFT), load the quantized Llama 3 8B model, apply Low-Rank Adaptation (LoRA) to freeze core weights while training new adapters, and execute the training loop using Hugging Face's SFTTrainer. This process allows you to securely teach the model specific domain knowledge without uploading sensitive data to third-party servers.
+> **Quick Answer:** To fine-tune Llama 3 on local data, you need to format your custom dataset into JSONL using the ChatML or Alpaca format, set up a Python environment with PyTorch and Unsloth (or PEFT), load the quantized Llama 3 8B model, apply Low-Rank Adaptation (LoRA) to freeze core weights while training new adapters, and execute the training loop using Hugging Face's SFTTrainer. This process allows you to securely teach the model specific domain knowledge without uploading [sensitive data](/posts/best-local-llm-for-sensitive-data-analysis-2026/) to third-party servers.
 
 Data [privacy](/posts/ollama-installation-guide-privacy-conscious-professionals/) and domain-specific accuracy are the two biggest challenges organizations face when implementing Large Language Models. While base models like Meta's Llama 3 are exceptionally capable, they only know the generalized data they were trained on. When you need an AI to understand your internal [documentation](/posts/self-healing-knowledge-base-using-ai/), specific coding styles, or proprietary customer service protocols, off-the-shelf models fall short. 
 
-Sending sensitive corporate or personal data to closed-source API providers is often a non-starter due to compliance, security, and IP concerns. The solution is local fine-tuning. By running the training process entirely on your own hardware, your data never leaves your network. 
+Sending sensitive corporate or personal data to closed-source API providers is often a non-starter due to [compliance](/posts/top-privacy-first-ai-tools-for-financial-professionals/), security, and IP concerns. The solution is local fine-tuning. By running the training process entirely on your own hardware, your data never leaves your network. 
 
 Historically, fine-tuning an 8-billion parameter model required massive, expensive server clusters. Today, thanks to parameter-efficient fine-tuning (PEFT) techniques and highly optimized libraries, you can fine-tune Llama 3 8B locally on a single consumer-grade GPU. This guide provides a rigorous, technical walkthrough on how to fine tune Llama 3 on local data, covering everything from hardware prerequisites to dataset formatting and the execution of the training loop.
 
@@ -210,7 +210,7 @@ model.save_pretrained("llama3-local-finetune") # Saves LoRA adapters
 tokenizer.save_pretrained("llama3-local-finetune")
 ```
 
-To use the model in applications like LM Studio or Ollama, you cannot just use the adapters. You must merge the adapters back into the 16-bit base model and export it as a GGUF file. Unsloth provides built-in methods for this:
+To use the model in applications like [LM Studio](/posts/ollama-vs-lm-studio-for-local-model-management/) or Ollama, you cannot just use the adapters. You must merge the adapters back into the 16-bit base model and export it as a GGUF file. Unsloth provides built-in methods for this:
 
 ```python
 # Save to 16bit GGUF for CPU/GPU inference via llama.cpp or Ollama

@@ -13,7 +13,7 @@ type: "informational"
 
 > **Quick Answer:** To build custom AI agents with Ollama, install the Ollama runtime and download a tool-capable local model (like Llama 3 8B or Hermes). Connect this local instance to an orchestration framework like LangChain or [CrewAI](/posts/crewai-vs-autogen-automated-software-development-tasks/) by pointing the LLM wrapper to `http://localhost:11434`. Finally, define custom Python functions as tools and assign them to your agent, allowing the [local LLM](/posts/running-mistral-7b-on-consumer-hardware-for-privacy/) to execute actions and solve multi-step problems autonomously.
 
-The shift toward local language models has transformed how developers approach autonomous systems. Relying strictly on cloud APIs for agentic workflows often introduces high latency, unpredictable costs, and significant [data privacy](/posts/building-a-local-knowledge-base-with-llama-3/) risks. By moving the reasoning engine locally, developers can experiment with multi-agent orchestration and complex tool usage without sending sensitive data over the network or monitoring an API dashboard.
+The shift toward local language models has transformed how developers approach autonomous systems. Relying strictly on cloud APIs for agentic workflows often introduces high latency, unpredictable costs, and significant [data privacy](/posts/building-a-local-knowledge-base-with-llama-3/) risks. By moving the reasoning engine locally, developers can experiment with multi-agent orchestration and complex tool usage without sending [sensitive data](/posts/best-local-llm-for-sensitive-data-analysis-2026/) over the network or monitoring an API dashboard.
 
 Ollama serves as the runtime foundation for this local approach. It packages model weights, configuration, and data into a single runnable container and exposes a standard REST API. This makes it a drop-in replacement for cloud providers within modern AI frameworks. Building an agent on top of Ollama requires understanding how to format prompts for local models, how to manage context windows, and how to reliably extract structured tool calls from models that have significantly fewer parameters than their cloud counterparts.
 
@@ -21,7 +21,7 @@ This guide details the architectural requirements and technical steps to configu
 
 ## Understanding the Architecture of Local AI Agents
 
-An AI agent is not a distinct piece of software, but rather a design pattern applied to a large language model. Standard LLM interactions are stateless and reactive: you provide a prompt, and the model generates a text response. An agentic workflow introduces autonomy by allowing the LLM to dictate the flow of execution.
+An AI agent is not a distinct piece of software, but rather a design pattern applied to a large language model. Standard LLM interactions are stateless and reactive: you provide a prompt, and the model generates a text response. An agentic [workflow](/posts/best-ai-sidebar-extensions-for-chrome-productivity/) introduces autonomy by allowing the LLM to dictate the flow of execution.
 
 A functional local AI agent requires four integrated components:
 

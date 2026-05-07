@@ -32,7 +32,7 @@ Unlike simple webhook integrations provided by some SaaS tools, n8n allows you t
 
 To successfully follow this guide, ensure you have the following components configured:
 
-1. A running instance of n8n. This can be self-hosted via Docker, n8n Cloud, or a local desktop installation.
+1. A running instance of n8n. This can be self-hosted via [Docker](/posts/guide-to-self-hosting-n8n-on-docker-for-privacy/), n8n Cloud, or a local desktop installation.
 2. Administrator or developer access to a Slack workspace to create and install a custom app.
 3. A clear understanding of the event that will trigger your notification (e.g., a GitHub push, a Stripe payment, or a custom application webhook).
 4. Basic familiarity with JSON structure, as you will need to map data fields between nodes.

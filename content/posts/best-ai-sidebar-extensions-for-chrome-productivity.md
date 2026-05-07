@@ -94,7 +94,7 @@ Because it runs locally in your browser, Harpa provides a significant privacy ad
 
 MaxAI.me focuses heavily on the output side of productivity: writing, replying, and editing. While it functions perfectly well as a conversational sidebar, its true strength lies in how it embeds itself into text fields across the web. Whether you are drafting a tweet, composing a long email in Gmail, or writing a post on LinkedIn, MaxAI.me places a small, unobtrusive icon next to your cursor.
 
-With a single click, you can ask the tool to improve your writing, adjust the tone, fix grammar, or draft a complete reply based on the context of the email thread. It supports "Bring Your Own Key" (BYOK) for OpenAI and Anthropic, allowing advanced users to bypass subscription fees and pay only for the raw API usage. This makes it highly cost-effective for developers or agencies who already have API accounts set up.
+With a single click, you can ask the tool to improve your writing, adjust the tone, fix grammar, or draft a complete reply based on the context of the email thread. It supports "Bring Your Own Key" (BYOK) for [OpenAI](/posts/automate-customer-sentiment-analysis-with-openai-api/) and Anthropic, allowing advanced users to bypass subscription fees and pay only for the raw API usage. This makes it highly cost-effective for developers or agencies who already have API accounts set up.
 
 **Pros:**
 - Phenomenal inline writing support across all web text fields
@@ -102,7 +102,7 @@ With a single click, you can ask the tool to improve your writing, adjust the to
 - Excellent pre-built prompts for professional email drafting
 
 **Cons:**
-- Less focus on reading comprehension and document analysis
+- Less focus on reading comprehension and [document analysis](/posts/local-llm-deployment-offline-document-analysis/)
 - Inline icons can occasionally conflict with other browser tools like [Grammarly](/posts/grammarly-vs-prowritingaid-comparison/)
 
 ### 5. Merlin
@@ -145,7 +145,7 @@ Most of these tools offer a subscription model ranging from $10 to $20 per month
 ### Security and Privacy Considerations
 
 When you install a sidebar extension, you are giving it permission to read the contents of your active web pages. This is a significant security consideration, particularly for enterprise users working with confidential data. 
-- Always review the privacy policy to ensure the tool does not use your private data or prompts to train their models.
+- Always [review](/posts/otter-ai-review-transcription/) the privacy policy to ensure the tool does not use your private data or prompts to train their models.
 - If you are handling sensitive information, utilize the enterprise settings or opt-out forms provided by the major LLM providers to ensure data retention is disabled.
 - Consider local-first or command-triggered tools like Harpa AI if you want strict control over when the extension actually reads the page content.
 

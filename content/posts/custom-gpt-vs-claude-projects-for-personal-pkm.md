@@ -13,7 +13,7 @@ _As an Amazon Associate we earn from qualifying purchases. This post may contain
 
 # Custom GPT vs Claude Projects for Personal PKM in 2026
 
-> **Quick Answer:** If your personal [knowledge management](/posts/self-healing-knowledge-base-using-ai/) (PKM) workflow relies on executing code, accessing live APIs, and automating tasks, Custom GPTs are the better choice. If your focus is on analyzing massive document repositories, maintaining deep context across long writing sessions, and synthesizing complex interconnected notes without hallucinations, Claude Projects is the superior platform. 
+> **Quick Answer:** If your personal [knowledge management](/posts/self-healing-knowledge-base-using-ai/) (PKM) workflow relies on executing code, accessing live APIs, and automating tasks, Custom GPTs are the better choice. If your focus is on analyzing massive document repositories, maintaining deep context across long [writing](/posts/ai-writing-assistant-for-long-form-content/) sessions, and synthesizing complex interconnected notes without hallucinations, Claude Projects is the superior platform. 
 
 Choosing the right [artificial intelligence](/posts/ai-tools-for-seo-writing/) workspace for your Personal Knowledge Management (PKM) system is no longer just about generating text; it is about creating a reliable cognitive partner. As our digital vaults grow—filled with Obsidian markdown files, Notion databases, PDFs, and web clippings—we need tools that can digest this information and help us connect the dots.
 
@@ -49,7 +49,7 @@ Custom GPTs shine when your PKM system needs to interact with the outside world.
 **Cons:**
 - Relies on retrieval systems rather than full context for large files
 - Can struggle to maintain coherence across very long conversational threads
-- [Privacy](/posts/[ollama](/posts/ollama-vs-lm-studio-for-local-model-management/)-installation-guide-privacy-conscious-professionals/) concerns regarding data training unless explicitly opted out
+- [Privacy](/posts/ollama-installation-guide-privacy-conscious-professionals/) concerns regarding data training unless explicitly opted out
 
 ### 2. Claude Projects (Anthropic)
 
@@ -67,7 +67,7 @@ Claude Projects is currently the undisputed champion for text-heavy PKM workflow
 
 **Cons:**
 - Lacks native API execution or direct web-hook integrations
-- No built-in image generation for visual notes
+- No built-in [image generation](/posts/best-ai-image-generation-tools-2026/) for visual notes
 - Project knowledge must be manually updated when local files change
 
 ## Context Windows & Memory Handling

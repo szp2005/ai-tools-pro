@@ -11,9 +11,9 @@ type: "informational"
 
 # Building a RAG Pipeline with n8n and Pinecone: Complete Guide
 
-> **Quick Answer:** Building a RAG pipeline with n8n and Pinecone involves using n8n to ingest source documents, convert them into vector embeddings using a model like OpenAI's `text-embedding-3-small`, and store them in a Pinecone vector database. When a user asks a question, n8n embeds the query, retrieves the most relevant context from Pinecone, and feeds both into a Large Language Model to generate an accurate, data-grounded response.
+> **Quick Answer:** Building a RAG pipeline with n8n and Pinecone involves using n8n to ingest source documents, convert them into vector embeddings using a model like [OpenAI](/posts/automate-customer-sentiment-analysis-with-openai-api/)'s `text-embedding-3-small`, and store them in a Pinecone vector database. When a user asks a question, n8n embeds the query, retrieves the most relevant context from Pinecone, and feeds both into a Large Language Model to generate an accurate, data-grounded response.
 
-Implementing Large Language Models for internal data retrieval often results in generic answers or hallucinations unless grounded by factual context. Retrieval-Augmented Generation (RAG) solves this limitation by fetching relevant documents from a proprietary dataset before passing the user prompt to the AI. While deploying RAG systems historically required writing complex Python orchestration scripts, visual [automation](/posts/ai-tools-for-email-writing/) frameworks have fundamentally shifted this paradigm. 
+Implementing Large Language Models for internal data retrieval often results in generic answers or hallucinations unless grounded by factual context. Retrieval-Augmented Generation (RAG) solves this limitation by fetching relevant documents from a proprietary dataset before passing the user prompt to the AI. While deploying RAG systems historically required [writing](/posts/ai-writing-assistant-for-long-form-content/) complex Python orchestration scripts, visual [automation](/posts/ai-tools-for-email-writing/) frameworks have fundamentally shifted this paradigm. 
 
 Combining n8n—a fair-code, node-based automation platform—with Pinecone, a purpose-built vector database, allows engineering teams to construct production-ready AI pipelines without maintaining custom integration code. This architecture separates the orchestration layer from the storage layer, ensuring low-latency retrieval while accommodating hundreds of disparate data sources. 
 
@@ -132,4 +132,4 @@ When a document is updated in your source system, you cannot simply update the t
 
 - [Semantic SEO Strategy for AI Generated Blog Posts: 7-Step Guide](/posts/semantic-seo-strategy-for-ai-generated-blog-posts/)
 
-- [Building [AI Agents](/posts/crewai-vs-autogen-automated-software-development-tasks/) for Cold Email Outreach: Complete Guide to Automation](/posts/building-ai-agents-for-cold-email-outreach/)
+- [Building AI Agents for Cold Email Outreach: Complete Guide to Automation](/posts/building-ai-agents-for-cold-email-outreach/)

@@ -52,7 +52,7 @@ Technical artists, enterprise design teams, game developers, and anyone who refu
 
 ## 3. DALL-E 4: The Master of Prompt Adherence
 
-OpenAI’s DALL-E 4, deeply integrated into the broader [ChatGPT](/posts/notion-ai-vs-chatgpt-for-notes/) ecosystem, takes a vastly different approach from Midjourney or Stable Diffusion. It isn't trying to be an art studio; it's trying to be a perfect visual translator of human intent.
+[OpenAI](/posts/automate-customer-sentiment-analysis-with-openai-api/)’s DALL-E 4, deeply integrated into the broader [ChatGPT](/posts/notion-ai-vs-chatgpt-for-notes/) ecosystem, takes a vastly different approach from Midjourney or Stable Diffusion. It isn't trying to be an art studio; it's trying to be a perfect visual translator of human intent.
 
 ### Key Features in 2026
 - **Unyielding Prompt Obedience:** If you ask DALL-E 4 for "a blue cup on the left, a red sphere in the middle, and exactly three yellow pencils on the right, resting on a mahogany table," that is *exactly* what you will get. It possesses a terrifyingly accurate understanding of spatial relationships and complex, multi-clause instructions.
@@ -138,7 +138,7 @@ The legal landscape around AI imagery is still evolving, but generally, images g
 
 ### Can I generate images directly within my existing workflow tools?
 
-Yes, many major design and [productivity](/posts/automating-google-sheets-with-chrome-extension-ai/) suites now have integrated AI image generation capabilities. Tools like Adobe Firefly are built directly into Photoshop and Illustrator, while platforms like Canva and Notion offer built-in generators for seamless content creation.
+Yes, many major design and [productivity](/posts/automating-google-sheets-with-chrome-extension-ai/) suites now have integrated AI image generation capabilities. Tools like Adobe Firefly are built directly into Photoshop and Illustrator, while platforms like Canva and Notion offer built-in generators for seamless [content creation](/posts/automated-video-translation-for-global-content-creators/).
 
 ### What is the most beginner-friendly AI image generator?
 

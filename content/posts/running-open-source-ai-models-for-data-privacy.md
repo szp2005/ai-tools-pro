@@ -46,7 +46,7 @@ Proprietary models are black boxes. Their alignment guardrails, prompt injection
 The open-source ecosystem provides models that rival the reasoning capabilities of proprietary systems, particularly when fine-tuned for specific enterprise tasks. Selecting the right model depends on balancing parameter size against your available hardware.
 
 ### Llama 3 Ecosystem
-Meta's Llama 3 family serves as the baseline for most local deployments. The 8B (billion parameter) variant is highly optimized for standard workstations, handling summarization, internal [documentation](/posts/self-healing-knowledge-base-using-ai/) retrieval, and basic coding tasks with minimal VRAM. The 70B variant requires enterprise-grade hardware but delivers reasoning capabilities suitable for complex data analysis, legal document review, and high-level strategic planning.
+Meta's Llama 3 family serves as the baseline for most local deployments. The 8B (billion parameter) variant is highly optimized for standard workstations, handling summarization, internal [documentation](/posts/self-healing-knowledge-base-using-ai/) retrieval, and basic coding tasks with minimal VRAM. The 70B variant requires enterprise-grade hardware but delivers reasoning capabilities suitable for complex data analysis, legal document [review](/posts/otter-ai-review-transcription/), and high-level strategic planning.
 
 ### Mistral and Mixtral Architectures
 Mistral AI provides some of the most efficient models per parameter. Their Mixture of Experts (MoE) architectures, such as Mixtral 8x7B and 8x22B, activate only a subset of parameters for any given prompt. This allows for massive overall model capacity with significantly reduced VRAM requirements during active inference, making them ideal for deployments constrained by hardware budgets.
@@ -70,7 +70,7 @@ Apple's M-series chips offer a unique advantage for privacy-focused AI because t
 
 ## Deployment Tools for Seamless Local Execution
 
-Deploying an open source model no longer requires writing custom Python inference scripts. The ecosystem provides robust middleware that exposes local models via standard, OpenAI-compatible APIs.
+Deploying an open source model no longer requires [writing](/posts/ai-writing-assistant-for-long-form-content/) custom Python inference scripts. The ecosystem provides robust middleware that exposes local models via standard, [OpenAI](/posts/automate-customer-sentiment-analysis-with-openai-api/)-compatible APIs.
 
 ### Ollama
 Ollama is the standard for individual workstations and internal rapid prototyping. It acts as a lightweight daemon, downloading quantized model files (GGUFs) and running them with high efficiency. Because it exposes an API locally at `localhost:11434`, developers can drop Ollama into existing internal applications as a direct, private replacement for external APIs.

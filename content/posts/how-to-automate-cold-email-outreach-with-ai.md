@@ -32,7 +32,7 @@ AI solves this by shifting the automation from the *sending* phase to the *resea
 Before executing the steps, you must assemble the correct infrastructure. An effective AI cold email system relies on three distinct layers:
 
 1. **The Data Layer:** Tools like Apollo, ZoomInfo, or Ocean.io to source raw contact information and basic firmographics.
-2. **The Enrichment & AI Layer:** Platforms like Clay or custom Make.com/n8n workflows that connect to OpenAI or Anthropic APIs. This layer pulls in external data (website scraping, LinkedIn data) and uses LLMs to synthesize it into usable copy.
+2. **The Enrichment & AI Layer:** Platforms like Clay or custom Make.com/n8n workflows that connect to [OpenAI](/posts/automate-customer-sentiment-analysis-with-openai-api/) or Anthropic APIs. This layer pulls in external data (website scraping, LinkedIn data) and uses LLMs to synthesize it into usable copy.
 3. **The Sending Layer:** Tools like Instantly, Smartlead, or Lemlist. These handle inbox warmup, rotation, and sequence scheduling to ensure maximum deliverability.
 
 ## Step 1: Building a Highly Targeted Lead List
@@ -67,7 +67,7 @@ Instead, prompt the AI to act as an objective researcher writing a single, casua
 *   **Prompt Instructions:** "You are an SDR writing a casual, one-sentence opening line for a cold email. Read the provided data. Find one specific, non-obvious detail about the prospect's recent work or their company's recent focus. Write a single sentence referencing this detail. Do not use exclamation points. Keep it under 20 words. Tone should be neutral, peer-to-peer, and observant. Do not mention that you read their profile."
 *   **Output Example:** "Noticed your team is shifting focus toward enterprise deployment after the recent Series B."
 
-Run this prompt across your entire list. Review a random sample of 5-10% of the generated outputs to ensure the model isn't hallucinating or producing awkward phrasing. Once verified, these AI-generated first lines become a new column in your spreadsheet, ready for the sending tool.
+Run this prompt across your entire list. [Review](/posts/otter-ai-review-transcription/) a random sample of 5-10% of the generated outputs to ensure the model isn't hallucinating or producing awkward phrasing. Once verified, these AI-generated first lines become a new column in your spreadsheet, ready for the sending tool.
 
 ## Step 4: Setting Up the Automated Sending Sequence
 
@@ -125,7 +125,7 @@ If you use AI simply to write generic, bloated copy, it can trigger spam filters
 Claude 3.5 Sonnet currently excels at adopting specific tones and writing natural, human-sounding copy without the typical AI buzzwords. GPT-4o is also excellent, particularly when managing complex data extraction and reasoning tasks within your automated workflows. 
 
 ### How much does it cost to automate cold email with AI?
-A robust setup typically costs between $200 and $500 per month. This includes a data provider (like Apollo), an enrichment platform (like Clay or Make.com), a sending tool (like Instantly), and the API costs for the AI models, which usually run under $20 per 1,000 leads processed.
+A robust setup typically costs between $200 and $500 per month. This includes a data provider (like Apollo), an enrichment platform (like Clay or Make.com), a sending tool (like Instantly), and the API costs for the [AI models](/posts/claude-3-5-sonnet-vs-gpt-4o-for-complex-reasoning/), which usually run under $20 per 1,000 leads processed.
 
 ### Should I disclose that an AI wrote the email?
 No. The goal of AI in cold outreach is to perform the background research an SDR would normally do. Because the insight and the relevance are genuine—even if synthesized by an LLM—the email functions exactly as a well-researched human email would. Disclosing AI usage distracts from the value proposition you are offering the prospect.

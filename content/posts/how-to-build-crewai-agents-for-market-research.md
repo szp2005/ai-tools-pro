@@ -37,9 +37,9 @@ For market research, the optimal baseline configuration involves three distinct 
 Before defining agents, you must establish the environment and equip your agents with the ability to interact with the external internet. CrewAI agents are effectively blind without tools.
 
 Install the necessary packages:
-`pip install crewai duckduckgo-search langchain-openai`
+`pip install crewai duckduckgo-search langchain-[openai](/posts/automate-customer-sentiment-analysis-with-openai-api/)`
 
-You will need an LLM provider (OpenAI's GPT-4o or Anthropic's Claude 3.5 Sonnet are recommended for complex reasoning) and search capabilities. CrewAI integrates natively with Langchain tools.
+You will need an LLM provider (OpenAI's [GPT-4o](/posts/gemini-for-content-writing-vs-gpt-4o/) or Anthropic's Claude 3.5 Sonnet are recommended for [complex reasoning](/posts/claude-3-5-sonnet-vs-gpt-4o-for-complex-reasoning/)) and search capabilities. CrewAI integrates natively with Langchain tools.
 
 ```python
 import os
@@ -163,7 +163,7 @@ Use sequential processing for standard, linear reports (e.g., Search -> Analyze 
 
 - [Best AI Agent for Automated Social Media Monitoring in 2026](/posts/ai-agent-for-automated-social-media-monitoring/)
 
-- [Comparing AutoGen vs CrewAI for Multi Agent Systems: 2026 [Review](/posts/otter-ai-review-transcription/)](/posts/comparing-autogen-vs-crewai-for-multi-agent-systems/)
+- [Comparing AutoGen vs CrewAI for Multi Agent Systems: 2026 Review](/posts/comparing-autogen-vs-crewai-for-multi-agent-systems/)
 
 - [Comparing AutoGen vs CrewAI for Multi Agent Systems: 2026 Review](/posts/comparing-autogen-vs-crewai-for-multi-agent-systems/)
 

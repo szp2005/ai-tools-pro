@@ -38,7 +38,7 @@ To succeed, you must adopt a modular, iterative approach. You are not generating
 
 ## Strategic Workflows for Long-Form Mastery
 
-Let's break down the practical, step-by-step workflow for creating high-quality, long-form content using AI.
+Let's break down the practical, step-by-step [workflow](/posts/best-ai-sidebar-extensions-for-chrome-productivity/) for creating high-quality, long-form content using AI.
 
 ### Phase 1: Deep Research and Ideation
 
@@ -63,7 +63,7 @@ The outline is your safety net against context degradation. A weak outline guara
 This is where the actual writing happens. **Never ask the AI to write more than 500-800 words at a time.**
 
 1.  **Feed the Context:** Before drafting a section, remind the AI of the overarching goal, the target audience, the specific tone, and the detailed outline for *just that section*.
-2.  **Drafting Prompt Example:** *"We are writing Section 3: 'Evaluating Vector Databases.' The tone must be technical but accessible, similar to the [documentation](/posts/self-healing-knowledge-base-using-ai/) style of Stripe or Vercel. Do not use buzzwords like 'synergy' or 'revolutionary.' Based on our outline, write 600 words covering the differences between Pinecone and Milvus. Include a bulleted comparison list. Ensure a smooth transition to Section 4."*
+2.  **Drafting Prompt Example:** *"We are writing Section 3: 'Evaluating Vector Databases.' The tone must be technical but accessible, similar to the [documentation](/posts/self-healing-knowledge-base-using-ai/) style of Stripe or Vercel. Do not use buzzwords like 'synergy' or 'revolutionary.' Based on our outline, write 600 words covering the differences between [Pinecone](/posts/building-a-rag-pipeline-with-n8n-and-pinecone/) and Milvus. Include a bulleted comparison list. Ensure a smooth transition to Section 4."*
 3.  **Iterative Refinement:** Read the output immediately. If the tone drifts, correct it. *Prompt: "The technical details are accurate, but the tone is too academic. Rewrite this section to be punchier and more conversational, using shorter sentences."*
 
 ### Phase 4: The Synthesis and Human Polish

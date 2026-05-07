@@ -43,7 +43,7 @@ Competitors signal their strategic direction through the content they publish. A
 
 ### Feature Rollout Detection
 
-Monitoring product updates requires reading changelogs, support documentation, and press releases. An AI agent can synthesize these disparate sources. When a competitor launches a new feature, the agent can categorize the update (e.g., UI enhancement, core functionality, integration), assess its potential impact based on sentiment analysis of early user [reviews](/posts/writesonic-review-honest/) on platforms like G2 or Reddit, and compile a technical brief for your product team.
+Monitoring product updates requires reading changelogs, support documentation, and press releases. An AI agent can synthesize these disparate sources. When a competitor launches a new feature, the agent can categorize the update (e.g., UI enhancement, core functionality, integration), assess its potential impact based on [sentiment analysis](/posts/automate-customer-sentiment-analysis-with-openai-api/) of early user [reviews](/posts/writesonic-review-honest/) on platforms like G2 or Reddit, and compile a technical brief for your product team.
 
 ## Setting Up Your Automated Market Intelligence Pipeline
 
@@ -83,7 +83,7 @@ Data sitting in a database is useless. Connect your agent's output to your opera
 
 Running autonomous agents requires managing cloud infrastructure and API tokens. 
 
-**Model Selection:** Do not use GPT-4o or Claude 3.5 Sonnet for the initial raw web scraping or basic text extraction; they are too expensive. Use smaller, faster models like Llama 3 (8B) or Claude 3 Haiku for the heavy lifting of reading thousands of pages. Reserve the frontier models strictly for the final synthesis and complex reasoning steps.
+**Model Selection:** Do not use GPT-4o or [Claude 3.5 Sonnet](/posts/claude-3-5-sonnet-api-for-secure-internal-tools/) for the initial raw web scraping or basic text extraction; they are too expensive. Use smaller, faster models like [Llama 3](/posts/running-llama-3-locally-for-privacy-conscious-lawyers/) (8B) or Claude 3 Haiku for the heavy lifting of reading thousands of pages. Reserve the frontier models strictly for the final synthesis and complex reasoning steps.
 
 **Cost Control:** An agent trapped in an infinite loop on a confusing webpage can drain API credits rapidly. Always implement hard execution limits (e.g., `max_iterations=5` or a timeout of 60 seconds per page).
 

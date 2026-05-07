@@ -21,7 +21,7 @@ However, treating Perplexity like a basic search bar yields generic results. To 
 
 ## The Foundation: Why Perplexity Outperforms Traditional Tools
 
-Standard keyword [research tools](/posts/setup-local-first-ai-research-assistant-with-mistral/) like Ahrefs or Semrush are excellent for validating existing demand, but they are inherently backward-looking. They tell you what people searched for months ago. Traditional conversational AI models (like ChatGPT without web access) hallucinate data or rely on outdated training sets. 
+Standard keyword [research tools](/posts/setup-local-first-ai-research-assistant-with-mistral/) like Ahrefs or Semrush are excellent for validating existing demand, but they are inherently backward-looking. They tell you what people searched for months ago. Traditional conversational [AI models](/posts/claude-3-5-sonnet-vs-gpt-4o-for-complex-reasoning/) (like ChatGPT without web access) hallucinate data or rely on outdated training sets. 
 
 Perplexity solves both problems by operating as an answer engine grounded in live internet search. When you ask it to analyze a niche, it actively crawls current forums, reads recent news articles, and synthesizes competitor pricing pages. 
 
@@ -77,7 +77,7 @@ To evaluate market saturation, prompt Perplexity to generate a competitive matri
 
 ### Mapping the Pricing Landscape
 
-Understanding how a niche is monetized is critical. If all competitors are charging $5/month, the niche might require high volume to be profitable. If competitors are charging $500/month, there may be room for a mid-tier disruptive product.
+Understanding how a niche is monetized is critical. If all competitors are charging $5/month, the niche might require [high volume](/posts/n8n-vs-zapier-for-high-volume-lead-processing/) to be profitable. If competitors are charging $500/month, there may be room for a mid-tier disruptive product.
 
 Instruct Perplexity specifically: *“Analyze the pricing pages of the top competitors in [Niche]. What is the average entry-level price? Are they using subscription models, one-time purchases, or usage-based billing? Identify any obvious gaps in the pricing market (e.g., lack of premium enterprise options or lack of accessible entry-level options).”*
 
@@ -90,7 +90,7 @@ While Perplexity is not a dedicated SEO tool, it can aggregate data from various
 You need to know where your target audience hangs out. You can automate this discovery by asking Perplexity to reverse-engineer competitor traffic.
 
 **Use this prompt structure:**
-*“Analyze the online presence of [Competitor A] and [Competitor B]. Based on recent marketing reports, SEO data, and social media presence, what are their primary customer acquisition channels? Are they relying heavily on organic search, paid social, YouTube, or direct [B2B outreach](/posts/building-ai-agents-for-cold-email-outreach/)? Provide actionable insights on which channels are currently underutilized in this niche.”*
+*“Analyze the online presence of [Competitor A] and [Competitor B]. Based on recent marketing reports, SEO data, and [social media](/posts/ai-tools-for-social-media-content/) presence, what are their primary customer acquisition channels? Are they relying heavily on organic search, paid social, YouTube, or direct [B2B outreach](/posts/building-ai-agents-for-cold-email-outreach/)? Provide actionable insights on which channels are currently underutilized in this niche.”*
 
 ### Keyword Clustering for Content Strategy
 

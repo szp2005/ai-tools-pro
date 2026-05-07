@@ -47,9 +47,9 @@ Clara then sends a highly personalized, human-sounding email to David, offering 
 Motion approaches scheduling from a fundamentally different angle: project management and deep work preservation. Rather than just finding empty space, Motion treats your calendar as a fluid puzzle. Its AI agent actively defends your focus blocks.
 
 If an external meeting request comes in, Motion will evaluate your upcoming project deadlines. It will only offer times that do not jeopardize your critical path work. If forced, it will automatically reorganize your solo tasks around the newly scheduled meeting.
-* **Strengths:** Unrivaled integration of task management and scheduling; aggressive protection of focus time; automated task chunking.
+* **Strengths:** Unrivaled [integration](/posts/n8n-vs-zapier-for-high-volume-lead-processing/) of task management and scheduling; aggressive protection of focus time; automated task chunking.
 * **Limitations:** Requires absolute trust in the algorithm to rearrange your day; can feel overly rigid for users who prefer manual control.
-* **Ideal user:** Software engineers, product managers, and creative [professionals](/posts/[ollama](/posts/ollama-vs-lm-studio-for-local-model-management/)-installation-guide-privacy-conscious-professionals/) who balance heavy maker-schedules with necessary syncs.
+* **Ideal user:** Software engineers, product managers, and creative [professionals](/posts/ollama-installation-guide-privacy-conscious-professionals/) who balance heavy maker-schedules with necessary syncs.
 
 ### 3. Clockwise Prism: Best for Enterprise Team Alignment
 
@@ -83,7 +83,7 @@ If the agent offers Tuesday at 2 PM to Client A, it must place a "ghost hold" on
 Not all meetings are equal. The system must allow you to tag internal 1:1s as "flexible." If an urgent board member requests a call, the agent should have the autonomy to email your direct report, apologize on your behalf, and propose a rescheduled time for the 1:1 to accommodate the VIP.
 
 **Enterprise-Grade [Data Privacy](/posts/building-a-local-knowledge-base-with-llama-3/)**
-Because these agents ingest raw email threads to understand context, they are processing highly sensitive corporate data. SOC2 Type II compliance, zero-data-retention agreements with underlying LLM providers, and strict data residency controls are non-negotiable requirements for 2026 implementations.
+Because these agents ingest raw email threads to understand context, they are processing highly sensitive corporate data. SOC2 Type II [compliance](/posts/top-privacy-first-ai-tools-for-financial-professionals/), zero-data-retention agreements with underlying LLM providers, and strict data residency controls are non-negotiable requirements for 2026 implementations.
 
 ## Practical Advice: How to Implement an AI Scheduler Seamlessly
 

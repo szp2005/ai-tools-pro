@@ -41,7 +41,7 @@ tags: ["automate", "content", "n8n", "claude"]
 
 If you are managing content for five clients or trying to publish three blog posts a week on your own site, the bottleneck is always the same: time spent on repetitive tasks that follow a predictable pattern. Research a keyword, write a brief, draft the post, format it, publish it. Every single time.
 
-n8n is an open-source workflow [automation](/posts/ai-tools-for-email-writing/) platform — think Zapier, but without the per-task pricing wall and with far more flexibility over what nodes do and how data flows between them. You can run it in the cloud or self-host it on a $6/month VPS. The node library covers 400+ services out of the box, and anything else hits a generic HTTP Request node.
+n8n is an open-source workflow [automation](/posts/ai-tools-for-email-writing/) platform — think [Zapier](/posts/n8n-vs-zapier-for-advanced-workflow-automation/), but without the per-task pricing wall and with far more flexibility over what nodes do and how data flows between them. You can run it in the cloud or self-host it on a $6/month VPS. The node library covers 400+ services out of the box, and anything else hits a generic HTTP Request node.
 
 Claude is Anthropic's large language model family. Claude 3.5 Sonnet specifically punches above its weight for long-form structured writing. It follows detailed system instructions reliably, handles markdown formatting without hallucinating extra code blocks, and stays on topic through a 200,000-token context window — which matters when you are chaining content generation steps.
 
@@ -205,7 +205,7 @@ Add an **HTTP Request** node at the end of each successful run that calls the An
 | **Self-hosting option** | Yes (Docker, full control) | No | No |
 | **Workflow complexity ceiling** | High (loops, sub-workflows, code nodes) | Medium | High |
 | **Learning curve** | Moderate | Low | Moderate |
-| **Data privacy** | Full (self-hosted) | Low | Low |
+| **[Data privacy](/posts/comparing-local-rag-solutions-for-private-knowledge-bases/)** | Full (self-hosted) | Low | Low |
 
 For content marketers who need volume and care about data handling, n8n + Claude is the stronger long-term choice. Zapier is faster to start but gets expensive fast and lacks native Claude support.
 
@@ -215,7 +215,7 @@ For content marketers who need volume and care about data handling, n8n + Claude
 
 The pipeline described here — Google Sheet trigger, Claude content generation, WordPress draft publishing — is not a prototype. It is a production workflow that runs unsupervised and produces usable first drafts consistently. The investment is roughly two hours to set up, after which each piece of content costs you about 90 seconds of clock time and $0.02 in API fees.
 
-The key decisions that actually move the needle: pick Claude over generic GPT wrappers for structured long-form output, use n8n expressions to inject dynamic data into every prompt rather than static prompts, and always publish to Draft status so a human reviews before anything goes live.
+The key decisions that actually move the needle: pick Claude over generic GPT wrappers for structured long-form output, use n8n expressions to inject dynamic data into every prompt rather than static prompts, and always publish to Draft status so a human [reviews](/posts/writesonic-review-honest/) before anything goes live.
 
 Start with the brief generation workflow, run it for two weeks, then extend it. The structure scales to any content type once the foundation is solid.
 

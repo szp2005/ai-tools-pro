@@ -19,7 +19,7 @@ Integrating powerful Large Language Models (LLMs) into your daily workflows used
 
 By combining n8n—a flexible, self-hosted workflow [automation](/posts/ai-tools-for-email-writing/) tool—with Ollama, an application that lets you run LLMs locally on your own hardware, you can build sophisticated AI pipelines that are entirely private, free to operate, and incredibly responsive. 
 
-Whether you are automating customer support ticket categorization, generating content drafts from RSS feeds, or summarizing internal documentation, connecting these two tools creates a robust engine for local [AI automation](/posts/automating-google-sheets-with-chrome-extension-ai/). This guide will walk you through the precise steps to get n8n communicating seamlessly with your local Ollama instance.
+Whether you are automating customer support ticket categorization, generating content drafts from RSS feeds, or summarizing internal [documentation](/posts/self-healing-knowledge-base-using-ai/), connecting these two tools creates a robust engine for local [AI automation](/posts/automating-google-sheets-with-chrome-extension-ai/). This guide will walk you through the precise steps to get n8n communicating seamlessly with your local Ollama instance.
 
 ## Understanding the Architecture
 
@@ -115,7 +115,7 @@ Getting [local AI](/posts/ollama-installation-guide-privacy-conscious-profession
 
 ### Managing Node Timeouts
 
-Local LLM inference can take time, especially on consumer hardware or when processing large prompts. The default n8n HTTP Request node timeout might trigger before Ollama finishes generating the response.
+Local LLM inference can take time, especially on [consumer hardware](/posts/running-mistral-7b-on-consumer-hardware-for-privacy/) or when processing large prompts. The default n8n HTTP Request node timeout might trigger before Ollama finishes generating the response.
 
 If you encounter "Timeout" errors in n8n, open the settings of your HTTP Request node (or the Advanced AI node). Look for the "Timeout" setting and increase it significantly—often from the default 10,000ms (10 seconds) to 60,000ms (1 minute) or even 300,000ms (5 minutes) depending on your hardware's capabilities and the complexity of the task.
 
@@ -128,7 +128,7 @@ The speed of your n8n workflow will be entirely bottlenecked by the speed of you
 
 ## Conclusion
 
-Connecting n8n to a local Ollama instance unlocks a massive capability for any automation enthusiast or privacy-conscious business. By exposing the Ollama host, correctly routing the network traffic via Docker or local IPs, and utilizing n8n's HTTP or Advanced AI nodes, you create a private, cost-free intelligence layer. Start with simple tasks like text summarization or data extraction, and scale up to complex, multi-agent workflows as you become comfortable with the hardware limitations and prompt engineering required for local models.
+Connecting n8n to a local Ollama instance unlocks a massive capability for any automation enthusiast or privacy-conscious business. By exposing the Ollama host, correctly routing the network traffic via Docker or local IPs, and utilizing n8n's HTTP or Advanced AI nodes, you create a private, cost-free intelligence layer. Start with simple tasks like text summarization or data extraction, and scale up to complex, multi-agent workflows as you become comfortable with the hardware limitations and [prompt engineering](/posts/midjourney-parameter-guide-for-consistent-character-design/) required for local models.
 
 ## Frequently Asked Questions
 

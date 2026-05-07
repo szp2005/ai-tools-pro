@@ -15,7 +15,7 @@ _As an Amazon Associate we earn from qualifying purchases. This post may contain
 
 > **Quick Answer:** The best AI research tools for medical literature review depend on your specific workflow phase. **Elicit** is the top choice for extracting and synthesizing data from clinical trials, **Rayyan** remains the gold standard for collaborative title/abstract screening, and **Scite.ai** is essential for verifying citation context and evaluating the reliability of biomedical claims.
 
-The volume of medical literature published annually makes traditional literature reviews increasingly difficult to manage. For clinicians, medical students, and biomedical researchers, conducting a systematic review, scoping review, or simple clinical inquiry can demand hundreds of hours of manual searching, screening, and data extraction.
+The volume of medical literature published annually makes traditional literature [reviews](/posts/writesonic-review-honest/) increasingly difficult to manage. For clinicians, medical students, and biomedical researchers, conducting a systematic review, scoping review, or simple clinical inquiry can demand hundreds of hours of manual searching, screening, and data extraction.
 
 [Artificial intelligence](/posts/ai-tools-for-seo-writing/) has fundamentally shifted this workflow. Large language models (LLMs) and specialized machine learning algorithms are now capable of parsing complex biomedical jargon, summarizing methodologies, and extracting key clinical outcomes with high accuracy. 
 
@@ -48,7 +48,7 @@ This makes Elicit exceptionally valuable when you need to compare methodologies 
 **Price:** Free to $8.99/month
 **Rating:** 4.6/5
 
-Consensus is an AI-powered search engine built specifically for scientific research. When you type a clinical question (e.g., "Does magnesium supplementation improve sleep quality?"), Consensus searches through over 200 million peer-reviewed papers to provide a synthesized answer. It extracts key findings from relevant papers and presents them in an easily digestible format, complete with a "Consensus Meter" that aggregates the findings into "Yes," "No," or "Possibly" categories.
+Consensus is an AI-powered [search engine](/posts/perplexity-ai-review-2026/) built specifically for scientific research. When you type a clinical question (e.g., "Does magnesium supplementation improve sleep quality?"), Consensus searches through over 200 million peer-reviewed papers to provide a synthesized answer. It extracts key findings from relevant papers and presents them in an easily digestible format, complete with a "Consensus Meter" that aggregates the findings into "Yes," "No," or "Possibly" categories.
 
 For medical [professionals](/posts/ollama-installation-guide-privacy-conscious-professionals/) conducting scoping reviews or needing quick evidence-based answers for clinical decision-making, Consensus cuts through the noise of traditional search engines. It utilizes the Semantic Scholar database, ensuring that the results are restricted to verified academic sources.
 

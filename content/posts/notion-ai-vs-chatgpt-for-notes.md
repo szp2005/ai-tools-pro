@@ -49,7 +49,7 @@ Notion AI understands Notion's block structure natively. You can ask it to gener
 **Practical Advice:** When outlining a complex topic, type out all your random thoughts as standard text blocks. Select them all, invoke Notion AI, and use the prompt: "Organize these thoughts into a structured outline using H2 and H3 headers, and convert any actionable tasks into a checklist."
 
 ### 4. Q&A Across Your Workspace
-With the newer iterations of Notion Q&A, you can ask questions that span your entire workspace. Instead of searching for "Q3 Marketing Budget," you can ask, "What was the final agreed-upon Q3 marketing budget, and who approved it?" and Notion AI will read across your pages to synthesize an answer.
+With the newer iterations of Notion Q&A, you can ask questions that span your entire workspace. Instead of searching for "Q3 [Marketing](/posts/ai-tools-for-social-media-content/) Budget," you can ask, "What was the final agreed-upon Q3 marketing budget, and who approved it?" and Notion AI will read across your pages to synthesize an answer.
 
 ## The Case for ChatGPT in Note-Taking
 
@@ -89,7 +89,7 @@ Notion utilizes models provided by partners (like Anthropic and OpenAI), but the
 
 ### Cost and Value Proposition
 **Tie (Depends on usage)**
-Notion AI is typically an add-on to your Notion subscription (often around $8-$10/month extra). If you live entirely in Notion and just need summarization and editing, this is incredibly cost-effective. ChatGPT Plus is $20/month. If you use AI for coding, deep research, image generation, and data analysis alongside your note-taking, the ChatGPT subscription provides significantly more raw utility.
+Notion AI is typically an add-on to your Notion subscription (often around $8-$10/month extra). If you live entirely in Notion and just need summarization and editing, this is incredibly cost-effective. ChatGPT Plus is $20/month. If you use AI for coding, deep research, [image generation](/posts/best-ai-image-generation-tools-2026/), and [data analysis](/posts/using-local-llms-for-private-data-analysis/) alongside your note-taking, the ChatGPT subscription provides significantly more raw utility.
 
 ### Privacy and Data Security
 **Winner: Situational**

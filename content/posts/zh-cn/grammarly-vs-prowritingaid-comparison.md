@@ -184,7 +184,7 @@ Grammarly vs ProWritingAid 最适合那些希望获得实用 [AI 工具](/zh-cn/
 ## 相关阅读
 
 - [Beautiful.ai vs Gamma 用于演示文稿：终极专家对比](/zh-cn/posts/beautiful-ai-vs-gamma-for-presentations/)
-- [[Midjourney](/zh-cn/posts/stable-diffusion-vs-midjourney-for-beginners/) vs DALL-E 3：终极 AI 图像生成对比](/zh-cn/posts/midjourney-vs-dalle-3-comparison/)
+- [Midjourney vs DALL-E 3：终极 AI 图像生成对比](/zh-cn/posts/midjourney-vs-dalle-3-comparison/)
 - [2026年视频编辑 AI 工具终极指南](/zh-cn/posts/ai-tools-for-video-editing-2026/)
 - [终极指南：2026年最佳内容创作 AI 工具](/zh-cn/posts/best-ai-tools-for-content-creation/)
 

@@ -150,7 +150,7 @@ AI Agent将取代人工处理那些重复的一线查询，比如密码重置和
 ## 相关阅读
 
 - [2026年7款提升个人生产力的最佳AI Agent](/zh-cn/posts/best-ai-agent-for-personal-productivity-2026/)
-- [2026年最佳电子邮件管理[AI工具](/zh-cn/posts/rytr-vs-copy-ai-for-copywriting/)：省时应用评测](/zh-cn/posts/best-ai-tools-for-email-management/)
+- [2026年最佳电子邮件管理AI工具：省时应用评测](/zh-cn/posts/best-ai-tools-for-email-management/)
 
 ---
 

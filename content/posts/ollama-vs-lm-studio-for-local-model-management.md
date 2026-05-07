@@ -26,7 +26,7 @@ Both Ollama and LM Studio aim to simplify the local LLM experience, abstracting 
 **Price:** Free
 **Rating:** 4.7/5
 
-Ollama is an open-source tool designed to simplify the process of running large language models locally. It provides a unified framework for downloading, creating, and running models, primarily through a command-line interface (CLI) and a robust REST API. Ollama focuses on ease of use for developers, offering a streamlined experience for integrating local LLMs into applications or scripts. Its architecture is built for efficiency, allowing users to quickly pull models from its extensive library and serve them with minimal setup. The platform supports a growing collection of quantized models, optimized for performance on consumer hardware, and boasts excellent cross-platform compatibility across macOS, Linux, and Windows.
+Ollama is an open-source tool designed to simplify the process of running large language models locally. It provides a unified framework for downloading, creating, and running models, primarily through a command-line interface (CLI) and a robust REST API. Ollama focuses on ease of use for developers, offering a streamlined experience for integrating [local LLMs](/posts/running-llama-3-locally-for-privacy-conscious-lawyers/) into applications or scripts. Its architecture is built for efficiency, allowing users to quickly pull models from its extensive library and serve them with minimal setup. The platform supports a growing collection of quantized models, optimized for performance on [consumer hardware](/posts/running-mistral-7b-on-consumer-hardware-for-privacy/), and boasts excellent cross-platform compatibility across macOS, Linux, and Windows.
 
 **Pros:**
 - Extremely simple CLI for pulling and running models.
@@ -47,7 +47,7 @@ Ollama is an open-source tool designed to simplify the process of running large 
 **Price:** Free
 **Rating:** 4.5/5
 
-LM Studio is a desktop application that provides a comprehensive graphical user interface (GUI) for discovering, downloading, and running large language models locally. It aims to make local LLM management accessible to a broader audience, including those without extensive technical backgrounds. LM Studio features an intuitive interface for browsing a vast library of models hosted on Hugging Face, simplifying the download process. Beyond model management, it includes an integrated chat interface for immediate interaction with downloaded models and a local inference server that exposes a compatible OpenAI API endpoint, facilitating integration with existing tools and applications.
+LM Studio is a desktop application that provides a comprehensive graphical user interface (GUI) for discovering, downloading, and running large language models locally. It aims to make local LLM management accessible to a broader audience, including those without extensive technical backgrounds. LM Studio features an intuitive interface for browsing a vast library of models hosted on Hugging Face, simplifying the download process. Beyond model management, it includes an integrated chat interface for immediate interaction with downloaded models and a local inference server that exposes a compatible [OpenAI](/posts/automate-customer-sentiment-analysis-with-openai-api/) API endpoint, facilitating integration with existing tools and applications.
 
 **Pros:**
 - User-friendly graphical interface for all operations.

@@ -11,7 +11,7 @@ type: "informational"
 
 # Using Local LLMs for Private Data Analysis: Complete 2026 Guide
 
-> **Quick Answer:** Using local LLMs for private data analysis involves running open-weight models like [Llama 3](/posts/building-a-local-knowledge-base-with-llama-3/) or Mistral directly on your own hardware, ensuring sensitive data never leaves your network. This is achieved by combining local inference engines like Ollama with frameworks like LangChain or LlamaIndex to query internal databases, spreadsheets, and documents securely without relying on third-party cloud APIs.
+> **Quick Answer:** Using local LLMs for private data analysis involves running open-weight models like [Llama 3](/posts/building-a-local-knowledge-base-with-llama-3/) or [Mistral](/posts/setup-local-first-ai-research-assistant-with-mistral/) directly on your own hardware, ensuring sensitive data never leaves your network. This is achieved by combining local inference engines like Ollama with frameworks like LangChain or LlamaIndex to query internal databases, spreadsheets, and documents securely without relying on third-party cloud APIs.
 
 Integrating [artificial intelligence](/posts/ai-tools-for-seo-writing/) into data workflows offers massive efficiency gains, but organizations handling sensitive, proprietary, or regulated data face a critical bottleneck: the [privacy](/posts/ollama-installation-guide-privacy-conscious-professionals/) risks of cloud-based APIs. Sending financial records, patient data, or confidential corporate strategies to external providers like OpenAI or Anthropic violates compliance standards and exposes organizations to data breaches or unintended model training. 
 
@@ -32,7 +32,7 @@ Beyond security, cost predictability is a major factor. Cloud APIs charge per to
 Not all open-weight models are suited for analytical tasks. Data analysis requires high logical reasoning, SQL generation capabilities, and strong JSON formatting adherence. The following models currently represent the state of the art for local deployment.
 
 ### The Llama 3 Family (8B and 70B)
-Meta's Llama 3 architecture remains a foundational choice. The 8B parameter model is highly efficient, capable of running on consumer-grade hardware while providing excellent text summarization and entity extraction. For complex reasoning, data synthesis, and complex SQL query generation, the Llama 3 70B model is the enterprise standard, rivaling proprietary cloud models in logical benchmarks. 
+Meta's Llama 3 architecture remains a foundational choice. The 8B parameter model is highly efficient, capable of running on consumer-grade hardware while providing excellent text summarization and entity extraction. For [complex reasoning](/posts/claude-3-5-sonnet-vs-gpt-4o-for-complex-reasoning/), data synthesis, and complex SQL query generation, the Llama 3 70B model is the enterprise standard, rivaling proprietary cloud models in logical benchmarks. 
 
 ### Mistral and Mixtral (8x7B / 8x22B)
 Mistral's Mixture of Experts (MoE) architecture offers a unique advantage: high parameter counts with relatively low active compute requirements. The Mixtral 8x7B activates only two experts (12B parameters) per token, making it faster than dense models of similar size. It excels at multi-lingual data processing and long-context [document analysis](/posts/local-llm-deployment-offline-document-analysis/), supporting context windows that are highly beneficial when analyzing massive CSVs or extensive log files.
@@ -60,7 +60,7 @@ Building a local data analysis pipeline requires orchestrating several software 
 You need software to load the model weights and serve an API. 
 -   **Ollama:** The most user-friendly tool for macOS and Linux. It packages model weights into Docker-like containers, allowing you to run a model with a single command (e.g., `ollama run llama3`). It exposes a REST API that mimics the OpenAI format, making drop-in replacement easy.
 -   **vLLM:** Designed for high-throughput enterprise environments. It utilizes PagedAttention to manage memory efficiently, making it the best choice if multiple analysts are querying the local model simultaneously.
--   **LM Studio:** A GUI-based application excellent for prototyping and testing different models locally on Windows and macOS.
+-   **[LM Studio](/posts/ollama-vs-lm-studio-for-local-model-management/):** A GUI-based application excellent for prototyping and testing different models locally on Windows and macOS.
 
 ### Connecting to Data: RAG and Agents
 LLMs cannot inherently "see" your database. You must provide the data to the model in its context window. 

@@ -119,7 +119,7 @@ if index_name not in pc.list_indexes().names():
 index = pc.Index(index_name)
 ```
 
-Pinecone's serverless architecture automatically scales based on your usage, eliminating the need to select instance sizes manually.
+Pinecone's serverless [architecture](/posts/best-ai-tools-for-architectural-data-visualization/) automatically scales based on your usage, eliminating the need to select instance sizes manually.
 
 Now, load your data into the index. In vector database terminology, this is called an "upsert" (update/insert). Pinecone allows batch upserting, which is highly recommended for large datasets to avoid rate limits and reduce network overhead.
 
@@ -135,7 +135,7 @@ For production applications with millions of vectors, chunk your upserts into ba
 The core value of your custom vector database is retrieving information based on context. When a user asks a question, you embed their query, send that vector to Pinecone, and retrieve the closest matches.
 
 ```python
-query_text = "What is a good tool for semantic search?"
+query_text = "What is a good tool for [semantic search](/posts/ai-writing-assistant-for-seo-with-semantic-layers/)?"
 query_embedding = get_embedding(query_text)
 
 results = index.query(
@@ -192,7 +192,7 @@ When moving from a tutorial to production, data preparation dictates the quality
 
 ## Conclusion
 
-Building a custom vector database with Pinecone requires bridging the gap between raw data and semantic understanding. By systematically generating high-quality embeddings, managing your index configuration, and utilizing metadata filtering, you create a highly scalable backend for advanced AI features. Whether you are building intelligent semantic search or providing a memory layer for an LLM through a RAG pipeline, Pinecone's serverless infrastructure allows you to deploy production-ready similarity search with minimal operational overhead.
+Building a custom vector database with Pinecone requires bridging the gap between raw data and semantic understanding. By systematically generating high-quality embeddings, managing your index configuration, and utilizing metadata filtering, you create a highly scalable backend for advanced AI features. Whether you are building intelligent semantic search or providing a memory layer for an LLM through a [RAG pipeline](/posts/building-a-rag-pipeline-with-n8n-and-pinecone/), Pinecone's serverless infrastructure allows you to deploy production-ready similarity search with minimal operational overhead.
 
 ## Frequently Asked Questions
 

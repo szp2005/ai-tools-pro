@@ -47,7 +47,7 @@ The [legal tech](/posts/crewai-multi-agent-system-legal-research-automation/) la
 **Price:** $100-$150/month
 **Rating:** 4.8/5
 
-Spellbook integrates directly into Microsoft Word, functioning as an AI co-pilot for legal documents. It is trained on millions of commercial contracts and uses OpenAI's models fine-tuned specifically for legal text. For freelance developers receiving MSAs in .docx format, Spellbook is incredibly efficient. It allows you to select a problematic clause—like a broad IP assignment—and ask the AI to "draft a variation that protects my pre-existing background IP." It also features a "Missing Clauses" function that analyzes the contract type and warns you if crucial protections, such as a limitation of liability, are absent.
+Spellbook integrates directly into Microsoft Word, functioning as an AI co-pilot for legal documents. It is trained on millions of commercial contracts and uses [OpenAI](/posts/automate-customer-sentiment-analysis-with-openai-api/)'s models fine-tuned specifically for legal text. For freelance developers receiving MSAs in .docx format, Spellbook is incredibly efficient. It allows you to select a problematic clause—like a broad IP assignment—and ask the AI to "draft a variation that protects my pre-existing background IP." It also features a "Missing Clauses" function that analyzes the contract type and warns you if crucial protections, such as a limitation of liability, are absent.
 
 **Pros:**
 - Native integration directly within Microsoft Word
@@ -153,7 +153,7 @@ Implementing an AI powered contract review for freelance developers is no longer
 AI cannot fully replace a human lawyer, especially for highly complex, high-value, or specialized regulatory contracts. However, for the standard 80% of routine Master Services Agreements and NDAs, AI tools provide sufficient baseline protection, issue-spotting, and redlining to allow experienced freelancers to negotiate safely without incurring hourly legal fees.
 
 ### Does AI contract review keep my data private?
-It depends on the tool. Professional legal AI tools (like Spellbook and Robin AI) have strict data privacy policies, zero-retention agreements with LLM providers, and do not use your confidential client contracts to train their public models. Never upload sensitive client contracts to public, consumer-grade models like the standard web interface of [ChatGPT](/posts/notion-ai-vs-chatgpt-for-notes/).
+It depends on the tool. Professional legal AI tools (like Spellbook and Robin AI) have strict [data privacy](/posts/comparing-local-rag-solutions-for-private-knowledge-bases/) policies, zero-retention agreements with LLM providers, and do not use your confidential client contracts to train their public models. Never upload sensitive client contracts to public, consumer-grade models like the standard web interface of [ChatGPT](/posts/notion-ai-vs-chatgpt-for-notes/).
 
 ### How much should a freelancer spend on contract review tools?
 For an independent software developer, expect to spend between $30 and $100 per month. If you sign fewer than three contracts a year, look for tools with robust free tiers or pay-per-document pricing. If you run a small agency signing multiple SOWs per month, a $150/month subscription easily pays for itself by saving just one hour of an attorney's billable time.

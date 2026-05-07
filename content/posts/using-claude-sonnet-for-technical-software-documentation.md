@@ -11,9 +11,9 @@ type: "informational"
 
 # Claude Sonnet for Technical Software Documentation: Complete Guide
 
-> **Quick Answer:** Using Claude Sonnet for technical software documentation dramatically reduces the time engineers spend [writing](/posts/ai-writing-assistant-for-long-form-content/) API references, architecture overviews, and code comments. Its large context window and advanced reasoning capabilities allow it to ingest entire codebases and output precise, structured markdown or docstrings that require minimal human editing, making it the ideal middle-ground model for daily engineering tasks.
+> **Quick Answer:** Using Claude Sonnet for technical software documentation dramatically reduces the time engineers spend [writing](/posts/ai-writing-assistant-for-long-form-content/) API references, [architecture](/posts/best-ai-tools-for-architectural-data-visualization/) overviews, and code comments. Its large context window and advanced reasoning capabilities allow it to ingest entire codebases and output precise, structured markdown or docstrings that require minimal human editing, making it the ideal middle-ground model for daily engineering tasks.
 
-Writing technical documentation is the chronic pain point of software engineering. Developers excel at building complex systems but often lack the time, bandwidth, or inclination to maintain extensive documentation. When system architecture evolves rapidly, documentation inevitably drifts from reality, leading to onboarding bottlenecks, [integration](/posts/n8n-vs-zapier-for-high-volume-lead-processing/) errors, and operational friction. Traditional automated documentation generators extract code structures but fail to capture the underlying context, design decisions, and business logic.
+Writing technical documentation is the chronic pain point of [software engineering](/posts/best-ai-coding-assistants-for-indie-web-developers/). Developers excel at building complex systems but often lack the time, bandwidth, or inclination to maintain extensive documentation. When system architecture evolves rapidly, documentation inevitably drifts from reality, leading to onboarding bottlenecks, [integration](/posts/n8n-vs-zapier-for-high-volume-lead-processing/) errors, and operational friction. Traditional automated documentation generators extract code structures but fail to capture the underlying context, design decisions, and business logic.
 
 Enter Large Language Models. While early iterations struggled with hallucinating endpoints or losing the thread in complex codebases, the current generation of AI has crossed the threshold of reliability. Specifically, utilizing Claude Sonnet for technical documentation tasks has become a standard practice for high-performing engineering teams. 
 
@@ -53,7 +53,7 @@ You can feed Sonnet your raw route definitions and controller logic, instructing
 
 ### Architecture and System Design Documents
 
-High-level architectural overviews are difficult to write because they require synthesizing information across multiple services. By providing Sonnet with a combination of configuration files (like `docker-compose.yml`, infrastructure-as-code scripts, and core service entry points), you can ask it to draft system design documents.
+High-level architectural overviews are difficult to write because they require synthesizing information across multiple services. By providing Sonnet with a combination of configuration files (like `[docker](/posts/guide-to-self-hosting-n8n-on-docker-for-privacy/)-compose.yml`, infrastructure-as-code scripts, and core service entry points), you can ask it to draft system design documents.
 
 Furthermore, Sonnet excels at generating Mermaid.js syntax. You can prompt it to read a complex request flow and output a Mermaid sequence diagram or system architecture graph, instantly visualizing the text it just generated.
 

@@ -36,7 +36,7 @@ Many commercial AI providers operate under opaque terms of service regarding dat
 The most significant advantage of executing an LLM on local hardware is the restoration of total data sovereignty. 
 
 ### Zero-Transit Processing
-When a model like Llama 3 (8B or 70B), Mistral, or Qwen runs on your local GPU or neural processing unit, the data transfer is limited to the system bus of your motherboard. The prompt travels from your keyboard, to system RAM, into VRAM, and back to the display buffer. At no point does the text interface with a network interface controller unless you explicitly command it to.
+When a model like [Llama 3](/posts/running-llama-3-locally-for-privacy-conscious-lawyers/) (8B or 70B), Mistral, or Qwen runs on your local GPU or neural processing unit, the data transfer is limited to the system bus of your motherboard. The prompt travels from your keyboard, to system RAM, into VRAM, and back to the display buffer. At no point does the text interface with a network interface controller unless you explicitly command it to.
 
 ### Cryptographic and Physical Isolation
 Local hardware permits physical air-gapping. A machine entirely disconnected from the internet can still execute complex natural language tasks, summarize sensitive financial PDFs, or assist in writing proprietary algorithms. For defense contractors, healthcare providers, and financial institutions, this level of isolation is not just a preference; it is a foundational requirement for security architecture.
@@ -63,7 +63,7 @@ Running LLMs on local hardware fundamentally neutralizes this threat. When you d
 
 ## Achieving Regulatory Compliance (HIPAA, GDPR, SOC 2)
 
-Navigating data privacy laws is a massive operational burden for organizations utilizing cloud AI. Transmitting Patient Health Information (PHI) or Personally Identifiable Information (PII) to a third-party LLM without a tightly negotiated Business Associate Agreement (BAA) is a direct violation of HIPAA and carries severe financial penalties.
+Navigating [data privacy](/posts/comparing-local-rag-solutions-for-private-knowledge-bases/) laws is a massive operational burden for organizations utilizing cloud AI. Transmitting Patient Health Information (PHI) or Personally Identifiable Information (PII) to a third-party LLM without a tightly negotiated Business Associate Agreement (BAA) is a direct violation of HIPAA and carries severe financial penalties.
 
 ### Simplifying the Compliance Scope
 GDPR strictly regulates the cross-border transfer of data and mandates the right to erasure. When you rely on a US-based cloud AI provider, tracking the exact physical location of data processing and ensuring it is thoroughly deleted upon request is complex and often legally fragile.
@@ -95,7 +95,7 @@ To maintain strict privacy, the software orchestrating the model must also be au
 
 *   **Ollama:** A highly efficient, command-line focused tool that downloads and runs models seamlessly. It operates a local API that mimics cloud provider endpoints, allowing easy integration with local frontends while keeping all data on localhost.
 *   **LM Studio:** A graphical interface that allows users to search for, download, and run models entirely offline. It provides clear hardware utilization metrics and ensures zero data leaves the application window.
-*   **llama.cpp:** The foundational C++ engine that powers many other tools. It is lightweight, highly optimized for consumer hardware, and can be compiled from source for maximum security and auditability.
+*   **llama.cpp:** The foundational C++ engine that powers many other tools. It is lightweight, highly optimized for [consumer hardware](/posts/running-mistral-7b-on-consumer-hardware-for-privacy/), and can be compiled from source for maximum security and auditability.
 
 ## Conclusion
 

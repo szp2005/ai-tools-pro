@@ -36,7 +36,7 @@ When thousands of users submit reports across different channels—support ticke
 
 ## How Using AI for Automated Software Bug Triaging Works
 
-Modern automated triaging systems do not rely on basic keyword matching. They utilize a combination of Natural Language Processing (NLP), semantic search engines, and predictive machine learning models to evaluate a bug report holistically. 
+Modern automated triaging systems do not rely on basic keyword matching. They utilize a combination of Natural Language Processing (NLP), [semantic search](/posts/ai-writing-assistant-for-seo-with-semantic-layers/) engines, and predictive machine learning models to evaluate a bug report holistically. 
 
 ### Natural Language Processing for Issue Classification
 
@@ -52,7 +52,7 @@ AI triaging systems employ vector embeddings to understand the semantic meaning 
 
 ### Predictive Analytics for Severity Scoring
 
-Not all bugs are created equal, but determining severity manually is highly subjective. AI models analyze historical data to predict the true severity of a new issue. By looking at how similar issues were treated in the past—how quickly they were resolved, how many users they impacted, and what components they touched—the AI assigns an objective severity score. 
+Not all bugs are created equal, but determining severity manually is highly subjective. [AI models](/posts/claude-3-5-sonnet-vs-gpt-4o-for-complex-reasoning/) analyze historical data to predict the true severity of a new issue. By looking at how similar issues were treated in the past—how quickly they were resolved, how many users they impacted, and what components they touched—the AI assigns an objective severity score. 
 
 A crash loop in the primary authentication service will instantly trigger a P0 alert, while a minor CSS misalignment on the terms of service page is automatically downgraded to the backlog, regardless of how aggressively the user phrased the initial report.
 
@@ -84,7 +84,7 @@ AI models are highly dependent on the quality of their training data. Before imp
 
 The market offers various approaches, ranging from built-in AI features within platforms like GitHub Copilot Workspace and Jira Service Management to dedicated, standalone AI triage platforms like Kensho or specialized custom pipelines built on top of [OpenAI](/posts/automate-customer-sentiment-analysis-with-openai-api/) or Anthropic APIs. 
 
-If your organization has strict data compliance requirements (such as HIPAA or SOC2), you may need to utilize open-source models like [Llama 3](/posts/running-llama-3-locally-for-privacy-conscious-lawyers/) deployed on internal infrastructure to ensure proprietary code and user data never leave your secure environment.
+If your organization has strict data [compliance](/posts/top-privacy-first-ai-tools-for-financial-professionals/) requirements (such as HIPAA or SOC2), you may need to utilize open-source models like [Llama 3](/posts/running-llama-3-locally-for-privacy-conscious-lawyers/) deployed on internal infrastructure to ensure proprietary code and user data never leave your secure environment.
 
 ### 3. Integrating with Existing Issue Trackers
 

@@ -99,7 +99,7 @@ While not a purpose-built academic UI, the underlying Claude 3.5 Sonnet and Opus
 **Price:** $20/month
 **Rating:** 4.5/5
 
-Perplexity bridges the gap between a search engine and a synthesis tool. When queried, it scours the live internet, reads multiple web pages or academic papers, and synthesizes a comprehensive answer with dense inline footnoting. The "Pro" tier allows you to select specific models (like GPT-4o or Claude 3.5) and focus the search strictly on "Academic" sources (published papers) or "Writing" (analyzing uploaded files). It is the fastest tool for getting a synthesized, highly accurate overview of a completely new topic, drawing from the most up-to-date information available.
+Perplexity bridges the gap between a [search engine](/posts/perplexity-ai-review-2026/) and a synthesis tool. When queried, it scours the live internet, reads multiple web pages or academic papers, and synthesizes a comprehensive answer with dense inline footnoting. The "Pro" tier allows you to select specific models (like GPT-4o or Claude 3.5) and focus the search strictly on "Academic" sources (published papers) or "Writing" (analyzing uploaded files). It is the fastest tool for getting a synthesized, highly accurate overview of a completely new topic, drawing from the most up-to-date information available.
 
 **Pros:**
 - Real-time access to the live web and current events
@@ -188,11 +188,11 @@ No. Tools like SciSpace and Elicit generally rely on Open Access papers or the a
 Avoid relying on standard summarization prompts like "summarize this PDF." Instead, use targeted queries with tools like Claude or NotebookLM. Ask specific questions, such as "Extract all mentions of data degradation from this report," which forces the model's attention mechanism to scan for specific semantic concepts rather than generating a generic overview.
 
 ### Are my uploaded documents private when using these tools?
-Privacy policies vary by provider. Enterprise tiers of Anthropic and OpenAI generally do not train on user data. Google explicitly states that private documents uploaded to NotebookLM are not used to train their foundational models. However, always review the current terms of service before uploading sensitive patient data, proprietary corporate information, or classified materials.
+Privacy policies vary by provider. Enterprise tiers of Anthropic and [OpenAI](/posts/automate-customer-sentiment-analysis-with-openai-api/) generally do not train on user data. Google explicitly states that private documents uploaded to NotebookLM are not used to train their foundational models. However, always review the current terms of service before uploading sensitive patient data, proprietary corporate information, or classified materials.
 
 ---
 
 ## Related Reading
 
 - [The Definitive Guide to AI Writing Assistants for Long-Form Content](/posts/ai-writing-assistant-for-long-form-content/)
-- [The Best [AI Tools](/posts/rytr-vs-copy-ai-for-copywriting/) for Solopreneurs in 2026: Scale Your One-Person Business](/posts/best-ai-tools-for-solopreneurs/)
+- [The Best AI Tools for Solopreneurs in 2026: Scale Your One-Person Business](/posts/best-ai-tools-for-solopreneurs/)

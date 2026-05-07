@@ -11,7 +11,7 @@ type: "informational"
 
 # Stable Diffusion for Local Image Generation: Complete Setup Guide
 
-> **Quick Answer:** Running Stable Diffusion for local image generation requires a dedicated GPU (ideally an NVIDIA card with at least 8GB VRAM), enough system RAM (16GB+), and a user interface like Automatic1111 or ComfyUI. Local generation offers absolute [privacy](/posts/[ollama](/posts/ollama-vs-lm-studio-for-local-model-management/)-installation-guide-privacy-conscious-professionals/), zero recurring subscription costs, and complete control over advanced tools like ControlNet and custom LoRAs without content restrictions.
+> **Quick Answer:** Running Stable Diffusion for local image generation requires a dedicated GPU (ideally an NVIDIA card with at least 8GB VRAM), enough system RAM (16GB+), and a user interface like Automatic1111 or ComfyUI. Local generation offers absolute [privacy](/posts/ollama-installation-guide-privacy-conscious-professionals/), zero recurring subscription costs, and complete control over advanced tools like ControlNet and custom LoRAs without [content](/posts/how-to-automate-content-with-n8n-and-claude/) restrictions.
 
 Running AI image generation models locally has shifted from a complex developer experiment into a mainstream creative [workflow](/posts/how-to-automate-slack-notifications-with-n8n/). While cloud-based services offer convenience, they come with monthly subscription fees, strict content filters, and potential privacy concerns regarding the images you generate or use as source material. 
 
@@ -75,7 +75,7 @@ You will rarely use the official "base" models from Stability AI. Instead, you w
 
 ## Essential Workflows for Local Generation
 
-The true power of local image generation goes beyond typing a prompt and hoping for the best. Local UIs grant access to iterative workflows.
+The true power of local image generation goes [beyond](/posts/best-ai-writing-tools-2026/) typing a prompt and hoping for the best. Local UIs grant access to iterative workflows.
 
 ### Text-to-Image (txt2img)
 The foundational workflow. You input a positive prompt describing what you want, and a negative prompt describing what you wish to avoid (e.g., "blurry, low resolution, extra fingers"). Getting good results requires experimenting with CFG (Classifier Free Guidance) scale, which dictates how strictly the model follows your prompt, and different sampling algorithms (like Euler a or DPM++ 2M Karras).

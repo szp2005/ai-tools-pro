@@ -27,7 +27,7 @@ Before downloading datasets or installing dependencies, you must ensure your sys
 
 The absolute minimum requirement for local Flux fine-tuning via LoRA is an NVIDIA GPU with 16GB of VRAM (such as an RTX 4080). However, training at this tier requires aggressive optimization, offloading, and smaller batch sizes, which drastically increases training time. 
 
-For a smooth, efficient [workflow](/posts/best-ai-sidebar-extensions-for-chrome-productivity/), 24GB of VRAM is the standard recommendation. Cards like the RTX 3090, 4090, or professional series GPUs allow you to train at native resolutions without severe memory bottlenecking. AMD GPUs and Apple Silicon (M-series chips) are making progress via ROCm and MPS respectively, but NVIDIA's CUDA ecosystem remains the only reliable, fully supported environment for this specific workflow.
+For a smooth, efficient [workflow](/posts/best-ai-sidebar-extensions-for-chrome-productivity/), 24GB of VRAM is the standard recommendation. Cards like the RTX 3090, 4090, or professional series GPUs allow you to train at native resolutions without severe memory bottlenecking. AMD GPUs and [Apple Silicon](/posts/how-to-run-local-llms-on-macbook-m3/) (M-series chips) are making progress via ROCm and MPS respectively, but NVIDIA's CUDA ecosystem remains the only reliable, fully supported environment for this specific workflow.
 
 ### Necessary Software Frameworks
 
@@ -58,7 +58,7 @@ If you are training a specific subject, assign them a unique, nonsensical trigge
 
 *"A medium shot of zxcvbnm man standing in a modern kitchen. He is wearing a blue denim jacket over a white t-shirt. The lighting is natural, coming from a large window on the left. He is looking directly at the camera with a neutral expression."*
 
-You can automate this process using local Vision-Language Models (VLMs) like JoyCaption or Florence-2, which are specifically tuned for generating training captions.
+You can [automate](/posts/how-to-automate-content-with-n8n-and-claude/) this process using local Vision-Language Models (VLMs) like JoyCaption or Florence-2, which are specifically tuned for generating training captions.
 
 ## Configuring the Training Environment
 

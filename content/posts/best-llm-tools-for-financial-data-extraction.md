@@ -50,7 +50,7 @@ Kensho Extract is a specialized machine learning platform built entirely for the
 
 ### 2. Rossum Aurora
 
-**Best for:** High-volume accounts payable and invoice processing
+**Best for:** High-volume accounts payable and [invoice processing](/posts/n8n-automation-for-automated-invoice-processing-2026/)
 **Price:** $1,000-$3,500 monthly based on document volume
 **Rating:** 4.6/5
 
@@ -88,12 +88,12 @@ For development teams building their own financial extraction pipelines, Anthrop
 **Price:** $0.05-$0.10 per page
 **Rating:** 4.5/5
 
-Google Cloud's Document AI offers specialized parsers for the financial services industry, combining traditional high-end OCR with Google's Gemini LLM infrastructure. The platform includes pre-trained models for bank statements, W-2s, 1040s, and invoices. It handles messy scans, low-resolution mobile photos, and handwritten financial numbers better than almost any other tool on the market, making it ideal for consumer-facing fintech apps that process user-uploaded documents.
+Google Cloud's Document AI offers specialized parsers for the financial services industry, combining traditional high-end OCR with Google's [Gemini](/posts/gemini-for-content-writing-vs-gpt-4o/) LLM infrastructure. The platform includes pre-trained models for bank statements, W-2s, 1040s, and invoices. It handles messy scans, low-resolution mobile photos, and handwritten financial numbers better than almost any other tool on the market, making it ideal for consumer-facing fintech apps that process user-uploaded documents.
 
 **Pros:**
 - Best-in-class handling of low-quality scans and handwritten data
 - Pre-trained specialized parsers for tax forms and bank statements
-- Enterprise-grade security and compliance built-in
+- Enterprise-grade security and [compliance](/posts/top-privacy-first-ai-tools-for-financial-professionals/) built-in
 
 **Cons:**
 - Setup and tuning require Google Cloud engineering expertise

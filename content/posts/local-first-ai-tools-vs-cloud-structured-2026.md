@@ -25,7 +25,7 @@ This comprehensive guide examines the state of both architectures in 2026, compa
 
 Local-first AI refers to applications and language models that execute inference directly on the user's hardware—typically relying on the GPU or unified memory of a local machine. In previous years, running a capable AI locally was an exercise in frustration, requiring complex command-line setups and yielding extremely slow generation speeds.
 
-By 2026, advancements in model quantization and hardware architecture have transformed local AI from a novelty into a professional standard. Systems equipped with Apple Silicon (such as M3 and M4 Max chips) or modern discrete GPUs (like the NVIDIA RTX 40- and 50-series) can comfortably run highly capable 8-billion to 32-billion parameter models at speeds exceeding 40 tokens per second. 
+By 2026, advancements in model quantization and hardware architecture have transformed [local AI](/posts/setup-local-first-ai-research-assistant-with-mistral/) from a novelty into a professional standard. Systems equipped with Apple Silicon (such as M3 and M4 Max chips) or modern discrete GPUs (like the NVIDIA RTX 40- and 50-series) can comfortably run highly capable 8-billion to 32-billion parameter models at speeds exceeding 40 tokens per second. 
 
 The primary driver of the local-first movement is absolute data privacy. When inference occurs on-device, proprietary code, sensitive client communications, and personal intellectual property never traverse the internet. This zero-trust environment effectively eliminates the risk of third-party data breaches, making local-first tools highly attractive to legal professionals, healthcare workers, and enterprise developers bound by strict compliance regulations like HIPAA, SOC2, or ITAR.
 
@@ -118,7 +118,7 @@ ChatGPT Team represents the highly polished standard of cloud structured AI, off
 Claude Enterprise by Anthropic dominates the cloud structured space for complex analysis and massive document processing workloads. With context windows comfortably exceeding one million tokens in 2026, engineering teams can upload entire code repositories, extensive financial histories, or vast legal libraries for instant, comprehensive analysis. Its strict adherence to system prompts and reliable structured output formats (like native, error-free JSON generation) makes it the preferred cognitive engine for data-heavy cloud workflows.
 
 **Pros:**
-- Industry-leading context window for massive document analysis
+- Industry-leading context window for massive [document analysis](/posts/local-llm-deployment-offline-document-analysis/)
 - Exceptional complex reasoning capabilities and reduced hallucination rates
 - Native integrations with GitHub and major enterprise software suites
 

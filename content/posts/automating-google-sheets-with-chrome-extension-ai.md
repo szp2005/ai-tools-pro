@@ -44,7 +44,7 @@ One of the most robust use cases is unstructured data parsing. If you paste a bl
 Writing complex `VLOOKUP`, `INDEX/MATCH`, or `QUERY` functions takes time and is prone to syntax errors. AI extensions act as formula generators. You can select a target cell, open the extension sidebar, and request: "Write a formula that searches column A for the product name, finds the matching price in the 'Inventory' tab, and multiplies it by the tax rate in cell D2." The extension outputs the exact syntax, ready to copy or apply directly.
 
 ### Sentiment Analysis and Categorization
-For teams handling customer feedback or survey responses, an AI Chrome extension can run sentiment analysis directly within the sheet. By highlighting a column of user reviews, you can prompt the AI to add a new column tagging each review as Positive, Neutral, or Negative, and add a third column identifying the core feature mentioned (e.g., "Customer Support," "Pricing," "UI").
+For teams handling customer feedback or survey responses, an AI Chrome extension can run sentiment analysis directly within the sheet. By highlighting a column of user [reviews](/posts/writesonic-review-honest/), you can prompt the AI to add a new column tagging each review as Positive, Neutral, or Negative, and add a third column identifying the core feature mentioned (e.g., "Customer Support," "Pricing," "UI").
 
 ### Text Generation and Translation
 Content teams frequently use Google Sheets as a content calendar or bulk creation tool. AI extensions can take a row containing a product name and a few bullet points, and generate a 50-word product description in the adjacent column. Similarly, they can translate entire columns of text into another language natively within the browser environment.
