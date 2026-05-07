@@ -1,4 +1,5 @@
 ---
+image: "/og/how-to-run-local-llms-on-macbook-m3.webp"
 title: "How to Run Local LLMs on MacBook M3: Complete 2026 Guide"
 description: "Learn exactly how to run local LLMs on your MacBook M3. This guide covers setup, best tools like Ollama, and model recommendations for Apple Silicon."
 pubDate: "2026-05-07"
@@ -16,7 +17,7 @@ _As an Amazon Associate we earn from qualifying purchases. This post may contain
 
 The shift toward localized artificial intelligence has transformed how developers, researchers, and power users interact with large language models (LLMs). Relying entirely on cloud APIs like OpenAI's GPT-4 or Anthropic's Claude 3 presents ongoing subscription costs, introduces latency, and inherently compromises data privacy since your prompts are processed on external servers. For users handling sensitive proprietary code, confidential client documents, or private personal data, cloud processing is often a non-starter. 
 
-Apple's release of the M3 chip family—comprising the base M3, M3 Pro, and M3 Max—has cemented the Mac as an incredibly capable machine for local AI inference. Unlike traditional PC architectures that separate system RAM from dedicated VRAM on a graphics card, Apple Silicon utilizes a unified memory architecture. This allows the GPU to access the massive pool of system memory directly, enabling laptops to run multi-billion-parameter models that would otherwise require extremely expensive desktop hardware.
+Apple's release of the M3 chip family—comprising the base M3, M3 Pro, and M3 Max—has cemented the Mac as an incredibly capable machine for [local AI](/posts/ollama-installation-guide-privacy-conscious-professionals/) inference. Unlike traditional PC architectures that separate system RAM from dedicated VRAM on a graphics card, Apple Silicon utilizes a unified memory architecture. This allows the GPU to access the massive pool of system memory directly, enabling laptops to run multi-billion-parameter models that would otherwise require extremely expensive desktop hardware.
 
 If you own an M3 MacBook, you already possess a powerful AI inference server. This guide details exactly how to run local LLMs on your MacBook M3, evaluating the best software frameworks, explaining hardware capabilities, and helping you select the right models for your specific memory configuration.
 
@@ -32,7 +33,7 @@ Apple's M3 architecture uses unified memory. If you purchase an M3 Max MacBook w
 
 ### Metal Performance Shaders and the Neural Engine
 
-Apple has aggressively integrated machine learning acceleration into its software ecosystem. The Metal Performance Shaders (MPS) framework allows developers to write code that interfaces directly with the M3's GPU hardware. The most popular local AI tools have been rewritten or adapted to utilize MPS, meaning that when you run an LLM on an M3 MacBook, the heavy lifting is hardware-accelerated rather than relying purely on CPU cycles. 
+Apple has aggressively integrated machine learning acceleration into its software ecosystem. The Metal Performance Shaders (MPS) framework allows developers to write code that interfaces directly with the M3's GPU hardware. The most popular local [AI tools](/posts/rytr-vs-copy-ai-for-copywriting/) have been rewritten or adapted to utilize MPS, meaning that when you run an LLM on an M3 MacBook, the heavy lifting is hardware-accelerated rather than relying purely on CPU cycles. 
 
 Additionally, the M3 chip features a 16-core Neural Engine. While most heavy LLM inference currently targets the GPU via Metal, the Neural Engine assists with smaller machine learning tasks and offloads system operations, leaving the GPU free to dedicate its compute power to generating text tokens.
 
@@ -159,3 +160,11 @@ If you are using Ollama, updating is as simple as opening your terminal and typi
 
 ### Can a local LLM read files stored on my hard drive?
 The base models themselves cannot read files, but you can connect them to frameworks designed for file ingestion. By using applications like AnythingLLM or integrating Ollama with Python scripts utilizing LangChain, you can set up Retrieval-Augmented Generation (RAG). This process converts your local PDFs or text files into searchable data that the local LLM can securely reference to answer your questions.
+
+---
+
+## Related Reading
+
+- [[Midjourney](/posts/stable-diffusion-vs-midjourney-for-beginners/) Parameter Guide for Consistent Character Design: Complete Workflow](/posts/midjourney-parameter-guide-for-consistent-character-design/)
+
+- [Best AI Image Upscaler for Large Format Printing in 2026](/posts/ai-image-upscaler-for-large-format-printing/)

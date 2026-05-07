@@ -17,7 +17,7 @@ tags: ["automate", "content", "n8n", "claude"]
 
 **TL;DR**
 - Build a fully automated content pipeline that pulls keywords from a Google Sheet, sends them to Claude via n8n, and publishes drafts straight to WordPress — no coding required.
-- The secret to quality output is prompt engineering inside n8n expressions, not just connecting nodes.
+- The secret to quality output is [prompt engineering](/posts/midjourney-parameter-guide-for-consistent-character-design/) inside n8n expressions, not just connecting nodes.
 - Download the ready-made workflow JSON at the end and import it in under two minutes.
 
 ---
@@ -60,7 +60,7 @@ This guide focuses on one specific, high-value use case: **automating SEO-optimi
 Before touching n8n, collect everything in one place.
 
 **n8n Instance**
-The fastest path is n8n Cloud, which gives you a managed instance with no server setup. The Starter plan is free for low volume. If you prefer self-hosting for cost or data-privacy reasons, spin up a droplet on DigitalOcean or a server on Hetzner — both have one-click n8n installs via Docker Compose. Self-hosting is cheaper at scale but adds ten minutes of setup time upfront.
+The fastest path is n8n Cloud, which gives you a managed instance with no server setup. The Starter plan is free for low volume. If you prefer self-hosting for cost or data-[privacy](/posts/ollama-installation-guide-privacy-conscious-professionals/) reasons, spin up a droplet on DigitalOcean or a server on Hetzner — both have one-click n8n installs via Docker Compose. Self-hosting is cheaper at scale but adds ten minutes of setup time upfront.
 
 **Anthropic Claude API Key**
 Go to console.anthropic.com, create an account, and generate an API key under Settings → API Keys. Fund your account with at least $5. A full 1,500-word blog post using Claude 3.5 Sonnet costs roughly $0.015–$0.03 depending on input token length.
@@ -223,7 +223,7 @@ Start with the brief generation workflow, run it for two weeks, then extend it. 
 
 ---
 
-*Prices and model names current as of June 2025. Claude model versions update regularly — check the Anthropic model documentation for the latest release before building.*
+*Prices and model names current as of June 2025. Claude model versions update regularly — check the Anthropic model [documentation](/posts/self-healing-knowledge-base-using-ai/) for the latest release before building.*
 
 ## Frequently Asked Questions
 

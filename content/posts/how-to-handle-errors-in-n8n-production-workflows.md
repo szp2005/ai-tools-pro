@@ -29,7 +29,7 @@ Effective error management in n8n requires a dual-layered approach. You cannot r
 Localized handling occurs exactly where the error happens. It is designed for anticipated failures—situations where you know an API might reject a request, a file might be missing, or a record might not exist. By managing the error at the node level, you prevent the entire workflow execution from terminating.
 
 ### Global Workflow-Level Error Handling
-Global handling is your safety net for unanticipated failures. These are catastrophic crashes, unexpected schema changes from third-party APIs, or critical authentication revokes. Global handling does not try to fix the workflow in real-time; instead, it immediately alerts the engineering or operations team with the exact execution ID and failure reason so they can intervene.
+Global handling is your safety net for unanticipated failures. These are catastrophic crashes, unexpected schema changes from third-party APIs, or critical authentication revokes. Global handling does not try to fix the workflow in real-time; instead, it immediately alerts the engineering or [operations](/posts/automating-indie-hacker-workflows-with-make-com/) team with the exact execution ID and failure reason so they can intervene.
 
 ## Implementing Node-Level Error Recovery
 
@@ -105,7 +105,7 @@ When firing alerts to Slack, Microsoft Teams, or PagerDuty, use a standardized J
 A critical oversight is causing an error *within* your Error Trigger workflow. If your Error Trigger attempts to write to a database that is offline, and the Error Trigger is set to report errors to itself, you will create an infinite loop that can rapidly consume server memory and crash the n8n instance. Always disable error reporting for your Error Trigger workflow.
 
 ### Implement Dead Letter Queues
-For highly sensitive data (like financial transactions), alerting Slack is not enough. You must implement a Dead Letter Queue (DLQ). When a critical item fails processing, route that specific JSON payload into a dedicated PostgreSQL database table or AWS SQS queue. This allows engineers to manually inspect the payload, fix the data issue, and re-inject it into the workflow later.
+For highly [sensitive data](/posts/best-local-llm-for-sensitive-data-analysis-2026/) (like financial transactions), alerting Slack is not enough. You must implement a Dead Letter Queue (DLQ). When a critical item fails processing, route that specific JSON payload into a dedicated PostgreSQL database table or AWS SQS queue. This allows engineers to manually inspect the payload, fix the data issue, and re-inject it into the workflow later.
 
 ### Monitor Execution Logs Pruning
 n8n stores execution logs in its database. If you have workflows executing thousands of times a day and failing frequently, your database will bloat, degrading system performance. Ensure your `EXECUTIONS_DATA_PRUNE` environment variables are properly configured to delete execution logs older than 14 or 30 days, keeping the production database lean.

@@ -41,7 +41,7 @@ Once the vector database identifies the top five or ten notes most relevant to y
 
 ## Cloud vs. Local Implementations
 
-When building a semantic search for personal notes LLM system, your primary architectural decision is whether to rely on cloud APIs or run the models locally. This choice dictates your privacy, recurring costs, and system speed.
+When building a semantic search for personal notes LLM system, your primary architectural decision is whether to rely on cloud APIs or run the models locally. This choice dictates your [privacy](/posts/ollama-installation-guide-privacy-conscious-professionals/), recurring costs, and system speed.
 
 ### The Cloud API Route
 
@@ -55,7 +55,7 @@ The advantage is ease of setup and access to highly capable models. The disadvan
 
 For complete privacy, you can run the entire pipeline offline on your own hardware. 
 
-Using tools like Ollama or LM Studio, you can host both the embedding model and the LLM locally. An open-source model like `nomic-embed-text` or `bge-m3` generates the embeddings. The vectors are stored in a local ChromaDB instance. For synthesis, you run a quantized local LLM, such as [Llama 3](/posts/building-a-local-knowledge-base-with-llama-3/) 8B or Mistral 7B. 
+Using tools like Ollama or [LM Studio](/posts/ollama-vs-lm-studio-for-local-model-management/), you can host both the embedding model and the LLM locally. An open-source model like `nomic-embed-text` or `bge-m3` generates the embeddings. The vectors are stored in a local ChromaDB instance. For synthesis, you run a quantized local LLM, such as [Llama 3](/posts/building-a-local-knowledge-base-with-llama-3/) 8B or [Mistral 7B](/posts/running-mistral-7b-on-consumer-hardware-for-privacy/). 
 
 This guarantees zero data leakage. It requires a machine with decent RAM (typically 16GB minimum) and ideally an Apple Silicon Mac or an Nvidia GPU, but the latency is low and there are no recurring subscription fees.
 

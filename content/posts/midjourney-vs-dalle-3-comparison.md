@@ -90,7 +90,7 @@ How you interact with these tools drastically impacts your workflow, especially 
 
 ### Midjourney: The Discord Friction
 Midjourney’s reliance on Discord has long been a point of contention. 
-*   **The Interface:** Typing `/imagine` into a chat box in a chaotic, fast-scrolling public server (unless you pay for a private bot tier) is counter-intuitive for many professionals. 
+*   **The Interface:** Typing `/imagine` into a chat box in a chaotic, fast-scrolling public server (unless you pay for a private bot tier) is counter-intuitive for many [professionals](/posts/[ollama](/posts/ollama-vs-lm-studio-for-local-model-management/)-installation-guide-privacy-conscious-professionals/). 
 *   **Workflow Features:** Despite the interface, the workflow features are unparalleled. Features like panning (expanding the image in a specific direction), zooming out, varying specific regions (Inpainting), and using Image Weights or Character References (`--cref`) make it a powerhouse for iterative design. The gradual rollout of the Midjourney Web Alpha is mitigating the Discord friction, offering a much cleaner, specialized interface.
 
 ### DALL-E 3: The Conversational Companion
@@ -167,7 +167,7 @@ Midjourney vs DALL-E 3 is best for marketers, founders, and solo operators who w
 
 ### How should I get started with Midjourney vs DALL-E 3?
 
-Start by identifying the specific outcome you want, then apply the smallest useful version of the advice in this article. After that, review what worked and adjust the setup, tool, or process before expanding it.
+Start by identifying the specific outcome you want, then apply the smallest useful version of the advice in this article. After that, [review](/posts/otter-ai-review-transcription/) what worked and adjust the setup, tool, or process before expanding it.
 
 ### What mistakes should I avoid with Midjourney vs DALL-E 3?
 

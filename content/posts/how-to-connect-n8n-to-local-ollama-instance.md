@@ -17,9 +17,9 @@ _As an Amazon Associate we earn from qualifying purchases. This post may contain
 
 Integrating powerful Large Language Models (LLMs) into your daily workflows used to mean paying recurring subscription fees and sending sensitive data to third-party cloud providers. However, the rise of open-weight models and user-friendly execution environments has completely shifted this paradigm. 
 
-By combining n8n—a flexible, self-hosted workflow automation tool—with Ollama, an application that lets you run LLMs locally on your own hardware, you can build sophisticated AI pipelines that are entirely private, free to operate, and incredibly responsive. 
+By combining n8n—a flexible, self-hosted workflow [automation](/posts/ai-tools-for-email-writing/) tool—with Ollama, an application that lets you run LLMs locally on your own hardware, you can build sophisticated AI pipelines that are entirely private, free to operate, and incredibly responsive. 
 
-Whether you are automating customer support ticket categorization, generating content drafts from RSS feeds, or summarizing internal documentation, connecting these two tools creates a robust engine for local AI automation. This guide will walk you through the precise steps to get n8n communicating seamlessly with your local Ollama instance.
+Whether you are automating customer support ticket categorization, generating content drafts from RSS feeds, or summarizing internal documentation, connecting these two tools creates a robust engine for local [AI automation](/posts/automating-google-sheets-with-chrome-extension-ai/). This guide will walk you through the precise steps to get n8n communicating seamlessly with your local Ollama instance.
 
 ## Understanding the Architecture
 
@@ -111,7 +111,7 @@ Modern versions of n8n include powerful Advanced AI (LangChain) nodes. This is t
 
 ## Practical Setup Advice and Troubleshooting
 
-Getting local AI pipelines to run smoothly requires managing hardware resources and handling timeouts effectively.
+Getting [local AI](/posts/ollama-installation-guide-privacy-conscious-professionals/) pipelines to run smoothly requires managing hardware resources and handling timeouts effectively.
 
 ### Managing Node Timeouts
 

@@ -11,7 +11,7 @@ type: "informational"
 
 # Automate Customer Sentiment Analysis with OpenAI API: Complete Guide
 
-> **Quick Answer:** To automate customer sentiment analysis with the OpenAI API, you must route your customer feedback data (via webhooks or batch exports) into a script that queries a model like `gpt-4o-mini` using a structured prompt. By requesting JSON output, the API can categorize the text into distinct sentiments (positive, negative, neutral) and extract specific pain points, which can then be stored in a database and visualized on a dashboard for real-time customer insights.
+> **Quick Answer:** To automate customer sentiment analysis with the OpenAI API, you must route your customer feedback data (via webhooks or batch exports) into a script that queries a model like `[gpt-4o](/posts/gemini-for-content-writing-vs-gpt-4o/)-mini` using a structured prompt. By requesting JSON output, the API can categorize the text into distinct sentiments (positive, negative, neutral) and extract specific pain points, which can then be stored in a database and visualized on a dashboard for real-time customer insights.
 
 Modern customer support teams process thousands of interactions daily across email, live chat, social media, and product [reviews](/posts/writesonic-review-honest/). Reading and categorizing every piece of feedback manually is impossible at scale. Traditional sentiment analysis tools have existed for years, but they often struggle with nuance, sarcasm, and the complex context typical of human communication. They might flag a review stating, "This software is terrifyingly good," as negative simply because of the word "terrifyingly."
 
@@ -50,7 +50,7 @@ The ingestion layer is responsible for gathering raw text. This data can be stru
 
 ### Processing Layer
 
-Once the raw text is ingested, it reaches the processing layer. Here, your application prepares the text for the OpenAI API. This involves stripping out personal identifiable information (PII) to maintain privacy compliance, formatting the prompt, and managing the HTTP requests. This layer must be resilient. It needs to handle API rate limits, network timeouts, and unexpected model outputs gracefully.
+Once the raw text is ingested, it reaches the processing layer. Here, your application prepares the text for the OpenAI API. This involves stripping out personal identifiable information (PII) to maintain [privacy](/posts/[ollama](/posts/ollama-vs-lm-studio-for-local-model-management/)-installation-guide-privacy-conscious-professionals/) compliance, formatting the prompt, and managing the HTTP requests. This layer must be resilient. It needs to handle API rate limits, network timeouts, and unexpected model outputs gracefully.
 
 ### Storage and Analytics Layer
 

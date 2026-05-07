@@ -15,7 +15,7 @@ type: "informational"
 
 Indie developers and 3D environment artists constantly balance visual quality against strict production timelines. High-quality textures are essential for building immersive worlds, but manually sculpting, baking, and painting materials for every single surface consumes hundreds of hours. Traditional procedural material generation tools are powerful but come with a steep technical learning curve that can slow down rapid prototyping.
 
-This is where AI [image generation](/posts/ai-image-generation-for-professional-marketers/), specifically tuned for game development workflows, steps in. Learning how to use Leonardo AI for game textures shifts the workflow from tedious manual authoring to curation and rapid iteration. Because Leonardo AI offers built-in tools for tiling and utilizes specific base models trained on high-quality digital art and game assets, it produces highly usable base maps for physically based rendering (PBR) workflows. 
+This is where AI [image generation](/posts/ai-image-generation-for-professional-marketers/), specifically tuned for game development workflows, steps in. Learning how to use Leonardo AI for game textures shifts the [workflow](/posts/best-ai-sidebar-extensions-for-chrome-productivity/) from tedious manual authoring to curation and rapid iteration. Because Leonardo AI offers built-in tools for tiling and utilizes specific base models trained on high-quality digital art and game assets, it produces highly usable base maps for physically based rendering (PBR) workflows. 
 
 Whether you are building a stylized low-poly indie title in Godot or aiming for photorealistic environments in Unreal Engine 5, integrating AI into your texture pipeline reduces iteration time from days to minutes. This guide walks through the exact workflow to generate, refine, extract PBR maps, and implement production-ready game textures using Leonardo AI.
 
@@ -55,7 +55,7 @@ Using negative prompts is mandatory for clean textures to eliminate unwanted vis
 
 ## Step 3: Refining and Upscaling Base Maps
 
-The initial output from Leonardo AI serves as your diffuse (or base color/albedo) map. While a 1024x1024 image is fine for background props, modern game engines require 2K (2048x2048) or 4K (4096x4096) textures for hero assets, main characters, and primary architecture.
+The initial output from Leonardo AI serves as your diffuse (or base color/albedo) map. While a 1024x1024 image is fine for background props, modern game engines require 2K (2048x2048) or 4K (4096x4096) textures for hero assets, main characters, and primary [architecture](/posts/best-ai-tools-for-architectural-data-visualization/).
 
 ### Using Leonardo's Universal Upscaler
 Once you generate a 1024x1024 texture that perfectly fits your art direction, hover over the image and use Leonardo's Universal Upscaler. 
@@ -147,7 +147,7 @@ Yes, provided you are adhering to Leonardo AI's terms of service. Generally, pai
 Leonardo AI primarily generates 2D images, making it excellent for 2D seamless textures, concept art, and UI elements. While they are actively developing tools for texturing existing 3D meshes directly on their platform, the most stable and production-ready workflow remains generating 2D seamless materials and applying them to your UV-mapped 3D models inside your game engine.
 
 ### Why do my AI textures look completely flat in Unity or Unreal?
-AI image generators only output flat base color (albedo) images. If you apply a flat image to a 3D wall, it will not react to dynamic lighting. You must convert the AI image into a PBR texture set—specifically generating Normal maps for surface bumps and Roughness maps for light reflectivity—using third-party tools before importing them into your engine.
+[AI image generators](/posts/midjourney-vs-dall-e-3-for-brand-assets/) only output flat base color (albedo) images. If you apply a flat image to a 3D wall, it will not react to dynamic lighting. You must convert the AI image into a PBR texture set—specifically generating Normal maps for surface bumps and Roughness maps for light reflectivity—using third-party tools before importing them into your engine.
 
 ### How do I make an AI texture seamless?
 In the Leonardo AI generation dashboard, locate the left-hand settings menu. Scroll down to the "Advanced Settings" section and toggle the "Tiling" option on before you click generate. This ensures the neural network algorithms wrap the edges of the generated image perfectly, preventing any visible seams when the texture is repeated.

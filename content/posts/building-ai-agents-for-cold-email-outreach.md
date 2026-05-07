@@ -11,7 +11,7 @@ type: "informational"
 
 # Building AI Agents for Cold Email Outreach: Complete Guide to [Automation](/posts/ai-tools-for-email-writing/)
 
-> **Quick Answer:** Building AI agents for cold email outreach requires integrating Large Language Models (LLMs) with data enrichment APIs and sending infrastructure to automate research, hyper-personalize messaging, and classify responses. A functional system relies on modular components: a research agent for prospect data, a [copywriting](/posts/rytr-vs-copy-ai-for-copywriting/) agent for drafting, and a triage agent for handling replies, all orchestrated via frameworks like LangChain or AutoGen.
+> **Quick Answer:** Building AI agents for cold email outreach requires integrating Large Language Models (LLMs) with data enrichment APIs and sending infrastructure to automate research, hyper-personalize messaging, and classify responses. A functional system relies on modular components: a research agent for prospect data, a [copywriting](/posts/rytr-vs-copy-ai-for-copywriting/) agent for drafting, and a triage agent for handling replies, all orchestrated via frameworks like LangChain or [AutoGen](/posts/crewai-vs-autogen-automated-software-development-tasks/).
 
 Scaling outbound sales has traditionally presented a frustrating tradeoff: you can send hyper-personalized emails manually at a low volume, or blast generic templates to thousands of prospects while risking deliverability and domain reputation. The middle ground—mail merge tags like `{{first_name}}` and `{{company_name}}`—stopped working years ago. Buyers instantly recognize automated patterns and send them straight to the archive folder.
 
@@ -52,7 +52,7 @@ By programming the agent to step through these logical checks, you ensure that e
 ### Guardrails Against Hallucination
 One of the highest risks in building AI agents for cold email outreach is hallucination. If an agent hallucinates a funding round or a mutual connection, the sender's credibility is instantly destroyed.
 
-To mitigate this, developers must implement deterministic guardrails. This involves adding a validation step where a secondary, smaller model (like GPT-4o-mini or Llama 3) reviews the generated draft against the original JSON research data. If the validation model detects any factual claims in the email that are not present in the source data, it flags the draft for human review or forces the copywriting agent to rewrite the text.
+To mitigate this, developers must implement deterministic guardrails. This involves adding a validation step where a secondary, smaller model (like GPT-4o-mini or Llama 3) [reviews](/posts/writesonic-review-honest/) the generated draft against the original JSON research data. If the validation model detects any factual claims in the email that are not present in the source data, it flags the draft for human review or forces the copywriting agent to rewrite the text.
 
 ## Automating Inbox Management and Response Handling
 
@@ -68,7 +68,7 @@ When an email hits the inbox, the triage agent analyzes the text and categorizes
 Using a fine-tuned classification model or few-shot prompting, the AI can achieve over 95% accuracy in intent recognition. Once classified, the agent triggers the corresponding workflow.
 
 ### Drafting Contextual Replies
-For objections or requests for more information, the agent can draft a proposed response. If a prospect asks, "How does this integrate with Salesforce?", the agent retrieves documentation from a vector database (RAG architecture) and drafts a technically accurate reply. 
+For objections or requests for more information, the agent can draft a proposed response. If a prospect asks, "How does this integrate with Salesforce?", the agent retrieves [documentation](/posts/self-healing-knowledge-base-using-ai/) from a vector database (RAG architecture) and drafts a technically accurate reply. 
 
 For safety and compliance, most organizations implement a "human-in-the-loop" constraint here. The AI drafts the response and saves it as a draft in the sender's inbox (via the Google Workspace or Microsoft Graph API), requiring a human SDR to click "send."
 

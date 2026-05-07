@@ -27,7 +27,7 @@ The methodology for processing invoices has shifted away from coordinate-based t
 
 In the n8n ecosystem, this translates to utilizing the Advanced AI nodes or standard HTTP Request nodes connected to inference APIs. Instead of maintaining hundreds of regular expressions to capture invoice numbers and dates, workflows now pass the raw document text or image to a model with a strict JSON schema requirement. The model returns a predictable payload containing the vendor name, invoice date, due date, subtotal, tax amount, and an array of line items.
 
-This architectural shift reduces maintenance overhead by over 90%. When a vendor updates their invoice design, the extraction logic continues to function because it understands the semantic meaning of the document rather than its geometric layout. Furthermore, the ability to run local, quantized models via integration with tools like Ollama means that sensitive financial data no longer needs to leave the corporate network, resolving significant compliance and data privacy concerns.
+This architectural shift reduces maintenance overhead by over 90%. When a vendor updates their invoice design, the extraction logic continues to function because it understands the semantic meaning of the document rather than its geometric layout. Furthermore, the ability to run local, quantized models via integration with tools like [Ollama](/posts/ollama-vs-lm-studio-for-local-model-management/) means that sensitive financial data no longer needs to leave the corporate network, resolving significant compliance and data [privacy](/posts/ollama-installation-guide-privacy-conscious-professionals/) concerns.
 
 ## Architectural Components of an n8n Invoice Pipeline
 
@@ -59,7 +59,7 @@ Raw extraction is rarely sufficient for automated entry. The extracted data must
 
 Use the **Postgres** or **MySQL** nodes to query your internal Vendor Master Database. Match the extracted `vendor_name` against registered aliases. If the vendor does not exist, use a **Switch** node to route the workflow to an exception handling branch.
 
-Similarly, calculate the mathematical accuracy of the invoice. Utilize a **Code** node (JavaScript) to iterate through the extracted line items, multiplying quantity by unit price, summing the results, and adding the extracted tax. Compare this calculated total against the extracted `total_amount`. If a discrepancy of more than $0.01 exists, flag the invoice for manual review. This deterministic validation step acts as a crucial firewall against hallucinated data or extraction errors.
+Similarly, calculate the mathematical accuracy of the invoice. Utilize a **Code** node (JavaScript) to iterate through the extracted line items, multiplying quantity by unit price, summing the results, and adding the extracted tax. Compare this calculated total against the extracted `total_amount`. If a discrepancy of more than $0.01 exists, flag the invoice for manual [review](/posts/otter-ai-review-transcription/). This deterministic validation step acts as a crucial firewall against hallucinated data or extraction errors.
 
 ### 4. Destination Sync and Routing
 The final phase pushes the validated data into the general ledger. Native integration nodes for Xero, QuickBooks Online, or custom HTTP calls to enterprise ERPs like NetSuite handle this transaction.

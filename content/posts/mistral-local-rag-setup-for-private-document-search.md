@@ -12,7 +12,7 @@ type: "informational"
 _As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
 # Mistral Local RAG Setup: Private Document Search Guide
 
-> **Quick Answer:** A Mistral local RAG setup for private document search involves deploying a Mistral large language model (LLM) on your own hardware, integrating it with a vector database that stores embeddings of your private documents, and using a retrieval-augmented generation (RAG) pipeline to answer queries securely without sending sensitive data to external cloud services. This approach ensures data privacy, maintains full control over your information, and leverages Mistral's efficiency for robust offline performance.
+> **Quick Answer:** A Mistral local RAG setup for private document search involves deploying a Mistral large language model (LLM) on your own hardware, integrating it with a vector database that stores embeddings of your private documents, and using a retrieval-augmented generation (RAG) pipeline to answer queries securely without sending sensitive data to external cloud services. This approach ensures data [privacy](/posts/ollama-installation-guide-privacy-conscious-professionals/), maintains full control over your information, and leverages Mistral's efficiency for robust offline performance.
 
 ## Introduction
 
@@ -26,11 +26,11 @@ Start by mapping the current manual process from trigger to final handoff. Once 
 
 ### Which tools are usually needed for Mistral local RAG setup for private document search?
 
-Most teams need an intake source, a workflow automation tool, a database or CRM, and a notification channel. The exact stack matters less than having clear field names, ownership, and error handling.
+Most teams need an intake source, a workflow [automation](/posts/ai-tools-for-email-writing/) tool, a database or CRM, and a notification channel. The exact stack matters less than having clear field names, ownership, and error handling.
 
 ### How do you avoid automation mistakes?
 
-Keep approvals on sensitive steps, log every run, and test with a small sample before enabling the workflow for all users. A short human review checkpoint is usually cheaper than debugging a silent bad handoff later.
+Keep approvals on sensitive steps, log every run, and test with a small sample before enabling the workflow for all users. A short human [review](/posts/otter-ai-review-transcription/) checkpoint is usually cheaper than debugging a silent bad handoff later.
 
 ### How do you measure whether Mistral local RAG setup for private document search is working?
 

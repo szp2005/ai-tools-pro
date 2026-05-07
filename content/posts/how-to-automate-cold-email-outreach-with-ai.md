@@ -17,7 +17,7 @@ Scaling outbound sales has traditionally required a stark compromise: volume or 
 
 [Artificial intelligence](/posts/ai-tools-for-seo-writing/) has dismantled this tradeoff. Modern language models and specialized workflow tools now allow revenue teams to execute deep research, synthesize complex prospect data, and write hyper-personalized copy for thousands of leads simultaneously. 
 
-However, bolting ChatGPT onto a legacy mail-merge tool will not generate pipeline. Effective AI outreach requires a systematic approach to data enrichment, strict prompt engineering, and rigorous deliverability protocols. This guide breaks down the exact infrastructure and workflow required to build a scalable, AI-driven cold email engine.
+However, bolting [ChatGPT](/posts/notion-ai-vs-chatgpt-for-notes/) onto a legacy mail-merge tool will not generate pipeline. Effective AI outreach requires a systematic approach to data enrichment, strict [prompt engineering](/posts/midjourney-parameter-guide-for-consistent-character-design/), and rigorous deliverability protocols. This guide breaks down the exact infrastructure and workflow required to build a scalable, AI-driven cold email engine.
 
 ## Why Traditional Cold Email Automation Is Failing
 
@@ -92,7 +92,7 @@ Many modern sending platforms include built-in AI categorization. They analyze i
 - Not Interested (automatically unsubscribing the lead)
 - Information Request (flagging for manual review)
 
-You can also use tools like Zapier to route "Interested" replies directly to a Slack channel, pinging an account executive to take over the conversation manually. Once a prospect expresses actual interest, all automated communication should cease, and a human must take the wheel.
+You can also use tools like [Zapier](/posts/n8n-vs-zapier-for-advanced-workflow-automation/) to route "Interested" replies directly to a Slack channel, pinging an account executive to take over the conversation manually. Once a prospect expresses actual interest, all automated communication should cease, and a human must take the wheel.
 
 ## Practical Advice for Scaling AI Cold Email
 

@@ -13,7 +13,7 @@ type: "informational"
 
 > **Quick Answer:** Using local LLMs for private data analysis involves running open-weight models like [Llama 3](/posts/building-a-local-knowledge-base-with-llama-3/) or Mistral directly on your own hardware, ensuring sensitive data never leaves your network. This is achieved by combining local inference engines like Ollama with frameworks like LangChain or LlamaIndex to query internal databases, spreadsheets, and documents securely without relying on third-party cloud APIs.
 
-Integrating [artificial intelligence](/posts/ai-tools-for-seo-writing/) into data workflows offers massive efficiency gains, but organizations handling sensitive, proprietary, or regulated data face a critical bottleneck: the privacy risks of cloud-based APIs. Sending financial records, patient data, or confidential corporate strategies to external providers like OpenAI or Anthropic violates compliance standards and exposes organizations to data breaches or unintended model training. 
+Integrating [artificial intelligence](/posts/ai-tools-for-seo-writing/) into data workflows offers massive efficiency gains, but organizations handling sensitive, proprietary, or regulated data face a critical bottleneck: the [privacy](/posts/ollama-installation-guide-privacy-conscious-professionals/) risks of cloud-based APIs. Sending financial records, patient data, or confidential corporate strategies to external providers like OpenAI or Anthropic violates compliance standards and exposes organizations to data breaches or unintended model training. 
 
 The maturation of open-weight large language models has fundamentally changed this dynamic. In 2026, running highly capable models locally is not only feasible but actively preferred for specific analytical tasks. By processing data entirely on-premises or within a self-hosted Virtual Private Cloud (VPC), organizations retain complete data sovereignty. 
 
@@ -35,7 +35,7 @@ Not all open-weight models are suited for analytical tasks. Data analysis requir
 Meta's Llama 3 architecture remains a foundational choice. The 8B parameter model is highly efficient, capable of running on consumer-grade hardware while providing excellent text summarization and entity extraction. For complex reasoning, data synthesis, and complex SQL query generation, the Llama 3 70B model is the enterprise standard, rivaling proprietary cloud models in logical benchmarks. 
 
 ### Mistral and Mixtral (8x7B / 8x22B)
-Mistral's Mixture of Experts (MoE) architecture offers a unique advantage: high parameter counts with relatively low active compute requirements. The Mixtral 8x7B activates only two experts (12B parameters) per token, making it faster than dense models of similar size. It excels at multi-lingual data processing and long-context document analysis, supporting context windows that are highly beneficial when analyzing massive CSVs or extensive log files.
+Mistral's Mixture of Experts (MoE) architecture offers a unique advantage: high parameter counts with relatively low active compute requirements. The Mixtral 8x7B activates only two experts (12B parameters) per token, making it faster than dense models of similar size. It excels at multi-lingual data processing and long-context [document analysis](/posts/local-llm-deployment-offline-document-analysis/), supporting context windows that are highly beneficial when analyzing massive CSVs or extensive log files.
 
 ### Qwen 2 and Code Llama
 For organizations specifically looking to translate natural language into SQL queries or Python scripts for data visualization (such as generating Pandas or Matplotlib code), specialized or highly technical models perform best. Qwen 2 demonstrates exceptional performance in coding and mathematical reasoning, making it ideal for quantitative data tasks. Code Llama derivatives remain highly effective for code-driven data manipulation pipelines.
@@ -68,7 +68,7 @@ LLMs cannot inherently "see" your database. You must provide the data to the mod
 **Retrieval-Augmented Generation (RAG)** is the standard architecture for querying unstructured data (PDFs, internal wikis). 
 1.  Your data is chunked and converted into vector embeddings using a local embedding model (e.g., `nomic-embed-text`).
 2.  These vectors are stored in a local vector database like ChromaDB, Qdrant, or Milvus.
-3.  When a user asks a question, the system retrieves the most relevant text chunks and feeds them to the local LLM alongside the prompt.
+3.  When a user asks a question, the system retrieves the most relevant text chunks and feeds them to the [local LLM](/posts/running-mistral-7b-on-consumer-hardware-for-privacy/) alongside the prompt.
 
 **Data Agents** are used for structured data (SQL databases, CSVs). Frameworks like LangChain or LlamaIndex provide the orchestration layer.
 1.  The user asks a question ("What were Q3 sales by region?").
@@ -113,6 +113,10 @@ For low-volume, sporadic usage, cloud APIs are cheaper due to zero hardware cost
 ---
 
 ## Related Reading
+
+- [Running Open Source AI Models for Data Privacy: Complete Guide](/posts/running-open-source-ai-models-for-data-privacy/)
+
+- [Local-First AI Tools vs Cloud Structured 2026: Which Is Best?](/posts/local-first-ai-tools-vs-cloud-structured-2026/)
 
 - [Local-First AI Tools vs Cloud Structured 2026: Which Is Best?](/posts/local-first-ai-tools-vs-cloud-structured-2026/)
 

@@ -11,7 +11,7 @@ type: "informational"
 
 # Stable Diffusion for Local Image Generation: Complete Setup Guide
 
-> **Quick Answer:** Running Stable Diffusion for local image generation requires a dedicated GPU (ideally an NVIDIA card with at least 8GB VRAM), enough system RAM (16GB+), and a user interface like Automatic1111 or ComfyUI. Local generation offers absolute privacy, zero recurring subscription costs, and complete control over advanced tools like ControlNet and custom LoRAs without content restrictions.
+> **Quick Answer:** Running Stable Diffusion for local image generation requires a dedicated GPU (ideally an NVIDIA card with at least 8GB VRAM), enough system RAM (16GB+), and a user interface like Automatic1111 or ComfyUI. Local generation offers absolute [privacy](/posts/[ollama](/posts/ollama-vs-lm-studio-for-local-model-management/)-installation-guide-privacy-conscious-professionals/), zero recurring subscription costs, and complete control over advanced tools like ControlNet and custom LoRAs without content restrictions.
 
 Running AI image generation models locally has shifted from a complex developer experiment into a mainstream creative [workflow](/posts/how-to-automate-slack-notifications-with-n8n/). While cloud-based services offer convenience, they come with monthly subscription fees, strict content filters, and potential privacy concerns regarding the images you generate or use as source material. 
 
@@ -33,7 +33,7 @@ Video RAM (VRAM) dictates the maximum resolution you can generate and the size o
 ### NVIDIA vs. AMD vs. Apple Silicon
 Stable Diffusion relies heavily on CUDA cores, making NVIDIA GPUs the standard. While PyTorch (the underlying framework) supports AMD via ROCm and Apple Silicon via MPS, NVIDIA hardware remains significantly faster and enjoys day-one support for new community extensions. 
 
-If you are building or buying a machine specifically for this purpose, an NVIDIA GPU is highly recommended. Apple M-series chips (M2/M3/M4 Max and Ultra) are increasingly viable due to their unified memory architecture, allowing access to massive amounts of RAM, though generation speeds will not match high-end NVIDIA desktop cards.
+If you are building or buying a machine specifically for this purpose, an NVIDIA GPU is highly recommended. Apple M-series chips (M2/M3/M4 Max and Ultra) are increasingly viable due to their unified memory [architecture](/posts/best-ai-tools-for-architectural-data-visualization/), allowing access to massive amounts of RAM, though generation speeds will not match high-end NVIDIA desktop cards.
 
 ### System RAM and Storage
 You need at least 16GB of system RAM, though 32GB is recommended to prevent system stuttering when loading massive model files into VRAM. Storage speed is equally critical; model files (safetensors) regularly exceed 6GB each. A fast NVMe SSD is mandatory to reduce the time spent waiting for models to swap in and out of memory.

@@ -13,7 +13,7 @@ type: "informational"
 
 > **Quick Answer:** To build a custom vector database with Pinecone, you first generate embeddings for your data using a model like [OpenAI](/posts/automate-customer-sentiment-analysis-with-openai-api/)'s `text-embedding-3-small`. Next, create a Pinecone index with dimensions matching your model, then upsert your vector data alongside metadata. Finally, you can perform nearest-neighbor searches to retrieve contextually relevant information for search engines or Retrieval-Augmented Generation (RAG) applications.
 
-Modern applications require more than just exact keyword matching. Whether you are building an intelligent semantic search engine, a recommendation system, or providing long-term memory for Large Language Models (LLMs) via Retrieval-Augmented Generation (RAG), you need the ability to search by meaning rather than syntax. 
+Modern applications require more than just exact keyword matching. Whether you are building an intelligent semantic [search engine](/posts/perplexity-ai-review-2026/), a recommendation system, or providing long-term memory for Large Language Models (LLMs) via Retrieval-Augmented Generation (RAG), you need the ability to search by meaning rather than syntax. 
 
 This shift is powered by vector embeddings—numerical representations of text, images, or audio. However, storing and searching millions of dense, high-dimensional vectors in traditional relational databases is highly inefficient. You need specialized infrastructure.
 
@@ -178,7 +178,7 @@ LLMs hallucinate when asked about proprietary data, recent events, or internal [
 4. You construct a prompt: `Answer the user's question using only this context: [doc2 text]. Question: How do I build a fast website?`
 5. The LLM generates an accurate, grounded response.
 
-This pattern transforms generic AI models into highly specialized domain experts based entirely on the custom vector database you built.
+This pattern transforms generic [AI models](/posts/claude-3-5-sonnet-vs-gpt-4o-for-complex-reasoning/) into highly specialized domain experts based entirely on the custom vector database you built.
 
 ## Practical Architecture Advice
 
@@ -203,7 +203,7 @@ Traditional databases rely on exact keyword matches and relational tables (e.g.,
 No. If you switch to a different embedding model (e.g., from OpenAI to Cohere, or from a 1536-dimension model to a 3072-dimension model), you must completely re-embed your entire dataset and create a new Pinecone index. Vectors from different models exist in different mathematical spaces and cannot be compared.
 
 ### How much does Pinecone cost to use?
-Pinecone offers a Starter tier which provides a free serverless index, perfect for evaluation and small projects. For production, the serverless architecture charges based on the volume of data stored (gigabytes per month) and the compute used for read/write operations, scaling dynamically with your traffic.
+Pinecone offers a Starter tier which provides a free serverless index, perfect for evaluation and small projects. For production, the serverless architecture charges based on the volume of data stored (gigabytes per month) and the compute used for read/write [operations](/posts/automating-indie-hacker-workflows-with-make-com/), scaling dynamically with your traffic.
 
 ### Do I need to store the original text in Pinecone?
 It is highly recommended to store the original text chunks in the Pinecone `metadata` payload. This allows Pinecone to return the actual text alongside the similarity score in a single query, preventing you from having to take the returned vector IDs and perform a secondary lookup in a PostgreSQL database to fetch the human-readable content.

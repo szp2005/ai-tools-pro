@@ -49,7 +49,7 @@ When you log an idea, the workflow triggers an API call to an AI model (like Ant
 
 Creating a long-form YouTube video or a comprehensive blog post requires significant effort. Repurposing that cornerstone content is essential for growth, but manually formatting it for different platforms is tedious.
 
-An n8n pipeline can automate this. When a new WordPress post is published (the trigger), the workflow can pass the article text to an AI node instructed to extract three key quotes and format them as Twitter threads. Another branch of the workflow can generate a summarized LinkedIn post. n8n then passes these formatted assets to your scheduling tool, such as Buffer or directly to the platform APIs, placing them in a queue for review.
+An n8n pipeline can automate this. When a new WordPress post is published (the trigger), the workflow can pass the article text to an AI node instructed to extract three key quotes and format them as Twitter threads. Another branch of the workflow can generate a summarized LinkedIn post. n8n then passes these formatted assets to your scheduling tool, such as Buffer or directly to the platform APIs, placing them in a queue for [review](/posts/otter-ai-review-transcription/).
 
 ### 3. SEO Optimization and Publishing Pipeline
 
@@ -108,7 +108,7 @@ Yes, for most professional creators. n8n's pricing model (especially self-hosted
 No. n8n's visual interface allows you to build powerful workflows using drag-and-drop nodes and basic data mapping. However, knowing basic JavaScript is helpful for advanced data manipulation using the Code node.
 
 ### Can n8n connect to local AI models?
-Yes. Using the HTTP Request node, n8n can seamlessly connect to local AI APIs like Ollama or LM Studio, allowing you to build completely private, cost-free AI processing pipelines on your own hardware.
+Yes. Using the HTTP Request node, n8n can seamlessly connect to local AI APIs like [Ollama](/posts/ollama-installation-guide-privacy-conscious-professionals/) or [LM Studio](/posts/ollama-vs-lm-studio-for-local-model-management/), allowing you to build completely private, cost-free AI processing pipelines on your own hardware.
 
 ### How much does it cost to self-host n8n?
 Self-hosting n8n is highly economical. A basic virtual private server capable of running n8n via Docker typically costs between $5 and $10 per month through providers like Hetzner, DigitalOcean, or Linode, supporting thousands of daily executions.

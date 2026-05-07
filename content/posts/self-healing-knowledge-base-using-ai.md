@@ -51,7 +51,7 @@ The system must ingest data from multiple active channels to understand the curr
 
 *   **Version Control Systems:** GitHub, GitLab, or Bitbucket for tracking code changes, API specifications (like OpenAPI/Swagger files), and release notes.
 *   **Communication Platforms:** Slack or Microsoft Teams channels where engineers and support staff discuss unrecorded workarounds.
-*   **Customer Support Software:** Zendesk, Intercom, or Salesforce Service Cloud to identify recurring user issues that indicate gaps in documentation.
+*   **[Customer Support](/posts/automate-customer-sentiment-analysis-with-openai-api/) Software:** Zendesk, Intercom, or Salesforce Service Cloud to identify recurring user issues that indicate gaps in documentation.
 *   **Application Telemetry:** Datadog or New Relic to monitor error rates that might contradict stated performance metrics in the documentation.
 
 ### The Vector Database and Semantic Router
@@ -62,7 +62,7 @@ When new information enters the system, a semantic router compares the incoming 
 
 ### The Evaluation LLM
 
-You need a reasoning engine to determine how to apply the fix. This is typically a high-tier model like GPT-4, Claude 3.5 Sonnet, or a fine-tuned open-source model like [Llama 3](/posts/building-a-local-knowledge-base-with-llama-3/). The evaluation LLM [reviews](/posts/writesonic-review-honest/) the conflict, determines the scope of the necessary edit, and ensures that changing one paragraph does not inadvertently contradict a different section of the same article.
+You need a reasoning engine to determine how to apply the fix. This is typically a high-tier model like GPT-4, [Claude 3.5 Sonnet](/posts/claude-3-5-sonnet-api-for-secure-internal-tools/), or a fine-tuned open-source model like [Llama 3](/posts/building-a-local-knowledge-base-with-llama-3/). The evaluation LLM [reviews](/posts/writesonic-review-honest/) the conflict, determines the scope of the necessary edit, and ensures that changing one paragraph does not inadvertently contradict a different section of the same article.
 
 ## Practical Steps to Implement Automated Accuracy
 
@@ -92,7 +92,7 @@ Simultaneously, implement automated archival. If an article has not been accesse
 
 ### Step 4: Enable Autonomous Drafting with Human Approval
 
-The final maturity stage involves the AI actually writing the updates. Configure the system to generate diffs. When a support agent solves a novel problem, the AI drafts a new FAQ entry and sends it to the documentation team's queue. 
+The final maturity stage involves the AI actually [writing](/posts/ai-writing-assistant-for-long-form-content/) the updates. Configure the system to generate diffs. When a support agent solves a novel problem, the AI drafts a new FAQ entry and sends it to the documentation team's queue. 
 
 Set strict boundaries on what the AI can publish autonomously. Minor changes (updating a UI button name from 'Submit' to 'Confirm' based on a frontend commit) can be fully automated. Major architectural explanations should always require a subject matter expert's sign-off.
 

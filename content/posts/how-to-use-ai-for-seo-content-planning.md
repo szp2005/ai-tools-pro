@@ -14,7 +14,7 @@ type: "informational"
 
 > **Quick Answer:** Use AI for SEO Content Planning matters because it gives marketers, founders, and solo operators a practical way to solve the problem behind the search. Master AI-driven SEO content planning. Learn how to leverage LLMs for keyword clustering, intent mapping, and content calendars.
 
-The era of manual keyword research in Excel is over. In 2026, the most successful SEOs are using AI not just to write articles, but to build entire **semantic webs** of content. 
+The era of manual keyword [research](/posts/best-llm-tool-for-research-synthesis/) in Excel is over. In 2026, the most successful SEOs are using AI not just to write articles, but to build entire **semantic webs** of content. 
 
 AI-driven content planning allows you to identify gaps in your niche that traditional tools like Ahrefs or Semrush might miss. Here is our blueprint for using LLMs to plan your next 12 months of content.
 
@@ -28,10 +28,10 @@ Google's 2026 algorithms are obsessed with **Search Intent**. AI can categorize 
 
 ## Phase 3: Creating the Content Calendar
 AI excels at scheduling. Ask it to prioritize your topics based on "Low Difficulty / High Relevance."
-- **[Automation](/posts/ai-tools-for-email-writing/)**: Use an n8n workflow to pull these keywords directly into your Google Calendar or Notion workspace.
+- **[Automation](/posts/ai-tools-for-email-writing/)**: Use an n8n [workflow](/posts/best-ai-sidebar-extensions-for-chrome-productivity/) to pull these keywords directly into your Google Calendar or Notion workspace.
 
 ## Conclusion
-AI is a force multiplier for SEO planning. By using it to map out the semantic relationships between topics, you ensure that your site becomes a **Topical Authority** in the eyes of search engines.
+AI is a force multiplier for SEO planning. By using it to map out the semantic relationships between topics, you ensure that your site becomes a **[Topical Authority](/posts/semantic-seo-strategy-for-ai-generated-blog-posts/)** in the eyes of search engines.
 
 ***
 

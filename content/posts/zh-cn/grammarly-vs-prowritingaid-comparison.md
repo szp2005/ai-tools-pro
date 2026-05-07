@@ -194,6 +194,8 @@ Grammarly vs ProWritingAid 最适合那些希望获得实用 [AI 工具](/zh-cn/
 
 - [Notion AI vs ChatGPT for Notes: Which Tool Wins for Knowledge Management?](/posts/notion-ai-vs-chatgpt-for-notes/)
 
+- [Notion AI vs ChatGPT for Notes: Which Tool Wins for Knowledge Management?](/posts/notion-ai-vs-chatgpt-for-notes/)
+
 - [The Best AI Grammar Checker Tools in 2026: An Expert Guide](/posts/best-ai-grammar-checker-tools/)
 
 - [Notion AI vs ChatGPT for Notes: Which Tool Wins for Knowledge Management?](/posts/notion-ai-vs-chatgpt-for-notes/)

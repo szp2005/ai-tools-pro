@@ -37,7 +37,7 @@ The GPU is the single most critical component for running Llama 3 70B. Its VRAM 
 **Price:** $1600-$2000
 **Rating:** 5/5
 
-The NVIDIA GeForce RTX 4090 stands as the pinnacle of consumer-grade GPUs for AI workloads. With a massive 24GB of GDDR6X VRAM, it is currently the only single consumer card capable of loading highly quantized versions of Llama 3 70B (e.g., Q4_K_M or Q3_K_M) entirely onto its memory. Its AD102 GPU architecture, featuring 16384 CUDA cores and advanced Tensor Cores, delivers unparalleled inference speeds, making it the go-to choice for enthusiasts and professionals seeking the best local LLM experience. For full FP16 or even 8-bit quantized Llama 3 70B, two RTX 4090s would be required, offering a formidable, albeit expensive, solution.
+The NVIDIA GeForce RTX 4090 stands as the pinnacle of consumer-grade GPUs for AI workloads. With a massive 24GB of GDDR6X VRAM, it is currently the only single consumer card capable of loading highly quantized versions of Llama 3 70B (e.g., Q4_K_M or Q3_K_M) entirely onto its memory. Its AD102 GPU architecture, featuring 16384 CUDA cores and advanced Tensor Cores, delivers unparalleled inference speeds, making it the go-to choice for enthusiasts and [professionals](/posts/[ollama](/posts/ollama-vs-lm-studio-for-local-model-management/)-installation-guide-privacy-conscious-professionals/) seeking the best [local LLM](/posts/running-mistral-7b-on-consumer-hardware-for-privacy/) experience. For full FP16 or even 8-bit quantized Llama 3 70B, two RTX 4090s would be required, offering a formidable, albeit expensive, solution.
 
 **Pros:**
 - Industry-leading 24GB GDDR6X VRAM, often sufficient for 4-bit Llama 3 70B.

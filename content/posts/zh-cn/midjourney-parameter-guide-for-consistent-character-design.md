@@ -150,4 +150,6 @@ Midjourney 中一致的角色生成不再是一个 单纯的 碰 运气问题；
 
 ## Related Reading
 
+- [Best AI Tools for Architectural Data Visualization in 2026](/posts/best-ai-tools-for-architectural-data-visualization/)
+
 - [Best AI Workflow Automation for Shopify Store Owners in 2026](/posts/ai-workflow-automation-for-shopify-store-owners/)

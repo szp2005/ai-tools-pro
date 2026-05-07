@@ -11,7 +11,7 @@ type: "informational"
 
 # How to Build Custom AI Agents with Ollama: 5-Step Guide
 
-> **Quick Answer:** To build custom AI agents with Ollama, install the Ollama runtime and download a tool-capable local model (like Llama 3 8B or Hermes). Connect this local instance to an orchestration framework like LangChain or CrewAI by pointing the LLM wrapper to `http://localhost:11434`. Finally, define custom Python functions as tools and assign them to your agent, allowing the local LLM to execute actions and solve multi-step problems autonomously.
+> **Quick Answer:** To build custom AI agents with Ollama, install the Ollama runtime and download a tool-capable local model (like Llama 3 8B or Hermes). Connect this local instance to an orchestration framework like LangChain or [CrewAI](/posts/crewai-vs-autogen-automated-software-development-tasks/) by pointing the LLM wrapper to `http://localhost:11434`. Finally, define custom Python functions as tools and assign them to your agent, allowing the [local LLM](/posts/running-mistral-7b-on-consumer-hardware-for-privacy/) to execute actions and solve multi-step problems autonomously.
 
 The shift toward local language models has transformed how developers approach autonomous systems. Relying strictly on cloud APIs for agentic workflows often introduces high latency, unpredictable costs, and significant [data privacy](/posts/building-a-local-knowledge-base-with-llama-3/) risks. By moving the reasoning engine locally, developers can experiment with multi-agent orchestration and complex tool usage without sending sensitive data over the network or monitoring an API dashboard.
 
@@ -32,7 +32,7 @@ A functional local AI agent requires four integrated components:
 
 ## Prerequisites and Initial Setup for Ollama
 
-Before writing the agent logic, the local environment must be capable of running generative models with acceptable inference speeds. Agentic workflows require dozens of sequential model calls; slow inference will render the system unusable.
+Before [writing](/posts/ai-writing-assistant-for-long-form-content/) the agent logic, the local environment must be capable of running generative models with acceptable inference speeds. Agentic workflows require dozens of sequential model calls; slow inference will render the system unusable.
 
 ### Hardware Requirements
 

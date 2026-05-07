@@ -58,7 +58,7 @@ You will need an OpenAI API key, generated from the OpenAI developer platform. I
 Configure the OpenAI node as follows:
 *   **Resource:** Chat
 *   **Operation:** Create
-*   **Model:** Select your preferred model. `gpt-4o-mini` is highly recommended for general text processing due to its speed and low cost, while `gpt-4o` should be reserved for complex reasoning tasks.
+*   **Model:** Select your preferred model. `[gpt-4o](/posts/gemini-for-content-writing-vs-gpt-4o/)-mini` is highly recommended for general text processing due to its speed and low cost, while `gpt-4o` should be reserved for complex reasoning tasks.
 
 The most critical part of this step is structuring the prompt. You must use n8n's expression editor to inject the Airtable data dynamically into the prompt. 
 
@@ -98,9 +98,9 @@ If you plan to process hundreds of records simultaneously, configure n8n's batch
 
 Once the foundational Airtable-OpenAI connection is established, the potential use cases expand rapidly. You are no longer limited to basic summarization.
 
-You can chain multiple OpenAI nodes together. For example, Node 1 could determine the sentiment of a customer support ticket. Depending on that sentiment, a Switch node routes the data. Negative sentiment tickets are routed to Node 2, which drafts an apologetic response, while positive tickets go to Node 3 to request a review. All of these varied outputs are then funneled back into the appropriate Airtable columns.
+You can chain multiple OpenAI nodes together. For example, Node 1 could determine the sentiment of a [customer support](/posts/automate-customer-sentiment-analysis-with-openai-api/) ticket. Depending on that sentiment, a Switch node routes the data. Negative sentiment tickets are routed to Node 2, which drafts an apologetic response, while positive tickets go to Node 3 to request a review. All of these varied outputs are then funneled back into the appropriate Airtable columns.
 
-Because n8n allows for granular control over the JSON data at every step, you can build highly specific internal tools that operate entirely autonomously, turning a static Airtable database into an active processing engine.
+Because n8n allows for granular control over the JSON data at every step, you can build highly specific [internal tools](/posts/claude-3-5-sonnet-api-for-secure-internal-tools/) that operate entirely autonomously, turning a static Airtable database into an active processing engine.
 
 ## Frequently Asked Questions
 

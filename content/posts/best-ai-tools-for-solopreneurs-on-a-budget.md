@@ -23,7 +23,7 @@ The key to building a lean, profitable solo operation is selecting versatile, hi
 
 ## Essential AI Assistants and Workspaces
 
-The foundation of any solopreneur tech stack is a reliable large language model (LLM) and a centralized workspace to manage daily operations, notes, and strategy.
+The foundation of any [solopreneur](/posts/best-ai-tools-for-solopreneurs/) tech stack is a reliable large language model (LLM) and a centralized workspace to manage daily operations, notes, and strategy.
 
 ### 1. Claude Pro
 
@@ -116,7 +116,7 @@ Video and audio content are high-leverage marketing channels, but editing is not
 Descript's AI features, such as Studio Sound (which makes a cheap lapel mic sound like a professional studio setup) and AI eye contact correction, allow solopreneurs to produce highly polished content without investing thousands of dollars in camera equipment and complex editing software.
 
 **Pros:**
-- Text-based editing is highly intuitive for non-video professionals
+- Text-based editing is highly intuitive for non-video [professionals](/posts/ollama-installation-guide-privacy-conscious-professionals/)
 - Studio Sound feature saves money on expensive microphones
 - Easy generation of vertical video clips for social media
 
@@ -136,7 +136,7 @@ Scaling a one-person business ultimately requires delegating repetitive operatio
 
 While Zapier is the default automation tool for many, its pricing scales aggressively with usage. For budget-conscious solopreneurs, n8n is the superior alternative. It allows for complex, multi-step automations with advanced logic, conditional routing, and deep AI integrations out of the box.
 
-n8n features dedicated "Advanced AI" nodes that allow you to build custom AI agents, connect them to your databases, and automate tasks like categorizing customer support emails, summarizing industry news, or drafting social media posts based on RSS feeds. If you have basic technical skills, the self-hosted version provides unlimited workflow executions for the cost of a cheap virtual private server (around $5/month).
+n8n features dedicated "Advanced AI" nodes that allow you to build custom [AI agents](/posts/crewai-vs-autogen-automated-software-development-tasks/), connect them to your databases, and automate tasks like categorizing customer support emails, summarizing industry news, or drafting social media posts based on RSS feeds. If you have basic technical skills, the self-hosted version provides unlimited workflow executions for the cost of a cheap virtual private server (around $5/month).
 
 **Pros:**
 - Drastically cheaper than Zapier for high-volume tasks

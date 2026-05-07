@@ -13,7 +13,7 @@ type: "informational"
 
 > **Quick Answer:** Using Claude Sonnet for technical software documentation dramatically reduces the time engineers spend [writing](/posts/ai-writing-assistant-for-long-form-content/) API references, architecture overviews, and code comments. Its large context window and advanced reasoning capabilities allow it to ingest entire codebases and output precise, structured markdown or docstrings that require minimal human editing, making it the ideal middle-ground model for daily engineering tasks.
 
-Writing technical documentation is the chronic pain point of software engineering. Developers excel at building complex systems but often lack the time, bandwidth, or inclination to maintain extensive documentation. When system architecture evolves rapidly, documentation inevitably drifts from reality, leading to onboarding bottlenecks, integration errors, and operational friction. Traditional automated documentation generators extract code structures but fail to capture the underlying context, design decisions, and business logic.
+Writing technical documentation is the chronic pain point of software engineering. Developers excel at building complex systems but often lack the time, bandwidth, or inclination to maintain extensive documentation. When system architecture evolves rapidly, documentation inevitably drifts from reality, leading to onboarding bottlenecks, [integration](/posts/n8n-vs-zapier-for-high-volume-lead-processing/) errors, and operational friction. Traditional automated documentation generators extract code structures but fail to capture the underlying context, design decisions, and business logic.
 
 Enter Large Language Models. While early iterations struggled with hallucinating endpoints or losing the thread in complex codebases, the current generation of AI has crossed the threshold of reliability. Specifically, utilizing Claude Sonnet for technical documentation tasks has become a standard practice for high-performing engineering teams. 
 
@@ -87,7 +87,7 @@ A strong prompt structure looks like this:
 
 Technical writing should be authoritative, clear, and concise. AI naturally tends toward overly enthusiastic or conversational tones ("Let's dive into how this amazing function works!"). 
 
-Explicitly instruct Sonnet to avoid adjectives, marketing language, and conversational transitions. Pointing it to a known standard is highly effective: "Adhere to the Microsoft Manual of Style for Technical Publications. Keep sentences under 20 words. Use active voice."
+Explicitly instruct Sonnet to avoid adjectives, [marketing](/posts/ai-tools-for-social-media-content/) language, and conversational transitions. Pointing it to a known standard is highly effective: "Adhere to the Microsoft Manual of Style for Technical Publications. Keep sentences under 20 words. Use active voice."
 
 ### Requesting Specific Formats
 
@@ -127,7 +127,7 @@ Never pass hardcoded secrets, API keys, or proprietary customer data into any LL
 Sonnet may occasionally hallucinate the existence of a standard library function or assume an endpoint accepts a parameter it doesn't. You can mitigate this by explicitly commanding the model: "If the provided code does not explicitly define an error state, state 'No documented error states', do not guess or infer standard HTTP errors unless they appear in the source."
 
 **Structuring Repositories for AI:**
-AI models perform better when code is already well-organized. Clear variable names, modular functions, and descriptive file paths help Sonnet understand the intent. Paradoxically, preparing your codebase to be easily read by an AI forces you to adopt better software engineering practices overall.
+[AI models](/posts/claude-3-5-sonnet-vs-gpt-4o-for-complex-reasoning/) perform better when code is already well-organized. Clear variable names, modular functions, and descriptive file paths help Sonnet understand the intent. Paradoxically, preparing your codebase to be easily read by an AI forces you to adopt better software engineering practices overall.
 
 ## The Final Verdict on AI-Assisted Documentation
 

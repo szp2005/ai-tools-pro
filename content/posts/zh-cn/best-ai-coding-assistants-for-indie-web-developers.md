@@ -173,6 +173,10 @@ AI模型总是充满自信，即便是在它们犯错的时候。当要求助手
 
 - [Custom GPT vs Claude Projects for Personal PKM in 2026](/posts/custom-gpt-vs-claude-projects-for-personal-pkm/)
 
+- [The AI Writing Landscape in 2026: Beyond Text Generation](/posts/best-ai-writing-tools-2026/)
+
+- [Custom GPT vs Claude Projects for Personal PKM in 2026](/posts/custom-gpt-vs-claude-projects-for-personal-pkm/)
+
 - [Custom GPT vs Claude Projects for Personal PKM in 2026](/posts/custom-gpt-vs-claude-projects-for-personal-pkm/)
 
 - [Custom GPT vs Claude Projects for Personal PKM in 2026](/posts/custom-gpt-vs-claude-projects-for-personal-pkm/)

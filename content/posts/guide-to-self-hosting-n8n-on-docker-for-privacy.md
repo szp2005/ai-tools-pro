@@ -13,11 +13,11 @@ _As an Amazon Associate we earn from qualifying purchases. This post may contain
 
 # Self Hosting n8n on Docker for Privacy: Complete Setup Guide
 
-> **Quick Answer:** A guide to self hosting n8n on Docker for privacy involves provisioning a Linux server, setting up Docker and Docker Compose, and deploying n8n alongside a PostgreSQL database. By routing traffic through a reverse proxy with SSL and isolating the Docker network, you ensure that sensitive workflow data, API keys, and internal automation logic remain strictly under your control, entirely separate from third-party cloud infrastructure.
+> **Quick Answer:** A guide to self hosting n8n on Docker for privacy involves provisioning a Linux server, setting up Docker and Docker Compose, and deploying n8n alongside a PostgreSQL database. By routing traffic through a reverse proxy with SSL and isolating the Docker network, you ensure that sensitive workflow data, API keys, and internal [automation](/posts/ai-tools-for-email-writing/) logic remain strictly under your control, entirely separate from third-party cloud infrastructure.
 
 As automation becomes deeply integrated into everyday business operations, the volume of sensitive data passing through integration platforms has skyrocketed. When you connect your CRM, email provider, internal databases, and communication tools, you are creating a central nervous system for your digital operations. Using hosted SaaS solutions means trusting a third party with the credentials and raw data from every single connected service. 
 
-For privacy-conscious individuals and organizations handling sensitive information, this presents a significant risk. The alternative is bringing the automation engine in-house. n8n is a powerful, source-available workflow automation tool that rivals commercial alternatives while allowing you to run it on your own hardware. 
+For privacy-conscious individuals and organizations handling sensitive information, this presents a significant risk. The alternative is bringing the automation engine in-house. n8n is a powerful, source-available [workflow automation](/posts/n8n-vs-zapier-for-advanced-workflow-automation/) tool that rivals commercial alternatives while allowing you to run it on your own hardware. 
 
 This guide outlines the precise steps and architectural decisions required to deploy n8n securely using Docker. By isolating the application and its database, controlling the environment variables, and managing network access, you establish a resilient and private automation hub.
 
@@ -41,7 +41,7 @@ From a software perspective, your server must have Docker Engine and Docker Comp
 
 Security begins at the host operating system. Before touching Docker, you must secure the foundation. Connect to your server via SSH using key-based authentication, and disable password logins in your SSH configuration to prevent brute-force attacks.
 
-Ensure your system packages are up to date. Establish a basic firewall using UFW (Uncomplicated Firewall). You only need to expose port 22 for SSH, port 80 for HTTP (which will redirect to secure traffic), and port 443 for HTTPS. All internal communication between n8n and its database will happen within an isolated Docker network, meaning the database port should never be exposed to the public internet.
+Ensure your system packages are up to date. Establish a basic firewall using UFW (Uncomplicated Firewall). You only need to expose port 22 for SSH, port 80 for HTTP (which will redirect to secure traffic), and port 443 for HTTPS. All [internal communication](/posts/ai-powered-transcription-tools-for-private-podcasting/) between n8n and its database will happen within an isolated Docker network, meaning the database port should never be exposed to the public internet.
 
 Create a dedicated system user for managing Docker deployments. Running applications as the root user is a massive security vulnerability. Create a standard user account, add it to the Docker group, and execute all subsequent deployment steps under this context.
 

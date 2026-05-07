@@ -15,7 +15,7 @@ _As an Amazon Associate we earn from qualifying purchases. This post may contain
 
 > **Quick Answer:** To fine-tune Llama 3 on local data, you need to format your custom dataset into JSONL using the ChatML or Alpaca format, set up a Python environment with PyTorch and Unsloth (or PEFT), load the quantized Llama 3 8B model, apply Low-Rank Adaptation (LoRA) to freeze core weights while training new adapters, and execute the training loop using Hugging Face's SFTTrainer. This process allows you to securely teach the model specific domain knowledge without uploading sensitive data to third-party servers.
 
-Data privacy and domain-specific accuracy are the two biggest challenges organizations face when implementing Large Language Models. While base models like Meta's Llama 3 are exceptionally capable, they only know the generalized data they were trained on. When you need an AI to understand your internal documentation, specific coding styles, or proprietary customer service protocols, off-the-shelf models fall short. 
+Data [privacy](/posts/ollama-installation-guide-privacy-conscious-professionals/) and domain-specific accuracy are the two biggest challenges organizations face when implementing Large Language Models. While base models like Meta's Llama 3 are exceptionally capable, they only know the generalized data they were trained on. When you need an AI to understand your internal [documentation](/posts/self-healing-knowledge-base-using-ai/), specific coding styles, or proprietary customer service protocols, off-the-shelf models fall short. 
 
 Sending sensitive corporate or personal data to closed-source API providers is often a non-starter due to compliance, security, and IP concerns. The solution is local fine-tuning. By running the training process entirely on your own hardware, your data never leaves your network. 
 
@@ -64,7 +64,7 @@ You need to convert your local PDFs, databases, or text files into JSON objects 
 }
 ```
 
-Save this as `local_training_data.jsonl`. If you are converting raw documentation, write a script to chunk the text and use an existing local LLM to synthetically generate instruction-response pairs based on those chunks. This is called synthetic data generation and is the most efficient way to build a training set from unstructured local files.
+Save this as `local_training_data.jsonl`. If you are converting raw documentation, write a script to chunk the text and use an existing [local LLM](/posts/running-mistral-7b-on-consumer-hardware-for-privacy/) to synthetically generate instruction-response pairs based on those chunks. This is called synthetic data generation and is the most efficient way to build a training set from unstructured local files.
 
 ## Setting Up the Training Environment
 
@@ -252,6 +252,10 @@ Training time depends heavily on dataset size and GPU hardware. Fine-tuning Llam
 ---
 
 ## Related Reading
+
+- [Pinecone Vector Database: 5-Step Custom Build Guide](/posts/build-a-custom-vector-database-with-pinecone/)
+
+- [Best Local LLM Tools for Developers in 2026: Top 7 Ranked](/posts/best-local-llm-tools-for-developers-2026/)
 
 - [Best Local LLM Tools for Developers in 2026: Top 7 Ranked](/posts/best-local-llm-tools-for-developers-2026/)
 

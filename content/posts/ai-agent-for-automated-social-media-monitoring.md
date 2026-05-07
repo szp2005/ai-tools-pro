@@ -85,14 +85,14 @@ ListenKit provides a robust, multi-tenant architecture designed for marketing ag
 Deploying an AI agent is not a plug-and-play operation. It requires strategic configuration to prevent the system from generating noise or acting inappropriately on behalf of your brand.
 
 ### The Build vs. Buy Decision
-Many engineering-heavy teams consider building a custom social monitoring agent using OpenAI's API or open-source models like Llama 3. 
+Many engineering-heavy teams consider building a custom social monitoring agent using OpenAI's API or open-source models like [Llama 3](/posts/running-llama-3-locally-for-privacy-conscious-lawyers/). 
 *   **When to Build:** If you operate in a highly regulated industry (e.g., healthcare, defense) where data cannot legally be processed by third-party SaaS vendors, building a localized, self-hosted agent is mandatory.
 *   **When to Buy:** For 95% of commercial operations, buying an off-the-shelf solution is more cost-effective. Maintaining API connections to platforms like Twitter/X and Reddit, managing rate limits, and constantly fine-tuning the underlying models requires a dedicated engineering team that usually costs more than enterprise SaaS licensing.
 
 ### Setting Up Escalation Matrices
 The most common mistake when deploying an AI agent is failing to define strict boundaries for automation. You must categorize scenarios into three tiers:
-1.  **Fully Autonomous (Tier 1):** The agent identifies a routine FAQ (e.g., "What are your business hours?") and replies instantly without human review.
-2.  **Human-in-the-Loop (Tier 2):** The agent detects a frustrated customer, drafts an empathetic response, and queues it. A human agent reviews, clicks approve, and the message sends. This is optimal for complex support queries.
+1.  **Fully Autonomous (Tier 1):** The agent identifies a routine FAQ (e.g., "What are your business hours?") and replies instantly without human [review](/posts/otter-ai-review-transcription/).
+2.  **Human-in-the-Loop (Tier 2):** The agent detects a frustrated customer, drafts an empathetic response, and queues it. A human agent [reviews](/posts/writesonic-review-honest/), clicks approve, and the message sends. This is optimal for complex support queries.
 3.  **Strict Escalation (Tier 3):** The agent detects legal threats, severe harassment, or mentions of physical safety. The agent takes zero public action but immediately pages the legal and PR teams with a summary of the situation.
 
 ### Managing Hallucinations and Brand Risk

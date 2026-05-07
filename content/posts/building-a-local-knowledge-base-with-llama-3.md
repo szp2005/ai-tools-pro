@@ -13,7 +13,7 @@ type: "informational"
 
 > **Quick Answer:** Building a local knowledge base with Llama 3 requires setting up a Retrieval-Augmented Generation (RAG) pipeline entirely on your own hardware. You achieve this by running Llama 3 locally via inference engines like Ollama, converting your personal documents into mathematical vectors using an embedding model, storing them in a local [vector database](/posts/build-a-custom-vector-database-with-pinecone/) like ChromaDB, and connecting these components with an orchestration framework like LangChain.
 
-Relying on cloud-based AI models for querying personal or corporate documents introduces significant privacy risks. When you send sensitive financial records, proprietary source code, or confidential client communications to external APIs, you lose control over where that data is stored and how it might be used for future model training. This tension between the utility of large language models (LLMs) and the necessity of data sovereignty has driven the rapid adoption of local AI deployments.
+Relying on cloud-based AI models for querying personal or corporate documents introduces significant privacy risks. When you send sensitive financial records, proprietary source code, or confidential client communications to external APIs, you lose control over where that data is stored and how it might be used for future model training. This tension between the utility of large language models (LLMs) and the necessity of data sovereignty has driven the rapid adoption of [local AI](/posts/ollama-installation-guide-privacy-conscious-professionals/) deployments.
 
 The release of Meta's Llama 3 fundamentally shifted the landscape of local AI. By offering a model that fits on consumer-grade hardware while competing with proprietary cloud models in reasoning and instruction-following, Llama 3 makes local deployment practical for individuals and small engineering teams. However, an LLM alone only knows what it was trained on; it does not know your specific documents. 
 
@@ -33,7 +33,7 @@ When you submit a query, the system first converts your question into a vector u
 
 Running an LLM and a vector database locally requires specific hardware considerations, particularly regarding memory. The bottleneck in local AI is rarely raw processing power; it is almost always memory bandwidth and VRAM (Video RAM) capacity.
 
-The Llama 3 family includes two primary sizes suitable for standard hardware: the 8B (8 billion parameters) and the 70B (70 billion parameters) models. For the vast majority of local knowledge base implementations, the 8B model is the correct choice. It provides exceptional reasoning capabilities while remaining lightweight enough to run on common consumer hardware.
+The Llama 3 family includes two primary sizes suitable for standard hardware: the 8B (8 billion parameters) and the 70B (70 billion parameters) models. For the vast majority of local knowledge base implementations, the 8B model is the correct choice. It provides exceptional reasoning capabilities while remaining lightweight enough to run on common [consumer hardware](/posts/running-mistral-7b-on-consumer-hardware-for-privacy/).
 
 To run the Llama 3 8B model effectively, you must utilize quantization. Quantization reduces the precision of the model's weights (e.g., from 16-bit to 4-bit), significantly decreasing the memory footprint with negligible loss in output quality. 
 
@@ -47,7 +47,7 @@ If you attempt to run the 70B model, even with aggressive 4-bit quantization, yo
 
 The foundational layer of your system is the inference engine—the software responsible for loading the Llama 3 weights into memory and executing the mathematical operations required to generate text. While you could write custom PyTorch scripts, modern inference servers handle memory management and API routing far more efficiently.
 
-Ollama has become the standard for local LLM deployment. It abstracts away the complexities of CUDA drivers, weight formats, and model execution, providing a clean command-line interface and a robust local API that mimics the [OpenAI](/posts/automate-customer-sentiment-analysis-with-openai-api/) standard.
+Ollama has become the standard for local [LLM deployment](/posts/comparing-local-rag-solutions-for-private-knowledge-bases/). It abstracts away the complexities of CUDA drivers, weight formats, and model execution, providing a clean command-line interface and a robust local API that mimics the [OpenAI](/posts/automate-customer-sentiment-analysis-with-openai-api/) standard.
 
 After installing Ollama for your operating system, pulling the Llama 3 model requires a single command in your terminal: `ollama run llama3`. This command downloads the 8B model natively optimized for your hardware. Ollama automatically applies the correct quantization format (GGUF) and manages the GPU offloading.
 

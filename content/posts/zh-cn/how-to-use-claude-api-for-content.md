@@ -263,6 +263,8 @@ def robust_claude_call(messages):
 
 ## Related Reading
 
+- [Gemini Content Writing: Expert AI Strategy Guide](/posts/how-to-use-gemini-for-content-writing/)
+
 - [Gemini for Content Writing: An Expert Guide](/posts/how-to-use-gemini-for-content-writing/)
 
 - [How to Use Gemini for Content Writing: An Expert Guide](/posts/how-to-use-gemini-for-content-writing/)

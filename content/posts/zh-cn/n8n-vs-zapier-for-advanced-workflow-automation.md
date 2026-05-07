@@ -156,6 +156,12 @@ Zapier webhooks 高度可靠，但会受限于基于你定价等级的严格速�
 
 ## Related Reading
 
+- [n8n CRM Data Entry Automation: 5-Step Integration Guide](/posts/n8n-integration-for-automated-crm-data-entry/)
+
+- [n8n Automation for Automated Invoice Processing 2026: Setup Guide](/posts/n8n-automation-for-automated-invoice-processing-2026/)
+
+- [n8n Ollama Local Integration: Complete Setup Guide](/posts/how-to-connect-n8n-to-local-ollama-instance/)
+
 - [n8n Automation for Automated Invoice Processing 2026: Setup Guide](/posts/n8n-automation-for-automated-invoice-processing-2026/)
 
 - [How to Connect n8n to Local Ollama Instance: Complete Setup Guide](/posts/how-to-connect-n8n-to-local-ollama-instance/)

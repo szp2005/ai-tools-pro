@@ -13,7 +13,7 @@ _As an Amazon Associate we earn from qualifying purchases. This post may contain
 
 # Local LLM Deployment for Offline Document Analysis: A Complete Guide
 
-> **Quick Answer:** Local LLM deployment for offline document analysis involves setting up a large language model on your own hardware to process documents without an internet connection, ensuring maximum data privacy, security, and low-latency performance for sensitive or proprietary information. This approach is critical for compliance, cost control, and uninterrupted access to advanced analytical capabilities.
+> **Quick Answer:** Local LLM deployment for offline document analysis involves setting up a large language model on your own hardware to process documents without an internet connection, ensuring maximum data [privacy](/posts/ollama-installation-guide-privacy-conscious-professionals/), security, and low-latency performance for sensitive or proprietary information. This approach is critical for compliance, cost control, and uninterrupted access to advanced analytical capabilities.
 
 The proliferation of large language models (LLMs) has revolutionized how we interact with and extract insights from textual data. However, for many organizations and individuals, leveraging these powerful tools in a cloud-based environment presents significant challenges, particularly concerning data privacy, security, and compliance. Industries handling sensitive information—such as legal, healthcare, finance, and government—cannot always risk sending proprietary or confidential documents to external servers for processing.
 
@@ -91,7 +91,7 @@ The effectiveness of your local LLM deployment hinges on selecting and optimizin
 Several open-source LLM families are well-suited for local deployment and offline document analysis:
 
 *   **Llama 3 (Meta):** Available in 8B and 70B parameter versions, Llama 3 models are highly capable, excelling in reasoning, code generation, and general language understanding. The 8B variant is often a strong candidate for local deployment with sufficient VRAM.
-*   **Mistral/Mixtral (Mistral AI):** Mistral 7B is known for its efficiency and strong performance for its size, making it an excellent choice for resource-constrained environments. Mixtral 8x7B, a Sparse Mixture of Experts (SMoE) model, offers performance comparable to much larger models while maintaining a relatively small active parameter count during inference, making it surprisingly efficient for its capabilities.
+*   **Mistral/Mixtral (Mistral AI):** [Mistral 7B](/posts/running-mistral-7b-on-consumer-hardware-for-privacy/) is known for its efficiency and strong performance for its size, making it an excellent choice for resource-constrained environments. Mixtral 8x7B, a Sparse Mixture of Experts (SMoE) model, offers performance comparable to much larger models while maintaining a relatively small active parameter count during inference, making it surprisingly efficient for its capabilities.
 *   **Gemma (Google):** Derived from Google's Gemini models, Gemma 2B and 7B offer strong performance, particularly for tasks requiring factual recall and instruction following. They are designed to be lightweight and efficient.
 *   **Phi-3 (Microsoft):** These small, high-quality models (e.g., Phi-3-mini 3.8B) are specifically engineered for performance on edge devices and local machines, making them ideal for scenarios where hardware resources are limited but strong reasoning is still required.
 
@@ -291,7 +291,7 @@ Start by mapping the current manual process from trigger to final handoff. Once 
 
 ### Which tools are usually needed for local LLM deployment for offline document analysis?
 
-Most teams need an intake source, a workflow automation tool, a database or CRM, and a notification channel. The exact stack matters less than having clear field names, ownership, and error handling.
+Most teams need an intake source, a workflow [automation](/posts/ai-tools-for-email-writing/) tool, a database or CRM, and a notification channel. The exact stack matters less than having clear field names, ownership, and error handling.
 
 ### How do you avoid automation mistakes?
 
