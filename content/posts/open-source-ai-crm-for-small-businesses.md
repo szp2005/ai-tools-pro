@@ -152,4 +152,6 @@ An open source CRM can be highly secure, often more so than commercial multi-ten
 
 - [Best Chrome Extension AI for Email Automation in 2026](/posts/chrome-extension-ai-email-automation/)
 
+- [Best Chrome Extension AI for Email Automation in 2026](/posts/chrome-extension-ai-email-automation/)
+
 - [The AI Writing Landscape in 2026: Beyond Text Generation](/posts/best-ai-writing-tools-2026/)

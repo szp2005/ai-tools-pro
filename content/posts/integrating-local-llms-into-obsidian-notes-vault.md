@@ -156,4 +156,6 @@ If using Ollama, you simply run `ollama pull [model-name]` in your terminal to o
 
 - [Custom GPT vs Claude Projects for Personal PKM in 2026](/posts/custom-gpt-vs-claude-projects-for-personal-pkm/)
 
+- [Custom GPT vs Claude Projects for Personal PKM in 2026](/posts/custom-gpt-vs-claude-projects-for-personal-pkm/)
+
 - [Best AI Coding Assistants for Indie Web Developers in 2026](/posts/best-ai-coding-assistants-for-indie-web-developers/)

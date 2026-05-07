@@ -132,4 +132,6 @@ Make（原名Integromat）被广泛认为是处理复杂电子商务工作流的
 
 ## Related Reading
 
+- [Best AI Tools for Architectural Data Visualization in 2026](/posts/best-ai-tools-for-architectural-data-visualization/)
+
 - [Adobe Firefly vs Canva Magic Studio for Graphics: Which Is Better?](/posts/adobe-firefly-vs-canva-magic-studio-for-graphics/)

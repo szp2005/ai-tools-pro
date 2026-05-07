@@ -141,6 +141,12 @@ n8n将其执行日志存储在 其 数据库中。如果您有每天执行数千
 
 ## Related Reading
 
+- [n8n Workflow Automation for Content Creators: Complete 2026 Guide](/posts/n8n-workflow-automation-for-content-creators/)
+
+- [n8n vs Make Comparison for Enterprise Automation (2026)](/posts/n8n-vs-make-comparison-for-enterprise-automation/)
+
+- [n8n Slack Notifications: 5-Step Automation Guide](/posts/how-to-automate-slack-notifications-with-n8n/)
+
 - [n8n vs Make Comparison for Enterprise Automation (2026)](/posts/n8n-vs-make-comparison-for-enterprise-automation/)
 
 - [n8n Slack Notifications: 5-Step Automation Guide](/posts/how-to-automate-slack-notifications-with-n8n/)

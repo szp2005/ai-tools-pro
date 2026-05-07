@@ -150,6 +150,8 @@ AI extensions can generally only read what your browser can currently display. I
 
 - [Best AI Sidebar Extensions for Chrome Productivity in 2026](/posts/best-ai-sidebar-extensions-for-chrome-productivity/)
 
+- [Best AI Sidebar Extensions for Chrome Productivity in 2026](/posts/best-ai-sidebar-extensions-for-chrome-productivity/)
+
 - [2026年提升生产力的最佳Chrome AI侧边栏扩展程序](/posts/best-ai-sidebar-extensions-for-chrome-productivity/)
 
 - [Best AI Sidebar Extensions for Chrome Productivity in 2026](/posts/best-ai-sidebar-extensions-for-chrome-productivity/)

@@ -150,4 +150,6 @@ You should allocate an absolute minimum of 50GB of free space. A single base mod
 
 - [Flux vs Stable Diffusion for Realistic Product Photography (2026)](/posts/flux-vs-stable-diffusion-for-realistic-product-photography/)
 
+- [Flux vs Stable Diffusion for Realistic Product Photography (2026)](/posts/flux-vs-stable-diffusion-for-realistic-product-photography/)
+
 - [Adobe Firefly vs Canva Magic Studio for Graphics: Which Is Better?](/posts/adobe-firefly-vs-canva-magic-studio-for-graphics/)

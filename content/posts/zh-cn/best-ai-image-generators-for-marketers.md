@@ -76,4 +76,6 @@ AI图像生成器极大地减少了与传统摄影和寻找库存图像相关的
 
 ## Related Reading
 
+- [Best AI Workflow Automation for Shopify Store Owners in 2026](/posts/ai-workflow-automation-for-shopify-store-owners/)
+
 - [Best AI Image Upscaler for Large Format Printing in 2026](/posts/ai-image-upscaler-for-large-format-printing/)

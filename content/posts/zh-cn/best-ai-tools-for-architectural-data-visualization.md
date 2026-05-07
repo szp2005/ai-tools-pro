@@ -170,4 +170,6 @@ AI 工具的效用完全取决于您输入给它们的数据。为了从 Cove.to
 
 ## Related Reading
 
+- [Adobe Firefly vs Canva Magic Studio for Graphics: Which Is Better?](/posts/adobe-firefly-vs-canva-magic-studio-for-graphics/)
+
 - [The AI Writing Landscape in 2026: Beyond Text Generation](/posts/best-ai-writing-tools-2026/)

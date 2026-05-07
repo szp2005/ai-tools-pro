@@ -170,6 +170,8 @@ These frameworks can automate a wide range of tasks, including generating code s
 
 - [Comparing AutoGen vs CrewAI for Multi Agent Systems: 2026 Review](/posts/comparing-autogen-vs-crewai-for-multi-agent-systems/)
 
+- [Comparing AutoGen vs CrewAI for Multi Agent Systems: 2026 Review](/posts/comparing-autogen-vs-crewai-for-multi-agent-systems/)
+
 - [Best Open Source AI Agent Frameworks Review 2026: Top Picks](/posts/open-source-ai-agent-frameworks-review-2026/)
 
 - [Comparing AutoGen vs CrewAI for Multi Agent Systems: 2026 Review](/posts/comparing-autogen-vs-crewai-for-multi-agent-systems/)

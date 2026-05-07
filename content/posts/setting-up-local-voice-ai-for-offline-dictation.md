@@ -185,4 +185,6 @@ Local implementations using Whisper "Medium" or "Large" models meet or exceed th
 
 ## Related Reading
 
+- [Best Open Source AI Agent Frameworks Review 2026: Top Picks](/posts/open-source-ai-agent-frameworks-review-2026/)
+
 - [Best AI Tools for Architectural Data Visualization in 2026](/posts/best-ai-tools-for-architectural-data-visualization/)

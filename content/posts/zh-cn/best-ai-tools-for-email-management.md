@@ -165,6 +165,8 @@ AI电子邮件工具需要访问您的收件箱才能运行。审查它们的隐
 
 - [Best Chrome Extension AI for Data Scraping 2026](/posts/best-chrome-extension-ai-for-data-scraping-2026/)
 
+- [Best Chrome Extension AI for Data Scraping 2026](/posts/best-chrome-extension-ai-for-data-scraping-2026/)
+
 - [Best AI-Powered Project Management Tools for Teams in 2026](/posts/ai-powered-project-management-tools-2026/)
 
 - [Best Chrome Extension AI for Data Scraping 2026](/posts/best-chrome-extension-ai-for-data-scraping-2026/)
