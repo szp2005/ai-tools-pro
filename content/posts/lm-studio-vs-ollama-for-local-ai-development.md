@@ -21,6 +21,8 @@ While both tools ultimately serve the same underlying function—loading quantiz
 
 Choosing between LM Studio vs Ollama for local AI development dictates how you will manage model files, allocate system resources, and integrate AI capabilities into your local stack. This comparison breaks down both tools based on performance, developer experience, system requirements, and integration capabilities to help you optimize your local AI workflow.
 
+Before choosing the runtime, shortlist the [best open source LLMs for local text generation](/posts/best-open-source-llms-for-local-text-generation/) so you can test both tools against the same model size, quantization, and workload.
+
 ## Core Architectural Differences
 
 Before examining the tools individually, it is crucial to understand how they differ under the hood. Both LM Studio and Ollama rely heavily on `llama.cpp` for CPU inference and GPU acceleration (Metal for Apple Silicon, CUDA for NVIDIA, and ROCm for AMD). Because they share this underlying inference engine, raw generation speed—tokens per second—is nearly identical when running the same model file with the same quantization level on identical hardware. 

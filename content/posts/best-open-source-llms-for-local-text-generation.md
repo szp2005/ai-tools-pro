@@ -21,6 +21,8 @@ Running large language models (LLMs) locally means your data never leaves your m
 
 However, the open-source ecosystem is vast and constantly evolving. With thousands of models uploaded to platforms like Hugging Face weekly, identifying the optimal tool for your specific hardware and use case can be overwhelming. This guide breaks down the best open source LLMs for local text generation available in 2026, comparing their architectures, hardware requirements, reasoning capabilities, and ideal use cases to help you build the perfect local AI setup.
 
+If your goal is retrieval rather than free-form generation, pair model selection with a [local RAG solution comparison](/posts/comparing-local-rag-solutions-for-private-knowledge-bases/) so your hardware choice also supports embeddings, indexing, and private document search.
+
 ## Why Run Open Source LLMs Locally?
 
 Before diving into the specific models, it is crucial to understand the tangible benefits of transitioning from cloud-based AI to local text generation. While proprietary models often hold a slight edge in massive parameter counts, local LLMs offer advantages that cloud services simply cannot match.

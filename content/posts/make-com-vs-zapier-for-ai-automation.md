@@ -21,6 +21,8 @@ When evaluating Make.com vs Zapier for AI automation, the decision extends beyon
 
 This guide examines both platforms purely through the lens of AI automation, analyzing their capabilities in handling LLM APIs, prompt chaining, data transformation, and cost efficiency at scale.
 
+For solo operators building a broader automation stack, compare this platform decision with [AI tools for solopreneurs](/posts/best-ai-tools-for-solopreneurs/) so workflow automation, writing, research, and operations fit one coherent toolchain.
+
 ## Core Differences in Automation Architecture
 
 To understand how these tools handle AI, you must first look at how they handle data.
