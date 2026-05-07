@@ -35,7 +35,7 @@ For instance, if you ask, "What are the macroeconomic impacts of the new Europea
 
 ### 2. Multi-Model Selection
 
-Unlike some [AI tools](/posts/rytr-vs-copy-ai-for-copywriting/) that lock you into a single proprietary model, Perplexity embraces an open ecosystem approach. Users can switch between the latest models from OpenAI (GPT-4o or its successors), Anthropic (Claude 3.5 Opus/Sonnet), and Meta (Llama 3 or 4). This flexibility is invaluable. If you need creative writing, you might switch to Claude. If you need hard logic and coding assistance alongside your web search, you might switch to the latest GPT model. This model-agnostic approach ensures that Perplexity users always have access to the state-of-the-art without needing multiple subscriptions.
+Unlike some [AI tools](/posts/rytr-vs-copy-ai-for-copywriting/) that lock you into a single proprietary model, Perplexity embraces an open ecosystem approach. Users can switch between the latest models from OpenAI (GPT-4o or its successors), Anthropic (Claude 3.5 Opus/Sonnet), and Meta (Llama 3 or 4). This flexibility is invaluable. If you need creative [writing](/posts/ai-writing-assistant-for-long-form-content/), you might switch to Claude. If you need hard logic and coding assistance alongside your web search, you might switch to the latest GPT model. This model-agnostic approach ensures that Perplexity users always have access to the state-of-the-art without needing multiple subscriptions.
 
 ### 3. File Analysis and Multimodal Inputs
 

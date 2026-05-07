@@ -21,7 +21,7 @@ This guide details the architectural decisions, configuration steps, and operati
 
 ## Understanding the Core Architecture
 
-A functional RAG system requires three primary operations: ingestion, storage, and retrieval. Orchestrating these operations requires an integration layer capable of handling webhooks, API requests, data transformation, and scheduled jobs.
+A functional RAG system requires three primary [operations](/posts/automating-indie-hacker-workflows-with-make-com/): ingestion, storage, and retrieval. Orchestrating these operations requires an integration layer capable of handling webhooks, API requests, data transformation, and scheduled jobs.
 
 ### The Role of n8n in AI Orchestration
 n8n acts as the central nervous system for your pipeline. Unlike simple point-to-point [automation tools](/posts/n8n-vs-zapier-for-advanced-workflow-automation/), n8n handles advanced data manipulation, error routing, and branching logic. In the context of RAG, n8n performs two distinct workflows. The first is the ingestion workflow, which routinely scrapes internal knowledge bases, chunks the text, requests embeddings, and pushes the data to Pinecone. The second is the execution workflow, which intercepts a user query, translates it into a vector, searches the database, and prompts the LLM. 

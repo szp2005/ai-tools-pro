@@ -57,7 +57,7 @@ You need to convert your local PDFs, databases, or text files into JSON objects 
 ```json
 {
   "messages": [
-    {"role": "system", "content": "You are a senior database administrator."},
+    {"role": "system", "[content](/posts/how-to-automate-content-with-n8n-and-claude/)": "You are a senior database administrator."},
     {"role": "user", "content": "Write a PostgreSQL query to find duplicate emails in the users table."},
     {"role": "assistant", "content": "Here is the query to find duplicate emails:\n\n```sql\nSELECT email, COUNT(*) \nFROM users \nGROUP BY email \nHAVING COUNT(*) > 1;\n```"}
   ]
@@ -235,7 +235,7 @@ Learning how to fine tune Llama 3 on local data provides complete control over y
 ## Frequently Asked Questions
 
 ### Can I fine tune Llama 3 on a CPU or Mac?
-While it is technically possible to perform fine-tuning on Apple Silicon (M-series Macs) using MLX, standard PyTorch/CUDA-based fine-tuning requires an NVIDIA GPU. CPU fine-tuning is exponentially too slow to be practical and is highly discouraged.
+While it is technically possible to perform fine-tuning on [Apple Silicon](/posts/how-to-run-local-llms-on-macbook-m3/) (M-series Macs) using MLX, standard PyTorch/CUDA-based fine-tuning requires an NVIDIA GPU. CPU fine-tuning is exponentially too slow to be practical and is highly discouraged.
 
 ### How much data do I need to fine tune Llama 3 locally?
 For instruction fine-tuning to adopt a specific tone or format, 500 to 1,000 high-quality examples are sufficient. For injecting complex new domain knowledge, you will need 2,000 to 10,000 highly diverse examples.

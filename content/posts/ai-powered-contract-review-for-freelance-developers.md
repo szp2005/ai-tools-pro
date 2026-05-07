@@ -23,7 +23,7 @@ The maturation of legal-specific Large Language Models (LLMs) has introduced a h
 
 ## Why Freelance Developers Need Specialized Legal Analysis
 
-Software engineering contracts contain specific nuances that differ drastically from general freelance writing or design agreements. The stakes are often higher due to the nature of the systems being built, the access to proprietary data, and the potential for cascading system failures.
+Software engineering contracts contain specific nuances that differ drastically from general freelance [writing](/posts/ai-writing-assistant-for-long-form-content/) or design agreements. The stakes are often higher due to the nature of the systems being built, the access to proprietary data, and the potential for cascading system failures.
 
 ### Intellectual Property and "Work Made for Hire"
 

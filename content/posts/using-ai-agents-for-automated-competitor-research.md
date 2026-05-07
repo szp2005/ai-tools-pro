@@ -60,7 +60,7 @@ Avoid the temptation to track everything. Broad instructions lead to high API co
 
 You need an orchestration layer to manage the agent's memory, tools, and execution loop.
 *   **[CrewAI](/posts/crewai-multi-agent-system-legal-research-automation/) / [AutoGen](/posts/crewai-vs-autogen-automated-software-development-tasks/):** Ideal for multi-agent setups where you might have one "Scraper Agent" that gathers raw text, and an "Analyst Agent" that synthesizes the findings.
-*   **LangGraph / LlamaIndex:** Better for building highly deterministic, graph-based workflows where you need strict control over the sequence of operations.
+*   **LangGraph / LlamaIndex:** Better for building highly deterministic, graph-based workflows where you need strict control over the sequence of [operations](/posts/automating-indie-hacker-workflows-with-make-com/).
 *   **Browser-Use / Playwright + LLM:** For deep web navigation where the agent must click buttons, log into portals, or scroll through dynamic JavaScript-rendered pages.
 
 ### Step 3: Configure Data Ingestion Sources
@@ -83,7 +83,7 @@ Data sitting in a database is useless. Connect your agent's output to your opera
 
 Running autonomous agents requires managing cloud infrastructure and API tokens. 
 
-**Model Selection:** Do not use GPT-4o or [Claude 3.5 Sonnet](/posts/claude-3-5-sonnet-api-for-secure-internal-tools/) for the initial raw web scraping or basic text extraction; they are too expensive. Use smaller, faster models like [Llama 3](/posts/running-llama-3-locally-for-privacy-conscious-lawyers/) (8B) or Claude 3 Haiku for the heavy lifting of reading thousands of pages. Reserve the frontier models strictly for the final synthesis and complex reasoning steps.
+**Model Selection:** Do not use [GPT-4o](/posts/gemini-for-content-writing-vs-gpt-4o/) or [Claude 3.5 Sonnet](/posts/claude-3-5-sonnet-api-for-secure-internal-tools/) for the initial raw web scraping or basic text extraction; they are too expensive. Use smaller, faster models like [Llama 3](/posts/running-llama-3-locally-for-privacy-conscious-lawyers/) (8B) or Claude 3 Haiku for the heavy lifting of reading thousands of pages. Reserve the frontier models strictly for the final synthesis and [complex reasoning](/posts/claude-3-5-sonnet-vs-gpt-4o-for-complex-reasoning/) steps.
 
 **Cost Control:** An agent trapped in an infinite loop on a confusing webpage can drain API credits rapidly. Always implement hard execution limits (e.g., `max_iterations=5` or a timeout of 60 seconds per page).
 

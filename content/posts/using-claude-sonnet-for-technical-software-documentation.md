@@ -17,7 +17,7 @@ Writing technical documentation is the chronic pain point of [software engineeri
 
 Enter Large Language Models. While early iterations struggled with hallucinating endpoints or losing the thread in complex codebases, the current generation of AI has crossed the threshold of reliability. Specifically, utilizing Claude Sonnet for technical documentation tasks has become a standard practice for high-performing engineering teams. 
 
-This guide breaks down exactly how to leverage Anthropic's Sonnet model to generate, maintain, and structure technical software documentation, moving from manual drudgery to a highly automated, context-aware workflow.
+This guide breaks down exactly how to leverage Anthropic's Sonnet model to generate, maintain, and structure technical software documentation, moving from manual drudgery to a highly automated, context-aware [workflow](/posts/best-ai-sidebar-extensions-for-chrome-productivity/).
 
 ## Why Claude Sonnet Excels at Technical Writing
 
@@ -65,7 +65,7 @@ Sonnet can be integrated into pre-commit hooks or bulk-processing scripts to par
 
 ### Release Notes and Changelogs
 
-Translating a list of terse git commit messages into user-facing release notes requires context translation. A commit like `fix: update redis timeout in auth flow` needs to be translated to "Resolved an issue where users experienced intermittent login timeouts."
+Translating a list of terse git commit messages into user-facing release notes requires context [translation](/posts/ai-tool-for-transcription-and-translation-2026/). A commit like `fix: update redis timeout in auth flow` needs to be translated to "Resolved an issue where users experienced intermittent login timeouts."
 
 By piping `git log` outputs and pull request descriptions into Sonnet, teams can automatically generate structured release notes categorized by Features, Bug Fixes, and Breaking Changes, tailored to either internal engineering audiences or external end-users.
 

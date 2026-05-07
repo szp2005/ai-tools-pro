@@ -84,7 +84,7 @@ The extension excels in its simplicity. It strips away the complex bot-building 
 
 **Cons:**
 - Lacks the deep scheduling and monitoring UI of larger platforms
-- Customer support can be slow on the lower pricing tiers
+- [Customer support](/posts/automate-customer-sentiment-analysis-with-openai-api/) can be slow on the lower pricing tiers
 
 ### 4. Magical
 

@@ -108,7 +108,7 @@ If you are using tools like ChatGPT or Claude, take advantage of "Custom Instruc
 
 As we look toward the horizon, AI's role in email is moving beyond mere text generation. We are entering the era of autonomous inbox management.
 
-Future iterations of AI will likely involve agentic systems that not only write emails but autonomously triage your inbox. Imagine an AI agent that reads an incoming vendor request, checks your accounting software to see if the budget allows for it, cross-references your calendar for a meeting time, and drafts a complete, contextually accurate reply, leaving it in your drafts folder for a single-click approval.
+Future iterations of AI will likely involve agentic systems that not only write emails but autonomously triage your inbox. Imagine an AI agent that reads an incoming vendor request, checks your [accounting](/posts/n8n-automation-for-automated-invoice-processing-2026/) software to see if the budget allows for it, cross-references your calendar for a meeting time, and drafts a complete, contextually accurate reply, leaving it in your drafts folder for a single-click approval.
 
 Furthermore, we will see advanced predictive personalization. AI will analyze a recipient's digital footprint and past interactions to suggest the exact optimal time to send an email, the exact subject line most likely to trigger an open, and the specific psychological framing most likely to elicit a positive response.
 

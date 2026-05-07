@@ -124,7 +124,7 @@ Evaluate where you currently work. If your entire company operates within Google
 
 ### Security and Data Privacy
 
-AI email tools require access to your inbox to function. It is critical to review their privacy policies. Ensure the provider uses OAuth for authentication (meaning they never see your actual password) and verify their data retention policies. Look for explicit guarantees that your email content is not being used to train public, generalized [AI models](/posts/claude-3-5-sonnet-vs-gpt-4o-for-complex-reasoning/), and that data is processed securely, preferably utilizing SOC 2 compliant infrastructure.
+AI email tools require access to your inbox to function. It is critical to review their privacy policies. Ensure the provider uses OAuth for authentication (meaning they never see your actual password) and verify their data retention policies. Look for explicit guarantees that your email [content](/posts/how-to-automate-content-with-n8n-and-claude/) is not being used to train public, generalized [AI models](/posts/claude-3-5-sonnet-vs-gpt-4o-for-complex-reasoning/), and that data is processed securely, preferably utilizing SOC 2 compliant infrastructure.
 
 ## Conclusion
 

@@ -24,7 +24,7 @@ n8n empowers small businesses to connect various applications, services, and API
 
 n8n operates on a node-based visual programming paradigm, where each "node" represents a specific application, service, or function. These nodes can be chained together to form complex workflows, reacting to triggers and performing actions across different platforms. For small businesses, this means the ability to:
 
-*   **Automate Lead Management:** Automatically capture leads from forms, websites, or social media, enrich their data, and push them into your CRM system.
+*   **Automate Lead Management:** Automatically capture leads from forms, websites, or [social media](/posts/ai-tools-for-social-media-content/), enrich their data, and push them into your CRM system.
 *   **Streamline Sales Processes:** Automate follow-up emails, create tasks for sales representatives, and update deal stages based on customer interactions.
 *   **Enhance [Customer Support](/posts/automate-customer-sentiment-analysis-with-openai-api/):** Route support tickets, send automated responses, and update customer profiles with support interactions.
 *   **Personalize Marketing Efforts:** Segment customers based on behavior or demographics and trigger personalized email campaigns or notifications.
@@ -78,7 +78,7 @@ These nodes provide direct, out-of-the-box connectivity to popular CRM systems. 
 
 **Pros:**
 - Direct, authenticated access to major CRM platforms.
-- Simplifies complex API calls into user-friendly operations.
+- Simplifies complex API calls into user-friendly [operations](/posts/automating-indie-hacker-workflows-with-make-com/).
 - Enables creation, update, and retrieval of various CRM entities.
 - Reduces development time and potential for errors.
 

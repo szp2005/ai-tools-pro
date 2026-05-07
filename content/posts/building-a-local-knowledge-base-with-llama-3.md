@@ -17,7 +17,7 @@ Relying on cloud-based [AI models](/posts/claude-3-5-sonnet-vs-gpt-4o-for-comple
 
 The release of Meta's Llama 3 fundamentally shifted the landscape of local AI. By offering a model that fits on consumer-grade hardware while competing with proprietary cloud models in reasoning and instruction-following, Llama 3 makes local deployment practical for individuals and small engineering teams. However, an LLM alone only knows what it was trained on; it does not know your specific documents. 
 
-To bridge this gap, you must combine Llama 3 with a custom retrieval system. This architecture ensures the model dynamically references your files to answer questions, all while your network remains disconnected from the broader internet. This guide breaks down the exact hardware requirements, software stack, and implementation steps required to establish a fully offline, private AI assistant.
+To bridge this gap, you must combine Llama 3 with a custom retrieval system. This [architecture](/posts/best-ai-tools-for-architectural-data-visualization/) ensures the model dynamically references your files to answer questions, all while your network remains disconnected from the broader internet. This guide breaks down the exact hardware requirements, software stack, and implementation steps required to establish a fully offline, private AI assistant.
 
 ## Understanding the RAG Architecture
 
@@ -45,7 +45,7 @@ If you attempt to run the 70B model, even with aggressive 4-bit quantization, yo
 
 ## Step 1: Setting Up the Local Inference Engine
 
-The foundational layer of your system is the inference engine—the software responsible for loading the Llama 3 weights into memory and executing the mathematical operations required to generate text. While you could write custom PyTorch scripts, modern inference servers handle memory management and API routing far more efficiently.
+The foundational layer of your system is the inference engine—the software responsible for loading the Llama 3 weights into memory and executing the mathematical [operations](/posts/automating-indie-hacker-workflows-with-make-com/) required to generate text. While you could write custom PyTorch scripts, modern inference servers handle memory management and API routing far more efficiently.
 
 Ollama has become the standard for local [LLM deployment](/posts/comparing-local-rag-solutions-for-private-knowledge-bases/). It abstracts away the complexities of CUDA drivers, weight formats, and model execution, providing a clean command-line interface and a robust local API that mimics the [OpenAI](/posts/automate-customer-sentiment-analysis-with-openai-api/) standard.
 
@@ -67,7 +67,7 @@ If you chunk the text too small, the embedding loses context (e.g., an orphaned 
 
 The vector database serves as the long-term memory for your system. It stores the mathematical representations of your document chunks and performs the high-speed similarity searches necessary for RAG.
 
-For a completely local setup, you need an embedded vector database that runs within your local environment without requiring complex cloud infrastructure or separate server deployments. ChromaDB and FAISS (Facebook AI Similarity Search) are the most common choices for this architectural pattern.
+For a completely local setup, you need an embedded vector database that runs within your local environment without requiring complex [cloud infrastructure](/posts/local-first-ai-tools-vs-cloud-structured-2026/) or separate server deployments. ChromaDB and FAISS (Facebook AI Similarity Search) are the most common choices for this architectural pattern.
 
 ChromaDB is highly recommended for developers building their first local knowledge base. It operates directly entirely within your local file system, storing the vectors in a SQLite-based structure. When you initialize ChromaDB, you define a local directory path where the database will persist on your hard drive. 
 

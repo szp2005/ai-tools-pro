@@ -77,7 +77,7 @@ The software translates dense engineering calculations—like HVAC loads, U-valu
 
 TestFit leverages AI algorithms to visualize site feasibility data instantly. Users input hard constraints such as local setbacks, parking-to-unit ratios, zoning height limits, and target yields. The AI then generates and visualizes optimized building topologies that fit within those strict parameters. 
 
-It effectively visualizes spatial and financial data simultaneously. As you drag the footprint of a proposed multi-family housing block, TestFit automatically updates the visualization to show the new unit mix, the required parking structure dimensions, and the live pro-forma financial yield. It gives architects and developers immediate visual proof of a project's viability before entering the schematic design phase.
+It effectively visualizes spatial and [financial data](/posts/best-llm-tools-for-financial-data-extraction/) simultaneously. As you drag the footprint of a proposed multi-family housing block, TestFit automatically updates the visualization to show the new unit mix, the required parking structure dimensions, and the live pro-forma financial yield. It gives architects and developers immediate visual proof of a project's viability before entering the schematic design phase.
 
 **Pros:**
 - Generates complex parking and unit layout geometries in seconds
@@ -123,7 +123,7 @@ While it does not simulate hard environmental metrics like wind or carbon, it is
 - Very affordable subscription model suitable for any firm size
 
 **Cons:**
-- Output consistency can vary based on prompt engineering
+- Output consistency can vary based on [prompt engineering](/posts/how-to-use-gemini-for-content-writing/)
 - Strictly aesthetic visualization; lacks hard analytical or engineering data overlays
 
 ## How to Implement AI Visualization Workflows

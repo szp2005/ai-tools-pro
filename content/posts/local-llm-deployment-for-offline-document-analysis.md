@@ -37,7 +37,7 @@ Offline processing eliminates network latency, leading to significantly faster r
 
 ### Cost Efficiency and Predictability
 
-While initial hardware investment for local LLM deployment can be substantial, it often translates into long-term cost savings compared to recurring cloud API fees, especially for high-volume usage. Cloud costs can quickly escalate with increased token usage, complex queries, and data transfer charges. A local setup offers predictable operational expenses, as you pay for hardware once and then primarily for electricity and maintenance. This predictability allows for better budgeting and avoids unexpected spikes in expenditure.
+While initial hardware investment for local LLM deployment can be substantial, it often translates into long-term cost savings compared to recurring cloud API fees, especially for high-volume usage. Cloud costs can quickly escalate with increased token usage, complex queries, and data transfer charges. A [local setup](/posts/stable-diffusion-for-local-image-generation/) offers predictable operational expenses, as you pay for hardware once and then primarily for electricity and maintenance. This predictability allows for better budgeting and avoids unexpected spikes in expenditure.
 
 ### Customization and Control
 
@@ -92,7 +92,7 @@ Several open-source LLM families are well-suited for local deployment and offlin
 
 *   **Llama 3 (Meta):** Available in 8B and 70B parameter versions, Llama 3 models are highly capable, excelling in reasoning, code generation, and general language understanding. The 8B variant is often a strong candidate for local deployment with sufficient VRAM.
 *   **Mistral/Mixtral (Mistral AI):** [Mistral 7B](/posts/running-mistral-7b-on-consumer-hardware-for-privacy/) is known for its efficiency and strong performance for its size, making it an excellent choice for resource-constrained environments. Mixtral 8x7B, a Sparse Mixture of Experts (SMoE) model, offers performance comparable to much larger models while maintaining a relatively small active parameter count during inference, making it surprisingly efficient for its capabilities.
-*   **Gemma (Google):** Derived from Google's Gemini models, Gemma 2B and 7B offer strong performance, particularly for tasks requiring factual recall and instruction following. They are designed to be lightweight and efficient.
+*   **Gemma (Google):** Derived from Google's [Gemini](/posts/gemini-for-content-writing-vs-gpt-4o/) models, Gemma 2B and 7B offer strong performance, particularly for tasks requiring factual recall and instruction following. They are designed to be lightweight and efficient.
 *   **Phi-3 (Microsoft):** These small, high-quality models (e.g., Phi-3-mini 3.8B) are specifically engineered for performance on edge devices and local machines, making them ideal for scenarios where hardware resources are limited but strong reasoning is still required.
 
 When selecting, consider the specific tasks:

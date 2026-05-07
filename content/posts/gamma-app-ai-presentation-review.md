@@ -52,7 +52,7 @@ Gamma completely eliminates this friction with global, one-click themes. The pla
 
 ### 4. Interactive and Dynamic Embeds
 
-Modern presentations are rarely just static text and clip art. Gamma excels at incorporating dynamic, interactive media. You can natively embed YouTube or Vimeo videos, Spotify playlists, interactive Figma prototypes, Airtable bases, Typeform surveys, and live websites directly into your cards. 
+Modern presentations are rarely just static text and clip art. Gamma excels at incorporating dynamic, interactive media. You can natively embed [YouTube](/posts/best-ai-tools-for-youtube-script-writing/) or Vimeo videos, Spotify playlists, interactive Figma prototypes, Airtable bases, Typeform surveys, and live websites directly into your cards. 
 
 Because Gamma is inherently a web-native application, these embeds are fully interactive during the presentation itself. You no longer have to awkwardly Alt-Tab out of your slide deck to show a live software demo in your browser; you can interact with the embedded application right on the Gamma card, keeping your audience focused and your presentation seamless.
 

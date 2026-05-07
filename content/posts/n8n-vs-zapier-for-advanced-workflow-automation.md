@@ -19,7 +19,7 @@ As organizations scale their operations, basic point-to-point integrations quick
 
 This maturation point inevitably leads to a showdown between two distinct approaches to process orchestration. On one side is Zapier, the undisputed market leader that democratized API connections for the masses. On the other is n8n, a node-based, developer-centric platform that treats workflows closer to visual programming than simple mapping. 
 
-Choosing between n8n vs Zapier for advanced workflow automation is rarely a question of basic capabilities—both can move data from Point A to Point B. Instead, the decision hinges on your team's technical proficiency, your strictness regarding [data privacy](/posts/building-a-local-knowledge-base-with-llama-3/), and how your budget scales alongside your operational volume.
+Choosing between n8n vs Zapier for advanced workflow automation is rarely a question of basic capabilities—both can move data from Point A to Point B. Instead, the decision hinges on your team's technical proficiency, your strictness regarding [data privacy](/posts/building-a-local-knowledge-base-with-llama-3/), and how your [budget](/posts/best-ai-tools-for-solopreneurs-on-a-budget/) scales alongside your operational volume.
 
 ## Core Philosophies & Architecture
 
@@ -60,7 +60,7 @@ However, for advanced workflow automation, Zapier's strict linearity and abstrac
 
 n8n is a fair-code licensed, node-based automation platform designed for technical users who need granular control over their data pipelines. It thrives on complexity. You can trigger a single workflow via multiple webhooks, execute complex JavaScript for data transformation, loop through arrays, and handle standard HTTP requests with custom headers and authentication schemes seamlessly.
 
-The defining characteristic of n8n is its hosting flexibility. You can use their managed cloud offering or deploy it on your own infrastructure via Docker. Self-hosting completely removes artificial limits on task executions, meaning your cost is dictated solely by your server resources, not your workflow volume.
+The defining characteristic of n8n is its hosting flexibility. You can use their managed cloud offering or deploy it on your own infrastructure via [Docker](/posts/guide-to-self-hosting-n8n-on-docker-for-privacy/). Self-hosting completely removes artificial limits on task executions, meaning your cost is dictated solely by your server resources, not your workflow volume.
 
 **Pros:**
 - Unrestricted execution volume when self-hosted
@@ -144,7 +144,7 @@ Basic workflows in n8n can be built visually without code. However, to leverage 
 Zapier webhooks are highly reliable but are subject to strict rate limits depending on your pricing tier, which can cause dropped payloads during traffic spikes. A self-hosted n8n instance handles webhooks limited only by the compute resources of your server, making it far superior for high-velocity data ingestion.
 
 ### Are there hidden costs to self-hosting n8n?
-While the n8n software is free to self-host, you must account for the hard costs of your cloud infrastructure (servers, database storage) and the soft costs of engineering time required for initial deployment, ongoing maintenance, security patching, and monitoring.
+While the n8n software is free to self-host, you must account for the hard costs of your [cloud infrastructure](/posts/local-first-ai-tools-vs-cloud-structured-2026/) (servers, database storage) and the soft costs of engineering time required for initial deployment, ongoing maintenance, security patching, and monitoring.
 
 ---
 

@@ -173,7 +173,7 @@ n8n's sandboxed Code node includes the `marked` library. This converts headers, 
 Add a **WordPress** node. Set:
 
 - **Operation:** Create Post
-- **Status:** Draft (always — never auto-publish AI content without a human review)
+- **Status:** Draft (always — never auto-publish AI content without a human [review](/posts/otter-ai-review-transcription/))
 - **Title:** `{{ $('Anthropic - Outline').item.json.content[0].text.split('\n')[0].replace('# ','') }}` — this strips the H1 from the first line of Claude's output
 - **Content:** `{{ $json.html_content }}` — the converted HTML from the Code node
 
@@ -198,7 +198,7 @@ Add an **HTTP Request** node at the end of each successful run that calls the An
 
 ## Comparison: n8n + Claude vs. Competing Stacks {#comparison}
 
-| Factor | n8n + Claude | Zapier + OpenAI | Make + OpenAI |
+| Factor | n8n + Claude | Zapier + [OpenAI](/posts/automate-customer-sentiment-analysis-with-openai-api/) | Make + OpenAI |
 |---|---|---|---|
 | **Monthly cost (50 workflows)** | ~$24 cloud / ~$6 self-hosted | $49+ (task-based pricing) | $29 (operations-based) |
 | **Claude model support** | Native node, full model selection | Via HTTP Request only | Via HTTP Request only |

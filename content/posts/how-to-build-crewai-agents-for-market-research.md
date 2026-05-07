@@ -15,7 +15,7 @@ _As an Amazon Associate we earn from qualifying purchases. This post may contain
 
 > **Quick Answer:** To build CrewAI agents for market research, define distinct roles (e.g., Data Gatherer, Analyst, Strategist), assign specific goals to each agent, provide search and scraping tools, and orchestrate them within a sequential or hierarchical crew to produce actionable market reports automatically.
 
-Market research is traditionally a resource-intensive process requiring hours of data scraping, competitor analysis, and synthesis. The introduction of multi-agent frameworks has shifted this paradigm. By orchestrating specialized [AI agents](/posts/crewai-vs-autogen-automated-software-development-tasks/), teams can automate complex research workflows, ensuring continuous monitoring of market dynamics without manual intervention.
+Market research is traditionally a resource-intensive process requiring hours of data scraping, [competitor analysis](/posts/using-ai-agents-for-competitor-analysis-marketing/), and synthesis. The introduction of multi-agent frameworks has shifted this paradigm. By orchestrating specialized [AI agents](/posts/crewai-vs-autogen-automated-software-development-tasks/), teams can automate complex research workflows, ensuring continuous monitoring of market dynamics without manual intervention.
 
 CrewAI provides a structured, role-based architecture for deploying multiple language models that collaborate to solve complex problems. Unlike standalone chatbots, a CrewAI setup mirrors a real-world research team. You assign specific personas, grant them access to internet tools, and define the exact hand-offs between tasks.
 
@@ -39,7 +39,7 @@ Before defining agents, you must establish the environment and equip your agents
 Install the necessary packages:
 `pip install crewai duckduckgo-search langchain-[openai](/posts/automate-customer-sentiment-analysis-with-openai-api/)`
 
-You will need an LLM provider (OpenAI's [GPT-4o](/posts/gemini-for-content-writing-vs-gpt-4o/) or Anthropic's Claude 3.5 Sonnet are recommended for [complex reasoning](/posts/claude-3-5-sonnet-vs-gpt-4o-for-complex-reasoning/)) and search capabilities. CrewAI integrates natively with Langchain tools.
+You will need an LLM provider (OpenAI's [GPT-4o](/posts/gemini-for-content-writing-vs-gpt-4o/) or Anthropic's [Claude 3.5 Sonnet](/posts/claude-3-5-sonnet-api-for-secure-internal-tools/) are recommended for [complex reasoning](/posts/claude-3-5-sonnet-vs-gpt-4o-for-complex-reasoning/)) and search capabilities. CrewAI integrates natively with Langchain tools.
 
 ```python
 import os

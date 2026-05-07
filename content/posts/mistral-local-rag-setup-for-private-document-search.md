@@ -22,11 +22,11 @@ In an era increasingly defined by data, the ability to quickly and accurately ex
 
 ### What is the best first step for Mistral local RAG setup for private document search?
 
-Start by mapping the current manual process from trigger to final handoff. Once every step is visible, automate repeated data collection and notification steps before touching judgment-heavy decisions.
+Start by mapping the current manual process from trigger to final handoff. Once every step is visible, [automate](/posts/how-to-automate-content-with-n8n-and-claude/) repeated data collection and notification steps before touching judgment-heavy decisions.
 
 ### Which tools are usually needed for Mistral local RAG setup for private document search?
 
-Most teams need an intake source, a workflow [automation](/posts/ai-tools-for-email-writing/) tool, a database or CRM, and a notification channel. The exact stack matters less than having clear field names, ownership, and error handling.
+Most teams need an intake source, a [workflow](/posts/best-ai-sidebar-extensions-for-chrome-productivity/) [automation](/posts/ai-tools-for-email-writing/) tool, a database or CRM, and a notification channel. The exact stack matters less than having clear field names, ownership, and error handling.
 
 ### How do you avoid automation mistakes?
 

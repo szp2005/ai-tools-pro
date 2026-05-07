@@ -21,7 +21,7 @@ However, bolting [ChatGPT](/posts/notion-ai-vs-chatgpt-for-notes/) onto a legacy
 
 ## Why Traditional Cold Email Automation Is Failing
 
-The era of "spray and pray" outreach is dead. Email service providers like Google and Yahoo have implemented strict spam thresholds, typically penalizing domains that exceed a 0.3% spam complaint rate. Sending generic, unpersonalized emails at high volume is the fastest way to trigger these filters and blacklist your domain.
+The era of "spray and pray" outreach is dead. Email service providers like Google and Yahoo have implemented strict spam thresholds, typically penalizing domains that exceed a 0.3% spam complaint rate. Sending generic, unpersonalized emails at [high volume](/posts/n8n-vs-zapier-for-high-volume-lead-processing/) is the fastest way to trigger these filters and blacklist your domain.
 
 Furthermore, buyers are fatigued. A standard B2B decision-maker receives 50 to 100 cold emails daily. They have developed an acute radar for templated variables like `{{First_Name}}` and `{{Company_Name}}`. If an email does not explicitly reference a recent company initiative, a shared professional background, or a specific, deeply researched pain point, it is instantly archived. 
 
@@ -32,7 +32,7 @@ AI solves this by shifting the automation from the *sending* phase to the *resea
 Before executing the steps, you must assemble the correct infrastructure. An effective AI cold email system relies on three distinct layers:
 
 1. **The Data Layer:** Tools like Apollo, ZoomInfo, or Ocean.io to source raw contact information and basic firmographics.
-2. **The Enrichment & AI Layer:** Platforms like Clay or custom Make.com/n8n workflows that connect to [OpenAI](/posts/automate-customer-sentiment-analysis-with-openai-api/) or Anthropic APIs. This layer pulls in external data (website scraping, LinkedIn data) and uses LLMs to synthesize it into usable copy.
+2. **The Enrichment & AI Layer:** Platforms like Clay or custom [Make.com](/posts/automating-indie-hacker-workflows-with-make-com/)/n8n workflows that connect to [OpenAI](/posts/automate-customer-sentiment-analysis-with-openai-api/) or Anthropic APIs. This layer pulls in external data (website scraping, LinkedIn data) and uses LLMs to synthesize it into usable copy.
 3. **The Sending Layer:** Tools like Instantly, Smartlead, or Lemlist. These handle inbox warmup, rotation, and sequence scheduling to ensure maximum deliverability.
 
 ## Step 1: Building a Highly Targeted Lead List
@@ -59,7 +59,7 @@ Instead of inserting this raw data directly into an email, you will use it as co
 
 With the research gathered, use an LLM API to process the data and generate specific, highly relevant opening lines (icebreakers) for each prospect. 
 
-The secret to good AI copy is strict prompt engineering. If you simply ask an LLM to "write a personalized cold email based on this data," it will produce overly formal, sycophantic copy (e.g., "I hope this email finds you well! I was deeply impressed by your synergistic approach to marketing..."). 
+The secret to good AI copy is strict prompt engineering. If you simply ask an LLM to "write a personalized cold email based on this data," it will produce overly formal, sycophantic copy (e.g., "I hope this email finds you well! I was deeply impressed by your synergistic approach to [marketing](/posts/ai-tools-for-social-media-content/)..."). 
 
 Instead, prompt the AI to act as an objective researcher writing a single, casual sentence. Provide clear constraints:
 

@@ -19,7 +19,7 @@ Customer expectations have outpaced traditional support models. Hiring more agen
 
 An AI agent for customer support automation goes [beyond](/posts/best-ai-writing-tools-2026/) legacy chatbots. Instead of relying on rigid decision trees, these agents use large language models and direct API access to understand intent, execute workflows, and close tickets autonomously. They read from your internal [documentation](/posts/self-healing-knowledge-base-using-ai/), connect to your CRM or order management system, and resolve complex queries across email, chat, and social channels.
 
-Choosing the right platform is critical. Implement an immature tool, and you risk frustrating customers with hallucinated answers and endless loops. Choose the right one, and you can automate up to 60% of your tier-1 support volume while drastically reducing median resolution times.
+Choosing the right platform is critical. Implement an immature tool, and you risk frustrating customers with hallucinated answers and endless loops. Choose the right one, and you can [automate](/posts/how-to-automate-content-with-n8n-and-claude/) up to 60% of your tier-1 support volume while drastically reducing median resolution times.
 
 ## Top AI Agents for Customer Support Automation
 

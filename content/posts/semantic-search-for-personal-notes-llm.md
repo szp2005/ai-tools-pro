@@ -23,7 +23,7 @@ Implementing a semantic search for personal notes LLM pipeline allows you to con
 
 To understand how to deploy this system, you must first understand the pipeline. Traditional search uses indexing algorithms like TF-IDF or BM25, which score documents based on how frequently your exact search terms appear. Semantic search, conversely, relies on a technique called Retrieval-Augmented Generation (RAG).
 
-The RAG pipeline for personal notes consists of three distinct layers: the embedding generation, the vector storage, and the retrieval/synthesis layer.
+The [RAG pipeline](/posts/building-a-rag-pipeline-with-n8n-and-pinecone/) for personal notes consists of three distinct layers: the embedding generation, the vector storage, and the retrieval/synthesis layer.
 
 ### The Embedding Layer: Translating Meaning to Math
 
@@ -73,7 +73,7 @@ If chunk A is tokens 1-500, chunk B should be tokens 450-950 (a 50-token overlap
 
 A superior approach respects the markdown structure of your notes. Structural chunking uses parsers to split text exactly at headers (H1, H2, H3) or paragraph breaks. Tools like LangChain's `MarkdownHeaderTextSplitter` allow you to append the header hierarchy as metadata to the chunk. 
 
-If a chunk under the H3 header "Local LLM Benchmarks" is retrieved, the metadata tells the LLM that this text belongs to the parent document "AI Research" under the H2 "Hardware Requirements." This metadata provides critical context that raw text chunks lack.
+If a chunk under the H3 header "Local LLM Benchmarks" is retrieved, the metadata tells the LLM that this text belongs to the parent document "AI [Research](/posts/best-llm-tool-for-research-synthesis/)" under the H2 "Hardware Requirements." This metadata provides critical context that raw text chunks lack.
 
 ## Concrete Recommendations and Tradeoffs
 
@@ -104,7 +104,7 @@ You do not have to build this from scratch via Python scripts. Several mature pl
 
 The true power of a semantic search for personal notes LLM system lies in what happens after retrieval. Once your notes are indexed, you can run complex, cross-document reasoning tasks.
 
-Instead of asking, "Where is my note on Docker commands?", you can ask, "Based on my journal entries from last year, what were the major technical roadblocks I faced when deploying applications, and how did I resolve them?" 
+Instead of asking, "Where is my note on [Docker](/posts/guide-to-self-hosting-n8n-on-docker-for-privacy/) commands?", you can ask, "Based on my journal entries from last year, what were the major technical roadblocks I faced when deploying applications, and how did I resolve them?" 
 
 The system retrieves the disparate journal entries, server config notes, and project post-mortems, and the LLM synthesizes a unified narrative. It highlights patterns in your thinking that you may not have consciously recognized. Your personal notes transform from a cold-storage archive into an active reasoning engine, scaling your cognitive capacity and ensuring that no past insight is ever truly lost.
 

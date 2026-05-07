@@ -76,7 +76,7 @@ Install your chosen Chrome extension from the Chrome Web Store. Most AI tools re
 Before running an AI extension on a dataset of 5,000 rows, test it on five rows. Highlight a small sample size, open the AI sidebar, and issue your prompt. For example: "Extract the domain name from the email addresses in Column A and place them in Column B." 
 
 ### Step 4: Refine the Prompt 
-If the micro-test fails, adjust your instruction. AI models require specificity. If the output included the "@" symbol and you didn't want it, refine the prompt: "Extract the domain name from the email addresses in Column A. Do not include the @ symbol. Output only the domain."
+If the micro-test fails, adjust your instruction. [AI models](/posts/claude-3-5-sonnet-vs-gpt-4o-for-complex-reasoning/) require specificity. If the output included the "@" symbol and you didn't want it, refine the prompt: "Extract the domain name from the email addresses in Column A. Do not include the @ symbol. Output only the domain."
 
 ### Step 5: Execute at Scale
 Once the prompt reliably produces the desired output on the test set, execute it across the larger dataset. Keep the extension open and monitor the first few iterations to ensure the tool handles edge cases or empty cells gracefully.

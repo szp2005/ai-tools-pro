@@ -36,7 +36,7 @@ Many commercial AI providers operate under opaque terms of service regarding dat
 The most significant advantage of executing an LLM on local hardware is the restoration of total data sovereignty. 
 
 ### Zero-Transit Processing
-When a model like [Llama 3](/posts/running-llama-3-locally-for-privacy-conscious-lawyers/) (8B or 70B), Mistral, or Qwen runs on your local GPU or neural processing unit, the data transfer is limited to the system bus of your motherboard. The prompt travels from your keyboard, to system RAM, into VRAM, and back to the display buffer. At no point does the text interface with a network interface controller unless you explicitly command it to.
+When a model like [Llama 3](/posts/running-llama-3-locally-for-privacy-conscious-lawyers/) (8B or 70B), [Mistral](/posts/setup-local-first-ai-research-assistant-with-mistral/), or Qwen runs on your local GPU or neural processing unit, the data transfer is limited to the system bus of your motherboard. The prompt travels from your keyboard, to system RAM, into VRAM, and back to the display buffer. At no point does the text interface with a network interface controller unless you explicitly command it to.
 
 ### Cryptographic and Physical Isolation
 Local hardware permits physical air-gapping. A machine entirely disconnected from the internet can still execute complex natural language tasks, summarize sensitive financial PDFs, or assist in writing proprietary algorithms. For defense contractors, healthcare providers, and financial institutions, this level of isolation is not just a preference; it is a foundational requirement for security architecture.
@@ -49,7 +49,7 @@ Modern software ecosystems are deeply saturated with telemetry—background proc
 Even if a cloud provider promises not to read the explicit content of your prompts, the metadata alone can leak highly sensitive strategic information. A sudden spike in queries related to a specific unannounced merger, a rare medical condition, or a specialized programming language can signal internal company directions to external observers or compromised third parties.
 
 ### Telemetry-Free Local Environments
-Running an LLM via open-source local software stacks like [Ollama](/posts/ollama-installation-guide-privacy-conscious-professionals/), LM Studio, or directly via llama.cpp guarantees the absence of forced telemetry. You control the application layer. If you compile the inference engine from source, you can audit the codebase to ensure absolute silence on network ports. This prevents the silent accumulation of metadata profiles that could be used for corporate espionage or unauthorized user profiling.
+Running an LLM via open-source local software stacks like [Ollama](/posts/ollama-installation-guide-privacy-conscious-professionals/), [LM Studio](/posts/ollama-vs-lm-studio-for-local-model-management/), or directly via llama.cpp guarantees the absence of forced telemetry. You control the application layer. If you compile the inference engine from source, you can audit the codebase to ensure absolute silence on network ports. This prevents the silent accumulation of metadata profiles that could be used for corporate espionage or unauthorized user profiling.
 
 ## Protection Against Model Training Data Leaks
 
@@ -87,7 +87,7 @@ Achieving these privacy benefits requires specific hardware capabilities and sof
 Running modern, highly capable LLMs locally requires sufficient hardware, specifically targeting Unified Memory or dedicated Video RAM (VRAM) to hold the model weights during inference.
 
 *   **Entry-Level (7B to 8B Parameter Models):** Models like Llama 3 8B or Mistral 7B require approximately 6GB to 8GB of VRAM. A standard Nvidia RTX 3060 or 4060, or an Apple Silicon M1/M2/M3 with 16GB of unified memory, is sufficient for rapid, private processing.
-*   **Mid-Range (14B to 32B Parameter Models):** For more complex reasoning and coding tasks, models like Command R or Qwen 32B demand 16GB to 24GB of VRAM. Recommended hardware includes Nvidia RTX 4080/4090 GPUs, or Apple Mac Studio configurations with 32GB to 64GB of unified memory.
+*   **Mid-Range (14B to 32B Parameter Models):** For more [complex reasoning](/posts/claude-3-5-sonnet-vs-gpt-4o-for-complex-reasoning/) and coding tasks, models like Command R or Qwen 32B demand 16GB to 24GB of VRAM. Recommended hardware includes Nvidia RTX 4080/4090 GPUs, or Apple Mac Studio configurations with 32GB to 64GB of unified memory.
 *   **Enterprise-Grade (70B+ Parameter Models):** Running massive, state-of-the-art models like Llama 3 70B locally requires 40GB to 80GB of VRAM. This necessitates multi-GPU setups (e.g., dual RTX 3090s/4090s) or high-end Apple Silicon (M2/M3 Ultra with 128GB+ unified memory). 
 
 ### Secure Software Stacks

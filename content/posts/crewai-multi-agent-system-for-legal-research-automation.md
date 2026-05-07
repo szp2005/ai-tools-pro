@@ -96,7 +96,7 @@ Agents become powerful when they can interact with the outside world. For legal 
 *   **Legal Database APIs:** Integration with services like LexisNexis, Westlaw, or specialized regulatory databases allows agents to perform real-time, targeted searches.
 *   **Document Parsers:** Tools to extract text and metadata from PDFs, Word documents, and other file formats, enabling agents to process internal documents or downloaded legal texts.
 *   **Vector Databases (RAG):** Retrieval-Augmented Generation (RAG) systems are critical. A vector database can store a firm's internal knowledge base, previous legal opinions, or specific client documents, allowing agents to retrieve highly relevant information and ground their responses in proprietary data.
-*   **Natural Language Processing (NLP) Libraries:** For advanced text analysis, entity recognition (e.g., identifying parties, dates, jurisdictions), and sentiment analysis.
+*   **Natural Language Processing (NLP) Libraries:** For advanced text analysis, entity recognition (e.g., identifying parties, dates, jurisdictions), and [sentiment analysis](/posts/automate-customer-sentiment-analysis-with-openai-api/).
 *   **Web Search Tools:** For general background information or identifying recent news related to a legal topic.
 
 By carefully defining these elements, a CrewAI system can be architected to automate complex legal research tasks with a high degree of precision and relevance, significantly augmenting the capabilities of legal professionals.

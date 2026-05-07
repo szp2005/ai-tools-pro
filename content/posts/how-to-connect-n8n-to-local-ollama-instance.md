@@ -19,7 +19,7 @@ Integrating powerful Large Language Models (LLMs) into your daily workflows used
 
 By combining n8n—a flexible, self-hosted workflow [automation](/posts/ai-tools-for-email-writing/) tool—with Ollama, an application that lets you run LLMs locally on your own hardware, you can build sophisticated AI pipelines that are entirely private, free to operate, and incredibly responsive. 
 
-Whether you are automating customer support ticket categorization, generating content drafts from RSS feeds, or summarizing internal [documentation](/posts/self-healing-knowledge-base-using-ai/), connecting these two tools creates a robust engine for local [AI automation](/posts/automating-google-sheets-with-chrome-extension-ai/). This guide will walk you through the precise steps to get n8n communicating seamlessly with your local Ollama instance.
+Whether you are automating [customer support](/posts/automate-customer-sentiment-analysis-with-openai-api/) ticket categorization, generating content drafts from RSS feeds, or summarizing internal [documentation](/posts/self-healing-knowledge-base-using-ai/), connecting these two tools creates a robust engine for local [AI automation](/posts/automating-google-sheets-with-chrome-extension-ai/). This guide will walk you through the precise steps to get n8n communicating seamlessly with your local Ollama instance.
 
 ## Understanding the Architecture
 
@@ -29,7 +29,7 @@ When you connect the two, n8n acts as the client. It sends an HTTP POST request 
 
 ### Why Run Models Locally?
 
-The primary advantages of this setup are data privacy and cost control. Because the model runs on your own hardware, no information ever leaves your network. This is critical for businesses handling sensitive customer data, proprietary code, or confidential internal communications. Furthermore, beyond the initial hardware investment, local inference incurs zero per-token API costs, allowing you to scale your automated operations indefinitely without budget anxiety.
+The primary advantages of this setup are [data privacy](/posts/comparing-local-rag-solutions-for-private-knowledge-bases/) and cost control. Because the model runs on your own hardware, no information ever leaves your network. This is critical for businesses handling sensitive customer data, proprietary code, or confidential internal communications. Furthermore, beyond the initial hardware investment, local inference incurs zero per-token API costs, allowing you to scale your automated operations indefinitely without budget anxiety.
 
 ## Step 1: Configuring Ollama for Network Access
 

@@ -50,7 +50,7 @@ For most users, Ollama is the absolute best way to start running local LLMs on a
 
 ### Step 2: Running Your First Local LLM
 
-Open your macOS Terminal application. Ollama manages model weights and configurations automatically. To download and run Meta's Llama 3 model (an excellent all-around 8B parameter model), simply type:
+Open your macOS Terminal application. Ollama manages model weights and configurations automatically. To download and run Meta's [Llama 3](/posts/running-llama-3-locally-for-privacy-conscious-lawyers/) model (an excellent all-around 8B parameter model), simply type:
 
 `ollama run llama3`
 
@@ -62,7 +62,7 @@ While the terminal is functional, most users prefer a proper graphical user inte
 
 Several excellent interfaces are available:
 - **AnythingLLM:** A powerful application that connects to Ollama and allows you to build private knowledge bases by dragging and dropping PDFs and Word documents into the interface.
-- **Chatbox:** A clean, cross-platform client that resembles the ChatGPT web interface.
+- **Chatbox:** A clean, cross-platform client that resembles the [ChatGPT](/posts/notion-ai-vs-chatgpt-for-notes/) web interface.
 - **Enchanted:** A native macOS and iOS application designed specifically to act as a sleek front-end for Ollama instances.
 
 ## Method 2: Advanced Visual Control with LM Studio

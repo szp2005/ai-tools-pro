@@ -70,7 +70,7 @@ Legal practices generate and manage vast quantities of documents. Ensuring these
 *   **Automated Folder Creation:** Upon opening a new case, n8n can automatically create a standardized folder structure in cloud storage (e.g., Google Drive, Dropbox, SharePoint) for that specific client or case, ensuring consistency across all matters.
 *   **Document Upload and Categorization:** When new documents are created or received (e.g., via email attachment, scanned documents), n8n can facilitate their automatic upload to the correct case folder, potentially even categorizing them based on keywords or file types.
 *   **Version Control Notifications:** While n8n itself isn't a full-fledged document management system, it can integrate with existing ones. For instance, if a new version of a document is uploaded to a shared drive, n8n can notify relevant team members, ensuring everyone is working with the most current version.
-*   **Archiving and Retention:** n8n can also assist with automated archiving processes, moving older case files to designated archive locations after a specified retention period, in compliance with firm policies.
+*   **Archiving and Retention:** n8n can also assist with automated archiving processes, moving older case files to designated archive locations after a specified retention period, in [compliance](/posts/top-privacy-first-ai-tools-for-financial-professionals/) with firm policies.
 
 By automating these document-related tasks, firms can maintain better organization, reduce the time spent searching for files, and minimize the risk of using outdated information.
 
@@ -91,7 +91,7 @@ Beyond client-facing processes, n8n automation templates can significantly impro
 
 Managing firm expenses and client disbursements can be a tedious, error-prone process. Manual entry of receipts and categorization can consume hours each month. n8n can streamline this:
 *   **Automated Receipt Capture:** Employees can snap photos of receipts (e.g., via a mobile app like Expensify or a simple form upload). n8n can then extract key data (vendor, amount, date) using OCR (Optical Character Recognition) services.
-*   **Categorization and Entry:** The extracted data can be automatically categorized based on predefined rules (e.g., "Travel," "Office Supplies," "Client Disbursement") and entered into an accounting system (e.g., QuickBooks, Xero) or a tracking spreadsheet.
+*   **Categorization and Entry:** The extracted data can be automatically categorized based on predefined rules (e.g., "Travel," "Office Supplies," "Client Disbursement") and entered into an [accounting](/posts/n8n-automation-for-automated-invoice-processing-2026/) system (e.g., QuickBooks, Xero) or a tracking spreadsheet.
 *   **Approval Workflows:** For larger expenses or client disbursements, n8n can initiate an approval workflow, sending a notification to a managing partner for review before final processing.
 *   **Client Reimbursement Tracking:** For client-specific expenses, n8n can tag these items for inclusion in client invoices, ensuring all billable expenses are captured accurately.
 

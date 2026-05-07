@@ -81,7 +81,7 @@ Recent updates have strengthened Notion's structured database capabilities. The 
 
 **Pros:**
 - Industry-leading text generation and editing capabilities
-- Q&A feature turns the workspace into a highly accurate internal search engine
+- Q&A feature turns the workspace into a highly accurate internal [search engine](/posts/perplexity-ai-review-2026/)
 - AI autofill properties dramatically reduce manual data entry
 
 **Cons:**
@@ -128,7 +128,7 @@ The platform includes robust generative features for drafting emails directly fr
 
 ## How to Implement AI Project Management Successfully
 
-Transitioning to an AI-powered system requires more than just migrating data; it requires a shift in how your team interacts with software. To maximize the return on your investment, establish clear protocols for data entry. AI models require context to function effectively. A task titled "Fix bug" provides no value to an AI knowledge graph, whereas "Resolve authentication loop in client portal" allows the system to link the task to past pull requests and relevant documentation.
+Transitioning to an AI-powered system requires more than just migrating data; it requires a shift in how your team interacts with software. To maximize the return on your investment, establish clear protocols for data entry. [AI models](/posts/claude-3-5-sonnet-vs-gpt-4o-for-complex-reasoning/) require context to function effectively. A task titled "Fix bug" provides no value to an AI knowledge graph, whereas "Resolve authentication loop in client portal" allows the system to link the task to past pull requests and relevant documentation.
 
 Furthermore, treat the AI as an assistant, not an oracle. While automated scheduling and risk identification algorithms are highly accurate in 2026, human oversight remains necessary for strategic alignment and nuanced capacity planning. Start by automating routine administrative tasks—like standup summaries and meeting note extraction—before handing over core operational scheduling to the algorithm.
 

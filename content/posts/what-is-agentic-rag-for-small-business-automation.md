@@ -19,7 +19,7 @@ Small businesses have historically struggled to bridge the gap between adopting 
 
 Agentic RAG represents the shift from passive information retrieval to active task execution. By giving large language models (LLMs) agency, businesses can automate complex, multi-step processes that previously required human oversight. 
 
-This guide breaks down what agentic RAG is, how the underlying architecture works, and the specific ways small businesses are deploying it to reduce overhead and scale operations.
+This guide breaks down what agentic RAG is, how the underlying architecture works, and the specific ways small businesses are deploying it to reduce overhead and scale [operations](/posts/automating-indie-hacker-workflows-with-make-com/).
 
 ## The Evolution from Standard RAG to Agentic RAG
 
@@ -42,7 +42,7 @@ This multi-step reasoning and tool execution transforms the AI from a knowledge 
 Implementing agentic RAG requires a distinct technical stack compared to basic conversational AI. Small businesses utilizing these systems typically rely on four foundational pillars.
 
 ### The Orchestration Agent
-At the center of the system is the orchestration model. This is an advanced LLM (such as GPT-4, Claude 3.5 Sonnet, or Llama 3) instructed to act as a router and planner. It receives the initial input, determines the intent, and decides which internal tools or sub-agents are required to fulfill the request.
+At the center of the system is the orchestration model. This is an advanced LLM (such as GPT-4, Claude 3.5 Sonnet, or Llama 3) instructed to act as a router and planner. It receives the initial input, determines the intent, and decides which [internal tools](/posts/claude-3-5-sonnet-api-for-secure-internal-tools/) or sub-agents are required to fulfill the request.
 
 ### The Vector Knowledge Base
 Like standard RAG, agentic systems rely on vector databases (such as Pinecone, Weaviate, or local solutions like Chroma) to store semantic representations of business data. This includes product manuals, employee handbooks, past customer support tickets, and standard operating procedures (SOPs). The agent queries this database to gain context before taking action.
@@ -83,7 +83,7 @@ For example, an IT managed service provider (MSP) uses an agentic system to hand
 Sales teams lose substantial time researching inbound leads. An agentic RAG system can intercept a new lead form, use a web-scraping tool to analyze the prospect's company website, query the internal CRM to check for existing relationships, retrieve standard qualification criteria from the vector database, and assign a prioritized score. The agent can then automatically draft a personalized outreach email based on the prospect's tech stack and the seller's specific value proposition.
 
 ### Automated Invoice and Accounts Payable Processing
-Handling accounts payable typically involves manually matching invoices to purchase orders. An agentic RAG system can monitor an accounting inbox, ingest PDF attachments, extract line items, query the internal inventory management system to confirm goods were received, and interact with accounting software like QuickBooks to draft the payment for final human approval.
+Handling accounts payable typically involves manually matching invoices to purchase orders. An agentic RAG system can monitor an [accounting](/posts/n8n-automation-for-automated-invoice-processing-2026/) inbox, ingest PDF attachments, extract line items, query the internal inventory management system to confirm goods were received, and interact with accounting software like QuickBooks to draft the payment for final human approval.
 
 ## Practical Steps to Implement Agentic RAG
 

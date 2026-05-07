@@ -62,7 +62,7 @@ Fred parses the transcript and provides immediate, context-aware answers. For pr
 
 For managers and team leads, Fireflies acts as a coaching tool. The platform analyzes conversational metrics such as:
 * **Talk-to-Listen Ratio:** Are your sales reps dominating the conversation, or are they letting the prospect speak?
-* **Sentiment Analysis:** Was the overall tone of the meeting positive, negative, or neutral? 
+* **[Sentiment Analysis](/posts/automate-customer-sentiment-analysis-with-openai-api/):** Was the overall tone of the meeting positive, negative, or neutral? 
 * **Filler Word Usage:** How often are speakers relying on "um," "ah," or "like"?
 
 These insights are aggregated into dashboards, allowing sales leaders to identify top performers' habits and coach struggling team members based on empirical data rather than subjective observation.

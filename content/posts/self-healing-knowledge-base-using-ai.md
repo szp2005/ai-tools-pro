@@ -58,7 +58,7 @@ The system must ingest data from multiple active channels to understand the curr
 
 All ingested data and existing knowledge base articles must be converted into high-dimensional vectors and stored in a vector database (such as Pinecone, Weaviate, or Milvus). 
 
-When new information enters the system, a semantic router compares the incoming data's vector representation against the stored documentation. If the cosine similarity indicates a direct conflict between the new reality and the old documentation, the routing layer triggers a repair workflow.
+When new information enters the system, a semantic router compares the incoming data's vector representation against the stored documentation. If the cosine similarity indicates a direct conflict between the new reality and the old documentation, the routing layer triggers a repair [workflow](/posts/best-ai-sidebar-extensions-for-chrome-productivity/).
 
 ### The Evaluation LLM
 
@@ -106,11 +106,11 @@ The most severe risk is the AI confidently inserting false information. This usu
 
 ### Handling Tribal Knowledge
 
-AI struggles to update documentation if the necessary context exists only in employees' heads or in undocumented video calls. To solve this, organizations must force knowledge into accessible streams. Recording and transcribing crucial engineering meetings or using AI meeting assistants ensures that this tribal knowledge becomes textual data that the self-healing system can process and integrate.
+AI struggles to update documentation if the necessary context exists only in employees' heads or in undocumented video calls. To solve this, organizations must force knowledge into accessible streams. Recording and transcribing crucial engineering meetings or using [AI meeting assistants](/posts/ai-tool-for-meeting-notes-and-action-items/) ensures that this tribal knowledge becomes textual data that the self-healing system can process and integrate.
 
 ### Cost and API Rate Limits
 
-Continuously vectorizing every Slack message and code commit can result in massive API costs. Optimize your architecture by implementing smart filtering. Only process code commits that merge into the main branch. Only analyze support tickets that reach a resolved status. Use smaller, cheaper models for initial triage and anomaly detection, reserving expensive, heavy-weight models only for complex synthesis and drafting.
+Continuously vectorizing every Slack message and code commit can result in massive API costs. Optimize your [architecture](/posts/best-ai-tools-for-architectural-data-visualization/) by implementing smart filtering. Only process code commits that merge into the main branch. Only analyze support tickets that reach a resolved status. Use smaller, cheaper models for initial triage and anomaly detection, reserving expensive, heavy-weight models only for complex synthesis and drafting.
 
 ## Conclusion
 

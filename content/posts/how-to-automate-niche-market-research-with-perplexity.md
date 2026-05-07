@@ -25,7 +25,7 @@ Standard keyword [research tools](/posts/setup-local-first-ai-research-assistant
 
 Perplexity solves both problems by operating as an answer engine grounded in live internet search. When you ask it to analyze a niche, it actively crawls current forums, reads recent news articles, and synthesizes competitor pricing pages. 
 
-By structuring your queries into a systematic pipeline, you can turn Perplexity into an automated research assistant that performs initial discovery, competitor analysis, and audience pain-point mapping in a matter of minutes rather than days.
+By structuring your queries into a systematic pipeline, you can turn Perplexity into an automated research assistant that performs initial discovery, [competitor analysis](/posts/using-ai-agents-for-competitor-analysis-marketing/), and audience pain-point mapping in a matter of minutes rather than days.
 
 ## Step 1: Automated Niche Discovery Workflows
 
@@ -90,7 +90,7 @@ While Perplexity is not a dedicated SEO tool, it can aggregate data from various
 You need to know where your target audience hangs out. You can automate this discovery by asking Perplexity to reverse-engineer competitor traffic.
 
 **Use this prompt structure:**
-*“Analyze the online presence of [Competitor A] and [Competitor B]. Based on recent marketing reports, SEO data, and [social media](/posts/ai-tools-for-social-media-content/) presence, what are their primary customer acquisition channels? Are they relying heavily on organic search, paid social, YouTube, or direct [B2B outreach](/posts/building-ai-agents-for-cold-email-outreach/)? Provide actionable insights on which channels are currently underutilized in this niche.”*
+*“Analyze the online presence of [Competitor A] and [Competitor B]. Based on recent marketing reports, SEO data, and [social media](/posts/ai-tools-for-social-media-content/) presence, what are their primary customer acquisition channels? Are they relying heavily on organic search, paid social, [YouTube](/posts/best-ai-tools-for-youtube-script-writing/), or direct [B2B outreach](/posts/building-ai-agents-for-cold-email-outreach/)? Provide actionable insights on which channels are currently underutilized in this niche.”*
 
 ### Keyword Clustering for Content Strategy
 
@@ -111,7 +111,7 @@ To get the most accurate and actionable data, you must optimize how you interact
 
 ## Conclusion
 
-Automating niche market research with Perplexity transforms a tedious, multi-day process into a streamlined, hour-long workflow. By utilizing structured prompt chains for intersectional discovery, audience pain-point extraction, and competitor matrix generation, you can bypass the noise of generic internet searches. The key to success is treating Perplexity as a senior research analyst—providing strict formatting constraints, demanding citations, and breaking complex research goals into sequential, easily digestible queries. When executed correctly, this automated system consistently reveals underserved markets ripe for disruption.
+Automating niche market research with Perplexity transforms a tedious, multi-day process into a streamlined, hour-long [workflow](/posts/best-ai-sidebar-extensions-for-chrome-productivity/). By utilizing structured prompt chains for intersectional discovery, audience pain-point extraction, and competitor matrix generation, you can bypass the noise of generic internet searches. The key to success is treating Perplexity as a senior research analyst—providing strict formatting constraints, demanding citations, and breaking complex research goals into sequential, easily digestible queries. When executed correctly, this automated system consistently reveals underserved markets ripe for disruption.
 
 ## Frequently Asked Questions
 
