@@ -1,4 +1,5 @@
 ---
+image: "/og/integrating-local-llms-into-obsidian-notes-vault.webp"
 title: "Integrating Local LLMs into Obsidian Notes Vault: 5-Step Guide"
 description: "Learn the exact process for integrating local LLMs into Obsidian notes vault. Maintain total privacy while chatting with your personal knowledge base offline."
 pubDate: "2026-05-07"
@@ -19,6 +20,8 @@ Your Personal Knowledge Management (PKM) system contains your most valuable inte
 Integrating local LLMs into Obsidian notes vault solves this fundamental tension. By running a Large Language Model directly on your own hardware, you gain the analytical capabilities of advanced AI without a single byte of data leaving your machine. 
 
 The ecosystem surrounding local inference has matured rapidly. What previously required complex Python environments and command-line compilation can now be achieved through graphical interfaces and streamlined local servers. This guide details the exact steps, hardware requirements, and plugin configurations needed to build a fully private, AI-enhanced Obsidian vault.
+
+For teams building a larger private retrieval system, this local Obsidian setup pairs naturally with a [local RAG solution comparison](/posts/comparing-local-rag-solutions-for-private-knowledge-bases/) before you decide whether the vault should stay desktop-only or become a shared knowledge base.
 
 ## Why Run Local LLMs With Your Obsidian Vault?
 

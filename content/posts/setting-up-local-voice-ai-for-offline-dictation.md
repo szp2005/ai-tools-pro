@@ -1,4 +1,5 @@
 ---
+image: "/og/setting-up-local-voice-ai-for-offline-dictation.webp"
 title: "Setting Up Local Voice AI for Offline Dictation: 5-Step Guide"
 description: "Master setting up local voice ai for offline dictation to protect your privacy and eliminate latency. This complete guide covers hardware and Whisper setup."
 pubDate: "2026-05-07"
@@ -19,6 +20,8 @@ Cloud-based dictation tools send your voice data to external servers. While conv
 The alternative is local processing. Advancements in open-weight models have made it possible to run highly accurate speech-to-text engines directly on consumer hardware. 
 
 Setting up local voice AI for offline dictation transforms your workstation into an isolated, highly secure transcription environment. You maintain absolute ownership of your data, eliminate recurring subscription fees, and achieve transcription speeds that outpace cloud alternatives by leveraging your local CPU or GPU. This guide details the specific hardware requirements, software dependencies, and installation steps required to build a reliable offline dictation system.
+
+If you need cloud TTS or voice cloning rather than private speech-to-text, compare this offline stack with a dedicated [AI voice cloning and TTS tool](/posts/ai-tool-for-voice-cloning-and-tts/) so dictation, narration, and synthetic audio stay in their proper lanes.
 
 ## Why Choose Offline Voice Dictation Over Cloud Solutions?
 
