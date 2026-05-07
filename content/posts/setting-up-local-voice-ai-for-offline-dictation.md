@@ -180,3 +180,9 @@ Yes. Apple Silicon processors (M1, M2, M3) are highly optimized for machine lear
 
 ### How accurate is local Whisper compared to cloud services?
 Local implementations using Whisper "Medium" or "Large" models meet or exceed the accuracy of commercial cloud services like Google Docs dictation or Dragon NaturallySpeaking. The local models handle punctuation automatically and possess an extensive vocabulary of technical and medical terminology.
+
+---
+
+## Related Reading
+
+- [Best AI Tools for Architectural Data Visualization in 2026](/posts/best-ai-tools-for-architectural-data-visualization/)

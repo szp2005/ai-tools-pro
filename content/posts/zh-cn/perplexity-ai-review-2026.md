@@ -138,6 +138,8 @@ Google 已将 Gemini 深度整合到其核心搜索体验（AI Overviews）中�
 
 ## Related Reading
 
+- [The Best AI Image Generation Tools in 2026: A Comprehensive Guide](/posts/best-ai-image-generation-tools-2026/)
+
 - [Notion AI vs ChatGPT for Notes: Which Tool Wins for Knowledge Management?](/posts/notion-ai-vs-chatgpt-for-notes/)
 
 - [The Best AI Image Generation Tools in 2026: A Comprehensive Guide](/posts/best-ai-image-generation-tools-2026/)

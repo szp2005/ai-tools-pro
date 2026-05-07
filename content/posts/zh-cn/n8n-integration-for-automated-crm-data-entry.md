@@ -142,6 +142,10 @@ CRM 对 API 调用强制执行严格的速率限制。如果您要导入一批 1
 
 ## Related Reading
 
+- [n8n vs Zapier for Advanced Workflow Automation: Which Is Better in 2026?](/posts/n8n-vs-zapier-for-advanced-workflow-automation/)
+
+- [n8n Ollama Local Integration: Complete Setup Guide](/posts/how-to-connect-n8n-to-local-ollama-instance/)
+
 - [n8n Automation for Automated Invoice Processing 2026: Setup Guide](/posts/n8n-automation-for-automated-invoice-processing-2026/)
 
 - [Automate Content with n8n and Claude: Complete Guide](/posts/how-to-automate-content-with-n8n-and-claude/)

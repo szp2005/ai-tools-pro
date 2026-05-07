@@ -148,6 +148,10 @@ AutoGen 提供了一个广阔、灵活且极其强大的对话画布。它是研
 
 ## Related Reading
 
+- [Custom AI Agents with Ollama: 5-Step Build Guide](/posts/how-to-build-custom-ai-agents-with-ollama/)
+
+- [7 Best AI Agents for Automated LinkedIn Engagement in 2026](/posts/ai-agents-for-automated-linkedin-engagement-2026/)
+
 - [7 Best AI Agents for Automated LinkedIn Engagement in 2026](/posts/ai-agents-for-automated-linkedin-engagement-2026/)
 
 - [Custom AI Agents with Ollama: 5-Step Build Guide](/posts/how-to-build-custom-ai-agents-with-ollama/)

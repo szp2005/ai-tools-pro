@@ -140,3 +140,9 @@ This is usually a chunking or retrieval limit issue. Most RAG interfaces only re
 
 ### Can local AI analyze images and scanned documents?
 Standard text embedding models cannot. You need a multi-modal model (like Llama-3-Vision or LLaVA) and an interface that supports image processing. For scanned documents without text layers, you must run optical character recognition (OCR) software to extract the text into a standard document format before ingestion.
+
+---
+
+## Related Reading
+
+- [Best Offline AI Transcription Tool for macOS 2026](/posts/offline-ai-transcription-tool-for-macos-2026/)

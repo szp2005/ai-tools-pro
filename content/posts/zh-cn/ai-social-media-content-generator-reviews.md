@@ -222,6 +222,8 @@ Anyword 的与众不同之处在于它专注于预测性效果指标。当它生
 
 - [Best AI Tools for YouTube Script Writing in 2026: Top 7 Ranked](/posts/best-ai-tools-for-youtube-script-writing/)
 
+- [Best AI Tools for YouTube Script Writing in 2026: Top 7 Ranked](/posts/best-ai-tools-for-youtube-script-writing/)
+
 - [Best AI-Powered Research Tools for Data Analysis in 2026](/posts/ai-powered-research-tools-for-data-analysis/)
 
 - [Best AI Image Generation for Professional Marketers in 2026](/posts/ai-image-generation-for-professional-marketers/)

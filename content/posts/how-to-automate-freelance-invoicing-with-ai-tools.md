@@ -112,6 +112,8 @@ This is why you should always separate text generation from arithmetic. Use AI t
 
 ## Related Reading
 
+- [Niche Market Research Automation: Perplexity AI 2026 Guide](/posts/how-to-automate-niche-market-research-with-perplexity/)
+
 - [Make.com vs Zapier for AI Automation: Which is Better in 2026?](/posts/make-com-vs-zapier-for-ai-automation/)
 
 - [Niche Market Research Automation: Perplexity AI 2026 Guide](/posts/how-to-automate-niche-market-research-with-perplexity/)

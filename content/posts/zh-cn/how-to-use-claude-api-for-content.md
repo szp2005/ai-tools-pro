@@ -265,6 +265,10 @@ def robust_claude_call(messages):
 
 - [Gemini Content Writing: Expert AI Strategy Guide](/posts/how-to-use-gemini-for-content-writing/)
 
+- [The Best AI Grammar Checker Tools in 2026: An Expert Guide](/posts/best-ai-grammar-checker-tools/)
+
+- [Gemini Content Writing: Expert AI Strategy Guide](/posts/how-to-use-gemini-for-content-writing/)
+
 - [Gemini Content Writing: Expert AI Strategy Guide](/posts/how-to-use-gemini-for-content-writing/)
 
 - [Gemini for Content Writing: An Expert Guide](/posts/how-to-use-gemini-for-content-writing/)
