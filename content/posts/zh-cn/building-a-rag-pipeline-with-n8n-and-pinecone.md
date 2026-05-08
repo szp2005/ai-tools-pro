@@ -138,6 +138,8 @@ RAG 中的幻觉通常由于两个原因发生：从 Pinecone 检索到的块实
 
 ## Related Reading
 
+- [CrewAI Multi-Agent Systems for Legal Research Automation: A Complete Guide](/posts/crewai-multi-agent-system-legal-research-automation/)
+
 - [OpenAI Airtable Integration: n8n Workflow Guide](/posts/using-n8n-to-connect-openai-with-airtable/)
 
 - [Setting Up Local Voice AI for Offline Dictation: 5-Step Guide](/posts/setting-up-local-voice-ai-for-offline-dictation/)

@@ -161,3 +161,9 @@ Leonardo AI 主要生成 2D 图像，这使其非常适合用于 2D 无缝纹理
 
 - [2026 年最佳 AI 图像生成工具：全面指南](/zh-cn/posts/best-ai-image-generation-tools-2026/)
 - [本地优先 AI 工具与 2026 年云结构对比：哪个更好？](/zh-cn/posts/local-first-ai-tools-vs-cloud-structured-2026/)
+
+---
+
+## Related Reading
+
+- [Best AI Workflow Automation for Shopify Store Owners in 2026](/posts/ai-workflow-automation-for-shopify-store-owners/)

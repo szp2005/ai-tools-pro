@@ -180,3 +180,5 @@ AI生成演示文稿的质量与您提供的源材料质量成正比。不要输
 ## Related Reading
 
 - [Beautiful.ai vs Gamma for Presentations: The Ultimate Expert Comparison](/posts/beautiful-ai-vs-gamma-for-presentations/)
+
+- [Beautiful.ai vs Gamma for Presentations: The Ultimate Expert Comparison](/posts/beautiful-ai-vs-gamma-for-presentations/)

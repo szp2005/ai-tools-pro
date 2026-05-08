@@ -152,3 +152,5 @@ Mistral 7B 是一个较小、高效的模型，非常适合在标准硬件上进
 ## Related Reading
 
 - [Self Hosting n8n on Docker for Privacy: Complete Setup Guide](/posts/guide-to-self-hosting-n8n-on-docker-for-privacy/)
+
+- [Self Hosting n8n on Docker for Privacy: Complete Setup Guide](/posts/guide-to-self-hosting-n8n-on-docker-for-privacy/)

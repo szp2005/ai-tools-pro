@@ -162,6 +162,10 @@ Seamless.AI的运作方式不同于传统数据库，它充当了B2B联系人的
 
 - [AI Cold Email Outreach: 5-Step Automation Guide](/posts/how-to-automate-cold-email-outreach-with-ai/)
 
+- [Best AI Agent Tool for Automated Lead Qualification in 2026](/posts/ai-agent-tool-for-automated-lead-qualification/)
+
+- [AI Cold Email Outreach: 5-Step Automation Guide](/posts/how-to-automate-cold-email-outreach-with-ai/)
+
 - [Best Chrome Extension AI for Email Automation in 2026](/posts/chrome-extension-ai-email-automation/)
 
 - [Best AI Agent Tool for Automated Lead Qualification in 2026](/posts/ai-agent-tool-for-automated-lead-qualification/)

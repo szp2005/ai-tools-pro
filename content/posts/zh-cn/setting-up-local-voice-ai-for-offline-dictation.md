@@ -186,3 +186,9 @@ pip install faster-whisper pyaudio
 - [2026 年最佳开源 AI 代理框架评测：首选推荐](/zh-cn/posts/open-source-ai-agent-frameworks-review-2026/)
 
 - [2026 年用于建筑数据可视化的最佳 AI 工具](/zh-cn/posts/best-ai-tools-for-architectural-data-visualization/)
+
+---
+
+## Related Reading
+
+- [Best AI Tools for Architectural Data Visualization in 2026](/posts/best-ai-tools-for-architectural-data-visualization/)

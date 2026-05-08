@@ -131,4 +131,6 @@ Feedback:
 
 ## Related Reading
 
+- [Automate Content with n8n and Claude: Complete Guide](/posts/how-to-automate-content-with-n8n-and-claude/)
+
 - [Headless Chrome Agent: The Complete Automation Guide](/posts/what-is-a-headless-chrome-agent-for-automation/)

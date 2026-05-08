@@ -234,6 +234,10 @@ Stable Diffusion 与 Midjourney 新手指南最适合营销人员、创始人和
 
 - [Stable Diffusion for Local Image Generation: Complete Setup Guide](/posts/stable-diffusion-for-local-image-generation/)
 
+- [The 7 Best AI Image Generators for Marketers in 2026: From Concept to Campaign](/posts/best-ai-image-generators-for-marketers/)
+
+- [Stable Diffusion for Local Image Generation: Complete Setup Guide](/posts/stable-diffusion-for-local-image-generation/)
+
 - [Midjourney vs DALL-E 3: The Ultimate AI Image Generation Comparison](/posts/midjourney-vs-dalle-3-comparison/)
 
 - [The 7 Best AI Image Generators for Marketers in 2026: From Concept to Campaign](/posts/best-ai-image-generators-for-marketers/)

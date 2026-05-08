@@ -195,3 +195,5 @@ type: "informational"
 ## Related Reading
 
 - [Mistral Local RAG Setup: Private Document Search Guide](/posts/mistral-local-rag-setup-for-private-document-search/)
+
+- [Mistral Local RAG Setup: Private Document Search Guide](/posts/mistral-local-rag-setup-for-private-document-search/)

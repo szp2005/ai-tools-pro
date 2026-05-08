@@ -136,4 +136,8 @@ LLMs 和嵌入模型都有上下文限制。你不能将整整一万字的书本
 
 ## Related Reading
 
+- [Best AI Coding Assistants for Indie Web Developers in 2026](/posts/best-ai-coding-assistants-for-indie-web-developers/)
+
+- [Best AI Writing Assistant for SEO with Semantic Layers (2026)](/posts/ai-writing-assistant-for-seo-with-semantic-layers/)
+
 - [Best AI Writing Assistant for SEO with Semantic Layers (2026)](/posts/ai-writing-assistant-for-seo-with-semantic-layers/)

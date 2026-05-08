@@ -191,6 +191,8 @@ Midjourney 对比 DALL-E 3 最适合那些想要实用 [AI 工具](/zh-cn/posts/
 
 - [Midjourney vs DALL-E 3 for Brand Assets: Which Is Better?](/posts/midjourney-vs-dall-e-3-for-brand-assets/)
 
+- [Midjourney vs DALL-E 3 for Brand Assets: Which Is Better?](/posts/midjourney-vs-dall-e-3-for-brand-assets/)
+
 - [The 7 Best AI Image Generators for Marketers in 2026: From Concept to Campaign](/posts/best-ai-image-generators-for-marketers/)
 
 - [Midjourney vs DALL-E 3 for Brand Assets: Which Is Better?](/posts/midjourney-vs-dall-e-3-for-brand-assets/)

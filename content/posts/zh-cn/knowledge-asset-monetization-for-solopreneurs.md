@@ -130,4 +130,6 @@ type: "informational"
 
 - [Best Automated Video Editing Tools for YouTube in 2026](/posts/automated-video-editing-tools-for-youtube-2026/)
 
+- [Best Automated Video Editing Tools for YouTube in 2026](/posts/automated-video-editing-tools-for-youtube-2026/)
+
 - [Best AI Workflow Automation for Shopify Store Owners in 2026](/posts/ai-workflow-automation-for-shopify-store-owners/)

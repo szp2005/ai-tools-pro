@@ -153,6 +153,12 @@ Ollama 则是被动且自动化的。在空闲状态下，后台守护进程的 
 
 ## Related Reading
 
+- [Local AI on Personal Documents: 5-Step Training Guide](/posts/how-to-train-local-ai-on-personal-documents/)
+
+- [Custom AI Agents with Ollama: 5-Step Build Guide](/posts/how-to-build-custom-ai-agents-with-ollama/)
+
+- [Best LLM Tools for Financial Data Extraction in 2026](/posts/best-llm-tools-for-financial-data-extraction/)
+
 - [Custom AI Agents with Ollama: 5-Step Build Guide](/posts/how-to-build-custom-ai-agents-with-ollama/)
 
 - [Best LLM Tools for Financial Data Extraction in 2026](/posts/best-llm-tools-for-financial-data-extraction/)

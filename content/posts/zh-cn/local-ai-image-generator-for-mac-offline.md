@@ -169,4 +169,6 @@ Mac 用户应该寻找专门为 Apple 硬件优化过的模型。
 
 ## Related Reading
 
+- [Flux vs Stable Diffusion for Realistic Product Photography (2026)](/posts/flux-vs-stable-diffusion-for-realistic-product-photography/)
+
 - [Using AI for Automated Software Bug Triaging: Complete Guide](/posts/using-ai-for-automated-software-bug-triaging/)

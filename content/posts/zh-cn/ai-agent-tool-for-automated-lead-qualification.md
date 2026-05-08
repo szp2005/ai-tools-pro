@@ -128,6 +128,8 @@ Agent将处理敏感的公司数据和个人身份信息（PII）。确保平台
 
 ## Related Reading
 
+- [Best AI Tools for Automated B2B Lead Generation in 2026](/posts/ai-tools-for-automated-b2b-lead-generation/)
+
 - [Best AI Agent for Automated Social Media Monitoring in 2026](/posts/ai-agent-for-automated-social-media-monitoring/)
 
 - [Best AI Agent for Automated Social Media Monitoring in 2026](/posts/ai-agent-for-automated-social-media-monitoring/)

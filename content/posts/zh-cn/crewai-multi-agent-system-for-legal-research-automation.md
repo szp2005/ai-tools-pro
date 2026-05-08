@@ -246,4 +246,8 @@ CrewAI 是一个开源框架，允许您编排多个 AI 智能体协同处理复
 
 ## Related Reading
 
+- [CrewAI Agents for Market Research: 5-Step Build Guide](/posts/how-to-build-crewai-agents-for-market-research/)
+
+- [Building a RAG Pipeline with n8n and Pinecone: Complete Guide](/posts/building-a-rag-pipeline-with-n8n-and-pinecone/)
+
 - [Building a RAG Pipeline with n8n and Pinecone: Complete Guide](/posts/building-a-rag-pipeline-with-n8n-and-pinecone/)

@@ -191,6 +191,8 @@ Riverside 主要是一个高保真远程录音室，但其专有的[AI转录](/z
 
 ## Related Reading
 
+- [Best AI-Powered Project Management Tools for Teams in 2026](/posts/ai-powered-project-management-tools-2026/)
+
 - [Best Offline AI Transcription Tool for macOS 2026](/posts/offline-ai-transcription-tool-for-macos-2026/)
 
 - [Best AI Tools for Indie Game Asset Creation in 2026](/posts/best-ai-tools-for-indie-game-asset-creation/)

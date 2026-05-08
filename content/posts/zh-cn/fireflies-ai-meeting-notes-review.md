@@ -161,6 +161,10 @@ Fireflies AI 会议笔记评测最适合想要实用 [AI 工具](/zh-cn/posts/ry
 
 ## Related Reading
 
+- [Rytr vs Copy AI: Which AI Copywriting Tool is Best for Your Business in 2026?](/posts/rytr-vs-copy-ai-for-copywriting/)
+
+- [Gamma App AI Presentation Review: Is It The Future of Slides?](/posts/gamma-app-ai-presentation-review/)
+
 - [Gamma App AI Presentation Review: Is It The Future of Slides?](/posts/gamma-app-ai-presentation-review/)
 
 - [Gamma App AI Presentation Review: Is It The Future of Slides?](/posts/gamma-app-ai-presentation-review/)

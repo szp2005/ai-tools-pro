@@ -309,4 +309,8 @@ type: "informational"
 
 ## Related Reading
 
+- [Midjourney Parameter Guide for Consistent Character Design: Complete Workflow](/posts/midjourney-parameter-guide-for-consistent-character-design/)
+
+- [Comparing Local RAG Solutions for Private Knowledge Bases: Top Picks 2026](/posts/comparing-local-rag-solutions-for-private-knowledge-bases/)
+
 - [Comparing Local RAG Solutions for Private Knowledge Bases: Top Picks 2026](/posts/comparing-local-rag-solutions-for-private-knowledge-bases/)

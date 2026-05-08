@@ -138,3 +138,9 @@ AI非常擅长分类那些包含堆栈追踪、错误代码或清晰复现步骤
 
 - [使用n8n和Claude自动化内容：完整指南](/zh-cn/posts/how-to-automate-content-with-n8n-and-claude/)
 - [如何使用Llama 3构建本地知识库：完整设置指南](/zh-cn/posts/building-a-local-knowledge-base-with-llama-3/)
+
+---
+
+## Related Reading
+
+- [Best AI Image Upscaler for Large Format Printing in 2026](/posts/ai-image-upscaler-for-large-format-printing/)

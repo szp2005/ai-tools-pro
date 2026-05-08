@@ -149,6 +149,12 @@ Markdown (.md) 和纯文本 (.txt) 是 AI 摄取的黄金标准。它们包含�
 
 ## Related Reading
 
+- [Best Offline AI Transcription Tool for macOS 2026](/posts/offline-ai-transcription-tool-for-macos-2026/)
+
+- [LM Studio vs Ollama for Local AI Development: Which Is Better in 2026?](/posts/lm-studio-vs-ollama-for-local-ai-development/)
+
+- [7 Best Open Source LLMs for Local Text Generation in 2026](/posts/best-open-source-llms-for-local-text-generation/)
+
 - [LM Studio vs Ollama for Local AI Development: Which Is Better in 2026?](/posts/lm-studio-vs-ollama-for-local-ai-development/)
 
 - [7 Best Open Source LLMs for Local Text Generation in 2026](/posts/best-open-source-llms-for-local-text-generation/)

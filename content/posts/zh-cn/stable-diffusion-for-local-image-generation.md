@@ -142,4 +142,6 @@ Checkpoint（或基础模型）是一个庞大的、数 GB 的文件，包含能
 
 - [Stable Diffusion vs Midjourney for Beginners: The Ultimate Guide to Choosing Your First AI Image Generator](/posts/stable-diffusion-vs-midjourney-for-beginners/)
 
+- [Stable Diffusion vs Midjourney for Beginners: The Ultimate Guide to Choosing Your First AI Image Generator](/posts/stable-diffusion-vs-midjourney-for-beginners/)
+
 - [Claude 3.5 Sonnet vs GPT-4o: Which Excels for Complex Reasoning?](/posts/claude-3-5-sonnet-vs-gpt-4o-for-complex-reasoning/)

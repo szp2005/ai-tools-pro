@@ -114,4 +114,6 @@ type: "informational"
 
 - [7 Top AI Ad Copy Generators for Facebook Marketing in 2026](/posts/top-ai-ad-copy-generators-facebook-marketing/)
 
+- [7 Top AI Ad Copy Generators for Facebook Marketing in 2026](/posts/top-ai-ad-copy-generators-facebook-marketing/)
+
 - [7 Best AI Research Tools for Medical Literature Review in 2026](/posts/best-ai-research-tools-for-medical-literature-review/)

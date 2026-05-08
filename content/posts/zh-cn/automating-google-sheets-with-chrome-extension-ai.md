@@ -131,6 +131,8 @@ Google Sheets 附加组件完全存在于 Google Workspace 生态系统中，并
 
 ## Related Reading
 
+- [Best AI Sidebar Extensions for Chrome Productivity in 2026](/posts/best-ai-sidebar-extensions-for-chrome-productivity/)
+
 - [Semantic Search for Personal Notes LLM: Complete Setup Guide](/posts/semantic-search-for-personal-notes-llm/)
 
 - [Best AI Sidebar Extensions for Chrome Productivity in 2026](/posts/best-ai-sidebar-extensions-for-chrome-productivity/)

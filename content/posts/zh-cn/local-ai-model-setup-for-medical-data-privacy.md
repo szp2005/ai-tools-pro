@@ -236,3 +236,7 @@ AI创新与医疗数据隐私严格要求的融合呈现出一个复杂的
 ## Related Reading
 
 - [Ollama vs LM Studio: Which is Better for Local AI Model Management?](/posts/ollama-vs-lm-studio-for-local-model-management/)
+
+- [Best Hardware for Running Llama 3 70B Locally in 2026](/posts/best-hardware-for-running-llama-3-70b-locally/)
+
+- [Ollama vs LM Studio: Which is Better for Local AI Model Management?](/posts/ollama-vs-lm-studio-for-local-model-management/)

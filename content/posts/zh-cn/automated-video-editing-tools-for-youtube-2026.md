@@ -183,6 +183,8 @@ YouTube 不会因为频道使用自动化剪辑软件来剪切素材、清理音
 
 - [Knowledge Asset Monetization for Solopreneurs: Complete Guide](/posts/knowledge-asset-monetization-for-solopreneurs/)
 
+- [Knowledge Asset Monetization for Solopreneurs: Complete Guide](/posts/knowledge-asset-monetization-for-solopreneurs/)
+
 - [Best AI Image Upscaler for Large Format Printing in 2026](/posts/ai-image-upscaler-for-large-format-printing/)
 
 - [Midjourney Parameter Guide for Consistent Character Design: Complete Workflow](/posts/midjourney-parameter-guide-for-consistent-character-design/)

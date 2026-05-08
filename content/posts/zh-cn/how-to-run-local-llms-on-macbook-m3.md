@@ -166,3 +166,11 @@ M3 Max 是一款可替代台式机的工作站。随着内存带宽达到最高 
 - [Midjourney 角色一致性设计参数指南：完整工作流](/zh-cn/posts/midjourney-parameter-guide-for-consistent-character-design/)
 
 - [2026 年用于大幅面打印的最佳 AI 图像放大工具](/zh-cn/posts/ai-image-upscaler-for-large-format-printing/)
+
+---
+
+## Related Reading
+
+- [Synthesia AI Video Generator Review: Is It Worth the Hype in 2026?](/posts/synthesia-ai-video-review/)
+
+- [Adobe Firefly vs Canva Magic Studio for Graphics: Which Is Better?](/posts/adobe-firefly-vs-canva-magic-studio-for-graphics/)

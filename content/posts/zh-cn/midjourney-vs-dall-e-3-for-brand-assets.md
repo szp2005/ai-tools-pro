@@ -155,6 +155,8 @@ DALL-E 3舒适地融入了对企业友好的OpenAI生态系统。使用ChatGPT E
 
 - [Midjourney vs DALL-E 3: The Ultimate AI Image Generation Comparison](/posts/midjourney-vs-dalle-3-comparison/)
 
+- [Midjourney vs DALL-E 3: The Ultimate AI Image Generation Comparison](/posts/midjourney-vs-dalle-3-comparison/)
+
 - [The 7 Best AI Image Generators for Marketers in 2026: From Concept to Campaign](/posts/best-ai-image-generators-for-marketers/)
 
 - [Midjourney vs DALL-E 3: The Ultimate AI Image Generation Comparison](/posts/midjourney-vs-dalle-3-comparison/)

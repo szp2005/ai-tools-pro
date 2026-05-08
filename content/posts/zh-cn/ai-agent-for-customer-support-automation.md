@@ -158,6 +158,8 @@ AI Agent将取代人工处理那些重复的一线查询，比如密码重置和
 
 - [Automate Customer Sentiment Analysis with OpenAI API: Complete Guide](/posts/automate-customer-sentiment-analysis-with-openai-api/)
 
+- [Automate Customer Sentiment Analysis with OpenAI API: Complete Guide](/posts/automate-customer-sentiment-analysis-with-openai-api/)
+
 - [Niche Market Research Automation: Perplexity AI 2026 Guide](/posts/how-to-automate-niche-market-research-with-perplexity/)
 
 - [7 Best AI Agents for Personal Productivity in 2026](/posts/best-ai-agent-for-personal-productivity-2026/)

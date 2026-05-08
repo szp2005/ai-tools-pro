@@ -47,3 +47,5 @@ type: "informational"
 ## Related Reading
 
 - [Running Mistral 7B on Consumer Hardware for Privacy: A Comprehensive Guide](/posts/running-mistral-7b-on-consumer-hardware-for-privacy/)
+
+- [Running Mistral 7B on Consumer Hardware for Privacy: A Comprehensive Guide](/posts/running-mistral-7b-on-consumer-hardware-for-privacy/)
