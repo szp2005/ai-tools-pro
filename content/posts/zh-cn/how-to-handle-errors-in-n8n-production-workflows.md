@@ -9,6 +9,8 @@ slug: "how-to-handle-errors-in-n8n-production-workflows"
 type: "informational"
 ---
 
+_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
+
 _作为Amazon Associate，我们从符合条件的购买中获得收益。本文可能包含附属链接。_
 
 # 如何处理n8n生产工作流中的错误：完整指南

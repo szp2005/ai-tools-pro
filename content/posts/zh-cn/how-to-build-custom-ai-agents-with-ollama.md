@@ -9,6 +9,8 @@ slug: "how-to-build-custom-ai-agents-with-ollama"
 type: "informational"
 ---
 
+_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
+
 _作为亚马逊联盟成员，我们通过符合条件的购买获得收益。本文可能包含联盟链接。_
 
 # 如何使用Ollama构建自定义AI Agent：五步指南

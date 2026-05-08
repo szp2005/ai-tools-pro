@@ -9,6 +9,8 @@ slug: "building-a-rag-pipeline-with-n8n-and-pinecone"
 type: "informational"
 ---
 
+_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
+
 # Building a RAG Pipeline with n8n and Pinecone: Complete Guide
 
 > **Quick Answer:** Building a RAG pipeline with n8n and Pinecone involves using n8n to ingest source documents, convert them into vector embeddings using a model like [OpenAI](/posts/automate-customer-sentiment-analysis-with-openai-api/)'s `text-embedding-3-small`, and store them in a Pinecone vector database. When a user asks a question, n8n embeds the query, retrieves the most relevant context from Pinecone, and feeds both into a Large Language Model to generate an accurate, data-grounded response.

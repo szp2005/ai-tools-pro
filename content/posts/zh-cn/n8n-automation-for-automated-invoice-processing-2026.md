@@ -9,6 +9,8 @@ slug: "n8n-automation-for-automated-invoice-processing-2026"
 type: "informational"
 ---
 
+_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
+
 _作为 Amazon 联盟成员，我们从符合条件的购买中赚取收益。本文可能包含联盟链接。_
 
 # 2026 年 n8n 自动化发票处理：设置指南

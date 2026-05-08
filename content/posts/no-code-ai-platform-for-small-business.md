@@ -25,7 +25,7 @@ However, not all platforms serve the same purpose. Some focus strictly on [workf
 
 Automation platforms are the connective tissue of a modern small business. They listen for events in one application, process that data—often using an AI step to analyze or rewrite text—and output the result to another tool.
 
-### 1. Make.com
+### 1. [Make.com](https://www.amazon.com/s?k=Make.com&tag=toolrouteai-20)
 
 **Best for:** Visual workflow automation and complex routing
 **Price:** $10.59-$29.00/month
@@ -44,7 +44,7 @@ Where Make truly shines is in its error handling and visual feedback. When a wor
 - Steeper learning curve for highly complex data arrays
 - Customer support can be slow on lower tiers
 
-### 2. Zapier Central
+### 2. [Zapier Central](https://www.amazon.com/s?k=Zapier%20Central&tag=toolrouteai-20)
 
 **Best for:** Direct integrations and AI bots
 **Price:** $19.99-$69.00/month
@@ -63,7 +63,7 @@ While Make relies on visual logic, Zapier focuses on natural language instructio
 - Premium pricing adds up quickly for high-volume users
 - Less control over complex conditional logic than competitors
 
-### 3. n8n
+### 3. [n8n](https://www.amazon.com/s?k=n8n&tag=toolrouteai-20)
 
 **Best for:** [Privacy](/posts/ollama-installation-guide-privacy-conscious-professionals/)-conscious teams and self-hosting
 **Price:** $24.00-$50.00/month (Cloud) / Free (Self-hosted)
@@ -86,7 +86,7 @@ n8n's Advanced AI nodes make it simple to build LangChain-style workflows visual
 
 If your goal isn't just to automate background tasks, but to create a usable interface for your employees or customers, app builders are the correct category to explore.
 
-### 4. Glide
+### 4. [Glide](https://www.amazon.com/s?k=Glide&tag=toolrouteai-20)
 
 **Best for:** Internal operations and mobile-first apps
 **Price:** $49.00-$99.00/month
@@ -105,7 +105,7 @@ Recently, Glide integrated native AI features directly into its builder. Users c
 - Highly rigid layout options limit custom design
 - Pricing scales steeply as user counts increase
 
-### 5. Bubble
+### 5. [Bubble](https://www.amazon.com/s?k=Bubble&tag=toolrouteai-20)
 
 **Best for:** Complex, custom web applications
 **Price:** $32.00-$134.00/month

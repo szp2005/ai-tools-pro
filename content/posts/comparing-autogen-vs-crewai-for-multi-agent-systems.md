@@ -25,7 +25,7 @@ Understanding the architectural philosophies, strengths, and limitations of each
 
 When evaluating solutions for enterprise deployment, the market has clearly segmented into frameworks that prioritize developer flexibility versus those that prioritize structured execution. Here is how the two leading platforms stack up.
 
-### 1. CrewAI
+### 1. [CrewAI](https://www.amazon.com/s?k=CrewAI&tag=toolrouteai-20)
 
 **Best for:** Product teams, rapid prototyping, and role-based task delegation
 **Price:** Free (Open Source), Enterprise plans available for managed hosting
@@ -44,7 +44,7 @@ For businesses looking to automate content pipelines, conduct market research, m
 - Less flexible for highly complex, non-linear agent conversations
 - Hierarchical consensus mechanisms can consume high token counts
 
-### 2. Microsoft AutoGen
+### 2. [Microsoft AutoGen](https://www.amazon.com/s?k=Microsoft%20AutoGen&tag=toolrouteai-20)
 
 **Best for:** Advanced software engineers, complex code-execution workflows, and local LLMs
 **Price:** Free (Open Source)

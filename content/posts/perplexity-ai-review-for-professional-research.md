@@ -25,7 +25,7 @@ For [professionals](/posts/ollama-installation-guide-privacy-conscious-professio
 
 To understand Perplexity's value proposition, it is crucial to break down its two primary access tiers. For professional use cases, the distinction between these tiers is the difference between a novelty tool and a core workflow utility.
 
-### 1. Perplexity Pro
+### 1. [Perplexity Pro](https://www.amazon.com/s?k=Perplexity%20Pro&tag=toolrouteai-20)
 
 **Best for:** Academic researchers, market analysts, data scientists, and professional writers
 **Price:** $20/month or $200/year
@@ -46,7 +46,7 @@ For professional research, the Pro tier is essentially mandatory. The ability to
 - UI can become difficult to navigate during highly complex, multi-thread investigations
 - File upload parsing occasionally struggles with complex, multi-column tables in older PDFs
 
-### 2. Perplexity Free Tier
+### 2. [Perplexity Free Tier](https://www.amazon.com/s?k=Perplexity%20Free%20Tier&tag=toolrouteai-20)
 
 **Best for:** Casual users, students doing basic fact-checking, and general everyday inquiries
 **Price:** $0

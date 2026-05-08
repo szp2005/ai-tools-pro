@@ -39,7 +39,7 @@ While cloud AI inherently involves sending data to third-party servers, major pr
 
 ## Top Local-First AI Tools Reviewed
 
-### 1. LM Studio
+### 1. [LM Studio](https://www.amazon.com/s?k=LM%20Studio&tag=toolrouteai-20)
 
 **Best for:** Local model discovery and offline experimentation
 **Price:** $0 (Free)
@@ -56,7 +56,7 @@ LM Studio has established itself as the premier graphical interface for running 
 - High memory requirements for larger, more capable models
 - Limited advanced workflow automations compared to command-line tools
 
-### 2. Ollama
+### 2. [Ollama](https://www.amazon.com/s?k=Ollama&tag=toolrouteai-20)
 
 **Best for:** Terminal users and automated local workflows
 **Price:** $0 (Free)
@@ -73,7 +73,7 @@ Ollama remains the standard for developers running local language models via the
 - Requires command-line familiarity for advanced configuration
 - Lacks a native graphical interface for non-technical users
 
-### 3. AnythingLLM Desktop
+### 3. [AnythingLLM Desktop](https://www.amazon.com/s?k=AnythingLLM%20Desktop&tag=toolrouteai-20)
 
 **Best for:** Privacy-conscious knowledge workers needing [local RAG](/posts/comparing-local-rag-solutions-for-private-knowledge-bases/)
 **Price:** $0 (Free)
@@ -92,7 +92,7 @@ AnythingLLM Desktop bridges the gap between raw local language models and struct
 
 ## Top Cloud Structured AI Platforms Reviewed
 
-### 4. ChatGPT Team Workspace
+### 4. [ChatGPT Team Workspace](https://www.amazon.com/s?k=ChatGPT%20Team%20Workspace&tag=toolrouteai-20)
 
 **Best for:** Small to medium businesses needing collaborative AI
 **Price:** $25-$30/month per user
@@ -109,7 +109,7 @@ ChatGPT Team represents the highly polished standard of cloud structured AI, off
 - Requires a persistent, high-speed internet connection to function
 - Recurring monthly subscription costs scale linearly with team size
 
-### 5. Claude Enterprise
+### 5. [Claude Enterprise](https://www.amazon.com/s?k=Claude%20Enterprise&tag=toolrouteai-20)
 
 **Best for:** Engineering and research teams processing massive contexts
 **Price:** $30-$45/month per user
@@ -126,7 +126,7 @@ Claude Enterprise by Anthropic dominates the cloud structured space for complex 
 - Higher per-user cost compared to standard tier subscriptions
 - The chat interface is highly functional but less visually customizable
 
-### 6. Microsoft Copilot for Workspace
+### 6. [Microsoft Copilot for Workspace](https://www.amazon.com/s?k=Microsoft%20Copilot%20for%20Workspace&tag=toolrouteai-20)
 
 **Best for:** Enterprises deeply integrated into the Microsoft ecosystem
 **Price:** $30/month per user

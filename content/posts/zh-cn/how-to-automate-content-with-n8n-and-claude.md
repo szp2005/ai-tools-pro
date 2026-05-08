@@ -11,6 +11,8 @@ type: "informational"
 tags: ["automate", "content", "n8n", "claude"]
 ---
 
+_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
+
 # 如何使用 n8n 和 Claude 自动化内容创作（写给非开发者的分步指南）
 
 ---

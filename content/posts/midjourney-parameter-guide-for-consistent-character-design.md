@@ -9,6 +9,8 @@ slug: "midjourney-parameter-guide-for-consistent-character-design"
 type: "informational"
 ---
 
+_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
+
 # Midjourney Parameter Guide for Consistent Character Design: Complete [Workflow](/posts/how-to-automate-slack-notifications-with-n8n/)
 
 > **Quick Answer:** Achieving consistent character design in Midjourney requires combining the `--cref` (Character Reference) parameter with a source image URL, adjusting the `--cw` (Character Weight) from 0 to 100, and utilizing a static `--seed` value. For maximum reliability, combine these parameters with identical, highly specific text descriptions of the subject's physical traits in every generation.

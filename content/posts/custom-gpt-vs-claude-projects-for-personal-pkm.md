@@ -33,7 +33,7 @@ Anthropic's approach with Claude Projects is distinctly focused on context and c
 
 Below is a detailed breakdown of how each platform performs specifically for personal knowledge management workflows.
 
-### 1. Custom GPT (OpenAI)
+### 1. [Custom GPT (OpenAI)](https://www.amazon.com/s?k=Custom%20GPT%20%28OpenAI%29&tag=toolrouteai-20)
 
 **Best for:** [Automation](/posts/ai-tools-for-email-writing/)-heavy workflows and external integrations
 **Price:** $20/month (Requires ChatGPT Plus)
@@ -51,7 +51,7 @@ Custom GPTs shine when your PKM system needs to interact with the outside world.
 - Can struggle to maintain coherence across very long conversational threads
 - [Privacy](/posts/ollama-installation-guide-privacy-conscious-professionals/) concerns regarding data training unless explicitly opted out
 
-### 2. Claude Projects (Anthropic)
+### 2. [Claude Projects (Anthropic)](https://www.amazon.com/s?k=Claude%20Projects%20%28Anthropic%29&tag=toolrouteai-20)
 
 **Best for:** Deep research, complex synthesis, and local markdown vaults
 **Price:** $20/month (Requires Claude Pro)

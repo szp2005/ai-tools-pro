@@ -23,7 +23,7 @@ Choosing the right platform goes beyond basic [transcription](/posts/otter-ai-re
 
 ## Top AI Meeting Assistants Evaluated
 
-### 1. Fireflies.ai
+### 1. [Fireflies.ai](https://www.amazon.com/s?k=Fireflies.ai&tag=toolrouteai-20)
 
 **Best for:** Deep integrations and automated workflows
 **Price:** $10-$19/user/month (Free tier available)
@@ -42,7 +42,7 @@ The search functionality across your historical meetings is highly advanced, all
 - The interface can feel cluttered due to the sheer number of features
 - Requires the premium tier for advanced CRM logging
 
-### 2. Otter.ai
+### 2. [Otter.ai](https://www.amazon.com/s?k=Otter.ai&tag=toolrouteai-20)
 
 **Best for:** Real-time collaboration and workspace sharing
 **Price:** $10-$20/user/month (Free tier available)
@@ -61,7 +61,7 @@ Otter Pilot automates the heavy lifting by capturing the audio, generating a sum
 - Sometimes struggles with heavy accents or overlapping speakers
 - Integrations are not as robust as some competitors
 
-### 3. Fathom
+### 3. [Fathom](https://www.amazon.com/s?k=Fathom&tag=toolrouteai-20)
 
 **Best for:** Individuals and budget-conscious teams
 **Price:** Free (Premium tier at $15/month)
@@ -80,7 +80,7 @@ After the call, the AI stitches together a concise summary and clearly outlines 
 - Lacks the deep, multi-app automation workflows of premium competitors
 - Analytics and team coaching features are locked behind the paid tier
 
-### 4. Supernormal
+### 4. [Supernormal](https://www.amazon.com/s?k=Supernormal&tag=toolrouteai-20)
 
 **Best for:** Formatting flexibility and tailored templates
 **Price:** $10-$18/user/month
@@ -99,7 +99,7 @@ The platform relies strictly on AI-generated summaries rather than forcing you t
 - Bot functionality for Zoom and Teams can be less seamless than the native Meet extension
 - Focuses more on summaries than searchable, long-form historical data
 
-### 5. Read AI
+### 5. [Read AI](https://www.amazon.com/s?k=Read%20AI&tag=toolrouteai-20)
 
 **Best for:** Analytics, [sentiment analysis](/posts/automate-customer-sentiment-analysis-with-openai-api/), and meeting coaching
 **Price:** $15-$22/user/month (Free tier available)

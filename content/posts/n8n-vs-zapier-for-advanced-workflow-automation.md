@@ -31,7 +31,7 @@ n8n takes a fundamentally different approach. It utilizes a canvas-based interfa
 
 ## The Contenders
 
-### 1. Zapier
+### 1. [Zapier](https://www.amazon.com/s?k=Zapier&tag=toolrouteai-20)
 
 **Best for:** Non-technical operators, [marketing](/posts/ai-tools-for-social-media-content/) teams, and businesses needing obscure app integrations
 **Price:** $0-$3,200+ per month (volume dependent)
@@ -52,7 +52,7 @@ However, for advanced workflow automation, Zapier's strict linearity and abstrac
 - Advanced logic requires cumbersome workarounds
 - Strict vendor lock-in with zero self-hosting options
 
-### 2. n8n
+### 2. [n8n](https://www.amazon.com/s?k=n8n&tag=toolrouteai-20)
 
 **Best for:** Developers, data engineers, and technically proficient operations teams
 **Price:** $0 (Self-hosted) to $20-$120+ (Cloud)

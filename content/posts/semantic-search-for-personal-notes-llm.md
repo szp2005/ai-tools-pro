@@ -9,6 +9,8 @@ slug: "semantic-search-for-personal-notes-llm"
 type: "informational"
 ---
 
+_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
+
 # Semantic Search for Personal Notes LLM: Complete Setup Guide
 
 > **Quick Answer:** A semantic search for personal notes LLM system converts your text into vector embeddings, allowing you to search by meaning rather than exact keywords. By combining an embedding model (like OpenAI's text-embedding-3-small or local BGE models) with a [vector database](/posts/build-a-custom-vector-database-with-pinecone/) (like Chroma or Qdrant) and an LLM, you can instantly retrieve and synthesize ideas from thousands of scattered notes.

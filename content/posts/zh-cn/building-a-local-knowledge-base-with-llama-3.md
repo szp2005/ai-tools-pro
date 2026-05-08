@@ -9,6 +9,8 @@ slug: "building-a-local-knowledge-base-with-llama-3"
 type: "informational"
 ---
 
+_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
+
 _作为 Amazon 联盟成员，我们从符合条件的购买中赚取收益。本文可能包含联盟链接。_
 
 # 如何使用 Llama 3 构建本地知识库：完整设置指南

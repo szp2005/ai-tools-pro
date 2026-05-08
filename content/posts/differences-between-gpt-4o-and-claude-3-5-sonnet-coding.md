@@ -27,7 +27,7 @@ Before diving into granular feature comparisons, it is essential to establish ba
 
 When evaluating the differences between GPT-4o and Claude 3.5 Sonnet coding, the evaluation criteria must move beyond simple algorithmic puzzles. Real development involves navigating messy dependencies, understanding domain-specific business logic, and adhering to strict linting rules. The ideal model acts less like an autocomplete engine and more like a senior peer reviewer who understands the broader implications of a localized change.
 
-### 1. Claude 3.5 Sonnet
+### 1. [Claude 3.5 Sonnet](https://www.amazon.com/s?k=Claude%203.5%20Sonnet&tag=toolrouteai-20)
 
 **Best for:** Complex refactoring, large-scale architectural planning, and deep codebase analysis
 **Price:** $20/month (Pro subscription) or API pricing based on token usage
@@ -47,7 +47,7 @@ This model is particularly effective when dealing with legacy codebases or obscu
 - Slightly higher latency on initial token generation compared to competitors
 - Stricter safety rails can occasionally false-flag legitimate system-level shell scripting
 
-### 2. GPT-4o
+### 2. [GPT-4o](https://www.amazon.com/s?k=GPT-4o&tag=toolrouteai-20)
 
 **Best for:** Rapid prototyping, quick bug fixes, and multimodal UI development
 **Price:** $20/month (Plus subscription) or API pricing based on token usage

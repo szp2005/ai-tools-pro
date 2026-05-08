@@ -31,7 +31,7 @@ Canva Magic Studio takes a broader approach. Through strategic partnerships (inc
 
 ## Platform Breakdown
 
-### 1. Adobe Firefly
+### 1. [Adobe Firefly](https://www.amazon.com/s?k=Adobe%20Firefly&tag=toolrouteai-20)
 
 **Best for:** Professional designers, illustrators, and enterprise teams requiring copyright safety.
 **Price:** $4.99-$9.99/mo (standalone premium) or included in Creative Cloud subscriptions ($59.99/mo).
@@ -48,7 +48,7 @@ Adobe Firefly is not just a standalone web application; it is an AI engine deepl
 - Steep learning curve if you are not already familiar with Adobe software.
 - Credit system can be restrictive for heavy generation workflows.
 
-### 2. Canva Magic Studio
+### 2. [Canva Magic Studio](https://www.amazon.com/s?k=Canva%20Magic%20Studio&tag=toolrouteai-20)
 
 **Best for:** Marketers, social media managers, educators, and small business owners.
 **Price:** Included in Canva Pro ($14.99/mo) and Canva for Teams.

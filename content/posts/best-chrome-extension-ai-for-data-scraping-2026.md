@@ -29,7 +29,7 @@ If you tell an AI scraper to "extract all product names and prices," it identifi
 
 ## Top AI Chrome Extensions for Data Scraping
 
-### 1. Browse AI
+### 1. [Browse AI](https://www.amazon.com/s?k=Browse%20AI&tag=toolrouteai-20)
 
 **Best for:** Non-technical teams and scheduled data pipelines
 **Price:** $39-$249/month (Free tier available)
@@ -48,7 +48,7 @@ The extension is particularly powerful for monitoring tasks. You can set up a ta
 - Premium tiers become expensive for high-volume scraping
 - Complex logic sequences can occasionally time out on heavy JavaScript pages
 
-### 2. Harpa AI
+### 2. [Harpa AI](https://www.amazon.com/s?k=Harpa%20AI&tag=toolrouteai-20)
 
 **Best for:** Contextual scraping and multi-purpose web automation
 **Price:** $15-$45/month (Free core features)
@@ -67,7 +67,7 @@ Because it integrates directly with models like GPT-4 and Claude 3, you can inst
 - Requires manual prompt tuning for highly complex sites
 - Less suited for massive, multi-page automated runs compared to dedicated scrapers
 
-### 3. Simplescraper
+### 3. [Simplescraper](https://www.amazon.com/s?k=Simplescraper&tag=toolrouteai-20)
 
 **Best for:** Developers and fast API generation
 **Price:** $29-$149/month
@@ -86,7 +86,7 @@ The extension excels in its simplicity. It strips away the complex bot-building 
 - Lacks the deep scheduling and monitoring UI of larger platforms
 - [Customer support](/posts/automate-customer-sentiment-analysis-with-openai-api/) can be slow on the lower pricing tiers
 
-### 4. Magical
+### 4. [Magical](https://www.amazon.com/s?k=Magical&tag=toolrouteai-20)
 
 **Best for:** Sales teams and instant form filling
 **Price:** Free - $25/user/month
@@ -105,7 +105,7 @@ The AI component automatically recognizes variable types across different platfo
 - Not designed for bulk, automated background scraping
 - Limited export formats (focused on direct text insertion)
 
-### 5. Octoparse AI Scraper
+### 5. [Octoparse AI Scraper](https://www.amazon.com/s?k=Octoparse%20AI%20Scraper&tag=toolrouteai-20)
 
 **Best for:** Enterprise-level scraping and deep site architectures
 **Price:** $89-$399/month

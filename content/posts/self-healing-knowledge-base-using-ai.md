@@ -9,6 +9,8 @@ slug: "self-healing-knowledge-base-using-ai"
 type: "informational"
 ---
 
+_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
+
 # Self-Healing Knowledge Base Using AI: Complete Guide to Automated Accuracy
 
 > **Quick Answer:** A self-healing knowledge base using AI automatically detects outdated, contradictory, or incomplete information and updates itself using large language models and [semantic search](/posts/ai-writing-assistant-for-seo-with-semantic-layers/). It prevents documentation rot by analyzing support tickets, codebase changes, and user feedback to rewrite or flag content without constant human intervention.

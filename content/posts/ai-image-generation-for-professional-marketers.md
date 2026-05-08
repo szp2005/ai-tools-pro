@@ -39,7 +39,7 @@ When evaluating these tools for enterprise use, marketers must prioritize:
 
 Below is an in-depth analysis of the leading AI image generation platforms, tested and evaluated specifically for professional marketing applications.
 
-### 1. Adobe Firefly Image 3
+### 1. [Adobe Firefly Image 3](https://www.amazon.com/s?k=Adobe%20Firefly%20Image%203&tag=toolrouteai-20)
 
 **Best for:** Enterprise marketing teams prioritizing copyright safety
 **Price:** $4.99-$9.99/month (included in Creative Cloud plans)
@@ -58,7 +58,7 @@ The recent rollout of the Image 3 model drastically improves the platform's phot
 - Visual outputs can occasionally feel slightly sterile or overly polished compared to competitors
 - Strict internal content moderation filters can sometimes block benign, non-violating prompts
 
-### 2. Midjourney v6
+### 2. [Midjourney v6](https://www.amazon.com/s?k=Midjourney%20v6&tag=toolrouteai-20)
 
 **Best for:** High-end conceptual campaigns and photorealism
 **Price:** $10.00-$120.00/month
@@ -77,7 +77,7 @@ With the introduction of version 6, the model gained the ability to generate leg
 - Discord-based interface is cumbersome for collaborative team workflows
 - Unclear training data origins introduce potential copyright ambiguity for strict enterprise brands
 
-### 3. DALL-E 3 (via ChatGPT Plus/Enterprise)
+### 3. [DALL-E 3 (via ChatGPT Plus/Enterprise)](https://www.amazon.com/s?k=DALL-E%203%20%28via%20ChatGPT%20Plus/Enterprise%29&tag=toolrouteai-20)
 
 **Best for:** Rapid iteration and conversational prompting
 **Price:** $20.00/month (via ChatGPT Plus) or Custom Enterprise pricing
@@ -96,7 +96,7 @@ If a generated image is almost perfect but the lighting is too harsh, a marketer
 - Can sometimes produce a distinct "AI-generated" aesthetic, particularly with vector styles
 - Lacks the granular micro-controls (like specific aspect ratios beyond standard presets) found in Midjourney
 
-### 4. Canva Magic Studio
+### 4. [Canva Magic Studio](https://www.amazon.com/s?k=Canva%20Magic%20Studio&tag=toolrouteai-20)
 
 **Best for:** Social media managers and high-volume content teams
 **Price:** $15.00/month (Canva Pro) or $30.00/month (Canva for Teams)
@@ -115,7 +115,7 @@ Marketers can generate an image from text, instantly apply their pre-saved brand
 - Base image generation quality is generally lower than Midjourney or Firefly
 - Advanced users may find the generation parameters too simplistic or restrictive
 
-### 5. Leonardo AI
+### 5. [Leonardo AI](https://www.amazon.com/s?k=Leonardo%20AI&tag=toolrouteai-20)
 
 **Best for:** Performance marketers and game industry [professionals](/posts/ollama-installation-guide-privacy-conscious-professionals/)
 **Price:** Free tier available; $10.00-$60.00/month for premium

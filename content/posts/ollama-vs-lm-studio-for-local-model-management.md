@@ -20,7 +20,7 @@ The ability to run large language models (LLMs) locally has revolutionized how d
 
 Both Ollama and LM Studio aim to simplify the local LLM experience, abstracting away much of the underlying complexity. They provide frameworks to download, serve, and interact with a wide range of open-source models directly on your machine. But while their goals align, their approaches, feature sets, and target audiences diverge significantly. Understanding these differences is crucial for selecting the platform that best fits your specific needs and technical proficiency.
 
-## 1. Ollama
+## 1. [Ollama](https://www.amazon.com/s?k=Ollama&tag=toolrouteai-20)
 
 **Best for:** Developers, command-line enthusiasts, API-driven applications, cross-platform deployment.
 **Price:** Free
@@ -41,7 +41,7 @@ Ollama is an open-source tool designed to simplify the process of running large 
 - Requires comfort with command-line [operations](/posts/automating-indie-hacker-workflows-with-make-com/).
 - Model customization (e.g., changing parameters) is primarily via Modelfiles, which can be less intuitive for beginners.
 
-## 2. LM Studio
+## 2. [LM Studio](https://www.amazon.com/s?k=LM%20Studio&tag=toolrouteai-20)
 
 **Best for:** Beginners, users preferring a GUI, quick experimentation, integrated chat experience.
 **Price:** Free

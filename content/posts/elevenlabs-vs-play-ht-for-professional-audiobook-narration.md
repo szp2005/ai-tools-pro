@@ -25,7 +25,7 @@ This review breaks down both platforms based on their utility for full-length, c
 
 Below is a direct evaluation of each platform based on their performance in long-form narration environments.
 
-### 1. ElevenLabs
+### 1. [ElevenLabs](https://www.amazon.com/s?k=ElevenLabs&tag=toolrouteai-20)
 
 **Best for:** Fiction authors, character-driven narratives, and boutique publishers
 **Price:** $22-$99/month (Creator to Independent Publisher tiers)
@@ -43,7 +43,7 @@ ElevenLabs has positioned itself as the premier tool for cinematic and narrative
 - Character limits can become expensive for very long epic fantasy novels
 - Over-expressiveness sometimes requires manual dial-backs for dry non-fiction
 
-### 2. Play.ht
+### 2. [Play.ht](https://www.amazon.com/s?k=Play.ht&tag=toolrouteai-20)
 
 **Best for:** Non-fiction, technical audiobooks, and high-volume serial production
 **Price:** $39-$99/month (Creator to Unlimited tiers)

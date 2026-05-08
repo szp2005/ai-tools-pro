@@ -9,6 +9,8 @@ slug: "how-to-build-custom-ai-agents-with-ollama"
 type: "informational"
 ---
 
+_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
+
 # How to Build Custom AI Agents with Ollama: 5-Step Guide
 
 > **Quick Answer:** To build custom AI agents with Ollama, install the Ollama runtime and download a tool-capable local model (like Llama 3 8B or Hermes). Connect this local instance to an orchestration framework like LangChain or [CrewAI](/posts/crewai-vs-autogen-automated-software-development-tasks/) by pointing the LLM wrapper to `http://localhost:11434`. Finally, define custom Python functions as tools and assign them to your agent, allowing the [local LLM](/posts/running-mistral-7b-on-consumer-hardware-for-privacy/) to execute actions and solve multi-step problems autonomously.

@@ -9,6 +9,8 @@ slug: "build-a-custom-vector-database-with-pinecone"
 type: "informational"
 ---
 
+_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
+
 # How to Build a Custom Vector Database with Pinecone: 5-Step Guide
 
 > **Quick Answer:** To build a custom vector database with Pinecone, you first generate embeddings for your data using a model like [OpenAI](/posts/automate-customer-sentiment-analysis-with-openai-api/)'s `text-embedding-3-small`. Next, create a Pinecone index with dimensions matching your model, then upsert your vector data alongside metadata. Finally, you can perform nearest-neighbor searches to retrieve contextually relevant information for search engines or Retrieval-Augmented Generation (RAG) applications.

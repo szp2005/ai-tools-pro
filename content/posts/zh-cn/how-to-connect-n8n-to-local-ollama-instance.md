@@ -9,6 +9,8 @@ slug: "how-to-connect-n8n-to-local-ollama-instance"
 type: "informational"
 ---
 
+_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
+
 _作为亚马逊合作伙伴，我们从符合条件的购买中赚取收益。本文可能包含联盟链接。_
 
 # 如何将 n8n 连接到本地 Ollama 实例：完整设置指南

@@ -29,7 +29,7 @@ When you highlight text and hit a keyboard shortcut, the sidebar instantly knows
 
 ## Top AI Sidebar Extensions Reviewed
 
-### 1. Monica AI
+### 1. [Monica AI](https://www.amazon.com/s?k=Monica%20AI&tag=toolrouteai-20)
 
 **Best for:** All-in-one daily productivity and PDF interaction
 **Price:** $0-$19.99/month
@@ -48,7 +48,7 @@ The sidebar itself is highly capable, particularly when handling long-form conte
 - The interface can feel cluttered with too many tool icons
 - Free tier has strict limits on advanced model usage
 
-### 2. Sider
+### 2. [Sider](https://www.amazon.com/s?k=Sider&tag=toolrouteai-20)
 
 **Best for:** Accessing multiple premium LLMs simultaneously
 **Price:** $0-$20/month
@@ -67,7 +67,7 @@ Beyond multi-model support, Sider excels in content digestion. It features a hig
 - Lacks the advanced web scraping features of competitors
 - Managing context length can sometimes be tricky on complex pages
 
-### 3. Harpa AI
+### 3. [Harpa AI](https://www.amazon.com/s?k=Harpa%20AI&tag=toolrouteai-20)
 
 **Best for:** Web scraping, page monitoring, and complex automation
 **Price:** $0-$15/month
@@ -86,7 +86,7 @@ Because it runs locally in your browser, Harpa provides a significant privacy ad
 - Steeper learning curve than standard chat extensions
 - The UI is utilitarian and less polished than consumer-focused tools
 
-### 4. MaxAI.me
+### 4. [MaxAI.me](https://www.amazon.com/s?k=MaxAI.me&tag=toolrouteai-20)
 
 **Best for:** One-click contextual writing and email drafting
 **Price:** $0-$19/month
@@ -105,7 +105,7 @@ With a single click, you can ask the tool to improve your writing, adjust the to
 - Less focus on reading comprehension and [document analysis](/posts/local-llm-deployment-offline-document-analysis/)
 - Inline icons can occasionally conflict with other browser tools like [Grammarly](/posts/grammarly-vs-prowritingaid-comparison/)
 
-### 5. Merlin
+### 5. [Merlin](https://www.amazon.com/s?k=Merlin&tag=toolrouteai-20)
 
 **Best for:** YouTube summarization and social media management
 **Price:** $0-$19/month
