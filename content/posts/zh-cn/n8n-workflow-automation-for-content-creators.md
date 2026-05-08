@@ -9,8 +9,6 @@ slug: "n8n-workflow-automation-for-content-creators"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 _作为 Amazon Associate，我们从符合条件的购买中获得收益。本文可能包含联盟链接。_
 
 # 面向内容创作者的 n8n 工作流自动化：2026 完整指南

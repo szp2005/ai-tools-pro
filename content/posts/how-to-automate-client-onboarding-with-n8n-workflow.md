@@ -9,8 +9,6 @@ slug: "how-to-automate-client-onboarding-with-n8n-workflow"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # How to Automate Client Onboarding with n8n Workflow: A Complete Guide
 
 > **Quick Answer:** Automating client onboarding with n8n workflow involves designing a series of interconnected steps that trigger automatically upon a new client sign-up, handling tasks like contract management, welcome communications, data collection, and tool provisioning. By leveraging n8n's extensive integrations and visual workflow builder, businesses can eliminate manual repetitive tasks, ensure consistency, and significantly enhance the client's initial experience.

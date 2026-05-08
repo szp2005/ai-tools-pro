@@ -9,8 +9,6 @@ slug: "ai-agent-tool-for-automated-lead-qualification"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 _作为Amazon Associate，我们从符合条件的购买中赚取收益。本文可能包含联盟链接。_
 
 # 2026年用于自动化线索筛选的最佳AI Agent工具

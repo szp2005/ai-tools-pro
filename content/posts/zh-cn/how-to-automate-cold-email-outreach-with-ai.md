@@ -9,8 +9,6 @@ slug: "how-to-automate-cold-email-outreach-with-ai"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 _作为亚马逊联盟成员，我们通过符合条件的购买获得收益。这篇文章可能包含联盟链接。_
 
 # 如何使用 AI 自动化冷邮件外发：5步指南

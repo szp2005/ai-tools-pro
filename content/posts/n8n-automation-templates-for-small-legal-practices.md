@@ -8,8 +8,6 @@ tags: ["n8n automation", "legal tech", "small law firm", "workflow automation"]
 slug: "n8n-automation-templates-for-small-legal-practices"
 type: "informational"
 ---
-
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
 # n8n Automation Templates for Small Legal Practices: Boost Efficiency
 
 > **Quick Answer:** n8n automation templates empower small legal practices to streamline repetitive administrative and client-facing tasks, such as client intake, document generation, communication, and case management, by providing pre-built workflows that integrate various software tools, ultimately enhancing efficiency, reducing operational costs, and improving client satisfaction without requiring extensive coding knowledge.

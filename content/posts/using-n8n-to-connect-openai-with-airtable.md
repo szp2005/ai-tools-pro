@@ -9,8 +9,6 @@ slug: "using-n8n-to-connect-openai-with-airtable"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # Openai with Airtable Using n8n: 5-Step Guide
 
 > **Quick Answer:** You can connect OpenAI with Airtable using n8n by creating a [workflow](/posts/best-ai-sidebar-extensions-for-chrome-productivity/) that triggers on a new Airtable record, passes the data to the OpenAI node for processing (like summarization or categorization), and updates the original Airtable record with the AI-generated response. This requires API keys from both OpenAI and Airtable and an active n8n instance.

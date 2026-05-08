@@ -9,8 +9,6 @@ slug: "best-hardware-for-running-llama-3-70b-locally"
 type: "review"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # Best Hardware for Running Llama 3 70B Locally in 2026
 
 > **Quick Answer:** Running Llama 3 70B locally demands a robust hardware configuration, with the NVIDIA GeForce RTX 4090 being the unequivocal top choice due to its 24GB of VRAM and exceptional processing power. While other GPUs like the RTX 3090 or RTX 4080 SUPER can offer viable alternatives, sufficient VRAM is the primary bottleneck, requiring at least 48GB for full precision or 24GB for quantized models.
@@ -31,7 +29,7 @@ A common quantization level for Llama 3 70B is 4-bit (Q4_K_M or similar), which 
 
 The GPU is the single most critical component for running Llama 3 70B. Its VRAM capacity dictates whether the model can even load, and its processing power determines inference speed. We prioritize NVIDIA GPUs due to their superior CUDA ecosystem and widespread software support for LLM inference.
 
-### 1. [Editor's Choice: NVIDIA GeForce RTX 4090](https://www.amazon.com/s?k=Editor%27s%20Choice%3A%20NVIDIA%20GeForce%20RTX%204090&tag=toolrouteai-20)
+### 1. Editor's Choice: NVIDIA GeForce RTX 4090
 
 **Best for:** Uncompromised performance, single-GPU inference for quantized models, multi-GPU setups.
 **Price:** $1600-$2000
@@ -50,7 +48,7 @@ The NVIDIA GeForce RTX 4090 stands as the pinnacle of consumer-grade GPUs for AI
 - Significant power consumption under load (requires a strong PSU).
 - Large physical size may not fit all cases.
 
-### 2. [Best Value Performer: NVIDIA GeForce RTX 3090](https://www.amazon.com/s?k=Best%20Value%20Performer%3A%20NVIDIA%20GeForce%20RTX%203090&tag=toolrouteai-20)
+### 2. Best Value Performer: NVIDIA GeForce RTX 3090
 
 **Best for:** Cost-effective entry into 24GB VRAM, multi-GPU setups on a [budget](/posts/best-ai-tools-for-solopreneurs-on-a-budget/).
 **Price:** $800-$1200
@@ -69,7 +67,7 @@ The NVIDIA GeForce RTX 3090, while a previous-generation card, remains an except
 - Slower inference speeds compared to the RTX 4090.
 - Older architecture means less future-proofing.
 
-### 3. [Strong Mid-Range Option: NVIDIA GeForce RTX 4080 SUPER](https://www.amazon.com/s?k=Strong%20Mid-Range%20Option%3A%20NVIDIA%20GeForce%20RTX%204080%20SUPER&tag=toolrouteai-20)
+### 3. Strong Mid-Range Option: NVIDIA GeForce RTX 4080 SUPER
 
 **Best for:** Users prioritizing a single-GPU setup for smaller models or heavily offloading Llama 3 70B to system RAM.
 **Price:** $1000-$1200

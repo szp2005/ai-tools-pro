@@ -9,8 +9,6 @@ slug: "running-mistral-7b-on-consumer-hardware-for-privacy"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # Running Mistral 7B on Consumer Hardware for Privacy: A Comprehensive Guide
 
 > **Quick Answer:** Running Mistral 7B on consumer hardware for privacy is achievable by leveraging optimized frameworks like GGML/GGUF or MLX on systems with at least 16GB of unified or dedicated VRAM, or 32GB+ system RAM for CPU inference. This setup ensures that sensitive data remains local, preventing external servers from processing or storing your prompts and generated content.

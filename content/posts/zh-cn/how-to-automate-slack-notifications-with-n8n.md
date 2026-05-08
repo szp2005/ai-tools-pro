@@ -9,8 +9,6 @@ slug: "how-to-automate-slack-notifications-with-n8n"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 _作为亚马逊联盟成员，我们通过符合条件的购买获得收益。本文可能包含联盟链接。_
 # 如何使用 n8n 自动化 Slack 通知：5步指南
 

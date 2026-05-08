@@ -9,8 +9,6 @@ slug: "automate-customer-sentiment-analysis-with-openai-api"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # Automate Customer Sentiment Analysis with OpenAI API: Complete Guide
 
 > **Quick Answer:** To automate customer sentiment analysis with the OpenAI API, you must route your customer feedback data (via webhooks or batch exports) into a script that queries a model like `[gpt-4o](/posts/gemini-for-content-writing-vs-gpt-4o/)-mini` using a structured prompt. By requesting JSON output, the API can categorize the text into distinct sentiments (positive, negative, neutral) and extract specific pain points, which can then be stored in a database and visualized on a dashboard for real-time customer insights.

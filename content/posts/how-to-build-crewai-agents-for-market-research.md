@@ -9,8 +9,6 @@ slug: "how-to-build-crewai-agents-for-market-research"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # How to Build CrewAI Agents for Market Research: 5-Step Guide
 
 > **Quick Answer:** To build CrewAI agents for market research, define distinct roles (e.g., Data Gatherer, Analyst, Strategist), assign specific goals to each agent, provide search and scraping tools, and orchestrate them within a sequential or hierarchical crew to produce actionable market reports automatically.

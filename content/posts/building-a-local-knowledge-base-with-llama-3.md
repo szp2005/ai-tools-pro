@@ -9,8 +9,6 @@ slug: "building-a-local-knowledge-base-with-llama-3"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # How to Build a Local Knowledge Base with Llama 3: Complete Setup Guide
 
 > **Quick Answer:** Building a local knowledge base with Llama 3 requires setting up a Retrieval-Augmented Generation (RAG) pipeline entirely on your own hardware. You achieve this by running Llama 3 locally via inference engines like Ollama, converting your personal documents into mathematical vectors using an embedding model, storing them in a local [vector database](/posts/build-a-custom-vector-database-with-pinecone/) like ChromaDB, and connecting these components with an orchestration framework like LangChain.

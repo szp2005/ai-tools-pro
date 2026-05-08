@@ -9,8 +9,6 @@ slug: "how-to-fine-tune-llama-3-on-local-data"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 _作为亚马逊联盟成员，我们通过符合条件的购买获得收益。本文可能包含联盟链接。_
 
 # 如何在本地数据上微调 Llama 3：循序渐进指南

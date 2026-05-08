@@ -9,8 +9,6 @@ slug: "how-to-handle-errors-in-n8n-production-workflows"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # Handle Errors in n8n Production Workflows: Complete Guide
 
 > **Quick Answer:** To effectively handle errors in n8n production workflows, implement a global Error Trigger [workflow](/posts/how-to-automate-slack-notifications-with-n8n/) to catch system-wide failures, use the "Continue On Fail" node setting paired with IF nodes for localized error routing, and configure automated retries for transient API timeouts. Structuring workflows to anticipate failures prevents silent data loss and ensures mission-critical automations recover automatically.

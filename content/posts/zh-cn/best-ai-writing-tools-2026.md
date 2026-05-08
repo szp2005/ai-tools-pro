@@ -11,8 +11,6 @@ type: "informational"
 tags: ["writing", "landscape", "beyond", "text"]
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # 2026年最佳AI写作工具：让你的内容技术栈面向未来
 
 **太长不看 (TL;DR)**

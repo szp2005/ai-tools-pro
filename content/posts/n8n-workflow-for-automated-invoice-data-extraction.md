@@ -9,8 +9,6 @@ slug: "n8n-workflow-for-automated-invoice-data-extraction"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # n8n Workflow for Automated Invoice Data Extraction Setup: Complete Guide
 
 > **Quick Answer:** An n8n workflow for automated invoice data extraction involves configuring a trigger (e.g., new file upload), integrating an Optical Character Recognition (OCR) service to convert invoice images or PDFs into text, parsing the text to extract specific data fields like invoice number and total, and then sending this structured data to a destination system such as an accounting platform or database. This process significantly reduces manual data entry, improves accuracy, and accelerates financial [operations](/posts/automating-indie-hacker-workflows-with-make-com/).

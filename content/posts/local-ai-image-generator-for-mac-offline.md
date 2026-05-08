@@ -9,8 +9,6 @@ slug: "local-ai-image-generator-for-mac-offline"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # Best Local AI Image Generator for Mac Offline in 2026
 
 > **Quick Answer:** The best local AI image generator for Mac offline is Draw Things. It is completely free, deeply optimized for Apple Silicon (M1/M2/M3/M4 chips), and runs entirely on your device. For professional workflows requiring complex node-based pipelines, ComfyUI natively installed via Homebrew or Pinokio is the top choice.

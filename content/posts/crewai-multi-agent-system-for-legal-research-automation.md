@@ -9,8 +9,6 @@ slug: "crewai-multi-agent-system-legal-research-automation"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # CrewAI Multi-Agent Systems for Legal Research Automation: A Complete Guide
 
 > **Quick Answer:** CrewAI multi-agent systems automate legal research by orchestrating specialized [AI agents](/posts/crewai-vs-autogen-automated-software-development-tasks/) to collaborate on complex tasks like case analysis, statutory interpretation, and document [review](/posts/otter-ai-review-transcription/). This approach significantly enhances efficiency, accuracy, and comprehensiveness compared to traditional methods or single-agent AI models, allowing legal [professionals](/posts/ollama-installation-guide-privacy-conscious-professionals/) to focus on strategic decision-making.

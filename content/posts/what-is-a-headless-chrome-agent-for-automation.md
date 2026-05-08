@@ -9,8 +9,6 @@ slug: "what-is-a-headless-chrome-agent-for-automation"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # Headless Chrome Agent for Automation: Complete Guide
 
 > **Quick Answer:** A headless Chrome agent for automation is a software program that runs the Google Chrome browser without a graphical user interface (GUI). It allows developers and [AI models](/posts/claude-3-5-sonnet-vs-gpt-4o-for-complex-reasoning/) to programmatically navigate websites, render JavaScript, execute workflows, and extract data via the command line or an API, consuming significantly less memory and CPU than a standard desktop browser.

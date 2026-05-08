@@ -9,8 +9,6 @@ slug: "setting-up-local-voice-ai-for-offline-dictation"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # Setting Up Local Voice AI for Offline Dictation: 5-Step Guide
 
 > **Quick Answer:** Setting up local voice AI for offline dictation requires installing an open-source speech-to-text model, such as OpenAI's Whisper, locally on your machine. You will need a computer with at least 8GB of RAM, Python installed, and a standard microphone to process dictation entirely offline, ensuring zero network latency and total data privacy.

@@ -9,8 +9,6 @@ slug: "how-to-fine-tune-llama-3-on-local-data"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # Fine Tune Llama 3 on Local Data: Step-by-Step Guide
 
 > **Quick Answer:** To fine-tune Llama 3 on local data, you need to format your custom dataset into JSONL using the ChatML or Alpaca format, set up a Python environment with PyTorch and Unsloth (or PEFT), load the quantized Llama 3 8B model, apply Low-Rank Adaptation (LoRA) to freeze core weights while training new adapters, and execute the training loop using Hugging Face's SFTTrainer. This process allows you to securely teach the model specific domain knowledge without uploading [sensitive data](/posts/best-local-llm-for-sensitive-data-analysis-2026/) to third-party servers.

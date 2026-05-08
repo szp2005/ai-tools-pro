@@ -9,8 +9,6 @@ slug: "how-to-connect-n8n-to-local-ollama-instance"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # How to Connect n8n to Local Ollama Instance: Complete Setup Guide
 
 > **Quick Answer:** To connect n8n to a local Ollama instance, ensure both applications are running on the same network. Expose your Ollama host by setting the environment variable `OLLAMA_HOST=0.0.0.0` before launching it. Then, in n8n, use the HTTP Request node or the community Ollama node, setting the base URL to `http://<your-machine-ip>:11434` to start sending prompts and receiving AI-generated responses directly in your automated workflows.

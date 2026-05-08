@@ -9,8 +9,6 @@ slug: "building-ai-agents-for-cold-email-outreach"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # Building AI Agents for Cold Email Outreach: Complete Guide to [Automation](/posts/ai-tools-for-email-writing/)
 
 > **Quick Answer:** Building AI agents for cold email outreach requires integrating Large Language Models (LLMs) with data enrichment APIs and sending infrastructure to automate research, hyper-personalize messaging, and classify responses. A functional system relies on modular components: a research agent for prospect data, a [copywriting](/posts/rytr-vs-copy-ai-for-copywriting/) agent for drafting, and a triage agent for handling replies, all orchestrated via frameworks like LangChain or [AutoGen](/posts/crewai-vs-autogen-automated-software-development-tasks/).

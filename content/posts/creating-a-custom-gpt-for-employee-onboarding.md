@@ -9,8 +9,6 @@ slug: "creating-a-custom-gpt-for-employee-onboarding"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # Creating a Custom GPT for Employee Onboarding: 5-Step Guide
 
 > **Quick Answer:** Creating a custom GPT for employee onboarding involves compiling your company's internal [documentation](/posts/self-healing-knowledge-base-using-ai/), defining precise system instructions for the AI, and deploying it securely within a closed workspace. This localized AI assistant serves as an interactive, 24/7 handbook, automatically answering procedural questions, reducing HR ticket volume by up to 60%, and significantly decreasing new hire ramp-up time.

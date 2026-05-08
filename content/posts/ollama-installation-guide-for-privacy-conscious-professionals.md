@@ -9,8 +9,6 @@ slug: "ollama-installation-guide-privacy-conscious-professionals"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # Ollama Installation Guide for Privacy-Conscious Professionals: Secure Local AI
 
 > **Quick Answer:** To install Ollama for privacy-conscious professionals, download the appropriate installer for macOS, Linux, or Windows (via WSL2), then use the `ollama run [model_name]` command to download and execute AI models locally, ensuring sensitive data remains on-premises and under your control.

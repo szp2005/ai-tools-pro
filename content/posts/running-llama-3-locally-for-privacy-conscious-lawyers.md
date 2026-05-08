@@ -9,8 +9,6 @@ slug: "running-llama-3-locally-for-privacy-conscious-lawyers"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # Running Llama 3 Locally for Privacy Conscious Lawyers: Complete Guide
 
 > **Quick Answer:** Running Llama 3 locally for privacy conscious lawyers allows [law firms](/posts/crewai-multi-agent-system-legal-research-automation/) to leverage advanced [generative AI](/posts/stable-diffusion-vs-midjourney-for-beginners/) for [document analysis](/posts/local-llm-deployment-offline-document-analysis/) and drafting without exposing sensitive client data to third-party cloud servers. By utilizing local hardware to run quantized models, attorneys can maintain strict compliance with attorney-client privilege while automating routine legal workflows.

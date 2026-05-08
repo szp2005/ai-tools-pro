@@ -9,8 +9,6 @@ slug: "n8n-integration-for-automated-crm-data-entry"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # n8n Integration for Automated CRM Data Entry Setup: 5-Step Guide
 
 > **Quick Answer:** Building an n8n integration for automated CRM data entry requires configuring a trigger node (like a Webhook or Typeform), using a Set or Code node to transform incoming payload data to match your CRM's schema, and connecting a CRM app node (such as HubSpot or Salesforce) to upsert the contact record. Implementing deduplication logic and error handling routes ensures data integrity across thousands of automated entries.

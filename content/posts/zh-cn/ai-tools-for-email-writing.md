@@ -8,8 +8,6 @@ tags: ["AI", "Productivity", "Email Writing", "Business Communication", "Automat
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 _作为 Amazon 联盟成员，我们通过符合条件的购买获得收益。本文可能包含联盟链接。_
 
 # AI 邮件写作工具终极指南

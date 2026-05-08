@@ -9,8 +9,6 @@ slug: "how-to-run-local-llms-on-macbook-m3"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # Local LLMs on MacBook M3: Complete 2026 Setup Guide
 
 > **Quick Answer:** Running local LLMs on an M3 MacBook is most effectively achieved using tools like Ollama or LM Studio, which are natively optimized for Apple's Metal API. Simply download Ollama, open your Terminal, and execute `ollama run llama3` to have a fully offline, private AI assistant running directly on your Apple Silicon hardware in minutes.

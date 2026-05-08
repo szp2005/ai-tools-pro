@@ -9,8 +9,6 @@ slug: "using-local-llms-for-private-data-analysis"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # Using Local LLMs for Private Data Analysis: Complete 2026 Guide
 
 > **Quick Answer:** Using local LLMs for private data analysis involves running open-weight models like [Llama 3](/posts/building-a-local-knowledge-base-with-llama-3/) or [Mistral](/posts/setup-local-first-ai-research-assistant-with-mistral/) directly on your own hardware, ensuring [sensitive data](/posts/best-local-llm-for-sensitive-data-analysis-2026/) never leaves your network. This is achieved by combining local inference engines like Ollama with frameworks like LangChain or LlamaIndex to query internal databases, spreadsheets, and documents securely without relying on third-party cloud APIs.

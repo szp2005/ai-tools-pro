@@ -9,8 +9,6 @@ slug: "how-to-automate-cold-email-outreach-with-ai"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # How to Automate Cold Email Outreach with AI: 5-Step Guide
 
 > **Quick Answer:** To automate cold email outreach with AI, combine a dynamic data provider to build targeted lead lists, a [generative AI](/posts/stable-diffusion-vs-midjourney-for-beginners/) pipeline (like Claude 3.5 Sonnet or GPT-4o) to analyze prospect data and write highly personalized first lines, and an automated sequencing platform to schedule sending. The key to success is using AI for deep research and account-level personalization rather than just generic [copywriting](/posts/rytr-vs-copy-ai-for-copywriting/), ensuring every automated email feels manually written.

@@ -9,8 +9,6 @@ slug: "n8n-workflow-automation-for-content-creators"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # n8n Workflow Automation for Content Creators: Complete 2026 Guide
 
 > **Quick Answer:** n8n workflow automation for content creators connects your existing tools (like Notion, WordPress, [social media](/posts/ai-tools-for-social-media-content/) platforms, and [AI models](/posts/claude-3-5-sonnet-vs-gpt-4o-for-complex-reasoning/)) into hands-free pipelines. It allows you to automate repetitive tasks like drafting, scheduling, and repurposing content across platforms without paying high monthly subscription fees or dealing with restrictive usage limits.

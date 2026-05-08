@@ -9,8 +9,6 @@ slug: "how-to-build-crewai-agents-for-market-research"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 _作为Amazon联盟成员，我们从符合条件的购买中赚取收益。本文可能包含联盟链接。_
 
 # 如何构建用于市场调研的CrewAI智能体：5步指南

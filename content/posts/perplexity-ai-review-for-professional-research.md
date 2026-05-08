@@ -9,8 +9,6 @@ slug: "perplexity-ai-review-for-professional-research"
 type: "review"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # Perplexity AI Review for Professional Research (2026)
 
 > **Quick Answer:** Perplexity AI is currently the most capable AI [search engine](/posts/perplexity-ai-review-2026/) for professional research, effectively bridging the gap between traditional search algorithms and [generative AI](/posts/stable-diffusion-vs-midjourney-for-beginners/). Its Pro tier delivers precise, heavily cited answers drawing from academic papers, real-time web data, and specialized databases, making it an indispensable tool for analysts, academics, and strategic planners who require verifiable information.
@@ -25,7 +23,7 @@ For [professionals](/posts/ollama-installation-guide-privacy-conscious-professio
 
 To understand Perplexity's value proposition, it is crucial to break down its two primary access tiers. For professional use cases, the distinction between these tiers is the difference between a novelty tool and a core workflow utility.
 
-### 1. [Perplexity Pro](https://www.amazon.com/s?k=Perplexity%20Pro&tag=toolrouteai-20)
+### 1. Perplexity Pro
 
 **Best for:** Academic researchers, market analysts, data scientists, and professional writers
 **Price:** $20/month or $200/year
@@ -46,7 +44,7 @@ For professional research, the Pro tier is essentially mandatory. The ability to
 - UI can become difficult to navigate during highly complex, multi-thread investigations
 - File upload parsing occasionally struggles with complex, multi-column tables in older PDFs
 
-### 2. [Perplexity Free Tier](https://www.amazon.com/s?k=Perplexity%20Free%20Tier&tag=toolrouteai-20)
+### 2. Perplexity Free Tier
 
 **Best for:** Casual users, students doing basic fact-checking, and general everyday inquiries
 **Price:** $0

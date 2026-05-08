@@ -9,8 +9,6 @@ slug: "how-to-automate-niche-market-research-with-perplexity"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 _作为亚马逊联盟成员，我们通过符合条件的购买赚取收益。本文可能包含联盟链接。_
 
 # 2026年如何使用 Perplexity 自动化细分市场调研

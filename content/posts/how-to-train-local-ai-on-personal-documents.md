@@ -9,8 +9,6 @@ slug: "how-to-train-local-ai-on-personal-documents"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # Local AI on Personal Documents: 5-Step Training Guide
 
 > **Quick Answer:** To train local AI on personal documents, you generally don't "train" or fine-tune a model from scratch. Instead, use a technique called Retrieval-Augmented Generation (RAG) with tools like Ollama and AnythingLLM. You ingest your files into a local vector database, allowing the AI to search your documents and use them as context to answer your questions—keeping 100% of your data offline and private.

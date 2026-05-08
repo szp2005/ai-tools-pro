@@ -9,8 +9,6 @@ slug: "setup-local-first-ai-research-assistant-with-mistral"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # Setup Local First AI Research Assistant with Mistral: Full Guide
 
 > **Quick Answer:** To setup a local first AI research assistant with Mistral, install an inference engine like Ollama or [LM Studio](/posts/ollama-vs-lm-studio-for-local-model-management/), download the Mistral 7B Instruct or Mixtral 8x7B GGUF model files, and connect a front-end interface like AnythingLLM or Open WebUI. This combination allows you to process PDFs, query your research notes, and generate summaries entirely offline on [consumer hardware](/posts/running-mistral-7b-on-consumer-hardware-for-privacy/) with 8GB to 16GB of VRAM.

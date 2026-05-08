@@ -9,8 +9,6 @@ slug: "open-source-ai-crm-for-small-businesses"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # Best Open Source AI CRM for Small Businesses in 2026
 
 > **Quick Answer:** The best open source AI CRM for small businesses is Twenty or Odoo. These platforms combine modern architectures with the ability to integrate self-hosted or API-based LLMs (like Llama 3 or OpenAI). By self-hosting an open source CRM, small teams can automate lead scoring, draft client emails, and analyze sales pipelines without paying expensive per-user subscription fees to proprietary vendors.

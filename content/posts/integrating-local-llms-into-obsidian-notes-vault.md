@@ -9,8 +9,6 @@ slug: "integrating-local-llms-into-obsidian-notes-vault"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # Integrating Local LLMs into Obsidian Notes Vault: 5-Step Guide
 
 > **Quick Answer:** Integrating local LLMs into an Obsidian notes vault requires running a local inference server (like Ollama or LM Studio) and connecting it to Obsidian using API-compatible plugins such as Smart Connections or Text Generator. This setup enables Retrieval-Augmented Generation (RAG), allowing you to query, summarize, and analyze your private markdown notes entirely offline without exposing sensitive data to third-party cloud services.

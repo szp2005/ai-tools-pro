@@ -9,8 +9,6 @@ slug: "automating-indie-hacker-workflows-with-make-com"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # Automating Indie Hacker Workflows with Make.com: Complete Guide
 
 > **Quick Answer:** Automating indie hacker workflows with Make.com involves visually connecting your apps (like Stripe, Ghost, Twitter, and Notion) using drag-and-drop scenarios. By setting up automated triggers and actions, solo founders can handle customer onboarding, [social media](/posts/ai-tools-for-social-media-content/) distribution, and data syncing without [writing](/posts/ai-writing-assistant-for-long-form-content/) code, effectively acting as a digital operations team.

@@ -9,8 +9,6 @@ slug: "midjourney-parameter-guide-for-consistent-character-design"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 _作为亚马逊联盟成员，我们从符合条件的购买中赚取收益。本文可能包含联盟链接。_
 
 # Midjourney 角色设计一致性参数指南：完整[工作流](/zh-cn/posts/how-to-automate-slack-notifications-with-n8n/)

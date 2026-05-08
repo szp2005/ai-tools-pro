@@ -9,8 +9,6 @@ slug: "guide-to-self-hosting-n8n-on-docker-for-privacy"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # Self Hosting n8n on Docker for Privacy: Complete Setup Guide
 
 > **Quick Answer:** A guide to self hosting n8n on Docker for privacy involves provisioning a Linux server, setting up Docker and Docker Compose, and deploying n8n alongside a PostgreSQL database. By routing traffic through a reverse proxy with SSL and isolating the Docker network, you ensure that sensitive workflow data, API keys, and internal [automation](/posts/ai-tools-for-email-writing/) logic remain strictly under your control, entirely separate from third-party [cloud infrastructure](/posts/local-first-ai-tools-vs-cloud-structured-2026/).

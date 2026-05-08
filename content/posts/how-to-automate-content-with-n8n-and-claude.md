@@ -11,8 +11,6 @@ type: "informational"
 tags: ["automate", "content", "n8n", "claude"]
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # How to Automate Content with n8n and Claude (Step-by-Step for Non-Developers)
 
 ---

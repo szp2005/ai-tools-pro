@@ -8,8 +8,6 @@ tags: ["Mistral RAG", "Local LLM", "Private Document Search", "Data Privacy"]
 slug: "mistral-local-rag-setup-for-private-document-search"
 type: "informational"
 ---
-
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
 # Mistral Local RAG Setup: Private Document Search Guide
 
 > **Quick Answer:** A Mistral local RAG setup for private document search involves deploying a Mistral large language model (LLM) on your own hardware, integrating it with a vector database that stores embeddings of your private documents, and using a retrieval-augmented generation (RAG) pipeline to answer queries securely without sending [sensitive data](/posts/best-local-llm-for-sensitive-data-analysis-2026/) to external cloud services. This approach ensures data [privacy](/posts/ollama-installation-guide-privacy-conscious-professionals/), maintains full control over your information, and leverages Mistral's efficiency for robust offline performance.

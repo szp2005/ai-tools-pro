@@ -8,8 +8,6 @@ tags: ["n8n", "slack", "automation", "workflow"]
 slug: "how-to-automate-slack-notifications-with-n8n"
 type: "informational"
 ---
-
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
 # How to Automate Slack Notifications with n8n: 5-Step Guide
 
 > **Quick Answer:** To automate Slack notifications with n8n, set up a trigger node (like a Webhook or Schedule), add the Slack node, and authenticate using a Bot User OAuth Token. Map your incoming data to the Slack node's message parameter, and use the Switch node if you need to route alerts to specific channels based on data conditions.

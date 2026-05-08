@@ -9,8 +9,6 @@ slug: "stable-diffusion-for-local-image-generation"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # Stable Diffusion for Local Image Generation: Complete Setup Guide
 
 > **Quick Answer:** Running Stable Diffusion for local image generation requires a dedicated GPU (ideally an NVIDIA card with at least 8GB VRAM), enough system RAM (16GB+), and a user interface like Automatic1111 or ComfyUI. Local generation offers absolute [privacy](/posts/ollama-installation-guide-privacy-conscious-professionals/), zero recurring subscription costs, and complete control over advanced tools like ControlNet and custom LoRAs without [content](/posts/how-to-automate-content-with-n8n-and-claude/) restrictions.

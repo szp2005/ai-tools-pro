@@ -9,8 +9,6 @@ slug: "claude-api-for-custom-workflow-automation"
 type: "informational"
 ---
 
-_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
-
 # Claude API for Custom Workflow Automation: Complete Guide
 
 > **Quick Answer:** The Claude API for custom workflow automation acts as an intelligent reasoning engine connecting your applications. By leveraging models like [Claude 3.5 Sonnet](/posts/claude-3-5-sonnet-api-for-secure-internal-tools/) alongside tool use (function calling), developers can build deterministic pipelines that parse unstructured data, route requests, and execute complex business logic autonomously, replacing hours of manual data handling.
