@@ -167,6 +167,8 @@ LinkedIn的好友请求限制不再固定为每周100个；它们会根据您账
 
 ## Related Reading
 
+- [Best Chrome Extension AI for Automated LinkedIn Prospecting in 2026](/posts/chrome-extension-ai-for-automated-linkedin-prospecting/)
+
 - [Flux vs Stable Diffusion for Realistic Product Photography (2026)](/posts/flux-vs-stable-diffusion-for-realistic-product-photography/)
 
 - [Best Chrome Extension AI for Automated LinkedIn Prospecting in 2026](/posts/chrome-extension-ai-for-automated-linkedin-prospecting/)

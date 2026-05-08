@@ -118,6 +118,8 @@ While some tools will technically execute on older Intel Macs, performance will 
 
 ## Related Reading
 
+- [Local AI on Personal Documents: 5-Step Training Guide](/posts/how-to-train-local-ai-on-personal-documents/)
+
 - [Best AI Coding Assistants for Indie Web Developers in 2026](/posts/best-ai-coding-assistants-for-indie-web-developers/)
 
 - [Best AI Coding Assistants for Indie Web Developers in 2026](/posts/best-ai-coding-assistants-for-indie-web-developers/)

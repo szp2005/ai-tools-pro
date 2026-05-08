@@ -210,6 +210,8 @@ InVideo AI 是目前全自动不露脸频道的最佳平台。因为它能生成
 
 - [7 Best AI Video Avatar Generators for Marketing in 2026](/posts/ai-video-avatar-generator-for-marketing/)
 
+- [7 Best AI Video Avatar Generators for Marketing in 2026](/posts/ai-video-avatar-generator-for-marketing/)
+
 - [Best AI Tool for Voice Cloning and TTS in 2026](/posts/ai-tool-for-voice-cloning-and-tts/)
 
 - [Best Automated Video Editing Tools for YouTube in 2026](/posts/automated-video-editing-tools-for-youtube-2026/)
