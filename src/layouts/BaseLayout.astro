@@ -24,6 +24,7 @@ const {
 
 const siteName = 'AI Tools Pro';
 const siteURL = 'https://ai.toolrouteai.com';
+const siteSlug = 'ai-tools-pro';
 
 // Locale-aware nav links
 const isZhCn = Astro.url.pathname.startsWith('/zh-cn/');
@@ -198,6 +199,14 @@ const ga4MeasurementId = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID;
         <a href={`${localePrefix}/posts/`}>All Posts</a>
         <a href="/tags/">Tags</a>
         <a href="/rss.xml">RSS</a>
+        <a
+          href={`https://tools.toolrouteai.com/?ref=${siteSlug}`}
+          target="_blank"
+          rel="noopener nofollow"
+          style="display:inline-flex;align-items:center;gap:.4rem;font-size:.9rem;color:#7c3aed;text-decoration:none;"
+        >
+          📬 Free AI tools + Weekly digest →
+        </a>
       </nav>
     </footer>
   </body>
