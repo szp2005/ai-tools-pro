@@ -1,5 +1,11 @@
 ---
 image: "/og/open-source-ai-crm-for-small-businesses.webp"
+evidenceImage:
+  src: "/media/adsense-phase2/sticky-workflow.jpg"
+  alt: "CRM and pipeline planning workspace with sticky notes"
+  caption: "A planning desk with sticky notes, used to represent workflow mapping and hand-picked editorial links."
+  credit: "Anastasia Shuraeva / Pexels"
+  sourceUrl: "https://www.pexels.com/photo/sticky-notes-and-a-laptop-7278606/"
 title: "Best Open Source AI CRM for Small Businesses in 2026"
 description: "Discover the top open source AI CRM for small businesses. Compare leading platforms, find affordable AI-powered sales tools, and boost your team's productivity."
 pubDate: "2026-05-07"

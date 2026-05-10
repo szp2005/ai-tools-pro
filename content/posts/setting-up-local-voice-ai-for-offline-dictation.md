@@ -1,5 +1,11 @@
 ---
 image: "/og/setting-up-local-voice-ai-for-offline-dictation.webp"
+evidenceImage:
+  src: "/media/adsense-phase2/audio-setup.jpg"
+  alt: "Local voice AI dictation setup with microphone and laptop"
+  caption: "A real microphone and laptop audio setup, used to illustrate voice and dictation workflows."
+  credit: "Jeremy Enns / Pexels"
+  sourceUrl: "https://www.pexels.com/photo/audio-setup-with-a-mic-and-laptop-5083605/"
 title: "Setting Up Local Voice AI for Offline Dictation: 5-Step Guide"
 description: "Master setting up local voice ai for offline dictation to protect your privacy and eliminate latency. This complete guide covers hardware and Whisper setup."
 pubDate: "2026-05-07"

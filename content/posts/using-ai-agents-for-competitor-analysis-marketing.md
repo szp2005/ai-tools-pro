@@ -1,5 +1,11 @@
 ---
 image: "/og/using-ai-agents-for-competitor-analysis-marketing.webp"
+evidenceImage:
+  src: "/media/adsense-phase2/ai-laptop-chatgpt.jpg"
+  alt: "AI competitor analysis workflow on a laptop"
+  caption: "A laptop-based AI workflow, used here to illustrate hands-on AI tool evaluation."
+  credit: "Matheus Bertelli / Pexels"
+  sourceUrl: "https://www.pexels.com/photo/laptop-with-chatgpt-ai-system-16094056/"
 title: "Using AI Agents for Competitor Analysis Marketing: 5-Step Guide"
 description: "Learn how using AI agents for competitor analysis marketing automates data collection, uncovers market gaps, and helps you outsmart rivals efficiently."
 pubDate: "2026-05-07"

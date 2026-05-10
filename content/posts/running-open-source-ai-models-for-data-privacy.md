@@ -1,5 +1,11 @@
 ---
 image: "/og/running-open-source-ai-models-for-data-privacy.webp"
+evidenceImage:
+  src: "/media/adsense-phase2/code-laptop.jpg"
+  alt: "Local AI development laptop screen"
+  caption: "A development laptop screen, used to ground the local AI and automation workflow examples."
+  credit: "Christina Morillo / Pexels"
+  sourceUrl: "https://www.pexels.com/photo/black-and-gray-laptop-computer-turned-on-doing-computer-codes-1181271/"
 title: "Running Open Source AI Models for Data Privacy: Complete Guide"
 description: "Learn how running open source AI models for data privacy protects sensitive information, reduces compliance risks, and gives you complete control over."
 pubDate: "2026-05-07"

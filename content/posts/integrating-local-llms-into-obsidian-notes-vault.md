@@ -1,5 +1,11 @@
 ---
 image: "/og/integrating-local-llms-into-obsidian-notes-vault.webp"
+evidenceImage:
+  src: "/media/adsense-phase2/notes-laptop.jpg"
+  alt: "Laptop and notes setup for local AI knowledge workflows"
+  caption: "Notebook and laptop planning setup, used to illustrate manual review and workflow documentation."
+  credit: "RDNE Stock project / Pexels"
+  sourceUrl: "https://www.pexels.com/photo/worker-taking-notes-while-using-a-laptop-7888655/"
 title: "Integrating Local LLMs into Obsidian Notes Vault: 5-Step Guide"
 description: "Learn the exact process for integrating local LLMs into Obsidian notes vault. Maintain total privacy while chatting with your personal knowledge base offline."
 pubDate: "2026-05-07"

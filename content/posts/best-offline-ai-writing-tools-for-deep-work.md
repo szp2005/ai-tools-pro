@@ -1,5 +1,11 @@
 ---
 image: "/og/best-offline-ai-writing-tools-for-deep-work.webp"
+evidenceImage:
+  src: "/media/adsense-phase2/notes-laptop.jpg"
+  alt: "Focused writing and planning setup with laptop and paper notes"
+  caption: "Notebook and laptop planning setup, used to illustrate manual review and workflow documentation."
+  credit: "RDNE Stock project / Pexels"
+  sourceUrl: "https://www.pexels.com/photo/worker-taking-notes-while-using-a-laptop-7888655/"
 title: "Best Offline AI Writing Tools for Deep Work in 2026"
 description: "Discover the best offline AI writing tools for deep work. Compare features, privacy, and hardware needs to find the perfect local AI for focused writing."
 pubDate: "2026-05-07"

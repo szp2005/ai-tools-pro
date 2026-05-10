@@ -1,5 +1,11 @@
 ---
 image: "/og/lm-studio-vs-ollama-for-local-ai-development.webp"
+evidenceImage:
+  src: "/media/adsense-phase2/code-laptop.jpg"
+  alt: "Local AI tooling represented by a development laptop"
+  caption: "A development laptop screen, used to ground the local AI and automation workflow examples."
+  credit: "Christina Morillo / Pexels"
+  sourceUrl: "https://www.pexels.com/photo/black-and-gray-laptop-computer-turned-on-doing-computer-codes-1181271/"
 title: "LM Studio vs Ollama for Local AI Development: Which Is Better in 2026?"
 description: "Comparing LM Studio vs Ollama for local AI development. Discover the best tool for running LLMs locally based on UI, CLI, performance, and API workflows."
 pubDate: "2026-05-07"

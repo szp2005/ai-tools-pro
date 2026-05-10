@@ -1,5 +1,11 @@
 ---
 image: "/og/how-to-run-local-llms-on-macbook-m3.webp"
+evidenceImage:
+  src: "/media/adsense-phase2/code-laptop.jpg"
+  alt: "Laptop screen showing code for local LLM setup"
+  caption: "A development laptop screen, used to ground the local AI and automation workflow examples."
+  credit: "Christina Morillo / Pexels"
+  sourceUrl: "https://www.pexels.com/photo/black-and-gray-laptop-computer-turned-on-doing-computer-codes-1181271/"
 title: "Local LLMs on MacBook M3: Complete 2026 Setup Guide"
 description: "Learn exactly how to run local LLMs on your MacBook M3. This guide covers setup, best tools like Ollama, and model recommendations for Apple Silicon."
 pubDate: "2026-05-07"

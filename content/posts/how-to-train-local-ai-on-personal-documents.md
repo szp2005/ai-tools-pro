@@ -1,5 +1,11 @@
 ---
 image: "/og/how-to-train-local-ai-on-personal-documents.webp"
+evidenceImage:
+  src: "/media/adsense-phase2/notes-laptop.jpg"
+  alt: "Document review and note-taking setup for private AI training"
+  caption: "Notebook and laptop planning setup, used to illustrate manual review and workflow documentation."
+  credit: "RDNE Stock project / Pexels"
+  sourceUrl: "https://www.pexels.com/photo/worker-taking-notes-while-using-a-laptop-7888655/"
 title: "Local AI on Personal Documents: 5-Step Training Guide"
 description: "Learn how to train local AI on personal documents securely without the cloud. A step-by-step guide to using RAG, Ollama, and vector databases for total privacy."
 pubDate: "2026-05-07"
