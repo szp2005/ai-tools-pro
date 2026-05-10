@@ -24,6 +24,8 @@ const {
 
 const siteName = 'AI Tools Pro';
 const siteURL = 'https://ai.toolrouteai.com';
+const networkName = 'ToolRoute AI';
+const networkURL = 'https://toolrouteai.com';
 const siteSlug = 'ai-tools-pro';
 
 // Locale-aware nav links
@@ -36,10 +38,13 @@ const lang = pathname.startsWith('/zh-cn') ? 'zh-cn' : 'en';
 
 // Force canonical to siteURL host regardless of which domain served the page.
 const canonicalURL = canonicalURLProp ?? `${siteURL}${pathname}${Astro.url.search}`;
+const isNetworkPage = canonicalURL.startsWith(`${networkURL}/`);
+const displaySiteName = isNetworkPage ? networkName : siteName;
+const displaySiteURL = isNetworkPage ? networkURL : siteURL;
 
 // Alternate links for SEO
-const alternateEn = `${siteURL}${pathname.replace('/zh-cn', '')}`;
-const alternateZh = pathname.startsWith('/zh-cn') ? `${siteURL}${pathname}` : `${siteURL}/zh-cn${pathname}`;
+const alternateEn = `${displaySiteURL}${pathname.replace('/zh-cn', '')}`;
+const alternateZh = pathname.startsWith('/zh-cn') ? `${displaySiteURL}${pathname}` : `${displaySiteURL}/zh-cn${pathname}`;
 
 const ogImage = articleImage ? (articleImage.startsWith('http') ? articleImage : `${siteURL}${articleImage}`) : `${siteURL}/og-default.png`;
 const cloudflareWebAnalyticsToken = import.meta.env.PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN;
@@ -71,7 +76,7 @@ const ga4MeasurementId = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID;
 
     <!-- Sitemap -->
     <link rel="sitemap" href="/sitemap.xml" />
-    <link rel="alternate" type="application/rss+xml" title="AI Tools Pro RSS Feed" href="/rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title={`${displaySiteName} RSS Feed`} href="/rss.xml" />
 
     <!-- Open Graph -->
     <meta property="og:type" content={isArticle ? 'article' : 'website'} />
@@ -79,7 +84,7 @@ const ga4MeasurementId = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID;
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImage} />
-    <meta property="og:site_name" content={siteName} />
+    <meta property="og:site_name" content={displaySiteName} />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -109,8 +114,8 @@ const ga4MeasurementId = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID;
         },
         "publisher": {
           "@type": "Organization",
-          "name": siteName,
-          "url": siteURL,
+          "name": displaySiteName,
+          "url": displaySiteURL,
           "logo": {
             "@type": "ImageObject",
             "url": ogImage
@@ -125,8 +130,8 @@ const ga4MeasurementId = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID;
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": siteURL },
-          { "@type": "ListItem", "position": 2, "name": "Posts", "item": `${siteURL}/posts/` },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": displaySiteURL },
+          { "@type": "ListItem", "position": 2, "name": "Posts", "item": `${displaySiteURL}/posts/` },
           { "@type": "ListItem", "position": 3, "name": title, "item": canonicalURL }
         ]
       })} />
@@ -136,14 +141,14 @@ const ga4MeasurementId = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID;
       <script type="application/ld+json" set:html={JSON.stringify({
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": siteName,
-        "url": siteURL,
+        "name": displaySiteName,
+        "url": displaySiteURL,
         "description": description,
         "potentialAction": {
           "@type": "SearchAction",
           "target": {
             "@type": "EntryPoint",
-            "urlTemplate": `${siteURL}/search/?q={search_term_string}`
+            "urlTemplate": `${displaySiteURL}/search/?q={search_term_string}`
           },
           "query-input": "required name=search_term_string"
         }
@@ -179,10 +184,11 @@ const ga4MeasurementId = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID;
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href={isZhCn ? "/zh-cn/" : "/"}>AI Tools Pro</a>
+      <a class="brand" href={isZhCn ? "/zh-cn/" : "/"}>{displaySiteName}</a>
       <nav>
         <a href={`${localePrefix}/posts/`}>Reviews</a>
         <a href={`${localePrefix}/about/`}>About</a>
+        <a href="/authors/">Authors</a>
         <a href="/tags/">Tags</a>
         <a href="/search/">Search</a>
       </nav>
@@ -191,12 +197,16 @@ const ga4MeasurementId = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID;
       <slot />
     </main>
     <footer class="site-footer">
-      <p>Independent AI tool reviews and comparisons for professionals.</p>
+      <p>Independent ToolRoute AI guides for software, automation, PKM, and remote-work decisions.</p>
       <nav class="footer-nav">
         <a href={`${localePrefix}/about/`}>About</a>
         <a href={`${localePrefix}/contact/`}>Contact</a>
         <a href={`${localePrefix}/privacy/`}>Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/affiliate-disclosure/">Affiliate Disclosure</a>
+        <a href="/editorial-policy/">Editorial Policy</a>
         <a href={`${localePrefix}/posts/`}>All Posts</a>
+        <a href="/authors/">Authors</a>
         <a href="/tags/">Tags</a>
         <a href="/rss.xml">RSS</a>
         <a
@@ -209,5 +219,22 @@ const ga4MeasurementId = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID;
         </a>
       </nav>
     </footer>
+    <div id="cookie-consent" class="cookie-consent" hidden>
+      <p>We use privacy-minded analytics, advertising scripts, and affiliate tracking to keep this site free. By continuing, you agree to our <a href="/privacy/">Privacy Policy</a> and <a href="/terms/">Terms</a>.</p>
+      <button type="button" id="cookie-consent-accept">Accept</button>
+    </div>
+    <script is:inline>
+      (() => {
+        const banner = document.getElementById('cookie-consent');
+        const button = document.getElementById('cookie-consent-accept');
+        if (!banner || !button) return;
+        if (localStorage.getItem('cookie-consent-v1') === 'accepted') return;
+        banner.hidden = false;
+        button.addEventListener('click', () => {
+          localStorage.setItem('cookie-consent-v1', 'accepted');
+          banner.hidden = true;
+        });
+      })();
+    </script>
   </body>
 </html>

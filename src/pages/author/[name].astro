@@ -49,6 +49,13 @@ const canonicalURL = `${siteURL}/author/${String(author).toLowerCase().replace(/
         <p class="bio">{bio}</p>
       </div>
     </header>
+
+    <section class="author-trust">
+      <h2>Editorial role and review standards</h2>
+      <p>This author page is part of our public accountability layer. Articles under this byline are assigned to a clear editorial role, reviewed for reader usefulness, and maintained when product details, pricing, workflows, or recommendations change. The role focuses on AI tools, automation workflows, local AI, and software comparison research rather than generic content production.</p>
+      <p>AI tools may assist with outlines, source organization, draft cleanup, translation support, and consistency checks, but they do not replace editorial review. Before publication, the editor checks whether the article answers a real reader question, names practical trade-offs, avoids unsupported guarantees, and includes visible disclosures where affiliate or advertising relationships may apply.</p>
+      <p>Read our <a href="/editorial-policy/">Editorial Policy</a>, review the <a href="/affiliate-disclosure/">Affiliate Disclosure</a>, or contact the editor through the site contact page. Public project profile: <a href="https://github.com/szp2005" rel="me noopener" target="_blank">GitHub</a>.</p>
+    </section>
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Person",
@@ -84,6 +91,10 @@ const canonicalURL = `${siteURL}/author/${String(author).toLowerCase().replace(/
 .author-header { margin-bottom: 3rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 2rem; }
 .author-info h1 { font-size: 2.5rem; margin: 0 0 1rem 0; }
 .bio { font-size: 1.1rem; line-height: 1.6; color: #4b5563; margin: 0; }
+.author-trust { border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.25rem; margin: -1.5rem 0 2.5rem; background: #ffffff; }
+.author-trust h2 { font-size: 1.25rem; margin: 0 0 .75rem; }
+.author-trust p { color: #374151; line-height: 1.7; }
+.author-trust a { color: #246bfe; text-decoration: underline; }
 .author-posts h2 { font-size: 1.5rem; margin-bottom: 1.5rem; }
 .post-list { list-style: none; padding: 0; }
 .post-list li { margin-bottom: 1.25rem; display: flex; flex-direction: column; gap: 0.25rem; }
