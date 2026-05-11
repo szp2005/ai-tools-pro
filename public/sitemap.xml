@@ -382,6 +382,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ai.toolrouteai.com/posts/best-ai-coding-assistants-for-indie-web-developers/"/>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/posts/best-ai-contract-review-tools-for-freelancers/</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/posts/best-ai-grammar-checker-for-academic-writing/</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -1033,6 +1039,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ai.toolrouteai.com/posts/how-to-use-leonardo-ai-for-game-textures/"/>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/posts/how-to-write-upwork-proposals-using-ai/</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/posts/integrating-local-llms-into-obsidian-notes-vault/</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -1280,6 +1292,9 @@
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai.toolrouteai.com/posts/ollama-installation-guide-privacy-conscious-professionals/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://ai.toolrouteai.com/zh-cn/posts/ollama-installation-guide-privacy-conscious-professionals/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai.toolrouteai.com/posts/ollama-installation-guide-privacy-conscious-professionals/"/>
   </url>
   <url>
     <loc>https://ai.toolrouteai.com/posts/ollama-vs-lm-studio-for-local-model-management/</loc>
@@ -1340,6 +1355,9 @@
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai.toolrouteai.com/posts/privacy-benefits-running-llms-local-hardware/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://ai.toolrouteai.com/zh-cn/posts/privacy-benefits-running-llms-local-hardware/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai.toolrouteai.com/posts/privacy-benefits-running-llms-local-hardware/"/>
   </url>
   <url>
     <loc>https://ai.toolrouteai.com/posts/running-llama-3-locally-for-privacy-conscious-lawyers/</loc>
@@ -2773,6 +2791,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ai.toolrouteai.com/posts/offline-ai-transcription-tool-for-macos-2026/"/>
   </url>
   <url>
+    <loc>https://ai.toolrouteai.com/zh-cn/posts/ollama-installation-guide-privacy-conscious-professionals/</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai.toolrouteai.com/posts/ollama-installation-guide-privacy-conscious-professionals/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://ai.toolrouteai.com/zh-cn/posts/ollama-installation-guide-privacy-conscious-professionals/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai.toolrouteai.com/posts/ollama-installation-guide-privacy-conscious-professionals/"/>
+  </url>
+  <url>
     <loc>https://ai.toolrouteai.com/zh-cn/posts/ollama-vs-lm-studio-for-local-model-management/</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -2825,6 +2852,15 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://ai.toolrouteai.com/posts/perplexity-ai-review-for-professional-research/"/>
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://ai.toolrouteai.com/zh-cn/posts/perplexity-ai-review-for-professional-research/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ai.toolrouteai.com/posts/perplexity-ai-review-for-professional-research/"/>
+  </url>
+  <url>
+    <loc>https://ai.toolrouteai.com/zh-cn/posts/privacy-benefits-running-llms-local-hardware/</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai.toolrouteai.com/posts/privacy-benefits-running-llms-local-hardware/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://ai.toolrouteai.com/zh-cn/posts/privacy-benefits-running-llms-local-hardware/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai.toolrouteai.com/posts/privacy-benefits-running-llms-local-hardware/"/>
   </url>
   <url>
     <loc>https://ai.toolrouteai.com/zh-cn/posts/running-mistral-7b-on-consumer-hardware-for-privacy/</loc>
