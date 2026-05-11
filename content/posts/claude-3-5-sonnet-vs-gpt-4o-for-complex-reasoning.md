@@ -9,6 +9,8 @@ slug: "claude-3-5-sonnet-vs-gpt-4o-for-complex-reasoning"
 type: "review"
 ---
 
+_As an Amazon Associate we earn from qualifying purchases. This post may contain affiliate links._
+
 # Claude 3.5 Sonnet vs GPT-4o: Which Excels for Complex Reasoning?
 
 > **Quick Answer:** For complex reasoning tasks, both Claude 3.5 Sonnet and GPT-4o offer exceptional capabilities, but their strengths diverge. Claude 3.5 Sonnet often demonstrates superior performance in structured, multi-step logical deductions, particularly in coding, mathematics, and legal analysis. GPT-4o, with its multimodal prowess, excels in reasoning across diverse data types (text, image, audio) and real-time, dynamic problem-solving scenarios. The optimal choice depends heavily on the specific nature of the complex reasoning required.
@@ -30,7 +32,7 @@ Complex reasoning in the context of LLMs refers to the ability to go beyond simp
 
 The performance of an LLM in these areas is often evaluated through specialized benchmarks like MMLU (Massive Multitask Language Understanding), GSM8K (Grade School Math 8K), HumanEval (code generation), and various legal or scientific reasoning tests. While raw token generation speed is important, the *quality* and *accuracy* of the reasoning output are paramount for complex tasks. Both Claude 3.5 Sonnet and GPT-4o have been engineered with significant advancements to excel in these demanding domains, each leveraging distinct architectural and training philosophies.
 
-### 1. Claude 3.5 Sonnet
+### 1. [Claude 3.5 Sonnet](https://www.amazon.com/s?k=Claude%203.5%20Sonnet&tag=toolrouteai-20)
 
 **Best for:** Structured logical deduction, code analysis, mathematical problem-solving, long-context text processing, and applications requiring high reliability and safety.
 **Price:** Approximately $3.00 per million input tokens, $15.00 per million output tokens (as of recent announcements, subject to change).
