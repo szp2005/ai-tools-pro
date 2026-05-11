@@ -6,6 +6,24 @@ evidenceImage:
   caption: "Notebook and laptop planning setup, used to illustrate manual review and workflow documentation."
   credit: "RDNE Stock project / Pexels"
   sourceUrl: "https://www.pexels.com/photo/worker-taking-notes-while-using-a-laptop-7888655/"
+editorSummary: >-
+  This article is really about building a private document workflow, not training a model from
+  scratch in the academic sense. The safest path is usually retrieval: clean the files, chunk
+  them, index them locally, and let the model answer with references. I kept the edit focused
+  on practical guardrails: remove sensitive junk before indexing, preserve source filenames,
+  test citation quality, and keep a rebuild process so the knowledge base does not slowly
+  drift from the documents it claims to represent.
+authorNote: >-
+  For personal documents, I prefer boring retrieval pipelines over dramatic fine-tuning
+  claims. If the system can show which note, PDF, or folder an answer came from, it becomes
+  much easier to trust and fix.
+manualRelated:
+  - title: "Building a Local Knowledge Base with Llama 3"
+    url: "/posts/building-a-local-knowledge-base-with-llama-3/"
+  - title: "Comparing Local RAG Solutions for Private Knowledge Bases"
+    url: "/posts/comparing-local-rag-solutions-for-private-knowledge-bases/"
+  - title: "Semantic Search for Personal Notes LLM"
+    url: "/posts/semantic-search-for-personal-notes-llm/"
 title: "Local AI on Personal Documents: 5-Step Training Guide"
 description: "Learn how to train local AI on personal documents securely without the cloud. A step-by-step guide to using RAG, Ollama, and vector databases for total privacy."
 pubDate: "2026-05-07"
