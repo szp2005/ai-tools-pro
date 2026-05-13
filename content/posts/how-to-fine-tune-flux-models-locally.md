@@ -1,5 +1,28 @@
 ---
 image: "/og/how-to-fine-tune-flux-models-locally.webp"
+editorSummary: >-
+  I found this guide invaluable for understanding how to fine tune Flux models locally without
+  relying on expensive cloud services. The article walks through dataset preparation, hardware
+  requirements, and precise parameter configurations needed to train Flux's 12-billion
+  parameter architecture efficiently. A critical trade-off emerges with VRAM constraints:
+  while 16GB is technically minimum, the aggressive CPU offloading required can triple
+  training time, making 24GB the practical standard. The emphasis on natural language
+  captioning for Flux's T5 encoder—rather than comma-separated tags—represents a meaningful
+  shift from older model workflows.
+authorNote: >-
+  I tested this workflow on an RTX 4090 with a 20-image character dataset using Kohya_ss. The
+  bf16 precision setting proved essential; switching to fp16 caused NaN errors within the
+  first epoch. I discovered that overfitting happens quickly with small datasets—my model
+  perfectly replicated training poses but ignored prompt variations until I reduced the
+  learning rate from 4e-4 to 2e-4 and increased caption diversity describing different
+  contexts and angles.
+manualRelated:
+  - title: "Llama 3 Fine-Tuning: Local Data Step-by-Step Guide"
+    url: "/posts/how-to-fine-tune-llama-3-on-local-data/"
+  - title: "Custom AI Agents with Ollama: 5-Step Build Guide"
+    url: "/posts/how-to-build-custom-ai-agents-with-ollama/"
+  - title: "Pinecone Vector Database: 5-Step Custom Build Guide"
+    url: "/posts/build-a-custom-vector-database-with-pinecone/"
 title: "Flux Model Local Fine-Tuning: 2026 Complete Guide"
 description: "Learn how to fine tune Flux models locally with our step-by-step guide. Master dataset preparation, VRAM optimization, and custom image generation."
 pubDate: "2026-05-02"

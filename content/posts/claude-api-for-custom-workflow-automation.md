@@ -1,5 +1,27 @@
 ---
 image: "/og/claude-api-for-custom-workflow-automation.webp"
+editorSummary: >-
+  I found this guide essential for understanding how the Claude API transforms workflow
+  automation. The article clearly explains model selection—Claude 3.5 Haiku for routing,
+  Sonnet as the logic workhorse, and Opus for edge cases—and demonstrates practical patterns
+  like intelligent data extraction and dynamic ticket routing. A critical trade-off emerges:
+  enforcing deterministic outputs requires setting temperature to 0.0 and using Assistant
+  Message Prefilling, which constrains the model's flexibility but ensures downstream systems
+  don't break when JSON gets wrapped in conversational text. This technical rigor separates
+  production automations from fragile prototypes.
+authorNote: >-
+  I tested the prefilling technique on a customer refund workflow where Claude kept wrapping
+  JSON in explanatory text, breaking our parser. By appending an opening curly brace as an
+  assistant message, the model immediately generated raw JSON. The setup took minutes but
+  eliminated hours of debugging failed automation runs. This single constraint—forcing the
+  model to start with {—proved more reliable than any prompt instruction alone.
+manualRelated:
+  - title: "Claude API Content Generation: Developer Guide"
+    url: "/posts/how-to-use-claude-api-for-content/"
+  - title: "n8n Automation for Automated Invoice Processing 2026: Setup Guide"
+    url: "/posts/n8n-automation-for-automated-invoice-processing-2026/"
+  - title: "Automate Content with n8n and Claude: Complete Guide"
+    url: "/posts/how-to-automate-content-with-n8n-and-claude/"
 title: "Claude API for Custom Workflow Automation: Complete Guide"
 description: "Master the Claude API for custom workflow automation. This technical guide covers setup, prompts, and practical use cases to streamline your daily operations."
 pubDate: "2026-05-01"

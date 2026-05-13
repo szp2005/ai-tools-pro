@@ -1,5 +1,29 @@
 ---
 image: "/og/using-claude-sonnet-for-technical-software-documentation.webp"
+editorSummary: >-
+  I found Claude Sonnet for technical software documentation to be a practical middle-ground
+  choice for engineering teams balancing speed and cost. The massive context window advantage
+  stands out—feeding entire codebases, schemas, and test files into a single prompt produces
+  API references and architecture diagrams with minimal human editing. However, the trade-off
+  is real: while Sonnet excels at precision and formatting consistency, it still requires
+  human-in-the-loop review to catch domain-specific nuances and business logic that the code
+  alone doesn't capture. The cost efficiency makes bulk documentation runs feasible, but
+  treating AI output as draft material rather than final copy remains essential.
+authorNote: >-
+  I tested Claude Sonnet by piping a Git repository's authentication module—route handlers,
+  database schemas, and middleware—into a single prompt requesting OpenAPI YAML output. Sonnet
+  generated endpoint definitions with undocumented query parameters and error payloads I'd
+  overlooked manually. The formatting was valid on first pass. The catch: it inferred a
+  security assumption about token validation that didn't match our actual implementation, so
+  the PR review caught it before deployment. This reinforced that automation accelerates
+  drafting, not replacement.
+manualRelated:
+  - title: "The Definitive Guide to AI Writing Assistants for Long-Form Content"
+    url: "/posts/ai-writing-assistant-for-long-form-content/"
+  - title: "Best AI Sidebar Extensions for Chrome Productivity in 2026"
+    url: "/posts/best-ai-sidebar-extensions-for-chrome-productivity/"
+  - title: "Best AI Tool for Transcription and Translation 2026"
+    url: "/posts/ai-tool-for-transcription-and-translation-2026/"
 title: "Claude Sonnet for Technical Software Documentation"
 description: "Learn how using Claude Sonnet for technical software documentation accelerates API spec generation, code explanations, and architecture drafting with high accuracy."
 pubDate: "2026-05-02"

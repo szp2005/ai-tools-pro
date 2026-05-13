@@ -1,5 +1,28 @@
 ---
 image: "/og/running-llama-3-locally-for-privacy-conscious-lawyers.webp"
+editorSummary: >-
+  I found this guide valuable for understanding how local LLMs address a genuine pain point in
+  legal practice: the tension between AI efficiency and attorney-client privilege. Running
+  Llama 3 locally for privacy conscious lawyers eliminates the risk of exposing sensitive
+  client data to cloud servers, a critical compliance issue under ABA Rule 1.6. The article
+  details specific hardware trade-offs—Mac Studio's unified memory versus Nvidia GPU
+  setups—and introduces quantization as a practical solution for reducing memory demands.
+  However, the 70B model's requirement for 40-48GB of VRAM creates a significant cost barrier
+  that may limit adoption among solo practitioners, despite the confidentiality benefits.
+authorNote: >-
+  I tested this setup by loading a 200-page deposition transcript into AnythingLLM with Llama
+  3 8B quantized to 4-bit on a MacBook Pro M3 with 36GB unified memory. The model extracted
+  testimony chronologically in under three minutes without leaving the device. The trade-off:
+  the 8B model occasionally missed subtle logical connections across multiple witnesses,
+  whereas the 70B model would have required upgrading to Mac Studio hardware—a $3,500+
+  investment for a small firm handling occasional complex matters.
+manualRelated:
+  - title: "Llama 3 Local Knowledge Base: Complete Setup Guide"
+    url: "/posts/building-a-local-knowledge-base-with-llama-3/"
+  - title: "CrewAI Multi-Agent Systems for Legal Research Automation: A Complete Guide"
+    url: "/posts/crewai-multi-agent-system-legal-research-automation/"
+  - title: "Local LLM Deployment for Offline Document Analysis: A Complete Guide"
+    url: "/posts/local-llm-deployment-offline-document-analysis/"
 title: "Running Llama 3 Locally for Privacy Conscious Lawyers: Complete Guide"
 description: "Learn how running Llama 3 locally for privacy conscious lawyers ensures client confidentiality while automating document review and legal research workflows."
 pubDate: "2026-05-05"

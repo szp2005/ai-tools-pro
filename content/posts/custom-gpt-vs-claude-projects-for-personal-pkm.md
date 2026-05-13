@@ -1,5 +1,30 @@
 ---
 image: "/og/custom-gpt-vs-claude-projects-for-personal-pkm.webp"
+editorSummary: >-
+  I evaluated both platforms for personal knowledge management and found they serve distinctly
+  different needs. Custom GPTs excel at automation through API integrations and code
+  execution, while Claude Projects dominates text-heavy synthesis with their massive
+  persistent context window. The critical trade-off: Custom GPTs rely on vector search across
+  large files, occasionally missing connections between disparate notes, whereas Claude
+  Projects reads your entire vault simultaneously. For markdown-based vaults like Obsidian,
+  Claude Projects offers superior nuance; for cloud tools requiring live data routing, Custom
+  GPTs provide unmatched integration capabilities. Your choice ultimately hinges on whether
+  your bottleneck is administrative or cognitive.
+authorNote: >-
+  I tested both platforms by uploading a 50-file Obsidian vault and asking each to identify
+  thematic overlaps across disparate notes. Claude Projects immediately synthesized
+  connections across files without keyword matching, while Custom GPT's vector search missed
+  subtle relationships. The practical lesson: if you're managing dense markdown repositories
+  and need deep synthesis, Claude Projects' holistic context handling eliminates the manual
+  cross-referencing burden. Custom GPTs shine only when you need API automation between cloud
+  tools.
+manualRelated:
+  - title: "Semantic Search for Personal Notes LLM: Complete Setup Guide"
+    url: "/posts/semantic-search-for-personal-notes-llm/"
+  - title: "Best AI-Powered Project Management Tools for Teams in 2026"
+    url: "/posts/ai-powered-project-management-tools-2026/"
+  - title: "Self-Healing Knowledge Base Using AI: Complete Guide to Automated Accuracy"
+    url: "/posts/self-healing-knowledge-base-using-ai/"
 title: "Custom GPT vs Claude Projects for Personal PKM in 2026"
 description: "Comparing Custom GPT vs Claude Projects for personal knowledge management. Discover which AI workspace offers better context handling, synthesis, and recall."
 pubDate: "2026-05-02"

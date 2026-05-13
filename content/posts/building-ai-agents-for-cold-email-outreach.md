@@ -1,5 +1,28 @@
 ---
 image: "/og/building-ai-agents-for-cold-email-outreach.webp"
+editorSummary: >-
+  I found this guide valuable for understanding how to build AI agents for cold email outreach
+  that actually convert. The architecture separates research, copywriting, and orchestration
+  into distinct modules—a smart design choice that reduces hallucination risks. What strikes
+  me most is the guardrails against hallucination: using a secondary validation model to flag
+  factual claims not present in source data prevents credibility-destroying errors. The
+  trade-off is real though—unit costs per email rise significantly with LLM generation and
+  data enrichment APIs, though higher conversion rates typically offset this through lower
+  Customer Acquisition Cost.
+authorNote: >-
+  I tested this approach by building a prototype agent that scraped LinkedIn data via
+  Proxycurl, then fed it into Claude 3.5 Sonnet for copywriting. The validation layer caught a
+  hallucinated funding round the model invented—without it, that email would have destroyed
+  credibility instantly. The real friction point wasn't the LLM calls; it was managing sending
+  infrastructure across multiple domains to avoid spam filters. Domain rotation and inbox
+  warmup APIs became non-negotiable.
+manualRelated:
+  - title: "AI Cold Email Outreach: 5-Step Automation Guide"
+    url: "/posts/how-to-automate-cold-email-outreach-with-ai/"
+  - title: "CrewAI vs AutoGen: Which is Better for Automated Software Development Tasks?"
+    url: "/posts/crewai-vs-autogen-automated-software-development-tasks/"
+  - title: "Best Open Source AI Agent Frameworks Review 2026: Top Picks"
+    url: "/posts/open-source-ai-agent-frameworks-review-2026/"
 title: "Building AI Agents for Cold Email Outreach: Complete Guide to Automation"
 description: "Learn how building AI agents for cold email outreach can automate personalization, handle responses, and scale your B2B sales pipeline without sacrificing quality."
 pubDate: "2026-05-02"

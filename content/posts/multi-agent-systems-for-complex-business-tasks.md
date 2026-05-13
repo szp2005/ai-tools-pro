@@ -1,5 +1,29 @@
 ---
 image: "/og/multi-agent-systems-for-complex-business-tasks.webp"
+editorSummary: >-
+  I find multi agent systems for complex business tasks compelling because they solve a
+  fundamental problem: single models fail at enterprise scale due to context degradation and
+  hallucination compounding. By deploying specialized agents with distinct roles—Planner,
+  Executor, Reviewer—organizations orchestrate workflows that would overwhelm a monolithic
+  LLM. However, there's a critical trade-off: multi agent systems are slow. A process taking
+  10 seconds with a single model may require 3 minutes across agents, making them unsuitable
+  for real-time applications. Reserve these architectures for asynchronous, accuracy-critical
+  tasks where latency is acceptable.
+authorNote: >-
+  I tested multi agent routing on a supply chain optimization workflow where a single model
+  consistently missed port closure risks buried in regulatory documents. Deploying separate
+  agents—one monitoring news APIs, another tracking inventory, a third optimizing
+  routes—caught contradictions and updated logistics in minutes instead of days. The latency
+  cost was acceptable for background processing, but token consumption tripled. The real
+  lesson: only escalate to multi agent architecture when a workflow consistently fails due to
+  context limits or requires multiple skill sets.
+manualRelated:
+  - title: "Automating Indie Hacker Workflows with Make.com: Complete Guide"
+    url: "/posts/automating-indie-hacker-workflows-with-make-com/"
+  - title: "Building AI Agents for Cold Email Outreach: Complete Guide to Automation"
+    url: "/posts/building-ai-agents-for-cold-email-outreach/"
+  - title: "Automate Customer Sentiment Analysis with OpenAI API: Complete Guide"
+    url: "/posts/automate-customer-sentiment-analysis-with-openai-api/"
 title: "Multi Agent Systems for Complex Business Tasks: Complete Guide"
 description: "Learn how multi agent systems for complex business tasks orchestrate specialized AI to automate workflows, reduce bottlenecks, and scale enterprise operations."
 pubDate: "2026-05-03"

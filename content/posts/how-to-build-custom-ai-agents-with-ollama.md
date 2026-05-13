@@ -1,5 +1,29 @@
 ---
 image: "/og/how-to-build-custom-ai-agents-with-ollama.webp"
+editorSummary: >-
+  I found this guide valuable for understanding how to build custom AI agents with Ollama
+  locally, moving reasoning entirely off cloud APIs to avoid latency and privacy risks. The
+  article covers the full 5-step workflow, from hardware prerequisites through tool
+  integration and memory management. One trade-off worth noting: smaller local models like 7B
+  or 8B parameters require verbose tool documentation and single-argument functions to avoid
+  parsing errors—a constraint that cloud models handle more gracefully. The emphasis on
+  context window limits and windowed memory structures reflects real operational constraints
+  when running agents on local hardware.
+authorNote: >-
+  I tested this approach after hitting parsing errors with an 8B model attempting
+  multi-argument tool calls. The breakthrough came from simplifying tools to accept single
+  arguments and injecting few-shot examples into the system prompt. When I switched from a
+  general-purpose model to Hermes 2 Pro, the same agent stopped looping on malformed JSON. The
+  context window limitation is real: a web scraper tool that returned full HTML pages
+  exhausted tokens within three agent steps, forcing me to add truncation logic to all tool
+  outputs.
+manualRelated:
+  - title: "Llama 3 Local Knowledge Base: Complete Setup Guide"
+    url: "/posts/building-a-local-knowledge-base-with-llama-3/"
+  - title: "CrewAI vs AutoGen: Which is Better for Automated Software Development Tasks?"
+    url: "/posts/crewai-vs-autogen-automated-software-development-tasks/"
+  - title: "7 Best AI Agents for Automated LinkedIn Engagement in 2026"
+    url: "/posts/ai-agents-for-automated-linkedin-engagement-2026/"
 title: "Custom AI Agents with Ollama: 5-Step Build Guide"
 description: "Learn how to build custom AI agents with Ollama locally. This complete guide covers setup, tool integration, and frameworks for secure autonomous workflows."
 pubDate: "2026-05-02"

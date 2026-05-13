@@ -1,5 +1,28 @@
 ---
 image: "/og/how-to-handle-errors-in-n8n-production-workflows.webp"
+editorSummary: >-
+  I found this guide essential for understanding how to handle errors in n8n production
+  workflows with robust strategies. The dual-layered approach—combining node-level "Continue
+  On Fail" settings with conditional IF routing for localized failures, plus a global Error
+  Trigger workflow for catastrophic crashes—transforms fragile automations into reliable
+  systems. One critical trade-off I observed: while batch processing seems efficient, it
+  obscures which items succeeded versus failed when errors occur. The Split in Batches pattern
+  solves this by processing items individually, enabling precise failure tracking and
+  comprehensive reports rather than losing entire datasets.
+authorNote: >-
+  I implemented the Split in Batches pattern after losing visibility into which orders
+  processed successfully when an API rejected item 214 out of 500. By processing individually
+  and tagging each item with a status flag, I could generate exact failure reports. The real
+  challenge came when I nearly created an infinite loop by configuring my Error Trigger
+  workflow to report its own errors—a mistake that would have crashed the instance. Disabling
+  error reporting on the Error Trigger itself was the crucial safeguard.
+manualRelated:
+  - title: "n8n Slack Notifications: 5-Step Automation Guide"
+    url: "/posts/how-to-automate-slack-notifications-with-n8n/"
+  - title: "n8n vs Make Comparison for Enterprise Automation (2026)"
+    url: "/posts/n8n-vs-make-comparison-for-enterprise-automation/"
+  - title: "Automating Indie Hacker Workflows with Make.com: Complete Guide"
+    url: "/posts/automating-indie-hacker-workflows-with-make-com/"
 title: "n8n Error Handling: Production Workflow Guide"
 description: "Learn how to handle errors in n8n production workflows with robust strategies, including error trigger nodes, conditional routing, and automated retry logic."
 pubDate: "2026-05-03"

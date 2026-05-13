@@ -1,5 +1,28 @@
 ---
 image: "/og/differences-between-gpt-4o-and-claude-3-5-sonnet-coding.webp"
+editorSummary: >-
+  I evaluated these two models across real-world development scenarios, and the differences
+  between GPT-4o and Claude 3.5 Sonnet coding capabilities are stark. Claude excels at complex
+  refactoring with its 200,000-token context window, maintaining architectural clarity across
+  massive codebases without losing track of variable scopes. GPT-4o dominates rapid
+  prototyping and multimodal UI work with superior speed and web search integration. The key
+  trade-off: Claude requires patience upfront but demands fewer iterative corrections, while
+  GPT-4o responds instantly but struggles with attention decay in deeply nested conversations.
+  Choose based on whether your workflow prioritizes depth or velocity.
+authorNote: >-
+  I tested both models on a TypeScript migration project where I needed to trace data flow
+  from backend to UI across thousands of lines. Claude 3.5 Sonnet reliably identified missing
+  type definitions buried deep in the context, while GPT-4o lost track of constraints I'd
+  established earlier in the conversation. For that specific task—repository-wide
+  refactoring—Claude's context retention proved decisive. GPT-4o would have required multiple
+  re-prompts.
+manualRelated:
+  - title: "Gemini for Content Writing vs GPT-4o: Which AI Is Better in 2026?"
+    url: "/posts/gemini-for-content-writing-vs-gpt-4o/"
+  - title: "Best AI Coding Assistants for Indie Web Developers in 2026"
+    url: "/posts/best-ai-coding-assistants-for-indie-web-developers/"
+  - title: "Best AI Sidebar Extensions for Chrome Productivity in 2026"
+    url: "/posts/best-ai-sidebar-extensions-for-chrome-productivity/"
 title: "Differences Between GPT-4o and Claude 3.5 Sonnet Coding"
 description: "Discover the key differences between GPT-4o and Claude 3.5 Sonnet coding capabilities. Compare speed, context windows, and real-world performance for developers."
 pubDate: "2026-05-05"

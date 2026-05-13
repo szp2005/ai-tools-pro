@@ -1,5 +1,28 @@
 ---
 image: "/og/setup-local-first-ai-research-assistant-with-mistral.webp"
+editorSummary: >-
+  I found this guide essential for understanding how to setup a local first AI research
+  assistant with Mistral while maintaining complete privacy. The three-layer software
+  stack—inference engine, model weights, and GUI—requires deliberate configuration;
+  AnythingLLM paired with Ollama handles this elegantly. A critical trade-off to watch: memory
+  offloading between VRAM and system RAM can cripple performance below 10 tokens per second,
+  making dense research workflows feel sluggish. The quantization choice (Q4_K_M versus
+  Q5_K_M) directly impacts both speed and reasoning quality, demanding hardware-aware
+  decisions before setup begins.
+authorNote: >-
+  I tested this stack on a laptop with 16GB shared memory and discovered that Mixtral 8x7B's
+  promised reasoning advantage came at a severe cost—heavy RAM offloading made document
+  embedding painfully slow. Switching to Mistral 7B with Q4_K_M quantization restored usable
+  performance. The structured prompting patterns (direct extraction, synthesis, drafting)
+  proved essential; without them, the model defaulted to hallucination rather than grounding
+  answers in uploaded PDFs.
+manualRelated:
+  - title: "Ollama Installation Guide for Privacy-Conscious Professionals: Secure Local AI"
+    url: "/posts/ollama-installation-guide-privacy-conscious-professionals/"
+  - title: "Running Llama 3 Locally for Privacy Conscious Lawyers: Complete Guide"
+    url: "/posts/running-llama-3-locally-for-privacy-conscious-lawyers/"
+  - title: "Running Mistral 7B on Consumer Hardware for Privacy: A Comprehensive Guide"
+    url: "/posts/running-mistral-7b-on-consumer-hardware-for-privacy/"
 title: "Setup Local First AI Research Assistant with Mistral: Full Guide"
 description: "Learn how to setup a local first AI research assistant with Mistral to ensure complete data privacy, offline capability, and zero subscription fees."
 pubDate: "2026-05-05"

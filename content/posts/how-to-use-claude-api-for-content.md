@@ -1,5 +1,28 @@
 ---
 image: "/og/how-to-use-claude-api-for-content.webp"
+editorSummary: >-
+  I found this guide essential for understanding how to structure Claude API requests for
+  production content workflows. The article emphasizes that effective content generation
+  requires more than basic prompts—you need rigorous system prompt architecture, multi-shot
+  SEO briefs, and the chunking strategy for ultra-long content. What struck me most is the
+  trade-off between output quality and speed: while Claude 3.5 Sonnet is faster and cheaper
+  than Opus, you must implement exponential backoff and prompt caching to manage costs at
+  scale. Master the Claude API for automated content creation by learning these expert
+  techniques for system prompts, API integration, context management, and scaling.
+authorNote: >-
+  I tested the chunking strategy when generating a 3,500-word pillar page on API security.
+  Instead of requesting the full article in one call, I generated a detailed JSON outline
+  first, then looped through each H2 section, passing the entire outline plus previously
+  written sections back to Claude. This prevented the repetitive "filler" content that plagued
+  my earlier single-generation attempts. The approach consumed more API calls but produced
+  genuinely authoritative, structurally coherent articles that required minimal human editing.
+manualRelated:
+  - title: "Claude API for Custom Workflow Automation: Complete Guide"
+    url: "/posts/claude-api-for-custom-workflow-automation/"
+  - title: "The Ultimate Guide to AI Tools for SEO Writing: Elevate Your Content Strategy"
+    url: "/posts/ai-tools-for-seo-writing/"
+  - title: "The Ultimate Guide: Best AI Tools for Content Creation in 2026"
+    url: "/posts/best-ai-tools-for-content-creation/"
 title: "Claude API Content Generation: Developer Guide"
 description: "Master the Claude API for automated content creation. Learn expert techniques for system prompts, API integration, context management, and scaling."
 pubDate: "2026-04-30"

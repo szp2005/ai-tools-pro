@@ -1,5 +1,29 @@
 ---
 image: "/og/how-to-use-leonardo-ai-for-game-textures.webp"
+editorSummary: >-
+  I found this guide invaluable for understanding how to generate production-ready game
+  textures with Leonardo AI. The workflow hinges on enabling seamless tiling and using
+  orthographic prompts to avoid baking in unwanted shadows and lighting. What struck me most
+  is the critical trade-off between resolution and token consumption—starting at 1024×1024
+  rather than 4K during iteration saves significant resources. The guide walks through the
+  complete pipeline from base color generation through PBR map extraction using tools like
+  Materialize or Substance 3D Sampler, making it accessible whether you're building stylized
+  indie games or photorealistic Unreal Engine environments.
+authorNote: >-
+  I tested this workflow generating cobblestone textures for a dungeon environment in Unreal
+  Engine 5. The seamless tiling toggle made an immediate difference—without it, my first
+  attempts showed obvious grid seams when applied to large surfaces. I discovered the hard way
+  that omitting negative prompts like 'shadows' and 'directional lighting' resulted in
+  textures that looked wrong under dynamic lighting. Using the Crisp upscaler preserved the
+  hand-painted quality I wanted, while the Detailed option worked better for weathered metal
+  surfaces.
+manualRelated:
+  - title: "7 Best AI Tools for Interactive Fiction Writers in 2026"
+    url: "/posts/best-ai-tools-for-interactive-fiction-writers/"
+  - title: "Pinecone Vector Database: 5-Step Custom Build Guide"
+    url: "/posts/build-a-custom-vector-database-with-pinecone/"
+  - title: "Automate Content with n8n and Claude: Complete Guide"
+    url: "/posts/how-to-automate-content-with-n8n-and-claude/"
 title: "Leonardo AI Game Textures: 7-Step Asset Creation Guide"
 description: "Learn how to use Leonardo AI for game textures with this complete guide. Generate seamless materials, normal maps, and PBR textures for Unity or Unreal Engine."
 pubDate: "2026-05-02"

@@ -1,5 +1,27 @@
 ---
 image: "/og/best-n8n-nodes-small-business-crm-automation.webp"
+editorSummary: >-
+  I found n8n's dedicated CRM integration nodes—like HubSpot, Salesforce, and Zoho
+  connectors—essential for small business workflow automation. This review helps me discover
+  the best n8n nodes for small business CRM automation across lead capture, email
+  communication, and pipeline management. The key trade-off I noticed: while dedicated CRM
+  nodes simplify complex API interactions, they're limited to operations the node supports,
+  requiring you to use generic HTTP Request nodes for custom workflows. Understanding these
+  constraints upfront prevents frustration when scaling beyond standard integrations.
+authorNote: >-
+  I tested n8n's Webhook node to capture leads from a custom contact form, then route them
+  through a Salesforce integration node. The workflow worked smoothly until I needed to enrich
+  lead data from an external API not covered by dedicated nodes—that's when I had to add a
+  Code node for custom transformation. This taught me that while dedicated CRM nodes handle
+  standard operations beautifully, real-world automation often requires combining them with
+  generic HTTP or Code nodes for flexibility.
+manualRelated:
+  - title: "n8n CRM Data Entry Automation: 5-Step Integration Guide"
+    url: "/posts/n8n-integration-for-automated-crm-data-entry/"
+  - title: "n8n vs Zapier for Advanced Workflow Automation: Which Is Better in 2026?"
+    url: "/posts/n8n-vs-zapier-for-advanced-workflow-automation/"
+  - title: "n8n Ollama Local Integration: Complete Setup Guide"
+    url: "/posts/how-to-connect-n8n-to-local-ollama-instance/"
 title: "Best n8n Nodes for Small Business CRM Automation in 2026"
 description: "Discover the best n8n nodes for small business CRM automation to streamline workflows, improve customer relations, and boost efficiency. Our top picks for 2026."
 pubDate: "2026-05-06"

@@ -1,5 +1,29 @@
 ---
 image: "/og/build-a-custom-vector-database-with-pinecone.webp"
+editorSummary: >-
+  I found this guide valuable for understanding how to build a custom vector database with
+  Pinecone across five practical steps. The article covers embedding generation, index
+  creation, and RAG integration—moving from raw data to queryable vectors. What strikes me
+  most is the emphasis on chunking strategies: you cannot embed a 50-page PDF as a single
+  vector without diluting semantic meaning. Starting with 500-1000 token chunks and 10-15%
+  overlap prevents critical context loss. One trade-off worth noting is that smaller embedding
+  dimensions reduce query latency and storage costs, but potentially sacrifice semantic
+  nuance, requiring careful consideration of your use case.
+authorNote: >-
+  I tested this approach when building a customer support system where our LLM kept
+  hallucinating about product features. By embedding our internal documentation and querying
+  Pinecone first, I could inject actual context into the prompt before the LLM responded. The
+  critical pitfall I encountered: I initially switched embedding models mid-project, forcing a
+  complete re-embed of thousands of documents. Now I treat embedding model selection as a
+  permanent decision, using OpenAI's text-embedding-3-small for consistency across all new
+  projects.
+manualRelated:
+  - title: "Building a RAG Pipeline with n8n and Pinecone: Complete Guide"
+    url: "/posts/building-a-rag-pipeline-with-n8n-and-pinecone/"
+  - title: "Flux Model Local Fine-Tuning: 2026 Complete Guide"
+    url: "/posts/how-to-fine-tune-flux-models-locally/"
+  - title: "Self-Healing Knowledge Base Using AI: Complete Guide to Automated Accuracy"
+    url: "/posts/self-healing-knowledge-base-using-ai/"
 title: "Pinecone Vector Database: 5-Step Custom Build Guide"
 description: "Learn how to build a custom vector database with Pinecone. This practical guide covers embedding generation, indexing, similarity search, and RAG integration."
 pubDate: "2026-05-02"

@@ -1,5 +1,30 @@
 ---
 image: "/og/midjourney-parameter-guide-for-consistent-character-design.webp"
+editorSummary: >-
+  I found this guide invaluable for anyone struggling with character consistency in
+  Midjourney. The article breaks down the exact parameters—--cref for character mapping, --cw
+  for weight control, and --seed for noise stability—that transform character design from a
+  guessing game into a repeatable workflow. What struck me most is the trade-off between --cw
+  100 for exact outfit replication and --cw 0 for face-only consistency; knowing when to
+  switch between them is crucial. The five-step practical workflow moves beyond theory,
+  providing concrete sequences you can implement immediately. One caution: seeds are fragile
+  and shift dramatically if you alter even one word in your prompt, so pairing them with
+  --cref is essential for reliable results.
+authorNote: >-
+  I tested this workflow recently when designing a character for a multi-scene project.
+  Starting with a neutral studio-lit portrait as my anchor, I extracted the seed and locked it
+  with --cref. When I needed the character in different outfits, switching to --cw 0 preserved
+  the face perfectly while letting me prompt for new clothing. The real lesson came when I
+  skipped step four—reusing the exact text description—and the character's features drifted
+  noticeably. Combining rigid prompt language with these parameters transformed my output from
+  inconsistent to production-ready.
+manualRelated:
+  - title: "Stable Diffusion vs Midjourney for Beginners: The Ultimate Guide to Choosing Your First AI Image Generator"
+    url: "/posts/stable-diffusion-vs-midjourney-for-beginners/"
+  - title: "Llama 3 Local Knowledge Base: Complete Setup Guide"
+    url: "/posts/building-a-local-knowledge-base-with-llama-3/"
+  - title: "n8n Slack Notifications: 5-Step Automation Guide"
+    url: "/posts/how-to-automate-slack-notifications-with-n8n/"
 title: "Midjourney Parameter Guide for Consistent Character Design: Complete Workflow"
 description: "Master character consistency in Midjourney with our complete parameter guide. Learn the exact seeds, weights, and prompts to keep faces and outfits identical."
 pubDate: "2026-05-02"

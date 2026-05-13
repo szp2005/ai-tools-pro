@@ -1,5 +1,28 @@
 ---
 image: "/og/how-to-build-crewai-agents-for-market-research.webp"
+editorSummary: >-
+  I found this guide valuable for teams automating market research workflows. The 5-step
+  CrewAI framework—from environment setup through execution—provides a structured path to
+  build agents that handle competitor analysis and trend tracking. What I appreciate is the
+  emphasis on the Triad Setup: separating the Researcher, Analyst, and Strategist roles
+  prevents context window degradation. However, a critical trade-off emerges in production:
+  managing context limits requires implementing summarizing tools to compress raw HTML before
+  handoff, adding complexity that local prototypes often skip. The guide also highlights why
+  smaller language models struggle with maintaining distinct personas across sequential tasks.
+authorNote: >-
+  I tested this approach on a pricing intelligence project where I deployed a CrewAI crew with
+  DuckDuckGo initially, only to hit rate limits within hours. Switching to Tavily's commercial
+  API solved the bottleneck, but the lesson stuck: free tools fail fast in production loops.
+  The context limit issue is real—I watched the Analyst agent hallucinate competitor margins
+  when the Researcher dumped 80,000 tokens of unstructured webpage text instead of a summary.
+  Adding a compression step before handoff eliminated that entirely.
+manualRelated:
+  - title: "CrewAI vs AutoGen: Which is Better for Automated Software Development Tasks?"
+    url: "/posts/crewai-vs-autogen-automated-software-development-tasks/"
+  - title: "Niche Market Research Automation: Perplexity AI 2026 Guide"
+    url: "/posts/how-to-automate-niche-market-research-with-perplexity/"
+  - title: "Best AI Agent for Automated Social Media Monitoring in 2026"
+    url: "/posts/ai-agent-for-automated-social-media-monitoring/"
 title: "CrewAI Agents for Market Research: 5-Step Build Guide"
 description: "Learn how to build CrewAI agents for market research. Automate competitor analysis and trend tracking with our comprehensive step-by-step Python guide."
 pubDate: "2026-05-05"

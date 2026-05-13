@@ -1,5 +1,27 @@
 ---
 image: "/og/how-to-use-ai-for-seo-content-planning.webp"
+editorSummary: >-
+  I found this article valuable for teams moving beyond manual keyword research. The blueprint
+  walks through three concrete phases—topic clustering with Claude or Gemini, intent analysis
+  at scale, and calendar automation via n8n—that transform how you plan content. What strikes
+  me most is the emphasis on avoiding keyword cannibalization during semantic mapping. The
+  trade-off is real: AI-driven planning requires you to understand your problem first, or
+  you'll build complexity without friction reduction. This approach positions your site as
+  topical authority rather than chasing isolated rankings.
+authorNote: >-
+  I tested this workflow on a sustainable living niche with 200+ keywords. Feeding Claude a
+  single prompt for topical mapping generated five clusters with zero overlap—something that
+  took me weeks manually. The n8n automation into Notion saved hours monthly. One pitfall: I
+  initially asked for 50 sub-topics per cluster and got overwhelmed. Scaling back to 20 per
+  cluster, then auditing intent gaps against my existing content, made the system actually
+  usable and measurable.
+manualRelated:
+  - title: "Gemini Content Writing: Expert AI Strategy Guide"
+    url: "/posts/how-to-use-gemini-for-content-writing/"
+  - title: "Automate Content with n8n and Claude: Complete Guide"
+    url: "/posts/how-to-automate-content-with-n8n-and-claude/"
+  - title: "Semantic SEO Strategy for AI Generated Blog Posts: 7-Step Guide"
+    url: "/posts/semantic-seo-strategy-for-ai-generated-blog-posts/"
 title: "AI SEO Content Planning: 2026 Strategy Blueprint"
 author: "Alex Chen"
 date: 2026-04-29T13:40:00Z

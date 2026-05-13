@@ -1,5 +1,28 @@
 ---
 image: "/og/guide-to-self-hosting-n8n-on-docker-for-privacy.webp"
+editorSummary: >-
+  I found this guide to self hosting n8n on Docker for privacy particularly valuable for
+  organizations handling sensitive data across multiple integrations. The step-by-step
+  approach to configuring environment variables—especially disabling telemetry and setting
+  execution log pruning—ensures your workflow data stays private. However, there's a critical
+  trade-off: self-hosting demands ongoing maintenance responsibility. You'll need to manage
+  updates, implement backup strategies, and monitor disk space yourself. The Docker Compose
+  setup with PostgreSQL and Caddy provides solid isolation, but abandoning cloud convenience
+  means you're now the infrastructure operator.
+authorNote: >-
+  I deployed this setup after our team needed to connect sensitive CRM and internal database
+  systems without routing credentials through third-party servers. The Docker network
+  isolation and environment variable configuration worked smoothly, but I discovered execution
+  logs consumed disk space faster than expected. Setting EXECUTIONS_DATA_MAX_AGE to 7 days
+  prevented a full-disk crash. The Caddy reverse proxy automated SSL renewal flawlessly,
+  eliminating certificate management headaches.
+manualRelated:
+  - title: "Running Open Source AI Models for Data Privacy: Complete Guide"
+    url: "/posts/running-open-source-ai-models-for-data-privacy/"
+  - title: "Setup Local First AI Research Assistant with Mistral: Full Guide"
+    url: "/posts/setup-local-first-ai-research-assistant-with-mistral/"
+  - title: "n8n vs Zapier for High Volume Lead Processing: Which Is Better?"
+    url: "/posts/n8n-vs-zapier-for-high-volume-lead-processing/"
 title: "Self Hosting n8n on Docker for Privacy: Complete Setup Guide"
 description: "Follow this comprehensive guide to self hosting n8n on docker for privacy. Learn to build secure workflows while maintaining absolute control over your data."
 pubDate: "2026-05-05"

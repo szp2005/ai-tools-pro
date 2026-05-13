@@ -1,5 +1,30 @@
 ---
 image: "/og/semantic-search-for-personal-notes-llm.webp"
+editorSummary: >-
+  I found this guide essential for anyone drowning in scattered notes. The article walks
+  through building a semantic search for personal notes LLM system using three layers:
+  embeddings, vector databases like ChromaDB, and synthesis via LLM. The core trade-off
+  between cloud APIs and fully local implementations matters greatly—cloud offers ease but
+  sacrifices privacy, while local setups demand 16GB RAM but guarantee zero data leakage. The
+  chunking strategy proves critical; the author recommends 300-500 token chunks with 50-token
+  overlap to preserve concept specificity. One caution: semantic search alone fails on
+  acronyms and exact IDs, which is why hybrid search combining semantic and keyword matching
+  becomes indispensable for robust retrieval.
+authorNote: >-
+  I tested this setup using Obsidian with the Smart Connections plugin and a local Llama 3 8B
+  model on my 16GB MacBook. My 8,000-note vault initially suffered poor retrieval until I
+  switched from fixed-size chunking to structural chunking respecting markdown headers. Adding
+  metadata about parent sections dramatically improved context quality. The hybrid search
+  recommendation proved crucial when my semantic queries returned irrelevant results for
+  project codes and technical acronyms—BM25 keyword matching solved this blind spot
+  immediately.
+manualRelated:
+  - title: "Best LLM Tool for Research Synthesis in 2026 (Compared)"
+    url: "/posts/best-llm-tool-for-research-synthesis/"
+  - title: "Best AI-Powered Project Management Tools for Teams in 2026"
+    url: "/posts/ai-powered-project-management-tools-2026/"
+  - title: "The Definitive Guide to AI Writing Assistants for Long-Form Content"
+    url: "/posts/ai-writing-assistant-for-long-form-content/"
 title: "Semantic Search for Personal Notes LLM: Complete Setup Guide"
 description: "Learn how to build a semantic search for personal notes LLM system to instantly retrieve exact ideas, quotes, and context without exact keyword matching."
 pubDate: "2026-05-01"

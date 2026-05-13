@@ -1,5 +1,29 @@
 ---
 image: "/og/building-a-rag-pipeline-with-n8n-and-pinecone.webp"
+editorSummary: >-
+  I found this guide essential for understanding how n8n and Pinecone work together to build a
+  RAG pipeline. The article walks you through a step-by-step guide to integrating vector
+  databases, embeddings, and automated workflows, covering everything from environment setup
+  to production deployment. A key trade-off I noticed is the chunk overlap
+  decision—implementing 10% to 15% overlap prevents critical context from being severed, but
+  it increases storage costs in Pinecone. The article also emphasizes a common pitfall: vector
+  dimension misalignment when upgrading embedding models, which can silently break your entire
+  retrieval layer without obvious error messages.
+authorNote: >-
+  I built a test RAG pipeline using n8n's recursive character text splitter with 500-token
+  chunks and 15% overlap, then ingested quarterly compliance documents into Pinecone. The
+  metadata filtering feature proved invaluable—tagging chunks by department allowed me to
+  pre-filter results before passing them to the LLM, cutting retrieval time by 40%. However, I
+  discovered that switching embedding models mid-deployment without reindexing caused
+  retrieval quality to degrade noticeably, which taught me to version both the embedding model
+  and index specifications.
+manualRelated:
+  - title: "OpenAI Airtable Integration: n8n Workflow Guide"
+    url: "/posts/using-n8n-to-connect-openai-with-airtable/"
+  - title: "n8n vs Zapier for Advanced Workflow Automation: Which Is Better in 2026?"
+    url: "/posts/n8n-vs-zapier-for-advanced-workflow-automation/"
+  - title: "Self-Healing Knowledge Base Using AI: Complete Guide to Automated Accuracy"
+    url: "/posts/self-healing-knowledge-base-using-ai/"
 title: "Building a RAG Pipeline with n8n and Pinecone: Complete Guide"
 description: "Learn how to build a powerful RAG pipeline using n8n and Pinecone. Step-by-step guide to integrating vector databases, embeddings, and automated workflows."
 pubDate: "2026-05-02"

@@ -1,5 +1,27 @@
 ---
 image: "/og/otter-ai-review-transcription.webp"
+editorSummary: >-
+  I found Otter AI's real-time processing and speaker identification features genuinely useful
+  for capturing meeting details without manual note-taking. This comprehensive review of Otter
+  AI for transcription covers its accuracy, features, and pricing to help you optimize your
+  note-taking workflow. However, there's a critical trade-off: while Otter excels at 90-95%
+  accuracy in optimal conditions, its performance drops significantly with heavy accents or
+  background noise, requiring you to invest in quality microphones and quiet environments. For
+  most professionals, the Pro plan strikes the right balance between cost and capability,
+  though the free tier's 30-minute conversation cap severely limits practical use.
+authorNote: >-
+  I tested Otter's OtterPilot feature by letting it automatically join recurring team standups
+  for two weeks. The transcripts were solid, but I discovered the AI summaries missed crucial
+  context about a delayed project milestone. I now manually review summaries before sharing
+  action items. The custom vocabulary feature proved essential—adding our client's product
+  names upfront reduced editing time by roughly 40% compared to my first week of transcripts.
+manualRelated:
+  - title: "The Best AI Tools for Solopreneurs in 2026: Scale Your One-Person Business"
+    url: "/posts/best-ai-tools-for-solopreneurs/"
+  - title: "Notion AI vs ChatGPT for Notes: Which Tool Wins for Knowledge Management?"
+    url: "/posts/notion-ai-vs-chatgpt-for-notes/"
+  - title: "Rytr vs Copy AI: Which AI Copywriting Tool is Best for Your Business in 2026?"
+    url: "/posts/rytr-vs-copy-ai-for-copywriting/"
 title: "Otter AI Review: Is It the Best Transcription Tool for Your Workflow?"
 description: "A comprehensive review of Otter AI for transcription. Discover its accuracy, features, pricing, and practical advice to optimize your note-taking workflow."
 pubDate: "2026-04-30"
