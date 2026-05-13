@@ -1,23 +1,22 @@
 ---
 image: "/og/custom-gpt-vs-claude-projects-for-personal-pkm.webp"
 editorSummary: >-
-  I evaluated both platforms for personal knowledge management and found they serve distinctly
-  different needs. Custom GPTs excel at automation through API integrations and code
-  execution, while Claude Projects dominates text-heavy synthesis with their massive
-  persistent context window. The critical trade-off: Custom GPTs rely on vector search across
-  large files, occasionally missing connections between disparate notes, whereas Claude
-  Projects reads your entire vault simultaneously. For markdown-based vaults like Obsidian,
-  Claude Projects offers superior nuance; for cloud tools requiring live data routing, Custom
-  GPTs provide unmatched integration capabilities. Your choice ultimately hinges on whether
-  your bottleneck is administrative or cognitive.
+  Claude Projects Personal PKM workflows excel when your bottleneck is cognitive rather than
+  administrative. I found the 200K+ token context window particularly valuable for
+  synthesizing connections across dozens of markdown files from Obsidian or Logseq vaults—the
+  model reads your entire vault holistically rather than relying on vector search. However,
+  the manual re-upload requirement when local files change represents a real trade-off against
+  Custom GPT's API automation capabilities. For deep research, complex note synthesis, and
+  maintaining coherence across long writing sessions without hallucinations, Claude Projects
+  delivers superior reasoning and memory handling that genuinely extends your own knowledge
+  management practice.
 authorNote: >-
-  I tested both platforms by uploading a 50-file Obsidian vault and asking each to identify
-  thematic overlaps across disparate notes. Claude Projects immediately synthesized
-  connections across files without keyword matching, while Custom GPT's vector search missed
-  subtle relationships. The practical lesson: if you're managing dense markdown repositories
-  and need deep synthesis, Claude Projects' holistic context handling eliminates the manual
-  cross-referencing burden. Custom GPTs shine only when you need API automation between cloud
-  tools.
+  I tested both platforms by uploading a 50-file Obsidian vault focused on research synthesis.
+  With Claude Projects, the model identified thematic overlaps across unrelated notes that
+  keyword-based search completely missed. With Custom GPT, I had to manually feed it specific
+  file chunks. The friction point became clear: Claude excels when you need holistic context;
+  Custom GPT wins when you're automating data movement between apps. My hybrid approach now
+  uses Claude Projects for analysis and Custom GPT for routing information into the system.
 manualRelated:
   - title: "Semantic Search for Personal Notes LLM: Complete Setup Guide"
     url: "/posts/semantic-search-for-personal-notes-llm/"

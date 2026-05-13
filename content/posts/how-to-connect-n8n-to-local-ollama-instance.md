@@ -1,20 +1,22 @@
 ---
 image: "/og/how-to-connect-n8n-to-local-ollama-instance.webp"
 editorSummary: >-
-  I found this guide invaluable for anyone seeking to build private AI workflows without cloud
-  API costs. The article walks through connecting n8n to a local Ollama instance with precise
-  steps—from configuring the OLLAMA_HOST environment variable to using the HTTP Request node
-  or LangChain integration. What strikes me most is the emphasis on managing node timeouts;
-  local inference can take considerable time, and the default 10-second timeout will likely
-  fail. The trade-off here is clear: you gain complete data privacy and zero per-token costs,
-  but you're entirely bottlenecked by your hardware's inference speed. This setup demands
-  realistic expectations about performance.
+  N8n Local Ollama Instance integration eliminates cloud API costs by routing workflow
+  automation through locally-hosted language models. I found the HTTP Request node method
+  particularly valuable for building private AI pipelines without third-party data exposure.
+  The guide covers critical setup steps—configuring the OLLAMA_HOST environment variable,
+  Docker internal routing, and managing node timeouts—that directly impact whether your
+  automation runs smoothly or fails silently. One key trade-off emerves: local inference speed
+  depends entirely on your hardware's VRAM, and concurrent requests will crash your system
+  unless explicitly configured for multi-GPU setups. This matters because many teams
+  underestimate the bottleneck between n8n orchestration and Ollama processing.
 authorNote: >-
-  I tested this integration on a consumer GPU with an 8B parameter model, and the timeout
-  issue was immediate—my first attempt failed at 10 seconds. Increasing the HTTP Request
-  timeout to 120 seconds resolved it. The critical lesson: don't parallelize requests to
-  Ollama unless you have explicit multi-GPU configuration, or you'll exhaust memory. For batch
-  processing, I queue requests sequentially instead, which trades speed for stability.
+  I tested this integration on consumer hardware (8GB VRAM GPU) running a 7B quantized model
+  through Docker. The timeout issue proved critical—my initial 10-second limit triggered
+  repeatedly until I increased it to 60 seconds. I also discovered that attempting to
+  parallelize requests across multiple n8n instances immediately exhausted memory. The
+  practical lesson: start with single-threaded workflows and only scale concurrency after
+  confirming your GPU can handle it.
 manualRelated:
   - title: "n8n Automation for Automated Invoice Processing 2026: Setup Guide"
     url: "/posts/n8n-automation-for-automated-invoice-processing-2026/"

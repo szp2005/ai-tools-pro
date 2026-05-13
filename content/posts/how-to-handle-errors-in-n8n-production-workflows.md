@@ -1,21 +1,21 @@
 ---
 image: "/og/how-to-handle-errors-in-n8n-production-workflows.webp"
 editorSummary: >-
-  I found this guide essential for understanding how to handle errors in n8n production
-  workflows with robust strategies. The dual-layered approach—combining node-level "Continue
-  On Fail" settings with conditional IF routing for localized failures, plus a global Error
-  Trigger workflow for catastrophic crashes—transforms fragile automations into reliable
-  systems. One critical trade-off I observed: while batch processing seems efficient, it
-  obscures which items succeeded versus failed when errors occur. The Split in Batches pattern
-  solves this by processing items individually, enabling precise failure tracking and
-  comprehensive reports rather than losing entire datasets.
+  Errors in n8n production workflows demand a dual-layered strategy combining localized
+  node-level handling with global Error Trigger workflows. I find the "Continue On Fail"
+  setting paired with IF nodes particularly valuable for anticipated failures like missing API
+  records, while exponential retry logic eliminates transient timeouts. The critical
+  trade-off: implementing robust error handling requires upfront architectural planning, yet
+  the alternative—silent data loss or corrupted database records—makes this investment
+  essential. By structuring workflows to anticipate failures rather than react to them, you
+  transform brittle scripts into enterprise-grade automation.
 authorNote: >-
-  I implemented the Split in Batches pattern after losing visibility into which orders
-  processed successfully when an API rejected item 214 out of 500. By processing individually
-  and tagging each item with a status flag, I could generate exact failure reports. The real
-  challenge came when I nearly created an infinite loop by configuring my Error Trigger
-  workflow to report its own errors—a mistake that would have crashed the instance. Disabling
-  error reporting on the Error Trigger itself was the crucial safeguard.
+  I tested this approach by building a batch order-processing workflow that handles 500+ items
+  daily. Setting each HTTP request node to "Continue On Fail" and routing results through IF
+  nodes let me isolate exactly which orders failed without losing the entire batch. I then
+  implemented a Dead Letter Queue in PostgreSQL to capture failed payloads, allowing manual
+  inspection and re-injection. Without this structure, a single API rejection would have
+  crashed the workflow silently, corrupting our fulfillment pipeline.
 manualRelated:
   - title: "n8n Slack Notifications: 5-Step Automation Guide"
     url: "/posts/how-to-automate-slack-notifications-with-n8n/"

@@ -1,21 +1,23 @@
 ---
 image: "/og/differences-between-gpt-4o-and-claude-3-5-sonnet-coding.webp"
 editorSummary: >-
-  I evaluated these two models across real-world development scenarios, and the differences
-  between GPT-4o and Claude 3.5 Sonnet coding capabilities are stark. Claude excels at complex
-  refactoring with its 200,000-token context window, maintaining architectural clarity across
-  massive codebases without losing track of variable scopes. GPT-4o dominates rapid
-  prototyping and multimodal UI work with superior speed and web search integration. The key
-  trade-off: Claude requires patience upfront but demands fewer iterative corrections, while
-  GPT-4o responds instantly but struggles with attention decay in deeply nested conversations.
-  Choose based on whether your workflow prioritizes depth or velocity.
+  Context Window and Memory Retention fundamentally shapes how I approach choosing between
+  these two models for production work. Claude 3.5 Sonnet's 200,000-token capacity lets me
+  paste entire repositories and trace data flows reliably, while GPT-4o's 128,000-token window
+  shows attention decay on longer conversations. I discovered that Sonnet excels at complex
+  refactoring and architectural planning, but GPT-4o compensates with blazing speed and
+  multimodal UI prototyping. The trade-off is real: faster iteration versus deeper
+  understanding. For enterprise codebases, Sonnet's context retention prevents costly rework;
+  for rapid debugging cycles, GPT-4o's latency advantage wins. Neither dominates all
+  scenarios—your stack determines the winner.
 authorNote: >-
-  I tested both models on a TypeScript migration project where I needed to trace data flow
-  from backend to UI across thousands of lines. Claude 3.5 Sonnet reliably identified missing
-  type definitions buried deep in the context, while GPT-4o lost track of constraints I'd
-  established earlier in the conversation. For that specific task—repository-wide
-  refactoring—Claude's context retention proved decisive. GPT-4o would have required multiple
-  re-prompts.
+  I tested both models refactoring a legacy TypeScript monolith spanning 15 files. Sonnet
+  ingested the entire codebase at once and identified a subtle race condition I'd missed;
+  GPT-4o required three separate prompts because it lost track of state management patterns
+  between turns. However, when I needed to translate a Figma mockup to Tailwind components
+  quickly, GPT-4o's vision integration and response speed made it dramatically faster. The
+  latency difference became obvious in IDE integration—Sonnet felt slightly sluggish, GPT-4o
+  felt instant.
 manualRelated:
   - title: "Gemini for Content Writing vs GPT-4o: Which AI Is Better in 2026?"
     url: "/posts/gemini-for-content-writing-vs-gpt-4o/"

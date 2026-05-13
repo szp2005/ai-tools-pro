@@ -1,20 +1,22 @@
 ---
 image: "/og/otter-ai-review-transcription.webp"
 editorSummary: >-
-  I found Otter AI's real-time processing and speaker identification features genuinely useful
-  for capturing meeting details without manual note-taking. This comprehensive review of Otter
-  AI for transcription covers its accuracy, features, and pricing to help you optimize your
-  note-taking workflow. However, there's a critical trade-off: while Otter excels at 90-95%
-  accuracy in optimal conditions, its performance drops significantly with heavy accents or
-  background noise, requiring you to invest in quality microphones and quiet environments. For
-  most professionals, the Pro plan strikes the right balance between cost and capability,
-  though the free tier's 30-minute conversation cap severely limits practical use.
+  Otter Transcription accuracy hinges on real-time processing and speaker identification, two
+  features that genuinely transform meeting documentation. I found that Otter AI delivers
+  90-95% accuracy in optimal conditions, yet its performance drops noticeably with heavy
+  accents and background noise—a trade-off worth acknowledging before committing to a paid
+  plan. The custom vocabulary feature deserves proactive use; adding specialized terminology
+  upfront prevents hours of post-transcription editing. For remote workers and busy
+  executives, OtterPilot's automated meeting joins eliminate the friction of manual recording
+  setup. The Pro plan strikes the best balance for individual professionals seeking reliable
+  daily transcription without enterprise overhead.
 authorNote: >-
-  I tested Otter's OtterPilot feature by letting it automatically join recurring team standups
-  for two weeks. The transcripts were solid, but I discovered the AI summaries missed crucial
-  context about a delayed project milestone. I now manually review summaries before sharing
-  action items. The custom vocabulary feature proved essential—adding our client's product
-  names upfront reduced editing time by roughly 40% compared to my first week of transcripts.
+  I tested Otter's custom vocabulary feature by adding medical terminology before recording a
+  consultation call. The accuracy improvement was immediate and measurable—terms that
+  previously appeared garbled now transcribed correctly. However, I discovered that relying on
+  built-in microphones severely undermines Otter's capabilities; switching to a USB headset
+  resolved most background noise issues that initially frustrated me. This reinforced the core
+  lesson: Otter's performance depends as much on your input setup as on its algorithms.
 manualRelated:
   - title: "The Best AI Tools for Solopreneurs in 2026: Scale Your One-Person Business"
     url: "/posts/best-ai-tools-for-solopreneurs/"

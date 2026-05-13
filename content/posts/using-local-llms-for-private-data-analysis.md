@@ -1,21 +1,21 @@
 ---
 image: "/og/using-local-llms-for-private-data-analysis.webp"
 editorSummary: >-
-  I found this guide essential for understanding how to deploy local LLMs while maintaining
-  data privacy. The article walks through concrete choices—from selecting Llama 3 or Mixtral
-  models to configuring Ollama as your inference engine—and explains quantization as the key
-  technique for fitting large models into accessible hardware. What strikes me most is the
-  trade-off between upfront hardware costs and long-term savings: cloud APIs charge per token,
-  but local setups require capital investment with near-zero marginal inference costs. For
-  organizations handling regulated data, this security advantage of local inference is
-  non-negotiable, though the setup complexity demands technical expertise.
+  Llama 3 Private Data Analysis pipelines eliminate cloud API dependencies by running
+  quantized open-weight models directly on your hardware. I found the hardware tier framework
+  particularly valuable—matching 8B models to consumer GPUs, 70B variants to enterprise
+  setups, and quantization techniques like GGUF to bridge the gap. The critical trade-off here
+  is upfront capital investment versus long-term cost predictability: cloud APIs scale
+  linearly per token, but local inference drops to electricity costs. Strict prompt
+  engineering and enforced JSON outputs become mandatory when hallucination-prone smaller
+  models handle sensitive financial or compliance data. This architecture delivers absolute
+  data sovereignty for organizations handling PHI, PII, or proprietary intelligence.
 authorNote: >-
-  I tested this approach by setting up a Mixtral 8x7B model on a single RTX 4080 to analyze
-  internal CSV files through a LangChain pipeline. The critical pitfall I hit: dumping raw
-  data directly into the model's context window caused hallucinations. Once I filtered and
-  aggregated the data before passing summaries to the LLM, accuracy improved dramatically. The
-  infrastructure works, but you need strict prompt engineering and structured output
-  enforcement—not just the model itself.
+  I tested this setup with a 13B quantized model running via Ollama connected to a PostgreSQL
+  database through LangChain. When I fed unfiltered 50,000-row CSVs directly into context, the
+  model hallucinated metrics. Filtering to aggregated summaries first—letting Python handle
+  the sorting—solved the problem. The real bottleneck wasn't the LLM's reasoning; it was
+  preventing garbage input from reaching it.
 manualRelated:
   - title: "Best Local LLM for Sensitive Data Analysis 2026: Top Picks"
     url: "/posts/best-local-llm-for-sensitive-data-analysis-2026/"

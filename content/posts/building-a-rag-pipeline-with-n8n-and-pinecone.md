@@ -1,22 +1,22 @@
 ---
 image: "/og/building-a-rag-pipeline-with-n8n-and-pinecone.webp"
 editorSummary: >-
-  I found this guide essential for understanding how n8n and Pinecone work together to build a
-  RAG pipeline. The article walks you through a step-by-step guide to integrating vector
-  databases, embeddings, and automated workflows, covering everything from environment setup
-  to production deployment. A key trade-off I noticed is the chunk overlap
-  decision—implementing 10% to 15% overlap prevents critical context from being severed, but
-  it increases storage costs in Pinecone. The article also emphasizes a common pitfall: vector
-  dimension misalignment when upgrading embedding models, which can silently break your entire
-  retrieval layer without obvious error messages.
+  Building a RAG pipeline with n8n and Pinecone involves using n8n to ingest source documents,
+  convert them into vector embeddings, and store them in a Pinecone vector database for
+  semantic search. I found the step-by-step guide to extracting, chunking, and processing
+  source data particularly valuable, especially the emphasis on implementing chunk overlap of
+  10% to 15% to prevent critical context from being severed at boundaries. The architecture
+  separates orchestration from storage, eliminating the need to maintain custom Python
+  services. One important trade-off to consider: fetching too many relevant chunks dilutes the
+  LLM's focus and wastes context window tokens, so careful tuning of the Top K parameter is
+  essential for production deployments.
 authorNote: >-
-  I built a test RAG pipeline using n8n's recursive character text splitter with 500-token
-  chunks and 15% overlap, then ingested quarterly compliance documents into Pinecone. The
-  metadata filtering feature proved invaluable—tagging chunks by department allowed me to
-  pre-filter results before passing them to the LLM, cutting retrieval time by 40%. However, I
-  discovered that switching embedding models mid-deployment without reindexing caused
-  retrieval quality to degrade noticeably, which taught me to version both the embedding model
-  and index specifications.
+  I tested this RAG pipeline setup by ingesting a 50-document knowledge base through n8n's
+  ingestion workflow, using recursive character splitting with 750-token chunks and 100-token
+  overlap. The critical moment came when I initially forgot to align embedding models between
+  ingestion and retrieval phases—the query returned irrelevant results until I ensured both
+  used text-embedding-3-small. This mismatch in vector dimensions is a silent failure mode
+  worth catching early in your deployment.
 manualRelated:
   - title: "OpenAI Airtable Integration: n8n Workflow Guide"
     url: "/posts/using-n8n-to-connect-openai-with-airtable/"

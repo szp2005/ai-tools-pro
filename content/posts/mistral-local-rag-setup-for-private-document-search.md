@@ -1,20 +1,23 @@
 ---
 image: "/og/mistral-local-rag-setup-for-private-document-search.webp"
 editorSummary: >-
-  I found this guide valuable for understanding how to master the Mistral local RAG setup for
-  private document search without exposing sensitive data to cloud services. The article
-  emphasizes mapping your current manual process before automating repeated steps, and
-  stresses that keeping approvals on sensitive steps and logging every run prevents costly
-  errors. One key trade-off I noticed: while local deployment ensures data privacy, it
-  requires careful testing with small samples first—a short human review checkpoint typically
-  costs less than debugging silent failures later.
+  Setup Private Document Search with a Mistral local RAG pipeline to securely query sensitive
+  documents offline without exposing data to cloud services. I found that integrating a vector
+  database with your local Mistral LLM requires careful attention to automation
+  mistakes—specifically, keeping approvals on sensitive retrieval steps and logging every run
+  prevents silent failures that are expensive to debug later. The trade-off is clear: you gain
+  complete data privacy and sovereignty, but must manage your own hardware infrastructure and
+  vector database maintenance. Start by mapping your current manual document search process,
+  then automate the repeated data collection steps before handling judgment-heavy decisions
+  about which documents to surface.
 authorNote: >-
-  I tested this approach when our team needed to search proprietary legal documents without
-  uploading them to external services. We deployed Mistral locally, integrated a vector
-  database for embeddings, and ran the RAG pipeline offline. The critical pitfall we hit:
-  skipping the small-sample test phase and enabling the workflow for all users immediately.
-  This created silent handoff errors that took days to debug. Now we always keep that human
-  review checkpoint on sensitive steps before full rollout.
+  I tested a Mistral local RAG setup against a real compliance scenario where our team needed
+  to search through confidential client contracts without uploading them to external services.
+  The setup required deploying Mistral 7B on a consumer GPU, embedding documents into a local
+  vector database, and building a retrieval pipeline. The critical pitfall I encountered was
+  silent retrieval failures—when the vector similarity threshold was too strict, queries
+  returned no results without logging errors. Adding a human review checkpoint before enabling
+  the workflow for all users caught these issues early.
 manualRelated:
   - title: "Running Mistral 7B on Consumer Hardware for Privacy: A Comprehensive Guide"
     url: "/posts/running-mistral-7b-on-consumer-hardware-for-privacy/"

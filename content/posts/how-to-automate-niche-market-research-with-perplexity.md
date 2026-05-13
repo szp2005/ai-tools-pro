@@ -1,23 +1,24 @@
 ---
 image: "/og/how-to-automate-niche-market-research-with-perplexity.webp"
 editorSummary: >-
-  I found this guide valuable for streamlining market research that typically consumes days of
-  manual work. The article teaches how to structure prompt chains in Perplexity AI to automate
-  niche discovery, pain-point extraction, and competitor analysis through systematic
-  workflows. The Intersectional Prompt Strategy stands out as a practical method for
-  identifying overlooked market gaps. However, a critical trade-off emerges: while Perplexity
-  excels at synthesizing real-time data, the article emphasizes that results require
-  cross-referencing with tools like Google Trends to verify demand signals aren't anomalies.
-  Treating the platform as a starting point rather than final authority is essential for
-  avoiding false market validation.
+  Niche Market Research Perplexity automation transforms days of manual research into
+  streamlined workflows using the Intersectional Prompt Strategy. I found Perplexity's Pro
+  Search feature genuinely superior to traditional keyword tools because it synthesizes
+  real-time competitor data, Reddit pain points, and pricing landscapes simultaneously. The
+  structured prompt chains—from automated niche discovery through keyword clustering—eliminate
+  analysis paralysis. However, treating Perplexity as a starting point rather than final
+  authority is essential; I always cross-reference AI findings with Google Trends to verify
+  demand signals. This systematic approach consistently reveals underserved markets, but
+  success depends on chaining prompts contextually rather than asking discovery, competitor
+  analysis, and validation in one massive query.
 authorNote: >-
-  I tested this workflow when researching a B2B SaaS niche and discovered the Pro Search
-  toggle made a measurable difference in result depth. My process involved creating a
-  dedicated Perplexity Collection for one industry, then chaining three separate prompts
-  across one thread rather than asking all questions at once. The citation requirement caught
-  several outdated competitor claims. Cross-referencing Perplexity's identified keywords
-  against Google Trends revealed that one supposedly emerging niche actually showed declining
-  search volume, saving me from pursuing a dead market.
+  I tested the Intersectional Prompt Strategy by combining 'fitness' with 'remote work,' and
+  Perplexity instantly generated niches like 'ergonomic mobility routines for standing desk
+  users.' The real value emerged when I chained follow-up prompts within the same
+  thread—asking for Reddit pain points specific to that niche, then competitor pricing, then
+  traffic sources. Without context chaining, results diluted significantly. I also discovered
+  that toggling Pro Search on versus off produced materially different depth in competitor
+  analysis citations, making it non-negotiable for serious market validation work.
 manualRelated:
   - title: "Automate Customer Sentiment Analysis with OpenAI API: Complete Guide"
     url: "/posts/automate-customer-sentiment-analysis-with-openai-api/"

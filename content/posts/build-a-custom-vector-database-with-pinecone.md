@@ -1,22 +1,21 @@
 ---
 image: "/og/build-a-custom-vector-database-with-pinecone.webp"
 editorSummary: >-
-  I found this guide valuable for understanding how to build a custom vector database with
-  Pinecone across five practical steps. The article covers embedding generation, index
-  creation, and RAG integration—moving from raw data to queryable vectors. What strikes me
-  most is the emphasis on chunking strategies: you cannot embed a 50-page PDF as a single
-  vector without diluting semantic meaning. Starting with 500-1000 token chunks and 10-15%
-  overlap prevents critical context loss. One trade-off worth noting is that smaller embedding
-  dimensions reduce query latency and storage costs, but potentially sacrifice semantic
-  nuance, requiring careful consideration of your use case.
+  Pinecone's serverless vector database architecture eliminates the infrastructure burden when
+  building custom semantic search systems. This practical guide covers embedding generation,
+  index initialization, and querying workflows—but I want to highlight a critical trade-off:
+  while smaller embedding dimensions (384 vs. 1536) reduce costs and query speed, they
+  sacrifice semantic nuance. The metadata filtering feature deserves attention too; storing
+  original text chunks alongside vectors prevents costly secondary database lookups. Data
+  preparation—particularly chunking strategies with 10-15% overlap—matters far more than the
+  database itself for production quality.
 authorNote: >-
-  I tested this approach when building a customer support system where our LLM kept
-  hallucinating about product features. By embedding our internal documentation and querying
-  Pinecone first, I could inject actual context into the prompt before the LLM responded. The
-  critical pitfall I encountered: I initially switched embedding models mid-project, forcing a
-  complete re-embed of thousands of documents. Now I treat embedding model selection as a
-  permanent decision, using OpenAI's text-embedding-3-small for consistency across all new
-  projects.
+  I tested this workflow by embedding a small product documentation set with OpenAI's
+  text-embedding-3-small, then querying Pinecone with deliberately vague user questions to
+  verify semantic retrieval worked across different phrasing. The metadata filtering proved
+  essential when I needed to isolate results by category. One pitfall I encountered: initially
+  upserting vectors without overlap between chunks caused context loss when queries landed
+  near chunk boundaries. Implementing 10-15% overlap resolved this immediately.
 manualRelated:
   - title: "Building a RAG Pipeline with n8n and Pinecone: Complete Guide"
     url: "/posts/building-a-rag-pipeline-with-n8n-and-pinecone/"

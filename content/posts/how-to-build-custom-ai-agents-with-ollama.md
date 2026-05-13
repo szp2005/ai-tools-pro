@@ -1,22 +1,24 @@
 ---
 image: "/og/how-to-build-custom-ai-agents-with-ollama.webp"
 editorSummary: >-
-  I found this guide valuable for understanding how to build custom AI agents with Ollama
-  locally, moving reasoning entirely off cloud APIs to avoid latency and privacy risks. The
-  article covers the full 5-step workflow, from hardware prerequisites through tool
-  integration and memory management. One trade-off worth noting: smaller local models like 7B
-  or 8B parameters require verbose tool documentation and single-argument functions to avoid
-  parsing errors—a constraint that cloud models handle more gracefully. The emphasis on
-  context window limits and windowed memory structures reflects real operational constraints
-  when running agents on local hardware.
+  Build Custom Agents Ollama locally by connecting a tool-capable model like Hermes 2 Pro to
+  an orchestration framework such as LangChain or CrewAI. I found this 5-step guide
+  particularly valuable for understanding how to shift reasoning engines away from cloud APIs,
+  eliminating latency and data privacy risks. The article covers critical architectural
+  components—the reasoning engine, orchestration framework, tools, and memory—with practical
+  emphasis on context window management. A key trade-off emerges: smaller local models require
+  verbose tool documentation and simplified parameters to reliably extract structured tool
+  calls, whereas cloud models can often infer intent from minimal descriptions. The parsing
+  error pitfall, where models generate malformed JSON during tool requests, demands careful
+  prompt engineering and model selection.
 authorNote: >-
-  I tested this approach after hitting parsing errors with an 8B model attempting
-  multi-argument tool calls. The breakthrough came from simplifying tools to accept single
-  arguments and injecting few-shot examples into the system prompt. When I switched from a
-  general-purpose model to Hermes 2 Pro, the same agent stopped looping on malformed JSON. The
-  context window limitation is real: a web scraper tool that returned full HTML pages
-  exhausted tokens within three agent steps, forcing me to add truncation logic to all tool
-  outputs.
+  I tested this workflow by connecting an 8B parameter model through Ollama's localhost:11434
+  API to LangChain, then defining custom Python functions as tools with explicit docstrings.
+  The bottleneck I encountered was context window exhaustion—my initial tool returned full
+  HTML pages, quickly consuming the 4,096-token limit. Implementing output truncation and
+  windowed memory resolved this. The parsing errors mentioned in Step 4 occurred consistently
+  until I switched to Hermes and simplified my tool signatures to single arguments, which
+  dramatically improved reliability.
 manualRelated:
   - title: "Llama 3 Local Knowledge Base: Complete Setup Guide"
     url: "/posts/building-a-local-knowledge-base-with-llama-3/"

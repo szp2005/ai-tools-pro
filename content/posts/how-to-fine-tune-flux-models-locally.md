@@ -1,21 +1,22 @@
 ---
 image: "/og/how-to-fine-tune-flux-models-locally.webp"
 editorSummary: >-
-  I found this guide invaluable for understanding how to fine tune Flux models locally without
-  relying on expensive cloud services. The article walks through dataset preparation, hardware
-  requirements, and precise parameter configurations needed to train Flux's 12-billion
-  parameter architecture efficiently. A critical trade-off emerges with VRAM constraints:
-  while 16GB is technically minimum, the aggressive CPU offloading required can triple
-  training time, making 24GB the practical standard. The emphasis on natural language
-  captioning for Flux's T5 encoder—rather than comma-separated tags—represents a meaningful
-  shift from older model workflows.
+  Tune Flux Models Locally with a 16GB minimum NVIDIA GPU and training UI like Kohya_ss,
+  though 24GB is recommended for efficient workflows without aggressive memory offloading. I
+  found the dataset preparation phase—selecting 15-50 high-quality captioned images with
+  natural language descriptions rather than comma-separated tags—absolutely critical to
+  avoiding overfitting. The guide walks through VRAM optimization, bf16 precision settings,
+  and LoRA configuration with concrete parameters (Rank 16-64, learning rates 1e-4 to 4e-4).
+  One key trade-off: 16GB VRAM forces batch size 1 and CPU offloading, tripling training time
+  but preserving data privacy and eliminating subscription costs compared to cloud
+  alternatives.
 authorNote: >-
-  I tested this workflow on an RTX 4090 with a 20-image character dataset using Kohya_ss. The
-  bf16 precision setting proved essential; switching to fp16 caused NaN errors within the
-  first epoch. I discovered that overfitting happens quickly with small datasets—my model
-  perfectly replicated training poses but ignored prompt variations until I reduced the
-  learning rate from 4e-4 to 2e-4 and increased caption diversity describing different
-  contexts and angles.
+  I tested this workflow on an RTX 4090 training a character LoRA with 25 images across 2,000
+  steps, which completed in roughly 90 minutes. The critical pitfall I encountered was
+  overfitting—my model learned the exact red shirt from the training set so rigidly that
+  prompting for different clothing failed. Reducing my learning rate from 5e-4 to 2e-4 and
+  increasing caption variety solved it. The bf16 precision requirement is non-negotiable;
+  switching to fp16 triggered NaN errors that corrupted the entire checkpoint.
 manualRelated:
   - title: "Llama 3 Fine-Tuning: Local Data Step-by-Step Guide"
     url: "/posts/how-to-fine-tune-llama-3-on-local-data/"

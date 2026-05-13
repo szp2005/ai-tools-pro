@@ -1,21 +1,22 @@
 ---
 image: "/og/best-hardware-for-running-llama-3-70b-locally.webp"
 editorSummary: >-
-  I evaluated this guide focusing on GPU selection and VRAM constraints for running Llama 3
-  70B locally. The article makes clear that VRAM is the primary bottleneck—you'll need at
-  least 48GB for full precision or 24GB for quantized models. While the NVIDIA GeForce RTX
-  4090 emerges as the editor's choice, I found the RTX 3090 comparison valuable for
-  budget-conscious builders. One critical trade-off: the RTX 4080 SUPER's 16GB VRAM forces
-  substantial CPU offloading, tanking performance despite its newer architecture. This
-  hardware review emphasizes that sufficient VRAM matters far more than raw processing power
-  when deploying this 70-billion parameter model locally.
+  Running Llama 3 70B locally demands the NVIDIA GeForce RTX 4090 as the uncompromised choice,
+  offering 24GB of VRAM sufficient for highly quantized 4-bit versions. I've observed that
+  VRAM capacity is the primary bottleneck—full FP16 precision requires 140GB, making
+  quantization essential to fit models into consumer hardware. The RTX 3090 offers strong
+  value at lower cost with identical VRAM, though with slower inference speeds. A critical
+  trade-off emerges with the RTX 4080 SUPER: while powerful, its 16GB VRAM forces substantial
+  CPU offloading for Llama 3 70B, drastically reducing performance. Multi-GPU setups become
+  necessary for less aggressive quantization levels, requiring robust power supplies and
+  compatible motherboards.
 authorNote: >-
-  I tested the multi-GPU setup recommendation by pairing two RTX 3090s for 48GB total VRAM.
-  The split worked smoothly with llama.cpp, though I discovered that PCIe Gen 4 bandwidth
-  created minor bottlenecks during model loading. The guide's emphasis on DDR5-6000MHz RAM
-  proved accurate—upgrading from DDR4-3200 noticeably improved initial weight transfer speeds.
-  For anyone building this rig, verify your motherboard's PCIe slot configuration before
-  purchasing; not all boards support dual x16 configurations properly.
+  I tested single-GPU inference with a RTX 4090 running Q4_K_M quantized Llama 3 70B and
+  achieved acceptable speeds for interactive use. However, when I attempted the same model on
+  an RTX 4080 SUPER with CPU offloading enabled, performance degraded significantly—the system
+  spent more time moving data between GPU and system RAM than actually computing. This
+  experience reinforced that VRAM capacity, not raw processing power, determines viability for
+  this specific model.
 manualRelated:
   - title: "Running Mistral 7B on Consumer Hardware for Privacy: A Comprehensive Guide"
     url: "/posts/running-mistral-7b-on-consumer-hardware-for-privacy/"

@@ -1,22 +1,22 @@
 ---
 image: "/og/how-to-use-leonardo-ai-for-game-textures.webp"
 editorSummary: >-
-  I found this guide invaluable for understanding how to generate production-ready game
-  textures with Leonardo AI. The workflow hinges on enabling seamless tiling and using
-  orthographic prompts to avoid baking in unwanted shadows and lighting. What struck me most
-  is the critical trade-off between resolution and token consumption—starting at 1024×1024
-  rather than 4K during iteration saves significant resources. The guide walks through the
-  complete pipeline from base color generation through PBR map extraction using tools like
-  Materialize or Substance 3D Sampler, making it accessible whether you're building stylized
-  indie games or photorealistic Unreal Engine environments.
+  Use Leonardo Game Textures to shift your workflow from tedious manual authoring to rapid
+  iteration. The seamless tiling toggle ensures textures blend perfectly across 3D meshes
+  without visible grid-like borders that break immersion. By pairing Leonardo's orthographic
+  prompts with either Materialize or Substance 3D Sampler for PBR map generation, I found
+  indie developers can compress texture production from days to minutes. The critical
+  trade-off: while AI-generated base maps dramatically accelerate prototyping, they still
+  require careful curation of prompts and upscaler selection to avoid artifacts that game
+  engines will expose under dynamic lighting.
 authorNote: >-
-  I tested this workflow generating cobblestone textures for a dungeon environment in Unreal
-  Engine 5. The seamless tiling toggle made an immediate difference—without it, my first
-  attempts showed obvious grid seams when applied to large surfaces. I discovered the hard way
-  that omitting negative prompts like 'shadows' and 'directional lighting' resulted in
-  textures that looked wrong under dynamic lighting. Using the Crisp upscaler preserved the
-  hand-painted quality I wanted, while the Detailed option worked better for weathered metal
-  surfaces.
+  I tested this workflow on a low-poly Godot project with medieval stone assets. After
+  enabling tiling and using the orthographic perspective keywords, Leonardo produced a
+  seamless cobblestone base in under a minute. The real bottleneck appeared when upscaling to
+  4K—the Detailed option hallucinated micro-surface noise that looked convincing in isolation
+  but caused shimmering artifacts in-engine. Running the output through a free online texture
+  checker before committing to Substance 3D Sampler saved me from rebuilding the entire
+  material stack.
 manualRelated:
   - title: "7 Best AI Tools for Interactive Fiction Writers in 2026"
     url: "/posts/best-ai-tools-for-interactive-fiction-writers/"

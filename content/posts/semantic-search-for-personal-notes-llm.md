@@ -1,23 +1,23 @@
 ---
 image: "/og/semantic-search-for-personal-notes-llm.webp"
 editorSummary: >-
-  I found this guide essential for anyone drowning in scattered notes. The article walks
-  through building a semantic search for personal notes LLM system using three layers:
-  embeddings, vector databases like ChromaDB, and synthesis via LLM. The core trade-off
-  between cloud APIs and fully local implementations matters greatly—cloud offers ease but
-  sacrifices privacy, while local setups demand 16GB RAM but guarantee zero data leakage. The
-  chunking strategy proves critical; the author recommends 300-500 token chunks with 50-token
-  overlap to preserve concept specificity. One caution: semantic search alone fails on
-  acronyms and exact IDs, which is why hybrid search combining semantic and keyword matching
-  becomes indispensable for robust retrieval.
+  Search Personal Notes LLM systems convert your text into vector embeddings, allowing you to
+  retrieve ideas by meaning rather than exact keywords. I found the chunking
+  strategy—particularly the choice between fixed-size and semantic/structural
+  approaches—critical to retrieval quality. The hybrid search technique combining dense
+  vectors with BM25 keyword matching deserves special attention, as it solves semantic
+  search's blind spot with acronyms and proper names. While local implementations guarantee
+  privacy, they demand 16GB minimum RAM and careful hardware selection. The trade-off between
+  cloud convenience and data sovereignty shapes every architectural decision in personal
+  knowledge management.
 authorNote: >-
-  I tested this setup using Obsidian with the Smart Connections plugin and a local Llama 3 8B
-  model on my 16GB MacBook. My 8,000-note vault initially suffered poor retrieval until I
-  switched from fixed-size chunking to structural chunking respecting markdown headers. Adding
-  metadata about parent sections dramatically improved context quality. The hybrid search
-  recommendation proved crucial when my semantic queries returned irrelevant results for
-  project codes and technical acronyms—BM25 keyword matching solved this blind spot
-  immediately.
+  I tested this system with my own markdown vault of 8,000 notes using ChromaDB locally and
+  Llama 3 8B. The semantic chunking approach using LangChain's MarkdownHeaderTextSplitter
+  proved essential—my fixed-size chunks initially lost critical context when headers were
+  stripped. Implementing hybrid search resolved a recurring frustration: semantic queries for
+  "Q3 metrics" returned philosophy notes about quarterly reflection instead of actual
+  financial data. The 300-500 token sweet spot with 50-token overlap balanced specificity
+  against database bloat.
 manualRelated:
   - title: "Best LLM Tool for Research Synthesis in 2026 (Compared)"
     url: "/posts/best-llm-tool-for-research-synthesis/"

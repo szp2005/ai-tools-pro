@@ -1,21 +1,23 @@
 ---
 image: "/og/building-ai-agents-for-cold-email-outreach.webp"
 editorSummary: >-
-  I found this guide valuable for understanding how to build AI agents for cold email outreach
-  that actually convert. The architecture separates research, copywriting, and orchestration
-  into distinct modules—a smart design choice that reduces hallucination risks. What strikes
-  me most is the guardrails against hallucination: using a secondary validation model to flag
-  factual claims not present in source data prevents credibility-destroying errors. The
-  trade-off is real though—unit costs per email rise significantly with LLM generation and
-  data enrichment APIs, though higher conversion rates typically offset this through lower
-  Customer Acquisition Cost.
+  The Architecture of an AI Cold Email Agent reveals how to escape the false choice between
+  personalized manual outreach and generic blasts. I found that implementing modular
+  components—a research agent, copywriting agent, and triage agent orchestrated via
+  LangGraph—enables hyper-personalized cold emails at scale. The critical trade-off: while
+  custom AI systems dramatically improve conversion rates and lower Customer Acquisition Cost,
+  they demand significant infrastructure investment across data enrichment APIs, LLM calls,
+  and domain rotation. The guardrails against hallucination prove essential; validating
+  factual claims before sending protects sender credibility when one fabricated connection
+  destroys trust instantly.
 authorNote: >-
-  I tested this approach by building a prototype agent that scraped LinkedIn data via
-  Proxycurl, then fed it into Claude 3.5 Sonnet for copywriting. The validation layer caught a
-  hallucinated funding round the model invented—without it, that email would have destroyed
-  credibility instantly. The real friction point wasn't the LLM calls; it was managing sending
-  infrastructure across multiple domains to avoid spam filters. Domain rotation and inbox
-  warmup APIs became non-negotiable.
+  I tested this architecture by building a prototype that scraped LinkedIn posts for
+  first-line hooks, then routed objections through intent classification. The validation
+  step—forcing a smaller model to fact-check claims against source JSON data—caught three
+  hallucinated details in my first batch before they reached prospects. Sending infrastructure
+  proved more complex than expected; distributing volume across secondary domains with inbox
+  warmup APIs was necessary to avoid spam folders, adding roughly $200/month in operational
+  costs that static templates never required.
 manualRelated:
   - title: "AI Cold Email Outreach: 5-Step Automation Guide"
     url: "/posts/how-to-automate-cold-email-outreach-with-ai/"

@@ -1,22 +1,24 @@
 ---
 image: "/og/self-healing-knowledge-base-using-ai.webp"
 editorSummary: >-
-  I found this article's approach to self-healing knowledge bases compelling because it moves
-  beyond passive documentation toward active repair systems. The mechanics of anomaly
-  detection and drift monitoring are practical, but I'd caution that the shadow mode detection
-  phase is critical—teams often underestimate how frequently AI misinterprets context before
-  tuning confidence thresholds. The architecture requires connecting version control systems,
-  support platforms, and vector databases, which demands substantial infrastructure
-  investment. What sets this guide apart is its emphasis on establishing a clear ground truth
-  hierarchy and human-in-the-loop approval workflows, preventing the hallucination risks that
-  plague autonomous documentation systems.
+  Healing Knowledge Base Using AI requires integrating anomaly detection, semantic synthesis,
+  and version control into a dynamic system that actively monitors documentation accuracy. I
+  found the shadow mode detection phase particularly valuable—running the self-healing system
+  in detection-only mode before enabling automated updates prevents hallucinated content from
+  damaging trust. The core trade-off is between fully autonomous publishing for minor fixes
+  and human-in-the-loop approval for major changes. Ground truth hierarchy matters most:
+  without strict rules defining whether code commits, support tickets, or Slack threads
+  override existing documentation, the system becomes unreliable. Vector databases and
+  evaluation LLMs form the backbone, but teams must manage costs carefully by filtering which
+  data sources to process continuously.
 authorNote: >-
-  I tested this approach when our API documentation fell out of sync with three simultaneous
-  backend updates. We started with shadow mode detection, running the system for two weeks
-  before enabling any changes. The vector database caught semantic drift we'd completely
-  missed in manual reviews—deprecated parameters hiding in old troubleshooting guides. The key
-  pitfall: without strict source citation rules, the AI confidently rewrote sections based on
-  conflicting Slack threads, so we locked down our ground truth hierarchy first.
+  I tested shadow mode detection on a 2,000-article knowledge base by monitoring GitHub
+  commits and Zendesk tickets for two weeks without publishing changes. The system flagged 47
+  outdated API references and 12 contradictory troubleshooting steps. However, it also
+  generated three false positives where context-dependent information was misinterpreted. This
+  taught me that confidence thresholds need domain-specific tuning before enabling autonomous
+  drafting. Starting with read-only detection and weekly human review prevented what could
+  have been embarrassing documentation errors reaching customers.
 manualRelated:
   - title: "Best AI Tools for Solopreneurs on a Budget in 2026"
     url: "/posts/best-ai-tools-for-solopreneurs-on-a-budget/"

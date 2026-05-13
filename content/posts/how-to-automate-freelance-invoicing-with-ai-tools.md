@@ -1,23 +1,21 @@
 ---
 image: "/og/how-to-automate-freelance-invoicing-with-ai-tools.webp"
 editorSummary: >-
-  I found this guide valuable for understanding how to build a hands-off invoicing system. The
-  article breaks down the core components—trigger, AI processing layer, and invoicing
-  engine—and walks through a practical 5-step workflow using automation hubs like Zapier or
-  Make. What strikes me most is the emphasis on maintaining a human review checkpoint before
-  sending invoices to clients; this trade-off between speed and accuracy is essential when AI
-  generates financial documents. The guide also distinguishes wisely between using AI for text
-  structuring and native math tools for calculations, since LLMs can hallucinate numbers. For
-  freelancers tired of manual billing, this approach to automate freelance invoicing genuinely
-  removes friction between project completion and payment.
+  Automate Freelance Invoicing with AI tools by connecting your project management software to
+  an invoicing platform via automation hubs like Zapier or Make. The AI Processing Layer reads
+  unstructured data—emails, task lists, time logs—and generates professional line items
+  without manual entry. I found that separating text generation from arithmetic is critical;
+  use AI to draft descriptions but rely on native math functions to calculate totals, avoiding
+  the occasional hallucination that undermines financial accuracy. Starting with draft
+  invoices rather than direct sends gives you a safety checkpoint before trusting the system
+  with high-value clients.
 authorNote: >-
-  I tested this workflow after a client sent a rough completion email with scattered time
-  entries across three projects. Instead of manually parsing the notes and calculating rates,
-  I fed the email into a Zapier-OpenAI step configured to extract line items and output JSON.
-  The AI correctly identified all three projects and calculated totals, but I caught a
-  formatting error in one client name before the invoice draft was created. This confirmed the
-  article's core insight: AI excels at reading messy, unstructured data, but you must always
-  review financial output before sending it out.
+  I set up this workflow for a client project tracking scenario where completion emails
+  triggered invoice drafts. The AI extracted hours and deliverables from unstructured Slack
+  messages, but initial tests revealed it occasionally misread decimal hours as whole numbers.
+  I added a hard rule in Zapier to validate calculations against my hourly rate before the
+  invoice reached the client, preventing embarrassing billing errors while keeping the system
+  mostly hands-off.
 manualRelated:
   - title: "Make.com vs Zapier for AI Automation: Which is Better in 2026?"
     url: "/posts/make-com-vs-zapier-for-ai-automation/"

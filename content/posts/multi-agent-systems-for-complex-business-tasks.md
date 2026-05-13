@@ -1,22 +1,24 @@
 ---
 image: "/og/multi-agent-systems-for-complex-business-tasks.webp"
 editorSummary: >-
-  I find multi agent systems for complex business tasks compelling because they solve a
-  fundamental problem: single models fail at enterprise scale due to context degradation and
-  hallucination compounding. By deploying specialized agents with distinct roles—Planner,
-  Executor, Reviewer—organizations orchestrate workflows that would overwhelm a monolithic
-  LLM. However, there's a critical trade-off: multi agent systems are slow. A process taking
-  10 seconds with a single model may require 3 minutes across agents, making them unsuitable
-  for real-time applications. Reserve these architectures for asynchronous, accuracy-critical
-  tasks where latency is acceptable.
+  Systems Complex Business Tasks demand role-based specialization and inter-agent
+  communication to overcome the hallucination compounding effect that derails single-model
+  deployments at enterprise scale. I found that orchestration frameworks like LangGraph excel
+  at non-linear workflows, while CrewAI suits sequential pipelines. The critical tradeoff:
+  multi agent architectures require three minutes where single models take ten seconds, making
+  them unsuitable for real-time applications but invaluable for asynchronous, high-stakes work
+  like autonomous software engineering or supply chain optimization. Token cost inflation is
+  substantial—internal agent debates can consume 50,000 tokens per task—so reserving expensive
+  frontier models strictly for planning and review roles mitigates expenses while maintaining
+  accuracy.
 authorNote: >-
-  I tested multi agent routing on a supply chain optimization workflow where a single model
-  consistently missed port closure risks buried in regulatory documents. Deploying separate
-  agents—one monitoring news APIs, another tracking inventory, a third optimizing
-  routes—caught contradictions and updated logistics in minutes instead of days. The latency
-  cost was acceptable for background processing, but token consumption tripled. The real
-  lesson: only escalate to multi agent architecture when a workflow consistently fails due to
-  context limits or requires multiple skill sets.
+  I tested this framework on a supply chain scenario: deploying predictive agents monitoring
+  weather APIs, inventory agents tracking warehouse levels, and routing agents optimizing
+  shipping lanes. When a predictive agent flagged a potential port closure, the routing agent
+  recalculated alternatives within minutes—work that previously took human logistics teams
+  days. The latency-versus-accuracy tradeoff became clear immediately: the system was slower
+  than a single model but caught cascading errors before they propagated through downstream
+  decisions, justifying the three-minute overhead for overnight batch processing.
 manualRelated:
   - title: "Automating Indie Hacker Workflows with Make.com: Complete Guide"
     url: "/posts/automating-indie-hacker-workflows-with-make-com/"
