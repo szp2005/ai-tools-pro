@@ -1,0 +1,85 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AiSubscriptionTracker from '../../components/AiSubscriptionTracker.astro';
+
+const title = 'AI Subscription Tracker: Free Local Browser Tool | AI Tools Pro';
+const description = 'Track ChatGPT, Claude, Cursor, Midjourney, Perplexity, and other AI subscription costs in your browser. Free CSV import/export, billing reminders, and cancel suggestions.';
+const canonicalURL = 'https://ai.toolrouteai.com/tools/ai-subscription-tracker/';
+const relatedLinks = [
+  {
+    title: 'Best AI Tools for Solopreneurs on a Budget',
+    href: '/posts/best-ai-tools-for-solopreneurs-on-a-budget/',
+    description: 'A practical stack for solo operators trying to control recurring AI software spend.',
+  },
+  {
+    title: 'Notion AI vs ChatGPT for Notes',
+    href: '/posts/notion-ai-vs-chatgpt-for-notes/',
+    description: 'Compare two common paid AI subscriptions before keeping both in your monthly stack.',
+  },
+  {
+    title: 'Perplexity AI Review 2026',
+    href: '/posts/perplexity-ai-review-2026/',
+    description: 'A review of Perplexity Pro and when a research subscription is worth the extra cost.',
+  },
+];
+const softwareSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'AI Subscription Tracker',
+  applicationCategory: 'FinanceApplication',
+  operatingSystem: 'Web browser',
+  url: canonicalURL,
+  description,
+  offers: {
+    '@type': 'Offer',
+    price: '0',
+    priceCurrency: 'USD',
+  },
+  featureList: [
+    'Track AI subscription monthly cost',
+    'Calculate year-to-date subscription spend',
+    'Show billing reminders three days before renewal',
+    'Flag low-usage subscriptions to cancel',
+    'CSV import and export',
+    'LocalStorage-only private data storage',
+  ],
+};
+const copy = {
+  lang: 'en',
+  title: 'AI Subscription Tracker',
+  deck: 'Track every AI subscription you pay for, spot renewals before they hit, and export a clean CSV backup whenever you need it.',
+  primaryCta: '+ Add Subscription',
+  exportCsv: 'Export CSV',
+  importCsv: 'Import CSV',
+  clearAll: 'Clear All',
+  summaryTitle: 'Subscription summary',
+  monthly: 'Total monthly cost',
+  ytd: 'Estimated YTD cost',
+  cancelTitle: 'Probably cancel',
+  cancelEmpty: 'No low-usage subscriptions yet.',
+  alertTitle: 'Billing alerts',
+  alertEmpty: 'No renewals in the next 3 days.',
+  privacyTitle: 'Privacy note',
+  privacyBody: 'Your subscription data stays only in this browser through localStorage. It is not uploaded to AI Tools Pro or any server. It will survive normal page refreshes, but clearing browser data can delete it, so export CSV backups regularly.',
+  formTitle: 'Subscription details',
+  toolName: 'Tool name',
+  cost: 'Monthly cost (USD)',
+  billingDay: 'Billing day',
+  firstDate: 'First subscribed date',
+  rating: 'Usage rating',
+  notes: 'Notes',
+  save: 'Save',
+  cancel: 'Cancel',
+  tableTitle: 'Your subscriptions',
+  edit: 'Edit',
+  delete: 'Delete',
+  emptyState: 'No subscriptions yet. Add ChatGPT Plus, Claude Pro, Cursor, or any other AI tool you pay for.',
+  relatedTitle: 'Related AI tool reviews',
+  backupNote: 'CSV export is the safest way to move this data between browsers or recover after clearing cache.',
+};
+---
+
+<BaseLayout title={title} description={description} canonicalURL={canonicalURL}>
+  <script type="application/ld+json" set:html={JSON.stringify(softwareSchema)} />
+  <AiSubscriptionTracker copy={copy} relatedLinks={relatedLinks} />
+</BaseLayout>

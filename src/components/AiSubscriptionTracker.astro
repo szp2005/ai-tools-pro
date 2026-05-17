@@ -1,0 +1,755 @@
+---
+interface RelatedLink {
+  title: string;
+  href: string;
+  description: string;
+}
+
+interface Copy {
+  lang: 'en' | 'zh-cn';
+  title: string;
+  deck: string;
+  primaryCta: string;
+  exportCsv: string;
+  importCsv: string;
+  clearAll: string;
+  summaryTitle: string;
+  monthly: string;
+  ytd: string;
+  cancelTitle: string;
+  cancelEmpty: string;
+  alertTitle: string;
+  alertEmpty: string;
+  privacyTitle: string;
+  privacyBody: string;
+  formTitle: string;
+  toolName: string;
+  cost: string;
+  billingDay: string;
+  firstDate: string;
+  rating: string;
+  notes: string;
+  save: string;
+  cancel: string;
+  tableTitle: string;
+  edit: string;
+  delete: string;
+  emptyState: string;
+  relatedTitle: string;
+  backupNote: string;
+}
+
+const { copy, relatedLinks } = Astro.props as {
+  copy: Copy;
+  relatedLinks: RelatedLink[];
+};
+const trackerConfig = {
+  lang: copy.lang,
+  storageKey: 'ai-subscription-tracker:v1',
+  labels: copy,
+};
+---
+
+<section class="tool-shell" data-subscription-tracker data-config={JSON.stringify(trackerConfig)}>
+  <div class="tool-hero">
+    <div>
+      <h1>{copy.title}</h1>
+      <p>{copy.deck}</p>
+    </div>
+    <div class="tool-actions" aria-label="Tool actions">
+      <button class="button button-primary" type="button" data-action="add">{copy.primaryCta}</button>
+      <button class="button" type="button" data-action="export">{copy.exportCsv}</button>
+      <label class="button button-file">
+        {copy.importCsv}
+        <input type="file" accept=".csv,text/csv" data-import-file />
+      </label>
+      <button class="button button-danger" type="button" data-action="clear">{copy.clearAll}</button>
+    </div>
+  </div>
+
+  <div class="alert-band" data-alert-band hidden>
+    <strong>{copy.alertTitle}</strong>
+    <ul data-alert-list></ul>
+  </div>
+
+  <section class="metric-grid" aria-label={copy.summaryTitle}>
+    <article class="metric-card">
+      <span>{copy.monthly}</span>
+      <strong data-total-monthly>$0.00</strong>
+    </article>
+    <article class="metric-card">
+      <span>{copy.ytd}</span>
+      <strong data-total-ytd>$0.00</strong>
+    </article>
+    <article class="metric-card">
+      <span>{copy.cancelTitle}</span>
+      <strong data-cancel-count>0</strong>
+    </article>
+  </section>
+
+  <section class="tracker-panel" data-form-panel hidden>
+    <h2>{copy.formTitle}</h2>
+    <form class="subscription-form" data-subscription-form>
+      <input type="hidden" name="id" />
+      <label>
+        <span>{copy.toolName}</span>
+        <input name="name" list="ai-tool-presets" required autocomplete="off" />
+      </label>
+      <label>
+        <span>{copy.cost}</span>
+        <input name="cost" type="number" min="0" step="0.01" required />
+      </label>
+      <label>
+        <span>{copy.billingDay}</span>
+        <input name="billingDay" type="number" min="1" max="31" required />
+      </label>
+      <label>
+        <span>{copy.firstDate}</span>
+        <input name="firstDate" type="date" required />
+      </label>
+      <label>
+        <span>{copy.rating}</span>
+        <select name="rating" required>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+      </label>
+      <label class="notes-field">
+        <span>{copy.notes}</span>
+        <textarea name="notes" rows="3"></textarea>
+      </label>
+      <div class="form-actions">
+        <button class="button button-primary" type="submit">{copy.save}</button>
+        <button class="button" type="button" data-action="cancel-form">{copy.cancel}</button>
+      </div>
+    </form>
+  </section>
+
+  <datalist id="ai-tool-presets">
+    <option value="ChatGPT Plus"></option>
+    <option value="ChatGPT Team"></option>
+    <option value="ChatGPT Pro"></option>
+    <option value="Claude Pro"></option>
+    <option value="Claude Team"></option>
+    <option value="Cursor Pro"></option>
+    <option value="GitHub Copilot"></option>
+    <option value="Midjourney Basic"></option>
+    <option value="Midjourney Standard"></option>
+    <option value="Midjourney Pro"></option>
+    <option value="DALL·E credits"></option>
+    <option value="Stable Diffusion (Replicate)"></option>
+    <option value="Perplexity Pro"></option>
+    <option value="You.com Pro"></option>
+    <option value="Notion AI"></option>
+    <option value="Jasper"></option>
+    <option value="Copy.ai"></option>
+    <option value="ElevenLabs"></option>
+    <option value="Descript"></option>
+    <option value="RunwayML"></option>
+    <option value="Pika"></option>
+    <option value="Suno Pro"></option>
+    <option value="Udio"></option>
+    <option value="HeyGen"></option>
+    <option value="Synthesia"></option>
+    <option value="Gamma Pro"></option>
+    <option value="Tome Pro"></option>
+    <option value="Beautiful.ai"></option>
+    <option value="Otter.ai"></option>
+    <option value="Fathom"></option>
+    <option value="Granola"></option>
+  </datalist>
+
+  <section class="tracker-panel">
+    <div class="section-heading">
+      <div>
+        <h2>{copy.tableTitle}</h2>
+        <p>{copy.backupNote}</p>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table class="subscription-table">
+        <thead>
+          <tr>
+            <th>{copy.toolName}</th>
+            <th>{copy.cost}</th>
+            <th>{copy.billingDay}</th>
+            <th>{copy.firstDate}</th>
+            <th>{copy.rating}</th>
+            <th>{copy.notes}</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody data-table-body></tbody>
+      </table>
+    </div>
+    <p class="empty-state" data-empty-state>{copy.emptyState}</p>
+  </section>
+
+  <section class="tracker-panel cancel-panel">
+    <h2>{copy.cancelTitle}</h2>
+    <ul data-cancel-list></ul>
+    <p data-cancel-empty>{copy.cancelEmpty}</p>
+  </section>
+
+  <section class="privacy-box">
+    <h2>{copy.privacyTitle}</h2>
+    <p>{copy.privacyBody}</p>
+  </section>
+
+  <section class="related-links" aria-labelledby="related-tools-heading">
+    <h2 id="related-tools-heading">{copy.relatedTitle}</h2>
+    <div class="related-grid">
+      {relatedLinks.map((link) => (
+        <article>
+          <h3><a href={link.href}>{link.title}</a></h3>
+          <p>{link.description}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</section>
+
+<script is:inline>
+(() => {
+  const root = document.querySelector('[data-subscription-tracker]');
+  if (!root) return;
+  const config = JSON.parse(root.dataset.config || '{}');
+  const labels = config.labels || {};
+  const storageKey = config.storageKey || 'ai-subscription-tracker:v1';
+  const formPanel = root.querySelector('[data-form-panel]');
+  const form = root.querySelector('[data-subscription-form]');
+  const tableBody = root.querySelector('[data-table-body]');
+  const emptyState = root.querySelector('[data-empty-state]');
+  const alertBand = root.querySelector('[data-alert-band]');
+  const alertList = root.querySelector('[data-alert-list]');
+  const cancelList = root.querySelector('[data-cancel-list]');
+  const cancelEmpty = root.querySelector('[data-cancel-empty]');
+  const importFile = root.querySelector('[data-import-file]');
+  const currency = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
+
+  let subscriptions = load();
+
+  function load() {
+    try {
+      const raw = localStorage.getItem(storageKey);
+      return raw ? JSON.parse(raw).filter(Boolean) : [];
+    } catch {
+      return [];
+    }
+  }
+
+  function save() {
+    localStorage.setItem(storageKey, JSON.stringify(subscriptions));
+  }
+
+  function uid() {
+    return `sub_${Date.now()}_${Math.random().toString(16).slice(2)}`;
+  }
+
+  function clampDay(value) {
+    const day = Number(value);
+    if (!Number.isFinite(day)) return 1;
+    return Math.min(31, Math.max(1, Math.round(day)));
+  }
+
+  function monthLastDay(year, monthIndex) {
+    return new Date(year, monthIndex + 1, 0).getDate();
+  }
+
+  function billingDateFor(year, monthIndex, day) {
+    return new Date(year, monthIndex, Math.min(clampDay(day), monthLastDay(year, monthIndex)));
+  }
+
+  function nextBilling(sub, from = new Date()) {
+    const first = new Date(`${sub.firstDate}T00:00:00`);
+    let year = from.getFullYear();
+    let month = from.getMonth();
+    for (let i = 0; i < 14; i += 1) {
+      const candidate = billingDateFor(year, month, sub.billingDay);
+      if (candidate >= first && candidate >= startOfDay(from)) return candidate;
+      month += 1;
+      if (month > 11) {
+        month = 0;
+        year += 1;
+      }
+    }
+    return billingDateFor(year, month, sub.billingDay);
+  }
+
+  function startOfDay(date) {
+    return new Date(date.getFullYear(), date.getMonth(), date.getDate());
+  }
+
+  function daysUntil(date) {
+    return Math.round((startOfDay(date).getTime() - startOfDay(new Date()).getTime()) / 86400000);
+  }
+
+  function ytdCost(sub) {
+    const today = startOfDay(new Date());
+    const first = new Date(`${sub.firstDate}T00:00:00`);
+    const yearStart = new Date(today.getFullYear(), 0, 1);
+    const start = first > yearStart ? first : yearStart;
+    let count = 0;
+    for (let month = 0; month <= today.getMonth(); month += 1) {
+      const billing = billingDateFor(today.getFullYear(), month, sub.billingDay);
+      if (billing >= start && billing <= today) count += 1;
+    }
+    return count * Number(sub.cost || 0);
+  }
+
+  function stars(value) {
+    const rating = Math.min(5, Math.max(1, Number(value || 1)));
+    return '★'.repeat(rating) + '☆'.repeat(5 - rating);
+  }
+
+  function render() {
+    const monthly = subscriptions.reduce((sum, sub) => sum + Number(sub.cost || 0), 0);
+    const ytd = subscriptions.reduce((sum, sub) => sum + ytdCost(sub), 0);
+    const probablyCancel = subscriptions.filter((sub) => Number(sub.rating) <= 2);
+    root.querySelector('[data-total-monthly]').textContent = currency.format(monthly);
+    root.querySelector('[data-total-ytd]').textContent = currency.format(ytd);
+    root.querySelector('[data-cancel-count]').textContent = String(probablyCancel.length);
+
+    tableBody.innerHTML = '';
+    subscriptions
+      .slice()
+      .sort((a, b) => String(a.name).localeCompare(String(b.name)))
+      .forEach((sub) => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td><strong>${escapeHtml(sub.name)}</strong></td>
+          <td>${currency.format(Number(sub.cost || 0))}</td>
+          <td>${Number(sub.billingDay)}</td>
+          <td>${escapeHtml(sub.firstDate)}</td>
+          <td aria-label="${Number(sub.rating)} out of 5">${stars(sub.rating)}</td>
+          <td>${escapeHtml(sub.notes || '')}</td>
+          <td class="row-actions">
+            <button type="button" data-edit="${sub.id}">${labels.edit || 'Edit'}</button>
+            <button type="button" data-delete="${sub.id}">${labels.delete || 'Delete'}</button>
+          </td>
+        `;
+        tableBody.append(row);
+      });
+    emptyState.hidden = subscriptions.length > 0;
+
+    cancelList.innerHTML = '';
+    probablyCancel.forEach((sub) => {
+      const item = document.createElement('li');
+      item.textContent = `${sub.name} — ${currency.format(Number(sub.cost || 0))}/mo, ${Number(sub.rating)}/5`;
+      cancelList.append(item);
+    });
+    cancelEmpty.hidden = probablyCancel.length > 0;
+
+    const upcoming = subscriptions
+      .map((sub) => ({ sub, days: daysUntil(nextBilling(sub)) }))
+      .filter((item) => item.days >= 0 && item.days <= 3)
+      .sort((a, b) => a.days - b.days);
+    alertList.innerHTML = '';
+    upcoming.forEach(({ sub, days }) => {
+      const item = document.createElement('li');
+      item.textContent = `${sub.name}: ${currency.format(Number(sub.cost || 0))} in ${days} day${days === 1 ? '' : 's'}`;
+      alertList.append(item);
+    });
+    alertBand.hidden = upcoming.length === 0;
+  }
+
+  function openForm(sub) {
+    formPanel.hidden = false;
+    form.elements.id.value = sub?.id || '';
+    form.elements.name.value = sub?.name || '';
+    form.elements.cost.value = sub?.cost ?? '';
+    form.elements.billingDay.value = sub?.billingDay ?? new Date().getDate();
+    form.elements.firstDate.value = sub?.firstDate || new Date().toISOString().slice(0, 10);
+    form.elements.rating.value = sub?.rating || '3';
+    form.elements.notes.value = sub?.notes || '';
+    form.elements.name.focus();
+  }
+
+  function closeForm() {
+    formPanel.hidden = true;
+    form.reset();
+  }
+
+  function escapeHtml(value) {
+    return String(value ?? '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
+  }
+
+  function csvEscape(value) {
+    const text = String(value ?? '');
+    return /[",\n]/.test(text) ? `"${text.replace(/"/g, '""')}"` : text;
+  }
+
+  function exportCsv() {
+    const header = ['name', 'cost', 'billingDay', 'firstDate', 'rating', 'notes'];
+    const rows = subscriptions.map((sub) => header.map((key) => csvEscape(sub[key])).join(','));
+    const blob = new Blob([[header.join(','), ...rows].join('\n')], { type: 'text/csv;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'ai-subscriptions.csv';
+    document.body.append(link);
+    link.click();
+    link.remove();
+    URL.revokeObjectURL(url);
+  }
+
+  function parseCsv(text) {
+    const rows = [];
+    let row = [];
+    let cell = '';
+    let quoted = false;
+    for (let i = 0; i < text.length; i += 1) {
+      const char = text[i];
+      const next = text[i + 1];
+      if (quoted) {
+        if (char === '"' && next === '"') {
+          cell += '"';
+          i += 1;
+        } else if (char === '"') {
+          quoted = false;
+        } else {
+          cell += char;
+        }
+      } else if (char === '"') {
+        quoted = true;
+      } else if (char === ',') {
+        row.push(cell);
+        cell = '';
+      } else if (char === '\n') {
+        row.push(cell);
+        rows.push(row);
+        row = [];
+        cell = '';
+      } else if (char !== '\r') {
+        cell += char;
+      }
+    }
+    row.push(cell);
+    rows.push(row);
+    return rows.filter((items) => items.some((item) => item.trim()));
+  }
+
+  function importCsvText(text) {
+    const rows = parseCsv(text);
+    const header = rows.shift()?.map((item) => item.trim()) || [];
+    const imported = rows.map((row) => {
+      const record = Object.fromEntries(header.map((key, index) => [key, row[index] ?? '']));
+      return normalize({ ...record, id: uid() });
+    }).filter((sub) => sub.name && sub.cost >= 0);
+    subscriptions = imported;
+    save();
+    render();
+  }
+
+  function normalize(input) {
+    return {
+      id: input.id || uid(),
+      name: String(input.name || '').trim(),
+      cost: Math.max(0, Number(input.cost || 0)),
+      billingDay: clampDay(input.billingDay),
+      firstDate: input.firstDate || new Date().toISOString().slice(0, 10),
+      rating: Math.min(5, Math.max(1, Number(input.rating || 3))),
+      notes: String(input.notes || '').trim(),
+    };
+  }
+
+  root.addEventListener('click', (event) => {
+    const target = event.target.closest('button');
+    if (!target) return;
+    const action = target.dataset.action;
+    if (action === 'add') openForm();
+    if (action === 'export') exportCsv();
+    if (action === 'cancel-form') closeForm();
+    if (action === 'clear') {
+      if (window.confirm('Clear all saved subscriptions?')) {
+        subscriptions = [];
+        save();
+        closeForm();
+        render();
+      }
+    }
+    if (target.dataset.edit) {
+      const sub = subscriptions.find((item) => item.id === target.dataset.edit);
+      if (sub) openForm(sub);
+    }
+    if (target.dataset.delete) {
+      subscriptions = subscriptions.filter((item) => item.id !== target.dataset.delete);
+      save();
+      render();
+    }
+  });
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const data = Object.fromEntries(new FormData(form).entries());
+    const sub = normalize(data);
+    if (!sub.name) return;
+    const index = subscriptions.findIndex((item) => item.id === sub.id);
+    if (index >= 0) subscriptions[index] = sub;
+    else subscriptions.push(sub);
+    save();
+    closeForm();
+    render();
+  });
+
+  importFile.addEventListener('change', async () => {
+    const file = importFile.files?.[0];
+    if (!file) return;
+    importCsvText(await file.text());
+    importFile.value = '';
+  });
+
+  render();
+})();
+</script>
+
+<style is:global>
+  .tool-shell {
+    padding: 3rem 0 4rem;
+  }
+
+  .tool-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+    gap: 2rem;
+    align-items: end;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .tool-hero h1 {
+    font-size: clamp(2.4rem, 6vw, 4.6rem);
+    max-width: 820px;
+  }
+
+  .tool-hero p {
+    max-width: 760px;
+    color: var(--muted);
+    font-size: 1.12rem;
+    margin: 0;
+  }
+
+  .tool-actions,
+  .form-actions,
+  .row-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+  }
+
+  .button,
+  .row-actions button {
+    border: 1px solid var(--line);
+    background: #ffffff;
+    color: var(--ink);
+    border-radius: 8px;
+    padding: 0.68rem 0.9rem;
+    min-height: 42px;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .button-primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #ffffff;
+  }
+
+  .button-danger {
+    color: #b91c1c;
+    border-color: #fecaca;
+  }
+
+  .button-file {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .button-file input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .alert-band,
+  .privacy-box,
+  .tracker-panel,
+  .metric-card,
+  .related-links article {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--panel);
+  }
+
+  .alert-band {
+    background: #fffbeb;
+    border-color: #facc15;
+    color: #78350f;
+    padding: 1rem 1.15rem;
+    margin-bottom: 1rem;
+  }
+
+  .alert-band[hidden],
+  [hidden] {
+    display: none !important;
+  }
+
+  .alert-band ul {
+    margin: 0.35rem 0 0 1.2rem;
+  }
+
+  .metric-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .metric-card {
+    padding: 1rem;
+  }
+
+  .metric-card span {
+    display: block;
+    color: var(--muted);
+    font-weight: 700;
+    font-size: 0.88rem;
+  }
+
+  .metric-card strong {
+    display: block;
+    font-size: 2rem;
+    line-height: 1.15;
+    margin-top: 0.35rem;
+  }
+
+  .tracker-panel,
+  .privacy-box,
+  .related-links {
+    margin-top: 1rem;
+    padding: 1.15rem;
+  }
+
+  .tracker-panel h2,
+  .privacy-box h2,
+  .related-links h2 {
+    font-size: 1.35rem;
+  }
+
+  .subscription-form {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .subscription-form label {
+    display: grid;
+    gap: 0.35rem;
+    color: var(--muted);
+    font-weight: 700;
+    font-size: 0.92rem;
+  }
+
+  .subscription-form input,
+  .subscription-form select,
+  .subscription-form textarea {
+    width: 100%;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 0.7rem 0.8rem;
+    font: inherit;
+    background: #ffffff;
+    color: var(--ink);
+  }
+
+  .notes-field,
+  .form-actions {
+    grid-column: 1 / -1;
+  }
+
+  .section-heading p,
+  .empty-state,
+  .privacy-box p,
+  .related-links p,
+  [data-cancel-empty] {
+    color: var(--muted);
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+  }
+
+  .subscription-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 820px;
+  }
+
+  .subscription-table th,
+  .subscription-table td {
+    border-bottom: 1px solid var(--line);
+    padding: 0.8rem;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .subscription-table th {
+    color: var(--muted);
+    font-size: 0.86rem;
+    text-transform: uppercase;
+  }
+
+  .row-actions {
+    justify-content: flex-end;
+  }
+
+  .row-actions button {
+    min-height: 34px;
+    padding: 0.42rem 0.62rem;
+    font-size: 0.88rem;
+  }
+
+  .cancel-panel ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .related-links article {
+    padding: 1rem;
+  }
+
+  .related-links h3 {
+    font-size: 1.05rem;
+  }
+
+  .related-links a {
+    color: var(--accent);
+  }
+
+  @media (max-width: 820px) {
+    .tool-hero,
+    .metric-grid,
+    .subscription-form,
+    .related-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
