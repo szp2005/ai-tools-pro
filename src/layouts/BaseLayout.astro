@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+
 interface Props {
   title?: string;
   description?: string;
@@ -63,6 +65,7 @@ const ga4MeasurementId = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID;
     <meta name="color-scheme" content="light" />
     <meta name="google-site-verification" content="jVpIV2uq9S09WBugGVvxDvLrP3FDSoDdjGssxfJTN5M" />
     <meta name="description" content={description} />
+    <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="%231d4ed8"/><text x="32" y="42" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700" fill="white">AI</text></svg>' />
     <title>{title}</title>
     {noindex && (<meta name="robots" content="noindex,follow" />)}
 
@@ -155,7 +158,6 @@ const ga4MeasurementId = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID;
       })} />
     )}
 
-    <link rel="stylesheet" href="/styles/global.css" />
     {hasCloudflareWebAnalyticsToken && (
       <script
         is:inline
@@ -187,6 +189,7 @@ const ga4MeasurementId = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID;
       <a class="brand" href={isZhCn ? "/zh-cn/" : "/"}>{displaySiteName}</a>
       <nav>
         <a href={`${localePrefix}/posts/`}>Reviews</a>
+        <a href={`${localePrefix}/tools/ai-subscription-tracker/`}>Tools</a>
         <a href={`${localePrefix}/about/`}>About</a>
         <a href="/authors/">Authors</a>
         <a href="/tags/">Tags</a>
@@ -210,12 +213,10 @@ const ga4MeasurementId = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID;
         <a href="/tags/">Tags</a>
         <a href="/rss.xml">RSS</a>
         <a
-          href={`https://tools.toolrouteai.com/?ref=${siteSlug}`}
-          target="_blank"
-          rel="noopener nofollow"
+          href={`${localePrefix}/tools/ai-subscription-tracker/`}
           style="display:inline-flex;align-items:center;gap:.4rem;font-size:.9rem;color:#7c3aed;text-decoration:none;"
         >
-          📬 Free AI tools + Weekly digest →
+          Free AI tools →
         </a>
       </nav>
     </footer>

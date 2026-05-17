@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AiSubscriptionTracker from '../../../components/AiSubscriptionTracker.astro';
+
+const title = 'AI 订阅管理工具：免费本地浏览器工具 | AI Tools Pro 中文';
+const description = '在浏览器本地追踪 ChatGPT、Claude、Cursor、Midjourney、Perplexity 等 AI 订阅成本，支持扣款提醒、低使用率取消建议、CSV 导入导出。';
+const canonicalURL = 'https://ai.toolrouteai.com/zh-cn/tools/ai-subscription-tracker/';
+const relatedLinks = [
+  {
+    title: '低预算独立创业者的最佳 AI 工具',
+    href: '/zh-cn/posts/best-ai-tools-for-solopreneurs-on-a-budget/',
+    description: '控制每月 AI 软件支出时，可以先参考这套更精简的工具栈。',
+  },
+  {
+    title: 'Notion AI vs ChatGPT：笔记场景怎么选',
+    href: '/zh-cn/posts/notion-ai-vs-chatgpt-for-notes/',
+    description: '如果你同时订阅 Notion AI 和 ChatGPT，这篇能帮你判断是否有重复。',
+  },
+  {
+    title: 'Perplexity AI 2026 深度评测',
+    href: '/zh-cn/posts/perplexity-ai-review-2026/',
+    description: '判断 Perplexity Pro 是否值得继续保留在你的 AI 订阅清单里。',
+  },
+];
+const softwareSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'AI Subscription Tracker',
+  alternateName: 'AI 订阅管理工具',
+  applicationCategory: 'FinanceApplication',
+  operatingSystem: 'Web browser',
+  url: canonicalURL,
+  description,
+  inLanguage: 'zh-cn',
+  offers: {
+    '@type': 'Offer',
+    price: '0',
+    priceCurrency: 'USD',
+  },
+  featureList: [
+    '追踪 AI 订阅月成本',
+    '计算今年累计订阅支出',
+    '续费前三天提醒',
+    '标记低使用率订阅',
+    'CSV 导入导出',
+    '数据只保存在浏览器 localStorage',
+  ],
+};
+const copy = {
+  lang: 'zh-cn',
+  title: 'AI 订阅管理工具',
+  deck: '把 ChatGPT、Claude、Cursor、Midjourney、Perplexity 等订阅放在一张表里，算清每月成本，提前看到扣款提醒。',
+  primaryCta: '+ 添加订阅',
+  exportCsv: '导出 CSV',
+  importCsv: '导入 CSV',
+  clearAll: '清空全部',
+  summaryTitle: '订阅汇总',
+  monthly: '每月总成本',
+  ytd: '今年累计估算',
+  cancelTitle: '建议取消',
+  cancelEmpty: '暂时没有低使用率订阅。',
+  alertTitle: '扣款提醒',
+  alertEmpty: '未来 3 天没有续费。',
+  privacyTitle: '隐私说明',
+  privacyBody: '你的订阅数据只通过 localStorage 保存在当前浏览器里，不会上传到 AI Tools Pro 或任何服务器。刷新页面不会丢，但清理浏览器缓存可能删除数据，建议定期导出 CSV 备份。',
+  formTitle: '订阅信息',
+  toolName: '工具名称',
+  cost: '月费用（USD）',
+  billingDay: '每月扣款日',
+  firstDate: '首次订阅日期',
+  rating: '使用评分',
+  notes: '备注',
+  save: '保存',
+  cancel: '取消',
+  tableTitle: '你的订阅',
+  edit: '编辑',
+  delete: '删除',
+  emptyState: '还没有订阅。可以先添加 ChatGPT Plus、Claude Pro、Cursor 或其他正在付费的 AI 工具。',
+  relatedTitle: '相关文章',
+  backupNote: 'CSV 导出是跨浏览器迁移和清缓存后恢复数据的最稳方式。',
+};
+---
+
+<BaseLayout title={title} description={description} canonicalURL={canonicalURL}>
+  <script type="application/ld+json" set:html={JSON.stringify(softwareSchema)} />
+  <AiSubscriptionTracker copy={copy} relatedLinks={relatedLinks} />
+</BaseLayout>

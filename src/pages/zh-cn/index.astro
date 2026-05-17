@@ -27,6 +27,13 @@ const posts = Object.entries(modules)
       <p class="lang-switch"><a href="/">English version →</a></p>
     </section>
     <section class="recent">
+      <h2>免费工具</h2>
+      <article class="tool-card">
+        <h3><a href="/zh-cn/tools/ai-subscription-tracker/">AI 订阅管理工具</a></h3>
+        <p>在浏览器本地追踪 ChatGPT、Claude、Cursor、Midjourney、Perplexity 等订阅成本，支持续费提醒和 CSV 备份。</p>
+        <a class="tool-link" href="/zh-cn/tools/ai-subscription-tracker/">打开工具 →</a>
+      </article>
+
       <h2>最新文章</h2>
       <ul class="post-list">
         {posts.map((post) => (
@@ -50,6 +57,10 @@ const posts = Object.entries(modules)
   .lang-switch { font-size: .9rem; margin-top: .5rem; }
   .lang-switch a { color: #2563eb; text-decoration: none; }
   .recent h2 { font-size: 1.5rem; margin: 2.5rem 0 1rem; }
+  .tool-card { border: 1px solid #e5e7eb; border-radius: 8px; background: #fff; padding: 1rem; }
+  .tool-card h3 { margin: 0 0 .45rem; }
+  .tool-card p { color: #4b5563; margin: 0 0 .7rem; }
+  .tool-link { color: #2563eb; font-weight: 700; text-decoration: none; }
   .post-list { list-style: none; padding: 0; display: grid; gap: 1rem; }
   .post-list li a {
     display: block; padding: 1rem; border: 1px solid #e5e7eb; border-radius: 8px;
