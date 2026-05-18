@@ -37,6 +37,47 @@ const localePrefix = isZhCn ? '/zh-cn' : '';
 // i18n logic
 const { pathname } = Astro.url;
 const lang = pathname.startsWith('/zh-cn') ? 'zh-cn' : 'en';
+const ui = isZhCn
+  ? {
+      reviews: '评测',
+      tools: '工具',
+      about: '关于',
+      authors: '作者',
+      tags: '标签',
+      search: '搜索',
+      footer: 'ToolRoute AI 的独立指南，帮你判断软件、自动化、PKM 和远程办公工具是否值得用。',
+      contact: '联系',
+      privacy: '隐私',
+      terms: '条款',
+      affiliate: '联盟披露',
+      editorial: '编辑政策',
+      allPosts: '全部文章',
+      freeTools: '免费 AI 工具 →',
+      cookieLead: '我们使用隐私友好的分析、广告脚本和联盟追踪来维持本站免费。继续浏览即表示你同意我们的',
+      cookieAnd: '和',
+      privacyPolicy: '隐私政策',
+      accept: '同意',
+    }
+  : {
+      reviews: 'Reviews',
+      tools: 'Tools',
+      about: 'About',
+      authors: 'Authors',
+      tags: 'Tags',
+      search: 'Search',
+      footer: 'Independent ToolRoute AI guides for software, automation, PKM, and remote-work decisions.',
+      contact: 'Contact',
+      privacy: 'Privacy',
+      terms: 'Terms',
+      affiliate: 'Affiliate Disclosure',
+      editorial: 'Editorial Policy',
+      allPosts: 'All Posts',
+      freeTools: 'Free AI tools →',
+      cookieLead: 'We use privacy-minded analytics, advertising scripts, and affiliate tracking to keep this site free. By continuing, you agree to our',
+      cookieAnd: 'and',
+      privacyPolicy: 'Privacy Policy',
+      accept: 'Accept',
+    };
 
 // Force canonical to siteURL host regardless of which domain served the page.
 const canonicalURL = canonicalURLProp ?? `${siteURL}${pathname}${Astro.url.search}`;
@@ -198,41 +239,41 @@ const ga4MeasurementId = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID;
     <header class="site-header">
       <a class="brand" href={isZhCn ? "/zh-cn/" : "/"}>{displaySiteName}</a>
       <nav>
-        <a href={`${localePrefix}/posts/`}>Reviews</a>
-        <a href={`${localePrefix}/tools/`}>Tools</a>
-        <a href={`${localePrefix}/about/`}>About</a>
-        <a href="/authors/">Authors</a>
-        <a href="/tags/">Tags</a>
-        <a href="/search/">Search</a>
+        <a href={`${localePrefix}/posts/`}>{ui.reviews}</a>
+        <a href={`${localePrefix}/tools/`}>{ui.tools}</a>
+        <a href={`${localePrefix}/about/`}>{ui.about}</a>
+        <a href="/authors/">{ui.authors}</a>
+        <a href="/tags/">{ui.tags}</a>
+        <a href="/search/">{ui.search}</a>
       </nav>
     </header>
     <main>
       <slot />
     </main>
     <footer class="site-footer">
-      <p>Independent ToolRoute AI guides for software, automation, PKM, and remote-work decisions.</p>
+      <p>{ui.footer}</p>
       <nav class="footer-nav">
-        <a href={`${localePrefix}/about/`}>About</a>
-        <a href={`${localePrefix}/contact/`}>Contact</a>
-        <a href={`${localePrefix}/privacy/`}>Privacy</a>
-        <a href="/terms/">Terms</a>
-        <a href="/affiliate-disclosure/">Affiliate Disclosure</a>
-        <a href="/editorial-policy/">Editorial Policy</a>
-        <a href={`${localePrefix}/posts/`}>All Posts</a>
-        <a href="/authors/">Authors</a>
-        <a href="/tags/">Tags</a>
+        <a href={`${localePrefix}/about/`}>{ui.about}</a>
+        <a href={`${localePrefix}/contact/`}>{ui.contact}</a>
+        <a href={`${localePrefix}/privacy/`}>{ui.privacy}</a>
+        <a href="/terms/">{ui.terms}</a>
+        <a href="/affiliate-disclosure/">{ui.affiliate}</a>
+        <a href="/editorial-policy/">{ui.editorial}</a>
+        <a href={`${localePrefix}/posts/`}>{ui.allPosts}</a>
+        <a href="/authors/">{ui.authors}</a>
+        <a href="/tags/">{ui.tags}</a>
         <a href="/rss.xml">RSS</a>
         <a
           href={`${localePrefix}/tools/`}
           style="display:inline-flex;align-items:center;gap:.4rem;font-size:.9rem;color:#7c3aed;text-decoration:none;"
         >
-          Free AI tools →
+          {ui.freeTools}
         </a>
       </nav>
     </footer>
     <div id="cookie-consent" class="cookie-consent" hidden>
-      <p>We use privacy-minded analytics, advertising scripts, and affiliate tracking to keep this site free. By continuing, you agree to our <a href="/privacy/">Privacy Policy</a> and <a href="/terms/">Terms</a>.</p>
-      <button type="button" id="cookie-consent-accept">Accept</button>
+      <p>{ui.cookieLead} <a href={`${localePrefix}/privacy/`}>{ui.privacyPolicy}</a> {ui.cookieAnd} <a href="/terms/">{ui.terms}</a>.</p>
+      <button type="button" id="cookie-consent-accept">{ui.accept}</button>
     </div>
     <script is:inline>
       (() => {

@@ -37,6 +37,8 @@ interface Copy {
   privacyTitle: string;
   privacyBody: string;
   relatedTitle: string;
+  pricingNotes?: string[];
+  inputCharacters?: string;
 }
 
 const { copy, relatedLinks } = Astro.props as {
@@ -49,6 +51,7 @@ const calculatorConfig = {
   labels: copy,
   pricing: pricingData,
 };
+const pricingNotes = copy.pricingNotes ?? pricingData.notes;
 ---
 
 <section class="cost-tool-shell" data-token-calculator data-config={JSON.stringify(calculatorConfig)}>
@@ -120,7 +123,7 @@ const calculatorConfig = {
     <h2>{copy.pricingNoteTitle}</h2>
     <p>{copy.pricingNoteBody}</p>
     <ul class="pricing-notes">
-      {pricingData.notes.map((note) => <li>{note}</li>)}
+      {pricingNotes.map((note) => <li>{note}</li>)}
     </ul>
   </section>
 
@@ -268,7 +271,7 @@ const calculatorConfig = {
     return [
       `# ${labels.title || 'Token + Cost Calculator'}`,
       '',
-      `Input characters: ${textChars(promptInput.value || '')}`,
+      `${labels.inputCharacters || 'Input characters'}: ${textChars(promptInput.value || '')}`,
       '',
       `| ${header.join(' | ')} |`,
       `| ${header.map(() => '---').join(' | ')} |`,

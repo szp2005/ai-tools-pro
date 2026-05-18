@@ -36,6 +36,11 @@ interface Copy {
   limitationTitle: string;
   limitationBody: string;
   relatedTitle: string;
+  actionLabel?: string;
+  summaryLabel?: string;
+  defaultDocumentTitle?: string;
+  defaultDocumentAuthor?: string;
+  pdfFailed?: string;
 }
 
 const { copy, relatedLinks } = Astro.props as {
@@ -55,7 +60,7 @@ const exportConfig = {
       <h1>{copy.title}</h1>
       <p>{copy.deck}</p>
     </div>
-    <div class="export-tool-actions" aria-label="Tool actions">
+    <div class="export-tool-actions" aria-label={copy.actionLabel ?? 'Tool actions'}>
       <button class="button button-primary" type="button" data-action="render">{copy.render}</button>
       <button class="button" type="button" data-action="sample">{copy.sample}</button>
       <button class="button" type="button" data-action="pdf">{copy.exportPdf}</button>
@@ -65,7 +70,7 @@ const exportConfig = {
     </div>
   </div>
 
-  <section class="metric-grid" aria-label="Document summary">
+  <section class="metric-grid" aria-label={copy.summaryLabel ?? 'Document summary'}>
     <article class="metric-card">
       <span>{copy.metricWords}</span>
       <strong data-word-count>0</strong>
@@ -99,11 +104,11 @@ const exportConfig = {
         </label>
         <label>
           <span>{copy.documentTitle}</span>
-          <input data-document-title type="text" value="ChatGPT Export" />
+          <input data-document-title type="text" value={copy.defaultDocumentTitle ?? 'ChatGPT Export'} />
         </label>
         <label>
           <span>{copy.documentAuthor}</span>
-          <input data-document-author type="text" value="AI Tools Pro" />
+          <input data-document-author type="text" value={copy.defaultDocumentAuthor ?? 'AI Tools Pro'} />
         </label>
       </div>
       <textarea data-source-input rows="18" placeholder={copy.inputPlaceholder}></textarea>
@@ -175,6 +180,14 @@ const exportConfig = {
     setStatus.timer = window.setTimeout(() => {
       status.textContent = '';
     }, 2600);
+  }
+
+  function defaultDocumentTitle() {
+    return labels.defaultDocumentTitle || 'ChatGPT Export';
+  }
+
+  function defaultDocumentAuthor() {
+    return labels.defaultDocumentAuthor || 'AI Tools Pro';
   }
 
   function sampleText() {
@@ -347,8 +360,8 @@ const exportConfig = {
   }
 
   function addDocumentHeader() {
-    const title = titleInput.value.trim() || 'ChatGPT Export';
-    const author = authorInput.value.trim() || 'AI Tools Pro';
+    const title = titleInput.value.trim() || defaultDocumentTitle();
+    const author = authorInput.value.trim() || defaultDocumentAuthor();
     const header = document.createElement('header');
     header.className = 'pretty-document-header';
     header.innerHTML = `
@@ -389,7 +402,7 @@ const exportConfig = {
 
   async function copyCleanHtml() {
     if (!latestCleanHtml && sourceInput.value.trim()) await renderPreview();
-    const title = escapeHtml(titleInput.value.trim() || 'ChatGPT Export');
+    const title = escapeHtml(titleInput.value.trim() || defaultDocumentTitle());
     const payload = `<article class="chatgpt-export">\n<h1>${title}</h1>\n${latestCleanHtml}\n</article>`;
     try {
       await navigator.clipboard.writeText(payload);
@@ -441,7 +454,7 @@ const exportConfig = {
       setStatus(labels.pdfReady || 'PDF ready');
     } catch (error) {
       console.error(error);
-      setStatus('PDF export failed');
+      setStatus(labels.pdfFailed || 'PDF export failed');
     }
   }
 
