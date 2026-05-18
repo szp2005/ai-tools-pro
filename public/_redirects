@@ -1,1 +1,23 @@
+# Retire URLs exposed by earlier blanket hreflang generation.
+/404 / 301
+/404/ / 301
+/zh-cn/404 / 301
+/zh-cn/404/ / 301
+/zh-cn/search /search/ 301
+/zh-cn/search/ /search/ 301
+/zh-cn/terms /terms/ 301
+/zh-cn/terms/ /terms/ 301
+/zh-cn/affiliate-disclosure /affiliate-disclosure/ 301
+/zh-cn/affiliate-disclosure/ /affiliate-disclosure/ 301
+/zh-cn/editorial-policy /editorial-policy/ 301
+/zh-cn/editorial-policy/ /editorial-policy/ 301
+/zh-cn/tags /tags/ 301
+/zh-cn/tags/ /tags/ 301
+/zh-cn/tags/* /tags/:splat 301
+/zh-cn/author /author/ 301
+/zh-cn/author/ /author/ 301
+/zh-cn/author/* /author/:splat 301
+/zh-cn/authors /authors/ 301
+/zh-cn/authors/ /authors/ 301
+
 # Cloudflare Pages serves /404.html automatically for missing static routes.

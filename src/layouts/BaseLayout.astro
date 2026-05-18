@@ -44,9 +44,15 @@ const isNetworkPage = canonicalURL.startsWith(`${networkURL}/`);
 const displaySiteName = isNetworkPage ? networkName : siteName;
 const displaySiteURL = isNetworkPage ? networkURL : siteURL;
 
-// Alternate links for SEO
-const alternateEn = `${displaySiteURL}${pathname.replace('/zh-cn', '')}`;
-const alternateZh = pathname.startsWith('/zh-cn') ? `${displaySiteURL}${pathname}` : `${displaySiteURL}/zh-cn${pathname}`;
+const normalizedPath = pathname.replace(/^\/zh-cn/, '') || '/';
+const pathWithTrailingSlash = normalizedPath.endsWith('/') ? normalizedPath : `${normalizedPath}/`;
+const hasLocalizedStaticPage = new Set(['/', '/about/', '/contact/', '/privacy/', '/posts/', '/tools/']).has(pathWithTrailingSlash);
+const hasLocalizedPostPage = /^\/posts\/[^/]+\/$/.test(pathWithTrailingSlash);
+const hasLocalizedToolPage = /^\/tools\/[^/]+\/$/.test(pathWithTrailingSlash);
+const shouldEmitLocalizedAlternates =
+  !noindex && (hasLocalizedStaticPage || hasLocalizedPostPage || hasLocalizedToolPage);
+const alternateEn = `${displaySiteURL}${pathWithTrailingSlash}`;
+const alternateZh = `${displaySiteURL}${pathWithTrailingSlash === '/' ? '/zh-cn/' : `/zh-cn${pathWithTrailingSlash}`}`;
 
 const ogImage = articleImage ? (articleImage.startsWith('http') ? articleImage : `${siteURL}${articleImage}`) : `${siteURL}/og-default.png`;
 const cloudflareWebAnalyticsToken = import.meta.env.PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN;
@@ -69,10 +75,14 @@ const ga4MeasurementId = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID;
     <title>{title}</title>
     {noindex && (<meta name="robots" content="noindex,follow" />)}
 
-    <!-- i18n -->
-    <link rel="alternate" hreflang="en" href={alternateEn} />
-    <link rel="alternate" hreflang="zh-cn" href={alternateZh} />
-    <link rel="alternate" hreflang="x-default" href={alternateEn} />
+    {shouldEmitLocalizedAlternates && (
+      <>
+        <!-- i18n -->
+        <link rel="alternate" hreflang="en" href={alternateEn} />
+        <link rel="alternate" hreflang="zh-cn" href={alternateZh} />
+        <link rel="alternate" hreflang="x-default" href={alternateEn} />
+      </>
+    )}
 
     <!-- Canonical -->
     <link rel="canonical" href={canonicalURL} />
