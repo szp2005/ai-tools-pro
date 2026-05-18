@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import TokenCostCalculator from '../../../components/TokenCostCalculator.astro';
+import pricingData from '../../../data/llm_pricing.json';
+
+const title = 'Token 与成本计算器：GPT / Claude / Gemini | AI Tools Pro 中文';
+const description = '粘贴一次提示词，估算 GPT、Claude、Gemini 的 token 数和 API 美元成本。免费本地浏览器工具，支持复制 Markdown。';
+const canonicalURL = 'https://ai.toolrouteai.com/zh-cn/tools/token-cost-calculator/';
+const relatedLinks = [
+  {
+    title: 'Claude 3.5 Sonnet vs GPT-4o：复杂推理怎么选',
+    href: '/zh-cn/posts/claude-3-5-sonnet-vs-gpt-4o-for-complex-reasoning/',
+    description: '对比这两个常用高性能模型，再决定长提示词跑在哪边。',
+  },
+  {
+    title: 'Gemini 内容写作 vs GPT-4o',
+    href: '/zh-cn/posts/gemini-for-content-writing-vs-gpt-4o/',
+    description: '当内容任务很长时，模型选择和 token 成本会明显影响预算。',
+  },
+  {
+    title: '金融数据提取场景的 LLM 工具',
+    href: '/zh-cn/posts/best-llm-tools-for-financial-data-extraction/',
+    description: '长文档、表格和结构化提取场景里，token 成本更值得提前估算。',
+  },
+];
+const softwareSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'Token + Cost Calculator',
+  alternateName: 'Token 与成本计算器',
+  applicationCategory: 'DeveloperApplication',
+  operatingSystem: 'Web browser',
+  url: canonicalURL,
+  description,
+  inLanguage: 'zh-cn',
+  offers: {
+    '@type': 'Offer',
+    price: '0',
+    priceCurrency: 'USD',
+  },
+  featureList: [
+    '用 js-tiktoken 估算 GPT token 数',
+    '用本地 tokenizer 近似估算 Claude token 数',
+    '用字符数除以四近似估算 Gemini token 数',
+    '计算输入、输出和总 API 美元成本',
+    '复制 Markdown 对比表',
+    '提示词只在浏览器本地处理',
+  ],
+  softwareVersion: pricingData.lastUpdated,
+};
+const copy = {
+  lang: 'zh-cn',
+  title: 'Token 与成本计算器',
+  deck: '粘贴一次提示词，先比较 GPT、Claude、Gemini 的 token 数和 API 成本，再决定用哪个模型跑。',
+  inputLabel: '提示词或文档内容',
+  inputPlaceholder: '把提示词、文章草稿、转录稿、客服工单或文档片段粘贴到这里...',
+  outputLabel: '预计输出 token',
+  outputHelp: '可选。如果你要估算完整请求成本，而不只是提示词成本，可以填一个大致输出长度。',
+  sample: '载入示例',
+  clear: '清空',
+  copyMarkdown: '复制 Markdown',
+  copied: 'Markdown 已复制',
+  summaryTitle: 'Token 汇总',
+  charCount: '字符数',
+  wordCount: '英文词 / 中文字',
+  cheapestModel: '最低估算成本',
+  tableTitle: '模型成本对比',
+  model: '模型',
+  provider: '服务商',
+  tokenizer: 'Tokenizer',
+  inputTokens: '输入 token',
+  outputTokens: '输出 token',
+  inputCost: '输入成本',
+  outputCost: '输出成本',
+  totalCost: '总成本',
+  pricingNoteTitle: '价格说明',
+  pricingNoteBody: '价格按每 100 万 token 手动维护；预算敏感场景请再核对官方价格页。',
+  privacyTitle: '隐私说明',
+  privacyBody: '这个计算器完全在浏览器里运行。提示词会在本地计数，不会上传到 AI Tools Pro 或任何服务器。',
+  relatedTitle: '相关模型指南',
+};
+---
+
+<BaseLayout title={title} description={description} canonicalURL={canonicalURL}>
+  <script type="application/ld+json" set:html={JSON.stringify(softwareSchema)} />
+  <TokenCostCalculator copy={copy} relatedLinks={relatedLinks} />
+</BaseLayout>
