@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ChatGptExportPretty from '../../../components/ChatGptExportPretty.astro';
+
+const title = 'ChatGPT 对话美化导出：粘贴、清洗并导出 PDF | AI Tools Pro 中文';
+const description = '手动粘贴 ChatGPT Markdown 或复制出来的聊天 HTML，在浏览器本地美化渲染、复制清洗后的 HTML，并导出 PDF。';
+const canonicalURL = 'https://ai.toolrouteai.com/zh-cn/tools/chatgpt-export-pretty/';
+const relatedLinks = [
+  {
+    title: '低预算独立创业者的最佳 AI 工具',
+    href: '/zh-cn/posts/best-ai-tools-for-solopreneurs-on-a-budget/',
+    description: '先把 AI 工具栈控制住，再决定哪些工具值得长期付费。',
+  },
+  {
+    title: '如何用 Claude API 做内容生产',
+    href: '/zh-cn/posts/how-to-use-claude-api-for-content/',
+    description: '把模型输出变成可复用内容流程，同时保留人工审核环节。',
+  },
+  {
+    title: '2026 年最佳 AI 写作工具',
+    href: '/zh-cn/posts/best-ai-writing-tools-2026/',
+    description: '在固定导出和发布流程前，先对比主流 AI 写作工具。',
+  },
+];
+const softwareSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'ChatGPT Export Pretty',
+  alternateName: 'ChatGPT 对话美化导出',
+  applicationCategory: 'ProductivityApplication',
+  operatingSystem: 'Web browser',
+  url: canonicalURL,
+  description,
+  inLanguage: 'zh-cn',
+  offers: {
+    '@type': 'Offer',
+    price: '0',
+    priceCurrency: 'USD',
+  },
+  featureList: [
+    '手动粘贴 ChatGPT Markdown 或复制出来的聊天 HTML',
+    '渲染干净的文档预览',
+    '清除脚本、事件处理器和危险属性',
+    '用 Prism 高亮代码块',
+    '导出清洗后的 PDF',
+    '复制清洗后的 HTML',
+    '全程在浏览器本地运行，不上传对话内容',
+  ],
+};
+const copy = {
+  lang: 'zh-cn',
+  title: 'ChatGPT 对话美化导出',
+  deck: '把 ChatGPT 对话以 Markdown 或复制 HTML 的形式粘贴进来，在浏览器本地清洗、排版，并导出更适合归档和分享的 PDF。',
+  inputTitle: '粘贴对话',
+  inputLabel: '只能手动粘贴。浏览器 CORS 会阻止直接读取 chatgpt.com 对话内容，所以这里不做抓取。',
+  inputPlaceholder: '把 Markdown、复制出来的 ChatGPT HTML，或混合格式的对话粘贴到这里...',
+  formatLabel: '输入格式',
+  formatAuto: '自动识别',
+  formatMarkdown: 'Markdown',
+  formatHtml: '复制的 HTML',
+  documentTitle: '文档标题',
+  documentAuthor: '文档标签',
+  sample: '载入示例',
+  render: '渲染预览',
+  exportPdf: '导出 PDF',
+  copyHtml: '复制清洗 HTML',
+  clear: '清空',
+  copied: '清洗 HTML 已复制',
+  rendered: '预览已渲染',
+  pdfReady: 'PDF 导出已启动',
+  previewTitle: '清洗预览',
+  emptyPreview: '粘贴对话或载入示例后，这里会显示清洗后的文档。',
+  metricWords: '估算字数',
+  metricBlocks: '内容块',
+  metricPages: 'PDF 页数',
+  privacyTitle: '隐私说明',
+  privacyBody: '所有处理都在当前浏览器本地完成。你粘贴的 ChatGPT 对话不会被这个页面上传到 AI Tools Pro、OpenAI 或任何服务器。',
+  limitationTitle: '导入限制',
+  limitationBody: '浏览器会阻止网页直接读取 chatgpt.com，所以请手动粘贴对话。HTML 清洗器会在渲染前移除脚本、事件处理器、表单和危险属性。',
+  relatedTitle: '相关 AI 工作流指南',
+};
+---
+
+<BaseLayout title={title} description={description} canonicalURL={canonicalURL}>
+  <script type="application/ld+json" set:html={JSON.stringify(softwareSchema)} />
+  <ChatGptExportPretty copy={copy} relatedLinks={relatedLinks} />
+</BaseLayout>

@@ -1,0 +1,85 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ChatGptExportPretty from '../../components/ChatGptExportPretty.astro';
+
+const title = 'ChatGPT Export Pretty: Paste, Clean, and Export ChatGPT Threads to PDF | AI Tools Pro';
+const description = 'Paste ChatGPT Markdown or copied chat HTML, render a cleaner document, copy sanitized HTML, and export a PDF locally in your browser.';
+const canonicalURL = 'https://ai.toolrouteai.com/tools/chatgpt-export-pretty/';
+const relatedLinks = [
+  {
+    title: 'Best AI Tools for Solopreneurs on a Budget',
+    href: '/posts/best-ai-tools-for-solopreneurs-on-a-budget/',
+    description: 'Build a lean AI workflow before adding more paid tools to the stack.',
+  },
+  {
+    title: 'How to Use Claude API for Content',
+    href: '/posts/how-to-use-claude-api-for-content/',
+    description: 'Turn AI outputs into repeatable content workflows without losing review discipline.',
+  },
+  {
+    title: 'Best AI Writing Tools 2026',
+    href: '/posts/best-ai-writing-tools-2026/',
+    description: 'Compare writing tools before standardizing your export and publishing workflow.',
+  },
+];
+const softwareSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'ChatGPT Export Pretty',
+  applicationCategory: 'ProductivityApplication',
+  operatingSystem: 'Web browser',
+  url: canonicalURL,
+  description,
+  offers: {
+    '@type': 'Offer',
+    price: '0',
+    priceCurrency: 'USD',
+  },
+  featureList: [
+    'Paste ChatGPT Markdown or copied chat HTML manually',
+    'Render a clean document preview',
+    'Sanitize scripts, event handlers, and unsafe attributes',
+    'Highlight code blocks with Prism',
+    'Export the cleaned conversation as PDF',
+    'Copy sanitized HTML',
+    'Run entirely in the browser without uploading conversation text',
+  ],
+};
+const copy = {
+  lang: 'en',
+  title: 'ChatGPT Export Pretty',
+  deck: 'Paste a ChatGPT conversation as Markdown or copied HTML, clean the rough transcript, and export a readable PDF without uploading the content anywhere.',
+  inputTitle: 'Paste conversation',
+  inputLabel: 'Manual paste only. This tool does not fetch chatgpt.com because browser CORS blocks direct transcript loading.',
+  inputPlaceholder: 'Paste Markdown, copied ChatGPT HTML, or a mixed transcript here...',
+  formatLabel: 'Input format',
+  formatAuto: 'Auto detect',
+  formatMarkdown: 'Markdown',
+  formatHtml: 'Copied HTML',
+  documentTitle: 'Document title',
+  documentAuthor: 'Document label',
+  sample: 'Load Sample',
+  render: 'Render Preview',
+  exportPdf: 'Export PDF',
+  copyHtml: 'Copy Clean HTML',
+  clear: 'Clear',
+  copied: 'Clean HTML copied',
+  rendered: 'Preview rendered',
+  pdfReady: 'PDF export started',
+  previewTitle: 'Clean preview',
+  emptyPreview: 'Paste a conversation or load the sample to preview the cleaned document.',
+  metricWords: 'Estimated words',
+  metricBlocks: 'Content blocks',
+  metricPages: 'PDF pages',
+  privacyTitle: 'Privacy note',
+  privacyBody: 'Everything runs locally in your browser. Your pasted ChatGPT conversation is not uploaded to AI Tools Pro, OpenAI, or any server by this page.',
+  limitationTitle: 'Import limitation',
+  limitationBody: 'Browsers block direct fetches from chatgpt.com, so paste the conversation manually. The HTML cleaner removes scripts, event handlers, forms, and unsafe attributes before rendering.',
+  relatedTitle: 'Related AI workflow guides',
+};
+---
+
+<BaseLayout title={title} description={description} canonicalURL={canonicalURL}>
+  <script type="application/ld+json" set:html={JSON.stringify(softwareSchema)} />
+  <ChatGptExportPretty copy={copy} relatedLinks={relatedLinks} />
+</BaseLayout>
