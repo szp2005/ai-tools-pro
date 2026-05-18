@@ -34,9 +34,13 @@ export const GET: APIRoute = async () => {
   const staticUrls = [
     [`${SITE}/`, '0.9'],
     [`${SITE}/posts/`, '0.8'],
+    [`${SITE}/tools/`, '0.8'],
+    [`${SITE}/tools/token-cost-calculator/`, '0.8'],
     [`${SITE}/tools/ai-subscription-tracker/`, '0.8'],
     [`${SITE}/zh-cn/`, '0.8'],
     [`${SITE}/zh-cn/posts/`, '0.7'],
+    [`${SITE}/zh-cn/tools/`, '0.7'],
+    [`${SITE}/zh-cn/tools/token-cost-calculator/`, '0.7'],
     [`${SITE}/zh-cn/tools/ai-subscription-tracker/`, '0.7'],
     [`${SITE}/about/`, '0.5'],
     [`${SITE}/contact/`, '0.4'],

@@ -1,0 +1,574 @@
+---
+import pricingData from '../data/llm_pricing.json';
+
+interface RelatedLink {
+  title: string;
+  href: string;
+  description: string;
+}
+
+interface Copy {
+  lang: 'en' | 'zh-cn';
+  title: string;
+  deck: string;
+  inputLabel: string;
+  inputPlaceholder: string;
+  outputLabel: string;
+  outputHelp: string;
+  sample: string;
+  clear: string;
+  copyMarkdown: string;
+  copied: string;
+  summaryTitle: string;
+  charCount: string;
+  wordCount: string;
+  cheapestModel: string;
+  tableTitle: string;
+  model: string;
+  provider: string;
+  tokenizer: string;
+  inputTokens: string;
+  outputTokens: string;
+  inputCost: string;
+  outputCost: string;
+  totalCost: string;
+  pricingNoteTitle: string;
+  pricingNoteBody: string;
+  privacyTitle: string;
+  privacyBody: string;
+  relatedTitle: string;
+}
+
+const { copy, relatedLinks } = Astro.props as {
+  copy: Copy;
+  relatedLinks: RelatedLink[];
+};
+
+const calculatorConfig = {
+  lang: copy.lang,
+  labels: copy,
+  pricing: pricingData,
+};
+---
+
+<section class="cost-tool-shell" data-token-calculator data-config={JSON.stringify(calculatorConfig)}>
+  <div class="cost-tool-hero">
+    <div>
+      <h1>{copy.title}</h1>
+      <p>{copy.deck}</p>
+    </div>
+    <div class="cost-tool-actions">
+      <button class="button button-primary" type="button" data-action="sample">{copy.sample}</button>
+      <button class="button" type="button" data-action="copy">{copy.copyMarkdown}</button>
+      <button class="button button-danger" type="button" data-action="clear">{copy.clear}</button>
+      <span class="copy-status" data-copy-status aria-live="polite"></span>
+    </div>
+  </div>
+
+  <section class="calculator-panel input-panel">
+    <label for="prompt-input">{copy.inputLabel}</label>
+    <textarea id="prompt-input" data-prompt-input rows="11" placeholder={copy.inputPlaceholder}></textarea>
+    <div class="output-control">
+      <label for="expected-output">{copy.outputLabel}</label>
+      <input id="expected-output" data-output-tokens type="number" min="0" step="100" value="0" />
+      <p>{copy.outputHelp}</p>
+    </div>
+  </section>
+
+  <section class="metric-grid" aria-label={copy.summaryTitle}>
+    <article class="metric-card">
+      <span>{copy.charCount}</span>
+      <strong data-char-count>0</strong>
+    </article>
+    <article class="metric-card">
+      <span>{copy.wordCount}</span>
+      <strong data-word-count>0</strong>
+    </article>
+    <article class="metric-card">
+      <span>{copy.cheapestModel}</span>
+      <strong data-cheapest-model>-</strong>
+    </article>
+  </section>
+
+  <section class="calculator-panel">
+    <div class="section-heading">
+      <div>
+        <h2>{copy.tableTitle}</h2>
+        <p>{copy.pricingNoteBody}</p>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table class="cost-table">
+        <thead>
+          <tr>
+            <th>{copy.model}</th>
+            <th>{copy.provider}</th>
+            <th>{copy.tokenizer}</th>
+            <th>{copy.inputTokens}</th>
+            <th>{copy.outputTokens}</th>
+            <th>{copy.inputCost}</th>
+            <th>{copy.outputCost}</th>
+            <th>{copy.totalCost}</th>
+          </tr>
+        </thead>
+        <tbody data-cost-body></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="privacy-box">
+    <h2>{copy.pricingNoteTitle}</h2>
+    <p>{copy.pricingNoteBody}</p>
+    <ul class="pricing-notes">
+      {pricingData.notes.map((note) => <li>{note}</li>)}
+    </ul>
+  </section>
+
+  <section class="privacy-box">
+    <h2>{copy.privacyTitle}</h2>
+    <p>{copy.privacyBody}</p>
+  </section>
+
+  <section class="related-links" aria-labelledby="related-tools-heading">
+    <h2 id="related-tools-heading">{copy.relatedTitle}</h2>
+    <div class="related-grid">
+      {relatedLinks.map((link) => (
+        <article>
+          <h3><a href={link.href}>{link.title}</a></h3>
+          <p>{link.description}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</section>
+
+<script>
+(() => {
+  const root = document.querySelector('[data-token-calculator]');
+  if (!root) return;
+
+  const config = JSON.parse(root.dataset.config || '{}');
+  const labels = config.labels || {};
+  const models = config.pricing?.models || [];
+  const promptInput = root.querySelector('[data-prompt-input]');
+  const outputInput = root.querySelector('[data-output-tokens]');
+  const costBody = root.querySelector('[data-cost-body]');
+  const charCount = root.querySelector('[data-char-count]');
+  const wordCount = root.querySelector('[data-word-count]');
+  const cheapestModel = root.querySelector('[data-cheapest-model]');
+  const copyStatus = root.querySelector('[data-copy-status]');
+  const currency = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    minimumFractionDigits: 6,
+    maximumFractionDigits: 6,
+  });
+  const compactCurrency = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    minimumFractionDigits: 4,
+    maximumFractionDigits: 4,
+  });
+  const encoderCache = new Map();
+  let encodersPromise = null;
+  let latestRows = [];
+  let renderRun = 0;
+
+  async function ensureEncoders() {
+    if (encodersPromise) return encodersPromise;
+    encodersPromise = Promise.all([
+      import('js-tiktoken/lite'),
+      import('js-tiktoken/ranks/cl100k_base'),
+      import('js-tiktoken/ranks/o200k_base'),
+    ]).then(([lite, cl100kModule, o200kModule]) => {
+      encoderCache.set('cl100k_base', new lite.Tiktoken(cl100kModule.default));
+      encoderCache.set('o200k_base', new lite.Tiktoken(o200kModule.default));
+    });
+    return encodersPromise;
+  }
+
+  function textChars(text) {
+    return Array.from(text || '').length;
+  }
+
+  function estimateWords(text) {
+    const trimmed = String(text || '').trim();
+    if (!trimmed) return 0;
+    const latinWords = trimmed.match(/[A-Za-z0-9]+(?:[-'][A-Za-z0-9]+)*/g) || [];
+    const cjkChars = trimmed.match(/[\u3400-\u9fff]/g) || [];
+    return latinWords.length + cjkChars.length;
+  }
+
+  function encoder(name) {
+    return encoderCache.get(name) || null;
+  }
+
+  function countTokens(text, model) {
+    const value = String(text || '');
+    if (!value) return 0;
+    if (model.tokenizer === 'char4') return Math.ceil(textChars(value) / 4);
+    const enc = encoder(model.tokenizer || 'cl100k_base');
+    if (!enc) return Math.ceil(textChars(value) / 4);
+    return enc.encode(value).length;
+  }
+
+  function formatCost(value) {
+    if (value === 0) return '$0.000000';
+    if (value >= 0.01) return compactCurrency.format(value);
+    return currency.format(value);
+  }
+
+  function tokenizerLabel(model) {
+    if (model.tokenizer === 'char4') return 'char/4';
+    return model.tokenizer;
+  }
+
+  function escapeHtml(value) {
+    return String(value ?? '')
+      .replaceAll('&', '&amp;')
+      .replaceAll('<', '&lt;')
+      .replaceAll('>', '&gt;')
+      .replaceAll('"', '&quot;')
+      .replaceAll("'", '&#39;');
+  }
+
+  function calculateRows() {
+    const text = promptInput.value || '';
+    const expectedOutput = Math.max(0, Number(outputInput.value || 0));
+    return models.map((model) => {
+      const inputTokens = countTokens(text, model);
+      const inputCost = (inputTokens / 1_000_000) * Number(model.inputPerMillion || 0);
+      const outputCost = (expectedOutput / 1_000_000) * Number(model.outputPerMillion || 0);
+      return {
+        model,
+        inputTokens,
+        outputTokens: expectedOutput,
+        inputCost,
+        outputCost,
+        totalCost: inputCost + outputCost,
+      };
+    });
+  }
+
+  function markdownTable(rows) {
+    const header = [
+      labels.model || 'Model',
+      labels.provider || 'Provider',
+      labels.inputTokens || 'Input tokens',
+      labels.outputTokens || 'Output tokens',
+      labels.totalCost || 'Total cost',
+    ];
+    const body = rows.map((row) => [
+      row.model.name,
+      row.model.provider,
+      String(row.inputTokens),
+      String(row.outputTokens),
+      formatCost(row.totalCost),
+    ]);
+    return [
+      `# ${labels.title || 'Token + Cost Calculator'}`,
+      '',
+      `Input characters: ${textChars(promptInput.value || '')}`,
+      '',
+      `| ${header.join(' | ')} |`,
+      `| ${header.map(() => '---').join(' | ')} |`,
+      ...body.map((cells) => `| ${cells.join(' | ')} |`),
+    ].join('\n');
+  }
+
+  async function copyMarkdown() {
+    const markdown = markdownTable(latestRows);
+    try {
+      await navigator.clipboard.writeText(markdown);
+    } catch {
+      const fallback = document.createElement('textarea');
+      fallback.value = markdown;
+      document.body.append(fallback);
+      fallback.select();
+      document.execCommand('copy');
+      fallback.remove();
+    }
+    copyStatus.textContent = labels.copied || 'Copied';
+    window.setTimeout(() => {
+      copyStatus.textContent = '';
+    }, 2200);
+  }
+
+  async function render() {
+    const currentRun = ++renderRun;
+    const text = promptInput.value || '';
+    if (text) await ensureEncoders();
+    if (currentRun !== renderRun) return;
+
+    latestRows = calculateRows();
+    charCount.textContent = textChars(text).toLocaleString();
+    wordCount.textContent = estimateWords(text).toLocaleString();
+
+    const cheapest = latestRows
+      .slice()
+      .sort((a, b) => a.totalCost - b.totalCost)[0];
+    cheapestModel.textContent = cheapest ? `${cheapest.model.name} ${formatCost(cheapest.totalCost)}` : '-';
+
+    costBody.innerHTML = '';
+    latestRows.forEach((row) => {
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td><strong>${escapeHtml(row.model.name)}</strong><small>${escapeHtml(row.model.contextWindow || '')}</small></td>
+        <td>${escapeHtml(row.model.provider)}</td>
+        <td>${escapeHtml(tokenizerLabel(row.model))}</td>
+        <td>${row.inputTokens.toLocaleString()}</td>
+        <td>${row.outputTokens.toLocaleString()}</td>
+        <td>${formatCost(row.inputCost)}</td>
+        <td>${formatCost(row.outputCost)}</td>
+        <td><strong>${formatCost(row.totalCost)}</strong></td>
+      `;
+      costBody.append(tr);
+    });
+  }
+
+  root.addEventListener('click', (event) => {
+    const target = event.target.closest('button');
+    if (!target) return;
+    const action = target.dataset.action;
+    if (action === 'sample') {
+      promptInput.value = labels.lang === 'zh-cn'
+        ? '请把下面这段产品更新说明改写成一封发给独立开发者用户的邮件，语气清楚、直接，保留价格和功能限制。'
+        : 'Rewrite this product update into a clear email for indie developer users. Keep the pricing details, feature limits, and migration deadline intact.';
+      outputInput.value = '800';
+      render();
+      promptInput.focus();
+    }
+    if (action === 'clear') {
+      promptInput.value = '';
+      outputInput.value = '0';
+      render();
+      promptInput.focus();
+    }
+    if (action === 'copy') copyMarkdown();
+  });
+
+  promptInput.addEventListener('input', render);
+  outputInput.addEventListener('input', render);
+  render();
+})();
+</script>
+
+<style is:global>
+  .cost-tool-shell {
+    padding: 3rem 0 4rem;
+  }
+
+  .cost-tool-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 380px);
+    gap: 2rem;
+    align-items: end;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cost-tool-hero h1 {
+    font-size: clamp(2.4rem, 6vw, 4.6rem);
+    max-width: 860px;
+  }
+
+  .cost-tool-hero p {
+    max-width: 760px;
+    color: var(--muted);
+    font-size: 1.12rem;
+    margin: 0;
+  }
+
+  .cost-tool-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .65rem;
+    align-items: center;
+  }
+
+  .copy-status {
+    color: #047857;
+    font-weight: 800;
+    min-height: 1.5rem;
+  }
+
+  .button {
+    border: 1px solid var(--line);
+    background: #fff;
+    color: var(--ink);
+    border-radius: 8px;
+    padding: .68rem .9rem;
+    min-height: 42px;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .button-primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+
+  .button-danger {
+    color: #b91c1c;
+    border-color: #fecaca;
+  }
+
+  .calculator-panel,
+  .privacy-box,
+  .metric-card,
+  .related-links article {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--panel);
+  }
+
+  .calculator-panel,
+  .privacy-box,
+  .related-links {
+    margin-top: 1rem;
+    padding: 1.15rem;
+  }
+
+  .calculator-panel h2,
+  .privacy-box h2,
+  .related-links h2 {
+    font-size: 1.35rem;
+  }
+
+  .input-panel label {
+    display: block;
+    color: var(--muted);
+    font-weight: 800;
+    margin-bottom: .5rem;
+  }
+
+  .input-panel textarea,
+  .output-control input {
+    width: 100%;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: .8rem .9rem;
+    font: inherit;
+    background: #fff;
+    color: var(--ink);
+  }
+
+  .input-panel textarea {
+    resize: vertical;
+    min-height: 220px;
+    line-height: 1.55;
+  }
+
+  .output-control {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 220px minmax(140px, 220px) minmax(0, 1fr);
+    gap: .75rem;
+    align-items: center;
+  }
+
+  .output-control label {
+    margin-bottom: 0;
+  }
+
+  .output-control p,
+  .section-heading p,
+  .privacy-box p,
+  .related-links p {
+    color: var(--muted);
+    margin: 0;
+  }
+
+  .metric-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .metric-card {
+    padding: 1rem;
+  }
+
+  .metric-card span {
+    display: block;
+    color: var(--muted);
+    font-weight: 700;
+    font-size: .88rem;
+  }
+
+  .metric-card strong {
+    display: block;
+    font-size: clamp(1.35rem, 3vw, 2rem);
+    line-height: 1.15;
+    margin-top: .35rem;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+  }
+
+  .cost-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 980px;
+  }
+
+  .cost-table th,
+  .cost-table td {
+    border-bottom: 1px solid var(--line);
+    padding: .8rem;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .cost-table th {
+    color: var(--muted);
+    font-size: .82rem;
+    text-transform: uppercase;
+  }
+
+  .cost-table small {
+    display: block;
+    color: var(--muted);
+    font-size: .78rem;
+    margin-top: .2rem;
+  }
+
+  .pricing-notes {
+    color: var(--muted);
+    margin-bottom: 0;
+    padding-left: 1.2rem;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .related-links article {
+    padding: 1rem;
+  }
+
+  .related-links h3 {
+    font-size: 1.05rem;
+  }
+
+  .related-links a {
+    color: var(--accent);
+  }
+
+  @media (max-width: 820px) {
+    .cost-tool-hero,
+    .metric-grid,
+    .related-grid,
+    .output-control {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

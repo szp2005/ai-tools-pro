@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const tools = [
+  {
+    title: 'Token 与成本计算器',
+    href: '/zh-cn/tools/token-cost-calculator/',
+    description: '粘贴一次提示词，估算 GPT、Claude、Gemini 的 token 数和 API 成本。',
+  },
+  {
+    title: 'AI 订阅管理工具',
+    href: '/zh-cn/tools/ai-subscription-tracker/',
+    description: '在浏览器本地追踪 AI 软件订阅、续费提醒和 CSV 备份。',
+  },
+];
+---
+
+<BaseLayout
+  title="免费 AI 工具 | AI Tools Pro 中文"
+  description="面向 AI 高强度用户的免费本地浏览器工具，包括 token 成本估算和 AI 订阅管理。"
+  canonicalURL="https://ai.toolrouteai.com/zh-cn/tools/"
+>
+  <section class="tools-index">
+    <h1>免费 AI 工具</h1>
+    <p>这些小工具直接在浏览器里运行，帮助你在真正调用模型或继续订阅前，把成本看清楚。</p>
+    <div class="tools-grid">
+      {tools.map((tool) => (
+        <article>
+          <h2><a href={tool.href}>{tool.title}</a></h2>
+          <p>{tool.description}</p>
+          <a class="tool-link" href={tool.href}>打开工具</a>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .tools-index { max-width: 960px; margin: 0 auto; padding: 4rem 1rem; }
+  .tools-index h1 { font-size: clamp(2.5rem, 7vw, 5rem); }
+  .tools-index > p { max-width: 720px; color: var(--muted); font-size: 1.15rem; }
+  .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin-top: 2rem; }
+  .tools-grid article { border: 1px solid var(--line); border-radius: 8px; background: var(--panel); padding: 1.25rem; }
+  .tools-grid h2 { font-size: 1.25rem; }
+  .tools-grid p { color: var(--muted); }
+  .tool-link { display: inline-flex; background: var(--accent); color: #fff; padding: .7rem .9rem; border-radius: 8px; text-decoration: none; font-weight: 800; }
+</style>

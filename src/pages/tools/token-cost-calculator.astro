@@ -1,0 +1,85 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TokenCostCalculator from '../../components/TokenCostCalculator.astro';
+import pricingData from '../../data/llm_pricing.json';
+
+const title = 'Token + Cost Calculator for GPT, Claude, and Gemini | AI Tools Pro';
+const description = 'Estimate GPT, Claude, and Gemini token counts and API costs from one prompt. Free local browser calculator with Markdown export.';
+const canonicalURL = 'https://ai.toolrouteai.com/tools/token-cost-calculator/';
+const relatedLinks = [
+  {
+    title: 'Claude 3.5 Sonnet vs GPT-4o for Complex Reasoning',
+    href: '/posts/claude-3-5-sonnet-vs-gpt-4o-for-complex-reasoning/',
+    description: 'Compare the models behind many of the pricing rows in this calculator.',
+  },
+  {
+    title: 'Gemini for Content Writing vs GPT-4o',
+    href: '/posts/gemini-for-content-writing-vs-gpt-4o/',
+    description: 'A workflow-focused comparison before you route long prompts to Gemini or OpenAI.',
+  },
+  {
+    title: 'Best LLM Tools for Financial Data Extraction',
+    href: '/posts/best-llm-tools-for-financial-data-extraction/',
+    description: 'See how token costs matter when processing longer structured documents.',
+  },
+];
+const softwareSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'Token + Cost Calculator',
+  applicationCategory: 'DeveloperApplication',
+  operatingSystem: 'Web browser',
+  url: canonicalURL,
+  description,
+  offers: {
+    '@type': 'Offer',
+    price: '0',
+    priceCurrency: 'USD',
+  },
+  featureList: [
+    'Estimate GPT token counts with js-tiktoken',
+    'Estimate Claude token counts with a local tokenizer approximation',
+    'Estimate Gemini tokens with character divided by four approximation',
+    'Calculate input, output, and total API cost in USD',
+    'Copy model comparison as Markdown',
+    'Run entirely in the browser without sending prompt text to a server',
+  ],
+  softwareVersion: pricingData.lastUpdated,
+};
+const copy = {
+  lang: 'en',
+  title: 'Token + Cost Calculator',
+  deck: 'Paste a prompt once and compare estimated token counts and API cost across GPT, Claude, and Gemini models before you run it.',
+  inputLabel: 'Prompt or document text',
+  inputPlaceholder: 'Paste a prompt, article draft, transcript, support ticket, or document excerpt here...',
+  outputLabel: 'Expected output tokens',
+  outputHelp: 'Optional. Add a rough output size when estimating full request cost, not just prompt cost.',
+  sample: 'Load Sample',
+  clear: 'Clear',
+  copyMarkdown: 'Copy Markdown',
+  copied: 'Markdown copied',
+  summaryTitle: 'Token summary',
+  charCount: 'Characters',
+  wordCount: 'Words / CJK chars',
+  cheapestModel: 'Lowest estimated cost',
+  tableTitle: 'Model cost comparison',
+  model: 'Model',
+  provider: 'Provider',
+  tokenizer: 'Tokenizer',
+  inputTokens: 'Input tokens',
+  outputTokens: 'Output tokens',
+  inputCost: 'Input cost',
+  outputCost: 'Output cost',
+  totalCost: 'Total cost',
+  pricingNoteTitle: 'Pricing notes',
+  pricingNoteBody: 'Prices are manually maintained per one million tokens and should be checked against provider pricing pages before budget-critical use.',
+  privacyTitle: 'Privacy note',
+  privacyBody: 'This calculator runs in your browser. Prompt text is tokenized locally and is not uploaded to AI Tools Pro or any server.',
+  relatedTitle: 'Related AI model guides',
+};
+---
+
+<BaseLayout title={title} description={description} canonicalURL={canonicalURL}>
+  <script type="application/ld+json" set:html={JSON.stringify(softwareSchema)} />
+  <TokenCostCalculator copy={copy} relatedLinks={relatedLinks} />
+</BaseLayout>
