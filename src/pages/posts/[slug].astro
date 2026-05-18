@@ -177,7 +177,7 @@ const itemListSchema = products.length >= 2 ? {
           "offers": {
             "@type": "AggregateOffer",
             "priceCurrency": "USD",
-            "offerCount": Math.max(1, priceNums.length),
+            "offerCount": products.length,
             "lowPrice": priceNums[0],
             ...(priceNums[1] ? { "highPrice": priceNums[1] } : {})
           }
