@@ -1,0 +1,864 @@
+---
+interface RelatedLink {
+  title: string;
+  href: string;
+  description: string;
+}
+
+interface Copy {
+  lang: 'en' | 'zh-cn';
+  title: string;
+  deck: string;
+  inputTitle: string;
+  inputLabel: string;
+  inputPlaceholder: string;
+  formatLabel: string;
+  formatAuto: string;
+  formatMarkdown: string;
+  formatHtml: string;
+  documentTitle: string;
+  documentAuthor: string;
+  sample: string;
+  render: string;
+  exportPdf: string;
+  copyHtml: string;
+  clear: string;
+  copied: string;
+  rendered: string;
+  pdfReady: string;
+  previewTitle: string;
+  emptyPreview: string;
+  metricWords: string;
+  metricBlocks: string;
+  metricPages: string;
+  privacyTitle: string;
+  privacyBody: string;
+  limitationTitle: string;
+  limitationBody: string;
+  relatedTitle: string;
+}
+
+const { copy, relatedLinks } = Astro.props as {
+  copy: Copy;
+  relatedLinks: RelatedLink[];
+};
+
+const exportConfig = {
+  lang: copy.lang,
+  labels: copy,
+};
+---
+
+<section class="export-tool-shell" data-chatgpt-export data-config={JSON.stringify(exportConfig)}>
+  <div class="export-tool-hero">
+    <div>
+      <h1>{copy.title}</h1>
+      <p>{copy.deck}</p>
+    </div>
+    <div class="export-tool-actions" aria-label="Tool actions">
+      <button class="button button-primary" type="button" data-action="render">{copy.render}</button>
+      <button class="button" type="button" data-action="sample">{copy.sample}</button>
+      <button class="button" type="button" data-action="pdf">{copy.exportPdf}</button>
+      <button class="button" type="button" data-action="copy">{copy.copyHtml}</button>
+      <button class="button button-danger" type="button" data-action="clear">{copy.clear}</button>
+      <span class="copy-status" data-status aria-live="polite"></span>
+    </div>
+  </div>
+
+  <section class="metric-grid" aria-label="Document summary">
+    <article class="metric-card">
+      <span>{copy.metricWords}</span>
+      <strong data-word-count>0</strong>
+    </article>
+    <article class="metric-card">
+      <span>{copy.metricBlocks}</span>
+      <strong data-block-count>0</strong>
+    </article>
+    <article class="metric-card">
+      <span>{copy.metricPages}</span>
+      <strong data-page-count>0</strong>
+    </article>
+  </section>
+
+  <div class="export-grid">
+    <section class="calculator-panel export-input-panel">
+      <div class="section-heading">
+        <div>
+          <h2>{copy.inputTitle}</h2>
+          <p>{copy.inputLabel}</p>
+        </div>
+      </div>
+      <div class="export-options">
+        <label>
+          <span>{copy.formatLabel}</span>
+          <select data-format>
+            <option value="auto">{copy.formatAuto}</option>
+            <option value="markdown">{copy.formatMarkdown}</option>
+            <option value="html">{copy.formatHtml}</option>
+          </select>
+        </label>
+        <label>
+          <span>{copy.documentTitle}</span>
+          <input data-document-title type="text" value="ChatGPT Export" />
+        </label>
+        <label>
+          <span>{copy.documentAuthor}</span>
+          <input data-document-author type="text" value="AI Tools Pro" />
+        </label>
+      </div>
+      <textarea data-source-input rows="18" placeholder={copy.inputPlaceholder}></textarea>
+    </section>
+
+    <section class="calculator-panel preview-panel">
+      <div class="section-heading">
+        <div>
+          <h2>{copy.previewTitle}</h2>
+          <p>{copy.limitationBody}</p>
+        </div>
+      </div>
+      <article class="pretty-document" data-preview>
+        <p class="empty-preview">{copy.emptyPreview}</p>
+      </article>
+    </section>
+  </div>
+
+  <section class="privacy-box">
+    <h2>{copy.privacyTitle}</h2>
+    <p>{copy.privacyBody}</p>
+  </section>
+
+  <section class="privacy-box">
+    <h2>{copy.limitationTitle}</h2>
+    <p>{copy.limitationBody}</p>
+  </section>
+
+  <section class="related-links" aria-labelledby="related-tools-heading">
+    <h2 id="related-tools-heading">{copy.relatedTitle}</h2>
+    <div class="related-grid">
+      {relatedLinks.map((link) => (
+        <article>
+          <h3><a href={link.href}>{link.title}</a></h3>
+          <p>{link.description}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</section>
+
+<script>
+(() => {
+  const root = document.querySelector('[data-chatgpt-export]');
+  if (!root) return;
+
+  const config = JSON.parse(root.dataset.config || '{}');
+  const labels = config.labels || {};
+  const sourceInput = root.querySelector('[data-source-input]');
+  const formatSelect = root.querySelector('[data-format]');
+  const titleInput = root.querySelector('[data-document-title]');
+  const authorInput = root.querySelector('[data-document-author]');
+  const preview = root.querySelector('[data-preview]');
+  const status = root.querySelector('[data-status]');
+  const wordCount = root.querySelector('[data-word-count]');
+  const blockCount = root.querySelector('[data-block-count]');
+  const pageCount = root.querySelector('[data-page-count]');
+  const unsafeTags = new Set(['script', 'style', 'iframe', 'object', 'embed', 'form', 'input', 'button', 'textarea', 'select', 'link', 'meta', 'base', 'svg', 'math']);
+  const allowedAttrs = new Set(['href', 'title', 'alt', 'src', 'colspan', 'rowspan']);
+  let latestCleanHtml = '';
+  let markdownPromise = null;
+  let prismPromise = null;
+  let pdfPromise = null;
+
+  function setStatus(message) {
+    status.textContent = message || '';
+    if (!message) return;
+    window.clearTimeout(setStatus.timer);
+    setStatus.timer = window.setTimeout(() => {
+      status.textContent = '';
+    }, 2600);
+  }
+
+  function sampleText() {
+    if (labels.lang === 'zh-cn') {
+      return [
+        '# ChatGPT 自动化方案复盘',
+        '',
+        '我把一次 ChatGPT 咨询记录整理成执行文档时，最容易漏掉的不是结论，而是每个结论背后的限制条件。',
+        '',
+        '## 关键结论',
+        '',
+        '- 先保留原始问题，再提炼行动项。',
+        '- 把模型给出的假设单独列出来，避免团队误当成事实。',
+        '- 代码片段需要保留语言标记，导出 PDF 后更容易复查。',
+        '',
+        '```js',
+        'const tasks = ["整理背景", "提炼结论", "标记风险"];',
+        'console.log(tasks.join(" -> "));',
+        '```',
+        '',
+        '| 项目 | 处理方式 |',
+        '| --- | --- |',
+        '| 决策 | 放在文档开头 |',
+        '| 风险 | 独立成段 |',
+      ].join('\n');
+    }
+    return [
+      '# ChatGPT Workflow Notes',
+      '',
+      'When I turn a ChatGPT thread into a shareable document, the useful part is rarely the raw transcript. The value comes from preserving the decision, the caveats, and the exact next action.',
+      '',
+      '## What to keep',
+      '',
+      '- The original question that shaped the answer.',
+      '- Assumptions the model made without direct evidence.',
+      '- Code blocks with language labels so they remain readable in PDF.',
+      '',
+      '```js',
+      'const sections = ["Context", "Decision", "Risks", "Next actions"];',
+      'console.log(sections.join(" / "));',
+      '```',
+      '',
+      '| Section | Why it matters |',
+      '| --- | --- |',
+      '| Decision | Makes the document scannable |',
+      '| Risks | Prevents blind copy-paste |',
+    ].join('\n');
+  }
+
+  function wordEstimate(text) {
+    const trimmed = String(text || '').trim();
+    if (!trimmed) return 0;
+    const latinWords = trimmed.match(/[A-Za-z0-9]+(?:[-'][A-Za-z0-9]+)*/g) || [];
+    const cjkChars = trimmed.match(/[\u3400-\u9fff]/g) || [];
+    return latinWords.length + cjkChars.length;
+  }
+
+  function slug(value) {
+    const safe = String(value || 'chatgpt-export')
+      .toLowerCase()
+      .replace(/[^a-z0-9\u3400-\u9fff]+/g, '-')
+      .replace(/^-+|-+$/g, '')
+      .slice(0, 80);
+    return safe || 'chatgpt-export';
+  }
+
+  function hasHtml(value) {
+    return /<\/?[a-z][\s\S]*>/i.test(value || '');
+  }
+
+  async function ensureMarkdown() {
+    if (!markdownPromise) {
+      markdownPromise = import('marked').then((mod) => mod.marked || mod.default || mod);
+    }
+    return markdownPromise;
+  }
+
+  async function ensurePrism() {
+    if (!prismPromise) {
+      prismPromise = import('prismjs').then(async (mod) => {
+        const Prism = mod.default || mod;
+        Prism.manual = true;
+        window.Prism = Prism;
+        await import('prismjs/components/prism-markup');
+        await import('prismjs/components/prism-css');
+        await import('prismjs/components/prism-javascript');
+        await import('prismjs/components/prism-typescript');
+        await import('prismjs/components/prism-json');
+        await import('prismjs/components/prism-bash');
+        await import('prismjs/components/prism-python');
+        return Prism;
+      });
+    }
+    return prismPromise;
+  }
+
+  async function ensurePdf() {
+    if (!pdfPromise) {
+      pdfPromise = import('html2pdf.js').then((mod) => mod.default || mod);
+    }
+    return pdfPromise;
+  }
+
+  function sanitizeUrl(value) {
+    const text = String(value || '').trim();
+    if (!text) return '';
+    if (/^(https?:|mailto:|#)/i.test(text)) return text;
+    return '';
+  }
+
+  function cleanNodeTree(container) {
+    [...container.querySelectorAll('*')].forEach((node) => {
+      const tag = node.tagName.toLowerCase();
+      if (unsafeTags.has(tag)) {
+        node.remove();
+        return;
+      }
+      [...node.attributes].forEach((attr) => {
+        const name = attr.name.toLowerCase();
+        if (name.startsWith('on') || name === 'style' || name === 'class' || name === 'id' || name.startsWith('data-')) {
+          node.removeAttribute(attr.name);
+          return;
+        }
+        if (!allowedAttrs.has(name)) {
+          node.removeAttribute(attr.name);
+          return;
+        }
+        if ((name === 'href' || name === 'src') && !sanitizeUrl(attr.value)) {
+          node.removeAttribute(attr.name);
+        }
+      });
+      if (tag === 'a' && node.getAttribute('href')) {
+        node.setAttribute('target', '_blank');
+        node.setAttribute('rel', 'noopener noreferrer');
+      }
+    });
+    return container.innerHTML.trim();
+  }
+
+  function sanitizeHtml(html) {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(String(html || ''), 'text/html');
+    return cleanNodeTree(doc.body);
+  }
+
+  async function sourceToHtml(text) {
+    const mode = formatSelect.value || 'auto';
+    if (mode === 'html' || (mode === 'auto' && hasHtml(text))) {
+      return sanitizeHtml(text);
+    }
+    const marked = await ensureMarkdown();
+    marked.setOptions({ gfm: true, breaks: true, headerIds: false, mangle: false });
+    return sanitizeHtml(marked.parse(text || ''));
+  }
+
+  async function highlightCode() {
+    const Prism = await ensurePrism();
+    preview.querySelectorAll('pre code').forEach((block) => {
+      Prism.highlightElement(block);
+    });
+  }
+
+  function updateMetrics(sourceText) {
+    const text = preview.textContent || sourceText || '';
+    const blocks = preview.querySelectorAll('p, li, pre, blockquote, table, h1, h2, h3, h4, h5, h6').length;
+    const words = wordEstimate(text);
+    wordCount.textContent = words.toLocaleString();
+    blockCount.textContent = String(blocks);
+    pageCount.textContent = String(Math.max(1, Math.ceil(words / 420)));
+  }
+
+  function addDocumentHeader() {
+    const title = titleInput.value.trim() || 'ChatGPT Export';
+    const author = authorInput.value.trim() || 'AI Tools Pro';
+    const header = document.createElement('header');
+    header.className = 'pretty-document-header';
+    header.innerHTML = `
+      <p>${escapeHtml(author)}</p>
+      <h1>${escapeHtml(title)}</h1>
+      <time>${new Date().toISOString().slice(0, 10)}</time>
+    `;
+    preview.prepend(header);
+  }
+
+  async function renderPreview() {
+    const source = sourceInput.value.trim();
+    if (!source) {
+      latestCleanHtml = '';
+      preview.innerHTML = `<p class="empty-preview">${escapeHtml(labels.emptyPreview || 'Paste content to preview it here.')}</p>`;
+      wordCount.textContent = '0';
+      blockCount.textContent = '0';
+      pageCount.textContent = '0';
+      return;
+    }
+    const html = await sourceToHtml(source);
+    latestCleanHtml = html;
+    preview.innerHTML = html || `<p class="empty-preview">${escapeHtml(labels.emptyPreview || 'Paste content to preview it here.')}</p>`;
+    addDocumentHeader();
+    await highlightCode();
+    updateMetrics(source);
+    setStatus(labels.rendered || 'Rendered');
+  }
+
+  function escapeHtml(value) {
+    return String(value ?? '')
+      .replaceAll('&', '&amp;')
+      .replaceAll('<', '&lt;')
+      .replaceAll('>', '&gt;')
+      .replaceAll('"', '&quot;')
+      .replaceAll("'", '&#039;');
+  }
+
+  async function copyCleanHtml() {
+    if (!latestCleanHtml && sourceInput.value.trim()) await renderPreview();
+    const title = escapeHtml(titleInput.value.trim() || 'ChatGPT Export');
+    const payload = `<article class="chatgpt-export">\n<h1>${title}</h1>\n${latestCleanHtml}\n</article>`;
+    try {
+      await navigator.clipboard.writeText(payload);
+    } catch {
+      const fallback = document.createElement('textarea');
+      fallback.value = payload;
+      document.body.append(fallback);
+      fallback.select();
+      document.execCommand('copy');
+      fallback.remove();
+    }
+    setStatus(labels.copied || 'Copied');
+  }
+
+  async function exportPdf() {
+    if (!sourceInput.value.trim()) return;
+    await renderPreview();
+    const html2pdf = await ensurePdf();
+    const clone = preview.cloneNode(true);
+    clone.classList.add('pretty-document-pdf');
+    clone.style.maxWidth = '7.25in';
+    clone.style.padding = '0';
+    clone.style.border = '0';
+    clone.style.boxShadow = 'none';
+    clone.querySelectorAll('*').forEach((node) => {
+      node.style.textDecorationColor = '#1d4ed8';
+    });
+    clone.querySelectorAll('a').forEach((node) => {
+      node.style.color = '#1d4ed8';
+      node.style.textDecorationColor = '#1d4ed8';
+    });
+    const wrapper = document.createElement('div');
+    wrapper.style.background = '#ffffff';
+    wrapper.style.color = '#111827';
+    wrapper.style.padding = '0.2in 0.1in';
+    wrapper.append(clone);
+    try {
+      await html2pdf()
+        .set({
+          margin: [0.45, 0.45, 0.55, 0.45],
+          filename: `${slug(titleInput.value)}.pdf`,
+          image: { type: 'jpeg', quality: 0.98 },
+          html2canvas: { scale: 2, useCORS: true, backgroundColor: '#ffffff', logging: false },
+          jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' },
+          pagebreak: { mode: ['css', 'legacy'], avoid: ['pre', 'blockquote', 'table'] },
+        })
+        .from(wrapper)
+        .save();
+      setStatus(labels.pdfReady || 'PDF ready');
+    } catch (error) {
+      console.error(error);
+      setStatus('PDF export failed');
+    }
+  }
+
+  root.addEventListener('click', (event) => {
+    const target = event.target.closest('button');
+    if (!target) return;
+    const action = target.dataset.action;
+    if (action === 'sample') {
+      sourceInput.value = sampleText();
+      formatSelect.value = 'markdown';
+      titleInput.value = labels.lang === 'zh-cn' ? 'ChatGPT 对话整理稿' : 'ChatGPT Conversation Notes';
+      renderPreview();
+    }
+    if (action === 'render') renderPreview();
+    if (action === 'pdf') exportPdf();
+    if (action === 'copy') copyCleanHtml();
+    if (action === 'clear') {
+      sourceInput.value = '';
+      latestCleanHtml = '';
+      renderPreview();
+      sourceInput.focus();
+    }
+  });
+
+  sourceInput.addEventListener('input', () => {
+    window.clearTimeout(sourceInput.renderTimer);
+    sourceInput.renderTimer = window.setTimeout(renderPreview, 350);
+  });
+  formatSelect.addEventListener('change', renderPreview);
+  titleInput.addEventListener('input', renderPreview);
+  authorInput.addEventListener('input', renderPreview);
+  renderPreview();
+})();
+</script>
+
+<style is:global>
+  .export-tool-shell {
+    padding: 3rem 0 4rem;
+  }
+
+  .export-tool-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 430px);
+    gap: 2rem;
+    align-items: end;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .export-tool-hero h1 {
+    font-size: clamp(2.4rem, 6vw, 4.6rem);
+    max-width: 880px;
+  }
+
+  .export-tool-hero p {
+    max-width: 760px;
+    color: var(--muted);
+    font-size: 1.12rem;
+    margin: 0;
+  }
+
+  .export-tool-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .65rem;
+    align-items: center;
+  }
+
+  .copy-status {
+    color: #047857;
+    font-weight: 800;
+    min-height: 1.5rem;
+  }
+
+  .button {
+    border: 1px solid var(--line);
+    background: #fff;
+    color: var(--ink);
+    border-radius: 8px;
+    padding: .68rem .9rem;
+    min-height: 42px;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .button-primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+
+  .button-danger {
+    color: #b91c1c;
+    border-color: #fecaca;
+  }
+
+  .export-grid {
+    display: grid;
+    grid-template-columns: minmax(320px, .92fr) minmax(360px, 1.08fr);
+    gap: 1rem;
+    align-items: start;
+  }
+
+  .calculator-panel,
+  .privacy-box,
+  .metric-card,
+  .related-links article {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--panel);
+  }
+
+  .calculator-panel,
+  .privacy-box,
+  .related-links {
+    margin-top: 1rem;
+    padding: 1.15rem;
+  }
+
+  .export-grid .calculator-panel {
+    margin-top: 0;
+  }
+
+  .calculator-panel h2,
+  .privacy-box h2,
+  .related-links h2 {
+    font-size: 1.35rem;
+  }
+
+  .export-options {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: .75rem;
+    margin-bottom: 1rem;
+  }
+
+  .export-options label,
+  .export-input-panel > label {
+    display: grid;
+    gap: .35rem;
+    color: var(--muted);
+    font-weight: 800;
+    font-size: .88rem;
+  }
+
+  .export-options input,
+  .export-options select,
+  .export-input-panel textarea {
+    width: 100%;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: .72rem .78rem;
+    font: inherit;
+    background: #fff;
+    color: var(--ink);
+  }
+
+  .export-input-panel textarea {
+    resize: vertical;
+    min-height: 430px;
+    line-height: 1.55;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+    font-size: .92rem;
+  }
+
+  .preview-panel {
+    min-height: 620px;
+  }
+
+  .pretty-document {
+    min-height: 500px;
+    background: #fff;
+    color: #111827;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: clamp(1.1rem, 2.5vw, 2rem);
+    overflow-wrap: anywhere;
+  }
+
+  .pretty-document-header {
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .pretty-document-header p,
+  .pretty-document-header time {
+    display: block;
+    color: #6b7280;
+    font-size: .82rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    margin: 0 0 .35rem;
+  }
+
+  .pretty-document-header h1 {
+    font-size: clamp(1.9rem, 4vw, 3rem);
+    margin-bottom: .35rem;
+  }
+
+  .pretty-document h1,
+  .pretty-document h2,
+  .pretty-document h3 {
+    color: #111827;
+  }
+
+  .pretty-document h1 {
+    font-size: 2rem;
+    margin-top: 1.6rem;
+  }
+
+  .pretty-document .pretty-document-header h1 {
+    font-size: clamp(1.9rem, 4vw, 3rem);
+    margin-top: 0;
+  }
+
+  .pretty-document h2 {
+    margin-top: 2rem;
+    font-size: 1.45rem;
+  }
+
+  .pretty-document h3 {
+    margin-top: 1.5rem;
+    font-size: 1.18rem;
+  }
+
+  .pretty-document p,
+  .pretty-document li {
+    color: #374151;
+  }
+
+  .pretty-document blockquote {
+    margin: 1rem 0;
+    padding: .9rem 1rem;
+    border-left: 4px solid var(--accent);
+    background: #eff6ff;
+    color: #1f2937;
+  }
+
+  .pretty-document pre {
+    overflow-x: auto;
+    background: #111827;
+    color: #f9fafb;
+    border-radius: 8px;
+    padding: 1rem;
+    page-break-inside: avoid;
+  }
+
+  .pretty-document code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+    font-size: .9em;
+  }
+
+  .pretty-document :not(pre) > code {
+    background: #eef2ff;
+    color: #1e3a8a;
+    border-radius: 6px;
+    padding: .1rem .32rem;
+  }
+
+  .pretty-document table {
+    width: 100%;
+    border-collapse: collapse;
+    display: block;
+    overflow-x: auto;
+    margin: 1rem 0;
+    page-break-inside: avoid;
+  }
+
+  .pretty-document th,
+  .pretty-document td {
+    border: 1px solid #d1d5db;
+    padding: .6rem .7rem;
+    text-align: left;
+  }
+
+  .pretty-document th {
+    background: #f3f4f6;
+  }
+
+  .pretty-document a {
+    color: var(--accent);
+  }
+
+  .empty-preview {
+    color: var(--muted);
+    margin: 0;
+  }
+
+  .metric-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .metric-card {
+    padding: 1rem;
+  }
+
+  .metric-card span {
+    display: block;
+    color: var(--muted);
+    font-weight: 700;
+    font-size: .88rem;
+  }
+
+  .metric-card strong {
+    display: block;
+    font-size: clamp(1.35rem, 3vw, 2rem);
+    line-height: 1.15;
+    margin-top: .35rem;
+  }
+
+  .section-heading p,
+  .privacy-box p,
+  .related-links p {
+    color: var(--muted);
+    margin: 0;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .related-links article {
+    padding: 1rem;
+  }
+
+  .related-links h3 {
+    font-size: 1.05rem;
+  }
+
+  .related-links a {
+    color: var(--accent);
+  }
+
+  .token.comment,
+  .token.prolog,
+  .token.doctype,
+  .token.cdata {
+    color: #9ca3af;
+  }
+
+  .token.punctuation {
+    color: #d1d5db;
+  }
+
+  .token.property,
+  .token.tag,
+  .token.boolean,
+  .token.number,
+  .token.constant,
+  .token.symbol {
+    color: #93c5fd;
+  }
+
+  .token.selector,
+  .token.attr-name,
+  .token.string,
+  .token.char,
+  .token.builtin {
+    color: #86efac;
+  }
+
+  .token.operator,
+  .token.entity,
+  .token.url,
+  .language-css .token.string,
+  .style .token.string {
+    color: #fbbf24;
+  }
+
+  .token.atrule,
+  .token.attr-value,
+  .token.keyword {
+    color: #c4b5fd;
+  }
+
+  .token.function,
+  .token.class-name {
+    color: #fde68a;
+  }
+
+  .token.regex,
+  .token.important,
+  .token.variable {
+    color: #fca5a5;
+  }
+
+  .pretty-document-pdf {
+    font-size: 12px;
+    line-height: 1.55;
+  }
+
+  .pretty-document-pdf a {
+    color: #1d4ed8 !important;
+    text-decoration-color: #1d4ed8 !important;
+  }
+
+  @media (max-width: 960px) {
+    .export-tool-hero,
+    .export-grid,
+    .export-options,
+    .metric-grid,
+    .related-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .preview-panel {
+      min-height: auto;
+    }
+  }
+</style>
