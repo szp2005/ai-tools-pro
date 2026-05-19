@@ -254,12 +254,13 @@ const ga4MeasurementId = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID;
       <p>{ui.footer}</p>
       <form
         class="footer-subscribe"
-        action="https://buttondown.com/api/emails/embed-subscribe/aifuye-ops"
+        action="https://buttondown.com/api/emails/embed-subscribe/aitoolspro"
         method="post"
         target="popupwindow"
         aria-label="Subscribe to the weekly digest"
       >
         <input type="email" name="email" placeholder="Get the weekly digest" required />
+        <input type="hidden" name="embed" value="1" />
         <button type="submit">Subscribe</button>
       </form>
       <nav class="footer-nav">
