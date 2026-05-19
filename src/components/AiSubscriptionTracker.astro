@@ -37,6 +37,9 @@ interface Copy {
   emptyState: string;
   relatedTitle: string;
   backupNote: string;
+  actionLabel?: string;
+  clearConfirm?: string;
+  monthlySuffix?: string;
 }
 
 const { copy, relatedLinks } = Astro.props as {
@@ -56,7 +59,7 @@ const trackerConfig = {
       <h1>{copy.title}</h1>
       <p>{copy.deck}</p>
     </div>
-    <div class="tool-actions" aria-label="Tool actions">
+    <div class="tool-actions" aria-label={copy.actionLabel ?? 'Tool actions'}>
       <button class="button button-primary" type="button" data-action="add">{copy.primaryCta}</button>
       <button class="button" type="button" data-action="export">{copy.exportCsv}</button>
       <label class="button button-file">
@@ -305,6 +308,25 @@ const trackerConfig = {
     return '★'.repeat(rating) + '☆'.repeat(5 - rating);
   }
 
+  function ratingLabel(value) {
+    const rating = Number(value || 0);
+    return labels.lang === 'zh-cn' ? `${rating} 分，满分 5 分` : `${rating} out of 5`;
+  }
+
+  function cancelItemText(sub) {
+    const suffix = labels.monthlySuffix || '/mo';
+    const rating = labels.lang === 'zh-cn' ? `${Number(sub.rating)}/5 分` : `${Number(sub.rating)}/5`;
+    return `${sub.name} — ${currency.format(Number(sub.cost || 0))}${suffix}, ${rating}`;
+  }
+
+  function alertItemText(sub, days) {
+    const cost = currency.format(Number(sub.cost || 0));
+    if (labels.lang === 'zh-cn') {
+      return days === 0 ? `${sub.name}: ${cost} 今天扣款` : `${sub.name}: ${cost} ${days} 天后扣款`;
+    }
+    return `${sub.name}: ${cost} in ${days} day${days === 1 ? '' : 's'}`;
+  }
+
   function render() {
     const monthly = subscriptions.reduce((sum, sub) => sum + Number(sub.cost || 0), 0);
     const ytd = subscriptions.reduce((sum, sub) => sum + ytdCost(sub), 0);
@@ -324,7 +346,7 @@ const trackerConfig = {
           <td>${currency.format(Number(sub.cost || 0))}</td>
           <td>${Number(sub.billingDay)}</td>
           <td>${escapeHtml(sub.firstDate)}</td>
-          <td aria-label="${Number(sub.rating)} out of 5">${stars(sub.rating)}</td>
+          <td aria-label="${ratingLabel(sub.rating)}">${stars(sub.rating)}</td>
           <td>${escapeHtml(sub.notes || '')}</td>
           <td class="row-actions">
             <button type="button" data-edit="${sub.id}">${labels.edit || 'Edit'}</button>
@@ -338,7 +360,7 @@ const trackerConfig = {
     cancelList.innerHTML = '';
     probablyCancel.forEach((sub) => {
       const item = document.createElement('li');
-      item.textContent = `${sub.name} — ${currency.format(Number(sub.cost || 0))}/mo, ${Number(sub.rating)}/5`;
+      item.textContent = cancelItemText(sub);
       cancelList.append(item);
     });
     cancelEmpty.hidden = probablyCancel.length > 0;
@@ -350,7 +372,7 @@ const trackerConfig = {
     alertList.innerHTML = '';
     upcoming.forEach(({ sub, days }) => {
       const item = document.createElement('li');
-      item.textContent = `${sub.name}: ${currency.format(Number(sub.cost || 0))} in ${days} day${days === 1 ? '' : 's'}`;
+      item.textContent = alertItemText(sub, days);
       alertList.append(item);
     });
     alertBand.hidden = upcoming.length === 0;
@@ -469,7 +491,7 @@ const trackerConfig = {
     if (action === 'export') exportCsv();
     if (action === 'cancel-form') closeForm();
     if (action === 'clear') {
-      if (window.confirm('Clear all saved subscriptions?')) {
+      if (window.confirm(labels.clearConfirm || 'Clear all saved subscriptions?')) {
         subscriptions = [];
         save();
         closeForm();
