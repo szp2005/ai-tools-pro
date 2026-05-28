@@ -156,43 +156,49 @@ const { Content } = post;
 const siteURL = Astro.site ?? new URL(Astro.url.origin);
 const canonicalURL = new URL(`/zh-cn/posts/${frontmatter.slug ?? Astro.params.slug}/`, siteURL).href;
 
-// Build ItemList Schema only when ≥2 products extracted
-// Fix: lowPrice/highPrice must be numbers, not strings; add reviewBody; use Person author
-const itemListSchema = products.length >= 2 ? {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": frontmatter.title,
-  "itemListElement": products.map((p, idx) => {
+// Build ItemList Schema only when ≥2 products with usable data.
+// GSC rules (fixed 2026-05-28): every Product needs offers/review/
+// aggregateRating (drop those with neither price nor rating), and
+// AggregateOffer needs both lowPrice + highPrice.
+const schemaProducts = products
+  .map((p) => {
     const priceNums = p.priceRange
       ? p.priceRange.replace(/[^0-9.\-]/g, '').split('-').map(Number).filter((n: number) => !isNaN(n) && n > 0)
       : [];
-    return {
-      "@type": "ListItem",
-      "position": idx + 1,
-      "item": {
-        "@type": "Product",
-        "name": p.name,
-        "description": p.description,
-        ...(priceNums.length > 0 ? {
-          "offers": {
-            "@type": "AggregateOffer",
-            "priceCurrency": "USD",
-            "offerCount": products.length,
-            "lowPrice": priceNums[0],
-            ...(priceNums[1] ? { "highPrice": priceNums[1] } : {})
-          }
-        } : {}),
-        ...(p.rating ? {
-          "review": {
-            "@type": "Review",
-            "reviewBody": p.description,
-            "reviewRating": { "@type": "Rating", "ratingValue": p.rating, "bestRating": 5 },
-            "author": { "@type": "Person", "name": frontmatter.author ?? "Editorial Team" }
-          }
-        } : {})
-      }
-    };
+    return { p, priceNums };
   })
+  .filter(({ p, priceNums }) => priceNums.length > 0 || p.rating);
+
+const itemListSchema = schemaProducts.length >= 2 ? {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": frontmatter.title,
+  "itemListElement": schemaProducts.map(({ p, priceNums }, idx) => ({
+    "@type": "ListItem",
+    "position": idx + 1,
+    "item": {
+      "@type": "Product",
+      "name": p.name,
+      "description": p.description,
+      ...(priceNums.length > 0 ? {
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "USD",
+          "offerCount": schemaProducts.length,
+          "lowPrice": priceNums[0],
+          "highPrice": priceNums[1] ?? priceNums[0]
+        }
+      } : {}),
+      ...(p.rating ? {
+        "review": {
+          "@type": "Review",
+          "reviewBody": p.description,
+          "reviewRating": { "@type": "Rating", "ratingValue": p.rating, "bestRating": 5 },
+          "author": { "@type": "Person", "name": frontmatter.author ?? "Editorial Team" }
+        }
+      } : {})
+    }
+  }))
 } : null;
 const adsensePublisherId = import.meta.env.PUBLIC_ADSENSE_PUBLISHER_ID;
 const adsenseTopSlot = import.meta.env.PUBLIC_ADSENSE_TOP_SLOT;
