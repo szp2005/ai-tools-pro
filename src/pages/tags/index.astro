@@ -17,7 +17,10 @@ const tagCounts = new Map<string, number>();
 for (const mod of Object.values(modules)) {
   const tags = [...(mod.frontmatter?.tags ?? []), ...(mod.frontmatter?.keywords ?? [])];
   for (const raw of tags) {
-    const tag = String(raw).toLowerCase().trim().replace(/\s+/g, '-');
+    // Must match the slugify in [tag].astro exactly, or the tags-index
+    // links 404 (e.g. "Claude 3.5 Sonnet" → index linked /tags/claude-3.5-sonnet/
+    // but the page is generated at /tags/claude-35-sonnet/). Fixed 2026-05-28.
+    const tag = String(raw).toLowerCase().trim().replace(/\s+/g, '-').replace(/\//g, '-').replace(/[^a-z0-9\-]/g, '').replace(/-+/g, '-').replace(/^-|-$/g, '');
     if (!tag) continue;
     tagCounts.set(tag, (tagCounts.get(tag) ?? 0) + 1);
   }

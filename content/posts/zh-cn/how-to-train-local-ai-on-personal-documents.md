@@ -15,7 +15,7 @@ type: "informational"
 
 将纳税申报表、日记或专有商业数据上传到基于云的 AI 提供商会带来固有的[隐私](/zh-cn/posts/ollama-installation-guide-privacy-conscious-professionals/)风险。即使签订了企业协议，将敏感文件发送出您的网络也意味着放弃绝对的控制权。在本地运行[人工智能](/zh-cn/posts/ai-tools-for-seo-writing/)解决了这个数据主权问题，但现成的模型对您的个人生活或公司内部知识一无所知。
 
-将您的特定信息教给本地 AI 的过程已经变得更容易实现。您不再需要装满企业级 GPU 的服务器机架或机器学习工程背景。现代的[消费级硬件](/zh-cn/posts/running-mistral-7b-on-consumer-hardware-for-privacy/)，特别是 Apple Silicon Mac 和中高端 Nvidia GPU，可以在本地运行性能强大的语言模型，尤其是与实用的[本地 RAG 设置](/zh-cn/posts/local-llm-deployment-for-offline-document-analysis/)配合使用时。
+将您的特定信息教给本地 AI 的过程已经变得更容易实现。您不再需要装满企业级 GPU 的服务器机架或机器学习工程背景。现代的[消费级硬件](/zh-cn/posts/running-mistral-7b-on-consumer-hardware-for-privacy/)，特别是 Apple Silicon Mac 和中高端 Nvidia GPU，可以在本地运行性能强大的语言模型，尤其是与实用的[本地 RAG 设置](/zh-cn/posts/local-llm-deployment-offline-document-analysis/)配合使用时。
 
 本指南将详细解析如何弥合通用本地 AI 与您个人知识库之间的差距，从而创建一个完全在您自己的硬件上运行的、高度定制的、隐私优先的助手。
 
