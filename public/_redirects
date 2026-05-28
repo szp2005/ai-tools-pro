@@ -21,3 +21,10 @@
 /zh-cn/authors/ /authors/ 301
 
 # Cloudflare Pages serves /404.html automatically for missing static routes.
+
+# 2026-05-28: slug normalization redirects (2026-04-XX-slug → slug).
+# Same class as notes-automate GSC 404 fix. Old indexed URLs were 404ing.
+/posts/2026-04-28-best-ai-writing-tools-2026/ /posts/best-ai-writing-tools-2026/ 301
+/posts/2026-04-29-how-to-automate-content-with-n8n-and-claude/ /posts/how-to-automate-content-with-n8n-and-claude/ 301
+/zh-cn/posts/2026-04-28-best-ai-writing-tools-2026/ /zh-cn/posts/best-ai-writing-tools-2026/ 301
+/zh-cn/posts/2026-04-29-how-to-automate-content-with-n8n-and-claude/ /zh-cn/posts/how-to-automate-content-with-n8n-and-claude/ 301
