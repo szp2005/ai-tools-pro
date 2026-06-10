@@ -1,10 +1,3 @@
-I will translate the provided Markdown article from English to Simplified Chinese (zh-cn), ensuring all specified requirements are met. This includes preserving the frontmatter structure and keys, translating only the `title` and `description` in the frontmatter, translating the main body while maintaining Markdown formatting, avoiding translation of technical terms, and remapping internal links.```markdown
----
-image: "/og/running-llama-3-locally-for-privacy-conscious-lawyers.webp"
-editorSummary: >-
-  Locally Privacy Conscious Lawyers can deploy Llama 3 on dedicated workstations to analyze
-  sensitive client documents without exposing them to cloud servers. I find
-```markdown
 ---
 image: "/og/running-llama-3-locally-for-privacy-conscious-lawyers.webp"
 editorSummary: >-

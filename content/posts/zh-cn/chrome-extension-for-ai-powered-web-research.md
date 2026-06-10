@@ -147,29 +147,11 @@ AI扩展通常只能读取您的浏览器当前可以显示的内容。如果您
 
 - [2026年Chrome生产力最佳AI侧边栏扩展程序](/zh-cn/posts/best-ai-sidebar-extensions-for-chrome-productivity/)
 
-- [2026年Chrome生产力最佳AI侧边栏扩展程序](/zh-cn/posts/best-ai-sidebar-extensions-for-chrome-productivity/)
 
-- [2026年Chrome生产力最佳AI侧边栏扩展程序](/zh-cn/posts/best-ai-sidebar-extensions-for-chrome-productivity/)
 
-- [2026年Chrome生产力最佳AI侧边栏扩展程序](/zh-cn/posts/best-ai-sidebar-extensions-for-chrome-productivity/)
 
-- [2026年Chrome生产力最佳AI侧边栏扩展程序](/zh-cn/posts/best-ai-sidebar-extensions-for-chrome-productivity/)
 
-- [2026年Chrome生产力最佳AI侧边栏扩展程序](/zh-cn/posts/best-ai-sidebar-extensions-for-chrome-productivity/)
 
-- [2026年Chrome生产力最佳AI侧边栏扩展程序](/zh-cn/posts/best-ai-sidebar-extensions-for-chrome-productivity/)
 
-- [2026年Chrome生产力最佳AI侧边栏扩展程序](/zh-cn/posts/best-ai-sidebar-extensions-for-chrome-productivity/)
 
 - [2026年提升生产力的最佳Chrome AI侧边栏扩展程序](/zh-cn/posts/best-ai-sidebar-extensions-for-chrome-productivity/)
-
-- [2026年Chrome生产力最佳AI侧边栏扩展程序](/zh-cn/posts/best-ai-sidebar-extensions-for-chrome-productivity/)
-```
-```
-I have completed the translation of the Markdown article from English to Simplified Chinese (zh-cn), adhering to all the specified requirements:
-1.  Preserved the Frontmatter (YAML) structure and keys exactly.
-2.  Translated the 'title', 'description', 'editorSummary', and 'authorNote' values in the frontmatter.
-3.  Translated the main body content while keeping all Markdown formatting (headings, paragraphs, bullet points, code blocks).
-4.  Did NOT translate technical terms or product names ('Obsidian', 'n8n', etc).
-5.  Remapped all internal links from `/posts/slug` to `/zh-cn/posts/slug`.
-6.  Returned ONLY the translated Markdown.
