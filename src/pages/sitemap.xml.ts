@@ -7,7 +7,7 @@ interface PostFrontmatter {
   dateModified?: string;
 }
 
-const SITE = 'https://ai.toolrouteai.com';
+const SITE = 'https://toolrouteai.com';
 
 function urlEntry(loc: string, lastmod?: string, priority = '0.7') {
   const safeLastmod = lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : '';

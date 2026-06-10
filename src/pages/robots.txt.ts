@@ -4,7 +4,7 @@ export const GET: APIRoute = () =>
     `User-agent: *
 Allow: /
 
-Sitemap: https://ai.toolrouteai.com/sitemap.xml
+Sitemap: https://toolrouteai.com/sitemap.xml
 `,
     { headers: { 'Content-Type': 'text/plain' } }
   );

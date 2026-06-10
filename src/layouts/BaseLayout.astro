@@ -25,7 +25,7 @@ const {
 } = Astro.props;
 
 const siteName = 'AI Tools Pro';
-const siteURL = 'https://ai.toolrouteai.com';
+const siteURL = 'https://toolrouteai.com';
 const networkName = 'ToolRoute AI';
 const networkURL = 'https://toolrouteai.com';
 const siteSlug = 'ai-tools-pro';
@@ -81,7 +81,10 @@ const ui = isZhCn
 
 // Force canonical to siteURL host regardless of which domain served the page.
 const canonicalURL = canonicalURLProp ?? `${siteURL}${pathname}${Astro.url.search}`;
-const isNetworkPage = canonicalURL.startsWith(`${networkURL}/`);
+// Network-branded pages (ToolRoute AI) are a fixed path set; everything else is AI Tools Pro.
+// Raw pathname on purpose: zh-cn pages stay site-branded, matching pre-unification behavior.
+const networkPagePaths = new Set(['/', '/about/', '/contact/', '/terms/', '/affiliate-disclosure/', '/editorial-policy/', '/authors/']);
+const isNetworkPage = networkPagePaths.has(pathname.endsWith('/') ? pathname : `${pathname}/`);
 const displaySiteName = isNetworkPage ? networkName : siteName;
 const displaySiteURL = isNetworkPage ? networkURL : siteURL;
 

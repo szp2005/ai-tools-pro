@@ -27,7 +27,7 @@ export async function getStaticPaths() {
 
 const { author, posts } = Astro.props as { author: string; posts: Array<{ frontmatter: any; slug: string }> };
 const siteName = 'AI Tools Pro';
-const siteURL = 'https://ai.toolrouteai.com';
+const siteURL = 'https://toolrouteai.com';
 
 const bios: Record<string, string> = {
   "Alex Chen": "Alex Chen is the editorial byline for AI Tools Pro's coverage of AI tools and workflow automation. Articles under this byline focus on practical comparisons: who a tool is for, what setup it needs, where it falls short, and which alternatives to weigh before paying. See the Authors page for how our editorial process and AI assistance work.",

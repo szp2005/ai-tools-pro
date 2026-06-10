@@ -8,7 +8,7 @@ interface PostFrontmatter {
   slug?: string;
 }
 
-const SITE = 'https://ai.toolrouteai.com';
+const SITE = 'https://toolrouteai.com';
 const TITLE = 'AI Tools Pro';
 const DESCRIPTION = `Practical comparisons, workflows, and buying guides for AI tools used by marketers, creators, and automation teams.`;
 
