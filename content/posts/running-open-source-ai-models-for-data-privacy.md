@@ -1,7 +1,7 @@
 ---
 image: "/og/running-open-source-ai-models-for-data-privacy.webp"
 evidenceImage:
-  src: "/media/adsense-phase2/code-laptop.jpg"
+  src: "/media/article-media/code-laptop.jpg"
   alt: "Local AI development laptop screen"
   caption: "A development laptop screen, used to ground the local AI and automation workflow examples."
   credit: "Christina Morillo / Pexels"

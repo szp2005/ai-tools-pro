@@ -1,7 +1,7 @@
 ---
 image: "/og/lm-studio-vs-ollama-for-local-ai-development.webp"
 evidenceImage:
-  src: "/media/adsense-phase2/code-laptop.jpg"
+  src: "/media/article-media/code-laptop.jpg"
   alt: "Local AI tooling represented by a development laptop"
   caption: "A development laptop screen, used to ground the local AI and automation workflow examples."
   credit: "Christina Morillo / Pexels"

@@ -1,7 +1,7 @@
 ---
 image: "/og/make-com-vs-zapier-for-ai-automation.webp"
 evidenceImage:
-  src: "/media/adsense-phase2/sticky-workflow.jpg"
+  src: "/media/article-media/sticky-workflow.jpg"
   alt: "Automation planning desk with sticky-note workflow map"
   caption: "A planning desk with sticky notes, used to represent workflow mapping and hand-picked editorial links."
   credit: "Anastasia Shuraeva / Pexels"

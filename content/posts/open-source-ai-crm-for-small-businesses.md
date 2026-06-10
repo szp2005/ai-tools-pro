@@ -1,7 +1,7 @@
 ---
 image: "/og/open-source-ai-crm-for-small-businesses.webp"
 evidenceImage:
-  src: "/media/adsense-phase2/sticky-workflow.jpg"
+  src: "/media/article-media/sticky-workflow.jpg"
   alt: "CRM and pipeline planning workspace with sticky notes"
   caption: "A planning desk with sticky notes, used to represent workflow mapping and hand-picked editorial links."
   credit: "Anastasia Shuraeva / Pexels"

@@ -215,8 +215,10 @@ const invalidAuthorName = !rawAuthorName || /[<>{}\[\]|%]/.test(rawAuthorName) |
 const authorName = invalidAuthorName ? 'Alex Chen' : rawAuthorName;
 const authorSlug = authorName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const authorInitials = authorName.split(/\s+/).slice(0, 2).map((part: string) => part[0]).join('').toUpperCase();
-const publishedDate = frontmatter.pubDate ?? frontmatter.date ? String(frontmatter.pubDate ?? frontmatter.date) : 'Recently updated';
-const updatedDate = frontmatter.dateModified ? String(frontmatter.dateModified) : publishedDate;
+const toDateOnly = (v: unknown) => { const s = String(v); const m = s.match(/^\d{4}-\d{2}-\d{2}/); return m ? m[0] : s; };
+const rawPublished = frontmatter.pubDate ?? frontmatter.date;
+const publishedDate = rawPublished ? toDateOnly(rawPublished) : 'Recently updated';
+const updatedDate = frontmatter.dateModified ? toDateOnly(frontmatter.dateModified) : publishedDate;
 const isZhArticle = Astro.url.pathname.startsWith('/zh-cn/');
 const labels = isZhArticle
   ? { by: '作者', profile: '作者主页', published: '发布', updated: '更新', reading: '阅读时长', minutes: '分钟', editorSummary: '编辑摘要', authorNote: '作者注', related: '你可能感兴趣' }

@@ -1,7 +1,7 @@
 ---
 image: "/og/how-to-run-local-llms-on-macbook-m3.webp"
 evidenceImage:
-  src: "/media/adsense-phase2/code-laptop.jpg"
+  src: "/media/article-media/code-laptop.jpg"
   alt: "Laptop screen showing code for local LLM setup"
   caption: "A development laptop screen, used to ground the local AI and automation workflow examples."
   credit: "Christina Morillo / Pexels"

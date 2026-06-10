@@ -1,7 +1,7 @@
 ---
 image: "/og/integrating-local-llms-into-obsidian-notes-vault.webp"
 evidenceImage:
-  src: "/media/adsense-phase2/notes-laptop.jpg"
+  src: "/media/article-media/notes-laptop.jpg"
   alt: "Laptop and notes setup for local AI knowledge workflows"
   caption: "Notebook and laptop planning setup, used to illustrate manual review and workflow documentation."
   credit: "RDNE Stock project / Pexels"

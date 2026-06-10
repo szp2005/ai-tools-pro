@@ -1,7 +1,7 @@
 ---
 image: "/og/setting-up-local-voice-ai-for-offline-dictation.webp"
 evidenceImage:
-  src: "/media/adsense-phase2/audio-setup.jpg"
+  src: "/media/article-media/audio-setup.jpg"
   alt: "Local voice AI dictation setup with microphone and laptop"
   caption: "A real microphone and laptop audio setup, used to illustrate voice and dictation workflows."
   credit: "Jeremy Enns / Pexels"

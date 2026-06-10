@@ -1,7 +1,7 @@
 ---
 image: "/og/best-offline-ai-writing-tools-for-deep-work.webp"
 evidenceImage:
-  src: "/media/adsense-phase2/notes-laptop.jpg"
+  src: "/media/article-media/notes-laptop.jpg"
   alt: "Focused writing and planning setup with laptop and paper notes"
   caption: "Notebook and laptop planning setup, used to illustrate manual review and workflow documentation."
   credit: "RDNE Stock project / Pexels"

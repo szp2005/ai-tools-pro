@@ -1,7 +1,7 @@
 ---
 image: "/og/using-ai-agents-for-competitor-analysis-marketing.webp"
 evidenceImage:
-  src: "/media/adsense-phase2/ai-laptop-chatgpt.jpg"
+  src: "/media/article-media/ai-laptop-chatgpt.jpg"
   alt: "AI competitor analysis workflow on a laptop"
   caption: "A laptop-based AI workflow, used here to illustrate hands-on AI tool evaluation."
   credit: "Matheus Bertelli / Pexels"

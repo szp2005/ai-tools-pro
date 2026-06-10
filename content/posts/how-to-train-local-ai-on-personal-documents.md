@@ -1,7 +1,7 @@
 ---
 image: "/og/how-to-train-local-ai-on-personal-documents.webp"
 evidenceImage:
-  src: "/media/adsense-phase2/notes-laptop.jpg"
+  src: "/media/article-media/notes-laptop.jpg"
   alt: "Document review and note-taking setup for private AI training"
   caption: "Notebook and laptop planning setup, used to illustrate manual review and workflow documentation."
   credit: "RDNE Stock project / Pexels"
