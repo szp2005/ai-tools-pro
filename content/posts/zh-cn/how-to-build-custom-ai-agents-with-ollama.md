@@ -111,7 +111,7 @@ llm = ChatOllama(
 ```python
 from langchain.tools import tool
 
- @ai-tools-pro/content/posts/zh-cn/best-local-llm-tools-for-developers-2026.md
+@tool
 def read_local_file(file_path: str) -> str:
     """
     Reads the content of a local file.
@@ -124,7 +124,7 @@ def read_local_file(file_path: str) -> str:
     except Exception as e:
         return f"Error reading file: {e}"
 
- @ai-tools-pro/content/posts/zh-cn/best-local-llm-tools-for-developers-2026.md
+@tool
 def calculate_system_metrics(metric_type: str) -> str:
     """
     Retrieves current system metrics.
