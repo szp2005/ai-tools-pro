@@ -182,7 +182,6 @@ While both tools can run models on the CPU, a powerful GPU (NVIDIA with CUDA, AM
 
 ### Are Ollama and LM Studio free to use?
 Yes, both Ollama and LM Studio are free to download and use. They provide access to open-source models, which are also free. You only need to consider the hardware costs for running the models locally.
-```
 
 ---
 

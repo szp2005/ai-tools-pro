@@ -201,7 +201,6 @@ A: It depends on the tool and your subscription tier. Enterprise tiers often gua
 ### Q: Will using an AI grammar checker make me a lazy writer?
 
 A: Only if you blindly accept all changes. If you actively review the suggestions and learn from the stylistic feedback, these tools will actually improve your innate writing skills over time.
-```
 
 ## Related Reading
 
