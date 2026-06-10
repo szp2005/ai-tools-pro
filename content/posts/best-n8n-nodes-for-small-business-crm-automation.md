@@ -209,19 +209,19 @@ The landscape of small business CRM automation is rapidly evolving, and n8n stan
 
 ## Frequently Asked Questions
 
-### ### What is n8n and how does it help with CRM automation?
+### What is n8n and how does it help with CRM automation?
 n8n is an open-source workflow automation tool that allows you to connect various applications, services, and APIs to automate tasks. For CRM automation, it helps by creating workflows that can capture leads, update customer records, send automated emails, synchronize data across platforms, and manage sales pipelines, reducing manual effort and improving efficiency.
 
-### ### Can n8n integrate with my existing CRM system?
+### Can n8n integrate with my existing CRM system?
 Yes, n8n offers a wide range of dedicated integration nodes for popular CRM systems like HubSpot, Salesforce, Zoho CRM, Pipedrive, and more. If a direct node isn't available, you can often use the generic HTTP Request node to connect to any CRM with an API, providing extensive flexibility.
 
-### ### Is n8n suitable for small businesses with limited technical expertise?
+### Is n8n suitable for small businesses with limited technical expertise?
 n8n is designed with a visual, node-based interface that makes it accessible to users without extensive coding knowledge. While some advanced features might benefit from basic understanding of concepts like JSON or APIs, many common CRM automation tasks can be set up using its intuitive drag-and-drop interface and pre-built nodes.
 
-### ### How much does it cost to use n8n for CRM automation?
+### How much does it cost to use n8n for CRM automation?
 n8n is open-source and can be self-hosted for free, requiring only the cost of your server infrastructure. There's also a cloud-hosted version (n8n Cloud) that offers different pricing tiers based on usage. The overall cost is generally lower than many proprietary automation platforms, making it highly cost-effective for small businesses.
 
-### ### What are the most important n8n nodes for lead management?
+### What are the most important n8n nodes for lead management?
 For lead management, the most important n8n nodes include Form & Lead Capture nodes (like Typeform, Google Forms, or Webhook) to collect data, Data Manipulation nodes (like Set, Merge, Code) to clean and enrich lead information, and dedicated CRM Integration nodes to push qualified leads into your CRM system.
 
 ---
